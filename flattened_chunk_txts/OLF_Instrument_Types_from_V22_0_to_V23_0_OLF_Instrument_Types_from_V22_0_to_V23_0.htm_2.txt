@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Instrument_Types_from_V22_0_to_V23_0.htm.
+ Section heading: Changes in 
+ the Instrument Types.
+ Text content: The following are the changes to instrument types 
+ from 22.0 to 23.0: None.

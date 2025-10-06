@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
+ Section heading: Pivot Panel.
+ Text content:  Located below the Filter panel, the Pivot panel displays the pivot data field and pivot columns. It consists of two sub-panels: The Pivot Data panel and the Pivot Columns panel. Drag the fields that will serve as pivot data and pivot columns of the pivot table onto these sub-panels. § Pivot Data panel - Holds the data column for the pivot table. Only one column can be set as a pivot data field. If a column is already set and a new column is dragged onto the panel, the new column will replace the old column. § Pivot Columns panel – Holds all the columns of the pivot table. The grouping fields in the Grouping panel serve as the pivot row of the pivot table. The above figure has “Position” as the data and “Ins. Type” and “Ext Bunit” as columns for the pivot table.  .
+ Image file: OLF_Quick_Configure_Mode_files/image009.jpg
+ Image description: a sound wave is a sound that is recorded in a sound wave.

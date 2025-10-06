@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_All_Services.htm.
+ Section heading: Right-Click Menu - Service.
+ Text content: Right-clicking on a service returns the following menu items when applicable. Messages shown will differ depending on the service.  An example is the “Credit Engine” menu item “Restart Application Service ‘Credit Engine’”..
+ Table data: 
+| Tab | Description |
+| --- | --- |
+| Start <domain service> | Starts the selected service.This menu item only appears when the service is not running. |
+| Restart <domain service> | Restarts the selected service.This menu item only appears when the service is already running. |
+| Stop <domain service> | Stops the selected service.This menu item only appears when the service is already running. |
+| Jump to <service> Panel | Jumps to the specific tab for the selected service.This menu item will only be shown for engines in the Application Services folder. |.

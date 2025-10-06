@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
+ Section heading: Create Tabs.
+ Text content: Create a tab named Custom Services . .
+ Image file: OLF_AFE_Desktop_Services_files/image003.jpg
+ Image description: the screen with the text ' ' ' ' and the text ' ' '.

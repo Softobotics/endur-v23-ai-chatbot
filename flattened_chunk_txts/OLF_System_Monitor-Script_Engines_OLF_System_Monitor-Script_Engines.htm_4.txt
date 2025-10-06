@@ -1,0 +1,50 @@
+This chunk is from the HTML file: OLF_System_Monitor-Script_Engines.htm.
+ Section heading: Jobs Panel.
+ Text content: This panel contains the following buttons: This panel contains the following fields:.
+ Image file: OLF_System_Monitor-Script_Engines_files/image003.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_System_Monitor-Script_Engines_files/image004.jpg
+ Image description: the logo for the business.
+ Image file: OLF_System_Monitor-Script_Engines_files/image005.jpg
+ Image description: a bar chart with the number of the bar.
+ Image file: OLF_System_Monitor-Script_Engines_files/image006.jpg
+ Image description: a white watch with the word ' watch ' written on it.
+ Image file: OLF_System_Monitor-Script_Engines_files/image007.jpg
+ Image description: a white sheet of paper with the word ' ad '.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | A radio button that when selected, sorts 
+			 the jobs by “Job ID/Task Name”. |
+|  | A radio button that when selected, sorts 
+			 the jobs by “Job Status”. |
+|  | A pick list of active sessions. |
+|  | Refreshes and updates the statuses of 
+			 the jobs. |
+|  | Terminates the selected job. |. Table data: 
+| Field 
+			 Item | Description |
+| --- | --- |
+| Job Id/ Task Name | A system assigned job identification 
+			 number. This field includes the plug-in/script Task name when 
+			 a task is run. |
+| Script | The name of the script being executed 
+			 when running a task. Typically, this is the main script as 
+			 the parameter script is run in the calling process, not in 
+			 the script engine. |
+| Job Status | The current status of a job. |
+| Posted Status | The last posted status of a job. Posted 
+			 statuses are recognized when the SCRIPT_PostStatus function 
+			 is called in the script. |
+| Submitter | The name of the system manager where 
+			 the job was initiated. |
+| Engine Number | The number of the engine to which the 
+			 job is currently assigned. |
+| Repeat Interval | The frequency with which the job will 
+			 be repeated. |
+| Next Run Time | The point at which the job will run 
+			 again, if scheduled. |
+| Start Run Time | The calendar date and clock time that 
+			 the job began running. |
+| End Run Time | The calendar date and clock time that 
+			 the job finished running. |.

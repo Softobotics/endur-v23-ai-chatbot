@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Groups.htm.
+ Section heading: How To: Renaming an Existing Group.
+ Text content: To rename an existing group: 1. Click 
+ the Select Group button and select the group to rename from the 
+ pick list. The group’s name displays on the “Group Name” field. 2. Edit 
+ the name of the group. 3. Click 
+ the OK button to save the modification..

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>System Monitor - Script Engines</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nSystem Monitor\nSystem Monitor\nSystem Monitor - Script Engines");
+addAvenueInfo("System Use","OLF/OLF_System_Monitor-Prod_Ext_Toolkit.htm","OLF/OLF_System_Monitor-System_Cache.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor.htm\">System Monitor<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor-Services_All_Services.htm\">System Monitor<\/a> &gt; System Monitor - Script Engines<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>System Monitor - Script Engines</h1>
+	<h2>Overview</h2>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt;">The <i>Script Engines 
+	 Monitor</i> is an instrument provided for the observation of script 
+	 engine operations. The <b><i>Jobs</i></b> panel shows details about 
+	 the jobs that ran, and are running, on this machine. The data table 
+	 may be sorted and includes the functionality to abort jobs. The <b><i>Engines</i></b> 
+	 panel contains details about the engine or engines that are running. 
+	 This panel includes the functionality to start new engines and stop 
+	 existing engines.</p>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt;"><b>Notes:</b></p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: .5in; text-indent: -.25in;">1)<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;This 
+	 tab is disabled if the System Monitor is not started from OpenLink 
+	 Central</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: .5in; text-indent: -.25in;">2)<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Script 
+	 Engines start only when needed, such as when running a plug-in/script. 
+	 Engines are started based on one of the following 2 conditions:</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: 1.0in; text-indent: -.25in;">a.<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;No 
+	 script engines have been started</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: 1.0in; text-indent: -.25in;">b.<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;All 
+	 the script engines that have been started are busy performing work</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: .5in; text-indent: -.25in;">3)<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;The 
+	 maximum number of script engines that can be run concurrently during 
+	 a single session is 1 client and 2 server nodes, and in v18 and above, 
+	 by default, zero script engines on server node. This number of script 
+	 engines is determined by licensing. This number of script engines 
+	 can be modified via the environment variable “MAX_TASK_ENGINES”. Note 
+	 that the number of allotted script engines has been reduced (After 
+	 August 2008) to standardize functionality using OpenLink's Grid solution.</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: .5in; text-indent: -.25in;">4)<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Script 
+	 Engines terminate only when the user exits the system. Memory is released 
+	 only when a script engine terminates.</p>
+	<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; 
+		 margin-left: .5in; text-indent: -.25in;">5)<span style="font-size: 7.0pt; 
+															 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Individual 
+	 scripts may be modified to terminate the script engine upon completion 
+	 of the script. This is achieved by placing the function “EXIT_Terminate” 
+	 in the script.</p>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt;">The maximum number 
+	 of script engines that can be run concurrently during a single session 
+	 is 1 client and 2 server nodes, and in v18 and above, by default, 
+	 zero script engines on server node.</p>
+	<h2>Accessing This Window/Screen</h2>
+	<ol start="1" style="list-style: decimal; margin-top: 0in;">
+		<li class="MsoNormal">Start the OpenLink System.</li>
+		<li class="MsoNormal">From <i>OpenLink Central</i>, click the <i>System 
+		 Monitor</i> icon <img src="OLF_System_Monitor-Script_Engines_files/image001.jpg" 
+								 alt="image003" width="18" height="17" 
+								 border="0" /></li>
+		<li class="MsoNormal">Select the <b>Script Engines</b> tab.</li>
+	</ol>
+	<p class="MsoNormal" style="margin-left: .25in;">The following screen 
+	 displays:</p>
+	<p class="MsoNormal" style="margin-left: .25in;"><img src="OLF_System_Monitor-Script_Engines_files/image002.jpg" 
+															 alt="" style="border: none;" 
+															 border="0" /></p>
+	<h3>Menu Items</h3>
+	<p class="MsoNormal">This window contains the same menu items as the 
+	 <a href="OLF_System_Monitor.htm">System Monitor</a>.</p>
+	<h3>Buttons</h3>
+	<p class="MsoNormal">This window contains the same buttons as the <a 
+	 href="OLF_System_Monitor.htm">System Monitor</a>.</p>
+	<h3>Jobs Panel</h3>
+	<h4>Buttons</h4>
+	<p class="MsoNormal">This panel contains the following buttons:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr style="height: 22.0pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="29" 
+				 width="168" bgcolor="#E6E6E6"><p class="MsoNormal" style="text-align: center;"><b>Button</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="29" width="470" bgcolor="#E6E6E6"><p class="MsoNormal" 
+				 style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal" style="margin-bottom: .0001pt;"><b><img 
+			 src="OLF_System_Monitor-Script_Engines_files/image003.jpg" 
+			 alt="image016" width="65" height="16" border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">A radio button that when selected, sorts 
+			 the jobs by “Job ID/Task Name”.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal" style="margin-bottom: .0001pt;"><b><img 
+			 src="OLF_System_Monitor-Script_Engines_files/image004.jpg" 
+			 alt="image017" width="65" height="17" border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">A radio button that when selected, sorts 
+			 the jobs by “Job Status”.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal" style="margin-bottom: .0001pt;"><b><img 
+			 src="OLF_System_Monitor-Script_Engines_files/image005.jpg" 
+			 alt="image011.jpg" width="160" height="18" border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">A pick list of active sessions.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal" style="margin-bottom: .0001pt;"><b><img 
+			 src="OLF_System_Monitor-Script_Engines_files/image006.jpg" 
+			 alt="image014" width="75" height="18" border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">Refreshes and updates the statuses of 
+			 the jobs.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal"><b><img src="OLF_System_Monitor-Script_Engines_files/image007.jpg" 
+															 alt="image015" 
+															 width="75" 
+															 height="18" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">Terminates the selected job.</p></td>
+		</tr>
+	</table>
+	<h4>Fields</h4>
+	<p class="MsoNormal">This panel contains the following fields:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr style="height: 22.0pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="29" 
+				 width="179" bgcolor="#E6E6E6"><p class="MsoNormal" style="text-align: center;"><b>Field 
+			 Item</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="29" width="462" bgcolor="#E6E6E6"><p class="MsoNormal" 
+				 style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Job Id/ Task Name</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">A system assigned job identification 
+			 number. This field includes the plug-in/script Task name when 
+			 a task is run.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Script</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The name of the script being executed 
+			 when running a task. Typically, this is the main script as 
+			 the parameter script is run in the calling process, not in 
+			 the script engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Job Status</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The current status of a job.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Posted Status</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The last posted status of a job. Posted 
+			 statuses are recognized when the SCRIPT_PostStatus function 
+			 is called in the script.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Submitter</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The name of the system manager where 
+			 the job was initiated.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Engine Number</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The number of the engine to which the 
+			 job is currently assigned.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Repeat Interval</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The frequency with which the job will 
+			 be repeated.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Next Run Time</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The point at which the job will run 
+			 again, if scheduled.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Start Run Time</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The calendar date and clock time that 
+			 the job began running.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>End Run Time</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="462"><p 
+				 class="MsoNormal">The calendar date and clock time that 
+			 the job finished running.</p></td>
+		</tr>
+	</table>
+	<h3>Engines Panel</h3>
+	<h4>Buttons</h4>
+	<p class="MsoNormal">This panel contains the following buttons:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr style="height: 22.0pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="29" 
+				 width="168" bgcolor="#E6E6E6"><p class="MsoNormal" style="text-align: center;"><b>Button</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="29" width="470" bgcolor="#E6E6E6"><p class="MsoNormal" 
+				 style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal"><b><img src="OLF_System_Monitor-Script_Engines_files/image008.jpg" 
+															 alt="image018" 
+															 width="75" 
+															 height="15" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">Initializes a new engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal"><b><img src="OLF_System_Monitor-Script_Engines_files/image009.jpg" 
+															 alt="image019" 
+															 width="75" 
+															 height="15" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">Stops the selected engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="168"><p class="MsoNormal"><b><img src="OLF_System_Monitor-Script_Engines_files/image010.jpg" 
+															 alt="image020" 
+															 width="75" 
+															 height="15" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="470"><p 
+				 class="MsoNormal">Stops all running engines.</p></td>
+		</tr>
+	</table>
+	<h4>Fields</h4>
+	<p class="MsoNormal">This panel contains the following fields:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr style="height: 22.0pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="29" 
+				 width="179" bgcolor="#E6E6E6"><p class="MsoNormal" style="text-align: center;"><b>Field 
+			 Item</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="29" width="460" bgcolor="#E6E6E6"><p class="MsoNormal" 
+				 style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Maximum Number of 
+			 Engines</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The maximum number of engines (screng) 
+			 available to run scripts/tasks. The system maximum is 4 engines 
+			 per runsite.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Engine Number</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The system assigned identification number 
+			 of the selected engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Status</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The current system status of the selected 
+			 engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>PID</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The operating system process ID of the 
+			 engine running the script/task (screng.exe).</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Job ID</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">The system 
+			 assigned job identification number that is currently running 
+			 on the selected engine.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Memory Size</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The operating system memory size for 
+			 the process (screng.exe).</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Virtual Mem Size</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The operating system virtual memory 
+			 size for the process (screng.exe).</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>Time Of Status</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The time the engine status changed.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>JVM Initialized</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">An indicator as to whether the script 
+			 engine is enabled for Java scripting.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="179"><p class="MsoNormal"><b>JVM Debug Port</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="460"><p 
+				 class="MsoNormal">The port for which Java scripting debugging 
+			 can be accessed.</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

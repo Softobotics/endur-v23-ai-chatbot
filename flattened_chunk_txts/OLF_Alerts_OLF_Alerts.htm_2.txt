@@ -1,0 +1,23 @@
+This chunk is from the HTML file: OLF_Alerts.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following dropdown menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Clear Log | Deletes the contents of the Alert Log. |
+|  | Print Screen | Prints the current screen. |
+|  | Clear Query | Clears all the currently loaded settings in the Query Panel and resets them to the defaults. |
+|  | Load Query | Reloads the settings from the last time they were saved to the default file. |
+|  | Save Current Saved Setup File As Default | Saves the current settings to the default file, so they can be reloaded the next time the user opens up the workbench.  When saving settings, the user can specify that the settings be loaded automatically when the Alert screen is loaded.Note:Test settings can currently only be saved to the default file.  Whenever the user saves to this file, the old one is overwritten. |
+|  | Delete Query | Allows the user to delete an existing saved Query. |
+|  | Exit | Closes the current window. |
+| Alert Administration | Create Functional Groups | Helps you create the name of the Functional Groups. |
+|  | Personnel Maintenance | Opens thePersonnel Maintenancewindow that allows users to create or edit all the personnel records entered in to the system.  This includes records for external and internal System users.Once personnel records have been created, the user can add them to business units and legal entities later.  The user also has the option of assigning personnel to portfolios, security groups, secured tasks, secured indexes and other configuration attributes. |
+|  | Create Alert Categories | Opens the Alert Categories Table. Helps you to create the name of the Alert Categories. The user can type up to 32 characters in length. |
+|  | Create Alert Receipt Status | Opens the Alert Receipt Status Table. Helps you to create the name of the Alert Categories. The user can type up to 32 characters in length. |
+|  | Refresh Database Status | Allows user to update the changes made in thestatic data such as Functional Groups, Alert Categories and Alert Receipt Status tables. |
+| View | Drill Down | Helps you to drill down and find more details for each Alert. |
+|  | Alert History > Alert Receipt History | Allows viewing the data in the window to reflect any changes entered through the Alert for the individual user. |
+|  | Alert History > Alert History | Allows viewing the data in the window to reflect any changes entered through the Alert for the All users. |
+| Configurations | Configure Message Log | Opens the Configure View table. Users can set up various grouping, sub-totaling and formatting features as a configuration.  The configuration can be saved for later use. |
+| Help | Help | Displays the system Help files. |.

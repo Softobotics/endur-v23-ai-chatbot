@@ -1,0 +1,24 @@
+This chunk is from the HTML file: OLF_Browser.htm.
+ Section heading: Browser Cursor Icons.
+ Text content: The browser cursor changes to reflect different functions within the browser. .
+ Image file: OLF_Browser_files/image002.jpg
+ Image description: the cross is a symbol of the cross.
+ Image file: OLF_Browser_files/image003.jpg
+ Image description: a black arrow pointing up to the right.
+ Image file: OLF_Browser_files/image004.jpg
+ Image description: a black arrow pointing up to the right.
+ Image file: OLF_Browser_files/image005.jpg
+ Image description: a black and white image of a hand with the word ' s '.
+ Image file: OLF_Browser_files/image006.jpg
+ Image description: a magnit with a black handle.
+ Image file: OLF_Browser_files/image007.jpg
+ Image description: a black and white photo of a document.
+ Table data: 
+| Cursor | Function |
+| --- | --- |
+|  | TheCrossbarappears when the cursor is within theFocus Boxof theBrowser Overview.  Click and drag the mouse to move theFocus Box, thereby shifting focus to another area within the overview. |
+|  | TheRight Arrowappears in theFocus Viewwhen the cursor is on the right-most side of a node that is a “parent” with “children”. The “children” in this case are not currently displayed.  Click the node when the cursor is a right arrow to display its children. |
+|  | TheLeft Arrowappears in theFocus Viewwhen the cursor is on the right-most side of an item that is a “parent” with “children”. The “children” in this case are currently displayed.  Click the node when the cursor is a left arrow to hide its children. |
+|  | TheHandappears when the left mouse button is held down while the cursor is in the background of theFocus View.  Move the mouse while holding down the left button to shift focus to another area of the overview. |
+|  | TheMagnifying Glassappears in theFocus Viewwhen the cursor is on a node for which there is an input window.  Click an item when the cursor is a magnifying glass to open the input window of the node. |
+|  | TheNotepadis displayed when the cursor is placed over the Grid symbol/icon on a node. The Grid indicates that the node contains a table.  A number in the upper right hand corner that indicates how many items are present usually accompany this grid.  Click on this icon to display the table. |.

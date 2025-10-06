@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Query Manager OpenJVS Plugin</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nQuery Manager\nOLF_Query_Manager_OpenJVS_Plugin");
+addAvenueInfo("System Use","OLF/OLF_Query_Manager_Query_Designer.htm","OLF/How_to_Create_a_New_Query_view.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Query_Manager.htm\">Query Manager<\/a> &gt; OLF_Query_Manager_OpenJVS_Plugin<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Query Manager - OpenJVS Plugin</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">This section discusses how the system allows an OpenJVS 
+ plugin to assist in the creation of a query.&#160;&#160;The user has complete 
+ freedom to configure a query to their specifications, whatever it may 
+ be.&#160;&#160;The user has a full selection of attributes by which to 
+ search in the <i>Query Manager</i>. The user also has the option of running 
+ an OpenJVS plugin with the query to help run more complex inquiries.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">See <i><a href="OLF_Query_Manager.htm">Query Manager</a></i></p>
+<h2>How It Works</h2>
+<p class="MsoNormal">The <i>Query Manager</i> allows optional scripts to 
+ be called after the main queries are called. This allows the scripts to 
+ add to or delete from the set of deals that are listed in the query_result 
+ table that will be generated.&#160;&#160;They also can perform any other 
+ functions a script of which is capable, such as making notifications to 
+ other parts of the system.&#160;&#160;Furthermore, if a script runs a 
+ query that has associated scripts, these associated query scripts will 
+ be called and run.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">For each page on the query window, the regular query 
+ is executed as before.&#160;&#160;Then, if a script is defined, that script 
+ is called, being passed to the unique <b>query_id, page_num,</b> and <b>do_status</b> 
+ tables from the Query engine.&#160;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">A unique script can be defined for each page on the 
+ query window.&#160;&#160;If no query is defined, then the original behavior 
+ is of the script maintained.&#160;&#160;As the query for each page is 
+ executed, the corresponding script is called immediately afterward. This 
+ is called before the system returns from the query engine.</p>
+<h2>Example</h2>
+<p class="MsoNormal">For example, if the <i>Query Manager</i> is called 
+ from the Trading Manager main window, then the Trading Manager browser 
+ will show the effect of the script.&#160;&#160;The scripts should usually 
+ return with an EXIT_Succeed.&#160;&#160;&#160;EXIT_Fail will cause the 
+ query engine to not execute subsequent query pages, but pages already 
+ processed (including the page that the script is referenced from) will 
+ be saved in the <b>query_result</b> table.&#160;&#160;A good use for this 
+ script is to pull in the hedge deals for each deal selected in the original 
+ query.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">A menu-driven text field has been added to the query 
+ window, to allow the user to select a script.&#160;&#160;When the user 
+ saves the query, the selected scripts are stored as part of the query, 
+ allowing the same scripts to be loaded back in when the saved query is 
+ reloaded.</p>
+<p class="MsoNormal">It should be noted here that when a user runs a query 
+ with one or more associated scripts, the results are returned in a table 
+ called “argt.”&#160;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">The script passes the following significant columns 
+ in the <b>argt</b> table:</p>
+<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+		 width="638">
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="96" bgcolor="#E6E6E6"><p class="TABLEHEADER">Column</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="76" bgcolor="#E6E6E6"><p 
+			 class="TABLEHEADER">Type</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="467" bgcolor="#E6E6E6"><p 
+			 class="TABLEHEADER">Description</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">&quot;QueryId&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Unique 
+		 query_id for the query_result created</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">&quot;PageNum&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Query 
+		 window page number currently being processed</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">&quot;DoStatus&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Set 
+		 to one of the following values:</p>
+		<table class="MsoNormalTable" style="border-collapse: collapse;" 
+				 cellspacing="0">
+			<tr>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="73" 
+					 bgcolor="#E6E6E6"><p class="TABLEHEADER">Value</p></td>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+					 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+					 width="108" bgcolor="#E6E6E6"><p class="TABLEHEADER">Type</p></td>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+					 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+					 width="268" bgcolor="#E6E6E6"><p class="TABLEHEADER">Description</p></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+					 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+					 width="73"><p class="MsoNormal">0</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="108"><p 
+					 class="MsoNormal">DO_CLEAN</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="268"><p 
+					 class="MsoNormal">Select from scratch</p></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+					 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+					 width="73"><p class="MsoNormal">1</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="108"><p 
+					 class="MsoNormal">DO_APPEND</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="268"><p 
+					 class="MsoNormal">Add to existing query_result</p></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; border: solid #000000 1.0pt; 
+					 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+					 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+					 width="73"><p class="MsoNormal">2</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="108"><p 
+					 class="MsoNormal">DO_DELETE</p></td>
+				<td style="vertical-align: top; border-top: none; border-left: none; 
+					 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+					 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+					 padding-right: 0px; padding-bottom: 0px;" width="268"><p 
+					 class="MsoNormal">Remove from existing query_result</p></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">Other columns are passed in argt, but not set are 
+ as above:</p>
+<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="155" bgcolor="#E6E6E6"><p class="TABLEHEADER">Column</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168" bgcolor="#E6E6E6"><p 
+			 class="TABLEHEADER">Type</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;Currency&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;Portfolio&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;SimRunId&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;SimDefId&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;RunType&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;ClientPid&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;QueryName&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_STRING</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;RefreshMktd&quot;,</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;UseClose&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;ClearCache&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;MarketData&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_TABLE</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;SimulationDef&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_TABLE</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;UseMarketPrices&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">&quot;AsmId&quot;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td>
+	</tr>
+</table>
+<h2><b>Sample OpenJVS Plugin</b></h2>
+<p class="MsoNormal"><b><span style="font-size: 14pt; font-weight: normal;"><font size="4" style="font-size:14pt;">/</font></span></b>*$Header: 
+ &#160;Exp $*/</p>
+<p class="MsoNormal">/*</p>
+<p class="MsoNormal">&#160;File Name: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;STD_QueryScriptGetHedges.java</p>
+<p class="MsoNormal">&#160;Report Name:</p>
+<p class="MsoNormal">&#160;Script Tracking Number:</p>
+<p class="MsoNormal">&#160;OutPut File Name: &#160;&#160;&#160;&#160;&#160;&#160;STD_QueryScriptGetHedges.log</p>
+<p class="MsoNormal">&#160;Revision History: &#160;</p>
+<p class="MsoNormal">&#160;Main Script: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;This 
+ is a main script.</p>
+<p class="MsoNormal">&#160;Parameter Script: &#160;&#160;&#160;&#160;&#160;&#160;None</p>
+<p class="MsoNormal">&#160;Display Script: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;None</p>
+<p class="MsoNormal">&#160;Script category: &#160;&#160;&#160;&#160;&#160;N/A</p>
+<p class="MsoNormal">&#160;Process Description: &#160;&#160;&#160;This 
+ script will assist in the creation of a query.</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Process 
+ - do NOT run manually.</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">&#160;Assumptions: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;None</p>
+<p class="MsoNormal">&#160;Instructions: &#160;&#160;&#160;1. Click the 
+ New Query icon or select File<span style='font-family:Wingdings'>&agrave;</span>New 
+ Query from the main menu.</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. 
+ Select User Preferences -&gt; Show Additional Criteria Panel. The Additional 
+ Criteria panel displays at the bottom of the window.</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. 
+ Select a script in the Script field, and if there are none available, 
+ click the icon.</p>
+<p class="MsoNormal">&#160;Uses EOD Results? &#160;&#160;&#160;&#160;&#160;&#160;No</p>
+<p class="MsoNormal">&#160;*/</p>
+<p class="MsoNormal">package standard.process;</p>
+<p class="MsoNormal">import com.olf.openjvs.*;</p>
+<p class="MsoNormal">import com.olf.openjvs.enums.*;</p>
+<p class="MsoNormal">import standard.include.JVS_INC_Standard;</p>
+<p class="MsoNormal">@ScriptAttributes(allowNativeExceptions=true)</p>
+<p class="MsoNormal">@PluginCategory(SCRIPT_CATEGORY_ENUM.SCRIPT_CAT_QUERY)</p>
+<p class="MsoNormal">@PluginType(SCRIPT_TYPE_ENUM.MAIN_SCRIPT)</p>
+<p class="MsoNormal">&#160;public class STD_QueryScriptGetHedges implements 
+ IScript {</p>
+<p class="MsoNormal">private JVS_INC_Standard mINCStandard;</p>
+<p class="MsoNormal">private String err_log_file;</p>
+<p class="MsoNormal">public STD_QueryScriptGetHedges(){</p>
+<p class="MsoNormal">mINCStandard = new JVS_INC_Standard();</p>
+<p class="MsoNormal">&#160;}</p>
+<p class="MsoNormal">public void execute(IContainerContext context) throws 
+ OException</p>
+<p class="MsoNormal">{</p>
+<p class="MsoNormal">String sFileNameError = &quot;STD_QueryScriptGetHedges&quot;;</p>
+<p class="MsoNormal">err_log_file = Util.errorInitScriptErrorLog(sFileNameError);</p>
+<p class="MsoNormal">Table argt = context.getArgumentsTable();</p>
+<p class="MsoNormal">mINCStandard.Print(err_log_file, &quot;START&quot;,&quot;Runing 
+ STD_QueryScriptGetHedges.java.&quot;);</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">// get data from query code</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int query_id = argt.getInt(&quot;QueryId&quot;, 
+ 1);</p>
+<p class="MsoNormal">//int page_num = argt.getInt(&quot;PageNum&quot;, 
+ 1);</p>
+<p class="MsoNormal">//int do_status = argt.getInt(&quot;DoStatus&quot;, 
+ 1);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">// get query list from db</p>
+<p class="MsoNormal">Table tran_list = Table.tableNew();</p>
+<p class="MsoNormal">String sql = &quot;Select query_result from query_result 
+ where unique_id = &quot; + query_id;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">DBaseTable.execISql(tran_list, sql);</p>
+<p class="MsoNormal">tran_list.setColName(1, &quot;tran_num&quot;);</p>
+<p class="MsoNormal">// Go through the list of deals in the original query_result 
+ list, and attempt to add associated hedge deals.</p>
+<p class="MsoNormal">Table hedge_tran_list = Table.tableNew();</p>
+<p class="MsoNormal">int num_rows = tran_list.getNumRows();</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">if (num_rows &lt; 2)</p>
+<p class="MsoNormal">{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;for (int i = 1; i &lt;= 
+ num_rows; i++)</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int tran_num = tran_list.getInt(1, 
+ i);</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;sql = &quot;Select hedge_deal_num 
+ from hedge_association where deal_tracking_num = &quot; + tran_num;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;DBaseTable.execISql(hedge_tran_list, 
+ sql);</p>
+<p class="MsoNormal">&#160;&#160;&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int hedge_rows = hedge_tran_list.getNumRows();</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;for (int j = 1; j &lt;= hedge_rows; 
+ j++)</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;Query.insert (query_id, hedge_deal_num);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;// The following scrap of 
+ code would call viewTable for all deals that have hedge deals assoc with 
+ them</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;if (1 == 0) &#160;//Dead code</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;if (hedge_tran_list.getNumRows() 
+ &gt; 0)</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;hedge_tran_list.setColTitle( 
+ 1, Integer.toString(tran_num));</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hedge_tran_list.viewTable();</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;// Clear table for either 
+ next deal, or after last deal</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hedge_tran_list.clearRows();;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;}</p>
+<p class="MsoNormal">}</p>
+<p class="MsoNormal">else</p>
+<p class="MsoNormal">{</p>
+<p class="MsoNormal">sql = &quot;Select hedge_deal_num from hedge_association, 
+ query_result where query_result = deal_tracking_num &#160;and unique_id 
+ = &quot; + query_id;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;DBaseTable.execISql(hedge_tran_list, 
+ sql);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int hedge_rows = hedge_tran_list.getNumRows();</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;for (int j = 1; j &lt;= hedge_rows; 
+ j++)</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;Query.insert (query_id, hedge_deal_num);</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+<p class="MsoNormal">}</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;// Clear table</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hedge_tran_list.destroy();</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tran_list.destroy();</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+<p class="MsoNormal">mINCStandard.Print(err_log_file, &quot;END&quot;,&quot;End 
+ of STD_QueryScriptGetHedges.java.&quot;);</p>
+<p class="MsoNormal">return;</p>
+<p class="MsoNormal">}</p>
+<p class="MsoNormal">}</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Config-Windows.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window is accessed from various functionalities in the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Open any deal input window. 3. Select Misc à Payment Formula . 4. The following window displays:    .
+ Image file: OLF_Config-Windows_files/image001.jpg
+ Image description: the format format wizard dial in the format format wizard dial.

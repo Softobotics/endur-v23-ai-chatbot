@@ -1,0 +1,19 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Risk.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor . This tab includes the following buttons:.
+ Image file: OLF_System_Monitor-Services_Risk_files/image003.jpg
+ Image description: the wordpress logo.
+ Image file: OLF_System_Monitor-Services_Risk_files/image004.jpg
+ Image description: the word save is written on a white paper.
+ Image file: OLF_System_Monitor-Services_Risk_files/image005.jpg
+ Image description: a barcode with a white background.
+ Image file: OLF_System_Monitor-Services_Risk_files/image006.jpg
+ Image description: a white and black striped background.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Selecting this button displays theRisk Online Resultswindow for the selected definition. This window contains the details of the selected risk exposure definition. |
+|  | Saves changes to the exposure definition’s online status. |
+|  | Selecting this button halts the exposure definition monitoring process. |
+|  | Selecting this button re-starts monitoring the exposure definition(s). |. 
+Links to other files: OLF_System_Monitor.htm.

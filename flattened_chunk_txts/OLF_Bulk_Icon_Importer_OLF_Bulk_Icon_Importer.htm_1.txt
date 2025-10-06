@@ -1,0 +1,18 @@
+This chunk is from the HTML file: OLF_Bulk_Icon_Importer.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:  Importing Multiple Icon Files To import multiple (i.e. bulk import) user icon files: The Icon Import Status window displays, containing detailed information about the files successfully imported, as well as listing the files that were not imported successfully..
+ Image file: OLF_Bulk_Icon_Importer_files/image002.jpg
+ Image description: the logo for the house.
+ Image file: OLF_Bulk_Icon_Importer_files/image003.jpg
+ Image description: the logo for the school.
+ Image file: OLF_Bulk_Icon_Importer_files/image004.jpg
+ Image description: the word stop written in black on a white background.
+ Image file: OLF_Bulk_Icon_Importer_files/image005.jpg
+ Image description: a black and white photo of a person with a white background.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Opens a standard file selection window for choosing the icon file to be imported. Works in conjunction with theDirectoryfield. |
+|  | Opens the Icon Import Status window, which lists detailed information about the icons that were successfully imported, as well as any icons that failed to import. |
+|  | Imports the selected icon files. When importing completes, the Icon Import Status window displays. |
+|  | Closes the window. This button performs the same function as theExitfunction on theFilemenu. |.

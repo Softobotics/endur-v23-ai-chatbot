@@ -1,0 +1,22 @@
+This chunk is from the HTML file: OLF_Groups.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Groups_files/image003.jpg
+ Image description: a white and black striped background with the words ' la poto ' in blue.
+ Image file: OLF_Groups_files/image004.jpg
+ Image description: a white and black striped background with the word ' ' '.
+ Image file: OLF_Groups_files/image005.jpg
+ Image description: a white paper with a black border.
+ Image file: OLF_Groups_files/image006.jpg
+ Image description: a white and black striped background with the word ' d '.
+ Table data: 
+| Button | Description |
+| --- | --- |
+| <Select Group> | Displays a pick list of groups currently defined in the system. 
+		 The name that appears on this button is the group currently selected 
+		 on the pick list. |
+|  | Displays the list of items defined for the group in theGroup Namefield, if any. |
+|  | Deletes the group currently loaded in theGroup 
+		 Namefield. |
+|  | Saves the modifications and closes the window. |
+|  | Closes the window without saving any changes. |.

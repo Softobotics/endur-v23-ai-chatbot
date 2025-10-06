@@ -1,0 +1,35 @@
+This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
+ Section heading: Fields.
+ Text content: Different views display different column names.  At the bottom 
+	 of the window is the SQL Entry Panel (the panel next to the <Apply (F1)> button).  You can type SQL statements 
+	 (queries) into this panel as straight text and execute them.  For 
+	 example, if you wish to display all Toolsets in the Toolset table 
+	 with names beginning with the letter M, type the following commands 
+	 into the SQL Entry Panel:   Press the <Apply (F1)> button.  If there are syntactical 
+	 problems with the query text, an error message generates requesting 
+	 you retype the SQL string.  If there are no problems, all 
+	 data meeting the specified criteria returns in the Table View format.  You can save this text as a stored query by selecting File à Save Ad Hoc Query .  The query is saved in 
+	 the default location.  You can 
+	 load saved queries by selecting File à Load Ad hoc Query. A pick list displays with the previously 
+	 saved queries.  Select one.  The text of that 
+	 query displays in SQL ENTRY PANEL .  The query is 
+	 executed by pressing <Apply (F2)>.  You can 
+	 delete saved queries by selecting File à Delete Ad Hoc Query .  A pick list displays 
+	 with the previously saved queries.  Select one.  A 
+	 confirmation window displays.  Click OK to delete 
+	 the selected query.  You can 
+	 highlight text in the sql edit field, and execute only that text.  This 
+	 allows the user to create multiple SQL statements in the table viewer, 
+	 highlight only the sql they want to execute, and press the <Apply> button or <F1> key.  The system knows that 
+	 text has been highlighted and read only that text.  Warning: Although 
+	 this tool will take standard SQL, there are some things to keep in 
+	 mind 1) SQL varies 
+	 slightly between database servers.  There are potentially 
+	 different reserved words, date may be handled differently and so on.  2) This tool 
+	 will only allow for select statements.  You can not modify 
+	 the database using this tool.  Words like "update" 
+	 are not allowed.  If you need to query for a field in the 
+	 database, such as ab_tran.last_update, be sure that it is not followed 
+	 by a space or it won't work. For example: Won't Work:  select 
+	 * from ab_tran where last_update > '9-Mar-2002' Will Work: select 
+	 * from ab_tran where last_update> '9-Mar-2002' .

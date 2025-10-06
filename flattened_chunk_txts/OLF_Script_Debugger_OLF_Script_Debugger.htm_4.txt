@@ -1,0 +1,37 @@
+This chunk is from the HTML file: OLF_Script_Debugger.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Script_Debugger_files/image002.jpg
+ Image description: a computer with a black and white icon.
+ Image file: OLF_Script_Debugger_files/image003.jpg
+ Image description: the screen with the text ' s in red.
+ Image file: OLF_Script_Debugger_files/image004.jpg
+ Image description: a computer screen with a red eye on it.
+ Image file: OLF_Script_Debugger_files/image005.jpg
+ Image description: a white and black check card with red ribbon.
+ Image file: OLF_Script_Debugger_files/image006.jpg
+ Image description: a computer screen with a red arrow pointing to the left.
+ Image file: OLF_Script_Debugger_files/image007.jpg
+ Image description: a black and white photo of a bird.
+ Image file: OLF_Script_Debugger_files/image008.jpg
+ Image description: a white and blue logo with the words, ` ` `.
+ Image file: OLF_Script_Debugger_files/image009.jpg
+ Image description: a computer screen with a red and black logo.
+ Image file: OLF_Script_Debugger_files/image010.jpg
+ Image description: the text editor is shown in the window.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Prints a screenshot of the current window. |
+|  | Toggles the breakpoint at the line where the cursor is.Use this button to set breakpoints on or off.  Use a breakpoint when you wish pause the script at a particular line.  A line that has a breakpoint set will have a B immediately following the line number.  To set the breakpoint position the cursor on the line where you want the breakpoint and click the Toggle Breakpoint button.  Do the same to remove a breakpoint. |
+|  | Views values in the script.To view the current value of a variable, Hover the mouse over the variable name in the Debugger and left click.  This will place the cursor (a small black triangle) under the variable.  You can use the arrow keys to reposition the cursor if required.  Next select the View button.  The value of the variable will be displayed in the Debugging Messages box at the bottom of the window (except memory tables which will be displayed as a separate window).This button has a few functions:Click in or by a variable name, then clickViewto print this variable.Drag select an expression, then clickViewto print this expression.Right-click on it to pop up a menu listing local and global variable names.  Select a name from the list to print.ClickViewdirectly to repeat previous printings. |
+|  | Scrolls down through the script by line or step or block, as selected by the user.This button has a few functions:Click on this button to step 1 the statementRight-click this button to pop up a menu showing:Finish this blockSkip one stepSkip this blockSelect theStepyou wish.To process the current line press this button.  The current line will have => instead of a line number.  The only exception is when the script hasn’t started processing yet. |
+|  | Continues to run the script until:The next breakpointTo completion if there are no breakpointsThe user presses<CNTL>-C.When pressed this button will start running the script from the current line.  The script will only stop running when a breakpoint, or the end of the script is reached.When you right-click, you get the following menu:#Item1Finish this block2Skip one step3Skip this block | # | Item | 1 | Finish this block | 2 | Skip one step | 3 | Skip this block |
+| # | Item |
+| 1 | Finish this block |
+| 2 | Skip one step |
+| 3 | Skip this block |
+|  | Displays the OLFSearchwindow. |
+|  | Allows the user to highlight a specific function in the script. |
+|  | Prints the text of the entire script or any portion thereof that is highlighted by the user. |
+|  | This blue button displays and hides the panel between the buttons at the top of the screen and the panel that displays the actual script. |.

@@ -1,0 +1,15 @@
+This chunk is from the HTML file: OLF_System_Refresh.htm.
+ Section heading: Notes About ANE.
+ Text content: ANE is used by the system in all versions for So a client that uses and of the above modules must run ANE in all 
+	 versions.  ANE is also used to automatically update Having these modules auto-update is optional and clients using these 
+	 may choose to not run ANE.  They would just need to manually 
+	 refresh queries as needed.  In V7.0 and below, ANE is used to update market data (such as prices/rates) 
+	 on other user’s machines when these are changed.  This updating 
+	 is optional and clients not wanting to take advantage of this feature 
+	 would not need to run ANE.  Clients would just need to manually 
+	 reload data as needed.  In V8.0, this is was redesigned 
+	 to that the Cache Engine automatically updates market data without 
+	 the need for running ANE. Note: This is tentatively 
+	 planned as of November 16, 2004 and expected to make it into V8.0, 
+	 but it is not in V8.0 yet.  So as of November 16, 2004 users 
+	 still need to use the V7.0 method..

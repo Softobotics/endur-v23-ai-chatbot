@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Script_Bulk_Import.htm.
+ Section heading: Overview.
+ Text content: This window displays after file selection from 
+	 the XML Pack file or Plugins to Import window. Note: This page is for V82r1 and later. 
+	 For V81r2 and earlier, see AVS Script Bulk Import..

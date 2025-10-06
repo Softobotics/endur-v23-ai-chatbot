@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>AFE Services</title>
+
+<style type="text/css">
+<!--
+@font-face {
+        font-family: "Cambria Math";
+        panose-1: 2 4 5 3 5 4 6 3 2 4;
+}; @font-face { font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Wingdings 3;
+panose-1:5 4 1 2 1 8 7 7 7 7;
+font-family:Arial Rounded MT Bold;
+panose-1:2 15 7 4 3 5 4 3 2 4; }
+; @page WordSection1 { x-size:8.5in 11.0in;
+margin:1.0in 1.0in 1.0in 1.0in; }
+; p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:24.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:Verdana, sans-serif;
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:Verdana, sans-serif;
+color:#000000; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+page-break-after:avoid;
+font-size:12.0pt;
+font-family:Verdana, sans-serif; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-variant:small-caps; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:5.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:5.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:5.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:5.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+a:link { color:#0000ff;
+text-decoration:underline;
+color:#0000ff; }
+span.MsoHyperlink { color:#0000ff;
+text-decoration:underline; }
+a:visited { color:#800080;
+text-decoration:underline;
+color:#800080; }
+span.MsoHyperlinkFollowed { color:#800080;
+text-decoration:underline; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+span.MsoPlaceholderText { color:#808080; }
+p.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:Verdana, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:Verdana, sans-serif;
+color:#000000;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:Arial, sans-serif;
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:Verdana, sans-serif; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:Verdana, sans-serif; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:Verdana, sans-serif; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:Verdana, sans-serif; }
+p.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:Tahoma, sans-serif; }
+p.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+span.NormalBoldChar { mso-style-name:NormalBold Char;
+mso-style-link:NormalBold;
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" , serif;
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" , serif;
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" , serif;
+font-weight:bold; }
+p.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.temFigTextLeft { mso-style-name:tem FigTextLeft;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Arial Rounded MT Bold" , sans-serif;
+font-weight:bold; }
+li.temFigTextLeft { mso-style-name:tem FigTextLeft;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Arial Rounded MT Bold" , sans-serif;
+font-weight:bold; }
+div.temFigTextLeft { mso-style-name:tem FigTextLeft;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Arial Rounded MT Bold" , sans-serif;
+font-weight:bold; }
+p.TableText { mso-style-name:Table_Text;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.TableText { mso-style-name:Table_Text;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.TableText { mso-style-name:Table_Text;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.TableTextBold { mso-style-name:Table_Text_Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.TableTextBold { mso-style-name:Table_Text_Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.TableTextBold { mso-style-name:Table_Text_Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nOpenLink Central\nAFE Services\nAFE Services Overview");
+addAvenueInfo("System Use","OLF/OLF_AFE_Desktop_Services.htm","OLF/OLF_Current_Date_Roll.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Bulk_Icon_Importer.htm\">OpenLink Central<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_AFE_Desktop_Services.htm\">AFE Services<\/a> &gt; AFE Services Overview<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+<h1>AFE Services</h1>
+<h2>Overview</h2>
+<p class="MsoNormal"><i>AFE (Adaptive Front End) Services</i> can be configured on the <b><i>OpenLink Central Console</i></b> to launch screens/services directly (single-click access) without first opening the parent process. The process takes arguments at startup and launches the requested AFE Service(s). Once <b><i>OpenLink Central</i></b> is started, it can remain in the background listening for further requests.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><span style="color: #ff0000;"><font color="red" >AFE Services support is available in versions 8.0r2 and later.</font></span></p>
+<p class="MsoNormal"><span style="color: #ff0000;"><font color="red" >Starting OpenLink Central as a background process is available in versions 8.1r1 and later.</font></span></p>
+<h3>Examples</h3>
+<p class="MsoNormal" style="text-align: justify;">The following table lists examples of AFE Services:</p>
+<table class="MsoNormalTable" style="margin-left: 5.4pt; border-collapse: collapse;" cellspacing="0">
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="220">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;"><b>Index Definition</b></p>
+</td>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="600">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;">Takes an <i>index id</i> as the input parameter (<b>Arg</b>), opening the Index Definition Screen when the AFE service is executed.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="220">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;"><b>Open File</b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="600">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;">Uses a <i>file name</i> as the input parameter (<b>Arg</b>), opening the file via the operating system program associated with the file type.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="220">
+<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b><a href="OLF_Current_Date_Roll.htm">Current Date Roll</a></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="600">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;">Allows users with Security Privilege 897 ‘Accept Trading Date Updates’ to change the Current Date of the system. No arguments are required.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="220">
+<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b><a href="OLF_AFE_Desktop_Services.htm">AFE Desktop Services - OpenLink Desktop</a></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="600">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;">Enables the creation of <b><i>OpenLink Central</i></b> work environments that are relevant to users and their responsibilities by employing filtered pick lists. A keyword is used as the input parameter (<b>Arg</b>).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="220">
+<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Trade Listing by Query Id</b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="600">
+<p class="MsoNormal" style="margin-bottom: 3.0pt; text-align: justify;">Employs a <i>Query Id</i> as the input parameter (<b>Arg</b>), opening the <i>Trade Listing</i> screen when the AFE service is executed.</p>
+</td>
+</tr>
+</table>
+<h3>Reference Documents</h3>
+<p class="MsoNormal"><i>AFE Services Quick Start Guide</i></p>
+<p class="MsoNormal"><i>AFE Services FAQ</i></p>
+<h2>Setting Up AFE Services</h2>
+<p class="MsoNormal"><b><i>OpenLink Central</i></b> can be customized to allow button and tab configurations where users can place frequently used components. These components and functionality are available through single-click access. Setting up AFE Services is typically a two-step process.</p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Configure <b><i>OpenLink Central</i></b> for the AFE Services</p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Launch AFE Services</p>
+<h2>Configuring OpenLink Central</h2>
+<p class="MsoNormal">This section outlines the steps to customize <b><i>OpenLink Central</i></b>. These steps are necessary if the AFE Service is targeted to access to custom functionality.</p>
+<p class="MsoListNumber2">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Using the <a href="OLF_OpenLink_Configurations.htm">OpenLink Central Configuration</a> window, create new tabs, if desired, to organize the services to be added. In this same window, use the Button Configuration tab to configure buttons for services.</p>
+<p class="MsoNormal" style="margin-left: .25in;"><img src="OLF_AFE_Services_files/image001.jpg" alt="" width="432" height="422" border="0" /></p>
+<p class="MsoListNumber2">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Customize a service with the addition of arguments using the <a href="OLF_AFE_Service_Arguments.htm"><i>OpenLink Central Config Service Arguments</i></a> window by selecting the <b>Args</b> button.</p>
+<p class="MsoNormal" style="text-indent: .25in;"><img src="OLF_AFE_Services_files/image002.jpg" alt="" width="432" height="422" border="0" /></p>
+<p class="MsoListNumber2">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;In version 10.0R2 and above, “Derived Services” can be created. The OpenLink Central Config: Add Service window may be accessed from the <a href="OLF_OpenLink_Configurations.htm"><i>OpenLink Central Configuration</i></a> window or from the right-click menu on a system manager button on the console (see <a href="OLF_Openlink_Central.htm"><i>OpenLink Central</i></a>).</p>
+<p class="MsoListNumber2">4.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Save the modified configuration (see <a href="OLF_Openlink_Central.htm"><i>OpenLink Central</i></a>).</p>
+<h3>Launch AFE Services</h3>
+<p class="MsoNormal">AFE Services can be launched via the following methods:</p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;<a href="#Run_Scripts">Run Scripts</a></p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;<a href="#Config">Configuration Files</a></p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;<a href="#SysConfig">System Wide Configuration</a></p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;<a href="#Desktop">Desktop Shortcuts</a></p>
+<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;<a href="#Command">Command Line Options</a></p>
+<h4><a name="Run_Scripts" id="Run_Scripts">Launch AFE Service - Run Scripts</a></h4>
+<p class="MsoNormal" style="text-align: justify;">Run scripts used to start the OpenLink System can specify an <i><a href="OLF_Environment_Variables.htm">Environment Variable</a></i> to start the desired AFE services. The variable syntax is described in the following table:</p>
+<table class="MsoNormalTable" style="margin-left: 17.6pt; border-collapse: collapse;" cellspacing="0">
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="804">
+<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>set AB_AFE_LAUNCH_SERVICE=”Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt; | Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt;”</b></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="804">
+<p class="MsoNormal"><b>where</b></p>
+<p class="MsoNormal" style="margin-bottom: 3.0pt;">Service&lt;n&gt; - Represents the name of the service.<br />
+arg&lt;a&gt; - Represents the first argument for the service (if applicable).<br />
+arg&lt;b&gt; - Represents the second argument for the service (if applicable).<br />
+The pipe character “|” separates multiple services.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style="text-align: justify; text-indent: .25in;"><span style="font-size: 12.0pt; font-family: 'Times New Roman', serif;"><font size="3" style="font-size:12pt;"><img src="OLF_AFE_Services_files/image003.jpg" alt="image035" width="619" height="339" border="0" /></font></span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: .25in;">&#160;</p>
+<p class="MsoListNumber2">5.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Set the environment variable in the run script.</p>
+<p class="MsoListContinue2">An example of this variable using the Trade Listing service and the Report Viewer service would be entered as follows:</p>
+<p class="MsoListContinue2"><b>set AB_AFE_LAUNCH_SERVICE=”Trade Listing, Configuration Name=0, Public or Private=0 | Report Viewer”</b></p>
+<p class="MsoListContinue2">The Report Viewer service does not have any arguments associated with it and therefore does not need anything except for the service name.</p>
+<p class="MsoListNumber2">6.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Save the edited run script.</p>
+<p class="MsoListNumber2">7.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Execute the run script and the services will start after the user logs in.</p>
+<p class="MsoNormal">&#160;</p>
+<h4><a name="Config" id="Config">Launch AFE Service - Configuration Files</a></h4>
+<p class="MsoNormal" style="text-align: justify;">Configuration files offer another way to launch AFE services when the application starts. The <i><a href="OLF_Environment_Variables.htm">Environment Variable</a></i> is the same as the one used in run scripts, however, there are differences in the use of the variable. The variable syntax is described in the following table:</p>
+<table class="MsoNormalTable" style="margin-left: 17.6pt; border-collapse: collapse;" cellspacing="0">
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="804">
+<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>set AB_AFE_LAUNCH_SERVICE=Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt; | Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt;</b></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="804">
+<p class="MsoNormal"><b>where</b></p>
+<p class="MsoNormal" style="margin-bottom: 3.0pt;">Service&lt;n&gt; - Represents the name of the service.<br />
+arg&lt;a&gt; - Represents the first argument for the service (if applicable).<br />
+arg&lt;b&gt; - Represents the second argument for the service (if applicable).<br />
+The pipe character “|” separates multiple services.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style="text-indent: .25in;"><img src="OLF_AFE_Services_files/image004.jpg" alt="image036" width="608" height="334" border="0" /></p>
+<p class="MsoNormal" style="text-indent: .25in;">&#160;</p>
+<p class="MsoListNumber2">8.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Set the environment variable in the Configuration File.</p>
+<p class="MsoListContinue2">An example of this variable using the Trade Listing service and the Report Viewer service would be entered as follows:</p>
+<p class="MsoListContinue2"><b>set AB_AFE_LAUNCH_SERVICE=Trade Listing, Configuration Name=0, Public or Private=0 | Report Viewer</b></p>
+<p class="MsoListContinue2">The Report Viewer service does not have any arguments associated with it and, therefore, does not need anything except for the service name.</p>
+<p class="MsoListNumber2">9.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Save the edited file.</p>
+<p class="MsoListNumber2">10.Start <b><i>OpenLink Central</i></b> and call the Configuration File. The services will start when the user logs in.</p>
+<h4><a name="SysConfig" id="SysConfig"><span style="font-style: normal;">Configuration File - Optional Settings</span></a></h4>
+<p class="MsoNormal">The following settings can be placed in a configuration file to launch the OpenLink System. Click <a href="../Admin_Manager/ADMIN_LDAP_Configuration.htm">here</a> for details about LDAP (Lightweight Directory Access Protocol) parameters.</p>
+<p class="MsoNormal">AB_LDAP_AUTHENTICATION</p>
+<p class="MsoNormal">AB_SESSION_MANAGEMENT_USER</p>
+<p class="MsoNormal"><b><span style="font-size: 9.0pt;"><font size="1" style="font-size:9pt;">See Also</font></span></b></p>
+<p class="MsoNormal"><i>LDAP_External_Authentication_Quick_Start_Guide</i></p>
+<p class="MsoNormal">&#160;</p>
+<h4>Launch AFE Service - System Wide Configuration</h4>
+<p class="MsoNormal" style="text-align: justify;">AFE services can be started by setting the AB_AFE_LAUNCH_SERVICES variable from the <i><a href="../Admin_Manager/ADMIN_Environment_Configuration.htm">System Wide Configuration</a></i> window.</p>
+<p class="MsoNormal" style="text-indent: .25in;"><img src="OLF_AFE_Services_files/image005.jpg" alt="image037" width="626" height="401" border="0" /></p>
+<p class="MsoNormal" style="text-indent: .25in;">&#160;</p>
+<p class="MsoListNumber2">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Start OpenLink Central.</p>
+<p class="MsoListNumber2">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Open <b>Admin Manager</b> and select “System Wide Configuration” on the <i>General Administration</i> tab.</p>
+<p class="MsoListNumber2">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Expand the “OpenLink Central” tree-view under the <b>Administration</b> folder.</p>
+<p class="MsoListNumber2">4.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select “AB_AFE_LAUNCH_SERVICE”.</p>
+<p class="MsoListNumber2">5.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select a user and click the <b>Configure</b> button. The <i>Set Configuration Value</i> window displays.</p>
+<p class="temFigTextLeft" style="margin-bottom: 6.0pt; text-align: justify; text-indent: .5in;"><span style="font-family: Verdana, sans-serif; font-weight: normal;"><img src="OLF_AFE_Services_files/image006.jpg" alt="image038" width="300" height="284" border="0" /></span></p>
+<p class="MsoListNumber2">6.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Enter services for the variable in the “User Value” field and click <b>OK</b>. The services are entered in the following form:</p>
+<table class="MsoNormalTable" style="margin-left: 35.6pt; border-collapse: collapse;" cellspacing="0">
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="780">
+<p class="temFigTextLeft" style="margin-bottom: 6.0pt;"><span style="font-family: Verdana, sans-serif;">Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt; | Service&lt;n&gt;, arg&lt;a&gt;, arg&lt;b&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="780">
+<p class="MsoNormal"><b>where</b></p>
+<p class="MsoNormal" style="margin-bottom: 3.0pt;">Service&lt;n&gt; - Represents the name of the service.<br />
+arg&lt;a&gt; - Represents the first argument for the service (if applicable).<br />
+arg&lt;b&gt; - Represents the second argument for the service (if applicable).<br />
+The pipe character “|” separates multiple services.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style="margin-left: .5in; text-align: justify;">&#160;</p>
+<p class="MsoListContinue2">An example of this variable using the <b>Trade Listing</b> service and the <b>Report Viewer</b> service would be entered as follows:</p>
+<p class="MsoListContinue2"><b>Trade Listing, Configuration Name=0, Public or Private=0 | Report Viewer</b></p>
+<p class="MsoListContinue2">The <b>Report Viewer</b> service does not have any arguments associated with it and therefore does not need anything other than the service name.</p>
+<p class="MsoNormal" style="margin-left: .5in; text-align: justify;">&#160;</p>
+<p class="MsoListNumber2">7.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Click the <b>OK</b> button in the <i>Set Configuration Value</i> window and then the <b>Save</b> button in the <i>System Wide Configuration</i> window to commit changes to the database.</p>
+<p class="MsoListNumber2">8.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Restart the application and the services will start after the user logs in.</p>
+<p class="MsoNormal">&#160;</p>
+<h4 style="page-break-after: auto;"><a name="Desktop" id="Desktop">Launch AFE Service - Desktop Shortcuts</a></h4>
+<p class="MsoNormal">All OpenLink Services can be integrated into the Microsoft Windows <b>Start</b><span style='font-family:Wingdings'>&agrave;</span><b>Programs</b> menu.</p>
+<p class="MsoListNumber2">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Start OpenLink Central.</p>
+<p class="MsoListNumber2">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select the menu item Available Services<span style='font-family:Wingdings'>&agrave;</span>Launch Available Services.</p>
+<p class="MsoListNumber2">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Navigate to Desktop Shortcuts<span style='font-family:Wingdings'>&agrave;</span>All Services in the <i>Available Services</i> panel.</p>
+<p class="MsoListNumber2">4.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Click <b>OK</b>. This launches the installation of the service shortcuts to the <b>Start</b><b><span style='font-family:Wingdings'>&agrave;</span>Programs</b> menu.</p>
+<p class="MsoListNumber2">5.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Click <b>OK</b> to accept the successful installation message.</p>
+<p class="MsoListNumber2">6.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Navigate to <b>Start</b><b><span style='font-family:Wingdings'>&agrave;</span>Programs</b><b><span style='font-family:Wingdings'>&agrave;</span>OpenLink</b> and verify the shortcuts were created.</p>
+<p class="MsoListNumber2">7.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Launch a service. If the selected service can accept arguments, a default set of arguments will be assigned and launch the service.</p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;">&#160;</p>
+<h4 style="page-break-after: auto;"><a name="Command" id="Command">Launch AFE Service - Command Line Options</a></h4>
+<p class="MsoNormal">Starting services via <i><a href="OLF_Command_Line_Options.htm">Command Line Options</a></i> is particularly useful for launching screens automatically at a desired time.</p>
+<p class="MsoListNumber2">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Start OpenLink Central.</p>
+<p class="MsoListNumber2">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;In the <i>Command Prompt</i> window, navigate to the bin directory of the OpenLink installation.</p>
+<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt; text-indent: .5in;"><img src="OLF_AFE_Services_files/image007.jpg" alt="image033" width="450" height="213" border="0" /></p>
+<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt; text-indent: .5in;">&#160;</p>
+<p class="MsoListNumber2">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Type <b>ols_launcher.exe –c &lt;service name&gt;</b> where service name is the service to start. Services are entered in the following form:</p>
+<table class="MsoNormalTable" style="margin-left: 35.6pt; border-collapse: collapse;" cellspacing="0">
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="780">
+<p class="MsoNormal" style="margin-bottom: .0001pt;"><b>ols_launcher.exe [-c &lt;service name&gt;]</b></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="780">
+<p class="MsoNormal" style="margin-bottom: .0001pt;"><b>where</b></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt;">-c – Tells the executable to take input from the command line.<br />
+&lt;service name&gt; - Represents the AFE service to be started.</p>
+</td>
+</tr>
+</table>
+<h3><a name="rclick" id="rclick"></a><span style="font-size: 10.0pt;"><font size="2" style="font-size:10pt;">&#160;</font></span></h3>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

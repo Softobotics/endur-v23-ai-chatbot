@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Connex_Grid_Mon.htm.
+ Section heading: Monitor View - QA Test Results Panel.
+ Text content: A password controlled, simple application that tests that the gateway cluster/XML engine is functional at its most basic level. .
+ Image file: OLF_System_Monitor-Services_Connex_Grid_Mon_files/image005.jpg
+ Image description: the screen shot of the excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel.

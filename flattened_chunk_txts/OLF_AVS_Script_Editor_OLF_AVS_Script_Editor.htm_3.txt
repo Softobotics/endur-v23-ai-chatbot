@@ -1,0 +1,45 @@
+This chunk is from the HTML file: OLF_AVS_Script_Editor.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | New | Clears theScript Editorwindow for entering new information. |
+|  | Open | Displays a pop-up list of scripts that already exist in the database. |
+|  | Save | Saves the current script to the database after confirmation. |
+|  | Save As | Saves the script to a different name with different permissions. |
+|  | Rename | Change the name of an existing script. Write access is required for the selected script. |
+|  | Delete | Deletes a saved script from the database after confirmation. |
+|  | Properties | Displays theScript Propertieswindow. |
+|  | Print Screen | Prints the current window. |
+|  | Edit Script Categories | Opens the Script Categories screen where you can view and edit Script Categories. |
+|  | Modify Restricted Script Privileges | Displays theDirectory Override Attributeswindow. |
+|  | Script ADDIN Configuration | Displays theScript ADDIN Configurationwindow. |
+|  | Import | Displays theSelect Script to Importwindow. |
+|  | Bulk Import | Displays thePlugin Bulk Importwindow.Note:(for V10.0r2 and later): When importing or re-importing scripts (.mls files) that were created usingBulk Export, use only the generated package .xml file. This is because a bulk exported file name includes path information for exported scripts that is used by the .xml file during import. The single .mls files should not be selected forBulk Importbecause the treatment of file names can result in erroneous file names and duplication. |
+|  | Export | Displays theExport Scriptwindow. |
+|  | Bulk Export | Opens thePlugins Exportwindow. |
+|  | Various Script Names | This displays the last 5 scripts opened by this user. |
+|  | Exit | Exits from theScript Editorwindow and returns to the parent window. |
+| Edit | Select All | Selects the entire text of the selected script. |
+|  | Cut | Cuts the selected portion of the displayed script. |
+|  | Copy | Copies the selected portion of the displayed script. |
+|  | Paste | Pastes the selected portion of the displayed script. |
+|  | Undo Script change | Undo recent changes. |
+|  | Redo Script change | Redo recently removed changes. |
+| Tools | Compile | Compiles the completed script. |
+|  | Compile and Save | Saves and compiles the displayed script. |
+|  | Show Compile Messages | Shows theCompilation Messagestext box at the bottom of the screen. |
+|  | Hide Compile Messages | Hides theCompilation Messagestext box at the bottom of the screen. |
+|  | Find | Displays a pop-up window. This can be used to enter a text string to search for in the selected script. |
+|  | Go to Line | Displays a pop-up window. This can be used to enter the line number to go to. |
+|  | Function Lookup | Shows the prototype for the function. |
+|  | Search All Scripts | Opens theSearch All Scriptswindow. |
+|  | Run Script | Runs the script. This can only be used if the script has been saved to the database. If the script has not been saved, this will be grayed out. |
+|  | Print Script | Prints the entire current script or a selected portion of the script to the default printer. |
+|  | Import Standard Script Packages | Import Standard Script Packages |
+| Help | Help | Displays information about this window. |
+|  | Function Help | Displays Help files for certain keywords in the script. |
+|  | Keyboard Help | Displays theScript Editor Keyboard Helpwindow.See Keyboard Shortcuts |
+|  | Script Functions | Displays theScript Functions and Argumentswindow. |
+|  | Script Global Variables | Displays theScript Global Variableswindow. |.

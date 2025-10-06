@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Toolbar_Configuration.htm.
+ Section heading: Configure Toolbar Tab.
+ Text content:   See the Trader (V8.0r1)/OpenLink (V8.0r2 and up) Desktop’s Toolbar Configuration window for the description of the menu items, buttons, and fields.  .
+ Image file: OLF_Toolbar_Configuration_files/image002.jpg
+ Image description: the software interface for the software interface.

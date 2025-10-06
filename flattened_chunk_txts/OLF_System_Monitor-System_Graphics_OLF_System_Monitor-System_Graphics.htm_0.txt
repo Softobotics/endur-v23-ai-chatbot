@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_System_Monitor-System_Graphics.htm.
+ Section heading: Overview.
+ Text content: This window shows display variable details. While the data is read-only, the values shown can be configured using the following external environment variables:  Contact the OpenLink Support Desk for instruction in changing these variable settings.  See System Wide Configuration See System Monitor  This tab is available in v8.0r1 and up only. .
+ Table data: 
+| Variable | Description |
+| --- | --- |
+| AB_GRAPHICS_THEME | This variable determines the theme files to be used for default widget properties. These files determine most of the widget graphics properties that can be set. This variable is set in the runscript. |
+| AB_GUI_PICKLIST_INDICATOR | This variable determines if menu fields and calendar pop ups will show with down arrows and calendar icons, respectively. This variable is set in the runscript. |
+| AB_OLF_DEF_FONT | This variable determines the font to be used throughout the application. This variable is configured in the System Wide Configuration. |. 
+Links to other files: ../Admin_Manager/ADMIN_Environment_Configuration.htm, OLF_System_Monitor.htm.

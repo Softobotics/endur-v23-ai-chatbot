@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Oping.htm.
+ Section heading: Overview.
+ Text content: This tab provides the ability to diagnose communications between modules/processes for the server/database logged into. This window consists of the Oping Filters panel and the Oping Data Table panel. The filters panel contains fields that can be utilized in filtering the results that are shown in the data table.  The following Security Privileges are required to access this window:   See System Monitor .
+ Table data: 
+| Privilege ID | Privilege |
+| --- | --- |
+| 29300 | Access Diagnostics Tab |
+| 29310 | Access Oping Tab |. 
+Links to other files: OLF_System_Monitor.htm.

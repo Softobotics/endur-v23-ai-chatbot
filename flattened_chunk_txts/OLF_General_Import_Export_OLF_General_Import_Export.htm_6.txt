@@ -1,0 +1,27 @@
+This chunk is from the HTML file: OLF_General_Import_Export.htm.
+ Section heading: General Import/Export Tab Buttons.
+ Text content: This window has the following buttons:.
+ Image file: OLF_General_Import_Export_files/image002.jpg
+ Image description: a white paper with the word ' power ' written on it.
+ Image file: OLF_General_Import_Export_files/image003.jpg
+ Image description: the powerdoo logo.
+ Image file: OLF_General_Import_Export_files/image004.jpg
+ Image description: a white paper with the word word on it.
+ Image file: OLF_General_Import_Export_files/image005.jpg
+ Image description: a white paper with the word ' word ' written on it.
+ Image file: OLF_General_Import_Export_files/image006.jpg
+ Image description: a white and black photo of a person.
+ Image file: OLF_General_Import_Export_files/image007.jpg
+ Image description: a white and black photo of a white and black photo of a white and black photo of a white.
+ Image file: OLF_General_Import_Export_files/image008.jpg
+ Image description: a white and black logo with the word glo.
+ Image file: OLF_General_Import_Export_files/image009.jpg
+ Image description: a white and black striped background with the word ' d '.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Opens a window that lets you drill down to the elements that make up the import/export data. |
+|  | Opens the import/export configuration file.This lets you view the file in its native format, such as Comma-Separated Values (CSV) or eXtensible Markup Language (XML), after import/export is invoked. |
+|  | Imports and exports data from/to the source/target file. |
+|  | Close the window. |
+|  | Brings up a dialog box for choosing a file or folder. |.

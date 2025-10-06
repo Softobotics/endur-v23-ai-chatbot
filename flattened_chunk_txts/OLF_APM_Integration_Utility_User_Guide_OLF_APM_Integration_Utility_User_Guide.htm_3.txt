@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_APM_Integration_Utility_User_Guide.htm.
+ Section heading: Miscellaneous Pre-Requisites.
+ Text content: - User 
+ Defined Simulation Result (Must be functional) - ID 
+ Ranges (Provided upon delivery of License).

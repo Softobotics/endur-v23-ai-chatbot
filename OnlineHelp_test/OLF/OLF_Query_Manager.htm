@@ -1,0 +1,2378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Query Manager</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nQuery Manager\nQuery Manager Overview");
+addAvenueInfo("System Use","Trading_Manager/TRADING_Power_Scheduling_Phys_Manage.htm","OLF/OLF_Query_Manager_AVS_Script.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Query_Manager.htm\">Query Manager<\/a> &gt; Query Manager Overview<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>Query Manager</h1>
+	<h2>Overview</h2>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The <i>Query Manager</i> 
+	 is used to search and extract information from the system. A query 
+	 is performed to retrieve information from the database based on the 
+	 query criteria specified by the user. Any criteria entered into the 
+	 Query window limits what is retrieved from the database. For example, 
+	 in the <i>Trading Explorer Desktop</i>, if a <i>Bond</i> toolset is 
+	 specified in the <b>ToolSet</b> field of the <i>Transaction</i> table, 
+	 the system will only display bond deals in the <i>Trading Explorer 
+	 Desktop</i>.</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The parameters for 
+	 filtering data differ and depend on the functionality, desktop, or 
+	 system manager driving the query. The search criteria defined may 
+	 be very broad to retrieve many items or very specific as to retrieve 
+	 just one item.</p>
+	<p class="MsoNormal">&#160;</p>
+	<h2>Accessing the Trades Query Window</h2>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt; text-indent: -48px; 
+		 margin-left: 48px;"><span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; 
+									 mso-fareast-font-family: 'Times New Roman'; 
+									 mso-fareast-theme-font: minor-fareast; 
+									 mso-bidi-font-family: 'Times New Roman'; 
+									 mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; 
+									 mso-fareast-language: EN-US; font-weight: bold; 
+									 font-family: Calibri, sans-serif;"><font size="3" style="font-size:12pt;">Note</font></span><span 
+	 style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'; 
+	 mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; 
+	 mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; 
+	 mso-bidi-language: AR-SA; font-weight: bold; font-family: Calibri, sans-serif;"><font size="3" style="font-size:12pt;">:</font></span><span 
+	 style="mso-tab-count: 1; font-family: Calibri, sans-serif;">&#160;&#160;</span><span 
+	 style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'; 
+	 mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; 
+	 mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; 
+	 mso-bidi-language: AR-SA; font-family: Calibri, sans-serif;"><font size="3" style="font-size:12pt;">&#160;There 
+	 are multiple ways to access this window; however, only one way is 
+	 defined because some features can only be accessed via this procedure.</font></span> 
+	 </p>
+	<p class="MsoListNumber2">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Start 
+	 the Trading Explorer.</p>
+	<p class="MsoListNumber2">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Click 
+	 the <span><img src="OLF_Query_Manager_files/image028.jpg" alt="" style="border: none;" 
+					 border="0" /></span> icon, or select <span style="font-weight: bold;">Trading 
+	 Explorer</span> <b><span style='font-family:Wingdings'>&agrave;</span> 
+	 Query Manager</b>. The following window displays:</p>
+	<p class="MsoListContinue2" style="margin-left: 24px;"><span><img src="OLF_Query_Manager_files/image029.jpg" 
+	 alt="" style="border: none;" border="0" /></span></p>
+	<h2>Menu Items</h2>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt; page-break-after: avoid;">This 
+	 window contains the following menu items:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="647">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Menu</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Item</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">File</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">New Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Clears the fields in the window so that 
+			 a new query may be created.</p>
+			<p class="TableText">Erases any data in the <i>Query</i> window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Open Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Displays a pick list of existing queries.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Reload Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Reloads the current query from the database—clears 
+			 the local changes.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Save Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Saves the displayed query to the file 
+			 name specified in the <b>Query Name</b> field. If the query 
+			 is not previously saved, an input window displays to enter 
+			 the name of the query.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Save Query As</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This is used to save the query 
+			 as a different query, and at the same time, allows the user 
+			 to define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Rename Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This window allows the user to 
+			 define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query that is currently 
+			 loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Delete Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Deletes the query loaded on screen from 
+			 the database. Only the owner of a loaded query may delete 
+			 the query (with the exception of administrators and super-users) 
+			 unless they have write access. If a user selects this option, 
+			 a warning message displays and asks whether the user wishes 
+			 to continue. If the user has write access and clicks the <b>OK</b> 
+			 button to confirm the deletion, the loaded query is deleted. 
+			 Otherwise, an error message is displayed.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Compare Queries</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the query comparison dialog. The 
+			 query comparison dialog box is used to view the differences 
+			 between two saved queries.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Search for Saved 
+			 Queries</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Used to search for saved 
+			 queries based on criteria entered in the Query Manager.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Export Queries</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Saves the query that is currently loaded 
+			 on screen to a text file. Once the process is complete, the 
+			 complete path where the file was saved is displayed.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Import Queries</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens a file browser that is used to 
+			 navigate to the file that will be imported. Once the process 
+			 is complete, details about the import is displayed.</p>
+			<p class="TableText"><b>Note:</b> To be available, this option 
+			 requires Security Privilege 498 “Import Queries.”</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Query Security Information</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This window allows the user to 
+			 define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query that is currently 
+			 loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Query Properties</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens a dialog box displaying information 
+			 about the current query.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Find Column</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Find Query Views containing 
+			 a specific database column or table.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Print Summary</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Prints the summary page of the query 
+			 currently loaded on the screen to a file. The location of 
+			 the file is displayed once the process is complete.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Print Screen</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Sends a copy of the current window display 
+			 to a local printer.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Launch Available 
+			 Services</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Displays the <i><a href="OLF_OpenLink_Central_Launch_Available_Service.htm">&#160;Launch 
+			 Available Service</a></i> window which allows a user to launch 
+			 a system service or module without navigating through the 
+			 menus.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Exit</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Closes the window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Execute</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Executes the query and leaves the query 
+			 manager open.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Execute and Close (F1)</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Executes the query and closes the query 
+			 manager.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show SQL</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Displays a dialog box that contains 
+			 the structured language query (SQL) string that will be used 
+			 as the query string.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Enable Cancellable 
+			 Query</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Enable or disable the 
+			 ability to cancel query execution.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">User Preferences</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Save User Preferences</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Saves the current screen layout, to 
+			 include:</p>
+			<p class="TableText"><span style="font-family: Symbol;">·</span><span 
+			 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Window 
+			 size</p>
+			<p class="TableText"><span style="font-family: Symbol;">·</span><span 
+			 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Toolbar 
+			 layout</p>
+			<p class="TableText"><span style="font-family: Symbol;">·</span><span 
+			 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;hidden 
+			 and shown panels</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Delete User Preferences</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Removes the saved user preferences from 
+			 the window display.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Restore User Preferences</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Reloads the user preferences from the 
+			 database—all local changes are cleared from the window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Summary Panel</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Displays or hides the <i>Summary</i> 
+			 p<i style="font-style: normal;">anel</i> that is displayed 
+			 on the left-hand side of the window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Designer Panel</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the <i>Designer Panel</i>. 
+			 The <i>Designer Panel</i> is used to change the Query Manager’s 
+			 window display.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Additional Criteria Panel</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <i>Additional 
+			 Criteria Panel</i> that is located in the bottom portion of 
+			 the screen.</p>
+			<p class="TableText">See <a href="OLF_Query_Manager_AVS_Script.htm">Query 
+			 Manager – AVS Script</a></p>
+			<p class="TableText">or </p>
+			<p class="TableText">See <a href="OLF_Query_Manager_OpenJVS_Plugin.htm">Query 
+			 Manager - OpenJVS Plugin</a></p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Show Description 
+			 Panel</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Show or hide the <span 
+			 style="font-style: italic;"><i>Description </i></span>Panel. A description 
+			 of the query can be added in this field.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show SQL Snippets in Tooltips</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of SQL snippets 
+			 in tooltips. When enabled, the tooltip that is displayed over 
+			 field labels contain the snippet of SQL that will be generated 
+			 for the values that are currently selected in the field.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Lock Toolbars</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the ability to configure 
+			 the toolbars.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Execute Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>Execute</b> 
+			 toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Saved Queries Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>Saved 
+			 Queries</b> toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Saved Query Views Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>Saved 
+			 Query Views</b> toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Sub-Query Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>Sub-Query</b> 
+			 toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Print Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>Print</b> 
+			 toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show User Preferences Toolbar</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the display of the <b>User 
+			 Preference</b> toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Show Group Colors 
+			 in Summary Panel</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Show or hide group colors 
+			 in the Summary panel.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">Sub-Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Add Sub-Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Adds a new sub-query to the current 
+			 query displayed on the screen.</p>
+			<p class="TableText"><b>Warning: The hard-coded limit for the 
+			 number of Sub-queries that can be created in the <i>Query</i> 
+			 <i>Manager</i> is 5.</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Clear Current Sub-Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Clears the values defined on the sub-query 
+			 that is currently displayed on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Clear All Sub-Queries</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Clears the values defined on all the 
+			 sub-queries of the query.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Clear To Current Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Reloads the current query from the database, 
+			 clearing the local changes.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Include (+) Sub-Query</p>
+			<p class="TableTextBold">&#160;</p>
+			<p class="TableTextBold">Exclude (-) Sub-Query</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">These menus toggle to <b>include (+)</b> 
+			 or <b>exclude (-)</b> the query results of the particular 
+			 sub-query from the overall query results.</p>
+			<p class="TableText">For example<i>, Sub-query 1</i> of the 
+			 query is defined as:</p>
+			<p class="TableText"><i>Sub-Query 1 (+)</i></p>
+			<p class="TableText"><b>Toolset = BondFut</b></p>
+			<p class="TableText"><b>Tran Type = Holding</b></p>
+			<p class="TableText">Once executed, the query will display 
+			 all BondFut master instruments in the browser.</p>
+			<p class="TableText">If a new <i>Sub-query (2)</i> is added, 
+			 the toggle button is set to minus (-) and is defined as follows:</p>
+			<p class="TableText"><i>Sub-Query 2 (-)</i></p>
+			<p class="TableText"><b>Ins Type = BONDFUT</b></p>
+			<p class="TableText"><b>Tran Type = Holding</b></p>
+			<p class="TableText">Once executed, the query will not include 
+			 the BONDFUT master instruments from the query results, so 
+			 that only BILLFUT master instruments are displayed in the 
+			 browser.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Execute Sub-Query and Append</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Executes the query and adds the query 
+			 results of the Sub-Query that is currently displayed on screen 
+			 to the overall query results. This is useful in testing to 
+			 see if the query result of a particular sub-query is added 
+			 to the overall query results. The sub-query to test must be 
+			 loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Execute Sub-Query and Delete</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Executes the query and excludes the 
+			 query results of the sub-query that is currently displayed 
+			 on screen to the overall query results. This is useful in 
+			 testing to see if the query result of the particular sub-query 
+			 is excluded from the overall query results. The sub-query 
+			 to test must be loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">Designer</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Designer Panel</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Show or hide the <i>Designer Panel</i>. 
+			 The <i>Designer Panel</i> is used to change the Query Manager’s 
+			 window display.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">New Query View</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Creates a new empty view clearing any 
+			 local changes to the current view. The fields no longer display 
+			 in the window.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Open Query View</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Opens a listing of System 
+			 and Query Views.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Save Query View</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Saves the displayed query to the file 
+			 name specified in the Query Name field. If the query is not 
+			 previously saved, the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window opens to enter the name of the query 
+			 view.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Save Query View As</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This is used to save the query 
+			 view as another query view, and at the same time, allows the 
+			 user to define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query view.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Rename Query View</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This window allows the user to 
+			 define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query view that 
+			 is currently loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Delete Query View</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Deletes the query view loaded on screen 
+			 from the database.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Show Query View Security Information</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_Properties_Window.htm"><i>Configure 
+			 Properties</i></a> window. This window allows the user to 
+			 define the ownership values (for example, path, directory, 
+			 owner, and group) and permissions for the query view that 
+			 is currently loaded on screen.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">Misc</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Defaulting <span style='font-family:Wingdings'>&agrave;</span> 
+			 None</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Select this option when there is no 
+			 default query.</p>
+			<p class="TableText"><b>Note:</b> A checkmark displays beside 
+			 the selected option.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Defaulting <span style='font-family:Wingdings'>&agrave;</span> 
+			 Default</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Select this option to make the query 
+			 that is currently loaded on the <i>Query Manager</i> as the 
+			 default query. The default query automatically loads in the 
+			 <i>Query Manager</i> whenever it is opened.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Defaulting <span style='font-family:Wingdings'>&agrave;</span> 
+			 Autoload</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Select this option to automatically 
+			 load the results of the default query into the browser whenever 
+			 the browser is opened.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">Help</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">Help</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Displays the system Help files.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="127"><p class="TableTextBold">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="129"><p 
+				 class="TableTextBold">About</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="391"><p 
+				 class="TableText">Opens the <a href="OLF_About_Window.htm"><i>About</i></a> 
+			 window, which is used to displays system information.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="127"><p 
+				 class="TableTextBold">&#160;</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="129"><p class="TableTextBold">Defaults</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="391"><p class="TableText">Displays the Query Help 
+			 window, which lists the Query Manager default settings.</p></td>
+		</tr>
+	</table>
+	<h3>Toolbar Buttons</h3>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">This window contains 
+	 the following buttons:</p>
+	<p class="MsoNormal" style="margin-bottom: 10.0pt;"><b>Note</b>: If 
+	 these buttons do not display in the browser, right-click in an empty 
+	 top portion of the window to display them.</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="655">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="241" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Button</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="414" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="655" bgcolor="#F2F2F2"><p class="TABLEHEADER">Execute 
+			 Buttons</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image002.jpg" 
+														 alt="image001.jpg" 
+														 width="69" height="21" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Executes the query currently loaded 
+			 on screen. The Query Manager remains displayed on the screen.</p>
+			<p class="TableText">Executing a query replaces the existing 
+			 query results with the new query results. If a pre-defined 
+			 query is not loaded on screen, such as the query fields are 
+			 blank, the system-default query is executed.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image003.jpg" 
+														 alt="image031.jpg" 
+														 width="121" height="21" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Executes the query currently loaded 
+			 on screen and closes the Query Manager.</p>
+			<p class="TableText">Executing a query replaces the existing 
+			 query results with the new query results. If a pre-defined 
+			 query is not loaded on screen, such as the query fields are 
+			 blank, the system default query will be executed. After the 
+			 query has been completed the Query Manager will close.</p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="655" bgcolor="#F2F2F2"><p class="TABLEHEADER">Query 
+			 Buttons</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image004.jpg" 
+														 alt="image003.jpg" 
+														 width="16" height="19" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>File</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> New Query</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image005.jpg" 
+														 alt="image004.jpg" 
+														 width="18" height="18" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>File</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Save Query</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image006.jpg" 
+														 alt="image027.jpg" 
+														 width="20" height="16" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>File</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Save Query 
+			 As</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image007.jpg" 
+														 alt="image006.jpg" 
+														 width="162" height="27" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Displays the name of the query currently 
+			 loaded on screen. To load a query, right-click in the field 
+			 and select the query to load from the pick list.</p></td>
+		</tr>
+		<tr>
+			<td style="border: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt;" width="241" bgcolor="#FFFFFF"><p 
+				 class="TableText"><img src="OLF_Query_Manager_files/image009.jpg" 
+										 alt="image009.jpg" width="187" 
+										 height="24" border="0" /></p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="414"><p class="TableText">Displays the name of 
+			 the query view currently loaded on screen. To load a query 
+			 view, right-click in the field and select the query to load 
+			 from the pick list.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1pt #000000; border-right: solid 1pt #000000; 
+				 border-bottom: solid 1pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="241"><p 
+				 class="TableText"><img src="OLF_Query_Manager_files/image021.jpg" 
+										 alt="" style="border: none;" border="0" /></p></td>
+			<td style="border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="414"><p class="TableText">This has the same function 
+			 as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> 
+			 Print Screen</b>. Clicking the down arrow next to the icon 
+			 provides the user with an additional option <span style="font-weight: bold;">Print 
+			 Summary</span>, which saves a summary of Query Criteria to 
+			 the Endur/Findur installation directory.</p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="655" 
+				 bgcolor="#F2F2F2"><p class="TABLEHEADER">Designer Panel 
+			 Sub–Query Buttons</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image010.jpg" 
+														 alt="image016.jpg" 
+														 width="102" height="22" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>Sub-Query</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Add Sub-Query</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="241" 
+				 bgcolor="#FFFFFF"><p class="TableText"><img src="OLF_Query_Manager_files/image011.jpg" 
+															 alt="image017.jpg" 
+															 width="72" 
+															 height="20" 
+															 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>Sub-Query</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Clear All 
+			 Sub-Queries</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image012.jpg" 
+														 alt="image019.jpg" 
+														 width="15" height="16" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This is a toggle button that hides or 
+			 shows the <span style="font-style: italic;"><i>Summary</i></span> 
+			 Panel that is located on the left-hand side of the Query Manager. 
+			 Accessed via the User Preferences Toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image013.jpg" 
+														 alt="image020.jpg" 
+														 width="19" height="19" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This is a toggle button that hides or 
+			 shows the additional criteria panel that is located on the 
+			 bottom of the Query Manager. Accessed via the User Preferences 
+			 Toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image014.jpg" 
+														 alt="image022.jpg" 
+														 width="18" height="18" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This is a toggle button that hides or 
+			 shows the <span style="font-style: italic;"><i>Designer</i></span> 
+			 Panel that is located on the right-hand side of the Query 
+			 Manager. Accessed via the User Preferences Toolbar.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="241"><p 
+				 class="TableText"><img src="OLF_Query_Manager_files/image026.jpg" 
+										 alt="" style="border: none;" border="0" /></p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="414"><p class="TableText">This is a toggle button 
+			 that hides or shows the <span style="font-style: italic;"><i>Description</i></span> 
+			 Panel that is located on the bottom of the Query Manager. 
+			 Accessed via the User Preferences Toolbar.</p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="655" bgcolor="#F2F2F2"><p class="TABLEHEADER">Designer 
+			 Panel Buttons</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image004.jpg" 
+														 alt="image003.jpg" 
+														 width="16" height="19" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>Designer</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> New Query 
+			 View</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image005.jpg" 
+														 alt="image001.jpg" 
+														 width="18" height="18" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>Designer</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Save Query 
+			 View</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="241"><p 
+				 class="TableText"><img src="OLF_Query_Manager_files/image027.jpg" 
+										 alt="" style="border: none;" border="0" /></p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="414"><p class="TableText">This has the same function 
+			 as <b>Designer</b> <b><span style='font-family:Wingdings'>&agrave;</span> 
+			 Save Query View As</b>.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image015.jpg" 
+														 alt="image011.jpg" 
+														 width="17" height="19" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Use this button to remove the selected 
+			 fields from the Query Manager table.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image016.jpg" 
+														 alt="image024.jpg" 
+														 width="17" height="15" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Use this button to automatically re-size 
+			 the fields in the <i>Query Manager</i> table.</p></td>
+		</tr>
+		<tr style="height: 27.85pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="37" width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image017.jpg" 
+			 alt="image026.jpg" width="17" height="18" border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="37" 
+				 width="414"><p class="TableText">Use this button to add 
+			 fields with values to view.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image018.jpg" 
+														 alt="image031.jpg" 
+														 width="9" height="24" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Hides or shows the <i>Summary</i> panel.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image019.jpg" 
+														 alt="image037.jpg" 
+														 width="7" height="22" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Hides or shows the <i>Designer</i> panel.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image020.jpg" 
+														 alt="image032.jpg" 
+														 width="24" height="9" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Hides or shows the <i>Additional Query</i> 
+			 panel.</p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="655" bgcolor="#F2F2F2"><p class="TABLEHEADER">Print 
+			 Button</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><img src="OLF_Query_Manager_files/image021.jpg" 
+														 alt="image018.jpg" 
+														 width="16" height="17" 
+														 border="0" /></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">This has the same function as <b>File</b> 
+			 <b><span style='font-family:Wingdings'>&agrave;</span> Print Summary</b> 
+			 and <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> 
+			 Print Screen.</b></p></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="655" bgcolor="#F2F2F2"><p class="TABLEHEADER">Additional 
+			 Criteria Button</p></td>
+			
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="241"><p class="TableText"><span><img src="OLF_Query_Manager_files/image030.jpg" 
+															 alt="" style="border: none;" 
+															 border="0" /></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="414"><p 
+				 class="TableText">Click this button to open the <i>Query 
+			 Script</i> window.</p>
+			<p class="TableText">The <i>Additional Query Criteria</i> field 
+			 of the <i>Query Manager</i> allows the user to enter additional 
+			 structured query language (SQL) commands to extend the query.</p>
+			<p class="TableText">Any standard SQL expression supported 
+			 by the underlying database platform can be used.</p></td>
+		</tr>
+	</table>
+	<h3>Fields</h3>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt; page-break-after: avoid;">This 
+	 window contains the following fields:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="652">
+		<col style="width: 34.206%;" />
+		<col width="429" />
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6"><p 
+				 class="TABLEHEADER">Field</p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER">Description</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableTextBold"><b>Summary</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableText">Displays 
+			 the search criteria of the query. It shows the table name 
+			 and the values of the query fields for each Sub-Query of the 
+			 query, the additional query criteria, and the selected script.</p></td>
+		</tr>
+		<tr>
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableTextBold"><b>Value 
+			 Column</b></p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableText">Input field to enter the value of the 
+			 field to be searched. The user may either select an item off 
+			 the pick list defined, or enter a new value in the value column. 
+			 If the user wishes to include all values in the query, these 
+			 fields may be left blank.</p>
+			<p class="TableText">If several values are entered in a field, 
+			 it takes an <u>OR</u> relationship, such as either one of 
+			 the values may be satisfied to be retrieved by the query. 
+			 For example, if <b>Toolset = Bonds</b> and <b>BondFut</b>, 
+			 all Bond <u>or</u> BondFut deals will be retrieved.</p>
+			<p class="TableText">The following operators may be used in 
+			 all text entry query fields:</p>
+			<table style="border-collapse: separate; border-collapse: separate;" 
+					 cellspacing="0" width="100%" border="1">
+				<col style="width: 16.352%;" />
+				<col style="width: 83.648%;" />
+				<tr>
+					<td><p class="TableText"><b><span style="font-weight: normal;">&gt;</span><span 
+					 style="font-weight: bold;">&#160;</span></b></p></td>
+					<td><p class="TableText">greater than</p></td>
+				</tr>
+				<tr>
+					<td><p class="TableText"><span><b style="font-weight: bold;">&lt;&#160;</b></span></p></td>
+					<td><p class="TableText">less than</p></td>
+				</tr>
+				<tr>
+					<td><p class="TableText"><span><b style="font-weight: bold;">=</b></span></p></td>
+					<td><p class="TableText">equal</p></td>
+				</tr>
+				<tr>
+					<td><p class="TableText"><b style="font-weight: normal;">!</b></p></td>
+					<td><p class="TableText">not equal to</p></td>
+				</tr>
+			</table>
+			<p class="TableText">&#160;</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableText"><b>Additional Criteria – SQL:</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableText">Text 
+			 field to enter additional SQL statements or commands. An Additional 
+			 Query Criteria field is provided for every Sub-Query of the 
+			 <i>Query Manager</i>. This field is hidden by default. Click 
+			 the <b>Triangle</b> button located at the bottom left corner 
+			 of the screen to display this field.</p>
+			<p class="TableText">See <a href="OLF_Query_Manager_Additional_Query_Criteria.htm"><i>Additional 
+			 Query Criteria</i></a></p></td>
+		</tr>
+		<tr style="height: 79.15pt;">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="106"><p class="TableTextBold"><b>Additional Criteria 
+			 – Script:</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="106"><p 
+				 class="MsoNormal" style="margin-bottom: 3.0pt;">Opens 
+			 the <a href="OLF_Directory_Browser.htm"><i>Open Query Script</i></a> 
+			 window. This is used to select a script to assist in the creation 
+			 of a query. By default, this field is hidden. Click the <b>Triangle</b> 
+			 button located at the bottom left corner of the screen to 
+			 display this field.</p>
+			<p class="MsoNormal" style="margin-bottom: 3.0pt;">See <i><a 
+			 href="OLF_Query_Manager_AVS_Script.htm">Query Manager AVS 
+			 Script</a> or </i><a href="OLF_Query_Manager_OpenJVS_Plugin.htm" 
+									 style="font-style: italic;">Query 
+			 Manager - OpenJVS Plugin</a></p></td>
+		</tr>
+		<tr style="height: 79.15pt;">
+			<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+				 border-bottom: solid 1.0pt #000000; vertical-align: top; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" height="106"><p 
+				 class="TableTextBold">Description</p></td>
+			<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+				 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 height="106"><p class="MsoNormal" style="margin-bottom: 3.0pt;">Text 
+			 field to enter information about the loaded query.</p></td>
+		</tr>
+	</table>
+	<h3>Function Keys</h3>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">This window utilizes 
+	 the following function keys:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="664">
+		<col style="width: 23.496%;" />
+		<col width="508" />
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6"><p 
+				 class="TABLEHEADER"><b>Key</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableTextBold"><b>F1</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableText">Query. 
+			 Query-Append. This has the same function as the <span style="font-weight: bold;">Execute 
+			 and Close</span> menu item.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableTextBold"><b>F2</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableText">Query-Append. 
+			 This has the same function as the <b>Execute Sub-Query and 
+			 Append</b> menu item.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;"><p 
+				 class="TableTextBold"><b>F3</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;"><p class="TableText">Query-Remove. 
+			 This has the same function as the <b>Execute Sub-Query and 
+			 Delete</b> menu item.</p></td>
+		</tr>
+	</table>
+	<h3>Logical Operators</h3>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">It is very important 
+	 that users understand the logical operators <i>AND</i>, <i>OR</i>, 
+	 and <i>NOT</i>. When a query is executed, the criteria entered for 
+	 different fields (such as <i>ToolSet</i> and <i>Tran</i> <i>Status</i>) 
+	 takes an <i>AND</i> relationship, while the different criteria entered 
+	 for a specific field takes an <i>OR</i> relationship. For example, 
+	 if the user enters <b>FX</b> and <b>Cash</b> in the <b>ToolSet</b> 
+	 field, and <b>New</b> and <b>Validated</b> in the <b>Tran Status</b> 
+	 fields, then any transactions in the database that have a toolset 
+	 value of <b>FX</b> OR <b>Cash</b>, <u>AND</u> a Tran Status of <b>New</b> 
+	 OR <b>Validated</b> will be retrieved. To reiterate,</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;the 
+	 different rows on the query screen are ”<b>AND</b>ed” together</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;the 
+	 comma-separated values are “<b>OR</b>ed” together</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">To perform more 
+	 complex queries, users may use additional logical operators such as</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;less 
+	 than (&lt;)</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;greater 
+	 than (&gt;)</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;not 
+	 equal to (!)</p>
+	<p class="MsoListBullet2"><span style="font-family: Symbol;">·</span><span 
+	 style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span>&#160;“and” 
+	 (+)</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Note:</b> The 
+	 less than and greater than operators only apply to fields involving 
+	 numbers such as the deal tracking number or dates.</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The following are 
+	 examples of using the logical operators:</p>
+	<h4>Example 1: To retrieve transactions entered after 1 May 2015</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="TableText"><b>Input Date</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">&gt; 1May15</p></td>
+		</tr>
+	</table>
+	<h4>Example 2: To retrieve deals entered after 1 May 2015 and before 
+	 1 June 2015, use the “and” operator</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="TableTextBold"><b>Input Date</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">&gt; 1May15, + &lt; 1Jun15</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The first inclination 
+	 of many users is to enter “&gt; 1May015” and “&lt; 1Jun15” , but this 
+	 would not work because the two criteria would be <b><i>OR</i></b>ed 
+	 together, making the combined criteria “greater than 1May15” OR “less 
+	 than 1Jun15”, which would include every date possible! The “and” operator 
+	 changes the default behavior of the “OR” relationship that exists.</p>
+	<h4>Example 3: To exclude trades entered on 1 June 2015</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="TableTextBold"><b>Trade Date</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">! 1Jun15</p></td>
+		</tr>
+	</table>
+	<h4>Example 4: To exclude trades done on both 1 June and 8 June of 
+	 2015</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="TableTextBold"><b>Trade Date</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">! 1Jun15, +! 8Jun15</p></td>
+		</tr>
+	</table>
+	<h4>For fields such as “Deal Num”, a combination of the logical operators 
+	 may be entered. To illustrate,</h4>
+	<h4>Example 1: To retrieve deals whose deal number is between 20000 
+	 and 30000 or between 50000 and 55000</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="TableTextBold"><b>Deal Num</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">&gt; 20000 + &lt; 30000, &gt; 50000 
+			 + &lt; 55000</p></td>
+		</tr>
+	</table>
+	<h4>Example 2: To retrieve deals between 20000 and 30000 but not deal 
+	 25000</h4>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="155" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="398" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Selected 
+			 Values</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="155"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Deal 
+			 Num</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="398"><p 
+				 class="TableText">&gt; 20000 + &lt; 30000, + !25000</p></td>
+		</tr>
+	</table>
+	<h3>Character String Fields</h3>
+	<p class="MsoNormal">Multiple items of character reference strings, 
+	 such as <i>Reference</i> and <i>Ticker</i>, must be separated with 
+	 commas. The multi-line editor may also be used to aid in entering 
+	 multiple values.</p>
+	<p class="MsoNormal">Wildcard characters such as the asterisk (*) can 
+	 be embedded within the string to search string fields such as “Reference”. 
+	 You could enter *JPY*97 to get anything that has both “JPY” and “97” 
+	 embedded within the string.</p>
+	<p class="MsoNormal"><b>Note</b>: When querying for a value that is 
+	 a floating point number, the system uses an epsilon value to search 
+	 for a number that is within an acceptable range rather than looking 
+	 for an exact matching value. If the end-user wishes to find an exact 
+	 match, then they must put an equal sign before the value (for example:, 
+	 =4.079).</p>
+	<h2>Frequently Asked Questions</h2>
+	<p class="NormalBold">Question: The query is returning more trades 
+	 than I expected. For example, I only queried for trades with a status 
+	 of &quot;Validated&quot;, but I am also getting trades with a status 
+	 of &quot;New&quot;. Why is that?</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Answer:</b></p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The system auto-adds 
+	 all deals included in a <i>Composer</i>. So if you have a composer 
+	 with a status of Validated and it contains 10 deals with a status 
+	 of new, you will see that the system will retrieve those additional 
+	 trades as well. This can cause a problem with EOD (End-of-Day) Saved 
+	 Queries used for EOD simulations. EOD simulations are run for one 
+	 portfolio at a time. If you have a query that returns deals in more 
+	 than one portfolio, the EOD will return an error message. If you have 
+	 a Composer that contains deals in several portfolios, then those deals 
+	 will be brought into the query, which can cause problems. The solution 
+	 is to exclude Composer deals from your query.</p>
+	<p class="NormalBold">Question: The query is not returning deals that 
+	 I am expecting it to return. Why is that?</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Answer:</b></p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The <i>Query Manager</i> 
+	 has some security restrictions based on what portfolios for which 
+	 a user has authorization. For example, you could have portfolios 1 
+	 through 10, with 100 trades in each. If a user only has authorization 
+	 for two portfolios, only the 200 deals in those two portfolios will 
+	 be retrieved.</p>
+	<p class="NormalBold">Question: How can I retrieve deals with a status 
+	 of &quot;Matured&quot;, &quot;Pending&quot; or &quot;Template?&quot;</p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Answer:</b></p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">The <i>Trading Query</i> 
+	 (such as the <i>Query Manager</i> for the Trading Manager) defaults 
+	 to look for deals with a status of New and &quot;Validated&quot;. 
+	 To view deals from any other status, simply set the “Tran Type” field 
+	 to the appropriate status, for example, <i>Matured</i>, <i>Pending</i>, 
+	 or <i>Template</i>.</p>
+	<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; 
+		 margin-left: 0in; page-break-after: avoid;"><b><i>Q: How can I 
+	 retrieve Master Instruments/Holding Records?</i></b></p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;"><b>Answer:</b></p>
+	<p class="MsoNormal" style="margin-bottom: 3.0pt;">Set the <b>Tran 
+	 Type</b> field to <i>Holding</i>.</p>
+	<h2>Creating a New Query</h2>
+	<ol style="list-style: decimal;">
+		<li style="font-family: Calibri, sans-serif;"><p class="MSONORMAL" 
+														 style="font-family: Calibri, sans-serif;">Select 
+		 <b>File</b><span style='font-family:Wingdings'>&agrave;</span><b>New Query</b>.</p></li>
+		<li style="font-family: Calibri, sans-serif;"><p class="MSONORMAL" 
+														 style="font-family: Calibri, sans-serif;">Enter 
+		 or select the query criteria in the appropriate fields of the 
+		 table.</p></li>
+		<li style="font-family: Calibri, sans-serif;"><p class="MSONORMAL" 
+														 style="font-family: Calibri, sans-serif;">Repeat 
+		 step 2 when criteria will be defined for more than one query.</p></li>
+		<li style="font-family: Calibri, sans-serif;"><p class="MSONORMAL" 
+														 style="font-family: Calibri, sans-serif;">To 
+		 enter additional query criteria for the current sub-query, show 
+		 the <i>Additional Criteria</i> panel through the menu item (<b>User 
+		 Preferences<span style='font-family:Wingdings'>&agrave;</span>Show 
+		 Additional Criteria Panel</b>) or through the toolbar (<img src="OLF_Query_Manager_files/image013.jpg" 
+		 alt="image020.jpg" width="19" height="19" border="0" /> icon). 
+		 The additional query criteria field displays at the bottom of 
+		 the window.</p></li>
+	</ol>
+	<p class="MsoListNumber2" style="margin-left: 24px;"><span><img src="OLF_Query_Manager_files/image031.jpg" 
+	 alt="" style="border: none;" border="0" /></span></p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">5.<span 
+	 style="font-size: 7.0pt;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Enter the 
+	 additional SQL commands in the <b>SQL</b> text field.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">6.<span 
+	 style="font-size: 7.0pt;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;To select 
+	 a script to perform an additional query, click the <img src="OLF_Query_Manager_files/image022.jpg" 
+															 alt="image005.jpg" 
+															 width="22" 
+															 height="21" 
+															 border="0" />&#160;icon. 
+	 The <i>Query Script</i> window displays.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">7.<span 
+	 style="font-size: 7.0pt;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select the 
+	 script to perform the additional query.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">8.<span 
+	 style="font-size: 7.0pt;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;To add an 
+	 additional sub-query to the query, select <b>Sub-Query</b> <b><span style='font-family:Wingdings'>&agrave;</span> Add 
+	 Sub-Query</b>, or click the <b>Add Sub-Query</b> button <img src="OLF_Query_Manager_files/image024.jpg" 
+	 alt="image033.jpg" width="21" height="22" border="0" />.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">9.<span 
+	 style="font-size: 7.0pt;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;To delete 
+	 a sub-query, click on the <b>X</b> shown in the <i>Sub-Queries</i> 
+	 tab. When the query only contains one sub-query, the tabs will not 
+	 be shown. The first sub-query cannot be deleted.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">10.Repeat 
+	 steps 1 through 7 to define the query criteria for this sub-query.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">11.Click 
+	 the <b>Save Query</b> icon <img src="OLF_Query_Manager_files/image005.jpg" 
+									 alt="image001.jpg" width="18" height="18" 
+									 border="0" />&#160;to save the query. 
+	 An input window displays, which is used to enter the query name.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">12.Type 
+	 the name of the query.</p>
+	<p class="MSONORMAL" style="margin-left: 24px; font-family: Calibri, sans-serif;">13.Click 
+	 the <b>OK</b> button to save the query to the database.</p>
+	<h2>Query Entries</h2>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt; page-break-after: avoid;">The 
+	 following table summarizes options that can be used when creating 
+	 queries.</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="638">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="169" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER">Query Entry Option</p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="469" bgcolor="#E6E6E6"><p class="TABLEHEADER">Description</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="169"><p class="TableTextBold"><b>British Pound/European 
+			 Euro</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="469"><p 
+				 class="TableText">Query Manager supports the ability to 
+			 query for strings that begin with the following Unicode characters:</p>
+			<p class="TableText"><b>£</b> (British Pound)</p>
+			<p class="TableText"><b>€</b> (European Euro)</p>
+			<p class="TableText"><b>¥</b> (Yen)</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="169"><p class="TableTextBold"><b><span style="color: #333333;"><font color="#333333" >Comma-Delimited 
+			 String</font></span></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="469"><p 
+				 class="TableText"><span style="color: #333333;"><font color="#333333" >Comma-delimited 
+			 strings can be used in specific fields. Integer and Format 
+			 Ref Integer fields allow pasting of comma-delimited strings.</font></span></p>
+			<p class="TableText"><b>Entering Comma-Delimited Strings</b></p>
+			<p class="TableText">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Enter 
+			 a comma-delimited string in the <b>DealNum</b> field such 
+			 as 1,4,2,5.</p>
+			<p class="TableText">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Press 
+			 the <b>Enter</b> key. The text will populate in the correct 
+			 fields. Each comma-separated value displays in a different 
+			 adjacent cell.</p>
+			<p class="TableText">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Insert 
+			 a new number in column 6. It should display in column 5 because 
+			 new values are shifted over any unused columns.</p>
+			<p class="TableText">4.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Insert 
+			 a value of (77,88) into column 3. It should start in column 
+			 3 and have the next value (88) put into column 4.</p>
+			<p class="TableText"><b>Pasting Comma-Delimited Strings</b></p>
+			<p class="TableText">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Open 
+			 <i>Notepad</i> and enter the following string there: 1,2,3,4 
+			 or</p>
+			<p class="TableText">Open Excel and input 1 2 3 4 across the 
+			 first four columns. Then copy your data to the buffer (<b>Ctrl-c</b>).</p>
+			<p class="TableText">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Click 
+			 on the first column of the <b>DealNum</b> field in the Query 
+			 Manager and press <b>Ctrl-v</b>. If using Excel, commas are 
+			 automatically added.</p>
+			<p class="TableText">3.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Press 
+			 the <b>Enter</b> key. The text is populated across the query 
+			 table.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="169"><p class="TableTextBold"><b>Strings/Sub-Strings</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="469"><p 
+				 class="TableText"><span style="color: #333333;"><font color="#333333" >Strings 
+			 or sub-strings may be enclosed in single or double quotes. 
+			 Characters may be escaped using a backslash.</font></span></p>
+			<p class="TableText">1.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Enter 
+			 <b>Amended, Deleted</b> into the first column of <b>Tran</b> 
+			 <b>Status</b>.</p>
+			<p class="TableText">2.<span style="font-size: 7.0pt; font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Press 
+			 the <b>Enter</b> key. The text values are spread into the 
+			 cells.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="169"><p class="TableTextBold"><b>Symbolic Dates</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="469"><p 
+				 class="TableText">Symbolic date variables can now be used 
+			 in a database query.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="169"><p class="TableTextBold"><b>Date Formats</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="469"><p 
+				 class="TableText">Dates can be formatted as dd-mm-yyyy.</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+	<h2>See Also</h2>
+	<p class="MsoNormal"><a href="OLF_Query_Manager_Query_Designer.htm">Query 
+	 Manager Designer</a></p>
+	<p class="MsoNormal"><a href="OLF_Query_Manager_Additional_Query_Criteria.htm">Query 
+	 Manager—Additional Query Criteria</a></p>
+	<p class="MsoNormal"><a href="OLF_Query_Manager_OpenJVS_Plugin.htm">Query 
+	 Manager - OpenJVS Plugin</a></p>
+	<p class="MsoNormal"><a href="OLF_Query_Manager_AVS_Script.htm">Query 
+	 Manager – AVS Script</a></p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

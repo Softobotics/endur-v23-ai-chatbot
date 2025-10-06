@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_Backwards_Compatibility.htm.
+ Section heading: Partially Implemented Items.
+ Text content:  .
+ Table data: 
+| # | Description |
+| --- | --- |
+| 1 | These Instrument Types were only partially implemented and are not fully functional.  Clients should not use them without getting explicit permission from OpenLink.#ToolsetInstrument Name1ComOptC-EO-CALL-C2ComOptC-EO-CALL-P3ComOptC-EO-PUT-C4ComOptC-EO-PUT-P5FX-OptionC-FXO-C-C6FX-OptionC-FXO-C-P7FX-OptionC-FXO-P-C8FX-OptionC-FXO-P-P9OptionC-IR-CAP-C10OptionC-IR-CAP-P11OptionC-IR-FLR-C12OptionC-IR-FLR-P | # | Toolset | Instrument Name | 1 | ComOpt | C-EO-CALL-C | 2 | ComOpt | C-EO-CALL-P | 3 | ComOpt | C-EO-PUT-C | 4 | ComOpt | C-EO-PUT-P | 5 | FX-Option | C-FXO-C-C | 6 | FX-Option | C-FXO-C-P | 7 | FX-Option | C-FXO-P-C | 8 | FX-Option | C-FXO-P-P | 9 | Option | C-IR-CAP-C | 10 | Option | C-IR-CAP-P | 11 | Option | C-IR-FLR-C | 12 | Option | C-IR-FLR-P |
+| # | Toolset | Instrument Name |
+| 1 | ComOpt | C-EO-CALL-C |
+| 2 | ComOpt | C-EO-CALL-P |
+| 3 | ComOpt | C-EO-PUT-C |
+| 4 | ComOpt | C-EO-PUT-P |
+| 5 | FX-Option | C-FXO-C-C |
+| 6 | FX-Option | C-FXO-C-P |
+| 7 | FX-Option | C-FXO-P-C |
+| 8 | FX-Option | C-FXO-P-P |
+| 9 | Option | C-IR-CAP-C |
+| 10 | Option | C-IR-CAP-P |
+| 11 | Option | C-IR-FLR-C |
+| 12 | Option | C-IR-FLR-P |.

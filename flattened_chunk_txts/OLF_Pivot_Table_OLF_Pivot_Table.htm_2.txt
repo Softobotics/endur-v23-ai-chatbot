@@ -1,0 +1,19 @@
+This chunk is from the HTML file: OLF_Pivot_Table.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | View Table | Displays the table on which the pivot table will be based. |
+|  | Pivot Table | Generates and displays the pivot table based on the column, row, and data settings in the window. |
+|  | Save | Either saves the pivot table configuration to the user's private directory as a file or as a private link.  To save it as a file, enter the name in the “Pivot Name” field only. To save it as a link, enter the name in both the “Pivot Name” and “Linked To” fields.Warning: You can only save pivot table configurations as part of the set up for RTPE. |
+|  | Link to Public | Saves the pivot table configuration as a public link. A public link is available to all users. To save as a public link, enter the name in the “Pivot Name” field.Warning: You can only save pivot table configurations as part of the set up for RTPE. |
+|  | Save Public | Saves the pivot configuration as a public file. A public file is available to all users.Warning: You can only save pivot table configurations as part of the set up for RTPE. |
+|  | Exit | Closes the window. |
+| Tools | Add Column | Adds a field to the Columns list box. To add a column, highlight the field to be added in the Field list box then select this option. |
+|  | Remove Column | Removes a field from the Columns list box. To remove a column, highlight the field to be removed in the Columns list box then select this option. |
+|  | Add Row | Adds a field to the Rows list box. To add a row, highlight the field to be added in the Field list box then select this option. |
+|  | Remove Row | Removes a field from the Rows list box. To remove a row, highlight the field to be removed in the Rows list box then select this option. |
+|  | Add Data | Adds a field to the Data list box. To add data, highlight the field to be added in the Field list box then select this option. |
+|  | Remove Data | Removes a field from the Data list box. To remove data, highlight the field to be removed in the Data list box then select this option. |
+| Help | Help | Displays the system Help files. |.

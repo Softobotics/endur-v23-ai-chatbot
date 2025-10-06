@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_Logon_Info_Mgmt.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Print | Prints the current screen. |
+|  | Save | Saves the screen selections, “Credentials” and/or “Environment” to the designated “Registry” or “Config File” designated in theSave Selected Logon Information To. |
+|  | Exit | Closes the window. |
+| Tools | Clear Registry Credentials | Removes the saved credentials (user name and password in encrypted form) from the Windows registry. |
+|  | Clear Registry Environment | Removes the saved environment variable names and values from the Windows registry. |
+| Help | Help | Displays the system help files. |.

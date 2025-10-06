@@ -1,0 +1,13 @@
+This chunk is from the HTML file: OLF_Keyboard_Shortcuts.htm.
+ Section heading: Hot Keys For V8.0+ When AB_TEXT_EDIT_USE_SHORTCUT_KEYS Is Set To FALSE.
+ Text content:  Note: Ctl-Y is the only hot key that behaves differently. .
+ Table data: 
+| Hot Key | Description |
+| --- | --- |
+| Ctl-X | Cut (same as kill-region) |
+| Ctl-C | Copy  (same as copy-region) |
+| Ctl-V | Paste (same as yank) |
+| Ctl-Z | Undo last significant text change |
+| Ctl-Y | Redo last significant text change |
+| Ctl-Home | beginning-of-buffer |
+| Ctl-End | end-of-buffer |.

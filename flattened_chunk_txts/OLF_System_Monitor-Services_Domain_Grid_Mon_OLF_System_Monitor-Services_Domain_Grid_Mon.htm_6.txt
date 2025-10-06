@@ -1,0 +1,16 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Domain_Grid_Mon.htm.
+ Section heading: Buttons.
+ Text content: This view contains the same toolbar buttons as the System Monitor with the following additions:.
+ Image file: OLF_System_Monitor-Services_Domain_Grid_Mon_files/image003.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_System_Monitor-Services_Domain_Grid_Mon_files/image004.jpg
+ Image description: the logo for the company.
+ Image file: OLF_System_Monitor-Services_Domain_Grid_Mon_files/image005.jpg
+ Image description: the logo for the project.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | View services that are currently running. |
+|  | View theGrid Monitorused to monitor grid services activity of pre-configured domain grids.. This view contains domain clusters and grid engines configured through theServices Managermodule. |
+|  | v91r2 and up.View theRequest Monitorused to monitor requests sent to Grid Services. |. 
+Links to other files: OLF_System_Monitor.htm.

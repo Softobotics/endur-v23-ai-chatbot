@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_Properties_Window.htm.
+ Section heading: Field Items.
+ Text content: This window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Name | Input the name of the file. |
+| Version | Displays the version number of the file. The version number is incremented to 1 whenever the file is modified and saved. |
+| Directory | The folder the file will be saved or is located. Right-click the field to display a pick list of directories. Select the directory where the file will be saved. |
+| Config Type | This field displays only when saving or modifying the properties of a Trader Desktop screen configuration. It displays the screen configuration type that is being saved or modified, e.g. Desktop Config, Multi Trade Panel Config, Toolbar Config, etc. |
+| Full Path | Displays the location or full path of the file. |
+| Owner | The user ID of the person authorized to read, write, or execute the file. Right-click the field to display a pick list of users. Select the user to give access rights. |
+| Security Group | The security group authorized to read, write, or execute the file. Right-click the field to display a pick list of security groups. Select the security group to give access rights. |
+| Public Permissions | This represents the security settings for all users. Check the appropriate checkboxes to authorize the public to read, write, or execute the file. |.

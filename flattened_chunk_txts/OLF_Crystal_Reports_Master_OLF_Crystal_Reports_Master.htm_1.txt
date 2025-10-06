@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Crystal_Reports_Master.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: 1. Select the Crystal Reports icon from OpenLink Central . The following window displays:   Other ways to access this window: · Select the Message Center icon from OpenLink Central . The Message Center window displays. Choose View à Crystal Report Viewer from the menu. · Select the Services Manager icon from OpenLink Central . The Services Manager window displays. Select the Workflow Services tab. Choose View à Crystal Report Viewer from the menu. · Select the Accounting Manager icon from OpenLink Central . The Accounting Manager window displays. Click the Crystal Reports Module icon. · Open the Trading Manager . Right-click Main Group node to display Group Menu . Select Crystal Reports . · Open the Operations Manager . Select the Confirmation icon from the Daily Operations tab. The Confirmation window displays. Click the Crystal Reports Module icon. · Open the Operations Manager . Select the Settlements icon from the Daily Operations tab. The Settlements window displays. Click the Crystal Reports Module icon. .
+ Image file: OLF_Crystal_Reports_Master_files/image001.jpg
+ Image description: a bottle of green liquid with a blue cap.
+ Image file: OLF_Crystal_Reports_Master_files/image002.jpg
+ Image description: the software interface for the software interface.
+ Image file: OLF_Crystal_Reports_Master_files/image003.jpg
+ Image description: a man in a suit and tie is sitting on a chair.

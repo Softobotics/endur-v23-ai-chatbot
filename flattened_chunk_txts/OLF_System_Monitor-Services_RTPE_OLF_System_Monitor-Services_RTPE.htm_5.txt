@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_RTPE.htm.
+ Section heading: RTP Definition Panel.
+ Text content: This panel contains the following fields: Right-clicking on any row within the table returns the following menu items:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Show Online Definitions Only | Selecting this box filters the RTP definitions in the table to show only those definitions that are online. |
+| Online | Selection of this checkbox, in conjunction with theSave Changesbutton, brings the indicated RTP definition online. |
+| Definition Name | The user-assigned identifier of the selected RTP definition. |
+| Batch Status | Displays the standing of the task being used to process the selected definition. |
+| Engine | The system running the selected RTP definition. |
+| Definition Type | Displays the definition type, as defined in theRTPE Definitionscreen. |
+| Defn Status | Displays the standing of the selected RTP definition. |
+| Batch Task | The task utilized in batch processing. |
+| Defn ID | The unique, system-assigned identifier given to a RTP definition. |. Table data: 
+| Item | Description |
+| --- | --- |
+| Start/Restart Monitoring | Brings the selected definition online to be monitored. |
+| Stop Monitoring | Takes the selected definition offline and ceases to monitor it. |
+| View Batch Execution Log | Opens theBatch Execution Logwindow. This window contains details of the tasks and scripts that run as part of the Batch Task. |.

@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Functions-Arguments.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: The following window displays: .
+ Image file: OLF_AVS_Functions-Arguments_files/image001.jpg
+ Image description: the screens are shown in the screens below the text field.

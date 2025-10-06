@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Current_Date_Roll.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content:    .
+ Image file: OLF_Current_Date_Roll_files/image001.jpg
+ Image description: the dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial.
+ Image file: OLF_Current_Date_Roll_files/image002.jpg
+ Image description: the screenshote dial on the screen.

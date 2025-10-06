@@ -1,0 +1,41 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Fields.
+ Text content: This 
+	 window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Summary | Displays 
+			 the search criteria of the query. It shows the table name 
+			 and the values of the query fields for each Sub-Query of the 
+			 query, the additional query criteria, and the selected script. |
+| Value 
+			 Column | Input field to enter the value of the 
+			 field to be searched. The user may either select an item off 
+			 the pick list defined, or enter a new value in the value column. 
+			 If the user wishes to include all values in the query, these 
+			 fields may be left blank.If several values are entered in a field, 
+			 it takes anORrelationship, such as either one of 
+			 the values may be satisfied to be retrieved by the query. 
+			 For example, ifToolset = BondsandBondFut, 
+			 all BondorBondFut deals will be retrieved.The following operators may be used in 
+			 all text entry query fields:>greater than<less than=equal!not equal to | > | greater than | < | less than | = | equal | ! | not equal to |
+| > | greater than |
+| < | less than |
+| = | equal |
+| ! | not equal to |
+| Additional Criteria – SQL: | Text 
+			 field to enter additional SQL statements or commands. An Additional 
+			 Query Criteria field is provided for every Sub-Query of theQuery Manager. This field is hidden by default. Click 
+			 theTrianglebutton located at the bottom left corner 
+			 of the screen to display this field.SeeAdditional 
+			 Query Criteria |
+| Additional Criteria 
+			 – Script: | Opens 
+			 theOpen Query Scriptwindow. This is used to select a script to assist in the creation 
+			 of a query. By default, this field is hidden. Click theTrianglebutton located at the bottom left corner of the screen to 
+			 display this field.SeeQuery Manager AVS 
+			 ScriptorQuery 
+			 Manager - OpenJVS Plugin |
+| Description | Text 
+			 field to enter information about the loaded query. |.

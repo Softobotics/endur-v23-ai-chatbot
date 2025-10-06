@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_Date_and_Time_Period_Format_Conventions.htm.
+ Section heading: Time Periods.
+ Text content: For some date fields, the system allows you to define the date by entering a relative offset rather than a specific date. For example, if you enter 5y in the Maturity Date field on a deal entry window, the system calculates the maturity date to be 5 years from the start date.  Some fields require a relative offset.  In either case, when entering relative offsets in the system, enter a number followed by the letter d for days, w for weeks, m for months, and y for years.  The system incorporates good business day logic when using relative offsets to calculate future dates.   Click on the hyperlink for more information on using Symbolic Dates in the OLF system.  .
+ Table data: 
+| Format | Example | Meaning |
+| --- | --- | --- |
+| nd | 5d | 5 days |
+| nw | 2w | 2 weeks |
+| nm | 6m | 6 months |
+| ny | 30y | 30 years |. 
+Links to other files: OLF_Symbolic_Dates.htm.

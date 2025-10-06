@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Query_Manager_Query_Designer.htm.
+ Section heading: Overview.
+ Text content: The Query Manager Designer is used to create custom Views within the Query Manager. Fields can be added, removed, 
+	 changed, and ordered in custom views. Note : The user must have Security Id 70000 
+	 in order to open and use the Designer. .

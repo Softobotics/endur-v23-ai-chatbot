@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Groups.htm.
+ Section heading: How To: Adding a New Group.
+ Text content: 1. Click 
+ the Select Group button and select “ADD NEW GROUP” from the pick 
+ list. The “Group Name” field clears. 2. Input 
+ the name of the new group in the Group 
+ Name field. 3. Click 
+ the OK button to save the new group. The window closes and the 
+ new group column is added to the Portfolio/Entity Groups window. .

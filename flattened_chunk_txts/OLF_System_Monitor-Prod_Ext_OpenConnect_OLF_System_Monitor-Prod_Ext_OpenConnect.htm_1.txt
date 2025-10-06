@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_System_Monitor-Prod_Ext_OpenConnect.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content:  .
+ Image file: OLF_System_Monitor-Prod_Ext_OpenConnect_files/image001.jpg
+ Image description: a cross with a purple background.
+ Image file: OLF_System_Monitor-Prod_Ext_OpenConnect_files/image002.jpg
+ Image description: the screens are selected in the text field.

@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_All_Services.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Status | Shows the status of the selected service/engine. Statuses are color–coded. |
+| Server Node | The name of the server where the selected service/engine runs. |
+| Location | The location of the server where the selected service/engine runs. |.

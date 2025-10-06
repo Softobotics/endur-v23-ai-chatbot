@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_AVS_Script_Bulk_Import.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Print | Prints the current window. |
+|  | Exit | Exits from thePlugin Bulk Importwindow and returns to the parent window. |
+| Project | Start Project Manager | Opens thePlugin 
+			 Project Managerwindow. |
+| Help | Show Error | Opens theJava plug-in Compile Errorwindow. |
+|  | Help | Displays information about this window. |.

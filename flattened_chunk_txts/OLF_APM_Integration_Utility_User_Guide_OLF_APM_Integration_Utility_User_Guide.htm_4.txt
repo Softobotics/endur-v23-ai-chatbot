@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_APM_Integration_Utility_User_Guide.htm.
+ Section heading: Accessing this Window.
+ Text content: Note : There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure. 1. From 
+ Openlink Central, right-click anywhere on the header and select Launch 
+ Available Services . The Launch Available Services window displays. 2. Type APM Integration Utility in 
+ the Filter Service field, 
+ highlight APM Integration Utility in the Available Services panel, and then click Launch . 
+ The following window displays: .

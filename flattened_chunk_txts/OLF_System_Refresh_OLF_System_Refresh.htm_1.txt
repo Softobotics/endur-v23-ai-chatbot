@@ -1,0 +1,22 @@
+This chunk is from the HTML file: OLF_System_Refresh.htm.
+ Section heading: Approaches To Data Access.
+ Text content: One approach to data access is to always load data as needed from 
+	 the central data store, the database.  This is a simple 
+	 approach and it ensures data is up to date at all times, but it is 
+	 very bad in terms of performance.  An alternative to this 
+	 approach is to implement a data caching functionality.  A 
+	 data cache is data kept in local memory for when it will be needed 
+	 in the future.  Accessing data from local memory is faster 
+	 than accessing the same data from the database.   Data 
+	 retrieved from the database involves a network message to be sent 
+	 to and from the database, which is a delay.  Also, because 
+	 of the shared nature of the database resource, it is advisable to 
+	 limit hits to the database and a data cache helps with this. In the simplest case, pick list data does not change.  For 
+	 example, if you have a pick list with just two values of “Yes” and 
+	 “No” and the user can’t add more values.  For the simplest 
+	 case, a system could load all data at startup into the cache and never 
+	 need to worry that the cache is out of date.  In a more 
+	 complicated case, you may have a pick list, such as the counterparty 
+	 pick list, where users can add additional values.  Without 
+	 special functionality to know about changes, a cache can become out 
+	 of date, in other words, hold a copy of older information..

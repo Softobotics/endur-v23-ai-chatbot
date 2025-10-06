@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Script_Debugger.htm.
+ Section heading: Overview.
+ Text content: The Script Debugger is a helpful tool that users can run when they encounter run time errors or erroneous data results.  It allows users to set “break points” in the scripts at which to stop.  The user can then step through lines of code examining variables and tables, to try and find what caused the error. .

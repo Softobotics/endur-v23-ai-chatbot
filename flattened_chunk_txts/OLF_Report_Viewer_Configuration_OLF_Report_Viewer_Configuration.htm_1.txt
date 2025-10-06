@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Report_Viewer_Configuration.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: The following window displays: .
+ Image file: OLF_Report_Viewer_Configuration_files/image001.jpg
+ Image description: the screen shot of the software.

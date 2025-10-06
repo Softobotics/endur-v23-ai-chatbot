@@ -1,0 +1,19 @@
+This chunk is from the HTML file: OLF_Crystal_Report_Viewer.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Crystal_Report_Viewer_files/image004.jpg
+ Image description: a computer mouse with a keyboard on it.
+ Image file: OLF_Crystal_Report_Viewer_files/image005.jpg
+ Image description: a calendar with a red cross on it.
+ Image file: OLF_Crystal_Report_Viewer_files/image006.jpg
+ Image description: a computer screen with a red and white button.
+ Image file: OLF_Crystal_Report_Viewer_files/image007.jpg
+ Image description: a white and black icon with a red arrow.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Performs the same function asFileàPrint Screen. |
+|  | Displays the current report in a viewing window. |
+|  | Prints the current report to the default printer. |
+|  | Exports the current report to any of the formats supported by Crystal.  Supported formats include HTML, ODBC, Word, Excel, Lotus Notes, text files, and e-mail. |
+| Browse | Displays theSelect a Saved Reportpop-up window.  Allows the user to browse through directories to select report to view. |.

@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Process.htm.
+ Section heading: Overview.
+ Text content: This window displays details regarding system processes running on the local machine.  The following Security Privileges are applicable to this window:   See System Monitor .
+ Table data: 
+| Privilege ID | Privilege |
+| --- | --- |
+| 29300 | Access Diagnostics Tab |
+| 29305 | Kill Selected Processes |. 
+Links to other files: OLF_System_Monitor.htm.

@@ -1,0 +1,8 @@
+This chunk is from the HTML file: OLF_Toolbar_Configuration.htm.
+ Section heading: Tabs.
+ Text content: This window contains the following tabs:  .
+ Table data: 
+| Tab | Description |
+| --- | --- |
+| All Toolbars | Allows the user to manage the panels and icons on the toolbar, e.g., activate, add, remove, replace, export, and import a toolbar panel; display the label of toolbar icons; and change the size of toolbar icons. |
+| Configure Toolbar | Allows the user to manage the actions on the toolbar panels, i.e., specify the toolbar icons that will show on a toolbar panel.SeeToolbar Configurationwindow of the Trader Desktop/OpenLink Desktop. |.

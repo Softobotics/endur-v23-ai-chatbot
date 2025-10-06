@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Crystal Reports</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Cambria" ,"serif";
+color:#243F60;
+font-style:italic; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nCrystal Reports - Master");
+addAvenueInfo("System Use","OLF/OLF_Crystal_Report_Viewer.htm","OLF/OLF_Date_and_Time_Period_Format_Conventions.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; Crystal Reports - Master<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Crystal Reports</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The <i>Crystal Reports Master</i> window is a much more robust screen than the <i><a href="OLF_Crystal_Report_Viewer.htm"><span style='color:windowtext;text-decoration:none'>Crystal Reports Viewer</span></a>,</i> providing more details and in-depth information.</p>
+<p class="MsoNormal">After a Crystal Report has been designed and saved it can be executed from within the system via a Crystal Task.&#160; A Crystal Task can be defined and executed once, or it can be saved to the system database making it available to other users.&#160; Crystal Tasks are created, executed, and maintained through a <i>Crystal Reports</i> window.&#160; The title bar of the window displays the module from which it was launched.</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>A Crystal Task consists of a saved Crystal report (.rpt file), export options, Crystal Task properties, a plug-in/script (optional), and Crystal report properties.&#160; When a Crystal Task is saved to the system database, the user names it and the system assigns a unique Crystal Task ID.</p>
+<h2>&#160;</h2>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">To access this window:</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'>1.<span style='font-size: 7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Crystal Reports</b> icon <img border="0" width="27" height="24" src="OLF_Crystal_Reports_Master_files/image001.jpg" alt="image002" />&#160;from <i>OpenLink Central</i>.</p>
+<p class="MsoNormal" style='margin-top:12.0pt'>The following window displays:</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'><span style='color:black'><img border="0" width="500" height="495" src="OLF_Crystal_Reports_Master_files/image002.jpg" alt="image009" /></span></p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">Other ways to access this window:</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Select the <b>Message Center</b> icon from <i>OpenLink Central</i>. The <i>Message Center</i> window displays. Choose <b>View</b> <b><span style='font-family:Wingdings'>&agrave;</span> Crystal Report Viewer</b> from the menu.</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Select the <b>Services Manager</b> icon from <i>OpenLink Central</i>. The <i>Services Manager</i> window displays. Select the <b>Workflow Services</b> tab. Choose <b>View</b> <b><span style='font-family:Wingdings'>&agrave;</span> Crystal Report Viewer</b> from the menu.</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Select the <b>Accounting Manager</b> icon from <i>OpenLink Central</i>. The <i>Accounting Manager</i> window displays. Click the <b>Crystal Reports Module</b> <img border="0" width="19" height="20" src="OLF_Crystal_Reports_Master_files/image003.jpg" alt="image006" />&#160;icon.</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Open the <i>Trading Manager</i>. Right-click <b>Main Group</b> node to display <b>Group Menu</b>. Select <b>Crystal Reports</b>.</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Open the <i>Operations Manager</i>. Select the <b>Confirmation</b> icon from the <b>Daily Operations</b> tab. The <i>Confirmation</i> window displays. Click the <b>Crystal Reports Module</b> icon.</p>
+<p class="MsoNormal" style='margin-left:.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Open the <i>Operations Manager</i>. Select the <b>Settlements</b> icon from the <b>Daily Operations</b> tab. The <i>Settlements</i> window displays. Click the <b>Crystal Reports Module</b> icon.</p>
+<p class="MsoNormal"><b>&#160;</b></p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window has the following menu items:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Menu</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Item</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>File</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Open Report</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows the user to select a report saved in the crystal report format (.rpt).&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><a href="OLF_Crystal_Report_Viewer.htm">Open Viewer</a></b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Opens the <i>Crystal Report Viewer</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>New Crystal Task</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Clears all fields and check boxes.&#160; This allows entry of data for a new Crystal Task.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Load Crystal Task</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows the user to select a saved Crystal Task and load it on screen.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save Crystal Task</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the displayed information on screen to the database as a Crystal Task.&#160; The system assigns a unique Crystal Task ID when a Crystal Task is saved.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save Crystal Task As</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the information displayed on screen to the database as a new Crystal Task (i.e., a new unique Crystal Task ID is assigned).&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Delete Crystal Task</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Deletes a Crystal Task from the database. Load the Crystal Task on screen and select this option to delete it.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Print Screen</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the current window.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Close All Report Windows</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cancels and closes all open <i>Crystal Report Viewer</i> windows.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Exit</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Closes this window and all report viewing windows.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>SQL Query</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The options on this menu can be used to manipulate the SQL query statements associated with the report. A Crystal report can be loaded directly or via a saved Crystal Task.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>View SQL Query</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to view the SQL query statements associated with the currently loaded report.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Edit SQL Query</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to edit the SQL query statements associated with the currently loaded report.&#160; Changes the SQL query to the query string supplied as a parameter. Use this function to update the SQL query that will be used to print the report, typically to add optimizations to the <b>WHERE</b> clause.</p>
+<p class="MsoNormal">Any changes made are only in effect for the current session (e.g. The SQL query changes made while this option is in use <b>cannot</b> be saved with the report).</p>
+<p class="MsoNormal"><b>Note:</b>&#160; The <b>Select</b> clause of the SQL statement using this option cannot be modified.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Import SQL Query</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to import SQL query statements from a text file.&#160; The <b>FROM</b>, <b>WHERE</b>, and <b>ORDER BY</b> clauses of the currently loaded report are overwritten by the imported query.&#160; The <b>SELECT</b> clause is not affected.&#160; The new query statements are only in effect for the current session.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Export SQL Query</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to export the SQL query statements associated with the currently loaded report to a text file.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Selection Formula</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The options on this menu can be used to view or edit the selection formula association with the loaded report.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>View Selection Formula</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to view the Crystal-defined selection formula associated with the currently loaded report.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Edit Selection Formula</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows privileged users to edit the Crystal-defined selection formula associated with the currently loaded report. Changes the selection formula to the formula string supplied as a parameter. This function can be used by itself to replace a known record selection formula. Example: {ab_tran.tran_num} &gt; 21335.</p>
+<p class="MsoNormal">Changes are only in effect for the current session.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Query ID</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">When a query is executed through one of the system query utilities, a unique query ID is assigned.&#160; This query ID, and the unique IDs of the items selected through the query, are saved in a table called query_result.&#160; The query_result table is used in system ad-hoc reports to select data for the report.&#160; The options on this menu pertain to the query_result table.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>View Query ID</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the query ID that is passed to the Crystal Reports if the Ad-Hoc Report property is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>View Query Results</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays a list containing the unique IDs of items that were selected by executing a system query.&#160; If the Ad-Hoc Report property is selected, this list is passed to Crystal Reports.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Report</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Report Summary</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the report summary information for the currently loaded report (<b>Author, Title, Subject, Keywords,</b> and <b>Comments</b>).</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Report Information</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays information (e.g., <b>Author, Number of Pages</b>) related to the currently loaded report.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Options</h5>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Display Mode</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Toggles between two different window display modes.&#160; Use this option to display (or remove) a pick list indicator on pick list fields.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>System Help</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays information about this window.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Engine Version</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the current version of the Crystal Print Engine.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Help</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Crystal Report Help</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Opens the Crystal Reports help file, crw.hlp, from the user’s sysdir.&#160; (This file must be placed in the sysdir of the user’s system directory structure to make Crystal Reports help available from this menu.)</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Crystal Reports About</b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays information on the Crystal Reports version.</p>
+</td>
+</tr>
+<tr>
+<td width="118" valign="top" style='width:88.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="115" valign="top" style='width:1.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><a href="OLF_About_Window.htm">About</a></b></p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Opens the <i>About</i> window.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Button</b></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><span style='font-family:"Arial","sans-serif"'><img border="0" width="34" height="33" src="OLF_Crystal_Reports_Master_files/image004.jpg" alt="image007" /></span></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Print Screen.</b></p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><span style='font-family:"Arial","sans-serif"'><img border="0" width="35" height="35" src="OLF_Crystal_Reports_Master_files/image005.jpg" alt="image008" /></span></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the current report in a viewing window.&#160; (This performs the same function as pressing the <b>Generate Report</b> button with a Generation Type of View Report.)&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><span style='font-family:"Arial","sans-serif"'><img border="0" width="35" height="35" src="OLF_Crystal_Reports_Master_files/image006.jpg" alt="image009" /></span></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the current report to the default printer.&#160; (This performs the same function as pressing the <b>Generate Report</b> button with a Generation Type of Print Report.)</p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><span style='font-family:"Arial","sans-serif"'><img border="0" width="35" height="34" src="OLF_Crystal_Reports_Master_files/image007.jpg" alt="image010" /></span></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Exports the current report to any of the formats supported by Crystal.&#160; Supported formats include HTML, ODBC, Word, Excel, Lotus Notes, text files, and e-mail. .&#160; (This performs the same function as pressing the <b>Generate Report</b> button with a Generation Type of Export Report.)</p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><span style='font-family:"Arial","sans-serif"'><img border="0" width="35" height="35" src="OLF_Crystal_Reports_Master_files/image008.jpg" alt="image011" /></span></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Invokes a <i>Crystal Report Viewer</i> window that allows users to print, view, or export previously generated reports.</p>
+<p class="MsoNormal">See <i><a href="OLF_Crystal_Report_Viewer.htm">Crystal Report Viewer</a></i></p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left: 0in'>Browse</h5>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">On the <b>Crystal Task Information</b> section of the window, it allows the user to browse through directories to select a desired report.&#160; The default directory may be set by specifying the environment variable AB_CRYSTAL_DIR in the system’s run script.</p>
+<p class="MsoNormal">On the <b>Generation Information</b> section of the window, this allows the user to browse through directories to specify an export destination file.</p>
+</td>
+</tr>
+<tr>
+<td width="121" valign="top" style='width:91.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'><b>Generate Report</b></p>
+</td>
+<td width="514" valign="top" style='width:385.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-top:6.0pt;margin-right:0in;margin-bottom: 6.0pt;margin-left:0in'>Generates the Crystal report specified in the window.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h3>Fields</h3>
+<p class="MsoNormal">This window contains the following fields:</p>
+<p class="MsoNormal">&#160;</p>
+<h4>Crystal Task Information</h4>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Crystal Task Name</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the task associated with this report.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Report Name</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Specifies the full path and file name of a saved Crystal report.&#160; There are four ways to load a desired report:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal">Enter a full path and report name directly in this field</li>
+<li class="MsoNormal">Use the <b>Browse</b> button to select a saved report</li>
+<li class="MsoNormal">Use <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Open Report</b> to select a saved report</li>
+<li class="MsoNormal">Use <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Load Crystal Task</b> to load a Crystal Task that references a saved report</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Report Title</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the text that displays in the title bar of the <i>Report Viewing</i> window when a view of the selected report is generated.&#160; When a new Crystal Task is created, this text defaults to the <b>Report Title</b> as specified in the Crystal report file.&#160; This text may be edited.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Script Task Name</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Specifies the name of a plug-in/script (optional) to be executed before running the selected report.&#160; A plug-in/script task may be used to prepare data for the report.&#160; The task may write data to User Tables in your database, to flat text files, or to an Active Data Object in memory.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h4>Generation Information</h4>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Generation Type</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Specifies the type of output to be produced when the <b>Generate Report</b> button is clicked.&#160; Click the field to get a pick list of available Generation Types.&#160; The available choices are:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal"><b>Export Report</b></li>
+<li class="MsoNormal"><b>Print Report</b></li>
+<li class="MsoNormal"><b>View Report</b></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Export Type</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If <b>Generation Type</b> is ‘Export Report’, specifies the format of the export file to be produced. A system pick list displays the supported export formats.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Export File Name</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If <b>Generation Type</b> is ‘Export Report’, specifies the name of the destination file that the selected report is exported to.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Export to Outdir</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected and <b>Generation Type</b> is ‘Export Report’, exports report to the current <b>Outdir Report</b> directory for the current system date. If selected, the <b>Export File Name</b> field should only contain a filename (without the full path).</p>
+<p class="MsoNormal">Example: {outdir}/reports/97Apr09/output_report.rpt</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Current Date</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the current date of the system. The current date is initialized by the Business Date setting defined in the <i><a href="../Operations_Manager/OPS_Roll_System_Dates.htm">System Date Roll</a></i> feature in the Operations Manager (if you do not have the Accept Trading Date Updates security privilege enabled).&#160;</p>
+<p class="MsoNormal">You may change the Current Date setting for your session only in the <i><a href="../Market_Manager/MarketMgr.htm">Market Manager</a></i> or using the <i><a href="OLF_Current_Date_Roll.htm">Current Date Roll AFE Service</a></i> from OpenLink Central. Your session's Current Date setting is displayed on many system windows and can be used to calculate initial default values for deal settlement date, trade date, start date, and maturity date.</p>
+<p class="MsoNormal">It cannot be changed in this window.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Database</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the name of the system database the user is currently working in.&#160; Display only.&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>User Id</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the system user ID of the user’s current system session.&#160; Display only.&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Server</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the name of the server on which the user’s system data resides.&#160; Display only.&#160;</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h4>Report Type</h4>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Standard Crystal</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the Crystal Report gets information from database tables and requires no parameters.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Active Data Report</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the Crystal Report inputs data directly from the returnt table of the selected task. Returnt should consist of a one COL_TABLE column with each row being a table to import into Crystal Reports. The row number of returnt should coincide with the ttx file number in Crystal Reports.</p>
+<p class="MsoNormal">A Crystal Active Data Report uses a plug-in/script to define and populate a table of information to be passed to Crystal Reports through shared memory. Active Data must be selected as one of the data sources for the report.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Parameter Driven</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the Crystal Report inputs data from the returnt table of the selected task. Returnt should be a one row table with one column for each of the parameters in the report. Each column type in returnt should correspond to the column type of the parameter. A system Crystal Parameter Report uses a plug-in/script to supply data to Crystal Parameter Fields defined in the report.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h4>Report Data Source</h4>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Database</h5>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, gets the data from the database.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Ad Hoc Report</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the Crystal Report inputs the Query Id into first parameter value of report. To manually enter Query Id, uncheck this field.</p>
+<p class="MsoNormal">A Crystal Ad-hoc Report is one that uses the results of a system query as input to the report.&#160; Ad-hoc reports can only be executed from system modules that have a query utility.&#160; These modules are the Trading Manager, the Accounting Manager, and the <i>Confirm</i> and <i>Settlement</i> windows of the Operations Manager.&#160; Ad-hoc reports cannot be run from the system’s Main Control Panel <b>Crystal Reports</b> icon.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Saved Data</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If the <b>Save Data With Report</b> option (in Crystal Reports) is selected when a report is saved, the user can view the saved data by checking this field on the Crystal Task.&#160; This property is useful if the user wishes to see a sample of the report without actually refreshing the data behind it.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h4>Report Viewer Options</h4>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Show Progress</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, a progress dialog box displays when exporting records to a specified export format.&#160; (This field is only relevant when the <b>Generation Type</b> is set to Export Report.)</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Show Controls</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, control icons display in the <i>Report Viewing</i> window.&#160; Control icons include page navigation, print icon, export icon, group tree icon, view size icon, and more.&#160; (<b>Note:</b>&#160; If this property is not selected, the page navigation control icons do not display in the <i>Report Viewing</i> window.&#160; Therefore, the user may only see one page of their report.)</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Show Last Page</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the last page of the report is the first page to display in the viewing window.&#160; When not selected, the first page displays first.&#160; This field allows the user to quickly see grand totals without having to page through a report.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Maximize View</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, the <i>Report Viewing</i> window displays in maximized form.</p>
+</td>
+</tr>
+<tr>
+<td width="119" valign="top" style='width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Show Group Tree</b></p>
+</td>
+<td width="516" valign="top" style='width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If selected, a group tree displays on the left side of the <i>Report Viewing</i> window.&#160; Group trees allow users to quickly go to report pages pertaining to a particular group.</p>
+</td>
+</tr>
+</table>
+<h3>&#160;</h3>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

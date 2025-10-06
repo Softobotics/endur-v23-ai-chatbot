@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_System_Monitor.htm.
+ Section heading: Overview.
+ Text content: The System Monitor provides up-to-date status information on the underlying services, engines & technical infrastructure. This tool, intended for use by Information Technology professionals, is used to diagnose running engines/services and serve as a central source of information for the selected user to perform system health checks. In addition, it supplies low-level diagnostic views of messaging, licensing, toolkits, databases and underlying binary configuration..

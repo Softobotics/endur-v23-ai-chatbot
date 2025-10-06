@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>System Monitor - DB Unique_ID</title>
+
+<style type="text/css">
+<!--
+@font-face {
+        font-family: Wingdings;
+        panose-1: 5 0 0 0 0 0 0 0 0 0;
+}; @font-face { font-family:Cambria Math;
+panose-1:2 4 5 3 5 4 6 3 2 4;
+font-family:Calibri;
+panose-1:2 15 5 2 2 2 4 3 2 4;
+font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Verdana Bold;
+panose-1:2 11 8 4 3 5 4 4 2 4; }
+; @page WordSection1 { x-size:8.5in 11.0in;
+margin:1.0in 1.0in 1.0in 1.0in; }
+; p.MsoNormal { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoNormal { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoNormal { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:18.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana Bold" , serif;
+font-style:italic; }
+p.MsoHeader { mso-style-link:Header Char1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoHeader { mso-style-link:Header Char1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoHeader { mso-style-link:Header Char1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.6in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListBullet { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.6in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListBullet { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.6in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListBullet2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListBullet2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListBullet2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListBullet3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListBullet3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListBullet3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListNumber2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListNumber2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListNumber2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListNumber3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListNumber3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListNumber3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListNumber3CxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListNumber3CxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListNumber3CxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListNumber3CxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListNumber3CxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListNumber3CxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.75in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListNumber3CxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListNumber3CxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListNumber3CxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListContinue2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListContinue2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListContinue2 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListContinue3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListContinue3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListContinue3 { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.75in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoNoteHeading { mso-style-link:Note Heading Char;
+margin-top:8.0pt;
+margin-right:0in;
+margin-bottom:8.0pt;
+margin-left:.75in;
+text-indent:-.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoNoteHeading { mso-style-link:Note Heading Char;
+margin-top:8.0pt;
+margin-right:0in;
+margin-bottom:8.0pt;
+margin-left:.75in;
+text-indent:-.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoNoteHeading { mso-style-link:Note Heading Char;
+margin-top:8.0pt;
+margin-right:0in;
+margin-bottom:8.0pt;
+margin-left:.75in;
+text-indent:-.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+a:link { color:#0000ff;
+text-decoration:underline;
+color:#0000ff; }
+span.MsoHyperlink { color:#0000ff;
+text-decoration:underline; }
+a:visited { color:#800080;
+text-decoration:underline;
+color:#800080; }
+span.MsoHyperlinkFollowed { color:#800080;
+text-decoration:underline; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+span.MsoPlaceholderText { color:#808080; }
+p.MsoListParagraph { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListParagraph { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListParagraph { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListParagraphCxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListParagraphCxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListParagraphCxSpFirst { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListParagraphCxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListParagraphCxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListParagraphCxSpMiddle { margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.MsoListParagraphCxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.MsoListParagraphCxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.MsoListParagraphCxSpLast { margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:.5in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+text-transform:uppercase;
+font-weight:bold; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:Tahoma, sans-serif; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+p.TableHeader { mso-style-name:TableHeader;
+mso-style-link:TableHeader Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+mso-style-link:TableHeader Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+mso-style-link:TableHeader Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+span.NormalBoldChar { mso-style-name:NormalBold Char;
+mso-style-link:NormalBold;
+font-family:Calibri, sans-serif;
+color:#17365D;
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Verdana Bold" , serif;
+font-weight:bold;
+font-style:italic; }
+p.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+span.TableHeaderChar { mso-style-name:TableHeader Char;
+mso-style-link:TableHeader;
+font-family:Calibri, sans-serif;
+color:#2D5790;
+font-weight:bold; }
+p.Normalbeforetable { mso-style-name:Normal_before_table;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.Normalbeforetable { mso-style-name:Normal_before_table;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.Normalbeforetable { mso-style-name:Normal_before_table;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.Normalaftertable { mso-style-name:Normal_after_table;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+li.Normalaftertable { mso-style-name:Normal_after_table;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+div.Normalaftertable { mso-style-name:Normal_after_table;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif; }
+p.RedText { mso-style-name:Red Text;
+mso-style-link:Red Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#C00000; }
+li.RedText { mso-style-name:Red Text;
+mso-style-link:Red Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#C00000; }
+div.RedText { mso-style-name:Red Text;
+mso-style-link:Red Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:Calibri, sans-serif;
+color:#C00000; }
+span.NoteHeadingChar { mso-style-name:Note Heading Char;
+mso-style-link:Note Heading;
+font-family:Calibri, sans-serif; }
+span.HeaderChar { mso-style-name:Header Char;
+font-family:Calibri, sans-serif;
+color:#1F497D; }
+span.HeaderChar1 { mso-style-name:Header Char1;
+mso-style-link:Header;
+font-family:"Times New Roman" , serif; }
+span.hcp2 { mso-style-name:hcp2; }
+span.hcp28 { mso-style-name:hcp28;
+font-style:italic; }
+span.RedTextChar { mso-style-name:Red Text Char;
+mso-style-link:Red Text;
+font-family:Calibri, sans-serif;
+color:#C00000; }
+.MsoChpDefault { font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+.MsoPapDefault { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in; }
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nSystem Monitor\nSystem Monitor\nSystem Monitor - Database - Unique ID Administration");
+addAvenueInfo("System Use","OLF/OLF_System_Monitor-DB_Analyze_Table_Stats.htm","OLF/OLF_System_Monitor-Diagnostics_My_Services.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor.htm\">System Monitor<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor-Services_All_Services.htm\">System Monitor<\/a> &gt; System Monitor - Database - Unique ID Administration<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+<p class="MsoNormal" style="margin-top: 12.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal; page-break-after: avoid;"></p>
+<h1><b><span style="font-size: 16.0pt; font-family: Verdana, sans-serif; text-transform: uppercase;"><font size="5" style="font-size:16pt;">System Monitor - database – unique id administration</font></span></b></h1>
+<p></p>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal; page-break-after: avoid;"><b><span style="font-size: 14.0pt; font-family: Verdana, sans-serif;"><font size="4" style="font-size:14pt;">Overview</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">This window shows database table details including enumerations and ID numbers while also providing the functionality to manage the current and limit of unique IDs. The maximum values listed for each table relates to the highest allowable integer that can be used when assigning a value to the “Unique ID” field in a table. In other words, the unique ID maximum value limits the number of records that can be added to a table.</font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The application provides the standard script “STD_Unique_Table_Size_Check” which determines the percentage of ID capacity that has been used by a selected table.</font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Access to this window is controlled by Security Privilege #29600, Access Database Tab and #3014, Access Unique ID Administration.</font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">See</font></span> <span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;"><a href="OLF_System_Monitor.htm">System Monitor</a></font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">See <i>Standard Scripts.chm</i></font></span></p>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal; page-break-after: avoid;"><b><span style="font-size: 14.0pt; font-family: Verdana, sans-serif;"><font size="4" style="font-size:14pt;">Accessing This Window/Screen</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">To access this window:</font></span></p>
+<ol start="1" style="list-style: decimal; margin-top: 0in;">
+<li class="MsoNormal" style="margin-top: 3.0pt; margin-bottom: 3.0pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Start the OpenLink System.</font></span></li>
+<li class="MsoNormal" style="margin-top: 3.0pt; margin-bottom: 3.0pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">From <i>OpenLink Central</i>, click the <i>System Monitor</i> icon <img id="Picture 4" src="OLF_System_Monitor-DB_Unique_ID_files/image001.jpg" alt="image008" name="Picture 4" width="17" height="17" border="0" /></font></span></li>
+<li class="MsoNormal" style="margin-top: 3.0pt; margin-bottom: 3.0pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Select the <b>Database</b> tab.</font></span></li>
+<li class="MsoNormal" style="margin-top: 3.0pt; margin-bottom: 3.0pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Select the <b>Unique ID Administration</b> sub-tab.</font></span></li>
+</ol>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The following screen displays:</font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><img id="Picture 3" src="OLF_System_Monitor-DB_Unique_ID_files/image002.jpg" alt="" name="Picture 3" width="624" height="481" border="0" /></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;">&#160;</p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><span style="font-family: Verdana, sans-serif;">Some tables are restricted and will only be displayed here for informational purpose.&#160;&#160;These tables are “greyed out” to let you know that they are different.</span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><span style="font-family: Verdana, sans-serif;">In the display below you can see that currency and unit are restricted tables.</span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;">&#160;</p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><span style="font-family: Verdana, sans-serif;">If you try to change the current id or increment the maximum for a table that’s “greyed out” the system will display an error message similar to the one shown below:</span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;"><img id="Picture 11" src="OLF_System_Monitor-DB_Unique_ID_files/image003.jpg" alt="" name="Picture 11" width="555" height="123" border="0" /></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: .25in; line-height: normal;">&#160;</p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-family: Verdana, sans-serif;">Other Ways to Access This Window/Screen</span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select <i>Launch Available Services</i>. Select <b>System Monitor</b> from the list box.</font></span></p>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 12.0pt; font-family: Verdana, sans-serif;"><font size="3" style="font-size:12pt;">Menu Items</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">This window contains the same menu items as the</font></span> <span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;"><a href="OLF_System_Monitor.htm">System Monitor</a>. Menu item availability depends upon the tab being accessed.</font></span></p>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 12.0pt; font-family: Verdana, sans-serif;"><font size="3" style="font-size:12pt;">Buttons</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:</font></span></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; border: none; border-collapse: separate;" cellspacing="0">
+<tr style="height: 22.0pt;">
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" height="29" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; text-align: center; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Button</font></span></b></p>
+</td>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" height="29" width="520">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; text-align: center; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Description</font></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-left: 0in; margin-bottom: .0001pt; line-height: normal;"><img id="Picture 13" src="OLF_System_Monitor-DB_Unique_ID_files/image004.jpg" alt="" name="Picture 13" width="100" height="17" border="0" /></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="520">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Select a table and click this button to reset the Current Unique Id Number for a table.&#160;&#160;You will be prompted for this.&#160;&#160;The database table is examined and either will prompt with one greater than the highest number found in the table (if different from current_id) or one greater than the current_id if the values are the same or there is no value in the database table as of yet.&#160;&#160;You can either accept this or enter your own value.&#160;&#160;Only values greater than the highest value and below the table maximum are acceptable.&#160;&#160;Security Privilege #76912 – Change Current Unique Id is required</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-left: 0in; margin-bottom: .0001pt; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;"><img id="Picture 2" src="OLF_System_Monitor-DB_Unique_ID_files/image005.jpg" alt="image004" name="Picture 2" width="100" height="21" border="0" /></font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-left: 0in; margin-bottom: .0001pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Increment Maximum</font></span></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="520">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Select a table and click this button to set the value by which the ID numbers for that table will increase. If a number is not entered, the system will increment the numbers by 1 million. Security Privilege #3015 – Increment Maximum Unique Id is required.</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-left: 0in; margin-bottom: .0001pt; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;"><img id="Picture 1" src="OLF_System_Monitor-DB_Unique_ID_files/image006.jpg" alt="image005" name="Picture 1" width="100" height="21" border="0" /></font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="520">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Reloads the system table data in the table.</font></span></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 12.0pt; font-family: Verdana, sans-serif;"><font size="3" style="font-size:12pt;">Fields</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">This window contains the following fields:</font></span></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; border: none; border-collapse: separate;" cellspacing="0">
+<tr style="height: 22.0pt;">
+<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" height="29" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; text-align: center; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Variable</font></span></b></p>
+</td>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" height="29" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; text-align: center; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Description</font></span></b></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Enumeration</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The unique system identifier for the selected table.</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Table Name</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The system name of the selected table.</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Id Number 32 Bit</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The sequence numbers, or unique ids, that will be generated.</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Maximum&#160;&#160;32 Bit</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The largest identification number available in the selected table.</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Id Number 64 Bit</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The sequence numbers, or unique ids that will be generated.</font></span></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Used by tables with 64 bit or long unique ids</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Maximum&#160;&#160;&#160;64 Bit</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">The largest identification number available in the selected table. Used by tables with 64 bit or long unique ids</font></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="179">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">Warning</font></span></b></p>
+</td>
+<td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="470">
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">This field is used to display a warning when the current id is getting close to the maximum.&#160;&#160;Then you should increase the maximum.&#160;&#160;The message will get displayed when 80% capacity is used up.</font></span></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style="margin-top: 6.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><b><span style="font-size: 12.0pt; font-family: Verdana, sans-serif;"><font size="3" style="font-size:12pt;">Column Header Menu</font></span></b></p>
+<p class="MsoNormal" style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 3.0pt; margin-left: 0in; line-height: normal;"><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">To modify a table’s configuration, right-click any column header. The</font></span> <i><span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;"><a href="OLF_Column_Header_Menu.htm">Column Header Menu</a></font></span></i> <span style="font-size: 10.0pt; font-family: Verdana, sans-serif;"><font size="2" style="font-size:10pt;">displays.</font></span></p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

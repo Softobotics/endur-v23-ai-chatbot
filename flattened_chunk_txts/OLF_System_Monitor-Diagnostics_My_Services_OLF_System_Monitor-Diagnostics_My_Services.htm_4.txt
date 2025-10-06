@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_My_Services.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Tab | Description |
+| --- | --- |
+| Endur/Findur User | The user name for the personnel logged into the application. |
+| Service Type | The types of domain services available to the user. |
+| Service Name | The name of the service configured for the user. |
+| Service Status | The status of the selected service. Statuses are color-coded. |
+| Server Node | The name of the server where the selected service is run. |
+| Stats | Statistical data about the selected service. Double-click the grid icon to display theStatstable. |
+| Inbox | For OpenLink Internal Use only. |
+| Service ID | For OpenLink Internal Use only. |.

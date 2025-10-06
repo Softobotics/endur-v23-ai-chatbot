@@ -1,0 +1,22 @@
+This chunk is from the HTML file: OLF_Script_Debugger.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| Debugger | Load | Loads a selected script. |
+|  | Save | Saves the current script, along with any changes the user has made. |
+|  | Save As | Saves the current script to a different file. |
+|  | Delete | Deletes highlighted text in the script. |
+|  | Exit | Close the current window without saving changes. |
+| Action | Breakpoint | This is not currently functional. |
+|  | Step | This is not currently functional. |
+|  | View | This is not currently functional. |
+|  | Continue | This is not currently functional. |
+| Tools | Find (Cntl-F) | Displays a pop-up window.  This can be used to enter a text string to search for in the selected script. |
+|  | Function Lookup (Cntl-L) | Searches for the next occurrence of the highlighted function in the selected script. |
+|  | Print Script | Prints the contents of the script only. |
+| Help | SDBG Help | Displays the system Help files. |
+|  | Keyboard Help | Displays a list of keyboard shortcuts that can be used in the debugger. |
+|  | AVS Functions | Displays theAVS Functions and Argumentswindow |
+|  | AVS Global Variables | Displays theAVS Global Variableswindow. |.

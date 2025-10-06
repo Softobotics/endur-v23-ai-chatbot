@@ -1,0 +1,38 @@
+This chunk is from the HTML file: OLF_Query_Manager_OpenJVS_Plugin.htm.
+ Section heading: Sample OpenJVS Plugin.
+ Text content: / *$Header: 
+  Exp $*/ /* File Name:              STD_QueryScriptGetHedges.java Report Name: Script Tracking Number: OutPut File Name:       STD_QueryScriptGetHedges.log Revision History: Main Script:            This 
+ is a main script. Parameter Script:       None Display Script:         None Script category:      N/A Process Description:    This 
+ script will assist in the creation of a query. Process 
+ - do NOT run manually.  Assumptions:            None Instructions:    1. Click the 
+ New Query icon or select File à New 
+ Query from the main menu. 2. 
+ Select User Preferences -> Show Additional Criteria Panel. The Additional 
+ Criteria panel displays at the bottom of the window. 3. 
+ Select a script in the Script field, and if there are none available, 
+ click the icon. Uses EOD Results?       No */ package standard.process; import com.olf.openjvs.*; import com.olf.openjvs.enums.*; import standard.include.JVS_INC_Standard; @ScriptAttributes(allowNativeExceptions=true) @PluginCategory(SCRIPT_CATEGORY_ENUM.SCRIPT_CAT_QUERY) @PluginType(SCRIPT_TYPE_ENUM.MAIN_SCRIPT) public class STD_QueryScriptGetHedges implements 
+ IScript { private JVS_INC_Standard mINCStandard; private String err_log_file; public STD_QueryScriptGetHedges(){ mINCStandard = new JVS_INC_Standard(); } public void execute(IContainerContext context) throws 
+ OException { String sFileNameError = "STD_QueryScriptGetHedges"; err_log_file = Util.errorInitScriptErrorLog(sFileNameError); Table argt = context.getArgumentsTable(); mINCStandard.Print(err_log_file, "START","Runing 
+ STD_QueryScriptGetHedges.java.");  // get data from query code int query_id = argt.getInt("QueryId", 
+ 1); //int page_num = argt.getInt("PageNum", 
+ 1); //int do_status = argt.getInt("DoStatus", 
+ 1);  // get query list from db Table tran_list = Table.tableNew(); String sql = "Select query_result from query_result 
+ where unique_id = " + query_id;  DBaseTable.execISql(tran_list, sql); tran_list.setColName(1, "tran_num"); // Go through the list of deals in the original query_result 
+ list, and attempt to add associated hedge deals. Table hedge_tran_list = Table.tableNew(); int num_rows = tran_list.getNumRows();  if (num_rows < 2) { for (int i = 1; i <= 
+ num_rows; i++) { int tran_num = tran_list.getInt(1, 
+ i);  sql = "Select hedge_deal_num 
+ from hedge_association where deal_tracking_num = " + tran_num;  DBaseTable.execISql(hedge_tran_list, 
+ sql);  int hedge_rows = hedge_tran_list.getNumRows(); for (int j = 1; j <= hedge_rows; 
+ j++) { int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j); Query.insert (query_id, hedge_deal_num); }  // The following scrap of 
+ code would call viewTable for all deals that have hedge deals assoc with 
+ them if (1 == 0)  //Dead code { if (hedge_tran_list.getNumRows() 
+ > 0) { hedge_tran_list.setColTitle( 
+ 1, Integer.toString(tran_num));  hedge_tran_list.viewTable(); } }  // Clear table for either 
+ next deal, or after last deal hedge_tran_list.clearRows();;  } } else { sql = "Select hedge_deal_num from hedge_association, 
+ query_result where query_result = deal_tracking_num  and unique_id 
+ = " + query_id;  DBaseTable.execISql(hedge_tran_list, 
+ sql);  int hedge_rows = hedge_tran_list.getNumRows(); for (int j = 1; j <= hedge_rows; 
+ j++) { int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j); Query.insert (query_id, hedge_deal_num); } } // Clear table hedge_tran_list.destroy(); tran_list.destroy();  mINCStandard.Print(err_log_file, "END","End 
+ of STD_QueryScriptGetHedges.java."); return; } }.

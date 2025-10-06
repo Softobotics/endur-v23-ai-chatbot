@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Static_Data_Template.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: There are various ways to access this window. To illustrate: 1. Start the Admin Manager . 2. Select the General Administration tab. 3. Select the Static Data icon to launch the Static Data window. 4. Scroll to and select a static data table. In this example, “ABS Pool Asset Type” was selected. 5. Click the Edit button. The following window displays: .
+ Image file: OLF_Static_Data_Template_files/image001.jpg
+ Image description: the screenshote screen shows the screenshote screen with the text ` ` ` ` ` `.

@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_Crystal_Report_Viewer.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Open Report | Allows the user to select a report previously saved in crystal report format (.rpt). Displays theSelect a Saved Reportpop-up window to allow selection of report. |
+|  | Close All Report Windows | Cancels and closes all openCrystal Report Viewerwindows. |
+|  | Print Screen | Prints the current window. |
+|  | Exit | Exits from the current window. |
+| Help | Help | Displays the system Help files. |.

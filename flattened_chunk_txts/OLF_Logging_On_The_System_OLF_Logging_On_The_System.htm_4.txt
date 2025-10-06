@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_Logging_On_The_System.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Server | Displays the name of the server being accessed. The user may edit this field to access another server. |
+| Database/ Schema | Displays the name of the database being accessed. The user may edit this field to access other local or remote databases. |
+| Database Type | Displays the type of database being accessed. The user may select another database type. |
+| User Name | Designated user name |
+| Password | User password |
+| Save Logon Information | Check the check box to save logon information/settings. |.

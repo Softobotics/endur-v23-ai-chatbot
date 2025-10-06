@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_APM_Integration_Utility_User_Guide.htm.
+ Section heading: Security Privileges.
+ Text content: The following security privileges are required 
+ in order to use this module. Go to the CRM Web Portal for additional information..
+ Table data: 
+| Privilege 
+		 ID | Privilege | Description |
+| --- | --- | --- |
+| 2002150 | Launch 
+		 Integration Utility | Allows 
+		 a user to access the APM Integration Utility Screen |.

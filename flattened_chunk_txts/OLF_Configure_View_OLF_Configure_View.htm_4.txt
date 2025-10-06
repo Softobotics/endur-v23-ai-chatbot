@@ -1,0 +1,24 @@
+This chunk is from the HTML file: OLF_Configure_View.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Search Column Title/Name | Enter the name or title of the column to search and press the <Enter> key. The first name that matches the search criteria is highlighted. Press the <Enter> key again to display the next match. |
+| Display Setup | Displays the display setup of the loaded configuration. This field defaults to “None”, which means that the setup is currently set at default.To create a new display setup, see the procedure below.To load a display setup, right-click the field to display the pick list of available display setups. Select the setup to load. |
+|  |
+| Gray Scale | The gray scale color; right-click the field to select the row color. |
+| Font Size | The font size of the text; right-click the field to select the size of the font. |
+| Summation Row | The color of the sum break rows; right-click the field to select the row color. |
+|  |  |
+| Column Title | The title of the column that will be displayed in the table. |
+| Display | Toggle to indicate whether the data field will be displayed in the table. Place a checkmark to display the column. |
+| Sort# | The sort key of the table. To define several sort keys, rank the primary sort key with “1”, the secondary key “2”, and so on. For example, giving a 1 for Status and 2 for Deal # makes Status the primary key and Deal # the secondary key.  The table to be displayed will be sorted first by Status and then by Deal #.Please note that in a Table/Blotter you cannot sort in descending order (i.e., 1-D) and sum rows. The sum rows only works when a column is sorted in ascending (i.e., 1) order. |
+| Sum Break | Groups the data by the checked field. Place a checkmark on the data field to indicate how data will be grouped. |
+| Show Subtotal | Displays the total for each group, as defined by the “sum break” field. |
+| Show Total | Generates a row with a sum of the checked data field across all rows. |
+| Column Type | Data type of the field. |
+| Format | The formatting used when displaying the data field.  Users can choose from a pick list of formatting appropriate for the specific data type. |
+| Param1, Param2, Param 3, Param 4, Param 5 | Contains additional parameters required for the “Format” column.  For example, for a Date Format (FMT_DATE), additional parameters specifying the order and the separator, and the locale of the date, are required. |
+| Column Name | Internal name of the data field. |
+| Column Formula | Displays the formula defined for the formula column. |.

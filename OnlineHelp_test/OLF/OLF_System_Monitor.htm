@@ -1,0 +1,2020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>System Monitor</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoListNumber { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListNumber { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListNumber { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p { margin-right:0in;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Times New Roman" ,"serif"; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.msolistnumbercxspfirst { mso-style-name:msolistnumbercxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumbercxspfirst { mso-style-name:msolistnumbercxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumbercxspfirst { mso-style-name:msolistnumbercxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistnumbercxspmiddle { mso-style-name:msolistnumbercxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumbercxspmiddle { mso-style-name:msolistnumbercxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumbercxspmiddle { mso-style-name:msolistnumbercxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.25in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistnumbercxsplast { mso-style-name:msolistnumbercxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumbercxsplast { mso-style-name:msolistnumbercxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumbercxsplast { mso-style-name:msolistnumbercxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistcontinue2cxspfirst { mso-style-name:msolistcontinue2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistcontinue2cxspmiddle { mso-style-name:msolistcontinue2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistcontinue2cxsplast { mso-style-name:msolistcontinue2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif"; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nSystem Monitor\nSystem Monitor");
+addAvenueInfo("System Use","Admin_Manager/ADMIN_STATIC_Projectors.htm","OLF/OLF_System_Monitor-DB_Analyze_Table_Stats.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor.htm\">System Monitor<\/a> &gt; System Monitor<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>System Monitor</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The <i>System Monitor</i> provides up-to-date status information on the underlying services, engines &amp; technical infrastructure. This tool, intended for use by Information Technology professionals, is used to diagnose running engines/services and serve as a central source of information for the selected user to perform system health checks. In addition, it supplies low-level diagnostic views of messaging, licensing, toolkits, databases and underlying binary configuration.</p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">To access this window:</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'>1.<span style='font-size: 7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Start the OpenLink System.</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'>2.<span style='font-size: 7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> From <i>OpenLink Central</i>, click the <b>System Monitor</b> icon <img width="17" height="17" src="OLF_System_Monitor_files/image001.jpg" alt="image008" />.</p>
+<p class="MsoNormal">The following screen displays:</p>
+<p class="Picture"><img width="550" height="425" src="OLF_System_Monitor_files/image002.jpg" alt="image012.jpg" /></p>
+<h3>Other Ways to Access this Window</h3>
+<p class="MsoNormal">From OpenLink Central and from the main window of each manager (Admin Manager, Trading Manager, etc.), the keystroke combination Ctrl+F4 will activate the <i>System Monitor</i>. The <b>Script Engines</b> tab is disabled when this window is not run from OpenLink Central. Separate instances can be run from each manager.</p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the following menu items:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='margin-left:2.6pt;border-collapse:collapse'>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Menu</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Menu Item</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>File</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Export System Info</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Opens a standard system <i>Save As</i> window for the export of the “System Info”. This information includes detailed views of version information, binary dll versions and general system configuration options. OpenLink requires this information to be attached to each support ticket.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Load Config</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This menu item is not active.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Save Config</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This menu item is not active.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Delete Config</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This menu item is not active.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Set Default Config</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This menu item is not active.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Print Screen</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Prints the current window.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Exit</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Closes the window.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Management</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>New Script Engine</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Initiates a new engine, shown in the <b><i>Engines</i></b> panel of the <b>Script Engine</b> tab. The “Status<b>”</b> is set to ready.</p>
+<p class="MsoNormal">This is only available when the <b>Script</b> <b>Engines</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Stop Script Engine</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Stops the selected engine after a prompt from the system.</p>
+<p class="MsoNormal">This is only available when the <b>Script</b> <b>Engines</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Stop All Script Engines</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Stops <u>ALL</u> engines after a prompt from the system.</p>
+<p class="MsoNormal">This is only available when the <b>Script</b> <b>Engines</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Start Selected Row</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This is only available when the <b>Services</b> tab is selected.</p>
+<p class="MsoNormal">Initializes the selected “Service”.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Stop Selected Row</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This is only available when the <b>Services</b> tab is selected</p>
+<p class="MsoNormal">Stops the selected “Service”.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Restart Selected Row</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Restarts the selected “Service”.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Script</b></p>
+<p class="MsoNormal"><span style='color:red'>V9.0r1 and above</span></p>
+<p class="MsoNormal"><b>AVS</b></p>
+<p class="MsoNormal"><span style='color:red'>V8.2r1 and earlier</span></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_AVS_Task_Editor.htm">Task Editor</a></b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Launch the <i>Task Editor</i> window<i>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="../Trading_Manager/TRADING_Task_Listing.htm">Task Listing</a></b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i>Task Listing</i> window<i>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_AVS_Script_Editor.htm">Script Editor</a></b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i>Script Editor</i> window<i>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="../Trading_Manager/TRADING_Script_Listing.htm">Script Listing</a></b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch s the <i>Script Listing</i> window<i>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'></td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_Plugin_Editor.htm">Simple Plugin Editor</a></b></p>
+<p class="MsoNormal"><span style='color:red'>V10.0r2 and above</span></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i>Simple Plugin Editor</i>.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'></td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Advance Plugin Editor</b></p>
+<p class="MsoNormal"><span style='color:red'>V10.0r2 and above</span></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i>Advance Plugin Editor</i> - Eclipse is a full Java integrated development environment used to edit, compile, and debug OpenJVS plug-ins.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Monitoring</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Start Monitoring Definition</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Begins monitoring the selected definition.</p>
+<p class="MsoNormal">This is only available when either the <b>Credit, Risk</b>, or <b>RTPE</b> tabs within the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Stop Monitoring Definition</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Stops monitoring the selected definition.</p>
+<p class="MsoNormal">This is only available when the <b>Credit, Risk</b>, or <b>RTPE</b> tab within the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Stop Monitoring All Definitions</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Stops running all monitoring definitions for a specific category. The available choices are:</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> All</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Credit</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Risk</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> RTPE</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Op Services.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Restart Monitoring All Definitions</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Restarts all monitoring definitions for a specific category. The available choices are:</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> All</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Credit</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Risk</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> RTPE</p>
+<p class="MsoListParagraph" style='text-indent:-.25in'><span style='font-family: Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Op Services.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>View</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Online Results</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Opens the <i>Credit/Risk Online Results</i> window.</p>
+<p class="MsoNormal">This is only available when the <b>Credit, Risk</b>, or <b>RTPE</b> tab within the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Batch Execution Log</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Opens the <i>Batch Execution Log</i> for the particular item.</p>
+<p class="MsoNormal">This is only available when the <b>Credit, Risk</b>, or <b>RTPE</b> tab within the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>View Credit/Risk/RTPE Raw Engine Data</b></p>
+<p class="MsoNormal"><span style='color:red'>V8.0r2 and earlier</span></p>
+<p class="MsoNormal"><b>Raw Credit/Risk Engine Data</b></p>
+<p class="MsoNormal"><span style='color:red'>V8.1r1 and above</span></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays a screen containing Credit/Risk/RTPE Raw Engine Data.</p>
+<p class="MsoNormal">This is only available when the <b>Credit, Risk</b>, or <b>RTPE</b> tab within the <b>Services</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>MDD Ticker Data</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the up-to-date cached ticker data when the Market Data Distribution (MDD) engine is configured and running.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="../Trading_Manager/TRADING_Error_Log_Viewer.htm">Error Log Viewer</a></b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>Error Log Viewer.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Refresh Screen</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">When selected, this will reload the screen data.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Set Message Table Size</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>Message Table</i> window. This table is used to define the minimum and maximum number of rows to display in the table.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Market Data</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Job Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Jobs for Selected Row</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays a table view of jobs for the selected row.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Job Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> All Jobs</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>All Saved Job Log Data</i> table.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Job Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Query Log for Jobs</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>System Query</i> window to allow searches for jobs in the log.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Job Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Job Request Data</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays a select window. This window is used to select a job, by reference code, and designate a format for viewing the data.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Job Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Jobs Response Data</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays a select window used to select a job response, by reference code, and designate a format for viewing the data.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Activity Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Activities for Selected Row</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays an activity table for the selected row.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Activity Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> All Activities</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays an activity table for all rows.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Activity Log Data</b> <b><span style='font-family:Wingdings'>&agrave;</span> Query Log for Activities</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>System Query</i> window to facilitate searches of the activity log.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Icon Legend</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays a key of the Connex Monitor icons and statuses, with descriptions.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Script</b></p>
+<p class="MsoNormal"><span style='color:red'>V9.0r1 through V9.1r2</span></p>
+<p class="MsoNormal"><b>AVS</b></p>
+<p class="MsoNormal"><span style='color:red'>V8.2r1 and earlier</span></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Plugin Execution Log</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This is only available when the <b>Script Engines</b> tab is selected.</p>
+<p class="MsoNormal">Displays the <i>Execution Log</i> detail table.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Script</b></p>
+<p class="MsoNormal"><span style='color:red'>V9.0r1 through V9.1r2</span></p>
+<p class="MsoNormal"><b>AVS</b></p>
+<p class="MsoNormal"><span style='color:red'>V8.2r1 and earlier</span></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Query Plugin Execution Log</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <i>Query AVS Execution Log</i> window. This screen is used to select criteria to search upon.</p>
+<p class="MsoNormal">This is only available when the <b>Script Engines</b> tab is selected.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>View Recent Status Updates</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Opens the <i>Recent Status Updates</i> window.</p>
+<p class="MsoNormal">This is only available when the <b>Services</b> <b><span style='font-family:Wingdings'>&agrave;</span> Connex Grid Monitor</b> tab is selected.</p>
+<p class="MsoNormal"><span style='color:red'>OpenConnect was replaced with Connex in v8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Debug</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Init Java VM</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Start the Java Virtual machine.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the system help files.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="162" valign="top" style='width:121.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>About</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Opens the <i><a href="OLF_About_Window.htm">About</a></i> window.</p>
+</td>
+</tr>
+</table>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="492" valign="top" style='width:369.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt;height: 22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image003.jpg" alt="image009" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This has the same function as <b>File</b><b><span style='font-family:Wingdings'>&agrave;</span>Print</b>.</p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image004.jpg" alt="image010" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This has the same function as <b>View</b><b><span style='font-family:Wingdings'>&agrave;</span>Error Log Viewer</b>.</p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image005.jpg" alt="image011" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <b>Console Viewer</b> of the <i>Error Log Viewer.</i></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image006.jpg" alt="image012" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays the <b>Debug Settings</b> of the <i>Error Log Viewer.</i></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image007.jpg" alt="image011.jpg" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i><a href="OLF_Plugin_Editor.htm">Simple Plugin Editor</a></i>.</p>
+<p class="MsoNormal"><span style='color:red'>V10.0r2 and above</span></p>
+<p class="MsoNormal">Launch the <i>Advance Plugin Editor</i> - Eclipse is a full Java integrated development environment used to edit, compile, and debug OpenJVS plug-ins.</p>
+<p class="MsoNormal"><span style='color:red'>V91.r1 - V9.1r2</span></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image008.jpg" alt="image013.jpg" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Launch the <i>Advance Plugin Editor</i> - Eclipse is a full Java integrated development environment used to edit, compile, and debug OpenJVS plug-ins.</p>
+<p class="MsoNormal"><span style='color:red'>V10.0r2 and above</span></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><img border="0" width="25" height="25" src="OLF_System_Monitor_files/image009.jpg" alt="image013" /></b></p>
+</td>
+<td width="492" style='width:369.0pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This has the same function as <b>Help</b><b><span style='font-family:Wingdings'>&agrave;</span>About</b>.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in'>&#160;</p>
+<p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in'>This module contains various tabs, each of which brings up a different “view”. The views and sub-views are:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='margin-left:2.6pt;border-collapse:collapse'>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>View Name</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Sub Views</b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Script Engines</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Script_Engines.htm">Script Engines</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows detail information about script engines and jobs.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Services</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_All_Services.htm">All Services</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Used to view the status of all services/engines being run.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Domain_Grid_Mon.htm">Domain Services Monitor</a></b></p>
+<p class="MsoNormal"><b>Domain Grid Monitor</b></p>
+<p class="MsoNormal"><b>(v91r1 and earlier)</b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows details of processes and functionality and information related to OpenLink’s “Grid Functionality”. It provides management facilities around grid configuration.</p>
+<p class="MsoNormal"><span style='color:red'>This tab is only available in V8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Connex_Grid_Mon.htm">Connex Services Monitor</a></b></p>
+<p class="MsoNormal"><b>Connex Grid Monitor (v91r1 and earlier)</b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">A management facility for OpenLink’s Connex integration framework. Shows configured Connex engines and standard/custom gateways. It provides management facilities on jobs, messaging, engines and exceptions.</p>
+<p class="MsoNormal"><span style='color:red'>This tab in only in V8.0r1 and above.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Credit.htm">Credit</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This screen provides centralized management of the online credit definitions, including the ability to view the online results and bring the definitions on/offline.</p>
+<p class="MsoNormal">See <i><a href="../Credit_Risk_Manager/CreditRiskMgrs.htm">Credit Manager</a>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Risk.htm">Risk</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This screen provides centralized management of the online risk definitions, including the ability to view the online results and bring the definitions on/offline.</p>
+<p class="MsoNormal">See <i><a href="../Credit_Risk_Manager/CreditRiskMgrs.htm">Risk Manager</a>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_RTPE.htm">RTPE</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This screen provides the ability to view global and local RTPE definitions with the ability to view the batch executed log, see updated statuses and bring the definitions on/offline.</p>
+<p class="MsoNormal">See <i><a href="../Operations_Manager/OPS_RTPE.htm">Real Time Position Engine</a></i> .</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Op_Serv.htm">Op Services</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This screen is used to view online operation services definitions and toggle those definitions on/offline.</p>
+<p class="MsoNormal">See <i><a href="../Operations_Manager/OPS_Operation_Services.htm">Operation Services</a>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Prod_Ext_OpenConnect.htm">OpenConnect Monitor</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows the OpenConnect Monitor.</p>
+<p class="MsoNormal">Note: Users may only see this tab if they have certain licensing.</p>
+<p class="MsoNormal"><span style='color:red'>This tab is only in V7.0rX.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Market_Data.htm">Market Data</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Configurable screen for viewing “Market Data” engines where data is viewed by ticker. The market data fields shown within the table are user-driven.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_Deal_Ser_Qry.htm">Deal Services Query</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Provides a query tool to view services/engines by transaction number.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Diagnostics</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Diagnostics_Process.htm">Process Table</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Displays details about underlying processes executed on the local machine.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Diagnostics_Oping.htm">OPING</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">A utility used to diagnose communications between modules on various hosts.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Diagnostics_Listen.htm">RV LISTEN</a> (v8.0r2 and below)</b></p>
+<p class="MsoNormal"><b>ECOM Listen (v8.1r1 and up)</b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">OpenLink Messaging/RV</p>
+<p class="MsoNormal">This screen is used to set up messages for testing communications between machines. Listeners are defined by subject for the component the user is configured for.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Diagnostics_Sessions.htm">Sessions</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows details about running sessions on selected hosts. This tool includes the functionality to terminate user sessions.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Services_ANE_Messages.htm">ANE Messages</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows information about ANE (Automatic Notification Engine) messages, specifically showing the update messages received on the local session.</p>
+<p class="MsoNormal"><span style='color:red'>In 6.0, this tab was under the Services tab.&#160; In v7.0 and above, it was moved to Diagnostics tab.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Diagnostics_My_Services.htm">My Services</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows the user specific services that are running or available to for the logged-on user.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Product Tools</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-Prod_Ext_Toolkit.htm">Enterprise Toolkit</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Details the underlying components required for use of the OpenLink Toolkit. This tab shows the required controls and dlls for Toolkit development and execution.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>System</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_Info.htm">Info</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows system information identical to that in the About Window.</p>
+<p class="MsoNormal">See <i><a href="OLF_About_Window.htm">About Window</a>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_Env_Var.htm">System Wide Configuration</a></b></p>
+<p class="MsoNormal"><b>(Note: This was called “Environment Variables” in 6.0r2)</b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows information about the various system configurations. This screen allows for configuration by user or system. System configurations are set in the <i>System Wide Configuration</i> screen accessible from the Admin Manager.</p>
+<p class="MsoNormal">See <i><a href="OLF_Environment_Variables.htm">Environment Variables</a>.</i></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_Licensing.htm">Licensing</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows licensing details including limits, limit types and features.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_DLL.htm">DLL Versions</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows detailed information about DLL versions used by the system.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_Cache.htm">Cache Monitor</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows information about underlying data caching, including the detailed cached data.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-System_Graphics.htm">Graphics Properties</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows display variable details. This data tab is read-only. The AB_OLF_DEF_FONT variable can be configured using the <b>System Wide Configuration</b> tab. The other variables are configured in the runscript.</p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Database</b></p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="../Admin_Manager/ADMIN_DB_Connections.htm">Database Connections</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">This screen is used to view details about server processes, users, database usage and machine usage.</p>
+<p class="MsoNormal"><span style='color:red'>This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="../Admin_Manager/ADMIN_DB_Administration.htm">Database Administration</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows database specific settings. It provides easy access to commonly used stored procedures.</p>
+<p class="MsoNormal"><span style='color:red'>This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-DB_Unique_ID.htm">Unique Id Administration</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows database table details including enumerations and ID numbers. This screen provides the ability to increment unique IDs.</p>
+<p class="MsoNormal"><span style='color:red'>This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager.</span></p>
+</td>
+</tr>
+<tr>
+<td width="113" valign="top" style='width:84.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="154" valign="top" style='width:115.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b><a href="OLF_System_Monitor-DB_Analyze_Table_Stats.htm">Analyze Table Statistics</a></b></p>
+</td>
+<td width="401" valign="top" style='width:301.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">Shows database object details and provides the ability to perform an update of database statistics.</p>
+<p class="MsoNormal"><span style='color:red'>This is only in v8.0r1 and above.</span></p>
+</td>
+</tr>
+</table>
+<h3>Licensing</h3>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>System Monitor Tabs</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Security Privilege ID</b></p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Script Engines</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Services</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29200</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>All Services</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Domain Grid Monitor</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29250</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Running Services</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Monitor</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">26110 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Connex Grid Monitor</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29255 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Running Services</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Monitor</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">26000</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Credit</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29210</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Risk</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29220</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>RTPE</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29230</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Op Services</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29240</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Market Data</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29260</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Deal Services Query</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29280</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Diagnostics</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29300</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Process Table</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Kill Selected Processes</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29305 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Oping</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29310</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>RV Listen</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29320</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Listen to All</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29321 (removed in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Sessions</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29330</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Kill Selected Session</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29331 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:1.0in'>Kill Remote Processes</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29306 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>ANE Messages</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29270</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>My Services</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Product Tools</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29400</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Enterprise Toolkit</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29410</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>System</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Info</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>System Wide Configuration</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Licensing</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>DLL Versions</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Cache Monitor</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Graphic Properties</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Internal System Data</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal"><b>Database</b></p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29600</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Database Connections</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Database Administration</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Unique ID Administration</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">None</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Analyze Table Statistics</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29610</p>
+</td>
+</tr>
+<tr>
+<td width="319" valign="top" style='width:239.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal" style='margin-left:.5in'>Update Table Statistics</p>
+</td>
+<td width="352" valign="top" style='width:264.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt'>
+<p class="MsoNormal">29620 (new in v8.0r1 and above)</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in'>&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

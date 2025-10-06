@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Sessions.htm.
+ Section heading: Right-Click Menu.
+ Text content: Right-clicking on any row within the table returns the following menu items: .
+ Table data: 
+| Item | Description |
+| --- | --- |
+| View Process Table | Launches theProcess Table. |
+| View System Info | Launches theSystem Monitor - System Infowindow. |
+| View Server Node Performance | Launches theServer Node Performancewindow. |
+| View OS Services | Launches theOS Services Window. |
+| View Olisten Messages | Launches theError Log& Console Viewer. |.

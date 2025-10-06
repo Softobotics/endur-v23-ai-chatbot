@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Logging_On_The_System.htm.
+ Section heading: Overview.
+ Text content: The Logon window is the screen that initially displays when the system is accessed. Users must enter their designated user name and password to gain access to the system. The Title Bar indicates which major release the system is running.  .
+ Image file: OLF_Logging_On_The_System_files/image001.jpg
+ Image description: the screenshoter is a software that allows you to use the software to create a new game.

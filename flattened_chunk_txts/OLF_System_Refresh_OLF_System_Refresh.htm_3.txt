@@ -1,0 +1,25 @@
+This chunk is from the HTML file: OLF_System_Refresh.htm.
+ Section heading: Data Cache Functionality By Version.
+ Text content: .
+ Table data: 
+| Feature/Functionality | V6.0 | V7.0 | V8.0 |
+| --- | --- | --- | --- |
+| Has the ability to cache 
+			 Static Data | Ö | Ö | Ö |
+| Has the ability to cache 
+			 Indexes/Vols/Correls | Ö | Ö | Ö |
+| Static Data pick lists 
+			 are loaded dynamically only when needed |  | Ö | Ö |
+| Can view data stored 
+			 in the data cache in the System Monitor |  | Ö | Ö |
+| Indexes/Vols/Correls 
+			 are loaded dynamically only when needed |  |  | Ö |
+| No manual refreshes or 
+			 any special considerations  required when another 
+			 user modifies/adds Static Data |  |  | Ö |
+| No manual refreshes or 
+			 any special considerations  required when another 
+			 user modifies/adds Indexes/Vols/Correls.In V7.0 and below, ANE (Automatic Notification 
+			 Engine) is required to update other users.  In 8.0 
+			 and above, updates are automatic and don’t require ANE to 
+			 be running. | Partial | Partial | Ö |.

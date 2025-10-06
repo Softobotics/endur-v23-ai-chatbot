@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_OpenLink_Central_Launch_Available_Service.htm.
+ Section heading: Menu Items.
+ Text content: These menu items are available in V10.2.1 and above..
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Print Screen | Sends a copy of the screen to a selected printer. |
+|  | Save Window Location | Saves the location of the window on the screen for the next time the user opens the window. |
+|  | Delete Saved Window Location | Removes the saved window location so that it will not display in the same location the next time the window is launched. |
+|  | Exit | Closes the current window. |
+| Help | Help | Displays the system help files. |
+|  | About | Opens theAboutwindow, which displays information about the system. |.

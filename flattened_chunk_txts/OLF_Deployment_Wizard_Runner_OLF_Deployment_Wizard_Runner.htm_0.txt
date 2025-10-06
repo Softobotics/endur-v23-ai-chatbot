@@ -1,0 +1,49 @@
+This chunk is from the HTML file: OLF_Deployment_Wizard_Runner.htm.
+ Section heading: Accessing this Window.
+ Text content: Note: There are multiple ways to access this window; however, only one 
+ way is defined because some features can only be accessed via this procedure. 1. From OpenLink Central, right-click anywhere on the header and select 
+ Launch Available Services. The Launch Available Services window displays. 2. Type Deployment Wizard in the Filter Service field, select Deployment 
+ Wizard - Runner in the Available Services panel, and then click Launch. 
+ The following windows display: Deployment Runner panel is used 
+ for application of the deployment against the destination system and to 
+ load and run a deployment.   This window contains the following menu items specific to the Deployment 
+ Wizard Runner: .
+ Image file: OLF_Deployment_Wizard_Runner_files/image01.jpg
+ Image description: the excel excel spreads.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Load Playbook | This 
+		 will open a file chooser allowing you to select a previously created 
+		 and saved playbook (playbook.json) or generated playbook (playbook.zip). 
+		 The playbook will be loaded into the panel ready for editing.If you have un-saved changes to an existing 
+		 playbook you will be prompted to either discard them or cancel 
+		 the operation. |
+|  | Clear Playbook | Clears 
+		 the loaded playbook. |
+| Deployment | Run Deployment | When 
+		 the deployment playbook is run, the step status move from ‘loaded’ 
+		 to ‘pending’ and each step will be run in sequence. The step status 
+		 will move to ‘processing’ as it begins to run and then to either 
+		 ‘Completed Successfully’ or ‘Failed’ with all steps being color-coded 
+		 to make it easier to identify any issues.Each step also records any associated output from the step. 
+		 This is captured and recorded for review and are identified by 
+		 icons on the step row. |
+|  | Database Credentials | If the playbook contains any ‘Apply SQL' or 
+		 'Custom SQL’ steps, the Runner will request for Database Credentials 
+		 so that it can use these to access and apply the native SQL commands.Note: You may require a DBA to provide (or enter) the database 
+		 User Name and Password if your playbook contains custom SQL. |
+|  | Review 
+		 Previous Deployment | This 
+		 menu item will invoke the Viewer to allow you to review the latest 
+		 deployment performed on this system. |
+|  | Review Any Deployment | This 
+		 menu item will allow you to select any deployment performed on 
+		 this system and invoke the Viewer to review. |
+|  | Terminate 
+		 Deployment | This menu item will allow you to kill the deployment 
+		 process. This is not a recommended action and should only be used 
+		 as a last resort as it may leave the system in an ambiguous state. |
+| Help | Deployment Wizard - Playbook 
+		 Runner | Launches this help file. |
+|  | About | Opens theAboutwindow. |.

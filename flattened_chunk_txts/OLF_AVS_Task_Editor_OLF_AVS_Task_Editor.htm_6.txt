@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Task_Editor.htm.
+ Section heading: Task Permissions.
+ Text content: For more information on task properties, see the section on Task Permissions.  .
+ 
+Links to other files: OLF_AVS_Task_Permissions.htm.

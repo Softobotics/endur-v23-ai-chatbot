@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Sessions.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons: .
+ Image file: OLF_System_Monitor-Diagnostics_Sessions_files/image003.jpg
+ Image description: a roll of white paper with a black stripe.
+ Image file: OLF_System_Monitor-Diagnostics_Sessions_files/image004.jpg
+ Image description: a roll of aluminum foil.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Terminates the selected session. |
+|  | Reloads the list of sessions in the table. |.

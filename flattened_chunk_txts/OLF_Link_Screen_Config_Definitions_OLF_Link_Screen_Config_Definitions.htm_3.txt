@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Link_Screen_Config_Definitions.htm.
+ Section heading: Tabs.
+ Text content: This window contains the following tabs:.
+ Table data: 
+| Tab | Description |
+| --- | --- |
+| Template/Instrument Type Links | This allows default deal entry screens for a toolset, instrument type, or template to be set for users and interface groups.This tab displays by default when accessed from the toolset input screen or theAdmin Manager. |
+| Master Central (OpenLink Central) Configuration Links | This allows defaultOpenLink Centralconfigurations to be designated for users and interface groups.This tab displays by default when accessed fromOpenLink Central. |
+| Presentation Modules Configuration Links | This allows defaultPresentation Moduleconfigurations to be designated for users and interface groups.This tab is available in V9.0R1 and above. |.

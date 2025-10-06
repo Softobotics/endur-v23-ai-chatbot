@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Connex_Grid_Mon.htm.
+ Section heading: Fields.
+ Text content: This panel contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| <Connex Cluster/ ConnexGrid XML Engine > | Displays clusters, engines and gateways being tested, grouped by clusters, in tree view form. Click the field or the +/- icons to expand/collapse the components in the group. |
+| Entity Name | The name of the component being tested. |
+| Group Name | The name of the Connex cluster the component being tested belongs to. |
+| Test | The type of test being administered. |
+| Status | The status of the test being administered. |
+| Test Start Time | The date and time the test was initiated. |.

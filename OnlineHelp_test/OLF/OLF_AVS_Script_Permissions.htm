@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Script Properties</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+punctuation-wrap:simple;
+text-autospace:none;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Cambria" ,"serif";
+color:#243F60;
+font-style:italic; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif"; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 789.35pt;
+        margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nOperations Manager\nServices\nAVS\nScript Editor\nAVS Script Permissions");
+addTocInfo("Screen-Level Help Topics\nTrading Manager\nAVS Menu\nScript Editor\nAVS Script Permissions");
+addAvenueInfo("System Use","OLF/OLF_AVS_Script_Editor.htm","OLF/OLF_AVS_Task_Statuses.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TradingMgr.htm\">Trading Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TRADING_AVS_Functions_and_Arguments.htm\">AVS Menu<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS_82r1.htm\">Script Editor<\/a> &gt; AVS Script Permissions<\/p>");
+}
+else{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/Operations_Manager.htm\">Operations Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">Services<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">AVS<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_AVS_Add-In_Configuration.htm\">Script Editor<\/a> &gt; AVS Script Permissions<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Script Properties</h1>
+<h2>Overview</h2>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>The scripting language can be used to create new scripts.&#160; These new scripts are stored with those that come with the System.&#160; A script is linked to a task. The task contains vital information about a script, such as, scheduling information. Each script has properties associated with it. The person who creates a script is the owner.</p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>The owner can associate Read, Write and Execute Properties to the script for himself, to a security group, and to the public.</p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Note:</b> This page is for v90r1 and later. For v82r1 and earlier, see <i>AVS Script Properties.</i></p>
+<h3>See Also</h3>
+<p class="MsoNormal"><i><a href="OLF_AVS_Task_Editor.htm">Task Editor</a></i></p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>This window can be accessed via the Operations Manager or the Trading Manager by following the steps below.</p>
+<h4>From the Operations Manager:</h4>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <i>Services</i> tab.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Script</b> icon. The <i><a href="../Operations_Manager/OPS_AVS.htm">Plugin</a></i> window displays.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select a task and select an edit option. The <i><a href="OLF_AVS_Script_Editor.htm">Script Editor</a></i> window displays.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>4.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>File</b> <span style='font-family:Wingdings'>&agrave;</span><b>Properties</b>.</p>
+<h4>From the Trading Manager:</h4>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in'><span style='color:black'>1.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"; color:black'>&#160;&#160;&#160;</span> <span style='color:black'>Select <b>Script</b></span> <b><span style='font-family:Wingdings'>&agrave;</span> <span style='color:black'>Script Editor</span></b><span style='color:black'>.&#160; The <i>Script Editor</i> window displays.</span></p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> <span style='color:black'>Select <b>File</b></span> <b><span style='font-family:Wingdings'>&agrave;</span><span style='color:black'>Open</span></b><span style='color:black'>.&#160; A pop up list of available scripts in the database displays. After selection, t</span>he <i><a href="OLF_AVS_Script_Editor.htm">Script Editor</a></i> window displays.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in;punctuation-wrap: simple;text-autospace:none'>3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>File</b> <span style='font-family:Wingdings'>&agrave;</span><b>Properties</b>.</p>
+<p class="MsoNormal">The following window displays:</p>
+<p class="MsoNormal"><img border="0" width="518" height="319" src="OLF_AVS_Script_Permissions_files/image001.jpg" alt="image015.jpg" /></p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Note:</b>&#160; The settings in this window are the System-upgrade defaults for existing scripts. The Owner and Group information and Owner/Group/Public properties can be modified. In versions prior to v8.1r2, it is also important to note that only one security group can be assigned to each task (when one group is assigned the privilege, any previously assigned group will lose the privilege). In v8.1r2 and up, multiple selections of security groups for group permissions on scripts and queries is enabled.</p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">None.</p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="131" valign="top" style='width:98.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Button</h5>
+</td>
+<td width="507" valign="top" style='width:380.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="131" valign="top" style='width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><img border="0" width="112" height="32" src="OLF_AVS_Script_Permissions_files/image002.jpg" alt="image012.jpg" /></p>
+</td>
+<td width="507" valign="top" style='width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the requested changes after a confirmation message displays.&#160; The <i>Script Editor</i> window displays.</p>
+</td>
+</tr>
+<tr>
+<td width="131" valign="top" style='width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><img border="0" width="112" height="32" src="OLF_AVS_Script_Permissions_files/image003.jpg" alt="image013.jpg" /></p>
+</td>
+<td width="507" valign="top" style='width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cancels any changes and closes this window.</p>
+</td>
+</tr>
+</table>
+<h3>Fields</h3>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>This window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='punctuation-wrap:simple;text-autospace:none'>Field</h5>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center;punctuation-wrap: simple;text-autospace:none'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h6>Name</h6>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoHeader" style='punctuation-wrap:simple;text-autospace:none'>This is a variable character field of up to 32 characters.&#160; It represents the name of the Script towards which privileges are being applied.&#160; If the Script is new and no name has been yet assigned, data can be entered.&#160; Otherwise, this is a read-only field.&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Directory/Full Path</b></p>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Together, these two fields indicate the path and directory in which the script is located.&#160; During a System upgrade, all of the existing tasks and scripts in the database are placed in the <b>/Script/Site</b> directory<b>.&#160;</b></p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>New tasks are saved to the <b>/Script/Site</b> directory with your user ID as the owner.&#160; Left-click in the <b>Directory</b> field to change the directory of a new script.&#160; A pick list displays from which to chose a new directory.</p>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Version</b></p>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>This indicates the number of the current version of the script permission.&#160; The version number increases each time permissions are changed and saved.&#160; A value of “0” indicates an unedited script in its original form.</p>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Owner</b></p>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>This is a pick list field of available user IDs.&#160; The pick list is disabled if this is a new script.&#160; Otherwise, select a user as the owner.&#160; The user ID of the person who creates the script is initially indicated as the owner.&#160; Only someone with the associated properties, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Directory Node System SuperUser Group</b></li>
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Directory System Script SuperUser Group</b></li>
+</ul>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Note:&#160;</b> If the original owner of the script is changed, the original owner may lose access rights to the script if they are not part of the group to which the script is assigned.</p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>For more information on superuser permissions and how they work, see <a href="OLF_Directory_Browser.htm">Directory Browser.</a></p>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Security Group</b></p>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is a pick list field of Security Groups (Security Groups are set up in the Admin Manager).&#160; Choose the group whose members have rights to the selected script and its associated properties. &#160;A security group <b>Script DIRNODE Developers</b> was created and assigned as a default to each of the existing tasks after a database upgrade.</p>
+<p class="MsoNormal"><b>Note:</b> &#160;The default name of this Security Group (<b>Script DIRNODE Developers</b>) can be changed in the Admin Manager.&#160;</p>
+<p class="MsoNormal">The default group script assignments can be changed. <b><i>&#160;</i></b>Only someone with the associated properties, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal"><b>Directory Node System SuperUser Group</b></li>
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Directory System Script SuperUser Group</b></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="170" valign="top" style='width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Owner/Group/Public Properties</b></p>
+</td>
+<td width="471" valign="top" style='width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>These are check box fields that can be toggled on and off.&#160; They grant read, write, and execute privileges to the owner of the script, the security group assigned, and to the general population of users.</p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><b>Note:</b>&#160; Execute Properties are checked by the script engine.</p>
+</td>
+</tr>
+</table>
+<h2>Adding Properties for a New Script</h2>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>In adding properties for a new script, the <i>Script Properties</i> window defaults as follows:</p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'><img border="0" width="518" height="319" src="OLF_AVS_Script_Permissions_files/image004.jpg" alt="image014.jpg" /></p>
+<p class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Follow these steps to change the default:</p>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">If the script is new and no name is assigned, information can be entered into the “Name” field.&#160; The field represents the name of the Script towards which privileges are being assigned.</li>
+<li class="MsoNormal">Left-click the “Group” field to select a Security Group.&#160; Those needing properties to the script, but are not in the assigned group, can be added later through the <i><a href="../Reference_Explorer/REFERENCE_EXPLORER_Desktop.htm">Reference Explorer Desktop</a></i> (V10.0r2 and later) or the <i><a href="../Reference_Manager/ReferenceMgr.htm">Reference Manager</a></i> (V10.2.1 and earlier) via the Security Group Addition of Personnel Maintenance.</li>
+<li class="MsoNormal">New scripts are saved to the <b>/Script/Site</b> directory with the current user’s ID as the owner.&#160; Users can change the default directory of a new script.&#160; Left click on the <b>Directory</b> field (which is a pick list field) and select from an available directory.&#160; The directories available depend upon the user's security privileges.</li>
+<li class="MsoNormal">Select the Owner/Group/Public properties that will be granted to the script's users by clicking on the checkbox fields.&#160; They can be toggled on and off.</li>
+<li class="MsoNormal">Press the <b>Save</b> button.&#160; New scripts are saved to the <b>/Script/Site</b> directory.&#160; The current user’s ID is indicated as the owner.&#160;</li>
+</ol>
+<p class="MsoNormal" style='margin-left:.5in;punctuation-wrap:simple;text-autospace: none'><b>Note:&#160;</b> In editing properties for an existing script, you can change the <b>Owner</b> and reassign the <b>Group</b> if you have the proper security properties.&#160; You can also change the Owner/Group/Public properties granted.</p>
+<h2>Assigning Access Rights for a Script to Security Groups</h2>
+<p class="MsoNormal">The owner of a script has the rights to assign the rights to access this script to one security group in the system.&#160; For example, a script that is relevant to the job functions of back office personnel can be restricted to that group. Each time the Script is assigned to a group and saved, the previous definition is overwritten.</p>
+<p class="MsoNormal">Access rights can be assigned by performing the following steps: From the Operations Manager:</p>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Select the <i>Services</i> tab.</li>
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Select the <b>Script</b> icon. The <i><a href="../Operations_Manager/OPS_AVS.htm">Plugin</a></i> window displays.</li>
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Select a task and select an edit option. The <i><a href="OLF_AVS_Script_Editor.htm">Script Editor</a></i> window displays.</li>
+<li class="MsoNormal" style='punctuation-wrap:simple;text-autospace:none'>Select <b>File</b> <span style='font-family:Wingdings'>&agrave;</span> <b>Properties</b>.</li>
+<li class="MsoNormal">The <i>Script Properties</i> window displays.</li>
+<li class="MsoNormal">Right-click on the “Groups” field.</li>
+<li class="MsoNormal">A pick list of all groups to which the user has access will display.</li>
+<li class="MsoNormal">Scroll down to the group to be selected.</li>
+<li class="MsoNormal">Click the <b>Save</b> button.</li>
+<li class="MsoNormal">The user will be prompted to confirm the changes before the System saves them.</li>
+</ol>
+<p class="MsoBodyText"><u>IMPORTANT</u>:&#160; In versions prior to V8.1r2, if no group is assigned to a Script, it means that ALL users can run it. In v8.1r2 and up, if a group is not assigned no one will have access to the script.</p>
+<h2>Having the Proper Rights to Assign Security Group Access</h2>
+<p class="MsoNormal">The owner of the script has the right to assign access to a script to specific security groups.&#160; However, <i>the script’s owner must also have rights to those groups.</i>&#160;</p>
+<p class="MsoNormal">For example, a script owner must have access to the Front Office group to give it rights to run a script.&#160; Otherwise, the owner will not see name of the group in the pick list from which the group is selected.</p>
+<p class="MsoNormal">If the script owner has Administrator privileges and encounters this problem, it problem can be solved as follows:</p>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal"><i>Navigate to <a href="../Reference_Explorer/REFERENCE_EXPLORER_Personnel.htm">Reference Explorer Personnel</a></i> (V10.0r2 and later) or <i><a href="../Reference_Manager/REFERENCE_Personnel_Listing.htm">Reference Personnel Listing</a></i> (V10.2.1 and earlier).</li>
+<li class="MsoNormal">Double click on your user name.</li>
+<li class="MsoNormal">The <i>Personnel Editor</i> window displays.</li>
+<li class="MsoNormal">Query for the Group’s owner.</li>
+<li class="MsoNormal">Click the <b>Security Groups</b> radio button.</li>
+<li class="MsoNormal">In the “Available Groups” field, select the security group to be added.</li>
+<li class="MsoNormal">Click on the group name and click the <b>Add</b> button.</li>
+<li class="MsoNormal">Select <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Save.</b></li>
+<li class="MsoNormal">Go back to the Main Menu and click the <b>Refresh</b> button.</li>
+<li class="MsoNormal">Close and re-enter the <i>Script Editor.</i></li>
+<li class="MsoNormal">The added security group(s) should appear in the picklist from which they are selected.</li>
+</ol>
+<h2>Creating a New Script</h2>
+<h3>Creating a New Directory (Optional)</h3>
+<p class="MsoNormal">When a user saves a script, task, or query in the virtual file system, the “Save As” functionality allows the script to be saved to a directory other than those already defined.&#160; This can be done by following steps outline for creating a new directory in the <i><a href="OLF_Directory_Browser.htm">Directory Browser</a>.</i></p>
+<h3>Saving a New Script</h3>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">Return to the <i>Task Editor</i> or <i>Script Editor</i> where the script to be saved is being edited. Click <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span></b> <b>Save As.</b></li>
+</ol>
+<p class="MsoNormal" style='margin-left:.25in'>&#160;&#160;&#160;&#160; The <i>Save As Window</i> displays:</p>
+<p class="MsoNormal">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <img border="0" width="518" height="319" src="OLF_AVS_Script_Permissions_files/image005.jpg" alt="image016.jpg" /></p>
+<ol style='margin-top:0in' start="2" type="1">
+<li class="MsoNormal">Set the desired permissions for the new script to be saved.</li>
+<li class="MsoNormal">Right-click on the “Directory” field.</li>
+<li class="MsoNormal">The user will see that the new directory has been added to the choices in the pick list.</li>
+</ol>
+<p class="MsoNormal" style='margin-left:.5in'><img border="0" width="500" height="83" src="OLF_AVS_Script_Permissions_files/image006.jpg" alt="image017.jpg" /></p>
+<ol style='margin-top:0in' start="5" type="1">
+<li class="MsoNormal">Select the directory into which to save the script/task/query and click on the <b>Save</b> button.</li>
+</ol>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

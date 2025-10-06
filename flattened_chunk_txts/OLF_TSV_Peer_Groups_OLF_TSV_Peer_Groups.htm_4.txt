@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_TSV_Peer_Groups.htm.
+ Section heading: Assigning Personnel to TSV Peer Groups.
+ Text content: To assign personnel to a TSV Peer Group, perform the following steps: 1. Navigate to Reference Explorer Personnel (V10.0r2 and later) or Reference Personnel Listing (V10.2.1 and earlier). 2. Highlight the required row and click Edit .  The Personnel Editor window will open:  3. Right-click in the “TSV Peer Group” field and select the required group from the pick list. 4. Select File à Save from the menu bar to save the changes..
+ Image file: OLF_TSV_Peer_Groups_files/image006.jpg
+ Image description: the software interface for the software interface.
+ 
+Links to other files: ../Reference_Explorer/REFERENCE_EXPLORER_Personnel.htm, ../Reference_Manager/REFERENCE_Personnel_Listing.htm.

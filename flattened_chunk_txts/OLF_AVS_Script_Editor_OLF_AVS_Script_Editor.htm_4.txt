@@ -1,0 +1,54 @@
+This chunk is from the HTML file: OLF_AVS_Script_Editor.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_AVS_Script_Editor_files/image002.jpg
+ Image description: the new logo for the new website.
+ Image file: OLF_AVS_Script_Editor_files/image003.jpg
+ Image description: a small square with a small square on it.
+ Image file: OLF_AVS_Script_Editor_files/image004.jpg
+ Image description: the logo for the new app.
+ Image file: OLF_AVS_Script_Editor_files/image005.jpg
+ Image description: a white and black cat with a black nose.
+ Image file: OLF_AVS_Script_Editor_files/image006.jpg
+ Image description: a white and blue logo with the word run.
+ Image file: OLF_AVS_Script_Editor_files/image007.jpg
+ Image description: a logo for the company.
+ Image file: OLF_AVS_Script_Editor_files/image008.jpg
+ Image description: a computer screen with the word ' neo ' in the middle.
+ Image file: OLF_AVS_Script_Editor_files/image009.jpg
+ Image description: a white square with a blue circle on it.
+ Image file: OLF_AVS_Script_Editor_files/image010.jpg
+ Image description: a white square with a blue arrow in the middle.
+ Image file: OLF_AVS_Script_Editor_files/image011.jpg
+ Image description: a white square with the word find find find find find find find find find find find find find find.
+ Image file: OLF_AVS_Script_Editor_files/image012.jpg
+ Image description: the logo for the new lookup.
+ Image file: OLF_AVS_Script_Editor_files/image013.jpg
+ Image description: a stamp with a picture of a house.
+ Image file: OLF_AVS_Script_Editor_files/image014.jpg
+ Image description: a white and black logo with a red bow.
+ Image file: OLF_AVS_Script_Editor_files/image015.jpg
+ Image description: a white sign with a black and white logo.
+ Image file: OLF_AVS_Script_Editor_files/image016.jpg
+ Image description: a painting of a person in a red hat.
+ Image file: OLF_AVS_Script_Editor_files/image017.jpg
+ Image description: a black and white printer with a blue background.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Performs the same function asFileàNew. |
+|  | Performs the same function asFileàOpen. |
+|  | Performs the same function asFileàSave. |
+|  | Performs the same function asFileàProperties. |
+|  | Performs the same function asToolsàRun Script. |
+|  | Performs the same function asToolsàCompile. |
+|  | Toggles the Show/Hide Message feature. |
+|  | V8.0r1 and upUndo recent changes. |
+|  | V8.0r1 and upRedo recently removed changes. |
+|  | Performs the same function asToolsàFind. |
+|  | Performs the same function asToolsàFunction Lookup. |
+|  | V8.0r1 and upOpens theSearch All Scriptswindow. |
+|  | Performs the same function asToolsàPrint Script. |
+|  | Displays the parent window. |
+|  | Reloads the directory information from the database. |
+|  | Performs the same function asFileàPrint Screen. |.

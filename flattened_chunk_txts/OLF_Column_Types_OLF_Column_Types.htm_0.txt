@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Column_Types.htm.
+ Section heading: Overview.
+ Text content: This window is accessed through the Configure View window.  It shows the different columns in the table and describes the type of data contained therein.  It also allows the user to view the tables that make up the different columns. .

@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_AFE_Service_Arguments.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: 1. Launch OpenLink Central if it is not already in use. 2. Select OpenLink Central à Edit Configuration from the menu icon or menu bar to launch the OpenLink Central Configuration window. 3. Select the Button Configuration Tab. 4. Select a service ( NOTE : Not all services have arguments). 5. Use the “Service Selection” pick list in the Button Properties frame to select the type of string (screen_name, keywords, etc.).  6. Click the Args button. The following window displays (in V8.1R1 and above):   (V8.0r2 and below) .
+ Image file: OLF_AFE_Service_Arguments_files/image001.jpg
+ Image description: the screenshote dial in the windows.
+ Image file: OLF_AFE_Service_Arguments_files/image002.jpg
+ Image description: the screenshote screen shows the options for the service.
+ Image file: OLF_AFE_Service_Arguments_files/image003.jpg
+ Image description: the screens are selected in the text field.
+ 
+Links to other files: OLF_OpenLink_Configurations.htm.

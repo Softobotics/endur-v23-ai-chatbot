@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Task Editor</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif"; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nOperations Manager\nServices\nAVS\nTask Editor\nTask Editor");
+addTocInfo("Screen-Level Help Topics\nTrading Manager\nAVS Menu\nTask Editor");
+addAvenueInfo("System Use","OLF/OLF_AVS_Task_Permissions.htm","Operations_Manager/OPS_Operation_Services.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TradingMgr.htm\">Trading Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TRADING_AVS_Functions_and_Arguments.htm\">AVS Menu<\/a> &gt; Task Editor<\/p>");
+}
+else{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/Operations_Manager.htm\">Operations Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">Services<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">AVS<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_AVS_Task_Statuses.htm\">Task Editor<\/a> &gt; Task Editor<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Task Editor</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">To run a plugin, a task must first be created.&#160; The task schedules plugins to run at specific times or specific intervals.&#160; Using the <b>Components</b> feature, specific plugins are assigned as components of a task.&#160; This is the blueprint and tells the task what type and what plugin name to run.&#160; Tasks can be defined within the Trading, Credit, or Risk Managers or through the Script button of the <a href="../Operations_Manager/Operations_Manager.htm">Operation Manager</a>. Scripts can be imported (through <b>Operations Manager</b> <b><span style='font-family:Wingdings'>&agrave;</span> Script</b>) before assigning them to tasks.</p>
+<p class="MsoNormal"><b>Note:</b> This page is for v90r1 and later. For v82r1 and earlier, see <i>AVS Task Editor.</i></p>
+<p class="MsoNormal"><b>Note:</b> Plugins were formerly known as Scripts and as AVS Scripts.</p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">A <i>Task</i> can be defined multiple ways in the system.&#160; This procedure is just one example of how to access this window.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in'><span style='color:black'>1.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"; color:black'>&#160;&#160;&#160;</span> <span style='color:black'>Start the Trading Manager.&#160; The <i>Trading Manager</i> browser window displays.</span></p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in'><span style='color:black'>2.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"; color:black'>&#160;&#160;&#160;</span> <span style='color:black'>Select <b>Script</b></span> <b><span style='font-family:Wingdings'>&agrave;</span> <span style='color:black'>Task Editor.</span></b></p>
+<p class="MsoNormal" style='margin-left:.25in'><span style='color:black'>The following window displays:</span></p>
+<p class="Picture" style='margin-left:.25in'><span style='font-family:"Arial","sans-serif"; color:blue'><img border="0" width="500" height="513" src="OLF_AVS_Task_Editor_files/image001.jpg" alt="image011" /></span></p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the following menu:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Menu</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Item</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>File</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>New</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Clears the <i>Task Editor</i> window for entering new information.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Open</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays a pop up list of tasks that already exist in the database.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save to Database</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the current task to the database.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save As</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows you to save the task with a different names and different permissions.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Delete</b> <b>from Database</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">After user confirmation, deletes a saved task from the database.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><a href="OLF_AVS_Task_Permissions.htm">Properties</a></b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Task Properties</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><a href="OLF_Directory_Browser.htm">Open Task From Browser</a></b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Open Task With Browser</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Print Screen</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the current window.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><a href="OLF_AVS_Dir_Override_Attributes.htm">Modify Restricted Task</a></b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Directory Override Attributes</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Exit</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Exits from this window</p>
+</td>
+</tr>
+<tr>
+<td width="107" valign="top" style='width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="121" valign="top" style='width:90.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="395" valign="top" style='width:296.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Information about this window displays.</p>
+</td>
+</tr>
+</table>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="623" style='width:467.3pt;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Button</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="33" height="37" src="OLF_AVS_Task_Editor_files/image002.jpg" alt="taskmgrnew" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> New.</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="38" height="36" src="OLF_AVS_Task_Editor_files/image003.jpg" alt="taskmgropen" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Open.</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="40" height="39" src="OLF_AVS_Task_Editor_files/image004.jpg" alt="taskmgrdirmgr" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Open Task From Browser</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="34" height="38" src="OLF_AVS_Task_Editor_files/image005.jpg" alt="taskmgrsave" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Save to Database.</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="36" height="37" src="OLF_AVS_Task_Editor_files/image006.jpg" alt="taskmgrsecurity" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Permissions.</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img border="0" width="39" height="39" src="OLF_AVS_Task_Editor_files/image007.jpg" alt="taskmgrreloaddirinfo" /></b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Reloads the directory information from the database.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><img border="0" width="33" height="37" src="OLF_AVS_Task_Editor_files/image008.jpg" alt="printer" /></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Performs the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Print Screen.</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Edit</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the selected script in the <i>Script Editor</i> window.</p>
+</td>
+</tr>
+</table>
+<p class="Picture" style='margin-left:.25in'>&#160;</p>
+<h3>Fields</h3>
+<p class="MsoNormal">This window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<thead>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Task Name</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the task stored in the database.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Owner</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The user ID the task is assigned to.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Category</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The category of the task (free form data entry).</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Group</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the security group the task is assigned to.</p>
+<p class="MsoNormal">This is a read-only field.&#160; To set this up, you must go the properties window.&#160;</p>
+<p class="MsoNormal">See <a href="OLF_AVS_Task_Permissions.htm">Properties</a></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Last Updated</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Lists the <b>User ID, Date,</b> and <b>Time</b> the last modification to this task was made.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Path to Task</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Lists the location where this task is saved.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Description</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A user-defined text field for entering the description of the task.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Param Plugin</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the Param Script assigned to this task.&#160; A system pick list is available from which to select existing scripts.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">A <b><i>Parameter</i></b> script is used to prepare information to be passed to a main script.&#160; The table <b><i>argt</i></b> is used to hold data to be passed to a main script.&#160; Parameter scripts can, but are not normally, run without a main script in a Task.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">If a Task is run in the Trading Manager, then the Parameter Script would be run by the Trading Manager.&#160; If the Task is being run by the Services Manager, then the Parameter Script would be run by the Script Engine.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Main Plugin</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the Main Plugin assigned to this task.&#160; A system pick list is available from which to select existing plugins.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">A <b><i>Main</i></b> plugin is the main plugin that contains the bulk of the reporting or process-specific code.&#160; A main plugin may be designated to run alone in a Task.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">If a Task is run in the Trading Manger or Services Manager then the Main Plugin would be run by the Script Engine.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Page Viewer Plugin</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the Page Viewer plugin assigned to this task.&#160; A system pick list is available from which to select existing plugins.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">A <b><i>Page Viewer</i></b> plugin is typically used to set the subscriptions and activate the Page Viewer.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">If a Task is run in the Trading Manger then the Page Viewer Plugin would be run by the Trading Manager.&#160; If the Task is being run by the Services Manager then the Page Viewer Plugin would be run by the Script Engine.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Output Plugin</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the Output Plugin assigned to this task .&#160; A system pick list is available from which to select existing plugins.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">An <b><i>Output</i></b> plugin is a script that runs locally in the Trading Manager after the main plugin has run.&#160;</p>
+<p class="MsoNormal">The order in which plugins in a task are run is:</p>
+<p class="MsoNormal">First: Page Viewer Plugin</p>
+<p class="MsoNormal">Second: Param Plugin</p>
+<p class="MsoNormal">Third: Main Plugin</p>
+<p class="MsoNormal">Fourth: Output Plugin</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">If a Task is run in the Trading Manger then the Output Plugin would be run by the Trading Manager.&#160; If the Task is being run by the Services Manager then the Output Plugin would be run by the Script Engine.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Task Scheduling Upon Completion</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This controls task scheduling.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="109" valign="top" style='width:81.85pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Possible Values</b></p>
+</td>
+<td width="331" valign="top" style='width:248.55pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="109" valign="top" style='width:81.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Stop</h5>
+</td>
+<td width="331" valign="top" style='width:248.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Executes the plugin once and stops.</p>
+</td>
+</tr>
+<tr>
+<td width="109" valign="top" style='width:81.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Repeat Continually</b></p>
+</td>
+<td width="331" valign="top" style='width:248.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Schedules the script to run continuously.&#160; Only the Main Plugin repeats and not the Parameter Script.</p>
+<p class="MsoNormal"><span style='color:red'>Warning: Setting plugins to repeat continuously may have severely negative performance implications, and therefore this selection should not be used by anybody without accepting that this mode will cause performance issues.&#160; It will lock up the machine that is running the Task as it will be doing nothing but running the Task continually.&#160; Use the "Repeat Every" option instead, and be sure to set an interval that is longer than the time it takes to run the task.</span></p>
+</td>
+</tr>
+<tr>
+<td width="109" valign="top" style='width:81.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Repeat After Start Time</b></p>
+</td>
+<td width="331" valign="top" style='width:248.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Repeats the plugin at user-defined intervals.&#160; Enter the interval in the text field, and select the measurement of time from the pop-up list.&#160;</p>
+<p class="MsoNormal">Every time task repeats, the next run time is set to the last run's start time + repeat_interval.</p>
+<p class="MsoNormal">If the repeat interval is less than the actual duration of the task's execution time, the next run time is set to immediately after the current run ends.</p>
+<p class="MsoNormal"><span style='color:red'>Notes:</span></p>
+<p class="MsoNormal"><span style='color:red'>1) Only the Main Plugin repeats and not the Parameter Plugin.</span></p>
+<p class="MsoNormal"><span style='color:red'>2) The repeat time is taken after completion of the plugin not the start, i.e., if a task takes 2 min. and the user sets an interval of 3 min., then the task will continue to run 3 minutes after it last started (repeating approximately every 3 min.).</span></p>
+<p class="MsoNormal"><span style='color:red'>3) Setting this value to a time less than is takes to run the Task will cause the same performance issues noted if you choose the "Repeat Continuously" option. Therefore take care to set the repeat time to a time that is longer than it takes for the Task to run (or suffer the consequences in terms of poor performance.)</span></p>
+</td>
+</tr>
+<tr>
+<td width="109" valign="top" style='width:81.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Repeat After End Time</b></p>
+</td>
+<td width="331" valign="top" style='width:248.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Repeats the plugin at user-defined intervals.&#160; Enter the interval in the text field, and select the measurement of time from the pop-up list.&#160; Every time task repeats, the next run time is set to the last run's end time + repeat_interval.</p>
+<p class="MsoNormal"><span style='color:red'>Notes:</span></p>
+<p class="MsoNormal"><span style='color:red'>1) Only the Main Plugin repeats and not the Parameter Plugin.</span></p>
+<p class="MsoNormal"><span style='color:red'>2) The repeat time is taken after completion of the plugin not the start, i.e., if a task takes 2 min. and the user sets an interval of 3 min., then the task will continue to run 3 minutes after it last completed (repeating approximately every 5 min.).</span></p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="623" colspan="2" valign="top" style='width:467.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>v8.0r2 and Later -</b> "Run site" is now "Server Node".&#160; "Dispatcher Run site" is now "Dispatcher" and "Grid Run site" is now "Job Cluster".</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Server Node</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A picklist of choices from services that were set up in the <a href="../Services_Manager/Services_Manager.htm">Services Manager</a>.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Alternate Node</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A picklist of alternate choices from services that were set up in the <a href="../Services_Manager/Services_Manager.htm">Services Manager</a>. The pick list of choices is the same as the list from the Run Site field.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Run as Current User</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">V8.2r1 and later.</p>
+<p class="MsoNormal">This checkbox gives the user the option of running that task under his/her own user ID when scheduling a task to run on a remote server node. The default behavior for running tasks on a remote server node now uses the submitting user’s <a href="../Services_Manager/Services_Manager_Server_Node_Properties.htm">server node</a> privileges.</p>
+</td>
+</tr>
+<tr>
+<td width="623" colspan="2" valign="top" style='width:467.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>v7.0r2 and Earlier</b></p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Run Site</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Select the site at which this task should be executed from the system pick list.</p>
+<p class="MsoNormal">Your choices come from the other services that were set up in the <a href="../Services_Manager/Services_Manager.htm">Services Manager</a>.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Value</b></p>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Local</h5>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This means the Task runs on the machine on which the task is launched.</p>
+</td>
+</tr>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Default ASM</h5>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If you use "Default ASM," then this Task will run on the Runsite that is selected as the default in the Services Manager.&#160;&#160; The default is set within the Run Site Definitions screen.</p>
+<p class="MsoNormal">ASM stands for Application Services Manager.</p>
+</td>
+</tr>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5>Default Run Site</h5>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If the Task is being run from the Services Manager, then the run site for the Task will be as specified in the Workflow Definition.&#160;</p>
+<p class="MsoNormal">If the Task is not being run from the Services Manager, then the task will run on the machine specified by the environment variable AB_REMOTE_RUN_SITE.&#160;</p>
+<p class="MsoNormal">If that environment variable is not set, then the task will run on the user’s local machine.</p>
+</td>
+</tr>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>RevalService</b></p>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is currently not supported.</p>
+</td>
+</tr>
+<tr>
+<td width="142" valign="top" style='width:106.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Other Possible Values</b></p>
+</td>
+<td width="299" valign="top" style='width:223.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays all other named Run Sites in the Services Manager.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Alternate Site</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Select an alternate site at which this task can be executed from the system pick list if the initial Run Site is not available.&#160; The pick list of choices is the same as the list from the Run Site field.&#160; By default, it waits 5 sec. for a response from Run Site before moving on to the Alternate Site.&#160; The time it waits is determined by the environment variable AB_REMOTE_RUN_TIMEOUT.</p>
+<p class="MsoNormal">See <a href="OLF_Environment_Variables.htm">Environment Variables</a>.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal"><span style='color:black'>&#160;</span></p>
+<h2>Creating a Task</h2>
+<p class="MsoNormal">To create a Task:</p>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">Click the “Task Name” field and enter a name for the task in the <i>Task Editor</i> window.</li>
+</ol>
+<p class="MsoNormal" style='margin-left:.5in'><b>Note:&#160;</b> Access the <i>Task Editor</i> window through any appropriate Manager.</p>
+<ol style='margin-top:0in' start="2" type="1">
+<li class="MsoNormal">Select the “Description” field and enter a description if applicable.</li>
+</ol>
+<p class="MsoNormal" style='margin-left:.5in'><b>Note:</b>&#160; A description might describe what this task does, or it may describe how often the task should be executed.</p>
+<ol style='margin-top:0in' start="3" type="1">
+<li class="MsoNormal">Enter the name of the <b>Param Plugin</b> that should be executed as part of this task.&#160; This field is optional.</li>
+<li class="MsoNormal">Enter the name of the <b>Main Plugin</b> that should be executed as part of this task.&#160; This field is optional.</li>
+<li class="MsoNormal">Enter the name of the <b>Page Viewer Plugin</b> that should be executed as part of this task.&#160; This field is optional.</li>
+<li class="MsoNormal">Enter the name of the <b>Output Plugin</b> that should be executed as part of this task.&#160; This field is optional.</li>
+<li class="MsoNormal">Select the appropriate parameters in the fields of the <i>Task Scheduling</i> panel.</li>
+<li class="MsoNormal">Press the <b>Save</b> button or select <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Save to Database</b>.</li>
+<li class="MsoNormal">Select <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> New</b> to clear the <i>Task Editor</i> window.</li>
+<li class="MsoNormal">Repeat Steps 1 through 8 to assign the rest of the plugins to tasks.</li>
+</ol>
+<p class="MsoNormal">&#160;</p>
+<h2>Task Permissions</h2>
+<p class="MsoNormal">For more information on task properties, see the section on <a href="OLF_AVS_Task_Permissions.htm">Task Permissions.</a> &#160;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

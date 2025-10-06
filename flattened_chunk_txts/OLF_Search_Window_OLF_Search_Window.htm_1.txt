@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Search_Window.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window is accessed from the Table Viewer , which is used by several functionalities in the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Select Misc à Registered Pricing Models . The Registered Pricing Models window displays. 3. Select Search à Find . 4. The following window displays:   .
+ Image file: OLF_Search_Window_files/image001.jpg
+ Image description: the text editor tool.

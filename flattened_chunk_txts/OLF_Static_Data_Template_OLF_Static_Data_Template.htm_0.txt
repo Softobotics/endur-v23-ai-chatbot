@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Static_Data_Template.htm.
+ Section heading: Overview.
+ Text content: The Static Data Template is used throughout the system by several functions to add and maintain static data. This window may have different buttons and fields, depending on the context from which it is being displayed. Note that only user-defined data can be maintained or deleted.  The functionalities that utilize this window are as follows: § Static Data – Except for the ANE Configuration and Credit Derivative Setup windows, all static data utilizes this template. § Extension Security  See Also The User Data Worksheet module provides a graphical interface for managing User Table data with additional levels of control. The end-user screen mirrors the System’s Static Data screen, while the data view is controlled by custom scripts. .
+ 
+Links to other files: ../Admin_Manager/ADMIN_Static_Data.htm, ../Admin_Manager/ADMIN_Extension_Security.htm, ../Admin_Manager/ADMIN_User_Data_Worksheet.htm.

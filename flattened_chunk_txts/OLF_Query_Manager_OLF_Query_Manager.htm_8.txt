@@ -1,0 +1,28 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Frequently Asked Questions.
+ Text content: Question: The query is returning more trades 
+	 than I expected. For example, I only queried for trades with a status 
+	 of "Validated", but I am also getting trades with a status 
+	 of "New". Why is that? Answer: The system auto-adds 
+	 all deals included in a Composer . So if you have a composer 
+	 with a status of Validated and it contains 10 deals with a status 
+	 of new, you will see that the system will retrieve those additional 
+	 trades as well. This can cause a problem with EOD (End-of-Day) Saved 
+	 Queries used for EOD simulations. EOD simulations are run for one 
+	 portfolio at a time. If you have a query that returns deals in more 
+	 than one portfolio, the EOD will return an error message. If you have 
+	 a Composer that contains deals in several portfolios, then those deals 
+	 will be brought into the query, which can cause problems. The solution 
+	 is to exclude Composer deals from your query. Question: The query is not returning deals that 
+	 I am expecting it to return. Why is that? Answer: The Query Manager has some security restrictions based on what portfolios for which 
+	 a user has authorization. For example, you could have portfolios 1 
+	 through 10, with 100 trades in each. If a user only has authorization 
+	 for two portfolios, only the 200 deals in those two portfolios will 
+	 be retrieved. Question: How can I retrieve deals with a status 
+	 of "Matured", "Pending" or "Template?" Answer: The Trading Query (such as the Query Manager for the Trading Manager) defaults 
+	 to look for deals with a status of New and "Validated". 
+	 To view deals from any other status, simply set the “Tran Type” field 
+	 to the appropriate status, for example, Matured , Pending , 
+	 or Template . Q: How can I 
+	 retrieve Master Instruments/Holding Records? Answer: Set the Tran 
+	 Type field to Holding ..

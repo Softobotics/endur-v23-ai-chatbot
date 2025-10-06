@@ -1,0 +1,130 @@
+This chunk is from the HTML file: OLF_Backwards_Compatibility.htm.
+ Section heading: Backwards Compatibility Items.
+ Text content:  .
+ Table data: 
+| # | Description |
+| --- | --- |
+| 1 | These Toolsets are included for Backwards Compatibility and should not be used.#Toolset NameReplaced With or Note1ComHourlyNot Applicable.  This Toolset never worked.  Don’t use it. It will be removed in a future version.2EngyLTPCommodity Toolset3EngyPhysCommodity Toolset4EngyTSCommodity Toolset5MetalOptComOpt Toolset6MetalSwapComSwap Toolset7P-AssetNot Applicable8P-LiabNot Applicable | # | Toolset Name | Replaced With or Note | 1 | ComHourly | Not Applicable.  This Toolset never worked.  Don’t use it. It will be removed in a future version. | 2 | EngyLTP | Commodity Toolset | 3 | EngyPhys | Commodity Toolset | 4 | EngyTS | Commodity Toolset | 5 | MetalOpt | ComOpt Toolset | 6 | MetalSwap | ComSwap Toolset | 7 | P-Asset | Not Applicable | 8 | P-Liab | Not Applicable |
+| # | Toolset Name | Replaced With or Note |
+| 1 | ComHourly | Not Applicable.  This Toolset never worked.  Don’t use it. It will be removed in a future version. |
+| 2 | EngyLTP | Commodity Toolset |
+| 3 | EngyPhys | Commodity Toolset |
+| 4 | EngyTS | Commodity Toolset |
+| 5 | MetalOpt | ComOpt Toolset |
+| 6 | MetalSwap | ComSwap Toolset |
+| 7 | P-Asset | Not Applicable |
+| 8 | P-Liab | Not Applicable |
+| 2 | These Instruments are included for Backwards Compatibility and should not be used.#Instrument NameReplaced With or Note1PWR-TR (Power Toolset)PWR-TR-SPREAD (Power Toolset)2EO-C-Phys (ComOpt Toolset)CO-CALL-D/M (Commodity Toolset)3EO-P-Phys (ComOpt Toolset)CO-PUT-D/M (Commodity Toolset)4Any Instrument Type in the ComOpt Toolset where the “Settlement Type” is Physically SettlingCommodity Toolset Instrument Type as appropriate. | # | Instrument Name | Replaced With or Note | 1 | PWR-TR (Power Toolset) | PWR-TR-SPREAD (Power Toolset) | 2 | EO-C-Phys (ComOpt Toolset) | CO-CALL-D/M (Commodity Toolset) | 3 | EO-P-Phys (ComOpt Toolset) | CO-PUT-D/M (Commodity Toolset) | 4 | Any Instrument Type in the ComOpt Toolset where the “Settlement Type” is Physically Settling | Commodity Toolset Instrument Type as appropriate. |
+| # | Instrument Name | Replaced With or Note |
+| 1 | PWR-TR (Power Toolset) | PWR-TR-SPREAD (Power Toolset) |
+| 2 | EO-C-Phys (ComOpt Toolset) | CO-CALL-D/M (Commodity Toolset) |
+| 3 | EO-P-Phys (ComOpt Toolset) | CO-PUT-D/M (Commodity Toolset) |
+| 4 | Any Instrument Type in the ComOpt Toolset where the “Settlement Type” is Physically Settling | Commodity Toolset Instrument Type as appropriate. |
+| 3 | These Simulation Results are included for Backwards Compatibility and should not be used.#Simulation Result NameReplaced With or Note1Base Cash By Type (88)Cash Flow By Day (211), FX (8)2Base Cash By Type MTD (154)Cash Flow By Day (211), FX (8)3Base Cash By Type YTD (159)Cash Flow By Day (211), FX (8)4Base Cum O/N Physical Equiv (220)Not Applicable5Base Overnight Physical Equiv (209)Not Applicable6Beta Result (38)Not Applicable7Broker Fee (15)Broker Fee Info (221)8Broker Fee MTD (49)Broker Fee Info (221)9Broker Fee YTD (50)Broker Fee Info (221)10Buyout Cash (56)Cash Flow By Day (211)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero.11Cash By Type (14)Cash Flow By Day (211)12Cash By Type MTD (53)Cash Flow By Day (211)13Cash By Type YTD (54)Cash Flow By Day (211)14Contract Allocation (179)Not Applicable15Cum O/N Physical Equiv (207)Not Applicable16Future Known Cash - (30)Cash Flow By Day (211)17Future Known Cash (12)Cash Flow By Day (211)18Future Known Cash + (29)Cash Flow By Day (211)19Future Proj Cash - (32)Cash Flow By Day (211)20Future Proj Cash (13)Cash Flow By Day (211)21Future Proj Cash + (31)Cash Flow By Day (211)22FX P/L Accrual LTD (85)Not Applicable23FX P/L Accrual MTD (86)Not Applicable24FX P/L Accrual YTD (87)Not Applicable25FX P/L Cash By Type MTD (89)Not Applicable26FX P/L Cash By Type YTD (90)Not Applicable27FX P/L Realized LTD  (158)Not Applicable28FX P/L Realized MTD  (80)Not Applicable29FX P/L Realized YTD  (81)Not Applicable30Hedge Map (9)Not ApplicableNote: This result never worked.31Impact of Buyout (160)Impact of Amendments (55)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero.32Inventory Equivalent (206)Not Applicable33Monte Carlo VAR Parameters (100)Result Configuration (254)34Nostro PositionNot Applicable35Overnight Physical Equivalent (208)Not Applicable36PV - (24)MTM (0)37PV + (23)MTM (0)38PV By Proj Index (41)MTM (0)39RhoRho By Leg Result (110)Not ApplicableNote: This result never worked. | # | Simulation Result Name | Replaced With or Note | 1 | Base Cash By Type (88) | Cash Flow By Day (211), FX (8) | 2 | Base Cash By Type MTD (154) | Cash Flow By Day (211), FX (8) | 3 | Base Cash By Type YTD (159) | Cash Flow By Day (211), FX (8) | 4 | Base Cum O/N Physical Equiv (220) | Not Applicable | 5 | Base Overnight Physical Equiv (209) | Not Applicable | 6 | Beta Result (38) | Not Applicable | 7 | Broker Fee (15) | Broker Fee Info (221) | 8 | Broker Fee MTD (49) | Broker Fee Info (221) | 9 | Broker Fee YTD (50) | Broker Fee Info (221) | 10 | Buyout Cash (56) | Cash Flow By Day (211)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero. | 11 | Cash By Type (14) | Cash Flow By Day (211) | 12 | Cash By Type MTD (53) | Cash Flow By Day (211) | 13 | Cash By Type YTD (54) | Cash Flow By Day (211) | 14 | Contract Allocation (179) | Not Applicable | 15 | Cum O/N Physical Equiv (207) | Not Applicable | 16 | Future Known Cash - (30) | Cash Flow By Day (211) | 17 | Future Known Cash (12) | Cash Flow By Day (211) | 18 | Future Known Cash + (29) | Cash Flow By Day (211) | 19 | Future Proj Cash - (32) | Cash Flow By Day (211) | 20 | Future Proj Cash (13) | Cash Flow By Day (211) | 21 | Future Proj Cash + (31) | Cash Flow By Day (211) | 22 | FX P/L Accrual LTD (85) | Not Applicable | 23 | FX P/L Accrual MTD (86) | Not Applicable | 24 | FX P/L Accrual YTD (87) | Not Applicable | 25 | FX P/L Cash By Type MTD (89) | Not Applicable | 26 | FX P/L Cash By Type YTD (90) | Not Applicable | 27 | FX P/L Realized LTD  (158) | Not Applicable | 28 | FX P/L Realized MTD  (80) | Not Applicable | 29 | FX P/L Realized YTD  (81) | Not Applicable | 30 | Hedge Map (9) | Not ApplicableNote: This result never worked. | 31 | Impact of Buyout (160) | Impact of Amendments (55)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero. | 32 | Inventory Equivalent (206) | Not Applicable | 33 | Monte Carlo VAR Parameters (100) | Result Configuration (254) | 34 | Nostro Position | Not Applicable | 35 | Overnight Physical Equivalent (208) | Not Applicable | 36 | PV - (24) | MTM (0) | 37 | PV + (23) | MTM (0) | 38 | PV By Proj Index (41) | MTM (0) | 39 | RhoRho By Leg Result (110) | Not ApplicableNote: This result never worked. |
+| # | Simulation Result Name | Replaced With or Note |
+| 1 | Base Cash By Type (88) | Cash Flow By Day (211), FX (8) |
+| 2 | Base Cash By Type MTD (154) | Cash Flow By Day (211), FX (8) |
+| 3 | Base Cash By Type YTD (159) | Cash Flow By Day (211), FX (8) |
+| 4 | Base Cum O/N Physical Equiv (220) | Not Applicable |
+| 5 | Base Overnight Physical Equiv (209) | Not Applicable |
+| 6 | Beta Result (38) | Not Applicable |
+| 7 | Broker Fee (15) | Broker Fee Info (221) |
+| 8 | Broker Fee MTD (49) | Broker Fee Info (221) |
+| 9 | Broker Fee YTD (50) | Broker Fee Info (221) |
+| 10 | Buyout Cash (56) | Cash Flow By Day (211)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero. |
+| 11 | Cash By Type (14) | Cash Flow By Day (211) |
+| 12 | Cash By Type MTD (53) | Cash Flow By Day (211) |
+| 13 | Cash By Type YTD (54) | Cash Flow By Day (211) |
+| 14 | Contract Allocation (179) | Not Applicable |
+| 15 | Cum O/N Physical Equiv (207) | Not Applicable |
+| 16 | Future Known Cash - (30) | Cash Flow By Day (211) |
+| 17 | Future Known Cash (12) | Cash Flow By Day (211) |
+| 18 | Future Known Cash + (29) | Cash Flow By Day (211) |
+| 19 | Future Proj Cash - (32) | Cash Flow By Day (211) |
+| 20 | Future Proj Cash (13) | Cash Flow By Day (211) |
+| 21 | Future Proj Cash + (31) | Cash Flow By Day (211) |
+| 22 | FX P/L Accrual LTD (85) | Not Applicable |
+| 23 | FX P/L Accrual MTD (86) | Not Applicable |
+| 24 | FX P/L Accrual YTD (87) | Not Applicable |
+| 25 | FX P/L Cash By Type MTD (89) | Not Applicable |
+| 26 | FX P/L Cash By Type YTD (90) | Not Applicable |
+| 27 | FX P/L Realized LTD  (158) | Not Applicable |
+| 28 | FX P/L Realized MTD  (80) | Not Applicable |
+| 29 | FX P/L Realized YTD  (81) | Not Applicable |
+| 30 | Hedge Map (9) | Not ApplicableNote: This result never worked. |
+| 31 | Impact of Buyout (160) | Impact of Amendments (55)The way Buyouts work changed in version 5.0.  The Buyout Cash result will always show a value of zero. |
+| 32 | Inventory Equivalent (206) | Not Applicable |
+| 33 | Monte Carlo VAR Parameters (100) | Result Configuration (254) |
+| 34 | Nostro Position | Not Applicable |
+| 35 | Overnight Physical Equivalent (208) | Not Applicable |
+| 36 | PV - (24) | MTM (0) |
+| 37 | PV + (23) | MTM (0) |
+| 38 | PV By Proj Index (41) | MTM (0) |
+| 39 | RhoRho By Leg Result (110) | Not ApplicableNote: This result never worked. |
+| 4 | The Hedge By Type functionality in the Admin Manager under Static Data.  This was never fully supported and may be removed in a future version.SeeHedge By Type |
+| 5 | The Hedge With Type functionality in the Admin Manager under Static Data.  This was never fully supported and may be removed in a future version.SeeHedge With Type |
+| 6 | On the "Index Definition" window.  The "Class" type of "2d-Grid" does not work and should not be used.SeeIndex Definition |
+| 7 | On the "Index Grid Point" definition window.  Synthetic grid points don’t work (should not be used).SeeGrid Point Definition |
+| 8 | The following functions for Grid Point formulas should not be used:double nearby_gpt( string date, int nearby, string curvename, int bmo=DEFAULT_BMO )double p_gptid_eff( int gptid=0, string curvename="" )double p_gptname_eff( string gptname="", string idxname="" )double pnum_gptid_eff( int gptid=0, int pnum=0 )double bond_accint( )double bpx_to_yield( double price )double dis_to_frate( double input, double dcf )double effinp_on_gptposi( int gptposi )double spread_on_gptposi( int gptposi )double swap_rate( string curvename, string mat, bmo_vers="def" )double swapval( string date1, string date2, string curvename, int bmo=MID )double seasonal_value( string start_px_posi, double input ) |
+| 9 | Various Environment VariablesSeeEnvironment Variables |
+| 10 | The following Instrument Type should not be used:  Synthetic Composer.   The “Syn” button on the Composer Deal Input Screen should not be used.SeeComposer |
+| 11 | The ability to Auto Generation AVS on the Result Screen is not currently functional and should not be used.SeeSimulation Results Viewer |
+| 12 | The Generic BlotterSeeGeneric Blotter |
+| 13 | The Time Zone field on the Hourly Historic Prices Screen.  This was never functional. It has been removed in version 7.0r1 and up.SeeHourly Historic Prices |
+| 14 | The Hedge Map Functionality.  This can be found in the Simulation Results Viewer.SeeSimulation Results Viewer |
+| 15 | The Transport Rate Functionality.See Transport Rate |
+| 16 | These Instrument Types are in the database table “instruments’.  However, they are not used by the system (versions 6.0 and up).   They are in for instruments that were either never fully implemented or removed completely.  You can’t enter new deals using these instruments at all, they don’t show up on any picklists.ToolsetShort NameIDLong NameCommodityCO-CALL-Q48540Commodity Option Call QuarterlyCommodityCO-CALL-W48520Commodity Option Call WeeklyCommodityCO-CALL-Y48550Commodity Option Call YearlyCommodityCOMM-PHYS-LIM48015Commodity Physical LimitCommodityCOMM-SWAP48050Commodity SwapCommodityCO-PUT-Q48545Commodity Option Put QuarterlyCommodityCO-PUT-W48525Commodity Option Put WeeklyCommodityCO-PUT-Y48555Commodity Option Put YearlyFX-OptionFXO-BD5061FX Barrier Rebate Option (down)FX-OptionFXO-BU5060FX Barrier Rebate Option (up)FX-OptionFXO-DB5064FX Double Barrier Rebate OptionFX-OptionFXO-DBR5065FX Double Barrier Range OptionFX-OptionFXO-DI-C5046FX Down and In Call OptionFX-OptionFXO-DI-P5047FX Down and In Put OptionFX-OptionFXO-DKI-C5052FX Double Knock In Call OptionFX-OptionFXO-DKI-P5053FX Double Knock In Put OptionFX-OptionFXO-DKO-C5050FX Double Knock Out Call OptionFX-OptionFXO-DKO-P5051FX Double Knock Out Put OptionFX-OptionFXO-DO-C5044FX Down and Out Call OptionFX-OptionFXO-DO-P5045FX Down and Out Put OptionFX-OptionFXO-RD5063FX Single Barrier Range Option (down)FX-OptionFXO-RU5062FX Single Barrier Range Option (up)FX-OptionFXO-UI-C5042FX Up and In Call OptionFX-OptionFXO-UI-P5043FX Up and In Put OptionFX-OptionFXO-UO-P5041FX Up and Out Put OptionOptionCAP-B3027Barrier CapOptionFLR-B3028Barrier FloorPowerPO-MS-CALL-Q45123Power Option Multi-Strike Call QuarterlyPowerPO-MS-CALL-Y45115Power Option Multi-Strike Call YearlyPowerPO-MS-PUT-Q45124Power Option Multi-Strike Put QuarterlyPowerPO-MS-PUT-Y45120Power Option Multi-Strike Put YearlyRepoFEE-O-BORROW28012Fee Open Reverse Repo BorrowRepoFEE-O-LEND28011Fee Open Repo LendRepoSWITCH-O-FEE-PAY28013Switch Open Repo Fee PayRepoSWITCH-O-FEE-RECEIVE28014Switch Open Repo Fee Receive | Toolset | Short Name | ID | Long Name | Commodity | CO-CALL-Q | 48540 | Commodity Option Call Quarterly | Commodity | CO-CALL-W | 48520 | Commodity Option Call Weekly | Commodity | CO-CALL-Y | 48550 | Commodity Option Call Yearly | Commodity | COMM-PHYS-LIM | 48015 | Commodity Physical Limit | Commodity | COMM-SWAP | 48050 | Commodity Swap | Commodity | CO-PUT-Q | 48545 | Commodity Option Put Quarterly | Commodity | CO-PUT-W | 48525 | Commodity Option Put Weekly | Commodity | CO-PUT-Y | 48555 | Commodity Option Put Yearly | FX-Option | FXO-BD | 5061 | FX Barrier Rebate Option (down) | FX-Option | FXO-BU | 5060 | FX Barrier Rebate Option (up) | FX-Option | FXO-DB | 5064 | FX Double Barrier Rebate Option | FX-Option | FXO-DBR | 5065 | FX Double Barrier Range Option | FX-Option | FXO-DI-C | 5046 | FX Down and In Call Option | FX-Option | FXO-DI-P | 5047 | FX Down and In Put Option | FX-Option | FXO-DKI-C | 5052 | FX Double Knock In Call Option | FX-Option | FXO-DKI-P | 5053 | FX Double Knock In Put Option | FX-Option | FXO-DKO-C | 5050 | FX Double Knock Out Call Option | FX-Option | FXO-DKO-P | 5051 | FX Double Knock Out Put Option | FX-Option | FXO-DO-C | 5044 | FX Down and Out Call Option | FX-Option | FXO-DO-P | 5045 | FX Down and Out Put Option | FX-Option | FXO-RD | 5063 | FX Single Barrier Range Option (down) | FX-Option | FXO-RU | 5062 | FX Single Barrier Range Option (up) | FX-Option | FXO-UI-C | 5042 | FX Up and In Call Option | FX-Option | FXO-UI-P | 5043 | FX Up and In Put Option | FX-Option | FXO-UO-P | 5041 | FX Up and Out Put Option | Option | CAP-B | 3027 | Barrier Cap | Option | FLR-B | 3028 | Barrier Floor | Power | PO-MS-CALL-Q | 45123 | Power Option Multi-Strike Call Quarterly | Power | PO-MS-CALL-Y | 45115 | Power Option Multi-Strike Call Yearly | Power | PO-MS-PUT-Q | 45124 | Power Option Multi-Strike Put Quarterly | Power | PO-MS-PUT-Y | 45120 | Power Option Multi-Strike Put Yearly | Repo | FEE-O-BORROW | 28012 | Fee Open Reverse Repo Borrow | Repo | FEE-O-LEND | 28011 | Fee Open Repo Lend | Repo | SWITCH-O-FEE-PAY | 28013 | Switch Open Repo Fee Pay | Repo | SWITCH-O-FEE-RECEIVE | 28014 | Switch Open Repo Fee Receive |
+| Toolset | Short Name | ID | Long Name |
+| Commodity | CO-CALL-Q | 48540 | Commodity Option Call Quarterly |
+| Commodity | CO-CALL-W | 48520 | Commodity Option Call Weekly |
+| Commodity | CO-CALL-Y | 48550 | Commodity Option Call Yearly |
+| Commodity | COMM-PHYS-LIM | 48015 | Commodity Physical Limit |
+| Commodity | COMM-SWAP | 48050 | Commodity Swap |
+| Commodity | CO-PUT-Q | 48545 | Commodity Option Put Quarterly |
+| Commodity | CO-PUT-W | 48525 | Commodity Option Put Weekly |
+| Commodity | CO-PUT-Y | 48555 | Commodity Option Put Yearly |
+| FX-Option | FXO-BD | 5061 | FX Barrier Rebate Option (down) |
+| FX-Option | FXO-BU | 5060 | FX Barrier Rebate Option (up) |
+| FX-Option | FXO-DB | 5064 | FX Double Barrier Rebate Option |
+| FX-Option | FXO-DBR | 5065 | FX Double Barrier Range Option |
+| FX-Option | FXO-DI-C | 5046 | FX Down and In Call Option |
+| FX-Option | FXO-DI-P | 5047 | FX Down and In Put Option |
+| FX-Option | FXO-DKI-C | 5052 | FX Double Knock In Call Option |
+| FX-Option | FXO-DKI-P | 5053 | FX Double Knock In Put Option |
+| FX-Option | FXO-DKO-C | 5050 | FX Double Knock Out Call Option |
+| FX-Option | FXO-DKO-P | 5051 | FX Double Knock Out Put Option |
+| FX-Option | FXO-DO-C | 5044 | FX Down and Out Call Option |
+| FX-Option | FXO-DO-P | 5045 | FX Down and Out Put Option |
+| FX-Option | FXO-RD | 5063 | FX Single Barrier Range Option (down) |
+| FX-Option | FXO-RU | 5062 | FX Single Barrier Range Option (up) |
+| FX-Option | FXO-UI-C | 5042 | FX Up and In Call Option |
+| FX-Option | FXO-UI-P | 5043 | FX Up and In Put Option |
+| FX-Option | FXO-UO-P | 5041 | FX Up and Out Put Option |
+| Option | CAP-B | 3027 | Barrier Cap |
+| Option | FLR-B | 3028 | Barrier Floor |
+| Power | PO-MS-CALL-Q | 45123 | Power Option Multi-Strike Call Quarterly |
+| Power | PO-MS-CALL-Y | 45115 | Power Option Multi-Strike Call Yearly |
+| Power | PO-MS-PUT-Q | 45124 | Power Option Multi-Strike Put Quarterly |
+| Power | PO-MS-PUT-Y | 45120 | Power Option Multi-Strike Put Yearly |
+| Repo | FEE-O-BORROW | 28012 | Fee Open Reverse Repo Borrow |
+| Repo | FEE-O-LEND | 28011 | Fee Open Repo Lend |
+| Repo | SWITCH-O-FEE-PAY | 28013 | Switch Open Repo Fee Pay |
+| Repo | SWITCH-O-FEE-RECEIVE | 28014 | Switch Open Repo Fee Receive |
+| 17 | Certain Reset Conventions are in the system for Backward Compatibility and should not be used.  They areReset ConventionCal. ContractContract MatchDelivery Month DeferredXth | Reset Convention | Cal. Contract | Contract Match | Delivery Month Deferred | Xth |
+| Reset Convention |
+| Cal. Contract |
+| Contract Match |
+| Delivery Month Deferred |
+| Xth |
+| 18 | The EOD Date functionally is included for backwards compatibility and should not be used by anybody.  It does not work.You can see the “EOD Date” in the Operations Manager in the Roll System Dates module.SeeRoll System Dates |
+| 19 | The database fields daily_volume.monthly_priced_volume and daily_volume_h.monthly_priced_volume should not be used.  They are not populated in 6.0r2 and up.  Even in older versions, they should not be used. |
+| 20 | The TRANF Tester/Viewer.  This was accessible from the Trading Manager.  New customers (those who started on V6.0 and higher) should not use this.  Older client may enable this by setting AB_SHOW_TRANF_TEST to TRUE (This variable added November 10, 2004). |
+| 21 | The ticker file functionality (files ending in .tic) is not supported for new clients.  This functionality is in the system for backwards compatibility.  Here is the history:  This functionality was added a very long time ago.  At the time it was added, it worked with most deal types (Toolset/Instrument Types) in the system.  However, as new Instrument Types, and Toolsets were added, the functionality to produce ticker files was not updated.   Ticker files will get generated for most, if not all, toolsets, because it is generic code, but the files won’t make business sense in all cases, especially for the newer Toolsets/Instrument Types.  This functionality has been replaced with the ability to run a Operation Services Post-processing script to write out a file with deal details. |
+| 22 | Setting environment variables that can be set in theSystem Wide Configurationmodule in a runscript is supported only for backwards compatibility.The settings that can be set in theSystem Wide Configurationscreen are saved in the database.  They can also be set in the runscript (batch file used to start the system).  If they are set in the runscript, then they override whatever is set here.  It is recommended that settings are set in this screen over the runscript, which is just supported for backwards compatibility.Some Environment Variables can only be set in the runscript.  These are sometimes called “External System Wide Configuration” values.  These are settings such as directory locations that would not be useful if saved in the database, because when the database is loaded in a different location, the directories may not exist.SeeSystem Wide Configuration |
+| 23 | The Hedge Map functionality |
+| 24 | This AVS Function TABLE_FormatDateInt has been replaced with DATE_FormatJd, which does the same thing, but has a clearer name.   This is in V8 and up  (DTS15208) |
+| 25 | The Accounting AOD functionality is included for Backwards Compatibility.   This should not be used by anybody. |
+| 26 | The Rate Schedules tab from the Commodity Delivery module (in the Admin Manager).  This tab was never used and removed in version 7.0 and up. |
+| 27 | The Archive functionality.  New clients should only use the Purge functionality and not the Archive functionality.  The Archive functionality is hidden by default in Version 8.0 and up.SeePurge Configuration |
+| 28 | Operation Service Definition Types “EFP” and “Credit Update” were never implemented.  They appeared in the pick-list in V7 and below, but didn’t work.  They were removed under DTS12411 from the pick-list of definition types in V8.0 and able.SeeOperation Services Definition |
+| 29 | Authorization Records (rows in table ab_tran with a  tran_type = 1) should not be used by clients.Authorization Records are in the system for Backwards compatibility.  They continue to be generated in Version 8.0, but users can disable them.  The default for version 8.1 and up for the system is to not generate Authorization Records.  Clients can generated Authorization Records even in V8.1 and up if needed.  OpenLink recommends that clients do not generate Authorization Records. The system wide configuration variable is AB_SAVE_AUTH_RECORD_INTO_AB_TRAN.SeeEnvironment Variables |.

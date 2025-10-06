@@ -1,0 +1,16 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Function Keys.
+ Text content: This window utilizes 
+	 the following function keys:.
+ Table data: 
+| Key | Description |
+| --- | --- |
+| F1 | Query. 
+			 Query-Append. This has the same function as theExecute 
+			 and Closemenu item. |
+| F2 | Query-Append. 
+			 This has the same function as theExecute Sub-Query and 
+			 Appendmenu item. |
+| F3 | Query-Remove. 
+			 This has the same function as theExecute Sub-Query and 
+			 Deletemenu item. |.

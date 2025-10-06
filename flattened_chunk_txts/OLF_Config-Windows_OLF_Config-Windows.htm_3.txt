@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_Config-Windows.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Config-Windows_files/image002.jpg
+ Image description: a black and white photo frame with a black arrow.
+ Image file: OLF_Config-Windows_files/image003.jpg
+ Image description: a black and white square with a black arrow.
+ Image file: OLF_Config-Windows_files/image004.jpg
+ Image description: a white and black arrow icon.
+ Image file: OLF_Config-Windows_files/image005.jpg
+ Image description: a black and white photo with a black arrow.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Search | Performs a column search in the “Available” listing based on the keyword entered in the “Search Column Name” field. Click this button again to go to the next match in the “Available” listing. |
+| Duplicate Field | Creates a copy of a selected field.  To duplicate a column or list of columns already selected, highlight the rows to copy and this button.  The copied version will be inserted below the last selected row. |
+|  | Adds a highlighted item in the “Available” listing to the “Selected” listing. More than 1 item may be selected for transfer. |
+|  | Removes a highlighted item from the “Selected” listing. |
+|  | Moves the highlighted item in the “Selected” listing 1 row up the list per click of this button. |
+|  | Moves the highlighted item in the “Selected” listing 1 row down the list per click of this button. |.

@@ -1,0 +1,18 @@
+This chunk is from the HTML file: OLF_Table_Viewer.htm.
+ Section heading: Buttons.
+ Text content: The buttons available in each Table 
+	 Viewer window may vary depending upon from which window they 
+	 are accessed.  Typically, the window contains at least a Print button. .
+ Image file: OLF_Table_Viewer_files/image007.jpg
+ Image description: a computer chip with a black and white pattern.
+ Image file: OLF_Table_Viewer_files/image006.jpg
+ Image description: a blury background with a blury effect.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | This button 
+			 has the same functionality asFileàPrint. |
+|  | This symbol 
+			 indicates that a table with data relevant to the field is 
+			 available.When displayed in a column, 
+			 double click to open the table. |.

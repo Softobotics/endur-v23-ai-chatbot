@@ -1,0 +1,33 @@
+This chunk is from the HTML file: OLF_Alerts.htm.
+ Section heading: “Query By” Panel.
+ Text content: Allows you to filter the alert that you want to look at.  The criteria for filtering include the following:    .
+ Image file: OLF_Alerts_files/image005.jpg
+ Image description: the screens are shown in the screens below the text box.
+ Image file: OLF_Alerts_files/image006.jpg
+ Image description: the logo for the new website.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Personnel | Displays a pick list of available ID’s of the users that alert has been posted. Could be all, or any combination of the system defined instrument types. |
+| Group | Displays a pick list of available names of the security groups to which the alert is assigned. Could be all, or any combination of the system defined instrument types. |
+| Priority | Displays a pick list of available value representing the importance of the Alert. Could be all, or any combination of the system defined instrument types. The choices are:High or Normal.High priority alerts, by default, are highlighted in red on theAlertswindow. If auto-update is enabled (which is the default) on theAlertswindow, it will pop-up automatically on screen when a high priority alert is received. |
+| Severity | This is a pick-lists of the various types of severity.  The default is to show all types. |
+| Category | Displays a pick list of available the category of the Alert. This is a pick list type field. Could be all, or any combination of the system defined instrument types. The list can be created/modified in the Create Alert Categories Table. |
+| Sub-Cat. | A description / sub category of Alert. This field is a free form of text. Could be all, or any combination of the system defined instrument types. |
+| Alert Status | Displays a pick list of available the category of the Alert. This is a pick list type field. Could be all, or any combination of the system defined instrument types. |
+| Receipt Status | Displays a pick list of available the category of the Alert. This is a pick list type field. Could be all, or any combination of the system defined instrument types. The list can be created/modified in the Create Alert Receipt StatusTable.The choices are:StatusDescriptionAllAllClosedClosedOpenOpenReadReadReassignReassignUnreadUnread | Status | Description | All | All | Closed | Closed | Open | Open | Read | Read | Reassign | Reassign | Unread | Unread |
+| Status | Description |
+| All | All |
+| Closed | Closed |
+| Open | Open |
+| Read | Read |
+| Reassign | Reassign |
+| Unread | Unread |
+| Created Date | The date when the Alert was created. |
+| Closed Date | The date when the Alert was closed. |
+| Effective Date | Effective Date |
+| Alert Id | The unique ID for the Alert |
+|  | This is a series of two radio buttons.  The user may select any combination of the two radio buttons to apply summing rows to:OptionDescriptionActualActualSymbolicSymbolic | Option | Description | Actual | Actual | Symbolic | Symbolic |
+| Option | Description |
+| Actual | Actual |
+| Symbolic | Symbolic |.

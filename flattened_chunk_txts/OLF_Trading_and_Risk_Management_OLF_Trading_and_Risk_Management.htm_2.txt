@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Trading_and_Risk_Management.htm.
+ Section heading: Example Trade.
+ Text content: Deal Capture and 
+	 Operational Processing On March 9th two parties, Party A and Party B, agree to a trade.  They 
+	 decide to base a payment, to be made on December 15th, based on the 
+	 price of Crude Oil on November 30.  They used the following 
+	 rule to compute the payment:  For every dollar the price 
+	 of crude is above $30 a barrel Party A gives Party B $10.  For 
+	 every dollar the price of crude is below $30 Party B gives Party A $10..

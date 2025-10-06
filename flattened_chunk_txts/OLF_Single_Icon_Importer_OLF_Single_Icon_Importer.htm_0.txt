@@ -1,0 +1,15 @@
+This chunk is from the HTML file: OLF_Single_Icon_Importer.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:  This window contains the following fields: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Print | Prints the content of the current window. |
+|  | Save Window Location | Saves the location and size of the window. The next time the window is accessed it will display as saved. |
+|  | Delete Saved Window Location | Deletes thesaved location/size of a saved window. |
+|  | Exit | Closes the window. |
+| Help | Help | Displays the system help files. |
+|  | About | Opens theAboutwindow, which displays information about the system. |. Table data: 
+| Field | Description |
+| --- | --- |
+| Icon Name | Displays the name of the icon file to be imported. Used in conjunction with theBrowsebutton. |.

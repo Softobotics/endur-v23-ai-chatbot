@@ -1,0 +1,49 @@
+This chunk is from the HTML file: OLF_Link_Screen_Config_Definitions.htm.
+ Section heading: Template/Instrument Type Links Tab.
+ Text content: This tab contains the following menu items: This tab contains the following buttons: This tab contains the following fields:.
+ Image file: OLF_Link_Screen_Config_Definitions_files/image005.jpg
+ Image description: the logo for the company.
+ Image file: OLF_Link_Screen_Config_Definitions_files/image006.jpg
+ Image description: the logo for the company.
+ Image file: OLF_Link_Screen_Config_Definitions_files/image007.jpg
+ Image description: the logo for the company.
+ Image file: OLF_Link_Screen_Config_Definitions_files/image008.jpg
+ Image description: the logo for the new business group.
+ Image file: OLF_Link_Screen_Config_Definitions_files/image009.jpg
+ Image description: the logo for the usps.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Save Links | Saves configuration link modifications. |
+|  | Edit User Interface Groups | Opens theUser Functional Groups/Interface Groupswindow. This static data window is used add and maintain functional groups. |
+|  | Personnel Maintenance | Opens thePersonnel Maintenancewindow. This window is used to maintain personnel information, including security groups. |
+|  | Delete Deal Entry Screen Config | Displays a list of saved configurations. Select the screen configuration to be deleted and clickOK. |
+|  | Import Deal Entry Screen Config | Opens a file browser, enabling a user to select and import OpenLink standard toolset screen definitions. |
+|  | Create/Modify Deal Entry View Types | Opens theDeal Entry View Typesstatic data window. This window is used to maintain deal entry screen configuration view types. |
+|  | Print | Prints the current window. |
+|  | Exit | Closes the window. |
+| Help | Help | Displays the system Help files. |
+|  | About | Displays theAboutwindow. |. Table data: 
+| Button | Description |
+| --- | --- |
+|  | Displays all toolsets and instrument types in a tree view format in the link table. |
+|  | Displays all toolsets and the templates defined for each in the link table. |
+|  | Displays all toolsets and related Custom Deal Entry (CDE) components in the link table. |
+|  | Displays user interface groups in the link table columns. |
+|  | Displays users in the link table columns. |. Table data: 
+| Field | Description |
+| --- | --- |
+| View Type | Select the view type to which the configuration will be applied.Pick list items are defined in theDeal Entry View Typesstatic data window. System provided view types include:View TypeDescriptionStandaloneLinks that will be used in stand-alone deal entry screens. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening stand-alone deal entry screens.Trader DesktopLinks that will be used in theTrade Inputpanel inTrader Desktop. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening aTrader Desktopcontaining aTrade Inputpanel.ComponentLinks that will be used for the components in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponenttab of theHybridscreen.Gas TradingLinks will mimic the view on theTrade Blotter. To see these links, the “View Type” on theTrader DesktopTrade Inputpanel must be set to “Gas Trading”.Component PanelLinks that will be used for theComponentpanel in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponentPanelof theHybridscreen.Data ExplorerLinks that will be used in theTrade Inputpanel in theTrading Explorer Desktop.When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when clicking on a transaction in theTrading Explorer Desktop. | View Type | Description | Standalone | Links that will be used in stand-alone deal entry screens. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening stand-alone deal entry screens. | Trader Desktop | Links that will be used in theTrade Inputpanel inTrader Desktop. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening aTrader Desktopcontaining aTrade Inputpanel. | Component | Links that will be used for the components in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponenttab of theHybridscreen. | Gas Trading | Links will mimic the view on theTrade Blotter. To see these links, the “View Type” on theTrader DesktopTrade Inputpanel must be set to “Gas Trading”. | Component Panel | Links that will be used for theComponentpanel in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponentPanelof theHybridscreen. | Data Explorer | Links that will be used in theTrade Inputpanel in theTrading Explorer Desktop.When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when clicking on a transaction in theTrading Explorer Desktop. |
+| View Type | Description |
+| Standalone | Links that will be used in stand-alone deal entry screens. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening stand-alone deal entry screens. |
+| Trader Desktop | Links that will be used in theTrade Inputpanel inTrader Desktop. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when opening aTrader Desktopcontaining aTrade Inputpanel. |
+| Component | Links that will be used for the components in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponenttab of theHybridscreen. |
+| Gas Trading | Links will mimic the view on theTrade Blotter. To see these links, the “View Type” on theTrader DesktopTrade Inputpanel must be set to “Gas Trading”. |
+| Component Panel | Links that will be used for theComponentpanel in theHybrid Deal Entryscreen. When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen on theComponentPanelof theHybridscreen. |
+| Data Explorer | Links that will be used in theTrade Inputpanel in theTrading Explorer Desktop.When linking an instrument type, template or CDE Link to a specific deal skin, this will be seen when clicking on a transaction in theTrading Explorer Desktop. |
+| Toolset Name | If theInstrument Typesbutton is selected, this field displays all instrument types within a toolset. “DEFAULT <Toolset Name>”represents the toolset, the names listed thereafter represent the instrument types within the toolset. An instrument type configuration takes precedence over a toolset configuration.If theTemplatesbutton is selected, all templates of the toolset are shown. “DEFAULT <Toolset Name>”represents the toolset and the names listed thereafter represent the templates defined under the toolset When a screen configuration is linked to a template, that configuration loads when the template is selected.If theCDE Linkbutton is selected, all custom deal entry components within a toolset are shown.Click the plus sign (+) button to expand or the minus sign (-) to collapse tree view.An asterisk (*) displays beside the toolset/template if it has saved screen configurations.Two asterisks (**) indicate the logged in user’s interface group. |
+| OLF System | Displays the OLF standard screen configuration for the toolset/instrument type. |
+| Tran Num | Displays when theTemplatesbutton is selected. Shows the Tran Num of the template. |
+| System | Right-click to select the configuration to be used by all system users. This represents the public screen configuration. If a screen configuration is selected for the “DEFAULT <Toolset Name>”, it is the default configuration for all instrument types/templates for all users. If a screen configuration is selected for a particular instrument type or template, it is the default screen configuration for all users for the particular instrument type/template only. |
+| <Interface Group> | Displays when theUser Interface Groupsbutton is selected. Screen configurations are selected for specific interface group(s). . If a screen configuration is selected for the “DEFAULT <Toolset Name>”, it means it is the default configuration for all instrument types/templates for the interface group. If a screen configuration is selected for a particular instrument type or template, it means it is the default screen configuration for the interface group and instrument type/template only. |
+| <Users> | Displays if theUsersbutton is selected. Select the screen configuration to be used by the user. This represents a private screen configuration. If both private and public configurations are defined, the private configuration takes precedence over the public configuration. If a screen configuration is selected for the “DEFAULT <Toolset Name>”, it means it is the default configuration for all instrument types/templates for the user. If a screen configuration is selected for a particular instrument type or template, it means it is the default screen configuration for the particular user and instrument type/template only. |.

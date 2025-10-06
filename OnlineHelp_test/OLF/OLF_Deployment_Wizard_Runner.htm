@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Deployment Wizard - Runner</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nDeployment Wizard\nDeployment Wizard - Runner");
+addAvenueInfo("System Use","OLF/OLF_Deployment_Wizard.htm","OLF/OLF_Deployment_Wizard_Viewer.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Deployment_Wizard.htm\">Deployment Wizard<\/a> &gt; Deployment Wizard - Runner<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Deployment Wizard - Runner</h1>
+<p>The Deployment Wizard is an organizational tool allowing you to apply 
+ configuration components (artifacts) in a specific step order for the 
+ OpenLink application. A deployment is made up of configuration components 
+ (artifacts) and these can be files, CMM packages, custom SQL, document 
+ templates, Java or Open Components JAR’s and/or DLL’s. In many cases, 
+ these artifacts need to be applied in a specific order to ensure that 
+ everything works correctly (orchestration). </p>
+<h2>Accessing this Window</h2>
+<p>Note: There are multiple ways to access this window; however, only one 
+ way is defined because some features can only be accessed via this procedure. 
+ </p>
+<p>1. From OpenLink Central, right-click anywhere on the header and select 
+ Launch Available Services. The Launch Available Services window displays.</p>
+<p>2. Type Deployment Wizard in the Filter Service field, select Deployment 
+ Wizard - Runner in the Available Services panel, and then click Launch. 
+ The following windows display:</p>
+<p><span style="font-weight: bold;">Deployment Runner</span> panel is used 
+ for application of the deployment against the destination system and to 
+ load and run a deployment. </p>
+<p><img src="OLF_Deployment_Wizard_Runner_files/image01.jpg" alt="" style="border: none;" 
+		 border="0" /></p>
+<p>&#160;</p>
+<p>This window contains the following menu items specific to the Deployment 
+ Wizard Runner:</p>
+<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+		 width="638">
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="119" bgcolor="#E6E6E6"><p class="TABLEHEADER">Menu</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144" bgcolor="#E6E6E6"><p 
+			 class="TABLEHEADER">Item</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375" bgcolor="#E6E6E6"><p 
+			 class="TABLEHEADER">Description</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="119"><p class="MsoNormal" 
+			 style="font-size: 11.0pt; line-height: 107%; font-family: Calibri, sans-serif; 
+			 mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; 
+			 mso-hansi-theme-font: minor-latin; font-weight: bold;">File</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144"><p class="MsoNormal" 
+			 style="font-weight: bold;">Load Playbook</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375"><p class="MsoNormal">This 
+		 will open a file chooser allowing you to select a previously created 
+		 and saved playbook (playbook.json) or generated playbook (playbook.zip). 
+		 The playbook will be loaded into the panel ready for editing. 
+		 </p>
+		<p class="MsoNormal">If you have un-saved changes to an existing 
+		 playbook you will be prompted to either discard them or cancel 
+		 the operation.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="119">&#160;</td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144"><p class="MsoNormal" 
+			 style="font-weight: bold;">Clear Playbook</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375"><p class="MsoNormal">Clears 
+		 the loaded playbook.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="119"><span 
+		 style="font-weight: bold;">Deployment</span></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144"><span 
+		 style="font-weight: bold;">Run Deployment</span></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375"><p>When 
+		 the deployment playbook is run, the step status move from ‘loaded’ 
+		 to ‘pending’ and each step will be run in sequence. The step status 
+		 will move to ‘processing’ as it begins to run and then to either 
+		 ‘Completed Successfully’ or ‘Failed’ with all steps being color-coded 
+		 to make it easier to identify any issues. </p>
+		<p>Each step also records any associated output from the step. 
+		 This is captured and recorded for review and are identified by 
+		 icons on the step row.</p></td>
+	</tr>
+	<tr>
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="119">&#160;</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="144"><span style="font-weight: bold;">Database Credentials</span></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="375"><p>If the playbook contains any ‘Apply SQL' or 
+		 'Custom SQL’ steps, the Runner will request for Database Credentials 
+		 so that it can use these to access and apply the native SQL commands. 
+		 </p>
+		<p>Note: You may require a DBA to provide (or enter) the database 
+		 User Name and Password if your playbook contains custom SQL.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="119"><p class="NormalBold">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144"><p class="NormalBold">Review 
+		 Previous Deployment</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375"><p class="MsoNormal">This 
+		 menu item will invoke the Viewer to allow you to review the latest 
+		 deployment performed on this system. </p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="119"><p class="NormalBold">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="144"><span 
+		 style="font-weight: bold;">Review Any Deployment</span></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="375">This 
+		 menu item will allow you to select any deployment performed on 
+		 this system and invoke the Viewer to review. </td>
+	</tr>
+	<tr>
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="119">&#160;</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="144"><p class="MsoNormal" style="font-weight: bold;">Terminate 
+		 Deployment</p></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="375">This menu item will allow you to kill the deployment 
+		 process. This is not a recommended action and should only be used 
+		 as a last resort as it may leave the system in an ambiguous state.</td>
+	</tr>
+	<tr>
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="119"><span style="font-weight: bold;">Help</span></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="144"><p class="NormalBold">Deployment Wizard - Playbook 
+		 Runner</p></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="375"><p>Launches this help file.</p></td>
+	</tr>
+	<tr>
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="119">&#160;</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="144"><p class="NormalBold"><span class="Bold">About</span></p></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="375"><p class="MsoNormal">Opens the <i><a href="OLF_About_Window.htm">About</a></i> 
+		 window.</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<h3>See Also</h3>
+Deployment Manager User Guide 
+<br />Deployment Wizard User Guide 
+<br /><a href="OLF_Deployment_Wizard.htm">Deployment Wizard 
+ - Editor</a> 
+<br /><a href="OLF_Deployment_Wizard_Viewer.htm">Deployment 
+ Wizard - Viewer</a> 
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

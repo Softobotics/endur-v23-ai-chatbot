@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
+ Section heading: Other Ways to Access This Window.
+ Text content: 1. OpenLink Central Sidebar may be accessed outside of a desktop via Launch Available Services , OpenLink Central Sidebar ..
+ 
+Links to other files: OLF_OpenLink_Central_Launch_Available_Service.htm.

@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_Query_Manager_OpenJVS_Plugin.htm.
+ Section heading: Overview.
+ Text content: This section discusses how the system allows an OpenJVS 
+ plugin to assist in the creation of a query.  The user has complete 
+ freedom to configure a query to their specifications, whatever it may 
+ be.  The user has a full selection of attributes by which to 
+ search in the Query Manager . The user also has the option of running 
+ an OpenJVS plugin with the query to help run more complex inquiries.  See Query Manager.
+ 
+Links to other files: OLF_Query_Manager.htm.

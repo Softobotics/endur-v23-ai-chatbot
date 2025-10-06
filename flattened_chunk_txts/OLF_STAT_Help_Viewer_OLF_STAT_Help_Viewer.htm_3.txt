@@ -1,0 +1,6 @@
+This chunk is from the HTML file: OLF_STAT_Help_Viewer.htm.
+ Section heading: Inputs.
+ Text content: Information about the expected inputs for the Activity. A text description of what the Activity is expecting as input. One or more tabs containing sample data of the expected input. The data 
+ can be copied by right-clicking on the grid and selecting Copy Current 
+ View, or via the Copy Inputs button below the data. The copied data can 
+ then be pasted into a scenario worksheet..

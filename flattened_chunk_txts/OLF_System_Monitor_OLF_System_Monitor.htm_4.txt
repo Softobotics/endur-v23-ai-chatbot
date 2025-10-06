@@ -1,0 +1,57 @@
+This chunk is from the HTML file: OLF_System_Monitor.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:  This module contains various tabs, each of which brings up a different “view”. The views and sub-views are:.
+ Image file: OLF_System_Monitor_files/image003.jpg
+ Image description: the printer is a small machine that can be used for printing.
+ Image file: OLF_System_Monitor_files/image004.jpg
+ Image description: a white square with a yellow light on it.
+ Image file: OLF_System_Monitor_files/image005.jpg
+ Image description: a square with a blue square in the middle.
+ Image file: OLF_System_Monitor_files/image006.jpg
+ Image description: a white square with a black and white square on it.
+ Image file: OLF_System_Monitor_files/image007.jpg
+ Image description: a white background with a blue and yellow design.
+ Image file: OLF_System_Monitor_files/image008.jpg
+ Image description: a white circle with a black circle in the middle.
+ Image file: OLF_System_Monitor_files/image009.jpg
+ Image description: the logo for the facebook group.
+ Table data: 
+| Field | Description |
+| --- | --- |
+|  | This has the same function asFileàPrint. |
+|  | This has the same function asViewàError Log Viewer. |
+|  | Displays theConsole Viewerof theError Log Viewer. |
+|  | Displays theDebug Settingsof theError Log Viewer. |
+|  | Launch theSimple Plugin Editor.V10.0r2 and aboveLaunch theAdvance Plugin Editor- Eclipse is a full Java integrated development environment used to edit, compile, and debug OpenJVS plug-ins.V91.r1 - V9.1r2 |
+|  | Launch theAdvance Plugin Editor- Eclipse is a full Java integrated development environment used to edit, compile, and debug OpenJVS plug-ins.V10.0r2 and above |
+|  | This has the same function asHelpàAbout. |. Table data: 
+| View Name | Sub Views | Description |
+| --- | --- | --- |
+| Script Engines | Script Engines | Shows detail information about script engines and jobs. |
+| Services | All Services | Used to view the status of all services/engines being run. |
+|  | Domain Services MonitorDomain Grid Monitor(v91r1 and earlier) | Shows details of processes and functionality and information related to OpenLink’s “Grid Functionality”. It provides management facilities around grid configuration.This tab is only available in V8.0r1 and above. |
+|  | Connex Services MonitorConnex Grid Monitor (v91r1 and earlier) | A management facility for OpenLink’s Connex integration framework. Shows configured Connex engines and standard/custom gateways. It provides management facilities on jobs, messaging, engines and exceptions.This tab in only in V8.0r1 and above. |
+|  | Credit | This screen provides centralized management of the online credit definitions, including the ability to view the online results and bring the definitions on/offline.SeeCredit Manager. |
+|  | Risk | This screen provides centralized management of the online risk definitions, including the ability to view the online results and bring the definitions on/offline.SeeRisk Manager. |
+|  | RTPE | This screen provides the ability to view global and local RTPE definitions with the ability to view the batch executed log, see updated statuses and bring the definitions on/offline.SeeReal Time Position Engine. |
+|  | Op Services | This screen is used to view online operation services definitions and toggle those definitions on/offline.SeeOperation Services. |
+|  | OpenConnect Monitor | Shows the OpenConnect Monitor.Note: Users may only see this tab if they have certain licensing.This tab is only in V7.0rX. |
+|  | Market Data | Configurable screen for viewing “Market Data” engines where data is viewed by ticker. The market data fields shown within the table are user-driven. |
+|  | Deal Services Query | Provides a query tool to view services/engines by transaction number. |
+| Diagnostics | Process Table | Displays details about underlying processes executed on the local machine. |
+|  | OPING | A utility used to diagnose communications between modules on various hosts. |
+|  | RV LISTEN(v8.0r2 and below)ECOM Listen (v8.1r1 and up) | OpenLink Messaging/RVThis screen is used to set up messages for testing communications between machines. Listeners are defined by subject for the component the user is configured for. |
+|  | Sessions | Shows details about running sessions on selected hosts. This tool includes the functionality to terminate user sessions. |
+|  | ANE Messages | Shows information about ANE (Automatic Notification Engine) messages, specifically showing the update messages received on the local session.In 6.0, this tab was under the Services tab.  In v7.0 and above, it was moved to Diagnostics tab. |
+|  | My Services | Shows the user specific services that are running or available to for the logged-on user. |
+| Product Tools | Enterprise Toolkit | Details the underlying components required for use of the OpenLink Toolkit. This tab shows the required controls and dlls for Toolkit development and execution. |
+| System | Info | Shows system information identical to that in the About Window.SeeAbout Window. |
+|  | System Wide Configuration(Note: This was called “Environment Variables” in 6.0r2) | Shows information about the various system configurations. This screen allows for configuration by user or system. System configurations are set in theSystem Wide Configurationscreen accessible from the Admin Manager.SeeEnvironment Variables. |
+|  | Licensing | Shows licensing details including limits, limit types and features. |
+|  | DLL Versions | Shows detailed information about DLL versions used by the system. |
+|  | Cache Monitor | Shows information about underlying data caching, including the detailed cached data. |
+|  | Graphics Properties | Shows display variable details. This data tab is read-only. The AB_OLF_DEF_FONT variable can be configured using theSystem Wide Configurationtab. The other variables are configured in the runscript. |
+| Database | Database Connections | This screen is used to view details about server processes, users, database usage and machine usage.This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager. |
+|  | Database Administration | Shows database specific settings. It provides easy access to commonly used stored procedures.This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager. |
+|  | Unique Id Administration | Shows database table details including enumerations and ID numbers. This screen provides the ability to increment unique IDs.This is only in V8.0r1 and above. In v7.0, this module is in the Admin Manager. |
+|  | Analyze Table Statistics | Shows database object details and provides the ability to perform an update of database statistics.This is only in v8.0r1 and above. |.

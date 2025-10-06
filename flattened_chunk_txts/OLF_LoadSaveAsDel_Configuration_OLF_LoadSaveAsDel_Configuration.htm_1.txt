@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Open any deal input window. 3. Select Misc à Payment Formula . The Formula window displays. 4. Select File à Save Template . 5. The following window displays:   .
+ Image file: OLF_LoadSaveAsDel_Configuration_files/image001.jpg
+ Image description: the software interface for the software interface.

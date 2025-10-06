@@ -1,0 +1,13 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_All_Services.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor with the following additions:.
+ Image file: OLF_System_Monitor-Services_All_Services_files/image003.jpg
+ Image description: a white watch with a black and white band.
+ Image file: OLF_System_Monitor-Services_All_Services_files/image004.jpg
+ Image description: a roll of white paper with the word 100 on it.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Stops monitoring all definitions for services such as Credit, Risk and RTPE. |
+|  | Re-starts monitoring all definitions for services such as Credit, Risk and RTPE. |. 
+Links to other files: OLF_System_Monitor.htm.

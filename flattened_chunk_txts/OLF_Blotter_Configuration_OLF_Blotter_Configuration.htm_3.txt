@@ -1,0 +1,21 @@
+This chunk is from the HTML file: OLF_Blotter_Configuration.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Blotter_Configuration_files/image002.jpg
+ Image description: a square icon with a black and white background.
+ Image file: OLF_Blotter_Configuration_files/image003.jpg
+ Image description: a square with the word remove on it.
+ Image file: OLF_Blotter_Configuration_files/image004.jpg
+ Image description: a black and white photo frame with a black arrow.
+ Image file: OLF_Blotter_Configuration_files/image005.jpg
+ Image description: a black and white photo frame with a pencil.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Adds a highlighted item in the “Available” listing to the “Selected” listing. More than 1 item may be selected for transfer. |
+|  | Removes a highlighted item from the “Selected” listing. |
+| Use Defaults | Restores the default system configuration. |
+|  | Moves the highlighted item in the “Selected” listing 1 row up the list per click of this button. |
+|  | Moves the highlighted item in the “Selected” listing 1 row down the list per click of this button. |
+| Apply | Applies the new settings and closes the window. If this option is selected, the user does not need to close or reopen the configured window for the change to take effect. |
+| Cancel | Ignores any changes and closes the window. |.

@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_My_Services.htm.
+ Section heading: Overview.
+ Text content: This window contains a display only view of service details for the current user. The components viewed in this window have been previously configured in the Services Manager module.  Access to this window is controlled by Security Privilege #29300, Access Diagnostics Tab.  This tab is available in V8.0r1 and up.  See System Monitor .
+ 
+Links to other files: ../Services_Manager/Services_Manager.htm, OLF_System_Monitor.htm.

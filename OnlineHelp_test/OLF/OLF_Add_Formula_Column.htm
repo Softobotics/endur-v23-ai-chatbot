@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Add Formula Column</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif"; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:11.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:11.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:11.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nAdd Formula Column");
+addAvenueInfo("System Use","OLF/OLF_About_Window.htm","OLF/OLF_Alerts.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; Add Formula Column<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Add Formula Column</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The <i>Add Formula Column</i> window allows users to create and maintain formula columns. This screen is included in most table viewer instances in the system, which can be standalone or embedded as a panel in a screen.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">See:</p>
+<p class="MsoNormal"><a href="OLF_Table_Viewer.htm"><i>Table Viewer</i></a></p>
+<p class="MsoNormal"><a href="OLF_Configure_View.htm"><i>Configure View</i></a></p>
+<p class="MsoFootnoteText">&#160;</p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">This window is accessed from various functionalities of the system. For illustration purposes, the following are examples of how it is accessed:</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>1.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Start an OpenLink Desktop.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>2.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Right-click a column header.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>3.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>Configure</b> <span style='font-family:Wingdings'>&agrave;</span> <b>Formulas</b> <span style='font-family:Wingdings'>&agrave;</span> <b>Add Formula Column</b>.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">or,</p>
+<p class="MsoNormal">&#160;</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>1.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Start the Trading Manager.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>2.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>View</b> <b><span style='font-family:Wingdings'>&agrave;</span> Transaction Field Viewer</b>. The <i>Transaction Field Data</i> window displays.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>3.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>Configure</b> <b><span style='font-family:Wingdings'>&agrave;</span> Configure</b>. The <i>Configure View</i> window displays.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>4.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>Formulas</b> <span style='font-family:Wingdings'>&agrave;</span> <b>Add Formula Column</b>.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">The following window displays:</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><img border="0" width="556" height="422" src="OLF_Add_Formula_Column_files/image001.jpg" alt="image002" /></p>
+<p class="MsoNormal">&#160;</p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the following menu items:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr>
+<td width="91" valign="top" style='width:68.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Menu</p>
+</td>
+<td width="131" valign="top" style='width:98.35pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Item</p>
+</td>
+<td width="368" valign="top" style='width:275.85pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="91" valign="top" style='width:68.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">File</p>
+</td>
+<td width="131" valign="top" style='width:98.35pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Apply</p>
+</td>
+<td width="368" valign="top" style='width:275.85pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Applies changes to the formula column and closes the window. This also checks if the formula entered has the correct syntax.</p>
+</td>
+</tr>
+<tr>
+<td width="91" valign="top" style='width:68.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="131" valign="top" style='width:98.35pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Print Screen</p>
+</td>
+<td width="368" valign="top" style='width:275.85pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the current screen.</p>
+</td>
+</tr>
+<tr>
+<td width="91" valign="top" style='width:68.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="131" valign="top" style='width:98.35pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Exit</p>
+</td>
+<td width="368" valign="top" style='width:275.85pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Closes the window.</p>
+</td>
+</tr>
+<tr>
+<td width="91" valign="top" style='width:68.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Help</p>
+</td>
+<td width="131" valign="top" style='width:98.35pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Help</p>
+</td>
+<td width="368" valign="top" style='width:275.85pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the system Help files.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Button</p>
+</td>
+<td width="475" valign="top" style='width:4.95in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">+, -, *, /, (, )</p>
+</td>
+<td width="475" valign="top" style='width:4.95in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Inserts the corresponding mathematical operator to the formula.</p>
+</td>
+</tr>
+<tr>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Rnd, Min, Max, Avg, Trunc, Log</p>
+</td>
+<td width="475" valign="top" style='width:4.95in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoFootnoteText">Inserts the corresponding function to the formula.</p>
+</td>
+</tr>
+<tr>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Apply</p>
+</td>
+<td width="475" valign="top" style='width:4.95in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="CellBold"><span style='font-weight:normal'>This has the same function as</span> File <span style='font-family:Wingdings'>&agrave;</span> Apply<span style='font-weight:normal'>.</span></p>
+</td>
+</tr>
+<tr>
+<td width="115" valign="top" style='width:1.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Cancel</p>
+</td>
+<td width="475" valign="top" style='width:4.95in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoFootnoteText">Cancels any modifications to the formula column and closes the window.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h3>Field Items</h3>
+<p class="MsoNormal">This window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Field</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Column Name</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the internal name of the column. Click either the column name or title to insert it in the formula. The columns that display in the list depend on the table that is being configured.</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Column Title</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the name of the column as shown in the table. Click either the column name or title to insert it in the formula. The columns that display in the list depend on the table that is being configured.</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Name</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the function. Click either the name or description of the function to insert it in the formula.</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Description</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The description of the function. Click either the name or description of the function to insert it in the formula.</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&lt;Formula Field&gt;</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The input field for the formula.</p>
+</td>
+</tr>
+<tr>
+<td width="638" colspan="2" valign="top" style='width:6.65in;border:solid windowtext 1.0pt; border-top:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Column to be created</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Name</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The internal name of the formula column (i.e., formula field).</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Title</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the formula column that will be displayed on the table.</p>
+</td>
+</tr>
+<tr>
+<td width="139" valign="top" style='width:1.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Type</p>
+</td>
+<td width="499" valign="top" style='width:5.2in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The data type of the formula column. Right-click the field to select the data type.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><b><span style='font-size:12.0pt'>Operators</span></b></p>
+<p class="MsoNormal">The following is a comprehensive list of operators used in creating formulas:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Arithmetic operators</b></p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border:solid windowtext 1.0pt; border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">(+ - * /)</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Relational Operators</b></p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">(&lt; &lt;= &gt; &gt;= == !=)</p>
+</td>
+</tr>
+<tr style='height:18.4pt'>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:18.4pt'>
+<p class="MsoNormal"><b>Logic Operators</b></p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:18.4pt'>
+<p class="MsoNormal">‘OR’ (<b>||</b>) and ‘AND’ (<b>&amp;&amp;</b>) True = 1 False =0</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<h2>Defining a New Formula Column</h2>
+<p class="MsoNormal">To define a new formula column,</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>1.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Enter the formula in the unlabeled text field by inputting or clicking the desired function, parameters, and operators to insert in the formula.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>2.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Enter the name, title, and data type of the new column.</p>
+<p class="ListNumbered"><span style='font-size:10.0pt'>3.</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Apply</b> button.</p>
+<p class="ListNumbered" style='margin-left:.25in;text-indent:0in'>&#160;</p>
+<p class="MsoNormal"><span style='color:red'>Important:</span><a name="_GoBack"></a></p>
+<p class="MsoNormal"><span style='color:red'>Only Integers will be used for querying the data. All column values are returned as double and not String Values. The Ad-hoc table viewer should be used to determine integer values for items such as ins type, buy_sell etc.</span></p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><b>Formula Examples</b></p>
+<p class="MsoNormal">The following table provides formula usage examples:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; background:#E5E5E5;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Function</b></p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E5E5E5;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Description</b></p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E5E5E5;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Examples</b></p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">round(&lt;value&gt; , &lt;precision&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Round value of &lt;value&gt; to the &lt;precision&gt; place.</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">round( COL('price') ,2)</p>
+</td>
+</tr>
+<tr style='height:33.25pt'>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:33.25pt'>
+<p class="MsoNormal">min(&lt;value1&gt; , &lt;value2&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:33.25pt'>
+<p class="MsoNormal">Returns the lowest of the two values.</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:33.25pt'>
+<p class="MsoNormal">min(COL('price')&#160; , 1)</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">max(&lt;value1&gt; , &lt;value2&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns the maximum of the two values.</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">max(COL('price')&#160; , 1)</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">avg(&lt;value1&gt; , &lt;value2&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns the average of &lt;value1&gt; , &lt;value2&gt;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">avg( COL('price')&#160; , 1.1* COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">truncate(&lt;value&gt; , &lt;precision&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Truncate decimal places as of the &lt;precision&gt; place.</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">truncate( COL('price')&#160; , 1)</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Log(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns natural log of &lt;value&gt;</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">iif(COL('ins_type') == 48010 , MATH_Log( COL('price') ) ,&#160; COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Log10(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns log base 10 of &lt;value&gt;</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">iif(COL('ins_type') == 48010 , MATH_Log10( COL('price') ) ,&#160; COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Exp(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns exponentiation of &lt;value&gt; (e.g. <i>e</i><sup>,&lt;value&gt;</sup>)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Exp( COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Power(&lt;value1&gt; , &lt;value2&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns &lt;value1&gt; raised to the &lt;value2&gt; power (e.g. &lt;value1&gt;<sup>&lt;value 2&gt;</sup>)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_Power( COL('price')&#160; , 1)</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">DoubleToInt(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Computes the input’s exponential value</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">DoubleToInt( COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">IntToDouble(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Translate the integer &lt;value&gt; to double</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">DoubleToInt (COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">abs(&lt;value&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Returns absolute value of &lt;value&gt;</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">abs( -1* COL('price') )</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MATH_CalcCompoundedRate(&lt;rate., &lt;comp_period&gt;, &lt;pymt_period&gt;, &lt;yld_basis&gt;)</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Interest paid on principal and also on the interest from past years.</p>
+<p class="MsoNormal">&lt;rate.&gt; - Trade Date</p>
+<p class="MsoNormal">&lt;comp_period&gt; - Trade Compounding period in days</p>
+<p class="MsoNormal">&lt;pymt_period&gt; - trade payment period</p>
+<p class="MsoNormal">&#160;&lt;yld_basis&gt; - the system id for yield basis</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="235" valign="top" style='width:2.45in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">iif(&lt;condition&gt; , &lt;value if true&gt;, &lt;value if false&gt;)</p>
+</td>
+<td width="234" valign="top" style='width:175.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">If conditional statement is evaluated as true then return the expression else the false expression.</p>
+</td>
+<td width="169" valign="top" style='width:126.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">iif((COL('ins_type') == 48010 &amp;&amp; COL('buy_sell'))==1 ,&#160;&#160;&#160; 1.1* COL('price')&#160;&#160;&#160; ,COL('price') )</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">iif( COL('ins_type') ==48010 &amp;&amp;&#160; COL('buy_sell') ==1 || COL('ins_type') ==48020 &amp;&amp;&#160; COL('buy_sell') ==1 ||COL('ins_type') ==48030 &amp;&amp;&#160; COL('buy_sell') ==1&#160;&#160; ,&#160; abs( COL('position') ) ,&#160; COL('position') )</p>
+<p class="MsoNormal">&#160;</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

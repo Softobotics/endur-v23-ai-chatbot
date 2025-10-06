@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Configure_View.htm.
+ Section heading: Adding a Formula Column.
+ Text content: To add a formula column to the table, 1. Select Formulas à Add Formula Column . The Add Formula Column window displays. 2. Enter details of the column formula. 3. Select File à Save to save the new column in the configuration. .
+ 
+Links to other files: OLF_Add_Formula_Column.htm.

@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_Important_Notices.htm.
+ Section heading: Backwards Compatibly / Beta Functionality / Research Functionality.
+ Text content: Some 
+	 items as described in this User Guide are included in the system for 
+	 backwards compatibility and should not be used by new clients.  This 
+	 is a list of the items: Backwards 
+	 Compatibility  While 
+	 we have tried to make this list complete, it may be incomplete due 
+	 to items we missed.  As we discover and missed items, they 
+	 will be added to this list.  Some 
+	 items in the system are considered “Beta” Functionality.   Clients 
+	 are advised to allocate extra time for implementing these features 
+	 and should consult OpenLink before attempting to do so.  The 
+	 list of Beta functionality is maintained in a separate document, the 
+	 Known Defect Report.  Some 
+	 items in the system are considered “Research” Functionality and should 
+	 not be used by any clients.  The list of Research functionality 
+	 is maintained in a separate document, the Known Defect Report. .
+ 
+Links to other files: OLF_Backwards_Compatibility.htm.

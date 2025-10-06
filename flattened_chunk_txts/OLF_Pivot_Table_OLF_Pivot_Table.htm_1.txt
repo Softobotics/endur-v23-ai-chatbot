@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Pivot_Table.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Select Misc à Registered Pricing Models . The Registered Pricing Models window displays. This window is an example of a Table Viewer . 3. Select Reporting à Pivot Table . The following window displays:  .
+ Image file: OLF_Pivot_Table_files/image001.jpg
+ Image description: the table settings dial in the table settings dial.

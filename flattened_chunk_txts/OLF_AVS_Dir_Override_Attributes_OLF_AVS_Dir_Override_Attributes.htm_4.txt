@@ -1,0 +1,19 @@
+This chunk is from the HTML file: OLF_AVS_Dir_Override_Attributes.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Name | This field cannot be modified.  It represents the name of the script to which the privileges will be applied. |
+| Directory | This field indicates the path and directory in which the script is located.  All Standard Scripts are loaded into/Script/Olf_Standard.Customer Scripts are put in the Script Directory in/Script/Olf_Customer/. |
+| Groups | This field displays a pick list ofSecurity Groups(Security Groups are set up in the Admin Manager).  Choose the group whose members have rights to the selected script and its associated permissions.  Only someone with the security privilege ofDirectory System Script SuperUserorDirectory Node System SuperUsercan change the Group assigned to a script or the permissions associated with that script |
+| Group/Public Permissions (4 Fields) | These are checkboxes that can be toggled on and off.  They grant read and execute script privileges to the selected group and/or to all users (thePublic).  The following permissions are “Yes/No” pick lists.The available options are:OptionDescriptiongroup-readThe “read” privilege for this script is restricted to a specific security group.group-executeThe “execute” privilege for this script is restricted to a specific security group.public-readThe “read” privilege for this script is restricted to a specific available to all users.public-executeThe “execute” privilege for this script is restricted to a specific available to all users. | Option | Description | group-read | The “read” privilege for this script is restricted to a specific security group. | group-execute | The “execute” privilege for this script is restricted to a specific security group. | public-read | The “read” privilege for this script is restricted to a specific available to all users. | public-execute | The “execute” privilege for this script is restricted to a specific available to all users. |
+| Option | Description |
+| group-read | The “read” privilege for this script is restricted to a specific security group. |
+| group-execute | The “execute” privilege for this script is restricted to a specific security group. |
+| public-read | The “read” privilege for this script is restricted to a specific available to all users. |
+| public-execute | The “execute” privilege for this script is restricted to a specific available to all users. |
+| id | This is a sequential number assigned to a script by the System when the original owner created and saved it. |
+| group_permiss | Displays the group permission setting for the script. |
+| public_permiss | Displays the public permission setting for the script. |
+| modified | Indicates the number of times that the permissions of this script have been changed, with “0” indicating that the script is in its original form. |.

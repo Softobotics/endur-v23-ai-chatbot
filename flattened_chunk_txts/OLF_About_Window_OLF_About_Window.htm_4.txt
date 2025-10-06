@@ -1,0 +1,27 @@
+This chunk is from the HTML file: OLF_About_Window.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_About_Window_files/image003.jpg
+ Image description: the logo for the new store.
+ Image file: OLF_About_Window_files/image004.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_About_Window_files/image005.jpg
+ Image description: the hp printer is shown in the image.
+ Image file: OLF_About_Window_files/image006.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_About_Window_files/image007.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_About_Window_files/image008.jpg
+ Image description: the apple watch is shown in this image.
+ Image file: OLF_About_Window_files/image009.jpg
+ Image description: hp hp c672a printer driver for windows.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Displays theSystem Monitorwindow. |
+|  | Displays the version of Crystal reports.This button is removed in V10.0r2 and above and replaced with the “Crystal Reports Version” data field. |
+|  | Prints the current window. |
+|  | Displays theDLL Versionstab of theSystem Monitorwindow. |
+|  | Displays theSystem Wide Configurationtab of theSystem Monitorwindow.SeeSystem Wide Configuration Variables |
+|  | Closes the window. |
+|  | Displays the system Help files. |.

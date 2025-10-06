@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_AVS_Global_Variables.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Variable Type | Indicates the type of variable displayed. |
+| Variable Name | Displays the field in the data table that is displayed. |
+| Initial Value | Displays the default value. |.

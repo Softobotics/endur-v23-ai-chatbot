@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Chooser.htm.
+ Section heading: Fields For The First Type of This Window.
+ Text content: The first type (first example) of this window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Selected _________ (in this example, “Selected Instruments” | Displays a list of items that the user has selected to be used in system processing. |
+| Available ________ (in this example, “Available Instruments.”) | Displays a list of items that will not be included in the system processing but are available to be used, if the user chooses to add them. |
+| Search | Has the same function asFind <F3>.Version 9.1R1 and above |.

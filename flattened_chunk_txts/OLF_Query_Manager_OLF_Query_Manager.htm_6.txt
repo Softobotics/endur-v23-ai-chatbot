@@ -1,0 +1,52 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Logical Operators.
+ Text content: It is very important 
+	 that users understand the logical operators AND , OR , 
+	 and NOT . When a query is executed, the criteria entered for 
+	 different fields (such as ToolSet and Tran Status ) 
+	 takes an AND relationship, while the different criteria entered 
+	 for a specific field takes an OR relationship. For example, 
+	 if the user enters FX and Cash in the ToolSet field, and New and Validated in the Tran Status fields, then any transactions in the database that have a toolset 
+	 value of FX OR Cash , AND a Tran Status of New OR Validated will be retrieved. To reiterate, · the 
+	 different rows on the query screen are ” AND ed” together · the 
+	 comma-separated values are “ OR ed” together To perform more 
+	 complex queries, users may use additional logical operators such as · less 
+	 than (<) · greater 
+	 than (>) · not 
+	 equal to (!) · “and” 
+	 (+) Note: The 
+	 less than and greater than operators only apply to fields involving 
+	 numbers such as the deal tracking number or dates. The following are 
+	 examples of using the logical operators: The first inclination 
+	 of many users is to enter “> 1May015” and “< 1Jun15” , but this 
+	 would not work because the two criteria would be OR ed 
+	 together, making the combined criteria “greater than 1May15” OR “less 
+	 than 1Jun15”, which would include every date possible! The “and” operator 
+	 changes the default behavior of the “OR” relationship that exists..
+ Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Input Date | > 1May15 |. Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Input Date | > 1May15, + < 1Jun15 |. Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Trade Date | ! 1Jun15 |. Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Trade Date | ! 1Jun15, +! 8Jun15 |. Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Deal Num | > 20000 + < 30000, > 50000 
+			 + < 55000 |. Table data: 
+| Field | Selected 
+			 Values |
+| --- | --- |
+| Deal 
+			 Num | > 20000 + < 30000, + !25000 |.

@@ -1,0 +1,23 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Sessions.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field Item | Description |
+| --- | --- |
+| Sessions |
+| Host Name | A free-text entry field designed for the entry of the machine name at the O/S level. A value in this field functions as a filter of the session details shown in the table. |
+|  |
+| Openlink Process ID | A unique ID for each master logged into the database. |
+| Local Process ID | A unique local machine Windows or Unix ID for the process. |
+| Session ID | A unique ID representing the connection between the user machine and a module. |
+| User Name | The name of the personnel accessing the selected module. |
+| O/S Login Name | The login name of the operating system from which the process is running. |
+| Host Name | The name of the machine from which the process is running. |
+| Server Node | If the selected session is configured as a Server Node (in the Services Manager), this field will show the server node name. |
+| Daemon | The host and port of the external communication daemon used by the selected session. |
+| Status | Shows the standing of the session. A typical example would be “Running”. |
+| OS Services | Double-click the grid icon to displays theOS Serviceswindow. This window contains installed OpenLink NT services. |
+| Process Table | Double-click the grid icon to display theProcess Tablecontaining the details about underlying processes executed during the session. |
+| Performance | Double-click the grid icon to display theServer Node Performancewindow which provides a dynamic view of a server node’s memory and CPU utilization and process information. |
+| Olisten | Double-click the grid icon to display theError Log & Console Viewerwhich tracks errors tracks errors encountered on the remote session. |
+| System Info | Double-click the grid icon to display the tabs of theSystem Monitor - System Infowindow in one screen using tables (grid icons). This information is generated from the remote session. |.

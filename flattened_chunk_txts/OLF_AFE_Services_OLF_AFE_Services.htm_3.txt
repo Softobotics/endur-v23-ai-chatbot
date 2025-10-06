@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_AFE_Services.htm.
+ Section heading: Setting Up AFE Services.
+ Text content: OpenLink Central can be customized to allow button and tab configurations where users can place frequently used components. These components and functionality are available through single-click access. Setting up AFE Services is typically a two-step process. · Configure OpenLink Central for the AFE Services · Launch AFE Services.

@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
+ Section heading: Copying Services Within and Between Groups.
+ Text content: Services can be copied between and within groups in a manner similar to drag-and-drop. In this case, a service is copied by holding down the CTRL keyboard key prior to dropping the service in the new location. When the CTRL key is pressed, the cursor will change to display a “+” symbol. When this symbol is present, the operation will be a copy operation. If the symbol is not present, the operation will be a move operation. Note: This does not apply to the “Saved Desktops” group. In the following example, the “OpenLink Desktop” service was copied from Group 2 to Group 1 . .
+ Image file: OLF_Openlink_Central_Sidebar_files/image027.jpg
+ Image description: the menu menu in the menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu.

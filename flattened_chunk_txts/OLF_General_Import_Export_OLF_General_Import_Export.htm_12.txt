@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_General_Import_Export.htm.
+ Section heading: General Import/Export Tab Fields.
+ Text content: The Definitions tab of this window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Default | Click to Check and indicate the selected definition should be used as the default. |
+| Definition Id | A system-generated number to uniquely identify the definition. |
+| Definition Name | Name of the definition. |
+| Format | Format of the definition file. |
+| Filename | Filename of the definition file. |.

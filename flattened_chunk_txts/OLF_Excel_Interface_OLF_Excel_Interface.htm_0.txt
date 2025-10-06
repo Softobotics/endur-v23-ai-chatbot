@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Excel_Interface.htm.
+ Section heading: Overview.
+ Text content: The Excel Interface window allows users 
+	 to export data to a new, open, or existing Excel workbook or file. Note that if data to be exported is greater than 
+	 the Excel columns available, which is from column A to IV, the first 
+	 row of data will only be exported. For example, if data to be exported 
+	 is made up of 10 rows and the columns are more than what Excel can 
+	 accommodate, only the first row of data and the available column for 
+	 that data will be displayed..

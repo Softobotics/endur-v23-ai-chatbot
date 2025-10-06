@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_Important_Notices.htm.
+ Section heading: System Licensing.
+ Text content: Most 
+	 parts of the system are controlled by Licensing.   These 
+	 parts are not specifically listed in this User Guide.  If 
+	 you read about functionality, you may not be able to access it because 
+	 of licensing issues.   If this happens, you can contact 
+	 your Account Manager. In 
+	 other words, just because functionality is mentioned in the User Guide, 
+	 that does not mean a particular client is licensed to use it.  .

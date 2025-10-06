@@ -1,0 +1,37 @@
+This chunk is from the HTML file: OLF_Crystal_Reports_Master.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:     .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Crystal Task Name | The name of the task associated with this report. |
+| Report Name | Specifies the full path and file name of a saved Crystal report.  There are four ways to load a desired report:Enter a full path and report name directly in this fieldUse theBrowsebutton to select a saved reportUseFileàOpen Reportto select a saved reportUseFileàLoad Crystal Taskto load a Crystal Task that references a saved report |
+| Report Title | Displays the text that displays in the title bar of theReport Viewingwindow when a view of the selected report is generated.  When a new Crystal Task is created, this text defaults to theReport Titleas specified in the Crystal report file.  This text may be edited. |
+| Script Task Name | Specifies the name of a plug-in/script (optional) to be executed before running the selected report.  A plug-in/script task may be used to prepare data for the report.  The task may write data to User Tables in your database, to flat text files, or to an Active Data Object in memory. |. Table data: 
+| Field | Description |
+| --- | --- |
+| Generation Type | Specifies the type of output to be produced when theGenerate Reportbutton is clicked.  Click the field to get a pick list of available Generation Types.  The available choices are:Export ReportPrint ReportView Report |
+| Export Type | IfGeneration Typeis ‘Export Report’, specifies the format of the export file to be produced. A system pick list displays the supported export formats. |
+| Export File Name | IfGeneration Typeis ‘Export Report’, specifies the name of the destination file that the selected report is exported to. |
+| Export to Outdir | If selected andGeneration Typeis ‘Export Report’, exports report to the currentOutdir Reportdirectory for the current system date. If selected, theExport File Namefield should only contain a filename (without the full path).Example: {outdir}/reports/97Apr09/output_report.rpt |
+| Current Date | Displays the current date of the system. The current date is initialized by the Business Date setting defined in theSystem Date Rollfeature in the Operations Manager (if you do not have the Accept Trading Date Updates security privilege enabled).You may change the Current Date setting for your session only in theMarket Manageror using theCurrent Date Roll AFE Servicefrom OpenLink Central. Your session's Current Date setting is displayed on many system windows and can be used to calculate initial default values for deal settlement date, trade date, start date, and maturity date.It cannot be changed in this window. |
+| Database | Displays the name of the system database the user is currently working in.  Display only. |
+| User Id | Displays the system user ID of the user’s current system session.  Display only. |
+| Server | Displays the name of the server on which the user’s system data resides.  Display only. |. Table data: 
+| Field | Description |
+| --- | --- |
+| Standard Crystal | If selected, the Crystal Report gets information from database tables and requires no parameters. |
+| Active Data Report | If selected, the Crystal Report inputs data directly from the returnt table of the selected task. Returnt should consist of a one COL_TABLE column with each row being a table to import into Crystal Reports. The row number of returnt should coincide with the ttx file number in Crystal Reports.A Crystal Active Data Report uses a plug-in/script to define and populate a table of information to be passed to Crystal Reports through shared memory. Active Data must be selected as one of the data sources for the report. |
+| Parameter Driven | If selected, the Crystal Report inputs data from the returnt table of the selected task. Returnt should be a one row table with one column for each of the parameters in the report. Each column type in returnt should correspond to the column type of the parameter. A system Crystal Parameter Report uses a plug-in/script to supply data to Crystal Parameter Fields defined in the report. |. Table data: 
+| Field | Description |
+| --- | --- |
+| Database | If selected, gets the data from the database. |
+| Ad Hoc Report | If selected, the Crystal Report inputs the Query Id into first parameter value of report. To manually enter Query Id, uncheck this field.A Crystal Ad-hoc Report is one that uses the results of a system query as input to the report.  Ad-hoc reports can only be executed from system modules that have a query utility.  These modules are the Trading Manager, the Accounting Manager, and theConfirmandSettlementwindows of the Operations Manager.  Ad-hoc reports cannot be run from the system’s Main Control PanelCrystal Reportsicon. |
+| Saved Data | If theSave Data With Reportoption (in Crystal Reports) is selected when a report is saved, the user can view the saved data by checking this field on the Crystal Task.  This property is useful if the user wishes to see a sample of the report without actually refreshing the data behind it. |. Table data: 
+| Field | Description |
+| --- | --- |
+| Show Progress | If selected, a progress dialog box displays when exporting records to a specified export format.  (This field is only relevant when theGeneration Typeis set to Export Report.) |
+| Show Controls | If selected, control icons display in theReport Viewingwindow.  Control icons include page navigation, print icon, export icon, group tree icon, view size icon, and more.  (Note:If this property is not selected, the page navigation control icons do not display in theReport Viewingwindow.  Therefore, the user may only see one page of their report.) |
+| Show Last Page | If selected, the last page of the report is the first page to display in the viewing window.  When not selected, the first page displays first.  This field allows the user to quickly see grand totals without having to page through a report. |
+| Maximize View | If selected, theReport Viewingwindow displays in maximized form. |
+| Show Group Tree | If selected, a group tree displays on the left side of theReport Viewingwindow.  Group trees allow users to quickly go to report pages pertaining to a particular group. |.

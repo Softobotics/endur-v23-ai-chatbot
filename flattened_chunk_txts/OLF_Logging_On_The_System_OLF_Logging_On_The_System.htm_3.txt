@@ -1,0 +1,24 @@
+This chunk is from the HTML file: OLF_Logging_On_The_System.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_Logging_On_The_System_files/image002.jpg
+ Image description: a white background with a black and yellow logo.
+ Image file: OLF_Logging_On_The_System_files/image004.jpg
+ Image description: a yellow triangle with a black outline.
+ Image file: OLF_Logging_On_The_System_files/image005.jpg
+ Image description: a white and blue heart with a lock.
+ Image file: OLF_Logging_On_The_System_files/image006.jpg
+ Image description: a lock and a heart.
+ Table data: 
+| Button | Description |
+| --- | --- |
+| OK | Continues the logon process |
+| Cancel | Stops the logon process |
+|  | Displays the lower panel of theLogonwindow |
+|  | Hides the lower panel of theLogonwindow |
+| Standard Logon | Select this option for standard logon (default) |
+| Change Password | Select this option to change the password |
+| Logon Without Encryption | Select this option to turn off encryption.IconDescriptionEncryption is turned off.Encryption is turned on. | Icon | Description |  | Encryption is turned off. |  | Encryption is turned on. |
+| Icon | Description |
+|  | Encryption is turned off. |
+|  | Encryption is turned on. |.

@@ -1,0 +1,88 @@
+This chunk is from the HTML file: OLF_Symbolic_Dates.htm.
+ Section heading: Overview.
+ Text content: Symbolic dates can be entered into most of the fields in the system 
+	 that hold dates.  For example, the Start Date and End date 
+	 of the deal.  For each different date field, there may be 
+	 a different date origin.  For example, the date origin for 
+	 the End Date of a deal is typically the start date of the deal.  So 
+	 typing in a symbolic date into the End Date field of 0d (zero days 
+	 from origin) would set the End Date to be equal to the Start Date 
+	 that has been entered. When a user enters a symbolic date into a date field, the value 
+	 that would actually be displayed would be the real date.  The 
+	 date format is based on the user’s preferences. For most deal input 
+	 screens, you can hit the F1 key to see what the symbolic dates that 
+	 were entered are (in a window that pops up).  This is useful 
+	 for verifying templates are set up correctly. Symbolic dates typically produce good business day (GBD) results. 
+	 The only symbolic dates that can fall on a holiday or a weekend are 
+	 numbers “1” to “31,” “cd,” and “fom.”  See also Date 
+	 Shortcuts.
+ Table data: 
+| Symbol | Description | Example |
+| --- | --- | --- |
+| Any Number 1 to 31 | Enter a date by just entering the day of the month (such 
+			 as for the 25th, just enter'25').  If the day that you enter is less than 
+			 the current day, the resulting datewill be that day in the next month, otherwise it will be 
+			 that day in the currentmonth. | 1, 2, 3, ..., 31 |
+| boy | Beginning of Year1 beginning of year, 2 beginning of year, 
+			 ... | 1boy, 2boy, 3boy, ... |
+| cd | Calendar Days | 0cd, 1cd, 2cd, ... |
+| cm | Start of Calendar Month1 start of calendar month, 2 start of calendar 
+			 month, ... | 1cm, 2cm, 3cm, ... |
+| cq | Calendar QuarterThe start of the month for Jan, Apr, Jul, 
+			 Oct | 1cq, 2cq, 3cq, ... |
+| cy | Calendar Year1 start of calendar year, 2 start of calendar 
+			 year, ... | 1cy, 2cy, 3cy, ... |
+| d | Day1 good business day, 2 good business day, 
+			 ... | 1d, 2d, 3d, ... |
+| eom | End of Month | 1eom, 2eom, 3eom, ... |
+| eoy | End of Year1 end of year, 2 end of year, ... | 1 eoy, 2eoy, 3eoy, ... |
+| fom | First of Month (calendar days)If the reference (starting) date is Jan-6-2016 
+			 and 1fom is entered, Feb-1-2016 is returned, even if that 
+			 date is a holiday. | 1fom, 2fom, ... |
+| fri | Friday | 1 fri, 2fri, 3fri, ... |
+| imm | Third Wednesday of Mar, Jun, Sep, Dec.See environment variable AB_INT_DSEQ_ROLL_ON_SETTLE | 1imm, 2imm, 3imm, ... |
+| immq | Start of the month for Mar, Jun, Sep, DecSee environment variable AB_INT_DSEQ_ROLL_ON_SETTLE | 1immq, 2immq, 3immq, ... |
+| m | Month | 3m (3 months) |
+| med | Movement End DateThis symbolic date is only available in thePayment Date Offsetfield onComm-Physand Comm-Fee deals with aPricing 
+			 Adj LvlofParcel.When used,the Movement End 
+			 Date of the relevant parcel is used to determine the Payment 
+			 Date.This applies to the following types of fees/cash 
+			 flows that can be generated for a parcel:System-generated physical-side 
+				 parcel commodity feeSystem-generated financial-side 
+				 parcel commodity feeProvisional feeParcel Template fee and 
+				 related childrenParcel-level fees added 
+				 via GUI or API directly tied to a parcel and/or delivery 
+				 idCash flow with source 
+				 = Trigger and non-zero parcel ID | 5cd>med |
+| mimm | Next monthly IMM Day (3rd Wednesday of Jan, Feb, Mar, 
+			 Apr, ...)See environment variable AB_INT_DSEQ_ROLL_ON_SETTLE | 1mimm, 2mimm, 3mimm, ... |
+| mon | Monday | 1mon, 2mon, 3mon, ... |
+| msd | Movement Start DateThis symbolic date is only available in thePayment Date Offsetfield on Comm-Phys deals with aPricing 
+			 Adj LvlofParcel.When used,the Movement Start 
+			 Date of the relevant parcel is used to determine the Payment 
+			 Date.This applies to the following types of fees/cash 
+			 flows that can be generated for a parcel:System-generated physical-side 
+				 parcel commodity feeSystem-generated financial-side 
+				 parcel commodity feeProvisional feeParcel Template fee and 
+				 related childrenParcel-level fees added 
+				 via GUI or API directly tied to a parcel and/or delivery 
+				 idCash flow with source 
+				 = Trigger and non-zero parcel ID | 10cd>msd |
+| som | Start of Month | 1som, 2som, 3som, ... |
+| thu | Thursday | 1thu, 2thu, 3thu, ... |
+| tue | Tuesday | 1tue, 2tue, 3tue, ... |
+| today | The current date of the system.The current date is initialized by the Business 
+			 Date setting defined in theSystem 
+			 Date Rollfeature in the Operations Manager 
+			 (if theAccept Trading 
+			 Date Updatessecurity privilege is not enabled).The current date setting may be changed 
+			 for the session using this pop up or theCurrent Date Roll AFE Servicefrom OpenLink Central. The session's current date setting 
+			 is displayed on many system date windows and can be used to 
+			 calculate initial default values for deal settlement date, 
+			 trade date, start date, and maturity date.Security PrivilegeChange 
+			 System Date Menu(100) is required to modify this date.If the security privilege is added or removed, 
+			 users need to exit and restart theMarket Manager for this to take affect. | Current Date |
+| w | Week | 2w (2 weeks) |
+| wed | Wednesday | 1wed, 2wed, 3wed, ... |
+| y | Year | 20y (20 years) |. 
+Links to other files: ../Admin_Manager/ADMIN_STATIC_Date_Shortcut_List.htm.

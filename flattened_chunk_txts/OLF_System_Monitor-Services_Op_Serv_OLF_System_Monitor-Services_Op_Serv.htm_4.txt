@@ -1,0 +1,16 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Op_Serv.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor . This tab includes the following buttons:.
+ Image file: OLF_System_Monitor-Services_Op_Serv_files/image003.jpg
+ Image description: a white and black logo on a white background.
+ Image file: OLF_System_Monitor-Services_Op_Serv_files/image004.jpg
+ Image description: a white and black striped background.
+ Image file: OLF_System_Monitor-Services_Op_Serv_files/image005.jpg
+ Image description: a white and gray striped background.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Saves changes to the definition’s online status. |
+|  | Selecting this button halts the definition monitoring process. |
+|  | Selecting this button re-starts monitoring the definition(s). |. 
+Links to other files: OLF_System_Monitor.htm.

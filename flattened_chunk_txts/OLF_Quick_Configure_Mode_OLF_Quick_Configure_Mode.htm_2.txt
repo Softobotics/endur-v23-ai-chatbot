@@ -1,0 +1,21 @@
+This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
+ Section heading: Buttons.
+ Text content: This mode displays the following buttons: .
+ Image file: OLF_Quick_Configure_Mode_files/image002.jpg
+ Image description: a green building with a white roof.
+ Image file: OLF_Quick_Configure_Mode_files/image003.jpg
+ Image description: a black and white photo of a square window.
+ Image file: OLF_Quick_Configure_Mode_files/image004.jpg
+ Image description: a computer screen with a green and white background.
+ Image file: OLF_Quick_Configure_Mode_files/image005.jpg
+ Image description: a white and red background with a black and white pattern.
+ Image file: OLF_Quick_Configure_Mode_files/image006.jpg
+ Image description: a white and black background with a white and black text.
+ Table data: 
+| Button | Description |
+| --- | --- |
+| / | Saves the blotter configuration. If no changes were made, this button will be disabled and will appear in gray. |
+|  | Toggle to open/hide theColumn Chooser. TheColumn Chooserdisplays a list of all the fields (whether they are hidden or not) in the blotter. The user can drag any field from this window onto the blotter or any panel of theQuick Configurearea to display it on the blotter/panel. For example, if the “CCY” column is not displayed on the blotter, the user can drag “CCY” from theColumn Chooserand drop it between the columns it will be inserted.If columns that are already displayed on the blotter are dragged from the chooser to the blotter, the column will simply be moved to the new position. |
+|  | Switches the window intoNormalview. |
+| Show Tree | Toggles the blotter between the listing format and tree view format. Data will be grouped according to the fields listed on theGroupingpanel. Click thePlus (+)button to expand group or theMinus (-)button to collapse the tree view. Put a check mark to switch into tree view format. At least one column must be in theGroupingpanel to enable this button. |
+|  | Toggles the blotter between the regular blotter and the pivot table. This button is located at the upper right corner of the blotter. |.

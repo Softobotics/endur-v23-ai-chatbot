@@ -1,0 +1,39 @@
+This chunk is from the HTML file: OLF_System_Refresh.htm.
+ Section heading: Remote (Other User/Machine) Changes.
+ Text content: .
+ Table data: 
+| Version | Change an existing 
+			 Static Data value | Change an existing 
+			 Index/Vol/Correl definition |
+| --- | --- | --- |
+| V6.0 | User needs to either log out and log 
+			 back in or push the static data refresh button.  AVS 
+			 scripts can force a full refresh using the function in the 
+			 UTIL_RefreshSharedMemory family | Users can 
+				 force a refresh by loading all indexes, ect. in the Market 
+				 Manager using these menu items:Price/RateàLoad UniversalVolatilityàLoad UniversalVolatilityàCorrelationàLoad UniversalAVS scripts 
+				 can force a full refresh using the function MKTD_LoadAllMktd.The ANE 
+				 (Automatic Notification Engine) allows for automatic refreshes 
+				 by communication to all users when the version number 
+				 of an Index changes.  The system knows to reload 
+				 the index when next needed.  ANE must be running 
+				 for this to happen. |
+| V7.0 | User needs to either log out and log 
+			 back in or push the static data refresh button.  AVS 
+			 scripts can force a full refresh using the function in the 
+			 UTIL_RefreshSharedMemory family | Users can 
+				 force a refresh by loading all indexes, ect. in the Market 
+				 Manager using these menu items:Price/RateàLoad UniversalVolatilityàLoad UniversalVolatilityàCorrelationàLoad UniversalAVS scripts 
+				 can force a full refresh using the function MKTD_LoadAllMktd.The ANE 
+				 (Automatic Notification Engine) allows for automatic refreshes 
+				 by communication to all users when the version number 
+				 of an Index changes.  The system knows to reload 
+				 the index when next needed.  ANE must be running 
+				 for this to happen. |
+| V8.0 | This is updated by the Cache Engine 
+			 with no special effort/considerations. | This is updated by the Cache Engine 
+			 with no special effort/considerations if at least one of the 
+			 following is true:The Environment 
+				 Variable AB_CE_ACCEPT_EXTERNAL_ INVALIDATES is set to 
+				 a non-zero value.The instance 
+				 of the system is configured to have a run site. |.

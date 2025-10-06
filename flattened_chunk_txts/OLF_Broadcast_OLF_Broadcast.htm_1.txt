@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Broadcast.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This feature is available via the microphone icon on the main control panel.  After the Broadcast icon is selected, the followingwindow displays.   .
+ Image file: OLF_Broadcast_files/image001.jpg
+ Image description: a blue ball and a white ball on a gray background.
+ Image file: OLF_Broadcast_files/image002.jpg
+ Image description: the excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel excel.

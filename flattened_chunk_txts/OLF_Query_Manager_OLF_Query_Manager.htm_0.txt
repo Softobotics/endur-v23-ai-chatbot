@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Overview.
+ Text content: The Query Manager is used to search and extract information from the system. A query 
+	 is performed to retrieve information from the database based on the 
+	 query criteria specified by the user. Any criteria entered into the 
+	 Query window limits what is retrieved from the database. For example, 
+	 in the Trading Explorer Desktop , if a Bond toolset is 
+	 specified in the ToolSet field of the Transaction table, 
+	 the system will only display bond deals in the Trading Explorer 
+	 Desktop . The parameters for 
+	 filtering data differ and depend on the functionality, desktop, or 
+	 system manager driving the query. The search criteria defined may 
+	 be very broad to retrieve many items or very specific as to retrieve 
+	 just one item. .

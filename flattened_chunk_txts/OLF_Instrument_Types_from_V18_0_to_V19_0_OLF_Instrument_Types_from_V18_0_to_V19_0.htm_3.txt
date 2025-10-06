@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Instrument_Types_from_V18_0_to_V19_0.htm.
+ Section heading: Removed Instrument 
+ Types.
+ Text content: The following are the instrument types removed in 
+ V19.0: .
+ Table data: 
+| Toolset | Name | ID | Description | DTS |
+| --- | --- | --- | --- | --- |
+| Contract Header | CONTRACT-HEADER | 66001 | CONTRACT-HEADER |  |.

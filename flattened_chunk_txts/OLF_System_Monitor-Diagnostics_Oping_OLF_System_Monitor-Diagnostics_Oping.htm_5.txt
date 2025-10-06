@@ -1,0 +1,15 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Oping.htm.
+ Section heading: Oping Data Table Panel.
+ Text content: This panel contains the following fields: .
+ Table data: 
+| Display Name | The name of the process as seen by the end-user. |
+| --- | --- |
+| Process Name | The internal system name of the process. |
+| Openlink Process ID | A unique ID for each master logged into the database. |
+| Local PID | A unique local machine Windows or Unix ID for the process. |
+| Session ID | A unique ID representing the connection between the user machine and a module. |
+| User Name | The name of the personnel accessing the selected module. |
+| O/S Login Name | The login name of the operating system from which the process is running. |
+| Host Name | The name of the machine from which the process is running. |
+| Engine Number | The system assigned identification number of the selected engine. |
+| Daemon | The host and port of the external communication daemon used by the selected process.This field is available in v8.1r1 and up. |.

@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_OpenLink_Central_Launch_Available_Service.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image003.jpg
+ Image description: a black and white photo of three people.
+ Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image004.jpg
+ Image description: a black and white photo of a group of people.
+ Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image005.jpg
+ Image description: a roll of paper with the word ' do '.
+ Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image006.jpg
+ Image description: a white and blue logo on a white background.
+ Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image007.jpg
+ Image description: a roll of paper with the word god.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Allows the user to search for a service in theAvailable Serviceslisting. Displays an input field for the entry of a string.This is available in V9.1r1 and earlier. |
+|  | Allows the user to search for the next service that matches the search string. Click this button to go the next service that matches the search criteria.This is available in V9.1r1 and earlier. |
+| (V10.1r1 and above)(V9.1r2 and below) | Executes or starts the selected service/module. |
+|  | Cancels launching of service and closes the window. |.

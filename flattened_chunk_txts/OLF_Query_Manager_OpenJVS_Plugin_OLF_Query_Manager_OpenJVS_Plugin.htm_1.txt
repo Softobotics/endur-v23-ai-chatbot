@@ -1,0 +1,16 @@
+This chunk is from the HTML file: OLF_Query_Manager_OpenJVS_Plugin.htm.
+ Section heading: How It Works.
+ Text content: The Query Manager allows optional scripts to 
+ be called after the main queries are called. This allows the scripts to 
+ add to or delete from the set of deals that are listed in the query_result 
+ table that will be generated.  They also can perform any other 
+ functions a script of which is capable, such as making notifications to 
+ other parts of the system.  Furthermore, if a script runs a 
+ query that has associated scripts, these associated query scripts will 
+ be called and run.  For each page on the query window, the regular query 
+ is executed as before.  Then, if a script is defined, that script 
+ is called, being passed to the unique query_id, page_num, and do_status tables from the Query engine.  A unique script can be defined for each page on the 
+ query window.  If no query is defined, then the original behavior 
+ is of the script maintained.  As the query for each page is 
+ executed, the corresponding script is called immediately afterward. This 
+ is called before the system returns from the query engine..

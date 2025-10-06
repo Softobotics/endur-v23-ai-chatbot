@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Script Debugger</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Segoe UI";
+        panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif"; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Segoe UI" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nOperations Manager\nServices\nAVS\nScript Editor\nAVS Script Debugger");
+addTocInfo("Screen-Level Help Topics\nTrading Manager\nAVS Menu\nScript Editor\nAVS Script Debugger");
+addAvenueInfo("System Use","OLF/OLF_AVS_Global_Variables.htm","OLF/OLF_AVS_Script_Editor.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TradingMgr.htm\">Trading Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TRADING_AVS_Functions_and_Arguments.htm\">AVS Menu<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS_82r1.htm\">Script Editor<\/a> &gt; AVS Script Debugger<\/p>");
+}
+else{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/Operations_Manager.htm\">Operations Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">Services<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS.htm\">AVS<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_AVS_Add-In_Configuration.htm\">Script Editor<\/a> &gt; AVS Script Debugger<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Script Debugger</h1>
+<h2>Overview</h2>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>The <i>Script Debugger</i> is a helpful tool that users can run when they encounter run time errors or erroneous data results.&#160; It allows users to set “break points” in the scripts at which to stop.&#160; The user can then step through lines of code examining variables and tables, to try and find what caused the error.&#160;</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">To run a script in <b>Debug</b> mode:</p>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">Open the Trading Manager.</li>
+<li class="MsoNormal">Right-click on the <b>Abort Task</b> button and select “Debugger.”</li>
+<li class="MsoNormal">Select a task from the picklist that appears.</li>
+<li class="MsoNormal">Click on the <b>Load Task</b> button.</li>
+<li class="MsoNormal">The <i>Script Debugger</i> screen displays with the AVS script for the task that was selected.</li>
+</ol>
+<h3>Or</h3>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">Open a script using the <i>AVS</i> <i>Script Editor.</i></li>
+<li class="MsoNormal">Add the line <b>#SDBG</b> to the very first line of code and recompile it.&#160;</li>
+<li class="MsoNormal">When you next run your task it will stop execution of your code at the very first line and pop up a <i>Debugger Window.</i></li>
+<li class="MsoNormal">This allows you to step through your code and set breakpoints, etc.&#160;</li>
+</ol>
+<p class="MsoNormal" style='margin-left:.5in'><b>Note:&#160;</b> Remember to remove <b>#SDBG</b> from the code when you have finished debugging.</p>
+<p class="Picture"><img width="623" height="702" src="OLF_Script_Debugger_files/image001.jpg" alt="image001" /></p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the following menu items:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Menu</span></h6>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Item</span></h6>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Debugger</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Load</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Loads a selected script.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the current script, along with any changes the user has made.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Save As</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the current script to a different file.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Delete</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Deletes highlighted text in the script.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Exit</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Close the current window without saving changes.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Action</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Breakpoint</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is not currently functional.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Step</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is not currently functional.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>&#160;</span></h5>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>View</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is not currently functional.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Continue</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is not currently functional.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Tools</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Find (Cntl-F)</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays a pop-up window.&#160; This can be used to enter a text string to search for in the selected script.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Function Lookup (Cntl-L)</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Searches for the next occurrence of the highlighted function in the selected script.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Print Script</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the contents of the script only.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Help</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>SDBG Help</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the system Help files.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Keyboard Help</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays a list of keyboard shortcuts that can be used in the debugger.</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>AVS Functions</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>AVS Functions and Arguments</i> window</p>
+</td>
+</tr>
+<tr>
+<td width="89" valign="top" style='width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>&#160;</b></p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>AVS Global Variables</b></p>
+</td>
+<td width="390" valign="top" style='width:292.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>AVS Global Variables</i> window.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Button</span></h6>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><img width="40" height="38" src="OLF_Script_Debugger_files/image002.jpg" alt="print" /></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints a screenshot of the current window.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-weight:normal'><img width="38" height="39" src="OLF_Script_Debugger_files/image003.jpg" alt="image004" /></span></h5>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Toggles the breakpoint at the line where the cursor is.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">Use this button to set breakpoints on or off.&#160; Use a breakpoint when you wish pause the script at a particular line.&#160; A line that has a breakpoint set will have a B immediately following the line number.&#160; To set the breakpoint position the cursor on the line where you want the breakpoint and click the Toggle Breakpoint button.&#160; Do the same to remove a breakpoint.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="39" height="37" src="OLF_Script_Debugger_files/image004.jpg" alt="image006" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Views values in the script.&#160;</p>
+<p class="MsoNormal">To view the current value of a variable, Hover the mouse over the variable name in the Debugger and left click.&#160; This will place the cursor (a small black triangle) under the variable.&#160; You can use the arrow keys to reposition the cursor if required.&#160; Next select the View button.&#160; The value of the variable will be displayed in the Debugging Messages box at the bottom of the window (except memory tables which will be displayed as a separate window).</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">This button has a few functions:</p>
+<p class="MsoNormal">Click in or by a variable name, then click <b>View</b> to print this variable.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in'>Drag select an expression, then click <b>View</b> to print this expression.</p>
+<p class="MsoNormal" style='margin-left:.5in;text-indent:-.25in'>Right-click on it to pop up a menu listing local and global variable names.&#160; Select a name from the list to print.</p>
+<p class="MsoNormal">Click <b>View</b> directly to repeat previous printings.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="40" height="34" src="OLF_Script_Debugger_files/image005.jpg" alt="image008" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Scrolls down through the script by line or step or block, as selected by the user.</p>
+<p class="MsoNormal">This button has a few functions:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal">Click on this button to step 1 the statement</li>
+<li class="MsoNormal">Right-click this button to pop up a menu showing:</li>
+<li style="list-style: none; display: inline">
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">Finish this block</li>
+<li class="MsoNormal">Skip one step</li>
+<li class="MsoNormal">Skip this block</li>
+</ol>
+</li>
+</ul>
+<p class="MsoNormal" style='margin-left:.5in'>Select the <b>Step</b> you wish.</p>
+<p class="MsoNormal" style='margin-left:.5in'>&#160;</p>
+<p class="MsoNormal">To process the current line press this button.&#160; The current line will have =&gt; instead of a line number.&#160; The only exception is when the script hasn’t started processing yet.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="41" height="37" src="OLF_Script_Debugger_files/image006.jpg" alt="image010" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Continues to run the script until:</p>
+<ul style='margin-top:0in' type="disc">
+<li class="MsoNormal">The next breakpoint</li>
+<li class="MsoNormal">To completion if there are no breakpoints</li>
+<li class="MsoNormal">The user presses <b>&lt;CNTL&gt;-C.</b></li>
+</ul>
+<p class="MsoNormal">When pressed this button will start running the script from the current line.&#160; The script will only stop running when a breakpoint, or the end of the script is reached.</p>
+<p class="MsoNormal">When you right-click, you get the following menu:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="34" valign="top" style='width:.35in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>#</b></p>
+</td>
+<td width="130" valign="top" style='width:97.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Item</b></p>
+</td>
+</tr>
+<tr>
+<td width="34" valign="top" style='width:.35in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">1</p>
+</td>
+<td width="130" valign="top" style='width:97.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Finish this block</p>
+</td>
+</tr>
+<tr>
+<td width="34" valign="top" style='width:.35in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">2</p>
+</td>
+<td width="130" valign="top" style='width:97.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Skip one step</p>
+</td>
+</tr>
+<tr>
+<td width="34" valign="top" style='width:.35in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">3</p>
+</td>
+<td width="130" valign="top" style='width:97.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Skip this block</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="40" height="37" src="OLF_Script_Debugger_files/image007.jpg" alt="image012" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the OLF <i>Search</i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="43" height="36" src="OLF_Script_Debugger_files/image008.jpg" alt="image014" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Allows the user to highlight a specific function in the script.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="41" height="37" src="OLF_Script_Debugger_files/image009.jpg" alt="image016" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Prints the text of the entire script or any portion thereof that is highlighted by the user.</p>
+</td>
+</tr>
+<tr>
+<td width="155" valign="top" style='width:116.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b><img width="84" height="88" src="OLF_Script_Debugger_files/image010.jpg" alt="image020" /></b></p>
+</td>
+<td width="480" valign="top" style='width:359.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This blue button displays and hides the panel between the buttons at the top of the screen and the panel that displays the actual script.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h3>Fields</h3>
+<p class="MsoNormal">This window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Field</span></h6>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<h5 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left: 0in'><span style='font-family:"Verdana","sans-serif"'>Name</span></h5>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The name of the script stored in the database.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Type</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The type of script.&#160; The choices are:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'><span style='font-family:"Verdana","sans-serif"'>Type</span></h6>
+</td>
+<td width="456" valign="top" style='width:4.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<h6 style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'><span style='font-family:"Verdana","sans-serif"'>Description</span></h6>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Param Script</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A <b><i>Parameter</i></b> script is used to prepare information to be passed to a main script.&#160; The table <b><i>argt</i></b> is used to hold date to be passed to a main script.&#160; Parameter scripts can, but are not normally, run without a main script in a Task.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Main Script</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A <b><i>Main</i></b> script is the main script that contains the bulk of the reporting or process-specific AVS code.&#160; A main script may be designated to run alone in a Task.</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Page Viewer Script</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A <b><i>Page Viewer</i></b> script is typically used to set the subscriptions and activate the Page Viewer</p>
+</td>
+</tr>
+<tr>
+<td width="167" valign="top" style='width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Output Script</b></p>
+</td>
+<td width="456" valign="top" style='width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">An <b><i>Output Script</i></b> is a script that runs locally in the Trading Manager after the main script has run.&#160;</p>
+<p class="MsoNormal">The order in which scripts in a task are run is:</p>
+<p class="MsoNormal"><b>First:</b> Display Script</p>
+<p class="MsoNormal"><b>Second:</b> Param Script</p>
+<p class="MsoNormal"><b>Third:</b> Main Script</p>
+<p class="MsoNormal"><b>Fourth:</b> Output Script</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Owner</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoHeader">The user ID to which the task is assigned.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Read Only</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Indicates this script is read only and cannot be modified in this session.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Description</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A user-defined text field for entering the description of the AVS script.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Line Number</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the current line number of the script.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Script List Box</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A list box containing the commands of the script.</p>
+</td>
+</tr>
+<tr>
+<td width="143" valign="top" style='width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal"><b>Debugging Messages</b></p>
+</td>
+<td width="495" valign="top" style='width:371.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A list box that displays the messages that the system sends as the script is being debugged.</p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h2>&lt;sdbg&gt; Shell</h2>
+<p class="MsoNormal">The shell "terminal" is the lower text area in the <i>sdbg</i> window.</p>
+<p class="MsoNormal">Type <b>help</b> at a <b>&lt;sdbg&gt;</b> prompt.&#160; A list of <b>sdbg</b> commands, including print, breakpoint, continue, step, finish, skip, set, and help displays.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><b>Note:&#160;</b> Print [variable] should be print [expression].&#160; An expression can be of any form acceptable in a script, such as x * (y+3), 10*growth(rate, dcf) , and so on.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal"><b>Abbreviation:</b>&#160; When a command is typed, its prefix can be used as long as this prefix does not confuse another command above it in this list e.g., use 's' for step, 'sk' for 'skip', and 'se' for set.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">Command history is supported.&#160; You can either move the cursor back to a previous command and hit <b>RETURN/ENTER</b>, or, use M-P, M-N to navigate along command history.</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

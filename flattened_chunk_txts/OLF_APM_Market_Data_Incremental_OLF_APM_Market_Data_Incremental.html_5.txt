@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_APM_Market_Data_Incremental.html.
+ Section heading: Update Behavior.
+ Text content: A dependency map is generated of the deals and the 
+ market data that it is sensitive to. This includes any parent-child relationships 
+ of the indexes. Therefore, if a deal is sensitive to a child index and 
+ the parent index has changed, it will trigger an incremental update. The 
+ dependency map is updated each time a batch is run and each time an incremental 
+ is processed. The overhead of creating the dependency map is negligible 
+ even with large datasets. There are two new Operation Services Definitions created 
+ when any APM service has the property enabled. There is only one set of definitions. It is shared 
+ between all the services that have the property enabled. Only the deals 
+ that have their market data changed will be run through each service. The market data incremental updates will be lower 
+ priority than the typical deal updates. Deal incremental updates will 
+ continue to flow through at the highest priority. This is done to ensure 
+ that the typical operation is unaffected and as a result, there is negligible 
+ deal update performance impact. There may be certain cases where the deal update is 
+ grouped together into a block deal update with multiple market data updates. 
+ The block succeeds only when all the deals in the block have succeeded. 
+ This may introduce a small lag if the other deals in the block take longer 
+ to process..

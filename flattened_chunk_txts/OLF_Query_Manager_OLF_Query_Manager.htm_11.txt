@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: See Also.
+ Text content: Query 
+	 Manager Designer Query 
+	 Manager—Additional Query Criteria Query 
+	 Manager - OpenJVS Plugin Query 
+	 Manager – AVS Script.
+ 
+Links to other files: OLF_Query_Manager_Query_Designer.htm, OLF_Query_Manager_Additional_Query_Criteria.htm, OLF_Query_Manager_OpenJVS_Plugin.htm, OLF_Query_Manager_AVS_Script.htm.

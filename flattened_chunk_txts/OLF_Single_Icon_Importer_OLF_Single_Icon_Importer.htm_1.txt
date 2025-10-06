@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Single_Icon_Importer.htm.
+ Section heading: Preview Panel.
+ Text content: This panel displays the icon before it is imported in the system. The icon is shown in three sizes: · Native Image Size: The actual size of the icon being imported · Small: 16x16 pixels · Large: 32x32 pixels .

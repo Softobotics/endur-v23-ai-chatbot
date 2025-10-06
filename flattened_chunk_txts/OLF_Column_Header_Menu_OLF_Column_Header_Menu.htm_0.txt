@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Column_Header_Menu.htm.
+ Section heading: Overview.
+ Text content: The Column Header Menu is available in almost all table and blotter windows in the system, such as the Table Viewer , Static Data windows, andso forth. This menu provides additional functionalities used to configure the table/blotter from which it is accessed. As of V10.0r2, the menu may differ slightly, depending upon from which window it is launched..

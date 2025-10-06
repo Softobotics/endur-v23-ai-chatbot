@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
+ Section heading: Reordering Services.
+ Text content: Similar to reordering groups, the services within the groups can be reordered using drag-and-drop functionality. In the following example, the “Market Manager” service was moved between “OpenLink Desktop” and “Trading Explorer” services. Note: This does not apply to the “Saved Desktops” group..
+ Image file: OLF_Openlink_Central_Sidebar_files/image024.jpg
+ Image description: the screens are showing the options for the options.
+ Image file: OLF_Openlink_Central_Sidebar_files/image025.jpg
+ Image description: the screens are highlighted in the text box.
+ Table data: 
+|  |  |
+| --- | --- |
+.

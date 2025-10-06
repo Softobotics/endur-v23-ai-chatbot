@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_JBO_Project_Manager.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_JBO_Project_Manager_files/image003.jpg
+ Image description: a woman riding a bike down a street.
+ Image file: OLF_JBO_Project_Manager_files/image004.jpg
+ Image description: hp hp c6 - 1 - hp c6 - 1 - hp c6 - 1 - hp.
+ Image file: OLF_JBO_Project_Manager_files/image005.jpg
+ Image description: a roll of toilet paper with the word ' no '.
+ Image file: OLF_JBO_Project_Manager_files/image006.jpg
+ Image description: a black and white photo of a house.
+ Image file: OLF_JBO_Project_Manager_files/image007.jpg
+ Image description: a black and white image of a computer screen.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Finds projects based on supplied string. |
+|  | Closes the window – prompts for saving changes. |
+|  | Closes the window without saving changes. |
+|  | Move selected component up and down in the list. |.

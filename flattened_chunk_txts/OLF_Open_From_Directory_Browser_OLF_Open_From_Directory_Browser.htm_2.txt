@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_Open_From_Directory_Browser.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Edit Directory | Opens theNew Directory Window. This allows the user to edit the properties of the directory that is currently selected. |
+|  | New Directory | Opens theNew Directory Window. This allows the user to create a new folder or sub-directory under the directory that is currently selected. |
+|  | Up Directory | Selects the parent folder of the directory that is currently selected. |
+|  | Home Directory | Selects the default directory, which depends on the functionality this window was access from. For example, if this window was opened from the Trading Query, the home directory would default to “/Query”. |
+|  | Print | Prints the current window. |
+| Help | Help | Displays the system Help files. |.

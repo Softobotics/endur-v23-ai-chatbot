@@ -1,0 +1,17 @@
+This chunk is from the HTML file: OLF_System_Refresh.htm.
+ Section heading: Local (Same Machine) Adds New Data.
+ Text content: .
+ Table data: 
+| Version | Adds New Static 
+			 Data value | Adds New Index/Vol/Correl 
+			 definition |
+| --- | --- | --- |
+| V6.0 | User needs to either log out and log 
+			 back in or push the static data refresh button.  This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family | This is updated with no special effort/considerations. |
+| V7.0 | This is updated by the Cache Engine 
+			 with no special effort/considerations. | This is updated with no special effort/considerations. |
+| V8.0 | This is updated by the Cache Engine 
+			 with no special effort/considerations. | This is updated by the Cache Engine 
+			 with no special effort/considerations. |.

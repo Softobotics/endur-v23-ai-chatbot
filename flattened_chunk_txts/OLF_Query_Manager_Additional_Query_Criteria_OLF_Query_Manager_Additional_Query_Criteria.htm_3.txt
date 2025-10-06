@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_Query_Manager_Additional_Query_Criteria.htm.
+ Section heading: Additional Examples.
+ Text content: Users can experiment with other possible Additional 
+	 Query Criteria. Here are some examples that work: .
+ Table data: 
+| Example | Description |
+| --- | --- |
+| personnel.mail_code = 
+			 '11556' | Same as the example shown above, but 
+			 the name of the table is explicitly given |
+| personnel.mail_code = 
+			 '11556' and personnel.state_id = 0 | Personnel with a mail code of 11556, 
+			 have no state assigned, and the name of the table is explicitly 
+			 given. |.

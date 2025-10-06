@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Column_Header_Menu.htm.
+ Section heading: Accessing Menu Type 2.
+ Text content: This menu is accessed from various system grid type windows. For illustration purposes, the following is an example of how it is accessed: 1. Launch OpenLink Desktop. 2. Select Reference Explorer desktop. 3. Click the Party Group folder. 4. Right-click on any column heading of the table. The following menu displays:    NOTE: In both versions, the title that displays on the menu is the title of the column from which it was accessed. .
+ Image file: OLF_Column_Header_Menu_files/image002.jpg
+ Image description: the settings dial in the settings dial dial.

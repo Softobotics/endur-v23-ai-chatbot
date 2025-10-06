@@ -1,0 +1,134 @@
+This chunk is from the HTML file: Database_Changes_V18.0_to_V19.0.htm.
+ Section heading: The following columns have been added:.
+ Text content: These columns were added to support new functionality. Therefore they 
+ should not affect clients who are upgrading. One way they might affect 
+ clients is if a client used a “*” for a "What" clause in an 
+ SQL statement. When they upgrade, they would get an additional column 
+ or columns, which may cause issues in custom plug-ins/scripts. We recommend 
+ that clients use specific what clauses rather than the general “*” to 
+ prevent this from happening. For more details about these columns, see the AdHoc Query Viewer and/or 
+ the Data Model Documentation for more details. See AdHoc 
+ Query Viewer .
+ Table data: 
+| Table Name | Column 
+		 Name | Data 
+		 Type |
+| --- | --- | --- |
+| BPM_DEFINITION | BPM_TRANSLATION_VERSION | number |
+| BPM_DEFINITION | DEFN_DEBUG_LEVEL | number |
+| BPM_DEFINITION | ENGINE_DEFINITION_VERSION | number |
+| BPM_DEFINITION | LAST_ACTIVATED_ENGINE | number |
+| BPM_DEFINITION | LAST_ACTIVATED_ENGINE_VER | varchar2/char |
+| BPM_DEFINITION_HISTORY | BPM_TRANSLATION_VERSION | number |
+| BPM_DEFINITION_HISTORY | DEFN_DEBUG_LEVEL | number |
+| BPM_DEFINITION_HISTORY | ENGINE_DEFINITION_VERSION | number |
+| BPM_DEFINITION_HISTORY | LAST_ACTIVATED_ENGINE | number |
+| BPM_DEFINITION_HISTORY | LAST_ACTIVATED_ENGINE_VER | varchar2/char |
+| BPM_ENGINE_SERVICE_STARTUP | STARTUP_GUID | varchar2/char |
+| BPM_HISTORY | INSTANCE_START_TIME | date |
+| BPM_HISTORY | OP_SERVICE_DEFN_ID | number |
+| BPM_RUNNING | INSTANCE_START_TIME | date |
+| BPM_RUNNING | OP_SERVICE_DEFN_ID | number |
+| CALC_SIGN | NAME | varchar2/char |
+| GAS_PHYS_PARAM | USER_PATH_DEAL_NUM | number |
+| GAS_PHYS_PARAM_H | USER_PATH_DEAL_NUM | number |
+| IDX_DEF | IS_SUSPENDED | number |
+| IDX_DEF | SUSPENDED_STATUS_ID | number |
+| IDX_DEF | TEMPLATE_INDEX_ID | number |
+| IDX_GPT_DEF | GPT_FORMULA_TYPE | number |
+| IDX_GPT_DEF | SHIFT_METHOD | number |
+| MTS_BAI_STD_TYPE_CODES | MTS_BALANCE_TYPE | number |
+| MTS_MSG_CONTROL | MAP_DETAIL_TABLE_FLAG | number |
+| MTS_MSG_CONTROL | PURGE_STORED_PROC_NAME | varchar2/char |
+| PARAM_RESET_HEADER | RESET_WEIGHT_METHOD | number |
+| PARAM_RESET_HEADER_H | RESET_WEIGHT_METHOD | number |
+| PORTFOLIO | PORTFOLIO_STATUS | number |
+| PORTFOLIO | LINKED_PORTFOLIO_ID | number |
+| PORTFOLIO_HISTORY | PORTFOLIO_STATUS | number |
+| PORTFOLIO_HISTORY | LINKED_PORTFOLIO_ID | number |
+| SETTLE_INSTRUCTIONS | ORG_ID | number |
+| SETTLE_INSTRUCTIONS_HISTORY | ORG_ID | number |
+| SI_VIEW | ORG_ID | number |
+| SWIFT_300_DETAIL | SA_T23_BUY_SELL_IND | varchar2/char |
+| SWIFT_300_DETAIL | SA_T23_OPTION_STYLE | varchar2/char |
+| SWIFT_300_DETAIL | SA_T23_PUT_CALL_IND | varchar2/char |
+| SWIFT_300_DETAIL | SA_T26_CALCULATION_AGENT | varchar2/char |
+| SWIFT_300_DETAIL | SA_T26_SETTLE_TYPE | varchar2/char |
+| SWIFT_300_DETAIL | SA_T31_EARLY_EXERCISE_DATE | date |
+| SWIFT_300_DETAIL | SA_T31_EXPIRY_DATE | date |
+| SWIFT_300_DETAIL | SA_T31_EXPIRY_TIME_LOC | varchar2/char |
+| SWIFT_300_DETAIL | SA_T31_SETTLE_DATE | date |
+| SWIFT_300_DETAIL | SA_T32_SETTLE_CCY | varchar2/char |
+| SWIFT_300_DETAIL | SA_T32_UNDERLYING_AMT | float |
+| SWIFT_300_DETAIL | SA_T32_UNDERLYING_CCY | varchar2/char |
+| SWIFT_300_DETAIL | SA_T33_COUNTER_AMT | float |
+| SWIFT_300_DETAIL | SA_T33_COUNTER_CCY | varchar2/char |
+| SWIFT_300_DETAIL | SA_T34_PREMIUM_PYMT_AMT | float |
+| SWIFT_300_DETAIL | SA_T34_PREMIUM_PYMT_CCY | varchar2/char |
+| SWIFT_300_DETAIL | SA_T34_PREMIUM_PYMT_DATE | date |
+| SWIFT_300_DETAIL | SA_T36_STRIKE_PRICE | float |
+| SWIFT_300_DETAIL | SA_T37_PREMIUM_CCY | varchar2/char |
+| SWIFT_300_DETAIL | SA_T37_PREMIUM_RATE | float |
+| SWIFT_300_DETAIL | SD_T16_NUM_SETTLEMENTS | number |
+| SWIFT_300_DETAIL | SA_T87_PARTY_IDENT | varchar2/char |
+| SWIFT_300_DETAIL | SB1_T57_RAGENT_IDENT | varchar2/char |
+| SWIFT_300_DETAIL | SB1_T53_SWIFT_PARTY_ID | number |
+| SWIFT_300_DETAIL | SE_REPORTING_INFO | varchar2/char |
+| SWIFT_300_DETAIL | SA_T82_PARTY_IDENT | varchar2/char |
+| SWIFT_300_DETAIL | SC_T72_SEND2RECV_INFO | varchar2/char |
+| SWIFT_300_DETAIL | SD_T53_SWIFT_PARTY_ID | number |
+| SWIFT_300_DETAIL | SB2_T57_RAGENT_IDENT | varchar2/char |
+| SWIFT_300_DETAIL | SB2_T53_SWIFT_PARTY_ID | number |
+| SWIFT_300_DETAIL | SB2_T58_SWIFT_PARTY_ID | number |
+| SWIFT_300_DETAIL | SD_T58_SWIFT_PARTY_ID | number |
+| SWIFT_300_DETAIL | SC_T24_DEALING_METHOD | varchar2/char |
+| SWIFT_300_DETAIL | SC_T29_CONTACT_INFO | varchar2/char |
+| SWIFT_320_DETAIL | SC_T58_BENE_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SH_T72_NARRATIVE | varchar2/char |
+| SWIFT_320_DETAIL | SF_T53_DAGENT_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SH_T24_DEAL_METHOD | varchar2/char |
+| SWIFT_320_DETAIL | SD_T53_DAGENT_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SF_T58_BENE_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SC_T53_DAGENT_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SD_T58_BENE_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SE_T58_BENE_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SI_T53_DAGENT_SWIFT_PARTY_ID | number |
+| SWIFT_320_DETAIL | SE_T53_DAGENT_SWIFT_PARTY_ID | number |
+| SWIFT_515_518_DETAIL | SC_T19A_SETTLE_AMOUNT | float |
+| SWIFT_515_518_DETAIL | T70_NARRATIVE | varchar2/char |
+| SWIFT_515_518_DETAIL | SF_T98B_REPO_TERM_CODE | varchar2/char |
+| SWIFT_515_518_DETAIL | SC_T19A_SETTLE_AMOUNT_CCY | varchar2/char |
+| SWIFT_515_518_DETAIL | SC_T22A_BUY_SELL_IND | varchar2/char |
+| SWIFT_515_518_DETAIL | SA_T98A_PREPARATION_DATE | date |
+| SWIFT_535_DETAIL | T90_PRICE | float |
+| SWIFT_535_DETAIL | T70_HOLDINGS_NARR | varchar2/char |
+| SWIFT_535_DETAIL | T19_HOLP_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T94_PRICE_SOURCE | varchar2/char |
+| SWIFT_535_DETAIL | T90_PRICE_TYPE | varchar2/char |
+| SWIFT_535_DETAIL | T90_PRICE_CODE | varchar2/char |
+| SWIFT_535_DETAIL | T94_PRICE_SOURCE_NARR | varchar2/char |
+| SWIFT_535_DETAIL | T90_PRICE_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_HOLS_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_ACCRUED_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_ACCRUED_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_BOOK_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_BOOK_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_COVA_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_COVA_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_HOLDING_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_HOLDING_CCY | varchar2/char |
+| SWIFT_535_DETAIL | T19_HOLP_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_HOLS_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_TOVA_AMOUNT | float |
+| SWIFT_535_DETAIL | T19_TOVA_CCY | varchar2/char |
+| SWIFT_540_DETAIL | SE_T22F_INDICATOR | varchar2/char |
+| TRANF_IMPORT_PROCESSING | STAT_INPUT | number |
+| TRANF_IMPORT_PROCESSING | STAT_OUTPUT | number |
+| TRANF_INS_IMPORT_PROCESSING | STAT_INPUT | number |
+| TRANF_INS_IMPORT_PROCESSING | STAT_OUTPUT | number |
+| UTR_TEST_CASE | SKIPPED_SUB_TEST_COUNT | number |
+| UTR_TEST_CASE | TERMINATED_SUB_TEST_COUNT | number |
+| UTR_TEST_CASE | SUB_TEST_COUNT | number |
+| UTR_TEST_CASE | FAILED_SUB_TEST_COUNT | number |
+| UTR_TEST_CASE | PASSED_SUB_TEST_COUNT | number |. 
+Links to other files: OLF_Adhoc_Query_Viewer_Window.htm.

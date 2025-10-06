@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Search_Window.htm.
+ Section heading: Overview.
+ Text content: The Search window allows users to specify which columns in the Table Viewer will be searched, the search key, and how search will be conducted. .

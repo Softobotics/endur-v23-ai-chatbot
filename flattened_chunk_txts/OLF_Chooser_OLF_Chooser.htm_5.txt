@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Chooser.htm.
+ Section heading: Fields For The Second Type Of This Window.
+ Text content: The second type (second example) of this window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Available | Displays a list of items that are available. |
+| Excluded | Displays a list of items that are to be excluded. |
+| Search | Has the same function asFind <F3>.Version 9.1R1 and above |.

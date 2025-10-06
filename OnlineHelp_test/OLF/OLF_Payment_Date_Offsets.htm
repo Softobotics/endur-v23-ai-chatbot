@@ -1,0 +1,2792 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="MS-HAID" content="Generic_Toolsets" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Payment Date Offsets</title>
+<style type="text/css">
+<!--
+@font-face {
+	font-family: "Cambria Math";
+	panose-1: 2 4 5 3 5 4 6 3 2 4;
+}; @font-face { font-family:Segoe UI;
+panose-1:2 11 5 2 4 2 4 2 2 3;
+font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Cambria;
+panose-1:2 4 5 3 5 4 6 3 2 4; }
+; @page WordSection1 { x-size:8.5in 11.0in;
+margin:1.0in 1.25in 1.0in 1.25in; }
+; p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:Verdana, sans-serif;
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:Verdana, sans-serif; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:Verdana, sans-serif; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-variant:small-caps; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic; }
+p.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoCommentText { mso-style-link:Comment Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoCommentText { mso-style-link:Comment Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoCommentText { mso-style-link:Comment Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+li.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+div.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold;
+font-style:italic; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoList2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoList2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoList2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListContinue2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+li.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+div.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+p.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:37.0pt;
+text-indent:-36.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+color:#000000; }
+li.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:37.0pt;
+text-indent:-36.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+color:#000000; }
+div.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:37.0pt;
+text-indent:-36.5pt;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+color:#000000; }
+p.MsoBodyTextIndent3 { mso-style-link:Body Text Indent 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+li.MsoBodyTextIndent3 { mso-style-link:Body Text Indent 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+div.MsoBodyTextIndent3 { mso-style-link:Body Text Indent 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+p.MsoBlockText { margin-top:3.0pt;
+margin-right:.25in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-40.0pt;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+li.MsoBlockText { margin-top:3.0pt;
+margin-right:.25in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-40.0pt;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+div.MsoBlockText { margin-top:3.0pt;
+margin-right:.25in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-40.0pt;
+layout-grid-mode:char;
+font-size:11.0pt;
+font-family:Arial, sans-serif; }
+a:link { color:#0000ff;
+text-decoration:underline;
+color:#0000ff; }
+span.MsoHyperlink { color:#0000ff;
+text-decoration:underline; }
+a:visited { color:#800080;
+text-decoration:underline;
+color:#800080; }
+span.MsoHyperlinkFollowed { color:#800080;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:11.0pt;
+font-family:Tahoma, sans-serif; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:11.0pt;
+font-family:Tahoma, sans-serif; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:11.0pt;
+font-family:Tahoma, sans-serif; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:Cambria, serif;
+color:#365F91; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:Cambria, serif;
+color:#365F91; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:Cambria, serif;
+color:#243F60; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:Cambria, serif;
+color:#365F91;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:Cambria, serif;
+color:#365F91; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:Cambria, serif;
+color:#243F60; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:Cambria, serif;
+color:#243F60;
+font-style:italic; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:Cambria, serif;
+color:#272727; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:Cambria, serif;
+color:#272727;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:Verdana, sans-serif; }
+span.CommentTextChar { mso-style-name:Comment Text Char;
+mso-style-link:Comment Text;
+font-family:Verdana, sans-serif; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:Verdana, sans-serif; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:Verdana, sans-serif; }
+span.TitleChar { mso-style-name:Title Char;
+mso-style-link:Title;
+font-family:Cambria, serif;
+letter-spacing:-.5pt; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:Verdana, sans-serif; }
+span.BodyTextIndentChar { mso-style-name:Body Text Indent Char;
+mso-style-link:Body Text Indent;
+font-family:Verdana, sans-serif; }
+span.BodyText2Char { mso-style-name:Body Text 2 Char;
+mso-style-link:Body Text 2;
+font-family:Verdana, sans-serif; }
+span.BodyText3Char { mso-style-name:Body Text 3 Char;
+mso-style-link:Body Text 3;
+font-family:Verdana, sans-serif; }
+span.BodyTextIndent2Char { mso-style-name:Body Text Indent 2 Char;
+mso-style-link:Body Text Indent 2;
+font-family:Verdana, sans-serif; }
+span.BodyTextIndent3Char { mso-style-name:Body Text Indent 3 Char;
+mso-style-link:Body Text Indent 3;
+font-family:Verdana, sans-serif; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Segoe UI" , sans-serif; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-style:italic; }
+li.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-style:italic; }
+div.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-style:italic; }
+p.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:16.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:16.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:16.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+li.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+div.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:Arial, sans-serif;
+font-weight:bold; }
+p.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:"Times New Roman" , serif;
+font-style:italic; }
+li.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:"Times New Roman" , serif;
+font-style:italic; }
+div.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:11.0pt;
+font-family:"Times New Roman" , serif;
+font-style:italic; }
+p.H5 { mso-style-name:H5;
+margin-top:5.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+li.H5 { mso-style-name:H5;
+margin-top:5.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+div.H5 { mso-style-name:H5;
+margin-top:5.0pt;
+margin-right:0in;
+margin-bottom:5.0pt;
+margin-left:0in;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-weight:bold; }
+p.BodyTextKeep { mso-style-name:Body Text Keep;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:11.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.BodyTextKeep { mso-style-name:Body Text Keep;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:11.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.BodyTextKeep { mso-style-name:Body Text Keep;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:11.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.FootnoteBase { mso-style-name:Footnote Base;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+li.FootnoteBase { mso-style-name:Footnote Base;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+div.FootnoteBase { mso-style-name:Footnote Base;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+line-height:11.0pt;
+font-size:9.0pt;
+font-family:Verdana, sans-serif; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><a name="bc-1"></a><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nPayment Date Offsets");
+addTocInfo("Screen-Level Help Topics\nTrading Toolsets\nCommon Screens/Fields\nPayment Date Offsets");
+addAvenueInfo("System Use","OLF/OLF_Open_From_Directory_Browser.htm","OLF/OLF_Pivot_Table.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	if(bc == 1)
+{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Toolsets/TRADING_Toolset-Reset_Auto_Fill_Logic.htm\">Trading Toolsets<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Toolsets/TRADING_Toolset-Reset_Auto_Fill_Logic.htm\">Common Screens/Fields<\/a> &gt; Payment Date Offsets<\/p>");
+}
+else{
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; Payment Date Offsets<\/p>");
+}
+
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>Payment date offsets</h1>
+	<h2>Overview</h2>
+	<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt;">The 
+	 following describes the possible values for the Payment Date Offset 
+	 field.&#160;&#160;Note that this field defaults to a valid value.&#160;&#160;The 
+	 default value is different depending on the type of deal.&#160;&#160;The 
+	 default value is typically appropriate for market convention, but 
+	 clients may need to override it.&#160;&#160;The actual payment dates 
+	 that get generated by the Payment Date Offset can be see on the profile 
+	 screen.</p>
+	<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt;">See 
+	 <a href="../Trading_Toolsets/TRADING_Toolset_Profile.htm">Profile</a></p>
+	<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt;">&#160;</p>
+	<p class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt;"><b>Symbol</b></p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>Symbol</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6" width="252"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+													 text-align: center;"><b>Description</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6" width="260"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+													 text-align: center;"><b>Example</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>c</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Calendar 
+			 Days</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">0c, 1c, 
+			 2c, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>cpd</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Calendar 
+			 Period Date</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">&#160;</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>cpe</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Common 
+			 Profile End Date</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use latest 
+			 profile start date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>cps</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Common 
+			 Profile Start Date</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use latest 
+			 profile start date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>cre</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Common 
+			 Reset Date</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #ff0000;"><font color="red" >Warning: 
+			 This does not work for the Payment Date Offset Field for the 
+			 Physical Side of the Commodity, Power, and ComHourly Toolsets.&#160;&#160;This 
+			 does work for the Financial Side for those toolsets.</font></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use latest 
+			 reset date for both sides.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>d</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoFootnoteText">Good Business Days</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoFootnoteText">0d, 1d, 2d, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>ed</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">There 
+			 is a payment date offset convention for the commodity toolset 
+			 to handle ticket (delivery) based payment date offsets.&#160;&#160;For 
+			 example, if the payment is due 5 calendar days after the delivery 
+			 date, the payment date offset would be&#160;&#160;&#160;&#160;' 
+			 5cd &gt; ed '.The 'ed' will default to the profile end date 
+			 if no schedules or tickets have been applied to the schedule.&#160;&#160;It 
+			 will take the delivery ticket -delivery date if available.&#160;&#160;If 
+			 there is no ticket date, it will take the highest level Best 
+			 Available Volume (BAV) scheduling record event date.&#160;&#160;If 
+			 there are no scheduling record event dates, it will default 
+			 to the profile.</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;">Note: This 
+			 does not work with the &gt; or &lt; Symbol.</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;">This symbolic 
+			 date was added under DTS8709.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">5cd &gt; 
+			 ed</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>eom</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">End of 
+			 Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1eom, 
+			 2eom, 3eom, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>eoncm</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">End of 
+			 Nearby Contract Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Based 
+			 on profile end date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>fom</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">First 
+			 of month (calendar days).&#160;&#160;So if the reference (starting) 
+			 date is Jan-6-2006 and you enter in “1fom”, you’ll get Feb-1-2006, 
+			 even if that date is a holiday.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1fom, 
+			 2fom</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>fri</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Friday</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1fri, 
+			 2fri, 3fri, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>m</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">3m (3 
+			 months)</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>maxre</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Maximum 
+			 Reset Date</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #ff0000;"><font color="red" >Warning: 
+			 This does not work for the Payment Date Offset Field for the 
+			 Physical Side of the Commodity, Power, and ComHourly Toolsets.&#160;&#160;This 
+			 does work for the Financial Side for those toolsets.</font></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use latest 
+			 reset date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>mon</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Monday</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1mon, 
+			 2mon, 3mon, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>nd</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">2nd Day 
+			 of a Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">2nd</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>p</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Period</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">cp (calendar 
+			 period)</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>pe</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Profile 
+			 End Date</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use profile 
+			 end date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>ps</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Profile 
+			 Start Date</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use profile 
+			 start date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>rd</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">3rd Day 
+			 of a Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">3rd</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>re</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Reset 
+			 Date</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #ff0000;"><font color="red" >Warning: 
+			 This does not work for the Payment Date Offset Field for the 
+			 Physical Side of the Commodity, Power, and ComHourly Toolsets.&#160;&#160;This 
+			 does work for the Financial Side for those toolsets.</font></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Use reset 
+			 date</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>som</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Start 
+			 of Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1som, 
+			 2som, 3som, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>st</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1st Day 
+			 of a Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1st</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>th</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Nth Day 
+			 of a Month</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">4th, 5th, 
+			 6th, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>thu</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Thursday</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1thu, 
+			 2thu, 3thu, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>tue</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Tuesday</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1tue, 
+			 2tue, 3tue, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>w</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Week</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">2w (2 
+			 weeks)</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>wed</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Wednesday</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">1wed, 
+			 2wed, 3wed, ...</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>y</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Year</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">20y (20 
+			 years)</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>fcpdre</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">&quot;Final 
+			 Calendar Period Delivery Reset Date&quot; which means this 
+			 is the last day of the month in which a reset occurs.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">fcpdre</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+	<p class="MsoNormal"><b>Operator/Function</b></p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E6E6E6" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>Operation/ Function</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6" width="252"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+													 text-align: center;"><b>Description</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E6E6E6" width="260"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+													 text-align: center;"><b>Example</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>&gt;&#160;</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">Greater 
+			 Than (indicates “after”)</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;">Note: This 
+			 symbol does not work with the “ed” symbolic date.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">5d&gt;lom&#160;&#160;&#160;&#160;</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;">Five business 
+			 days after the last day of the month of the profile period 
+			 end date.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>MIN</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">The minimum 
+			 of two valid payment date offsets.&#160;&#160;.</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #ff0000;"><font color="red" >This 
+			 is only in V8.0r2 and up.</font></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">MIN(20d&gt;eom, 
+			 21d&gt;lom).&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="83"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+								 text-align: center;"><b>MAX</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">The maximum 
+			 of two valid payment date offsets.&#160;</p>
+			<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #ff0000;"><font color="red" >This 
+			 is only in V8.0r2 and up.</font></span></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="260"><p 
+				 class="MsoNormal" style="margin-bottom: 6.0pt;">MAX(20d&gt;eom, 
+			 21d&gt;lom).&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt;">&#160;</p>
+	<p class="MsoNormal" style="margin-bottom: 6.0pt;">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

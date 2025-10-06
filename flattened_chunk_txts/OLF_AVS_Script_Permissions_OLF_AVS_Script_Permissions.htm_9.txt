@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
+ Section heading: Creating a New Directory (Optional).
+ Text content: When a user saves a script, task, or query in the virtual file system, the “Save As” functionality allows the script to be saved to a directory other than those already defined.  This can be done by following steps outline for creating a new directory in the Directory Browser ..
+ 
+Links to other files: OLF_Directory_Browser.htm.

@@ -1,0 +1,6 @@
+This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
+ Section heading: Displaying Table Data.
+ Text content: Follow these steps to activate the Ad Hoc Query 
+	 Viewer window and display table data: Note: If 
+	 you know the table name, you can type its first few letters.  A 
+	 shorter, filtered table list displays from which to make your selection. .

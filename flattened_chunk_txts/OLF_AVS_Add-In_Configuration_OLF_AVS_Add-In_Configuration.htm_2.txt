@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_AVS_Add-In_Configuration.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Save | Prints the current screen. |
+|  | Exit | Closes the current window. |
+| Edit | Add Function Set | Add a row to the Script Addin Function Configuration table. |
+|  | Delete Function Set | Delete a row from the Script Addin Function Configuration table. |
+|  | Validate Function Set | Execute the script used to validate the XML request message for the selected row. |
+| View | Script ADDIN Type | Display a list of Script ADDIN Types for validated scripts. |
+|  | Script ADDIN Functions | Display a list of Script ADDIN Functions for validated scripts. |
+| Help | Help | Displays the system Help files. |.

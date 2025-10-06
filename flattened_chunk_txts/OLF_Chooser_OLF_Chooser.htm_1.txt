@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Chooser.htm.
+ Section heading: Accessing the Dialog Box.
+ Text content: The OLF Chooser window is accessed from many different locations in the system. For discussion purposes, here is an example of how it is accessed: The following screen displays:  The following is another example of where it is accessed: .
+ Image file: OLF_Chooser_files/image001.jpg
+ Image description: the auto - tuner interface.
+ Image file: OLF_Chooser_files/image002.jpg
+ Image description: the system dial screen.

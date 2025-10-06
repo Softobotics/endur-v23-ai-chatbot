@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Automatic_Notification_Engine.htm.
+ Section heading: How ANE Updates the Active Window and the AVS Window.
+ Text content: Active Window - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.  In the active window, all positions on the blotter receive updates; therefore the transactions do not display as nodes in the Trading Manager browser window.  AVS Window - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.  In the AVS window, all positions on the blotter receive updates, and the transactions display as additional nodes in the Trading Manager browser. .

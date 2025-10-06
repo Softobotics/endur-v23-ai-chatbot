@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Oping.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons: .
+ Image file: OLF_System_Monitor-Diagnostics_Oping_files/image003.jpg
+ Image description: a white tape with the words 100 on it.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Sends a message to the other modules and returns acknowledgments. |.

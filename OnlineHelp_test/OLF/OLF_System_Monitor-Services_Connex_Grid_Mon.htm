@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>System Monitor - Services - Connex Grid Monitor</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListNumber2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p { margin-right:0in;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Times New Roman" ,"serif"; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistnumber2cxspfirst { mso-style-name:msolistnumber2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumber2cxspfirst { mso-style-name:msolistnumber2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumber2cxspfirst { mso-style-name:msolistnumber2cxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistnumber2cxspmiddle { mso-style-name:msolistnumber2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumber2cxspmiddle { mso-style-name:msolistnumber2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumber2cxspmiddle { mso-style-name:msolistnumber2cxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistnumber2cxsplast { mso-style-name:msolistnumber2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistnumber2cxsplast { mso-style-name:msolistnumber2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistnumber2cxsplast { mso-style-name:msolistnumber2cxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif";
+background:navy; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.NormalBoldChar { mso-style-name:NormalBold Char;
+mso-style-link:NormalBold;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+mso-style-link:NormalBold Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nSystem Monitor\nSystem Monitor\nServices\nSystem Monitor - Services - Connex Grid Monitor");
+addAvenueInfo("System Use","OLF/OLF_System_Monitor-Services_ANE_Messages.htm","OLF/OLF_System_Monitor-Services_Credit.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor.htm\">System Monitor<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor-Services_All_Services.htm\">System Monitor<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_System_Monitor-Services_All_Services.htm\">Services<\/a> &gt; System Monitor - Services - Connex Grid Monitor<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>System Monitor - Services - Connex Grid Monitor</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The <b>System Monitor – Services</b> tabs work with the <b><a href="../Services_Manager/Services_Manager.htm">Services Manager</a></b> module. Many of the components viewed in this tab have been previously configured in the <b>Services Manager</b>.</p>
+<p class="MsoNormal">The <b>Connex Grid Monitor</b> shows details of processes, functionality and information related to OpenLink’s Connex integration framework. It provides management facilities around <i>Connex</i> grid configuration and shows running integration gateways that may or may not take advantage of the underlying Connex grid. The monitor shows configured Connex engines (grid engines) and standard/custom gateways as well as provides management facilities on jobs, messaging, engines and exceptions.</p>
+<p class="MsoNormal"><span style='color:red'>This tab is only available in V8.0r1 and up.</span></p>
+<p class="MsoNormal">Access to this window is controlled by Security Privilege #29255, Access Connex Grid Monitor Tab.</p>
+<h3>Views</h3>
+<p class="MsoNormal">There are two views available on this tab controlled by radio buttons. The <a href="../Services_Manager/Services_Manager_Connex_Grid_Monitor.htm">Grid Monitor</a> button provides the same view described in the Services Manager and additionally provides the <i><a href="#qa">QA Test Results</a></i> panel, a simple application that tests the gateway cluster. The <i>Running Services</i> view and the <i>QA Test Results</i> panel of the <i>Monitor</i> view are detailed on this page.</p>
+<h3>See Also</h3>
+<p class="MsoNormal" style='margin-bottom:6.0pt'><a href="../Services_Manager/Services_Manager_Connex_Grid_Monitor.htm">Services Manager Connex Grid Monitor</a></p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'><a href="OLF_System_Monitor.htm">System Monitor</a></p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">To access this window:</p>
+<p class="MsoListNumber2">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Start the OpenLink System.</p>
+<p class="MsoListNumber2">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> From <i>OpenLink Central</i>, click the <i>System Monitor</i> icon <img border="0" width="18" height="18" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image001.jpg" alt="image004" />.</p>
+<p class="MsoListNumber2">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Services</b> tab.</p>
+<p class="MsoListNumber2">4.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Connex Services Monitor</b> (<b>Connex Grid Monitor</b> in v80r2 and earlier) sub-tab.</p>
+<p class="MsoNormal" style='margin-left:.25in'>The <i>Running Services View</i> displays by default:</p>
+<p class="MsoNormal" style='margin-left:.25in'><img border="0" width="575" height="444" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image002.jpg" alt="image016.jpg" /></p>
+<h3>Other Ways to Access This Window/Screen</h3>
+<p class="MsoNormal">The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select <i>Launch Available Services</i>. Select <b>System Monitor</b> from the list box.</p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the same menu items as the <a href="OLF_System_Monitor.htm">System Monitor</a>. Menu item availability depends upon the tab being accessed.</p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the same toolbar buttons as the <a href="OLF_System_Monitor.htm">System Monitor</a> with the following additions:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Button</b></p>
+</td>
+<td width="527" valign="top" style='width:395.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt'><img border="0" width="107" height="19" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image003.jpg" alt="image017.jpg" /></p>
+</td>
+<td width="527" valign="top" style='width:395.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Select this radio button to view the Connex services that are currently running.</p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt'><img border="0" width="106" height="19" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image004.jpg" alt="image018.jpg" /></p>
+</td>
+<td width="527" valign="top" style='width:395.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Select this radio button to view the <a href="../Services_Manager/Services_Manager_Connex_Grid_Monitor.htm">Connex Grid Monitor</a>.</p>
+</td>
+</tr>
+</table>
+<h2>Running Services View</h2>
+<p class="MsoNormal">The default view of the monitor shows all Connex gateways and services that may or may not take advantage of the Connex grid. Connex grids are configured in the <b>Services Manager</b> module. This view contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="NormalBold">&lt; Gateway/ ConnexGrid XML Engine &gt;</p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Displays Connex gateways and grid engines, grouped by cluster, in tree view form. Click the field or the +/- icons to expand/collapse the components in the group.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Status</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Displays the status of the Connex gateways and grid engines. Statuses are color-coded.</p>
+<p class="MsoNormal">See <i><a href="../Services_Manager/Services_Manager_Statuses.htm">Gateway Status</a></i></p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Server Node</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Displays the name of the server node hosting the selected engine or service.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Submitter</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Name of the user initiating the Connex gateway.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Message User</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">Only applies if the job is a “Message.” The user who accepted the message.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Last Start</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The date and time the Connex gateway last started running.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Last End</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The date and time the Connex service stopped running.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Max Run Time</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">The time allotted for a job to run. If a job does not complete in the allotted maximum run time, the job logs as “FAILED. The format used is hours.minutes.&#160; For example, “5” would be five hours, “4.32” would be four hours 32 minutes, and “0.2” would be 2 minutes.&#160; Minutes must be less than 60. Therefore, entering a time 3.67 is not allowed.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Exception Job</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">The exception job that will execute in case the XML engine instance fails. This feature is useful to administrators who need to be notified upon system failure.</p>
+<p class="MsoNormal">This is defined in the <i><a href="../Services_Manager/Services_Manager_Connex_Grid_Cluster_Definition.htm">Connex Grid Cluster Definition</a></i> window.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>What Next</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Instructs the system what to do if the grid/XML engine fails. The available options are:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="114" valign="top" style='width:85.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Value</b></p>
+</td>
+<td width="331" valign="top" style='width:247.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Continue</b></p>
+</td>
+<td width="331" valign="top" style='width:247.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>If the grid/XML engine fails, the workflow will just continue.</p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Rerun</b></p>
+</td>
+<td width="331" valign="top" style='width:247.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>If the grid/XML engine fails, the workflow will keep running the job until it succeeds or the “Max. Run Time” is exceeded.</p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Stop</b></p>
+</td>
+<td width="331" valign="top" style='width:247.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>The grid/XML engine will stop processing once it completes or fails.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Subscription</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">The text string that will launch a workflow in response to a message containing the text string.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Kill Time</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">The amount of time [secs] that must elapse without receiving a request before a reserve engine is removed (stopped).</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Rerun Num</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">V81r1 and later.</p>
+<p class="MsoNormal">A count of allowable reruns.</p>
+</td>
+</tr>
+</table>
+<h4>Tree View Right Click Menu</h4>
+<p class="MsoNormal">Right-clicking on a gateway in the tree returns the following menu items.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Item</b></p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Collapse Group</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Hides the gateways contained in the group from which the menu was accessed.</p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Expand Group</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Displays the gateways contained in the group from which the menu was accessed.</p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Collapse All</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Hides all gateways in all the groups.</p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Expand All</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Displays all gateways within all groups.</p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Expand to Workflow Run Id</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Hides all gateways in all the groups.</p>
+<p class="MsoNormal">This item is only available from the “Running Services” view.</p>
+</td>
+</tr>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="NormalBold">Expand to service_group_name</p>
+</td>
+<td width="460" valign="top" style='width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal">Hides all gateways in all the groups.</p>
+<p class="MsoNormal">This item is only available from the “Monitor” view.</p>
+</td>
+</tr>
+</table>
+<h2><a name="QA" id="QA"></a>Monitor View - QA Test Results Panel</h2>
+<p class="MsoNormal">A password controlled, simple application that tests that the gateway cluster/XML engine is functional at its most basic level.</p>
+<p class="MsoNormal"><img border="0" width="577" height="446" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image005.jpg" alt="image019.jpg" /></p>
+<h3>Buttons</h3>
+<p class="MsoNormal">This panel contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Button</b></p>
+</td>
+<td width="521" valign="top" style='width:390.8pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt'><img border="0" width="100" height="33" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image006.jpg" alt="image020.jpg" /></p>
+</td>
+<td width="521" valign="top" style='width:390.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Initiates the “Quality Assurance” function with a password entry interface.</p>
+</td>
+</tr>
+<tr>
+<td width="114" valign="top" style='width:85.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt'><img border="0" width="100" height="33" src="OLF_System_Monitor-Services_Connex_Grid_Mon_files/image007.jpg" alt="image021.jpg" /></p>
+</td>
+<td width="521" valign="top" style='width:390.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Clears the QA test panel.</p>
+</td>
+</tr>
+</table>
+<h3>Fields</h3>
+<p class="MsoNormal">This panel contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr style='height:22.0pt'>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Field</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 0in 0in 0in;height:22.0pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>&lt;Connex Cluster/ ConnexGrid XML Engine &gt;</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">Displays clusters, engines and gateways being tested, grouped by clusters, in tree view form. Click the field or the +/- icons to expand/collapse the components in the group.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Entity Name</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The name of the component being tested.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Group Name</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The name of the Connex cluster the component being tested belongs to.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Test</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The type of test being administered.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Status</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The status of the test being administered.</p>
+</td>
+</tr>
+<tr>
+<td width="179" valign="top" style='width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 0in 0in 0in'>
+<p class="MsoNormal"><b>Test Start Time</b></p>
+</td>
+<td width="460" valign="top" style='width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in'>
+<p class="MsoNormal">The date and time the test was initiated.</p>
+</td>
+</tr>
+</table>
+<h2>Column Header Menu</h2>
+<p class="MsoNormal">To modify a table’s configuration, right-click any column header. The <i><a href="OLF_Column_Header_Menu.htm">Column Header Menu</a></i> displays.</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

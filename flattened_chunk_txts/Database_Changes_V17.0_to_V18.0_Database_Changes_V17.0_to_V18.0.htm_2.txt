@@ -1,0 +1,18 @@
+This chunk is from the HTML file: Database_Changes_V17.0_to_V18.0.htm.
+ Section heading: The following columns have been removed:.
+ Text content: .
+ Table data: 
+| Table Name | Column 
+		 Name |
+| --- | --- |
+| CALIBRATION_CFG | TEMPLATE_TRAN_NUM |
+| CALIBRATION_CFG_H | TEMPLATE_TRAN_NUM |
+| DMM_MAP_ITEM_H | VIF_CONFIGURATION_ID |
+| IDX_SUBGROUP | ASTM_COMMODITY_GROUP |
+| IDX_SUBGROUP_HISTORY | ASTM_COMMODITY_GROUP |
+| IDX_UNIT | KILOGRAM_MASS_UNIT |
+| IDX_UNIT | M3_VOLUME_UNIT |
+| SWIFT_300_DETAIL | SA_T82_PARTY_IDENT |
+| SWIFT_300_DETAIL | SA_T87_PARTY_IDENT |
+| SWIFT_300_DETAIL | SB1_T57_RAGENT_IDENT |
+| SWIFT_300_DETAIL | SB2_T57_RAGENT_IDENT |.

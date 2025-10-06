@@ -1,0 +1,29 @@
+This chunk is from the HTML file: OLF_STAT_Authorization.htm.
+ Section heading: Accessing this Window.
+ Text content: Note : There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure. 1. From 
+ OpenLink Central, right-click anywhere on the header and select Launch 
+ Available Services . The Launch Available Services window displays. 2. Type Scenario Test Authorization Mapping in the Filter Service field, 
+ highlight Scenario Test Authorization 
+ Mapping in the Available Services panel, and then click Launch . The following window 
+ displays:   .
+ Image file: OLF_STAT_Authorization_files/image01.jpg
+ Image description: the screen showing the settings and settings of the software.
+ Table data: 
+| Column | Description |
+| --- | --- |
+| From User | The user that is enabled 
+		 to impersonate other users. Only users with security privilege 
+		 2002200 – “User can impersonate test user” are available in this 
+		 column. |
+| To Users | The users that are enabled 
+		 to be impersonated by the From User. Only users with security 
+		 privilege 2002201 – “Test user can be impersonated” are available 
+		 in this column. |
+| Last Update | The date/time this entry was 
+		 last updated. |
+| User | The version number of this 
+		 entry. |
+| Version Number | The version number of this 
+		 entry. |.

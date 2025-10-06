@@ -1,0 +1,59 @@
+This chunk is from the HTML file: Database_Changes_V16.0_to_V16.1.htm.
+ Section heading: The following columns have been added:.
+ Text content: These columns were added to support new functionality. Therefore they 
+ should not affect clients who are upgrading. One way they might affect 
+ clients is if a client used a “*” for a "What" clause in an 
+ SQL statement. When they upgrade, they would get an additional column 
+ or columns, which may cause issues in custom plug-ins/scripts. We recommend 
+ that clients use specific what clauses rather than the general “*” to 
+ prevent this from happening. For more details about these columns, see the AdHoc Query Viewer and/or 
+ the Data Model Documentation for more details. See AdHoc Query Viewer .
+ Table data: 
+| Table Name | Column 
+		 Name | Data 
+		 Type |
+| --- | --- | --- |
+| ADJ_FUNCTION | PRICE_CALC | NUMBER |
+| ADJ_FUNCTION_H | PRICE_CALC | NUMBER |
+| ADJ_FUNC_METHOD | ADJ_FUNC_METHOD_DESCRIPTION | VARCHAR2/CHAR |
+| COMM_SCHEDULE_COG_PRICE | INV_XFER_TYPE | NUMBER |
+| COMM_SCHEDULE_COG_PRICE | PARCEL_STRATEGY | NUMBER |
+| COMM_SCHEDULE_COG_PRICE_H | INV_XFER_TYPE | NUMBER |
+| COMM_SCHEDULE_COG_PRICE_H | PARCEL_STRATEGY | NUMBER |
+| DXR_REPORT_LOG | DXR_DEF_RPT_SEQID | NUMBER |
+| DXR_REPORT_LOG | DXR_RPT_OUTPUT_NAME | VARCHAR2/CHAR |
+| DXR_REPORT_LOG | DXR_SCHED_ID | NUMBER |
+| DXR_REPORT_LOG | PARAM_SET_ID | NUMBER |
+| DXR_REPORT_PARAM_LOG | DXR_DEF_RPT_SEQID | NUMBER |
+| INS_FORMULA | FMLA_DEFINITION_ID | NUMBER |
+| INS_FORMULA | USER_ID | NUMBER |
+| INS_FORMULA | LAST_UPDATE | DATE |
+| MTS_EXP_ACCOUNT_NUMBER | CURRENCY_ID | NUMBER |
+| MTS_EXP_ACCOUNT_NUMBER_H | CURRENCY_ID | NUMBER |
+| PARAM_CONSTITUENT_DATA | CONSTITUENT_ID | NUMBER |
+| PARAM_CONSTITUENT_DATA_H | CONSTITUENT_ID | NUMBER |
+| PARAM_CONSTITUENT_HEADER | MAX_CONSTITUENT_ID | NUMBER |
+| PARAM_CONSTITUENT_HEADER_H | MAX_CONSTITUENT_ID | NUMBER |
+| PERSONNEL | DPA_GROUP_ID | NUMBER |
+| PERSONNEL_HISTORY | DPA_GROUP_ID | NUMBER |
+| PLUGIN_VIEW | PLUGIN_SUB_CATEGORY | NUMBER |
+| SIM_HEADER | BLOB_SIZE | NUMBER |
+| SIM_HEADER_ARCHV | BLOB_SIZE | NUMBER |
+| SIM_HEADER_HISTORY | BLOB_SIZE | NUMBER |
+| STL_PPA | NEW_DATE | DATE |
+| STL_PPA | OLD_DATE | DATE |
+| STL_PPA_H | NEW_DATE | DATE |
+| STL_PPA_H | OLD_DATE | DATE |
+| STLDOC_DEF_TEMPLATES_VIEW | DPA_FLAG | NUMBER |
+| STLDOC_DOCUMENT_STATUS | TPM_DEFINITION_ID | NUMBER |
+| STLDOC_DOCUMENT_STATUS_HIST | TPM_DEFINITION_ID | NUMBER |
+| STLDOC_TEMPLATES | DPA_FLAG | NUMBER |
+| STLDOC_TEMPLATES_HIST | DPA_FLAG | NUMBER |
+| TRAN_AUX_DATA | REFERENCE_VALUE | FLOAT |
+| TRAN_AUX_DATA | REFERENCE_DATE | DATE |
+| TRAN_AUX_DATA_BCP | REFERENCE_VALUE | FLOAT |
+| TRAN_AUX_DATA_BCP | REFERENCE_DATE | DATE |
+| TRAN_AUX_DATA_H | REFERENCE_VALUE | FLOAT |
+| TRAN_AUX_DATA_H | REFERENCE_DATE | DATE |
+| VOL_DEF | VOL_CALCULATOR_EXT_ID | NUMBER |. 
+Links to other files: OLF_Adhoc_Query_Viewer_Window.htm.

@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Pivot Table</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+        {font-family:starbats;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+color:windowtext;
+font-weight:bold; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+color:windowtext;
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+p { margin-right:0in;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Times New Roman" ,"serif";
+color:white; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif";
+color:windowtext; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif";
+background:navy; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.Style1 { mso-style-name:Style1;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.Style1 { mso-style-name:Style1;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.Style1 { mso-style-name:Style1;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+li.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+div.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext;
+font-weight:bold; }
+p.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+li.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+div.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+color:windowtext; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+color:white; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+color:white; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+color:white; }
+span.WW-Absatz-Standardschriftart { mso-style-name:WW-Absatz-Standardschriftart; }
+span.FootnoteSymbol { mso-style-name:Footnote Symbol;
+vertical-align:super; }
+span.NumberingSymbols { mso-style-name:Numbering Symbols; }
+span.WW-NumberingSymbols { mso-style-name:WW-Numbering Symbols; }
+span.WW-BulletSymbols { mso-style-name:WW-Bullet Symbols;
+font-family:starbats; }
+@page WordSection1
+        {size:8.5in 789.35pt;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nPivot Table");
+addAvenueInfo("System Use","OLF/OLF_Payment_Date_Offsets.htm","OLF/OLF_Plugin_Editor.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; Pivot Table<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Pivot Table</h1>
+<h2>Overview</h2>
+<p class="MsoNormal" style='margin-bottom:6.0pt;punctuation-wrap:simple; text-autospace:none'>The <i>Pivot Table Setup</i> window is used to create an interactive report that summarizes and analyzes data from existing tables. The pivot table is defined by the pivot columns, pivot rows, and pivot data attributes that are selected. Pivot rows are used for grouping (sorting) the data; the pivot columns are used to generate unique sets of pivot columns in the resulting pivot view; and the pivot data is the attribute used to aggregate data into the actual pivot view cells from the original table. This window is accessed from the <i><a href="../Trading_Manager/TRADING_Configure_Positions.htm">RTPE (Real Time Position Engine) Page Configuration</a></i> window and various functionalities that employ the <i><a href="OLF_Table_Viewer.htm">Table Viewer</a></i>.</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt;punctuation-wrap:simple; text-autospace:none'><i><span style='color:red'>Warning: Users can only save pivot table configurations as part of the set up for RTPE (Real Time Position Engine). This menu item allows you to configure a pivot table for one time use only.</span></i></p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal" style='margin-bottom:6.0pt;punctuation-wrap:simple; text-autospace:none'>For illustration purposes, the following is an example of how it is accessed:</p>
+<p class="ListNumbered">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Start the Trading Manager.</p>
+<p class="ListNumbered">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>Misc</b> <b><span style='font-family:Wingdings'>&agrave;</span> Registered Pricing Models</b>. The <i>Registered Pricing Models</i> window displays. This window is an example of a <i>Table Viewer</i>.</p>
+<p class="ListNumbered">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select <b>Reporting</b> <b><span style='font-family:Wingdings'>&agrave;</span> Pivot Table</b>.</p>
+<p class="ListNumbered" style='margin-left:.25in;text-indent:0in'>The following window displays:</p>
+<p class="ListNumbered" style='margin-left:.25in;text-indent:0in'>&#160;</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt;punctuation-wrap:simple; text-autospace:none'><img border="0" width="500" height="524" src="OLF_Pivot_Table_files/image001.jpg" alt="image013.jpg" /></p>
+<h3>Menu Items</h3>
+<p class="MsoNormal">This window contains the following menu items:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr style='height:11.65pt'>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:11.65pt'>
+<p class="TableHeader">Menu</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:11.65pt'>
+<p class="TableHeader">Item</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:11.65pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr style='height:15.25pt'>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+<p class="NormalBold">File</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+<p class="NormalBold">View Table</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+<p class="MsoNormal">Displays the table on which the pivot table will be based.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Pivot Table</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Generates and displays the pivot table based on the column, row, and data settings in the window.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Save</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Either saves the pivot table configuration to the user's private directory as a file or as a private link.&#160; To save it as a file, enter the name in the “Pivot Name” field only. To save it as a link, enter the name in both the “Pivot Name” and “Linked To” fields.</p>
+<p class="MsoNormal"><span style='color:red'>Warning: You can only save pivot table configurations as part of the set up for RTPE.</span></p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Link to Public</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the pivot table configuration as a public link. A public link is available to all users. To save as a public link, enter the name in the “Pivot Name” field.</p>
+<p class="MsoNormal"><span style='color:red'>Warning: You can only save pivot table configurations as part of the set up for RTPE.</span></p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Save Public</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Saves the pivot configuration as a public file. A public file is available to all users.</p>
+<p class="MsoNormal"><span style='color:red'>Warning: You can only save pivot table configurations as part of the set up for RTPE.</span></p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Exit</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Closes the window.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Tools</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Add Column</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Adds a field to the Columns list box. To add a column, highlight the field to be added in the Field list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Remove Column</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Removes a field from the Columns list box. To remove a column, highlight the field to be removed in the Columns list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Add Row</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Adds a field to the Rows list box. To add a row, highlight the field to be added in the Field list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Remove Row</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Removes a field from the Rows list box. To remove a row, highlight the field to be removed in the Rows list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Add Data</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Adds a field to the Data list box. To add data, highlight the field to be added in the Field list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&#160;</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Remove Data</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Removes a field from the Data list box. To remove data, highlight the field to be removed in the Data list box then select this option.</p>
+</td>
+</tr>
+<tr>
+<td width="83" valign="top" style='width:62.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Help</p>
+</td>
+<td width="150" valign="top" style='width:112.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Help</p>
+</td>
+<td width="402" valign="top" style='width:301.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the system Help files.</p>
+</td>
+</tr>
+</table>
+<h3>Buttons</h3>
+<p class="MsoNormal">This window contains the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Button</p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr style='height:19.75pt'>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:19.75pt'>
+<p class="MsoNormal"><img border="0" width="37" height="37" src="OLF_Pivot_Table_files/image002.jpg" alt="printer icon" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:19.75pt'>
+<p class="MsoNormal">Prints the current window.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image003.jpg" alt="image005" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Add Column</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image004.jpg" alt="image006" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Remove Column</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image005.jpg" alt="image007" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Add Row</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image006.jpg" alt="image008" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Remove Row</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image007.jpg" alt="image009" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Add Data</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image008.jpg" alt="image010" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>Tools</b> <b><span style='font-family:Wingdings'>&agrave;</span> Remove Data</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="18" height="18" src="OLF_Pivot_Table_files/image009.jpg" alt="" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Moves the highlighted column/row/data one row up the list.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="18" height="18" src="OLF_Pivot_Table_files/image010.jpg" alt="" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Moves the highlighted column/row/data one row down the list.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Show Summations</p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is used by the RTPE page viewer.&#160; This check box controls whether or not blanks will show in the header rows of the tree-view instead of summations.&#160; When "Show Summations" is checked, each individual Sum check box in the "Pivot Rows" configuration controls which level of header rows will show sums and which will be blank.</p>
+<p class="MsoNormal">See:</p>
+<p class="MsoNormal"><i><a href="../Trading_Manager/TRADING_Generic_Page_Viewer.htm">RTP Page Viewer</a></i></p>
+<p class="MsoNormal"><i><a href="../Operations_Manager/OPS_RTPE_Definition.htm">RTP Definition</a></i></p>
+<p class="MsoNormal"><i><a href="../Operations_Manager/OPS_RTPE.htm">RTP</a></i></p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Compress Details</p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This is used exclusively by RTPE.&#160; Selecting this will cause RTPE details rows to be removed from the pivoted result in the case where the pivot is a grouping.&#160; A group-by pivot can be configured only from the RTPE pivot.&#160; You define pivot columns, pivot rows, but no pivot data.&#160; The pivot columns are those to be displayed along the top.&#160; The pivot rows are those to group on.&#160; The result is simply a sort on the grouped rows, header rows for each sub-group.&#160; When compress details are turned on, the details rows are removed, leaving only the header rows.&#160; Those header rows are transformed into detail rows causing the table to be much smaller to send over the network.</p>
+<p class="MsoNormal">See:</p>
+<p class="MsoNormal"><i><a href="../Trading_Manager/TRADING_Generic_Page_Viewer.htm">RTP Page Viewer</a></i></p>
+<p class="MsoNormal"><i><a href="../Operations_Manager/OPS_RTPE_Definition.htm">RTP Definition</a></i></p>
+<p class="MsoNormal"><i><a href="../Operations_Manager/OPS_RTPE.htm">RTP</a></i></p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Show Tree View</p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This causes the RTPE page viewer to display the resulting pivot table as a flat view without the tree view expand and collapse column and icons.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Show Empty As Blank</p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">V9.1r2 &amp; up.</p>
+<p class="MsoNormal">Empty rows will display as blanks.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image011.jpg" alt="image011" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This has the same function as <b>File</b> <b><span style='font-family:Wingdings'>&agrave;</span> Pivot Table</b>.</p>
+</td>
+</tr>
+<tr>
+<td width="165" valign="top" style='width:123.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="128" height="33" src="OLF_Pivot_Table_files/image012.jpg" alt="image012" /></p>
+</td>
+<td width="473" valign="top" style='width:354.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Apply changes without saving.</p>
+</td>
+</tr>
+</table>
+<h3>Fields</h3>
+<p class="MsoNormal">This window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="641" style='width:481.0pt;border-collapse:collapse'>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Field</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Pivot Table</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the internal name of the data fields on which the pivot table will be based.</p>
+<p class="MsoNormal"><b>Note:</b> To select adjacent rows, click the first row to select then while holding the &lt;<b>Shift</b>&gt; key, click the last row to select. To select separate rows, click the rows to select while holding the &lt;<b>Ctrl</b>&gt; key.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Column Type</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the corresponding data type of the field.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Columns</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the fields selected to represent the columns of the pivot table.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">(Columns) Sum</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Toggle to add columns.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Rows</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the fields selected to represent the rows of the pivot table.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">(Rows) Sum</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Toggle to add rows.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Colors</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The color of the summary row.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Data</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the field selected to represent the data of the pivot table.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Aggregate Func.</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Aggregate Function</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="150" valign="top" style='width:112.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Value</p>
+</td>
+<td width="294" valign="top" style='width:220.8pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="150" valign="top" style='width:112.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Average</p>
+</td>
+<td width="294" valign="top" style='width:220.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Average</p>
+</td>
+</tr>
+<tr>
+<td width="150" valign="top" style='width:112.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Monthly Average</p>
+</td>
+<td width="294" valign="top" style='width:220.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Monthly average</p>
+</td>
+</tr>
+<tr>
+<td width="150" valign="top" style='width:112.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Quarterly Average</p>
+</td>
+<td width="294" valign="top" style='width:220.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Quarterly average</p>
+</td>
+</tr>
+<tr>
+<td width="150" valign="top" style='width:112.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Sum</p>
+</td>
+<td width="294" valign="top" style='width:220.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Sum</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Aggregate Col</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Used to specify the date column for Average Monthly and Average Quarterly pivot aggregate functions.</p>
+<p class="MsoNormal">This is available in versions 7.0r4 and up.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Total Type</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The location of the “Total” column in the table.&#160; Available choices are:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="444" style='width:333.1pt;border-collapse:collapse'>
+<tr>
+<td width="86" valign="top" style='width:64.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Value</p>
+</td>
+<td width="358" valign="top" style='width:268.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="86" valign="top" style='width:64.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Left</p>
+</td>
+<td width="358" valign="top" style='width:268.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The “Total” column will be displayed on the left side of the table.</p>
+</td>
+</tr>
+<tr>
+<td width="86" valign="top" style='width:64.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Middle</p>
+</td>
+<td width="358" valign="top" style='width:268.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The “Total” column will be displayed in alphabetical order among the other columns.</p>
+</td>
+</tr>
+<tr>
+<td width="86" valign="top" style='width:64.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">None</p>
+</td>
+<td width="358" valign="top" style='width:268.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The “Total” column will not be displayed.</p>
+</td>
+</tr>
+<tr>
+<td width="86" valign="top" style='width:64.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Right</p>
+</td>
+<td width="358" valign="top" style='width:268.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The “Total” column will be displayed on the right side of the table.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Text</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Enter the column title of the “Total” column. This field defaults to “Total.”</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&lt;Blank Field 1&gt;</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the user ID of the person logged on to the system.</p>
+</td>
+</tr>
+<tr>
+<td width="166" valign="top" style='width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">&lt;Blank Field 2&gt;</p>
+</td>
+<td width="476" valign="top" style='width:356.8pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the function that is being performed, i.e., Pivot Table Setup.</p>
+</td>
+</tr>
+</table>
+<h2>Creating a Pivot Table</h2>
+<p class="MsoFootnoteText" style='margin-bottom:6.0pt;punctuation-wrap:simple; text-autospace:none'>To create a pivot table,</p>
+<p class="ListNumbered" style='margin-left:.75in'>a)<span style='font-size:7.0pt; font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select from the “Pivot Table” listing the fields that will represent the column, row, and data of the pivot table. To select the field, highlight the field/s in the “Pivot Table” listing and click the appropriate “Add” button to move them to the Column, Row, and Data listing.</p>
+<p class="ListNumbered" style='margin-left:.75in'>b)<span style='font-size:7.0pt; font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Define additional settings for the pivot table, e.g., sum, colors, show summation, etc.</p>
+<p class="ListNumbered" style='margin-left:.75in'>c)<span style='font-size:7.0pt; font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Pivot Table</b> button. The pivot table displays.</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

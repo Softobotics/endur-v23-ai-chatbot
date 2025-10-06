@@ -1,0 +1,18 @@
+This chunk is from the HTML file: OLF_Alerts.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Alerts_files/image003.jpg
+ Image description: a printer with a black ink.
+ Image file: OLF_Alerts_files/image004.jpg
+ Image description: a purple circle with a black circle in the middle.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Prints the current window. |
+| Run Query | Runs the Query with the changes made in the Query By Panel. |
+| Reset Query | Resets the values in the Query By Panel to default values. |
+|  | An ANE-based feature that flashes to notify users that the selected Alert is not the most current data set.  The icon blinks in one of the following circumstances, notifying you that your Alert data is not the most current available:Another user has modified the data set since the time you originally run the data setYou are using a selected Personal indexClicking the flashing icon automatically loads the most recently saved data set. |
+| New Alert | Opens the New Alert Window. |
+| Select Status | Helps to assign a new status to the Alert. Following options are available:ClosedOpenReadReassignUnreadTo update the status on the Alert after selecting the appropriate status, the user needs to click on Change Status button. |
+| Change Status | Helps to update the status of an Alert based on the assigned status selected in the Select Status Field. |
+| Close for All | Closes the Alert for all the users |.

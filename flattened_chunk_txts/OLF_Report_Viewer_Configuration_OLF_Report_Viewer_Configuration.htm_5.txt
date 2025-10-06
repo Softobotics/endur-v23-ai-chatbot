@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_Report_Viewer_Configuration.htm.
+ Section heading: Report Extensions Panel.
+ Text content: Every time a report in the system is created, it is saved with a particular file extension that identifies the type of information contained in the report. Below is a list of typical file formats (since these formats are configurable by client site they may be different for each site.):   The AVS Report Configurations window enables the user to create and edit file extension categories and their descriptions (the descriptions become the Report Type), linking them to reports with that extension.  For example, existing daily reports may be saved with the extension .DLY.  Adding an extension category links these reports.  Upon saving the new or edited file extension category, it displays in the “Report Types” field listing in the View Report window.  Selecting it brings up a list of all reports linked to it. .
+ Table data: 
+| File Extension | Report Type |
+| --- | --- |
+| EXC | Prototype Conversion Exception |
+| PNL | Profit & Loss |
+| ACC | General Ledger Reconciliation |
+| MKT | Market Data |
+| PMX | Pricing Matrix |
+| RST | Reset Information |
+| SNS | Sensitivity Reports |
+| STT | Settlement Information |
+| SIM | Simulation Information |
+| TLT | Trade Listings |
+| TIC | Trade Tickets |
+| INS | Instrument Detail |
+| IRD | Detail Reconciliation (Ins. Detail) |
+| TXT | Miscellaneous Text Files |.

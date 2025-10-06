@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_TSV_Peer_Groups.htm.
+ Section heading: Example of Security Enforcement in TSV Peer Group Verification.
+ Text content: 1. Select two users, User1 and User2 2. In the Reference Explorer Desktop or Reference Manager, assign User1 to TSV Peer Group A and User2 to TSV Peer Group B. 3. Save the changes. 4. Still in the Reference Explorer Desktop/Reference Manager, check which Security Group each is assigned to. 5. In the Admin Manager ensure that the Security Group(s) of User1 and User 2 have the following privileges: 6. Log on as User1. 7. In the Reference Explorer Desktop/Reference Manager modify the address in a business unit and save the changes. 8. Open the Component Verification window. 9. In the Object Type column on the left select Reference à Party to view business units, legal entities and groups which have been changed. 10. In the right hand part of the screen locate the business unit which has been changed and highlight the row. 11. Click the Verify button.  An error message will appear. 12. Now log on as User2 and repeat steps 5 – 9.  The verification will succeed..
+ Table data: 
+| Number | Security Privilege | Status |
+| --- | --- | --- |
+| 24100 | View Component Verification | Switched on |
+| 24101 | Verify Object | Switched on |
+| 24102 | Same User Verify | Switched off |.

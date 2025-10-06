@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
+ Section heading: Adding Properties for a New Script.
+ Text content: In adding properties for a new script, the Script Properties window defaults as follows:  Follow these steps to change the default: Note: In editing properties for an existing script, you can change the Owner and reassign the Group if you have the proper security properties.  You can also change the Owner/Group/Public properties granted..
+ Image file: OLF_AVS_Script_Permissions_files/image004.jpg
+ Image description: the settings dial in the settings dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

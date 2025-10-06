@@ -1,0 +1,24 @@
+This chunk is from the HTML file: OLF_Important_Notices.htm.
+ Section heading: System Messages.
+ Text content: OpenLink 
+	 has developed its own messaging solution, although the Tibco solution 
+	 may still be supported.  The system uses this messaging 
+	 bus to send messages from session to session and even intra-session.  For 
+	 example, a user may use the Broadcast tool to send a broadcast.  That 
+	 broadcast is send via the system’s messaging solution. If a price 
+	 is changed in the Market Manager, that price change gets sent to the 
+	 Trading Manager via the system’s messaging solution.  The 
+	 format and contents of the messages that are sent are considered proprietary 
+	 to OpenLink.  Customers are not entitled to documentation 
+	 showing what the messages are or when they are sent.  Customers 
+	 should not try to capture or intercept these messages for any use, 
+	 without explicit OpenLink instructions to do so.  A tool 
+	 that can monitor these messages, for OpenLink debugging purposes can 
+	 be found in the System Monitor. See System Monitor  OpenLink 
+	 provides AVS and TK as APIs into the internal business logic/processing 
+	 within the system.  These APIs are tested and maintained 
+	 by OpenLink. The APIs are also designed to work across code versions.  If 
+	 the APIs do not provide the appropriate functionality, a request for 
+	 enhancement may be made to an Account Manager.  .
+ 
+Links to other files: OLF_System_Monitor-Diagnostics_Listen.htm.

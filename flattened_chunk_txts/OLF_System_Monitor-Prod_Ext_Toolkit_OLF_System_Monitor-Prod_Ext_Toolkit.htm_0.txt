@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Prod_Ext_Toolkit.htm.
+ Section heading: Overview.
+ Text content: This screen details the underlying components required for use of the OpenLink Toolkit, including the required controls and dlls for Toolkit development and execution. This window is comprised of the following panels: Licensed For, Toolkit DLLs, Registered Controls, Tookit QA App, and Toolkit Processes . This screen is intended for use by Information Technology professionals when debugging Toolkit functions. Toolkit access requires the purchase of a separate license key. In v6.0 and below, the Product Tools tab is named Product Extensions and contains the OpenConnect Monitor sub-tab. As of V8.0r1 and up, the OpenConnect Monitor sub-tab has been moved to the System Monitor à Services tab and renamed Connex Grid Monitor . Access to this window is controlled by the following Security Privileges: See System Monitor.
+ Table data: 
+| Security Privilege ID | Privilege |
+| --- | --- |
+| 29400 | Access Product Extension Tab |
+| 29410 | Access Toolkit Tab |. 
+Links to other files: OLF_System_Monitor-Services_Connex_Grid_Mon.htm, OLF_System_Monitor.htm.

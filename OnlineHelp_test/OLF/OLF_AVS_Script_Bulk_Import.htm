@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Plug-in/Script Bulk Import</title>
+<style type="text/css">
+<!--
+@font-face {
+	font-family: Wingdings;
+	panose-1: 5 0 0 0 0 0 0 0 0 0;
+}; @font-face { font-family:Cambria Math;
+panose-1:2 4 5 3 5 4 6 3 2 4;
+font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+font-family:Cambria;
+panose-1:2 4 5 3 5 4 6 3 2 4; }
+; @page WordSection1 { x-size:8.5in 11.0in;
+margin:1.0in 1.0in 1.0in 1.0in; }
+; p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:Verdana, sans-serif;
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:Verdana, sans-serif; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:Verdana, sans-serif; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+text-align:justify;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+text-align:justify;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+text-align:justify;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+a:link { color:#0000ff;
+text-decoration:underline;
+color:#0000ff; }
+span.MsoHyperlink { color:#0000ff;
+text-decoration:underline; }
+a:visited { color:#800080;
+text-decoration:underline;
+color:#800080; }
+span.MsoHyperlinkFollowed { color:#800080;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:10.0pt;
+font-family:Tahoma, sans-serif; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:10.0pt;
+font-family:Tahoma, sans-serif; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:#000080;
+font-size:10.0pt;
+font-family:Tahoma, sans-serif; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:Tahoma, sans-serif; }
+p.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:Cambria, serif;
+color:#365F91;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:Cambria, serif;
+color:#4F81BD;
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:Cambria, serif;
+color:#4F81BD;
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:Cambria, serif;
+color:#4F81BD;
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:Cambria, serif;
+color:#243F60; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:Cambria, serif;
+color:#243F60;
+font-style:italic; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:Verdana, sans-serif; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:Verdana, sans-serif; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:Verdana, sans-serif; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:Tahoma, sans-serif; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:Tahoma, sans-serif; }
+p.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:Verdana, sans-serif; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Verdana, sans-serif; }
+div.WordSection1 { page:WordSection1; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nTrading Manager\nAVS Menu\nScript Editor\nAVS Script Bulk Import");
+addAvenueInfo("System Use","OLF/OLF_AVS_Plugin_Script_Bulk_Export.htm","Trading_Manager/TRADING_Script_Listing.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TradingMgr.htm\">Trading Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Trading_Manager/TRADING_AVS_Functions_and_Arguments.htm\">AVS Menu<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Operations_Manager/OPS_AVS_82r1.htm\">Script Editor<\/a> &gt; AVS Script Bulk Import<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>Plug-in/Script Bulk Import</h1>
+	<h2>Overview</h2>
+	<p class="MsoNormal">This window displays after file selection from 
+	 the <i>XML Pack file or Plugins to Import</i> window.</p>
+	<p class="MsoNormal"><b>Note:</b> This page is for V82r1 and later. 
+	 For V81r2 and earlier, see <i>AVS Script Bulk Import.</i></p>
+	<h3>See Also</h3>
+	<p class="MsoHeader"><a href="OLF_AVS_Script_Editor.htm">Script Editor</a></p>
+	<p class="MsoHeader"><a href="OLF_Plugin_Editor.htm">Plugin Editor</a></p>
+	<h2>Accessing This Window/Screen</h2>
+	<p class="MsoNormal">This window can be accessed via multiple paths 
+	 in the system. Listed below are two options:</p>
+	<p class="MsoListParagraph" style="text-indent: -.25in;">1.<span style="font-size: 7.0pt; 
+	 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select 
+	 the <b>System Administration</b> tab from Admin Manager.</p>
+	<p class="MsoListParagraph" style="text-indent: -.25in;">2.<span style="font-size: 7.0pt; 
+	 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select 
+	 the <b>Plugin Bulk Import</b> icon.</p>
+	<p class="MsoNormal">or</p>
+	<p class="MsoListParagraph" style="text-indent: -.25in;">1.<span style="font-size: 7.0pt; 
+	 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Open 
+	 the Trading Manager.</p>
+	<p class="MsoListParagraph" style="text-indent: -.25in;">2.<span style="font-size: 7.0pt; 
+	 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select 
+	 <b>Script</b> <b><span style="font-family: Wingdings;">à</span> Script 
+	 Editor</b>. The <i>Script Editor</i> window displays.</p>
+	<p class="MsoListParagraph" style="text-indent: -.25in;">3.<span style="font-size: 7.0pt; 
+	 font-family: 'Times New Roman', serif;"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;</font></span>&#160;Select 
+	 <b>File</b> <span style="font-family: Wingdings;">à</span> <b>Bulk 
+	 Import.</b></p>
+	<p class="MsoNormal"><span style="color: #000000;"><font color="black" >A dialog will display. 
+	 Select Files to import.</font></span></p>
+	<p class="MsoNormal"><span style="color: #000000;"><font color="black" ><img src="OLF_AVS_Script_Bulk_Import_files/image001.jpg" 
+															 alt="image018.jpg" 
+															 width="400" 
+															 height="295" 
+															 border="0" /></font></span></p>
+	<p class="MsoNormal"><span style="color: #000000;"><font color="black" >Once files have 
+	 been opened and before being processed, the following screen displays:</font></span></p>
+	<p class="MsoNormal"><img src="OLF_AVS_Script_Bulk_Import_files/image002.jpg" 
+								 alt="image010.jpg" width="550" height="345" 
+								 border="0" /></p>
+	<p class="MsoNormal">The following screen displays after a plug-ins/scripts 
+	 have been processed.</p>
+	<p class="MsoNormal"><img src="OLF_AVS_Script_Bulk_Import_files/image003.jpg" 
+								 alt="image017.jpg" width="550" height="345" 
+								 border="0" /></p>
+	<h3>Menu Items</h3>
+	<p class="MsoNormal">This window contains the following menu items:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E0E0E0" 
+				 width="108"><p class="MsoNormal" style="text-align: center;"><b>Menu</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E0E0E0" width="119"><p class="MsoNormal" style="text-align: center;"><b>Item</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E0E0E0" width="408"><p class="MsoNormal" style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108"><p class="MsoNormal"><b>File</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="119"><p 
+				 class="MsoNormal"><b>Print</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="408"><p 
+				 class="MsoNormal">Prints the current window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108"><p class="MsoNormal">&#160;</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="119"><p 
+				 class="MsoNormal"><b>Exit</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="408"><p 
+				 class="MsoNormal">Exits from the <i>Plugin Bulk Import</i> 
+			 window and returns to the parent window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108"><p class="MsoNormal"><b>Project</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="119"><p 
+				 class="MsoNormal"><b>Start Project Manager</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="408"><p 
+				 class="MsoNormal">Opens the <i><a href="OLF_JBO_Project_Manager.htm">Plugin 
+			 Project Manager</a></i> window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108"><p class="MsoNormal"><b>Help</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="119"><p 
+				 class="MsoNormal"><b>Show Error</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="408"><p 
+				 class="MsoNormal">Opens the <i>Java plug-in Compile Error</i> 
+			 window.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108">&#160;</td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="119"><p 
+				 class="MsoNormal"><b>Help</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="408"><p 
+				 class="MsoNormal">Displays information about this window.</p></td>
+		</tr>
+	</table>
+	<h3>Buttons</h3>
+	<p class="MsoNormal">This window contains the following buttons:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0" 
+			 width="635">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E0E0E0" 
+				 width="119"><p class="MsoNormal" style="text-align: center;"><b>Button</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E0E0E0" width="516"><p class="MsoNormal" style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b><img src="../Common_Images/Print_Icon_Refresh.jpg" 
+															 alt="image011.jpg" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Performs the same function as <b>Tools</b> 
+			 <b><span style="font-family: Wingdings;">à</span> Print plugin/script.</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b><img src="OLF_AVS_Script_Bulk_Import_files/image005.jpg" 
+															 alt="image012.jpg" 
+															 width="89" 
+															 height="28" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Tells the system to proceed with the 
+			 import.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b><img src="OLF_AVS_Script_Bulk_Import_files/image006.jpg" 
+															 alt="image013.jpg" 
+															 width="89" 
+															 height="28" 
+															 border="0" /></b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">This field only appears after the import. 
+			 If pressed, the screen will close.</p></td>
+		</tr>
+	</table>
+	<h3>Fields</h3>
+	<p class="MsoNormal" style="text-align: justify;">This window contains 
+	 the following fields:</p>
+	<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" bgcolor="#E0E0E0" 
+				 width="119"><p class="MsoNormal" style="text-align: center;"><b>Field</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 bgcolor="#E0E0E0" width="516"><p class="MsoNormal" style="text-align: center;"><b>Description</b></p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal" style="text-align: center;"><b>Select</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal"><img src="OLF_AVS_Script_Bulk_Import_files/image007.jpg" 
+										 alt="image016.jpg" width="19" 
+										 height="17" border="0" />&#160;Indicates 
+			 that plugin/script listed should be processed.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>File Name</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">File name and path of the .java file 
+			 to be imported.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Plugin/Script Name</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Plugin/Script Name in the OLF system.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Plugin/Script Type</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Indicates the type of plugin/script. 
+			 There are five different types:</p>
+			<table class="MsoNormalTable" style="border-collapse: collapse;" 
+					 cellspacing="0">
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 bgcolor="#E6E6E6" width="160"><h6>Type</h6></td>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-left: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" bgcolor="#E6E6E6" width="341"><p 
+						 class="MsoNormal" style="text-align: center;"><b>Description</b></p></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-top: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" width="160"><h5>Param</h5></td>
+					<td style="vertical-align: top; border-top: none; border-left: none; 
+						 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 width="341"><p class="MsoNormal">A <b><i>Parameter</i></b> 
+					 plugin/script is used to prepare information to be 
+					 passed to a main plugin/script. The table <b><i>argt</i></b> 
+					 is used to hold data to be passed to a main plugin/script. 
+					 Parameter plugin/scripts can, but are not normally, 
+					 run without a main plugin/script in a Task.</p></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-top: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" width="160"><p class="MsoNormal"><b>Main</b></p></td>
+					<td style="vertical-align: top; border-top: none; border-left: none; 
+						 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 width="341"><p class="MsoNormal">A <b><i>Main</i></b> 
+					 plugin/script is the main plugin/script that contains 
+					 the bulk of the reporting or process-specific code. 
+					 A main plugin/script may be designated to run alone 
+					 in a Task.</p></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-top: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" width="160"><p class="MsoNormal"><b>Page 
+					 Viewer</b></p></td>
+					<td style="vertical-align: top; border-top: none; border-left: none; 
+						 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 width="341"><p class="MsoNormal">A <b><i>Page 
+					 Viewer</i></b> plugin/script is used to set the subscriptions 
+					 and activate the Page Viewer. This kind of plugin/script 
+					 may run alone in a Task.</p></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-top: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" width="160"><p class="MsoNormal"><b>Output</b></p></td>
+					<td style="vertical-align: top; border-top: none; border-left: none; 
+						 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 width="341"><p class="MsoNormal">An <b><i>Output 
+					 Plugin/script</i></b> is a plugin/script that runs 
+					 locally in the Trading Manager after the main plugin/script 
+					 has run.</p>
+					<p class="MsoNormal">Warning: Output Plugin/scripts 
+					 cannot be run alone in a Task. They require a Main 
+					 plugin/script in the Task as well.</p></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; border: solid #000000 1.0pt; 
+						 border-top: none; padding: 0in 5.4pt 0in 5.4pt; 
+						 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+						 padding-bottom: 0px;" width="160"><p class="MsoNormal"><b>Include</b></p></td>
+					<td style="vertical-align: top; border-top: none; border-left: none; 
+						 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+						 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+						 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+						 width="341"><p class="MsoNormal">This means the 
+					 plugin/script can be used as an include plugin/script. 
+					 This is so functions in one plugin/script can be shared.</p>
+					<p class="MsoNormal">This required a license key (AVS_POUND_INCLUDE) 
+					 in builds before August 27, 2003. It now is not controlled 
+					 by licensing.</p></td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: bottom; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Already Exist</b></p></td>
+			<td style="vertical-align: bottom; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Yes indicates the plugin/scripts has 
+			 been previously imported.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: bottom; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Overwrite?</b></p></td>
+			<td style="vertical-align: bottom; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Yes indicates that the existing plugin/scripts 
+			 should be overwritten.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: bottom; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Save On Comp Error</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">This appears before the plugin/scripts 
+			 have been imported. The default of No is the only option as 
+			 a plugin/script with compile errors will not be saved.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Properties</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Displays parameters associated with 
+			 the plugin/script (i.e. UserParm – Read+Write+Execute).</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Categories</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Category of the plugin/script. Right 
+			 click for a pick list of Categories.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Saved</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">This appears only if the plugin/script 
+			 has been saved.</p></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="119"><p class="MsoNormal"><b>Reason</b></p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="516"><p 
+				 class="MsoNormal">Displays OK if the plugin/script was 
+			 imported successfully or displays a reason why it was not 
+			 imported.</p></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

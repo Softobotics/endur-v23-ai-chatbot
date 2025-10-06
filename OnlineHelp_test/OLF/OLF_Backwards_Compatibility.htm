@@ -1,0 +1,3250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Backwards Compatibility</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Segoe UI";
+        panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoBodyText2 { mso-style-link:Body Text 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoBodyText3 { mso-style-link:Body Text 3 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p { margin-right:0in;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+tt { font-family:Courier New; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextIndentChar { mso-style-name:Body Text Indent Char;
+mso-style-link:Body Text Indent;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyText2Char { mso-style-name:Body Text 2 Char;
+mso-style-link:Body Text 2;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyText3Char { mso-style-name:Body Text 3 Char;
+mso-style-link:Body Text 3;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextIndent2Char { mso-style-name:Body Text Indent 2 Char;
+mso-style-link:Body Text Indent 2;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Segoe UI" ,"sans-serif"; }
+p.Exercisecont { mso-style-name:Exercise cont\.;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:4.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.Exercisecont { mso-style-name:Exercise cont\.;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:4.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.Exercisecont { mso-style-name:Exercise cont\.;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:4.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.ChapterTitle { mso-style-name:Chapter Title;
+margin-top:30.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-style:italic; }
+li.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-style:italic; }
+div.ChapterSubtitle { mso-style-name:Chapter Subtitle;
+margin-top:.25in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+layout-grid-mode:char;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-style:italic; }
+p.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BulletBoth { mso-style-name:Bullet Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BulletFirst { mso-style-name:Bullet First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BulletLast { mso-style-name:Bullet Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Dash { mso-style-name:Dash;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.DashBoth { mso-style-name:Dash Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.DashFirst { mso-style-name:Dash First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.DashLast { mso-style-name:Dash Last;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Figure { mso-style-name:Figure;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.NumList { mso-style-name:NumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.NumListBoth { mso-style-name:NumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.NumListFirst { mso-style-name:NumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.NumListLast { mso-style-name:NumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.SubNumList { mso-style-name:SubNumList;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.SubNumListBoth { mso-style-name:SubNumList Both;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.SubNumListFirst { mso-style-name:SubNumList First;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.SubNumListLast { mso-style-name:SubNumList Last;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Bodydescription { mso-style-name:Body description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.Description { mso-style-name:Description;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.5in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.FigTitle { mso-style-name:FigTitle;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.heading1 { mso-style-name:heading1;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.25in;
+margin-left:0in;
+page-break-after:avoid;
+font-size:18.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.heading2 { mso-style-name:heading2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+font-style:italic; }
+li.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+font-style:italic; }
+div.heading3 { mso-style-name:heading3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:right;
+font-size:10.0pt;
+font-family:"Times New Roman" ,"serif";
+font-style:italic; }
+p.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("What's New / What's Changed\nMiscellaneous\nBackwards Compatibility");
+addAvenueInfo("System Use","OLF/OLF_Simulation_Results.htm","Software_Support_Matrix.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../What_s_New_What_s_Changed.htm\">What's New / What's Changed<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Backwards_Compatibility.htm\">Miscellaneous<\/a> &gt; Backwards Compatibility<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>Backwards Compatibility</h1>
+<h2>Overview</h2>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>This is a list of items that are included in the system for backwards compatibility.&#160;&#160; New clients should avoid using these features.&#160;&#160; They are not supported for new clients (there is no testing/documentation).&#160;</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Also included is a list of features in the system that were partly implemented in the system.&#160; These should not be used by clients.&#160; Depending on various factors, these items will either be fully implemented (in which case they may be used) or removed entirely from the system.</p>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>&#160;</p>
+<h2>Backwards Compatibility Items</h2>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="605" style='width:453.8pt;border-collapse:collapse'>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="Figure" style='margin-bottom:6.0pt'><b>#</b></p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="Figure" style='margin-bottom:6.0pt'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">These Toolsets are included for Backwards Compatibility and should not be used.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>#</b></p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Toolset Name</b></p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Replaced With or Note</b></p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComHourly</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable.&#160; This Toolset never worked.&#160; Don’t use it. It will be removed in a future version.</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>2</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">EngyLTP</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Commodity Toolset</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>3</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">EngyPhys</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Commodity Toolset</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>4</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">EngyTS</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Commodity Toolset</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>5</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MetalOpt</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComOpt Toolset</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>6</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MetalSwap</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComSwap Toolset</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>7</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">P-Asset</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>8</p>
+</td>
+<td width="214" valign="top" style='width:160.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">P-Liab</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>2</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">These Instruments are included for Backwards Compatibility and should not be used.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>#</b></p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Instrument Name</b></p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Replaced With or Note</b></p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">PWR-TR (Power Toolset)</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">PWR-TR-SPREAD (Power Toolset)</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>2</p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">EO-C-Phys (ComOpt Toolset)</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">CO-CALL-D/M (Commodity Toolset)</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>3</p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">EO-P-Phys (ComOpt Toolset)</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">CO-PUT-D/M (Commodity Toolset)</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>4</p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Any Instrument Type in the ComOpt Toolset where the “Settlement Type” is Physically Settling</p>
+</td>
+<td width="264" valign="top" style='width:2.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Commodity Toolset Instrument Type as appropriate.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>3</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">These Simulation Results are included for Backwards Compatibility and should not be used.</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>#</b></p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Simulation Result Name</b></p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Replaced With or Note</b></p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Base Cash By Type (88)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211), FX (8)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>2</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Base Cash By Type MTD (154)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211), FX (8)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>3</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Base Cash By Type YTD (159)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211), FX (8)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>4</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Base Cum O/N Physical Equiv (220)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>5</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Base Overnight Physical Equiv (209)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>6</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Beta Result (38)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>7</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee (15)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee Info (221)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>8</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee MTD (49)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee Info (221)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>9</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee YTD (50)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Broker Fee Info (221)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>10</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Buyout Cash (56)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+<p class="MsoNormal">The way Buyouts work changed in version 5.0.&#160; The Buyout Cash result will always show a value of zero.</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>11</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash By Type (14)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>12</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash By Type MTD (53)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>13</p>
+</td>
+<td width="244" valign="bottom" style='width:183.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash By Type YTD (54)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>14</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Contract Allocation (179)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>15</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cum O/N Physical Equiv (207)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>16</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Known Cash - (30)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>17</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Known Cash (12)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>18</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Known Cash + (29)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>19</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Proj Cash - (32)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>20</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Proj Cash (13)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>21</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Future Proj Cash + (31)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Cash Flow By Day (211)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>22</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Accrual LTD (85)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>23</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Accrual MTD (86)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>24</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Accrual YTD (87)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr style='height:15.7pt'>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.7pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>25</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:15.7pt'>
+<p class="MsoNormal">FX P/L Cash By Type MTD (89)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:15.7pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>26</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Cash By Type YTD (90)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>27</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Realized LTD&#160; (158)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>28</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Realized MTD&#160; (80)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>29</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX P/L Realized YTD&#160; (81)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>30</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Hedge Map (9)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+<p class="MsoNormal">Note: This result never worked.</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>31</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Impact of Buyout (160)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Impact of Amendments (55)</p>
+<p class="MsoNormal">The way Buyouts work changed in version 5.0.&#160; The Buyout Cash result will always show a value of zero.</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>32</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Inventory Equivalent (206)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>33</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Monte Carlo VAR Parameters (100)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Result Configuration (254)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">34</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Nostro Position</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>35</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Overnight Physical Equivalent (208)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">36</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">PV - (24)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MTM (0)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>37</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">PV + (23)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MTM (0)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>38</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">PV By Proj Index (41)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">MTM (0)</p>
+</td>
+</tr>
+<tr>
+<td width="36" valign="top" style='width:26.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>39</p>
+</td>
+<td width="244" valign="top" style='width:183.25pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">RhoRho By Leg Result (110)</p>
+</td>
+<td width="305" valign="top" style='width:228.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Not Applicable</p>
+<p class="MsoNormal">Note: This result never worked.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>4</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Hedge By Type functionality in the Admin Manager under Static Data.&#160; This was never fully supported and may be removed in a future version.</p>
+<p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_STATIC_Hedge_by_Type.htm">Hedge By Type</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>5</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Hedge With Type functionality in the Admin Manager under Static Data.&#160; This was never fully supported and may be removed in a future version.</p>
+<p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_STATIC_Hedge_with_Type.htm">Hedge With Type</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>6</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">On the "Index Definition" window.&#160; The "Class" type of "2d-Grid" does not work and should not be used.</p>
+<p class="MsoNormal">See <a href="../Market_Manager/MARKET_Index_Definition.htm">Index Definition</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>7</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">On the "Index Grid Point" definition window.&#160; Synthetic grid points don’t work (should not be used).</p>
+<p class="MsoNormal">See <a href="../Market_Manager/MARKET_Grid_Point_Definition.htm">Grid Point Definition</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>8</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The following functions for Grid Point formulas should not be used:</p>
+<p class="MsoNormal"><b>&#160;</b></p>
+<p class="MsoNormal">double nearby_gpt( string date, int nearby, string curvename, int bmo=DEFAULT_BMO )</p>
+<p class="MsoNormal">double p_gptid_eff( int gptid=0, string curvename="" )</p>
+<p class="MsoNormal">double p_gptname_eff( string gptname="", string idxname="" )</p>
+<p class="MsoNormal">double pnum_gptid_eff( int gptid=0, int pnum=0 )</p>
+<p class="MsoNormal">double bond_accint( )</p>
+<p class="MsoNormal">double bpx_to_yield( double price )</p>
+<p class="MsoNormal">double dis_to_frate( double input, double dcf )</p>
+<p class="MsoNormal">double effinp_on_gptposi( int gptposi )</p>
+<p class="MsoNormal">double spread_on_gptposi( int gptposi )</p>
+<p class="MsoNormal">double swap_rate( string curvename, string mat, bmo_vers="def" )</p>
+<p class="MsoNormal">double swapval( string date1, string date2, string curvename, int bmo=MID )</p>
+<p class="MsoNormal">double seasonal_value( string start_px_posi, double input )</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>9</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Various Environment Variables</p>
+<p class="MsoNormal">See <a href="OLF_Environment_Variables.htm">Environment Variables</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>10</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The following Instrument Type should not be used:&#160; Synthetic Composer.&#160;&#160; The “Syn” button on the Composer Deal Input Screen should not be used.&#160;</p>
+<p class="MsoNormal">See <a href="../Trading_Toolsets/TRADING_Toolset-COMPOSER.htm">Composer</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>11</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The ability to Auto Generation AVS on the Result Screen is not currently functional and should not be used.</p>
+<p class="MsoNormal">See <a href="../Trading_Manager/TRADING_Simulation_Results_Viewer.htm">Simulation Results Viewer</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>12</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Generic Blotter</p>
+<p class="MsoNormal">See <a href="../Trading_Manager/TRADING_Generic_Trade_Blotter.htm">Generic Blotter</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>13</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Time Zone field on the Hourly Historic Prices Screen.&#160; This was never functional. It has been removed in version 7.0r1 and up.</p>
+<p class="MsoNormal">See <a href="../Market_Manager/MARKET_View_Hourly_Historical_Prices.htm">Hourly Historic Prices</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>14</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Hedge Map Functionality.&#160; This can be found in the Simulation Results Viewer.</p>
+<p class="MsoNormal">See <a href="../Trading_Manager/TRADING_Simulation_Results_Viewer.htm">Simulation Results Viewer</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>15</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Transport Rate Functionality.</p>
+<p class="MsoNormal">See Transport Rate</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>16</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">These Instrument Types are in the database table “instruments’.&#160; However, they are not used by the system (versions 6.0 and up).&#160;&#160; They are in for instruments that were either never fully implemented or removed completely.&#160; You can’t enter new deals using these instruments at all, they don’t show up on any picklists.</p>
+<p class="MsoNormal">&#160;</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="558" style='width:418.7pt;border-collapse:collapse'>
+<tr style='height:12.75pt'>
+<td width="82" nowrap="nowrap" valign="bottom" style='width:.85in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Toolset</b></p>
+</td>
+<td width="169" nowrap="nowrap" valign="bottom" style='width:126.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Short Name</b></p>
+</td>
+<td width="47" nowrap="nowrap" valign="bottom" style='width:35.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>ID</b></p>
+</td>
+<td width="261" nowrap="nowrap" valign="bottom" style='width:195.7pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Long Name</b></p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-CALL-Q</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48540</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Call Quarterly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-CALL-W</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48520</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Call Weekly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-CALL-Y</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48550</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Call Yearly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">COMM-PHYS-LIM</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48015</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Physical Limit</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">COMM-SWAP</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48050</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Swap</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-PUT-Q</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48545</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Put Quarterly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-PUT-W</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48525</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Put Weekly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CO-PUT-Y</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>48555</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Commodity Option Put Yearly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-BD</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5061</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Barrier Rebate Option (down)</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-BU</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5060</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Barrier Rebate Option (up)</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DB</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5064</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Barrier Rebate Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DBR</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5065</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Barrier Range Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DI-C</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5046</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Down and In Call Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DI-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5047</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Down and In Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DKI-C</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5052</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Knock In Call Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DKI-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5053</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Knock In Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DKO-C</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5050</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Knock Out Call Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DKO-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5051</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Double Knock Out Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DO-C</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5044</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Down and Out Call Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-DO-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5045</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Down and Out Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-RD</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5063</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Single Barrier Range Option (down)</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-RU</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5062</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Single Barrier Range Option (up)</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-UI-C</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5042</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Up and In Call Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-UI-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5043</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Up and In Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FXO-UO-P</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>5041</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FX Up and Out Put Option</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">CAP-B</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>3027</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Barrier Cap</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FLR-B</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>3028</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Barrier Floor</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">PO-MS-CALL-Q</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>45123</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power Option Multi-Strike Call Quarterly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">PO-MS-CALL-Y</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>45115</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power Option Multi-Strike Call Yearly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">PO-MS-PUT-Q</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>45124</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power Option Multi-Strike Put Quarterly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">PO-MS-PUT-Y</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>45120</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Power Option Multi-Strike Put Yearly</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Repo</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FEE-O-BORROW</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>28012</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Fee Open Reverse Repo Borrow</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Repo</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">FEE-O-LEND</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>28011</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Fee Open Repo Lend</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Repo</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">SWITCH-O-FEE-PAY</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>28013</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Switch Open Repo Fee Pay</p>
+</td>
+</tr>
+<tr style='height:12.75pt'>
+<td nowrap="nowrap" valign="bottom" style='border:solid windowtext 1.0pt;border-top: none;padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Repo</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">SWITCH-O-FEE-RECEIVE</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal" align="right" style='text-align:right'>28014</p>
+</td>
+<td nowrap="nowrap" valign="bottom" style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:.7pt .7pt 0in .7pt;height:12.75pt'>
+<p class="MsoNormal">Switch Open Repo Fee Receive</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>17</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Certain Reset Conventions are in the system for Backward Compatibility and should not be used.&#160; They are</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style='border-collapse:collapse'>
+<tr>
+<td width="259" valign="top" style='width:194.05pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='margin-bottom:6.0pt;text-align:center'><b>Reset Convention</b></p>
+</td>
+</tr>
+<tr>
+<td width="259" valign="top" style='width:194.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Cal. Contract</p>
+</td>
+</tr>
+<tr>
+<td width="259" valign="top" style='width:194.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Contract Match</p>
+</td>
+</tr>
+<tr>
+<td width="259" valign="top" style='width:194.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Delivery Month Deferred</p>
+</td>
+</tr>
+<tr>
+<td width="259" valign="top" style='width:194.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" style='margin-bottom:6.0pt'>Xth</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>18</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The EOD Date functionally is included for backwards compatibility and should not be used by anybody.&#160; It does not work.&#160;</p>
+<p class="MsoNormal">You can see the “EOD Date” in the Operations Manager in the Roll System Dates module.<br />
+See <a href="../Operations_Manager/OPS_Roll_System_Dates.htm">Roll System Dates</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>19</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The database fields daily_volume.monthly_priced_volume and daily_volume_h.monthly_priced_volume should not be used.&#160; They are not populated in 6.0r2 and up.&#160; Even in older versions, they should not be used.</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>20</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The TRANF Tester/Viewer.&#160; This was accessible from the Trading Manager.&#160; New customers (those who started on V6.0 and higher) should not use this.&#160; Older client may enable this by setting AB_SHOW_TRANF_TEST to TRUE (This variable added November 10, 2004).</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>21</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The ticker file functionality (files ending in .tic) is not supported for new clients.&#160; This functionality is in the system for backwards compatibility.&#160; Here is the history:&#160; This functionality was added a very long time ago.&#160; At the time it was added, it worked with most deal types (Toolset/Instrument Types) in the system.&#160; However, as new Instrument Types, and Toolsets were added, the functionality to produce ticker files was not updated.&#160;&#160; Ticker files will get generated for most, if not all, toolsets, because it is generic code, but the files won’t make business sense in all cases, especially for the newer Toolsets/Instrument Types.&#160; This functionality has been replaced with the ability to run a Operation Services Post-processing script to write out a file with deal details.&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>22</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Setting environment variables that can be set in the <i>System Wide Configuration</i> module in a runscript is supported only for backwards compatibility.&#160;&#160;</p>
+<p class="MsoNormal">The settings that can be set in the <i>System Wide Configuration</i> screen are saved in the database.&#160; They can also be set in the runscript (batch file used to start the system).&#160; If they are set in the runscript, then they override whatever is set here.&#160; It is recommended that settings are set in this screen over the runscript, which is just supported for backwards compatibility.</p>
+<p class="MsoNormal">Some Environment Variables can only be set in the runscript.&#160; These are sometimes called “External System Wide Configuration” values.&#160; These are settings such as directory locations that would not be useful if saved in the database, because when the database is loaded in a different location, the directories may not exist.</p>
+<p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_Environment_Configuration.htm">System Wide Configuration</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>23</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Hedge Map functionality</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>24</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">This AVS Function TABLE_FormatDateInt has been replaced with DATE_FormatJd, which does the same thing, but has a clearer name.&#160;&#160; This is in V8 and up&#160; (DTS15208)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>25</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Accounting AOD functionality is included for Backwards Compatibility.&#160;&#160; This should not be used by anybody.&#160;&#160;&#160;</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>26</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Rate Schedules tab from the Commodity Delivery module (in the Admin Manager).&#160; This tab was never used and removed in version 7.0 and up.</p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>27</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">The Archive functionality.&#160; New clients should only use the Purge functionality and not the Archive functionality.&#160; The Archive functionality is hidden by default in Version 8.0 and up.</p>
+<p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_STATIC_Archive_Configuration.htm">Purge Configuration</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>28</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Operation Service Definition Types “EFP” and “Credit Update” were never implemented.&#160; They appeared in the pick-list in V7 and below, but didn’t work.&#160; They were removed under DTS12411 from the pick-list of definition types in V8.0 and able.&#160;</p>
+<p class="MsoNormal">See <a href="../Operations_Manager/OPS_Operation_Services_Definition.htm">Operation Services Definition</a></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>29</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Authorization Records (rows in table ab_tran with a&#160; tran_type = 1) should not be used by clients.&#160;</p>
+<p class="MsoNormal">Authorization Records are in the system for Backwards compatibility.&#160; They continue to be generated in Version 8.0, but users can disable them.&#160; The default for version 8.1 and up for the system is to not generate Authorization Records.&#160; Clients can generated Authorization Records even in V8.1 and up if needed.&#160; OpenLink recommends that clients do not generate Authorization Records. The system wide configuration variable is AB_SAVE_AUTH_RECORD_INTO_AB_TRAN.</p>
+<p class="MsoNormal">See <a href="OLF_Environment_Variables.htm">Environment Variables</a></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;</p>
+<h2>Partially Implemented Items</h2>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="605" style='width:453.8pt;border-collapse:collapse'>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="Figure" style='margin-bottom:6.0pt'><b>#</b></p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="Figure" style='margin-bottom:6.0pt'><b>Description</b></p>
+</td>
+</tr>
+<tr>
+<td width="33" valign="top" style='width:24.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="572" valign="top" style='width:429.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">These Instrument Types were only partially implemented and are not fully functional.&#160; Clients should not use them without getting explicit permission from OpenLink.</p>
+<p class="MsoNormal">&#160;</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="467" style='width:350.3pt;border-collapse:collapse'>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>#</b></p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Toolset</b></p>
+</td>
+<td width="220" valign="top" style='width:165.25pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'><b>Instrument Name</b></p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>1</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComOpt</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-EO-CALL-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>2</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComOpt</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-EO-CALL-P</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>3</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComOpt</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-EO-PUT-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>4</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">ComOpt</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-EO-PUT-P</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>5</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-FXO-C-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>6</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-FXO-C-P</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>7</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-FXO-P-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>8</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">FX-Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-FXO-P-P</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>9</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-IR-CAP-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>10</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-IR-CAP-P</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>11</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-IR-FLR-C</p>
+</td>
+</tr>
+<tr>
+<td width="26" valign="top" style='width:19.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal" align="center" style='text-align:center'>12</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Option</p>
+</td>
+<td width="220" valign="bottom" style='width:165.25pt;border-top:none; border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">C-IR-FLR-P</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>APM SP Manager</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nActive Position Manager (APM)\nAPM SP Manager");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Openlink_Desktop/OPENLINK_DESKTOP_Active_Position_Manager.htm\">Active Position Manager (APM)<\/a> &gt; APM SP Manager<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>APM SP Manager</h1>
+<p>APM Shared Pages allows clients to have a centrally managed collection 
+ of pages that are always online and ready to view by end-users. Certain 
+ organizations manage the pages for their users for internal/external regulatory, 
+ resource limitation, or process optimization reasons. Pageserver operations 
+ are offloaded to the server side therefore eliminating typical processes 
+ on the local machine. This can alleviate the memory and CPU load in virtualized 
+ environments such as Citrix where the resources are limited and shared 
+ among a group of users.</p>
+<p>Note: The feature name is APM_SHARED_PAGES. It has licensable feature 
+ data of Number of Pageservers. Default is 2. Please contact your account 
+ manager for additional information and reference documents.</p>
+<h1>Overview</h1>
+<p>The APM Shared Page Manager allows clients to add, remove, and manage 
+ their shared pages. There is an administration view – for administrators 
+ - and a read-only view – for general use, which are launched separately 
+ via the AFE services. This help topic addresses the administrative view.</p>
+<h2>Accessing this Window</h2>
+<p style="font-family: Calibri, sans-serif;">There are several different 
+ ways to access this window. One method is to select <span style="font-weight: bold;">Launch 
+ Available Services</span>, then enter the name of the service.</p>
+<p class="MSOLISTNUMBER2">1.<span style='word-spacing:normal; font:6.0pt "Times New Roman"'><font size="1" style="font-size:6pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span>From 
+ OpenLink Central, right-click anywhere on the header and select <b>Launch 
+ Available Services</b>. The <i>Launch Available Services</i> window displays.</p>
+<p class="MSOLISTNUMBER2">2.<span style='word-spacing:normal; font:6.0pt "Times New Roman"'><font size="1" style="font-size:6pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></span>Type 
+ <span style="font-weight: bold;">APM Shared Page Manager</span> in the 
+ <b>Filter Service</b> field, highlight <b>&#160;</b><span style="font-weight: bold;">APM 
+ Shared Page Manager</span> in the <i>Available Services</i> panel, and 
+ click <b>Launch</b>. The following window displays:</p>
+<p><img src="OLF_APM_SP_Manager_files/image001.jpg" alt="" style="border: none;" 
+		 border="0" /></p>
+<h2>Menu Items</h2>
+<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="107" bgcolor="#E0E0E0"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+												 text-align: center;"><b>Menu</b></p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120" bgcolor="#E0E0E0"><p 
+			 class="MsoNormal" style="margin-bottom: 6.0pt; text-align: center;"><b>Item</b></p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402" bgcolor="#E0E0E0"><p 
+			 class="MsoNormal" style="margin-bottom: 6.0pt; text-align: center;"><b>Description</b></p></td>
+	</tr>
+	<tr style="height: 49.9pt;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="67" width="107"><p 
+			 class="MsoNormal" style="margin: 0in; margin-bottom: .0001pt;"><b>File</b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="67" width="120"><p 
+			 class="MSONORMAL"><b>Reload</b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" height="67" width="402"><p 
+			 class="MsoNormal" style="margin-bottom: 6.0pt;">Reloads the 
+		 screen contents from the server..</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MSONORMAL" 
+			 style="font-family: Calibri, sans-serif; font-weight: bold;">Save 
+		 Window Location</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal" 
+			 style="margin-top: 3.0pt; margin-right: .7pt; margin-bottom: 5.0pt; 
+			 margin-left: 1.1pt;">Select this to save the current window 
+		 location.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MSONORMAL" 
+			 style="font-family: Calibri, sans-serif; font-weight: bold;">Delete 
+		 Saved Window Location</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal" 
+			 style="margin-top: 3.0pt; margin-right: .7pt; margin-bottom: 5.0pt; 
+			 margin-left: 1.1pt;">Select this to delete the saved window 
+		 location.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MSONORMAL" 
+			 style="font-family: Calibri, sans-serif; font-weight: bold;">Launch 
+		 Available Services (Ctrl+E)</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal" 
+			 style="line-height: 115%;">Select this button to view the 
+		 <i><a href="OLF_OpenLink_Central_Launch_Available_Service.htm">Launch 
+		 Available Services</a></i> window. This window allows the user 
+		 to launch a service, module or desktop in the system.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><b>Exit</b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal">Closes 
+		 the window.</p>
+		<p class="MsoNormal" style="margin-bottom: 6.0pt;">Any unsaved 
+		 modifications will be lost.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt; font-weight: bold;">Pages</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt; font-weight: bold;">Export Page 
+		 Definition</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">Exports the page definition 
+		 loaded in the window.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><b>Help</b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><b>Help </b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">Displays the system Help files.</p></td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="107"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;">&#160;</p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="120"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><b>About</b></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="402"><p class="MsoNormal">Opens 
+		 the <a href="OLF_About_Window.htm"><i>About</i></a> window, which 
+		 displays information about the system.</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<h3>Icons</h3>
+<p class="MsoNormal">This window contains the following icons:</p>
+<table class="MsoNormalTable" style="border-collapse: collapse;" cellspacing="0">
+	<tr style="height: 22px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="143" bgcolor="#E6E6E6"><p class="MsoNormal" style="margin-bottom: 6.0pt; 
+												 text-align: center; font-weight: bold;">Icon</p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447" bgcolor="#E6E6E6"><p 
+			 class="MsoNormal" style="margin-bottom: 6.0pt; text-align: center;"><b>Description</b></p></td>
+	</tr>
+	<tr style="height: 39px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><img src="OLF_APM_SP_Manager_files/image002.jpg" 
+												 alt="" style="border: none;" 
+												 border="0" /></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447">Saves 
+		 the configuration.</td>
+	</tr>
+	<tr style="height: 36px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><img src="OLF_APM_SP_Manager_files/image003.jpg" 
+												 alt="" style="border: none;" 
+												 border="0" /></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447"><p>Reloads 
+		 the screen contents from the server.</p></td>
+	</tr>
+	<tr style="height: 42px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><img src="OLF_APM_SP_Manager_files/image004.jpg" 
+												 alt="" style="border: none;" 
+												 border="0" /></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447">Adds 
+		 new page(s) to the collection. User can multi-select a group of 
+		 pages.</td>
+	</tr>
+	<tr style="height: 35px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p><img 
+		 src="OLF_APM_SP_Manager_files/image005.jpg" alt="" style="border: none;" 
+		 border="0" /></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447">Removes 
+		 page(s) from the screen. User can multi-select a group of pages. 
+		 The configuration must be saved for the removal to be applied.</td>
+	</tr>
+	<tr style="height: 32px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; 
+			 " width="143"><p class="MsoNormal" style="margin-bottom: 6.0pt;"><img 
+		 src="OLF_APM_SP_Manager_files/image006.jpg" alt="" style="border: none;" 
+		 border="0" /></p></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+			 padding-top: 0px; padding-right: 0px; padding-bottom: 0px; 
+			 " width="447"><p class="MsoNormal" style="margin-bottom: 3.0pt;">Put 
+		 page(s) online so that they can be viewed by the remote viewer.</p></td>
+	</tr>
+	<tr style="height: 34px;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="143"><p class="MsoNormal" 
+			 style="margin-bottom: 6.0pt;"><img src="OLF_APM_SP_Manager_files/image007.jpg" 
+												 alt="" style="border: none;" 
+												 border="0" /></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="447"><p class="MsoNormal" 
+			 style="margin-bottom: 3.0pt;">Put the page(s) offline. They 
+		 will no longer be viewable by users.</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

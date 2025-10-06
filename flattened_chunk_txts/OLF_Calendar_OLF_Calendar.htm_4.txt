@@ -1,0 +1,25 @@
+This chunk is from the HTML file: OLF_Calendar.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:.
+ Image file: OLF_Calendar_files/image004.jpg
+ Image description: a white and black pattern with a black and white stripe.
+ Image file: OLF_Calendar_files/image005.jpg
+ Image description: the logo for the new yorks.
+ Image file: OLF_Calendar_files/image006.jpg
+ Image description: the logo for the new business.
+ Image file: OLF_Calendar_files/image007.jpg
+ Image description: the logo for the new golf club.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Current Date | Displays the current date. |
+| Date Picker | This field allows the user to select the month to be viewed in the calendar.  The days of the month indicated in the field is the month that is displayed on the calendar.  Other months can be selected by clicking the arrows on either side of the month.  The arrow to the left displays the previous month, while the arrow on the left shows the next month. |
+| Holidays | A popup field containing a list of holiday schedules within the system. Select one or more holiday schedules from the popup list and click the OK button. The default value for this field isNo Holidays. |
+| Date Sequences | A popup field containing a list of date sequences available within the system. Select one or more date sequences from the pick list and click the OK button.  This list is displayed by right clicking on this field. |
+| Roll Conventions | Right clicking on this field displays a pick list containing a list of roll conventions available within the system. Select a roll convention from the popup list. The roll convention affects the date sequencing. |
+| Optional Fields(available if the environment variables set above are set to True) |
+|  | Check to display financial business days and actual days between the selected date and the current date. |
+|  | Check to display the Julian date in the Calendar window. |
+| Julian Date | Supply a Julian Date. For example, enter 39712 (for the date of 27-July-2008). |
+|  | Check to activate calendar jumps to supplied Julian Date and Date String dates. |
+| Date String | Supply a Date String. For example, enter 23-Sep-2008. Note that the corresponding Julian date will be displayed. |.

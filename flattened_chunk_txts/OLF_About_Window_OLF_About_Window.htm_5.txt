@@ -1,0 +1,35 @@
+This chunk is from the HTML file: OLF_About_Window.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Application Name | The module of the application. For example, “Master”. |
+| System Version/Tag | The version/tag of the software.Database Table.Column: version_number.code_tag |
+| Compiled | The date and time on which the build of the software was compiled. |
+| User | The name of the user currently logged on. |
+| License Type | The License Type of the user currently logged on. |
+| License Source | Identifies the location of the license key being used for the particular session. |
+| License Expiration Date | Displays the date when the license will expire, shown in the day-month-year format. |
+| Server/Database | Identifies the name of the server and the database running on the database server. |
+| Data Server Version | Identifies the version of the database running on the database server. |
+| Operating System | The operating system on which the software server is running. |
+| Code DB Schema Version | The version of the executable code. This is hard coded in the system. |
+| Database DB Schema Version | The version number of the database schema running on the database server. This is the table version_number. |
+| Hostname | The name of the machine on which the user is logged on. |
+| Memory Management | The tool OpenLink used to manage memory for the build of the software.  The default value in 6.0r2 and up is “Advanced” which indicates that system memory is being managed by a third party tool (on Windows). |
+| Processor Target | Identifies whether the software is built as 32 bit or 64 bit binaries.Available in V8.1r1 and above. |
+| Local Session Id/Global Session Id | Identifies the unique system identification numbers, local and/or global, for the currently running session.Renamed from “Session ID” in V10.0r2 and above. |
+| Session | The session of the current user.  This would normally be zero.  This could only be more than zero if a user has two sessions of the system running at the same time, something not supported in a production environment. |
+| Debug Level | The debug level set for the application. |
+| System Dates | The various dates set in the system.DateDescriptionCurrent DateDisplays the current date of the system.Business DateThe Business Date.Trading DateThe date to which deals will be booked in the system, as defined by the System Administrators.Processing DateThe Processing Date.EOD DateThe EOD Date. | Date | Description | Current Date | Displays the current date of the system. | Business Date | The Business Date. | Trading Date | The date to which deals will be booked in the system, as defined by the System Administrators. | Processing Date | The Processing Date. | EOD Date | The EOD Date. |
+| Date | Description |
+| Current Date | Displays the current date of the system. |
+| Business Date | The Business Date. |
+| Trading Date | The date to which deals will be booked in the system, as defined by the System Administrators. |
+| Processing Date | The Processing Date. |
+| EOD Date | The EOD Date. |
+| Site ID/Site Label | The default site number and label assigned to the Endur/Findur software in the Admin Manager. |
+| Messaging | Displays the type of messaging protocol and version currently in use by the System. |
+| GUI Type | The version of the GUI building tool used by OpenLink. |
+| Crystal Reports Version | The version of the Crystal Reports that is currently used by the system.This field is available in V10.0r2 and above. It replaces theCrystal Versionbutton found in earlier application versions. |.

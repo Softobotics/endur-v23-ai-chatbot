@@ -1,0 +1,25 @@
+This chunk is from the HTML file: OLF_Query_Manager_Additional_Query_Criteria.htm.
+ Section heading: Warning.
+ Text content: The from clause of the query gets dynamically 
+	 generated based on the information provided at the top of the query. 
+	 The Additional Query Criteria is not looked at by the system 
+	 in terms of it making a determination on which tables should go into 
+	 the from clause. In other words, if you want to use the Additional 
+	 Criteria functionality for Tran Info, you actually have to select 
+	 something from the Tran Info page. The tricky part is manually 
+	 selecting something that will not affect the query. For example, you 
+	 may be able to pick a Tran Info that has two possible values: Yes 
+	 and No , and manually select both (so that ab_tran_info gets into 
+	 the from clause) and then use the Additional Criteria panel, 
+	 located at the bottom of the window, to specify what you need for 
+	 another Tran Info. Remember that all tran 
+	 info is stored in the database as strings, so the query cannot look 
+	 for numbers greater than 0 using where 
+	 abc_tran_info > 0 . The original reasons for dynamically generating 
+	 the from clause as needed is: · Better 
+	 performance · There 
+	 is a limit as to the number of joins that can be done in SQL As a potential solution to the issue of not having 
+	 a needed table in the from clause, you can try a "correlated 
+	 subquery".  For example, you could use something like 
+	 this in the additional query where clause: exists (select * from new_table where new_table.column=ab_tran.tran_num 
+	 and new_table.value = 19).

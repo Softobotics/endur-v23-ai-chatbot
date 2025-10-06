@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Plugin_Script_Bulk_Export.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window can be accessed via multiple paths in the system. Listed below are two options: 1. Select the System Administration tab from Admin Manager. 2. Select the Plugin Bulk Export icon. or 1. Open the Trading Manager. 2. Select Script à Script Editor . The Script Editor window displays. 3. Select File à Bulk Export. The following window displays: .
+ Image file: OLF_AVS_Plugin_Script_Bulk_Export_files/image001.jpg
+ Image description: the settings dial in the settings dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

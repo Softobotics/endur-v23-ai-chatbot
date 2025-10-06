@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>How to Query by Multiple Toolsets</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nQuery Manager\nHow To\nHow to Query by Multiple Toolsets");
+addAvenueInfo("System Use","OLF/How_to_Query_by_Multiple_Criteria_Using_the_And_Condition.htm","OLF/How_to_Query_Using_Multi_Value_Editor.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Query_Manager.htm\">Query Manager<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"How_to_Create_a_New_Query_view.htm\">How To<\/a> &gt; How to Query by Multiple Toolsets<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>How To Query by Multiple Toolsets</h1>
+	<p class="MsoNormal">In this example, create a query to search for 
+	 all <b>ComSwap</b> or <b>Swap</b> deals. By choosing two toolsets, 
+	 we are making an “<i>or”</i> conditional. An “<i>or”</i> conditional 
+	 indicates that the user made multiple selections in a single row.</p>
+	<p class="MsoNormal">The following example brings back <b>Swap</b> 
+	 <b>or</b> <b>ComSwap</b> transactions with a status of <b>Validated</b>.</p>
+	<p class="MsoNormal">To run a query:</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">1.<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Click 
+	 the <b>Query</b> icon <span><img src="How_to_Query_by_Multiple_Toolsets_files/image006.jpg" 
+										 alt="" style="border: none;" border="0" /></span> 
+	 from the menu. The <i>Trades Query</i> window displays with a previously-saved 
+	 query view.</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">2.<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Click 
+	 the <b>New Query</b> icon <img id="Picture 1" src="How_to_Query_by_Multiple_Toolsets_files/image002.jpg" 
+									 alt="" name="Picture 1" width="16" 
+									 height="18" border="0" />, or select 
+	 <b>File</b><b><span style='font-family:Wingdings'>&agrave;</span>New Query</b> 
+	 from the main menu.</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">3.<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Ensure 
+	 <b>Transaction</b> is displayed in the <b>Query View</b> field located 
+	 at the top right-hand side of the panel. This is because the selections 
+	 for this query are located in the Transaction table.</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">&#160;</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt; margin-left: 24px;"><span><img 
+	 src="How_to_Query_by_Multiple_Toolsets_files/image007.jpg" alt="" 
+	 style="border: none;" border="0" /></span></p>
+	<p class="FigPar">&#160;</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">4.<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Go 
+	 to the <b>ToolSet</b> field and right-click in the <b>Selected Values</b> 
+	 column to display the pick list. Select <b>Swaps</b> and <b>ComSwap</b>, 
+	 and then click the <b>OK</b> button.</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">&#160;</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt; margin-left: 24px;"><span><img 
+	 src="How_to_Query_by_Multiple_Toolsets_files/image008.jpg" alt="" 
+	 style="border: none;" border="0" /></span></p>
+	<p class="FigPar">&#160;</p>
+	<p class="MsoListContinue2">Hover over the <b>ToolSet</b> field to 
+	 see the snippet that indicates that the system sees this as an “or” 
+	 conditional.</p>
+	<p class="MsoListContinue2">&#160;</p>
+	<p class="MsoListContinue2" style="margin-left: 24px;"><span><img src="How_to_Query_by_Multiple_Toolsets_files/image009.jpg" 
+	 alt="" style="border: none;" border="0" /></span></p>
+	<p class="MsoListContinue2">&#160;</p>
+	<p class="MsoListNumber2" style="margin-bottom: 3.0pt;">5.<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Execute 
+	 the query by clicking the <b>Execute and Close</b> button. The query 
+	 results display.</p>
+	<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

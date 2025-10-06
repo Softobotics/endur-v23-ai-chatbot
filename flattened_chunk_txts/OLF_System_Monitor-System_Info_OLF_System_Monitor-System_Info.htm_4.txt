@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_System_Monitor-System_Info.htm.
+ Section heading: Fields.
+ Text content: This window contains the information as the “About” window. See About .
+ 
+Links to other files: OLF_About_Window.htm.

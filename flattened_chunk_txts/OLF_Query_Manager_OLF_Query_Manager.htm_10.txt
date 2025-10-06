@@ -1,0 +1,39 @@
+This chunk is from the HTML file: OLF_Query_Manager.htm.
+ Section heading: Query Entries.
+ Text content: The 
+	 following table summarizes options that can be used when creating 
+	 queries. .
+ Table data: 
+| Query Entry Option | Description |
+| --- | --- |
+| British Pound/European 
+			 Euro | Query Manager supports the ability to 
+			 query for strings that begin with the following Unicode characters:£(British Pound)€(European Euro)¥(Yen) |
+| Comma-Delimited 
+			 String | Comma-delimited 
+			 strings can be used in specific fields. Integer and Format 
+			 Ref Integer fields allow pasting of comma-delimited strings.Entering Comma-Delimited Strings1.Enter 
+			 a comma-delimited string in theDealNumfield such 
+			 as 1,4,2,5.2.Press 
+			 theEnterkey. The text will populate in the correct 
+			 fields. Each comma-separated value displays in a different 
+			 adjacent cell.3.Insert 
+			 a new number in column 6. It should display in column 5 because 
+			 new values are shifted over any unused columns.4.Insert 
+			 a value of (77,88) into column 3. It should start in column 
+			 3 and have the next value (88) put into column 4.Pasting Comma-Delimited Strings1.OpenNotepadand enter the following string there: 1,2,3,4 
+			 orOpen Excel and input 1 2 3 4 across the 
+			 first four columns. Then copy your data to the buffer (Ctrl-c).2.Click 
+			 on the first column of theDealNumfield in the Query 
+			 Manager and pressCtrl-v. If using Excel, commas are 
+			 automatically added.3.Press 
+			 theEnterkey. The text is populated across the query 
+			 table. |
+| Strings/Sub-Strings | Strings 
+			 or sub-strings may be enclosed in single or double quotes. 
+			 Characters may be escaped using a backslash.1.EnterAmended, Deletedinto the first column ofTranStatus.2.Press 
+			 theEnterkey. The text values are spread into the 
+			 cells. |
+| Symbolic Dates | Symbolic date variables can now be used 
+			 in a database query. |
+| Date Formats | Dates can be formatted as dd-mm-yyyy. |.

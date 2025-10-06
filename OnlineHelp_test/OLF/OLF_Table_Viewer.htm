@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Table Viewer</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nTable Viewer\nTable Viewer");
+addAvenueInfo("System Use","OLF/How_To_Reset_Query_Result_Unique_ID.htm","OLF/OLF_Toolbar_Area_Config_Menu.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Table_Viewer.htm\">Table Viewer<\/a> &gt; Table Viewer<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1>Table Viewer</h1>
+	<h2>Overview</h2>
+	<p>The <i>Table Viewer</i> is a uniform interface with standard user-configurable 
+	 features for table viewing. Different modules within the system use 
+	 the <i>Table Viewer</i> to display data. Its layout is in the form 
+	 of a table, with a number of labeled columns, each representing a 
+	 data field, and a number of rows, each representing a data record. 
+	 The manner in which information is displayed may be changed through 
+	 the <i><a href="OLF_Configure_View.htm">Configure View</a></i> menu 
+	 functionality.</p>
+	<p>The <span style="font-style: italic;"><i>Table Viewer</i></span><span> 
+	 grid does not have a defined limit but it is limited by the amount 
+	 of memory on a user's machine.</span></p>
+	<h2>Accessing This Window/Screen</h2>
+	<p>This window is utilized by various functionalities in the system. 
+	 For illustration purposes, the following is an example of how it can 
+	 be accessed:</p>
+	<ol style="list-style: decimal;">
+		<li class="ListNumber1">Launch the <span style="font-style: italic;"><i>Market 
+		 Manager</i></span>.</li>
+		<li class="ListNumber1">Select <span style="font-weight: bold;">Misc</span><b><span 
+		 style="font-family: Wingdings;">à</span> Registered Pricing Models</b>.</li>
+	</ol>
+	<p>The following window displays:</p>
+	<p class="MsoNormal"><img src="OLF_Table_Viewer_files/image005.jpg" 
+								 alt="" style="border: none;" border="0" /></p>
+	<p class="MsoNormal">&#160;</p>
+	<h3>Menu Items</h3>
+	<p>This menu items available in each <span style="font-style: italic;"><i>Table 
+	 Viewer</i></span><span> window may vary depending upon from which window 
+	 they are accessed. The window provided in this example contains the 
+	 menu items listed below. Please note this may not be a comprehensive 
+	 list of Table Viewer menu options.</span></p>
+	<table class="OH_Table_2-Col-Bold" cellspacing="0px" width="100%">
+		<col style="width: 18.574%;" />
+		<col style="width: 26.354%;" />
+		<col style="width: 55.072%;" />
+		<tr class="t1st">
+			<td><p class="TABLEHEADER">Menu</p></td>
+			<td><p class="TABLEHEADER">Item</p></td>
+			<td><p class="TABLEHEADER">Description</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">File</td>
+			<td class="t2Col">Save Configuration</td>
+			<td class="t3Col">Select this menu to save modifications made 
+			 to the configuration currently loaded on the screen. If a 
+			 user-defined configuration is not loaded, the configuration 
+			 is saved to the system default configuration.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Load Configuration</td>
+			<td class="t3Col">Select this menu to view a pick list of saved 
+			 configurations. The pick list contains both user-defined configurations 
+			 and a default configuration, if designated. Select the configuration 
+			 to be loaded. 
+			<br />User-defined configurations are created in 
+			 the <span style="font-style: italic;"><i><a href="OLF_Configure_View.htm">Configure 
+			 View</a> </i></span><span>window.</span> 
+			<br /><span style="font-weight: bold;">Note:</span><span> 
+			 This functionality differs from the </span><span style="font-weight: bold;">Load</span><span> 
+			 menu item in the </span><span style="font-style: italic;"><i>Configure 
+			 View</i></span><span> window, which only allows named configurations 
+			 to be loaded, not the default.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Print</td>
+			<td class="t3Col">Select this option to save the window as 
+			 an output report. The options to print a physical copy or 
+			 view the file are provided.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Copy Window</td>
+			<td class="t3Col">Select this menu to open another instance 
+			 of the <span style="font-style: italic;"><i>Table Viewer&#160;</i></span><span>window 
+			 containing the same information as the original window.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Export to Text File</td>
+			<td class="t3Col">Select this option to export the content 
+			 of the table to a file in comma-separated format.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Export to XML File</td>
+			<td class="t3Col">Select this option to export the contents 
+			 of the table to a file in XML format.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Exit</td>
+			<td class="t3Col">Select this menu to close the window.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">Edit</td>
+			<td class="t2Col">Copy</td>
+			<td class="t3Col">Select this option to copy the highlighted 
+			 rows to the Windows clipboard. These rows can then be pasted 
+			 into other Windows applications.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Select All</td>
+			<td class="t3Col">This option can be used to select all rows 
+			 in the <span style="font-style: italic;"><i>Table Viewer</i></span><span> 
+			 window.</span></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">Format</td>
+			<td class="t2Col">Toggle Formatting &lt;F4&gt;</td>
+			<td class="t3Col">Select this option to change the format of 
+			 the data from its alias to the actual value stored in the 
+			 database, and vice versa. 
+			<br />For example, the <span style="font-weight: bold;">Uses 
+			 Volatility</span><span> field displays </span><span style="font-weight: bold;">Yes</span><span> 
+			 or </span><span style="font-weight: bold;">No</span><span>. 
+			 When the field formatting is toggled to display the alias, 
+			 the column will display the actual values stored in the database, 
+			 1 for </span><span style="font-weight: bold;">Yes</span><span> 
+			 and 0 for </span><span style="font-weight: bold;">No</span><span>.</span> 
+			 
+			<br /><span>Select this option again to revert 
+			 the data to its alias.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Auto-Size &lt;F2&gt;</td>
+			<td class="t3Col">Select this option to adjust the width of 
+			 each column to fit the data.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Toggle Row Header &lt;F5&gt;</td>
+			<td class="t3Col">Select this menu to display or hid the row 
+			 header.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Default Formatting &lt;F9&gt;</td>
+			<td class="t3Col">Select this option to apply the system default 
+			 formatting.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">Configure</td>
+			<td class="t2Col">Configure</td>
+			<td class="t3Col">Select this option to open the <span style="font-style: italic;"><i><a 
+			 href="OLF_Configuration.htm">Grid Configuration</a> </i></span><span>window. 
+			 This window may be used to customize how the data table is 
+			 displayed.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">Reporting</td>
+			<td class="t2Col">Script <b><span style="font-family: Wingdings;">à</span></b> 
+			 Run Script</td>
+			<td class="t3Col">When this option is selected, the <span style="font-style: italic;"><i>Run 
+			 AVS Script</i></span> window displays. This window is used to 
+			 select the script to run and the columns (i.e., fields) that 
+			 will be passed as arguments to the selected script.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col"><p>Script Run <b><span style="font-family: Wingdings;">à 
+			 </span></b>Task</p></td>
+			<td class="t3Col">When this option is selected, the <span style="font-style: italic;"><i>Run 
+			 AVS Script window</i></span> displays. This window is used to 
+			 select the task to run and the columns that will be passed 
+			 as arguments to the script that will be run by the task.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Crystal <b><span style="font-family: Wingdings;">à</span><span 
+			 style="font-family: Calibri, sans-serif;"> Crystal Ad Hoc</span></b></td>
+			<td class="t3Col">Select this option to send the contents of 
+			 the table to the selected Crystal Report template. A file 
+			 browser displays, allowing for the selection of the template 
+			 of the Crystal Report that will be generated.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Crystal <b><span style="font-family: Wingdings;">à</span><span 
+			 style="font-family: Calibri, sans-serif;"> Export to Ttx</span></b></td>
+			<td class="t3Col">Select this option to export a file containing 
+			 the format of the table for the use of Crystal Reports.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Publish</td>
+			<td class="t3Col">Select this menu to collect the table data 
+			 and send it across <span>Tibco Rendezvous</span>. This functionality 
+			 is provided for connectivity to 3rd party systems that can 
+			 also communicate with Tibco Rendezvous. Customers can create 
+			 a report “listener” that can subscribe to the Tibco Message 
+			 and receive the data once “published.”</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Pivot Table</td>
+			<td class="t3Col">Select this option to access the <span style="font-style: italic;"><i><a 
+			 href="OLF_Pivot_Table.htm">Pivot Table Setup</a></i></span> window. 
+			 This window can be used to create a pivot table using the 
+			 fields in the <span style="font-style: italic;"><i>Table Viewer</i></span> 
+			 window.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">MS Excel</td>
+			<td class="t3Col"><p>When this option is selected, the <span 
+			 style="font-style: italic;"><i><a href="OLF_Excel_Interface.htm">Excel 
+			 Interface</a></i></span> window displays. This window is used 
+			 to export data in the <span style="font-style: italic;"><i>Table 
+			 Viewer</i></span> window to a new, open, or existing Excel workbook.</p>
+			<p><span style="font-weight: bold;">Note:</span> This functionality 
+			 requires a local machine installation of Excel. This functionality 
+			 looks at values in the user’s local registry. If Excel is 
+			 not installed locally, or it &#160;is installed across a network, 
+			 this will not work.</p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">View</td>
+			<td class="t2Col">All Rows</td>
+			<td class="t3Col">When this option is selected, all rows (e.g., 
+			 data and sum rows) display in the table. This option is selected 
+			 by default.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Sum Rows</td>
+			<td class="t3Col">Select this option to only display sum rows 
+			 in the table. Sum rows only display if a sum break is defined 
+			 in the <span style="font-style: italic;"><i>Configure View</i></span>.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Data Rows</td>
+			<td class="t3Col">Select this menu to only display the data 
+			 rows in the table.</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">&#160;</td>
+			<td class="t2Col">Show Table Info</td>
+			<td class="t3Col">Select this option to display a window containing 
+			 information about the table such as name, date and time of 
+			 last update, number of columns, and number of rows.</td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">Search</td>
+			<td class="t2Col">Find &lt;F3&gt;</td>
+			<td class="t3Col">Select this option to display the <span style="font-style: italic;"><i><a 
+			 href="OLF_Search_Window.htm">Search</a></i></span><span> window. 
+			 This window is used to perform a search of the table data. 
+			 It also enables the specification of the columns to be searched.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">Help</td>
+			<td class="t2Col">Help</td>
+			<td class="t3Col">Select this to access the system help files.</td>
+		</tr>
+	</table>
+	<p>&#160;</p>
+	<h3>Buttons</h3>
+	<p>The buttons available in each <span style="font-style: italic;"><i>Table 
+	 Viewer</i></span> window may vary depending upon from which window they 
+	 are accessed. &#160;Typically, the window contains at least a <span 
+	 style="font-weight: bold;">Print</span> button.</p>
+	<table class="OH_Table_2-Col-Bold" cellspacing="0px" width="100%">
+		<col style="width: 31.579%;" />
+		<col style="width: 68.421%;" />
+		<tr class="t1st">
+			<td><p class="TABLEHEADER">Button</p></td>
+			<td><p class="TABLEHEADER">Description</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st"><img src="OLF_Table_Viewer_files/image007.jpg" 
+									 alt="" style="border: none;" border="0" /></td>
+			<td class="t2Col"><span style="font-weight: normal;">This button 
+			 has the same functionality as </span><span>File </span><b><span 
+			 style="font-family: Wingdings;">à </span></b><span>Print</span><span 
+			 style="font-weight: normal;">.</span></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st"><img src="OLF_Table_Viewer_files/image006.jpg" 
+									 alt="" style="border: none;" border="0" /></td>
+			<td class="t2Col"><p style="font-weight: normal;">This symbol 
+			 indicates that a table with data relevant to the field is 
+			 available.</p>
+			<p style="font-weight: normal;">When displayed in a column, 
+			 double click to open the table.</p></td>
+		</tr>
+	</table>
+	<p>&#160;</p>
+	<h3>Fields</h3>
+	<p>The fields contained in this window depend on the functionality 
+	 from which this window was accessed.</p>
+	<h3>Function Keys</h3>
+	<p class="MsoNormal">This window utilizes the following function keys:</p>
+	<table class="OH_Table_1-Col-Bold" cellspacing="0px" width="100%">
+		<col style="width: 31.922%;" />
+		<col style="width: 68.078%;" />
+		<tr class="t1st">
+			<td>Key</td>
+			<td>Description</td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">F2</td>
+			<td>This has the same functionality as <span style="font-weight: bold;">Format 
+			 </span><b><span style="font-family: Wingdings;">à</span></b><span 
+			 style="font-weight: bold;"> Auto-Size</span></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">F3</td>
+			<td>This has the same functionality as <span style="font-weight: bold;">Search 
+			 </span><b><span style="font-family: Wingdings;">à </span></b><span 
+			 style="font-weight: bold;">Find.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">F4</td>
+			<td>This has the same functionality as <span style="font-weight: bold;">Format 
+			 </span><b><span style="font-family: Wingdings;">à </span></b><span 
+			 style="font-weight: bold;">Toggle Formatting.</span></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st">F5</td>
+			<td>This has the same functionality as <span style="font-weight: bold;">Format 
+			 </span><b><span style="font-family: Wingdings;">à </span></b><span 
+			 style="font-weight: bold;">Toggle Row Header.</span></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st">F9</td>
+			<td>This has the same functionality as <span style="font-weight: bold;">Format 
+			 </span><b><span style="font-family: Wingdings;">à </span></b><span 
+			 style="font-weight: bold;">Default Formatting.</span></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+	<h3>Column Header Menu Items</h3>
+	<p>Right-clicking any column header of the table displays the <i><a 
+	 href="OLF_Column_Header_Menu.htm">Column Header Menu</a></i>.</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

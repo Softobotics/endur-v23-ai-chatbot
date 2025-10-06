@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Toolbar_Configuration.htm.
+ Section heading: Overview.
+ Text content: The Toolbar Configuration window allows the user to change the configuration of the toolbar, e.g., modify the configuration of the toolbar icons; import, export, display, hide, and create new panels on the toolbar; and add or remove toolbar icons from a toolbar panel.  See Toolbar Area Configuration Menu .
+ 
+Links to other files: OLF_Toolbar_Area_Config_Menu.htm.

@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Open_From_Directory_Browser.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Select File à Query . The Trading Query displays. 3. Click the Open Query From Browser icon . 4. The following window displays:   .
+ Image file: OLF_Open_From_Directory_Browser_files/image001.jpg
+ Image description: a white and black clock with a green face.
+ Image file: OLF_Open_From_Directory_Browser_files/image002.jpg
+ Image description: the screenshote screen with the options dial.

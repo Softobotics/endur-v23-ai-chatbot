@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>System Refresh</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body lang="EN-US" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nSystem Refresh");
+addAvenueInfo("System Use","OLF/OLF_Symbolic_Dates.htm","OLF/OLF_Trading_and_Risk_Management.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; System Refresh<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<div class="WordSection1">
+	<h1><span style="color: windowtext;">OpenLink System Refresh</span></h1>
+	<h2>Overview</h2>
+	<p>This document describes the ability of OpenLink Endur/Findur to 
+	 ensure that it uses the most current data.&#160;&#160;This functionality 
+	 differs from version to version in terms of the features, the setup 
+	 requirements, and the underlying technology.</p>
+	<h2>Approaches To Data Access</h2>
+	<p>One approach to data access is to always load data as needed from 
+	 the central data store, the database.&#160;&#160;This is a simple 
+	 approach and it ensures data is up to date at all times, but it is 
+	 very bad in terms of performance.&#160;&#160;An alternative to this 
+	 approach is to implement a data caching functionality.&#160;&#160;A 
+	 data cache is data kept in local memory for when it will be needed 
+	 in the future.&#160;&#160;Accessing data from local memory is faster 
+	 than accessing the same data from the database.&#160;&#160;&#160;Data 
+	 retrieved from the database involves a network message to be sent 
+	 to and from the database, which is a delay.&#160;&#160;Also, because 
+	 of the shared nature of the database resource, it is advisable to 
+	 limit hits to the database and a data cache helps with this.</p>
+	<p>In the simplest case, pick list data does not change.&#160;&#160;For 
+	 example, if you have a pick list with just two values of “Yes” and 
+	 “No” and the user can’t add more values.&#160;&#160;For the simplest 
+	 case, a system could load all data at startup into the cache and never 
+	 need to worry that the cache is out of date.&#160;&#160;In a more 
+	 complicated case, you may have a pick list, such as the counterparty 
+	 pick list, where users can add additional values.&#160;&#160;Without 
+	 special functionality to know about changes, a cache can become out 
+	 of date, in other words, hold a copy of older information.</p>
+	<h2>Data Caching Mechanisms in Endur/Findur</h2>
+	<p>All versions of the Endur/Findur have some kind of data caching.&#160;&#160;In 
+	 earlier versions, this cache is called Shared Memory.&#160;&#160;In 
+	 later versions this technology is called the Cache Engine, which has 
+	 several important features that Shared Memory lacked.&#160;&#160;It 
+	 is more efficient because it only loads data when needed.&#160;&#160;Also, 
+	 it can add memory dynamically as needed, while Shared Memory was limited 
+	 to a predefined amount.</p>
+	<table class="OH_Table_1-Col-Bold" style="margin-left: 5.4pt; border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="144" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Version</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="204" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Usage 
+			 of Shared Memory</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="235" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Usage 
+			 of Cache Engine</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="TableText">6.0 and below</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="204"><p 
+				 class="TableText">All data is stored in Shared Memory</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="235"><p 
+				 class="TableText">Not applicable</p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="TableText">7.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="204"><p 
+				 class="TableText">Indexes, Volatilities and Correlation 
+			 are stored in Shared Memory</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="235"><p 
+				 class="TableText">Static data pick lists, such as the 
+			 counterparty pick list, are stored in the Cache Engine</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="TableText">8.0 and up</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="204"><p 
+				 class="TableText">Shared Memory has been removed entirely</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="235"><p 
+				 class="TableText">All data is stored in the Cache Engine</p></td>
+		</tr>
+	</table>
+	<p>&#160;</p>
+	<p>The Cache Engine works like this:</p>
+	<ul style="margin-top: 0in; list-style: disc;">
+		<li class="ListBullet">When data is needed, the system always checks 
+		 the Cache Engine to get the data.</li>
+		<li class="ListBullet">If the data was never loaded into the data 
+		 cache, or if it has been invalidated, then the Cache Engine retrieves 
+		 the data from the database and delivers it to the requestor.&#160;&#160;The 
+		 Cache Engine also adds the data to its cache for future requests</li>
+		<li class="ListBullet">The Cache Engine invalidates data when it 
+		 receives notice that the data has been updated (so any cached 
+		 data would be out of date).</li>
+	</ul>
+	<h2>Data Cache Functionality By Version</h2>
+	<table class="OH_Table_1-Col-Bold" style="margin-left: 5.4pt; border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="252" 
+				 bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>Feature/Functionality</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>V6.0</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>V7.0</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="108" bgcolor="#E6E6E6"><p class="TABLEHEADER"><b>V8.0</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">Has the ability to cache 
+			 Static Data</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">Has the ability to cache 
+			 Indexes/Vols/Correls</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">Static Data pick lists 
+			 are loaded dynamically only when needed</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">Can view data stored 
+			 in the data cache in the System Monitor</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">Indexes/Vols/Correls 
+			 are loaded dynamically only when needed</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">No manual refreshes or 
+			 any special considerations&#160;&#160;required when another 
+			 user modifies/adds Static Data</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText">&#160;</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="252"><p class="TableText">No manual refreshes or 
+			 any special considerations&#160;&#160;required when another 
+			 user modifies/adds Indexes/Vols/Correls.&#160;</p>
+			<p class="TableText">In V7.0 and below, ANE (Automatic Notification 
+			 Engine) is required to update other users.&#160;&#160;In 8.0 
+			 and above, updates are automatic and don’t require ANE to 
+			 be running.</p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b 
+			 style="font-weight: normal;">Partial</b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b 
+			 style="font-weight: normal;">Partial</b></p></td>
+			<td style="border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; 
+				 border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; 
+				 padding-left: 0px; padding-top: 0px; padding-right: 0px; 
+				 padding-bottom: 0px;" width="108"><p class="TableText"><b><span 
+			 style="font-weight: normal;">Ö</span></b></p></td>
+		</tr>
+	</table>
+	<h2>Notes About ANE</h2>
+	<p>ANE is used by the system in all versions for</p>
+	<ul style="margin-top: 0in; list-style: disc;">
+		<li class="ListBullet">The Power Position Page</li>
+		<li class="ListBullet">Power Scheduling Updates</li>
+	</ul>
+	<p>So a client that uses and of the above modules must run ANE in all 
+	 versions.</p>
+	<p>&#160;</p>
+	<p>ANE is also used to automatically update</p>
+	<ul style="margin-top: 0in; list-style: disc;">
+		<li class="ListBullet">The Browser in the Trading Manager</li>
+		<li class="ListBullet">The Listing Panel of the Trade Blotter</li>
+	</ul>
+	<p>Having these modules auto-update is optional and clients using these 
+	 may choose to not run ANE.&#160;&#160;They would just need to manually 
+	 refresh queries as needed.</p>
+	<p>&#160;</p>
+	<p>In V7.0 and below, ANE is used to update market data (such as prices/rates) 
+	 on other user’s machines when these are changed.&#160;&#160;This updating 
+	 is optional and clients not wanting to take advantage of this feature 
+	 would not need to run ANE.&#160;&#160;Clients would just need to manually 
+	 reload data as needed.&#160;&#160;In V8.0, this is was redesigned 
+	 to that the Cache Engine automatically updates market data without 
+	 the need for running ANE.&#160;&#160;&#160;<i>Note: This is tentatively 
+	 planned as of November 16, 2004 and expected to make it into V8.0, 
+	 but it is not in V8.0 yet.&#160;&#160;So as of November 16, 2004 users 
+	 still need to use the V7.0 method.</i></p>
+	<h2>Data Loading Scenarios By Version</h2>
+	<p>There are four scenarios covered</p>
+	<ul style="list-style: disc;">
+		<li class="ListBullet">Local (Same Machine) Changes</li>
+		<li class="ListBullet">Remote (Other User/Machine) Changes</li>
+		<li class="ListBullet">Local (Same Machine) Adds New Data</li>
+		<li class="ListBullet">Remote (Other User/Machine) Adds New Data</li>
+	</ul>
+	<h3>Local (Same Machine) Changes</h3>
+	<table class="OH_Table_1-Col-Bold" style="border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="83"><p 
+				 class="TABLEHEADER"><b>Version</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Change an existing 
+			 Static Data value</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Change an existing 
+			 Index/Vol/Correl definition</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V6.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">The change takes affect within the module 
+			 (e.g., the Admin Manager).&#160;&#160;For other modules, users 
+			 needs to either log out and log back in or push the static 
+			 data refresh button.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated with no special effort/considerations.</p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V7.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated with no special effort/considerations.</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V8.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+		</tr>
+	</table>
+	<h3>&#160;</h3>
+	<h3>Remote (Other User/Machine) Changes</h3>
+	<table class="OH_Table_1-Col-Bold" style="border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="83"><p 
+				 class="TABLEHEADER"><b>Version</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Change an existing 
+			 Static Data value</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Change an existing 
+			 Index/Vol/Correl definition</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V6.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;AVS 
+			 scripts can force a full refresh using the function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><ol 
+					 style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">Users can 
+				 force a refresh by loading all indexes, ect. in the Market 
+				 Manager using these menu items:</p></li>
+			</ol>
+			<ul style="list-style: disc;">
+				<li class="ListBullet"><p class="ListContinue2">Price/Rate 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+				<li class="ListBullet"><p class="ListContinue2">Volatility 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+				<li class="ListBullet"><p class="ListContinue2">Volatility 
+				 <span style="font-family: Wingdings;">à</span>&#160;&#160;Correlation 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+			</ul>
+			<ol start="2" style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">AVS scripts 
+				 can force a full refresh using the function MKTD_LoadAllMktd.</p></li>
+			</ol>
+			<ol start="3" style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">The ANE 
+				 (Automatic Notification Engine) allows for automatic refreshes 
+				 by communication to all users when the version number 
+				 of an Index changes.&#160;&#160;The system knows to reload 
+				 the index when next needed.&#160;&#160;ANE must be running 
+				 for this to happen.</p></li>
+			</ol></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V7.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;AVS 
+			 scripts can force a full refresh using the function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><ol 
+					 style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">Users can 
+				 force a refresh by loading all indexes, ect. in the Market 
+				 Manager using these menu items:</p></li>
+			</ol>
+			<ul style="list-style: disc;">
+				<li class="ListBullet"><p class="TableText">Price/Rate 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+				<li class="ListBullet"><p class="TableText">Volatility 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+				<li class="ListBullet"><p class="TableText">Volatility 
+				 <span style="font-family: Wingdings;">à</span>&#160;&#160;Correlation 
+				 <span style="font-family: Wingdings;">à</span> Load Universal</p></li>
+			</ul>
+			<ol start="2" style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">AVS scripts 
+				 can force a full refresh using the function MKTD_LoadAllMktd.</p></li>
+			</ol>
+			<ol start="3" style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">The ANE 
+				 (Automatic Notification Engine) allows for automatic refreshes 
+				 by communication to all users when the version number 
+				 of an Index changes.&#160;&#160;The system knows to reload 
+				 the index when next needed.&#160;&#160;ANE must be running 
+				 for this to happen.</p></li>
+			</ol></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V8.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations if at least one of the 
+			 following is true:</p>
+			<ol style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">The Environment 
+				 Variable AB_CE_ACCEPT_EXTERNAL_ INVALIDATES is set to 
+				 a non-zero value.</p></li>
+				<li class="OH_ListNumber"><p class="TableText">The instance 
+				 of the system is configured to have a run site.</p></li>
+			</ol></td>
+		</tr>
+	</table>
+	<h3>&#160;</h3>
+	<h3>Local (Same Machine) Adds New Data</h3>
+	<table class="OH_Table_1-Col-Bold" style="border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="83"><p 
+				 class="TABLEHEADER"><b>Version</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Adds New Static 
+			 Data value</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Adds New Index/Vol/Correl 
+			 definition</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V6.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated with no special effort/considerations.</p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V7.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated with no special effort/considerations.</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V8.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+		</tr>
+	</table>
+	<h3>&#160;</h3>
+	<h3>Remote (Other User/Machine) Adds New Data</h3>
+	<table class="OH_Table_1-Col-Bold" style="border-collapse: collapse;" cellspacing="0px">
+		<tr class="t1st">
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="83"><p 
+				 class="TABLEHEADER"><b>Version</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Adds New Static 
+			 Data value</b></p></td>
+			<td style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+				 width="254"><p class="TABLEHEADER"><b>Adds New Index/Vol/Correl 
+			 definition</b></p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V6.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+		</tr>
+		<tr class="t1Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V7.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">User needs to either log out and log 
+			 back in or push the static data refresh button.&#160;&#160;This 
+			 can be done in an AVS script by calling a function in the 
+			 UTIL_RefreshSharedMemory family</p></td>
+		</tr>
+		<tr class="t2Row">
+			<td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; 
+				 border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; 
+				 padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="83"><p class="TableText">V8.0</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations.</p></td>
+			<td style="vertical-align: top; border-top: none; border-left: none; 
+				 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+				 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+				 padding-right: 0px; padding-bottom: 0px;" width="254"><p 
+				 class="TableText">This is updated by the Cache Engine 
+			 with no special effort/considerations if at least one of the 
+			 following is true:</p>
+			<ol style="list-style: decimal;">
+				<li class="OH_ListNumber"><p class="TableText">The Environment 
+				 Variable AB_CE_ACCEPT_EXTERNAL_ INVALIDATES is set to 
+				 a non-zero value.</p></li>
+				<li class="OH_ListNumber"><p class="TableText">The instance 
+				 of the system is configured to have a run site.</p></li>
+			</ol></td>
+		</tr>
+	</table>
+	<p class="MsoNormal">&#160;</p>
+	<p class="MsoNormal"><b>Notes:</b></p>
+	<ul style="list-style: disc;">
+		<li class="ListBullet">There is an AVS function in 8.0r1 and up 
+		 called UTIL_RefreshCache.&#160;&#160;It allows users to write 
+		 a script that will force a refresh of the cache.&#160;&#160;It 
+		 would not normally be needed and was only added to the system 
+		 as a contingency.</li>
+		<li class="ListBullet">The cache engine has a feature that allows 
+		 it to discard older data in the cache.&#160;&#160;This allows 
+		 the total memory of the cache to be kept within a reasonable size.&#160;&#160;This 
+		 process is transparent to the end user.</li>
+	</ul>
+	<p class="MsoNormal">&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

@@ -1,0 +1,21 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Credit.htm.
+ Section heading: Exposure Definition Panel.
+ Text content: This panel contains the following fields: Right-clicking on any row within the table returns the following menu items:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Show Online Definitions Only | Selecting this box filters the credit exposure definitions shown in the table to show only those definitions that are online. |
+| Online | Selection of this checkbox, in conjunction with theSave Changesbutton, brings the indicated credit exposure definition online. |
+| Definition Name | The user-assigned identifier of the selected credit exposure definition. |
+| Batch Status | Displays the standing of the task being used to process an exposure definition. |
+| Engine | The system running the selected credit exposure definition. |
+| Defn Status | Displays the standing of the selected credit exposure definition. |
+| Deal Script | Displays the name of the plug-in/script associated with the exposure definition. |
+| Batch Task | The task needed for batch processing. This task calls the “Deal Script” in order to populate credit exposures when definitions are started. |
+| Defn ID | The unique, system-assigned identifier given to a credit exposure definition. |. Table data: 
+| Item | Description |
+| --- | --- |
+| Start/Restart Monitoring | Brings the selected credit exposure definition online to be monitored. |
+| Stop Monitoring | Takes the selected credit exposure definition offline and ceases to monitor it. |
+| View Online Results | This item has the same functionality as theView Online Resultsbutton. |
+| View Batch Execution Log | Opens theBatch Execution Logwindow. This window contains details of the tasks and scripts that run as part of the Batch Task. |.

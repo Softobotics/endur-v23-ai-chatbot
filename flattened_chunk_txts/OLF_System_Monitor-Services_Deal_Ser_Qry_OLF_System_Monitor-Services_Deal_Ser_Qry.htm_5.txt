@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Deal_Ser_Qry.htm.
+ Section heading: Fields.
+ Text content: This panel contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| <Transaction Number/Process/Service> | Shows transactions, processes and services in tree-view format. “Transactions” are shown at the highest level while “Processes” and “Services” are shown in the lower levels. |
+| External Legal Entity | Displays the name of the external legal entity associated with the selected service. |
+| Response | Displays job response data. |
+| Facility Name | A user-defined group of one or more exposure definitions associated with the selected service. |
+| Exposure | User-defined credit line and trading limit criteria. |
+| Usage | The accumulated exposure for the credit line associated with the selected process. It is the up-to-the-moment sum of all the exposures of all deals that hit this line. This number can be positive or negative. |
+| Limit | Displays the amount of exposure an organization is willing to risk. |
+| Exp Line ID | A unique, system-assigned identifier of the credit line. |.

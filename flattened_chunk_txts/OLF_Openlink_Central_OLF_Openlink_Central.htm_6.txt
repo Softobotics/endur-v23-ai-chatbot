@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Openlink_Central.htm.
+ Section heading: OpenLink Central Console Modes.
+ Text content: The OpenLink Central Console can be displayed in three different modes: Full , Standard and Compact . Full Mode includes the Menu Bar , Tabs/Buttons, and the Title Bar . Standard Mode , the default mode when OpenLink Central is launched, does not contain the Menu Bar. Compact Mode only displays the Title Bar..

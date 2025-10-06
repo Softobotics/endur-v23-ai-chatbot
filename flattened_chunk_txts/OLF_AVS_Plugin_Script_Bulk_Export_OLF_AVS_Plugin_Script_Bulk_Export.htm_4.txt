@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_AVS_Plugin_Script_Bulk_Export.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_AVS_Plugin_Script_Bulk_Export_files/image002.jpg
+ Image description: a roll of toilet paper with the number 0 on it.
+ Image file: OLF_AVS_Plugin_Script_Bulk_Export_files/image003.jpg
+ Image description: a roll of paper with the word god.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Performs the export operation. A confirmation message will display when finished. |
+|  | Close the window and return to the Plugin Editor or the Script Editor. |.

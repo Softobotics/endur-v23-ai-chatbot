@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Table_Viewer.htm.
+ Section heading: Column Header Menu Items.
+ Text content: Right-clicking any column header of the table displays the Column Header Menu ..
+ 
+Links to other files: OLF_Column_Header_Menu.htm.

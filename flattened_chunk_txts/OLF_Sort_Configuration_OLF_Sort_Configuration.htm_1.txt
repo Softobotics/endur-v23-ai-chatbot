@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Sort_Configuration.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: 1. Start the Trading Manager. 2. Open the Bond Transaction Screen . 3. Select the Input option. 4. Click the Sorting button. 5. The following window displays:   .
+ Image file: OLF_Sort_Configuration_files/image001.jpg
+ Image description: the software interface for the software interface, showing the software interface and the software interface.
+ 
+Links to other files: ../Trading_Toolsets/TRADING_Toolset-BOND_Transaction.htm.

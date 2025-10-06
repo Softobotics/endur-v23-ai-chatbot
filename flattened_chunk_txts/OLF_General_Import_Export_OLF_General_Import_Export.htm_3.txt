@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_General_Import_Export.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window from a supported function, select Import or Export à Data or Definition..

@@ -1,0 +1,33 @@
+This chunk is from the HTML file: OLF_Openlink_Central.htm.
+ Section heading: System Utilities Bar/Favorites.
+ Text content: This contains the following icons: .
+ Image file: OLF_Openlink_Central_files/image031.jpg
+ Image description: a computer screen with a picture of a man on it.
+ Image file: OLF_Openlink_Central_files/image032.jpg
+ Image description: a small brown dog with a black nose.
+ Image file: OLF_Openlink_Central_files/image033.jpg
+ Image description: a yellow smiley face with a black nose.
+ Image file: OLF_Openlink_Central_files/image034.jpg
+ Image description: a man in a suit and tie is standing in front of a window.
+ Image file: OLF_Openlink_Central_files/image035.jpg
+ Image description: a cell phone with a green leaf on it.
+ Image file: OLF_Openlink_Central_files/image036.jpg
+ Image description: the logo for the company.
+ Image file: OLF_Openlink_Central_files/image037.jpg
+ Image description: a blue ball and a white ball.
+ Image file: OLF_Openlink_Central_files/image038.jpg
+ Image description: a yellow triangle with a black triangle on it.
+ Image file: OLF_Openlink_Central_files/image039.jpg
+ Image description: a yellow and white background with a small yellow square.
+ Table data: 
+| Icon | Name | Description |
+| --- | --- | --- |
+|  | System Monitor | Enables the user to monitor various aspects of the system. |
+|  | Message Center | Stores messages sent to individual users or personnel groups. Allows users to sign off on stages of a workflow. The in-box icon appears to fill with paper when there are messages. |
+|  | Services Manager | Enables users to schedule and monitor workflows, allowing a high degree of automated processes. |
+|  | Calendar | Activates theCalendarwindow. Displays different System holiday schedules, date sequences, and roll conventions. |
+|  | Crystal Reports | Activates aCrystal Reportswindow which is used to develop and maintain Crystal Tasks. Interfaces between the system and Seagate’s Crystal Reports for generation and viewing of reports generated in Crystal Reports. |
+|  | Refresh Static Data | Forces a “refresh” of static and referential data such as security, party groups, settlement instructions, accounts, and currencies.In V7.0 and below: Updates shared memory with static data tables and security privileges. In V8.0 and above: There is no need to push this button for changes made by the user. For changes made by a different user: These can be received by pushing this button or automatically based on the configuration of AB_CE_ACCEPT_EXTERNAL_INVALIDATES. |
+|  | System Broadcast | Broadcasts messages to authorized users currently logged into the system. |
+|  | System Alert | Opens the systemAlertsscreen. Allows users to view and send alerts. |
+|  | Directory Manager | Opens theDirectory Browser. Allows users to view and open directories of scripts, tasks, or queries. |.

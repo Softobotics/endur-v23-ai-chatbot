@@ -1,0 +1,16 @@
+This chunk is from the HTML file: OLF_Object_Import_Export.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | ConfigureàLoad | Loads a selected import/export file configuration. |
+|  | ConfigureàSave | Saves modifications to the import/export file configuration currently loaded on screen. |
+|  | ConfigureàSave As | Saves the import/export file configuration as a different file. |
+|  | PrintàWindow | Prints the current window. |
+|  | PrintàMessages | Prints the content of the “Messages” listbox to a text file. |
+|  | Exit | Closes the window |
+| Execute |  | If importing data, the files that are listed on the “Files” listbox are imported into the database. If exporting data, saves the selected objects on the “Objects” listbox to the file specified on the “Files” listbox. |
+| Misc | Import Only Valid Rows | Disabled in this window. |
+|  | Validate Import File | Disabled in this window. |
+| Help | Help | Displays the system Help files. |.

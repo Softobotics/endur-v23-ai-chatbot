@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_TSV_Peer_Groups.htm.
+ Section heading: Verifying Changes in the System.
+ Text content: When changes have been made (e.g. to business units in the Reference Explorer Desktop/Reference Manager), open the Component Verification window. 1. . From the Admin Manager, click on the Compliance tab and click the Component Verification icon. 2. From the Component Verification window, in the Object Type column on the left of the Component Verification window select the data to be reviewed (e.g., Reference à Party to view changes to business units). 3. On the right hand part of the screen locate the item that has been changed and highlight the row. 4. Click the Verify button.  Respond OK to the message “You will verify….with Version = x”..

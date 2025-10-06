@@ -1,0 +1,17 @@
+This chunk is from the HTML file: OLF_AVS_Script_Bulk_Import.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: ../Common_Images/Print_Icon_Refresh.jpg
+ Image description: a blue square with a black and white icon.
+ Image file: OLF_AVS_Script_Bulk_Import_files/image005.jpg
+ Image description: a white and black photo with the words pros.
+ Image file: OLF_AVS_Script_Bulk_Import_files/image006.jpg
+ Image description: a white and black photo of a camera.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Performs the same function asToolsàPrint plugin/script. |
+|  | Tells the system to proceed with the 
+			 import. |
+|  | This field only appears after the import. 
+			 If pressed, the screen will close. |.

@@ -1,0 +1,30 @@
+This chunk is from the HTML file: OLF_Openlink_Central.htm.
+ Section heading: Menu Bar.
+ Text content: This contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| OpenLink Central | Edit Configuration | Opens theOpenLink Central Configurationwindow, used for changing tab, button and view configurations. |
+|  | Load ConfigurationàDefault Configuration | Loads the default configuration of the OpenLink Central.Note:User-defined configurations will display as menu. |
+|  | Load ConfigurationàAdmin Manager | Loads the “Admin Manager” configuration. This configuration provides access to Admin Manager functionalities. |
+|  | Load ConfigurationàDataExplorer_TradingExplorer | Loads a two-button configuration that allows users to quickly create and access transactions. |
+|  | Load ConfigurationàOpenLink | Loads a standard OpenLink Central configuration containing commonly used functions of the system. |
+|  | Load ConfigurationàReference Favorites Master Confi | Loads a configuration containing commonly used functions of theReference Explorer Desktop(V10.0r2 and later)/Reference Manager(V10.2.1 and earlier). |
+|  | Save | Saves any modifications to the configuration that is currently loaded on screen. |
+|  | Save As | Opens theScreen Config Propertieswindow. This is used to set the directory and access rights of the owner, security group, and all users, for the OpenLink Central configuration that is currently loaded on screen.De-select thePublic Permissions: Readcheck box to save the configuration as “Private”.NOTE:Public Configurations may only be deleted from theLink Screen Config Definitionsscreen, |
+|  | Edit Configuration Links | Displays theLink Screen Config Definitionswindow which allows users to define the default OpenLink Central configuration (as well as the default deal entry screen configuration for a toolset, instrument type, or template for a particular user or all). |
+|  | Delete Private Configuration | Deletes the private configuration defined for the user. Prior to deletion, the system will confirm if the user would like to proceed with the deletion. |
+|  | Export Configuration | Displays a window that allows the user to export the configuration currently loaded on screen to an external file.In newer versions, theCMM Exportwindow displays. |
+|  | Import Private Configuration | Displays a file browser that allows the user to import an OpenLink Central configuration, in XML format, from an external source. |
+|  | Restore OpenLink Default Configurations | Restores the OpenLink defaults for OpenLink Central.NOTE:Any unsaved configuration settings will be lost when this is selected. |
+|  | Set Current Configuration as Default | Saves the current configuration as the default. This will load each time the console is launched |
+| Available Tabs | OpenLink | This is the default tab of the console. It contains the main icons of the system.This tab may not appear in all configurations and is not necessary to use the system.NOTE:User-defined tabs will display as menu items within theAvailable Tabsmenu. |
+| Launch Available Services |  | Displays theLaunch Available Servicewindow which allows a user to launch a system service or module without navigating through the menus. |
+| Options | Always On Top | Select this option to keep the console on top of other active applications. Select again to disable the option. |
+|  | Full Mode | Select this option to display all sections of OpenLink Central, including theMenu Bar. |
+|  | Standard Mode | Select this option to display a compressed version of the console. This version hides theMenu Barin a pull-down menu in theTitle Bar. Right-click theTitle Baror select the menu icon to view the menus. |
+|  | Compact Mode | Select this option to only display theTitle Barof the console. In this version, theMenu Bar, System Managers, andSystem Utilitybar are hidden. Right-click theTitle Baror select the menu icon to view the menus. |
+| System Information |  | Opens theAboutwindow which provides summary information about the system configuration including version, licensing, database types, etc. |
+| Help | Help | Displays the system help files. |
+| Shut Down Endur/Findur Session |  | Closes the console and logs the user off from the system. |
+| Exit |  | Closes the OpenLink Central Console but will not close open windows or log the user off. |.

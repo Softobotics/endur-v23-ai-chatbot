@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_ANE_Messages.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the same menu items as the System Monitor . Menu item availability depends upon the tab being accessed..
+ 
+Links to other files: OLF_System_Monitor.htm.

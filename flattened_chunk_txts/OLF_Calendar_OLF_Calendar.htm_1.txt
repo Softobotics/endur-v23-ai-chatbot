@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Calendar.htm.
+ Section heading: Accessing This Window.
+ Text content: Click the calendar icon located at the bottom of OpenLink Central.  The default view of the Calendar window displays.  When AB_CALENDAR_SHOW_DAYS_FROM_TODAY AB_CALENDAR_SHOW_JULIAN_DATES are set to TRUE, the Calendar window can be displayed differently. Check Show Days From Today click box and Show Julian Dates click box to display the Calendar as follows: .
+ Image file: OLF_Calendar_files/image001.jpg
+ Image description: a red and white striped background with a red stripe.
+ Image file: OLF_Calendar_files/image002.jpg
+ Image description: the calendar screen with the date and time.
+ Image file: OLF_Calendar_files/image003.jpg
+ Image description: the calendar screen shot.

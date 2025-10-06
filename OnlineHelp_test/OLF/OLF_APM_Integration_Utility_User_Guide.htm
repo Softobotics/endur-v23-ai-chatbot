@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>APM Integration Utility</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nActive Position Manager (APM)\nAPM Integration Utility");
+addAvenueInfo("System Use","Openlink_Desktop/OPENLINK_DESKTOP_Active_Position_Manager.htm","OLF/OLF_APM_Market_Data_Incremental.html");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Openlink_Desktop/OPENLINK_DESKTOP_Active_Position_Manager.htm\">Active Position Manager (APM)<\/a> &gt; APM Integration Utility<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>APM Integration Utility</h1>
+<p class="MsoNoteHeading"><b style="mso-bidi-font-weight: normal;">NOTE</b>:<span 
+	 style="mso-tab-count: 1;">&#160;</span>&#160;This is a separately 
+ licensed feature. Please contact your account manager for additional information 
+ and reference documents.</p>
+<h2 style="margin-top: 3.0pt; margin-right: 0in; margin-bottom: 5.0pt; 
+	 margin-left: 0in;">Overview</h2>
+<p class="MsoNormal">The APM Integration utility is facilitates the generation 
+ of SQL integration files required for integrating simulation results as 
+ APM packages. This tool targets Professional Services, Consultants, Internal 
+ OL Market teams, and developers.</p>
+<h2>Security Privileges</h2>
+<p class="Normalbeforetable">The following security privileges are required 
+ in order to use this module.</p>
+<p class="Normalbeforetable">Go to the CRM Web Portal for additional information.</p>
+<table class="TableGrid2" style="border: none; mso-border-alt: solid windowtext .5pt; 
+		 mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt; 
+		 border-collapse: separate;" cellspacing="0">
+	<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; mso-border-alt: solid windowtext .5pt; 
+			 mso-background-themecolor: background1; mso-background-themeshade: 217; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="113" bgcolor="#D9D9D9"><p 
+			 class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; 
+										 mso-bidi-font-family: 'Times New Roman';">Privilege 
+		 ID</span></p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; 
+			 mso-background-themecolor: background1; mso-background-themeshade: 217; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="247" bgcolor="#D9D9D9"><p 
+			 class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; 
+										 mso-bidi-font-family: 'Times New Roman';">Privilege</span></p></td>
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; 
+			 mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; 
+			 mso-background-themecolor: background1; mso-background-themeshade: 217; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="263" bgcolor="#D9D9D9"><p 
+			 class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; 
+										 mso-bidi-font-family: 'Times New Roman';">Description</span></p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="113"><p class="MsoNormal" 
+			 style="margin-bottom: 3.0pt;"><span style="mso-fareast-font-family: 'Times New Roman'; 
+												 mso-bidi-font-family: 'Times New Roman';">2002150</span></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="247"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><span 
+		 style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Launch 
+		 Integration Utility</span></p></td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="263"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><span 
+		 style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Allows 
+		 a user to access the APM Integration Utility Screen</span></p></td>
+	</tr>
+</table>
+<h2>Environment Variables</h2>
+<p class="MsoNormal">Not applicable</p>
+<h2>Miscellaneous Pre-Requisites</h2>
+<p class="MsoListParagraphCxSpFirst" style="text-indent: -.25in; mso-list: l1 level1 lfo2;"><span 
+	 style="mso-fareast-font-family: Calibri; mso-bidi-font-family: Calibri;"><span 
+	 style="mso-list: Ignore;">-<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span></span>&#160;User 
+ Defined Simulation Result (Must be functional)</p>
+<p class="MsoListParagraphCxSpLast" style="text-indent: -.25in; mso-list: l1 level1 lfo2;"><span 
+	 style="mso-fareast-font-family: Calibri; mso-bidi-font-family: Calibri;"><span 
+	 style="mso-list: Ignore;">-<span style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</font></span></span></span>&#160;ID 
+ Ranges (Provided upon delivery of License)</p>
+<h2>Accessing this Window</h2>
+<p class="MsoNoteHeading"><span class="NormalBoldChar"><span style="mso-bidi-font-family: 'Times New Roman'; 
+															 mso-bidi-theme-font: minor-bidi;">Note</span></span>:<span 
+	 style="mso-tab-count: 1;">&#160;&#160;</span>&#160;There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure.</p>
+<p class="MsoListNumber2" style="mso-list: l0 level1 lfo1;"><span style="mso-fareast-font-family: Calibri; 
+	 mso-bidi-font-family: Calibri; mso-list: Ignore;">1.&#160;&#160;&#160;&#160;&#160;</span>&#160;From 
+ Openlink Central, right-click anywhere on the header and select <b style="mso-bidi-font-weight: normal;">Launch 
+ Available Services</b>. The <i>Launch Available Services</i> window displays.</p>
+<p class="MsoListNumber2" style="mso-list: l0 level1 lfo1;"><span style="mso-list: Ignore;">2.</span><span 
+	 style="font: 7.0pt 'Times New Roman';"><font size="1" style="font-size:7pt;">&#160;&#160;&#160;&#160;&#160;</font></span>&#160;Type 
+ <b style="mso-bidi-font-weight: normal;">APM Integration Utility</b> in 
+ the <b style="mso-bidi-font-weight: normal;">Filter Service</b> field, 
+ highlight <b style="mso-bidi-font-weight: normal;">APM Integration Utility</b> 
+ in the <i>Available Services</i> panel, and then click <b style="mso-bidi-font-weight: normal;">Launch</b>. 
+ The following window displays:</p>
+<p class="MsoListNumber2" style="mso-list: l0 level1 lfo1;">&#160;</p>
+<h2 class="MsoListNumber2">APM Package Design</h2>
+<p class="MsoNormal">APM can join various results together and enrich dimension 
+ data to supported calculated results. As a result, it is best practice 
+ to separate the dimension data from the measure data into separate simulation 
+ results so that the dimension data can be reused among all the other results 
+ with minimal processing time.</p>
+<p class="MsoNormal">&#160;</p>
+<h4>Identify the desired data to display within APM</h4>
+<p class="MsoNormal">Determine if the data is considered dimension or measure 
+ data:</p>
+<p class="MsoNormal" style="margin-left: 40px;">It is dimension data if 
+ it is an attribute or property of a deal or nom and does not require any 
+ calculation. If it can be queried via the database, it is dimension data. 
+ The data will have a data type of Integer or String. It will not have 
+ any Double data types. It generally completes quickly.</p>
+<p class="MsoNormal">Example of Dimension data: APM Deal Information / 
+ Deal Attributes:</p>
+<p class="MsoNormal" style="margin-left: 40px;">It is measure data if it 
+ requires a simulation to calculate the value. For example, delta, daily 
+ volumes. The data will have a data type of Double. It generally takes 
+ the longest amount of time to generate.</p>
+<p class="MsoNormal">Example of Measure data: APM Delta / Greeks – Delta</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">After a simulation result is created and ready to 
+ be integrated into APM, the next step is to run the utility.</p>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">The APM integration utility is a licensed feature 
+ and launching it requires a security privilege.</p>
+<h2 class="MsoNormal">Related Documentation</h2>
+<p class="MsoNormal">Not applicable</p>
+<h2>See Also</h2>
+<p class="MsoNormal">Not applicable</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

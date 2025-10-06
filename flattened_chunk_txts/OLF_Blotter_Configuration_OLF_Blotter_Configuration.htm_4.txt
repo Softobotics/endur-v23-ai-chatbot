@@ -1,0 +1,8 @@
+This chunk is from the HTML file: OLF_Blotter_Configuration.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Available | Displays the available data fields in the blotter. The data fields that are listed depend on the blotter that is being configured. |
+| Selected | Displays the data fields currently shown in the blotter. Data fields in this list may be added, removed, and re-ordered. The data fields appear in the blotter in the order they are sorted in this listing. |.

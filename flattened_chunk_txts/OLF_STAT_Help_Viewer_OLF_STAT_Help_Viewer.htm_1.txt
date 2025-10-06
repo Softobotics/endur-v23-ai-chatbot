@@ -1,0 +1,6 @@
+This chunk is from the HTML file: OLF_STAT_Help_Viewer.htm.
+ Section heading: Activity List.
+ Text content: The list of available Activities. This list is created from all scripts 
+ that are saved with the “Scenario Test Automation Tool Activity” category. 
+ Selecting a row in this list will cause the details for the activity to 
+ be loaded into the right side of the screen..

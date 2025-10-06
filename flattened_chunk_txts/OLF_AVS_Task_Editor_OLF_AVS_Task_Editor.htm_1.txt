@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Task_Editor.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: A Task can be defined multiple ways in the system.  This procedure is just one example of how to access this window. 1. Start the Trading Manager.  The Trading Manager browser window displays. 2. Select Script à Task Editor. The following window displays: .
+ Image file: OLF_AVS_Task_Editor_files/image001.jpg
+ Image description: the screenshote dial in the windows.

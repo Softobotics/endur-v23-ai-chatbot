@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Database Changes V22.0 to V23.0</title>
+<link rel="StyleSheet" href="../RHStyleMapping.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("What's New / What's Changed\nDatabase Changes\nDatabase Changes V22.0 to V23.0");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../What_s_New_What_s_Changed.htm\">What's New / What's Changed<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Database_Changes.htm\">Database Changes<\/a> &gt; Database Changes V22.0 to V23.0<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Database Changes V22.0 to V23.0</h1>
+<h2>Overview</h2>
+<p>The data in the tables below include database changes ONLY from <span 
+	 style="font-size: 11.0pt; line-height: 107%; font-family: Calibri, sans-serif; 
+	 mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; 
+	 mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; 
+	 mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><font size="3" style="font-size:11pt;">V22.0 
+ (May 9, 2022) to V23.0 (July 8, 2022)</font></span>.</p>
+<h3>&#160;</h3>
+<h3>The following tables have been removed:</h3>
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; 
+		 mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; 
+		 mso-padding-alt: 0in 5.4pt 0in 5.4pt;" cellspacing="0">
+	<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+		<td style="border: solid 1pt #000000; vertical-align: top; mso-border-alt: solid windowtext .5pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="205" bgcolor="#E5E5E5"><p 
+			 class="TABLEHEADER">Table Name</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; mso-border-top-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="205"><p class="TableText">COMM_TSD_BLOB</p>
+		<p class="TableText">&#160;</p></td>
+	</tr>
+</table>
+<h3>&#160;</h3>
+<h3>The following columns have been removed:</h3>
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; 
+		 mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; 
+		 mso-padding-alt: 0in 5.4pt 0in 5.4pt;" cellspacing="0">
+	<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+		<td style="border: solid 1pt #000000; vertical-align: top; mso-border-alt: solid windowtext .5pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="188" bgcolor="#E5E5E5"><p 
+			 class="TABLEHEADER">Table Name</p></td>
+		<td style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; 
+			 border-bottom: solid 1pt #000000; vertical-align: top; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="137" bgcolor="#E5E5E5"><p class="TABLEHEADER">Column 
+		 Name</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="188">FX_TRAN_AUX_DATA</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="137">EXTENSION_ORIGINAL_DEAL</td>
+	</tr>
+	<tr style="mso-yfti-irow: 2;">
+		<td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; 
+			 padding: 0in 5.4pt 0in 5.4pt;" width="188">FX_TRAN_AUX_DATA</td>
+		<td style="vertical-align: top; border-top: none; border-left: none; 
+			 border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; 
+			 padding: 0in 5.4pt 0in 5.4pt;" width="137">EXTENSION_PARENT_DEAL</td>
+	</tr>
+</table>
+<h3>&#160;</h3>
+<h3>The following tables have been added:</h3>
+<p>These tables were added to support new functionality. Therefore they 
+ should not affect clients who are upgrading. For more details about these 
+ tables, see the AdHoc Query Viewer and/or the Data Model Documentation 
+ for more details.</p>
+<p>See <i><a href="OLF_Adhoc_Query_Viewer_Window.htm">AdHoc Query Viewer</a></i></p>
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; 
+		 mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; 
+		 mso-padding-alt: 0in 5.4pt 0in 5.4pt;" cellspacing="0">
+	<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 28px;">
+		<td style="border: solid 1pt #000000; vertical-align: top; mso-border-alt: solid windowtext .5pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="258" bgcolor="#E5E5E5"><p 
+			 class="TABLEHEADER">Table Name</p></td>
+		<td style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; 
+			 border-bottom: solid 1pt #000000; vertical-align: top; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="245" bgcolor="#E5E5E5"><p class="TABLEHEADER">Column 
+		 Name</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">COMM_SCHED_DELIV_EDI_STATUS</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">EDI_STATUS
+		<br />EDI_ERROR_MESSAGE
+		<br />USER_ID
+		<br />VERSION_NUMBER
+		<br />DELIVERY_ID
+		<br />LAST_UPDATE</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">COMM_SCHED_DELIV_EDI_STATUS_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">EDI_STATUS
+		<br />EDI_ERROR_MESSAGE
+		<br />USER_ID
+		<br />VERSION_NUMBER
+		<br />DELIVERY_ID
+		<br />LAST_UPDATE</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">COMM_SCHED_EDI_QUANTITY</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">DELIVERY_ID
+		<br />QUANTITY_START_DATE
+		<br />VOLUME_TYPE
+		<br />USER_ID
+		<br />RECEIPT_QUANTITY
+		<br />QUANTITY_END_DATE
+		<br />PROCESS_FLAG
+		<br />LAST_UPDATE
+		<br />DELIVERY_QUANTITY
+		<br />EDI_UNIT</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">COMM_SCHED_EDI_QUANTITY_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">DELIVERY_ID
+		<br />QUANTITY_START_DATE
+		<br />VOLUME_TYPE
+		<br />USER_ID
+		<br />RECEIPT_QUANTITY
+		<br />QUANTITY_END_DATE
+		<br />PROCESS_FLAG
+		<br />LAST_UPDATE
+		<br />DELIVERY_QUANTITY
+		<br />EDI_UNIT</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">DATA_SERIES_INFO</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">INFO_VALUE 
+		 
+		<br />TYPE_ID 
+		<br />DS_HEADER_ID 
+		<br />PERSONNEL_ID 
+		<br />LAST_UPDATE</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">DATA_SERIES_INFO_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">INFO_VALUE 
+		 
+		<br />TYPE_ID 
+		<br />DS_HEADER_ID 
+		<br />PERSONNEL_ID 
+		<br />LAST_UPDATE</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">DATA_SERIES_INFO_TYPES</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>DATA_TYPE</p>
+		<p>DEFAULT_VALUE</p>
+		<p>DISPLAY_ORDER</p>
+		<p>LAST_UPDATE</p>
+		<p>PERSONNEL_ID</p>
+		<p>PICK_LIST_ID</p>
+		<p>REQUIRED_FLAG</p>
+		<p>SEC_GROUP_ID</p>
+		<p>TYPE_ID</p>
+		<p>TYPE_NAME</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">DATA_SERIES_INFO_TYPES_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>DATA_TYPE</p>
+		<p>DEFAULT_VALUE</p>
+		<p>DISPLAY_ORDER</p>
+		<p>LAST_UPDATE</p>
+		<p>PERSONNEL_ID</p>
+		<p>PICK_LIST_ID</p>
+		<p>REQUIRED_FLAG</p>
+		<p>SEC_GROUP_ID</p>
+		<p>TYPE_ID</p>
+		<p>TYPE_NAME</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">EXPR_AUTH_STATUS</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245">EXPR_AUTH_STATUS_ID 
+		 
+		<br />EXPR_AUTH_STATUS_NAME</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 180px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258"><p>EXPR_PARAM_SET_LINK</p></td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>DEFAULT_FLAG</p>
+		<p>DEFINITION_ID</p>
+		<p>EXPR_AUTH_STATUS_ID</p>
+		<p>LAST_UPDATE</p>
+		<p>PARAM_SET_ID</p>
+		<p>PARAM_SET_TYPE_ID</p>
+		<p>PERSONNEL_ID</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 180px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">EXPR_PARAM_SET_LINK_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>DEFAULT_FLAG</p>
+		<p>DEFINITION_ID</p>
+		<p>EXPR_AUTH_STATUS_ID</p>
+		<p>LAST_UPDATE</p>
+		<p>PARAM_SET_ID</p>
+		<p>PARAM_SET_TYPE_ID</p>
+		<p>PERSONNEL_ID</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">FX_FWD_DELIVERY_DATA</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>ALL_IN_RATE</p>
+		<p>DELIVERY_AMOUNT</p>
+		<p>DELIVERY_POINTS</p>
+		<p>DELIVERY_TRAN_NUM</p>
+		<p>LAST_UPDATE</p>
+		<p>PARENT_TRAN_NUM</p>
+		<p>USER_ID</p>
+		<p>VERSION_NUMBER</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">FX_FWD_DELIVERY_DATA_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>ALL_IN_RATE</p>
+		<p>DELIVERY_AMOUNT</p>
+		<p>DELIVERY_POINTS</p>
+		<p>DELIVERY_TRAN_NUM</p>
+		<p>LAST_UPDATE</p>
+		<p>PARENT_TRAN_NUM</p>
+		<p>USER_ID</p>
+		<p>VERSION_NUMBER</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">GAS_PIPELINE_EDI_STATUS</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>EDI_STATUS</p>
+		<p>EDI_STATUS_NAME</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 53px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">OPTION_SWAPTION_EXERCISE</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>ID_NUMBER</p>
+		<p>OSE_DEAL_NAME</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 155px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">STLDOC_DOC_LOCK</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>BUSINESS_DATE</p>
+		<p>DOCUMENT_NUM</p>
+		<p>DOC_LOCK_FLAG</p>
+		<p>DOC_VERSION</p>
+		<p>LAST_UPDATE</p>
+		<p>PERSONNEL_ID</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 155px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">STLDOC_DOC_LOCK_H</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>BUSINESS_DATE</p>
+		<p>DOCUMENT_NUM</p>
+		<p>DOC_LOCK_FLAG</p>
+		<p>DOC_VERSION</p>
+		<p>LAST_UPDATE</p>
+		<p>PERSONNEL_ID</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 59px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="258">VOLUME_DISTRIBUTION_TYPE</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="245"><p>ID_NUMBER</p>
+		<p>VOLUME_DISTRIBUTION_NAME</p></td>
+	</tr>
+</table>
+<h3>&#160;</h3>
+<h3>The following columns have been added:</h3>
+<p>These columns were added to support new functionality. Therefore they 
+ should not affect clients who are upgrading. One way they might affect 
+ clients is if a client used a “*” for a &quot;What&quot; clause in an 
+ SQL statement. When they upgrade, they would get an additional column 
+ or columns, which may cause issues in custom plug-ins/scripts. We recommend 
+ that clients use specific what clauses rather than the general “*” to 
+ prevent this from happening.</p>
+<p>For more details about these columns, see the AdHoc Query Viewer and/or 
+ the Data Model Documentation for more details.</p>
+<p>See <i><a href="OLF_Adhoc_Query_Viewer_Window.htm" style="background-color: Transparent;">AdHoc 
+ Query Viewer</a></i></p>
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; 
+		 mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; 
+		 mso-padding-alt: 0in 5.4pt 0in 5.4pt;" cellspacing="0" width="622">
+	<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 25px;">
+		<td style="border: solid 1pt #000000; vertical-align: top; mso-border-alt: solid windowtext .5pt; 
+			 padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; 
+			 padding-right: 0px; padding-bottom: 0px;" width="249" bgcolor="#E5E5E5"><p 
+			 class="TABLEHEADER">Table Name</p></td>
+		<td style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; 
+			 border-bottom: solid 1pt #000000; vertical-align: top; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="247" bgcolor="#E5E5E5"><p class="TABLEHEADER">Column 
+		 Name</p></td>
+		<td style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; 
+			 border-bottom: solid 1pt #000000; vertical-align: top; mso-border-left-alt: solid windowtext .5pt; 
+			 mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; 
+			 padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" 
+			 width="126" bgcolor="#E5E5E5"><p class="TABLEHEADER">Data 
+		 Type</p></td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 22px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="249">STLDOC_DOCUMENT_STATUS</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="247">LOCK_DOCUMENT_FLAG</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="126">number</td>
+	</tr>
+	<tr style="mso-yfti-irow: 1; height: 22px;">
+		<td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; 
+			 border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" 
+			 width="249">STLDOC_DOCUMENT_STATUS_HIST</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="247">LOCK_DOCUMENT_FLAG</td>
+		<td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; 
+			 vertical-align: top; padding: 0in 5.4pt 0in 5.4pt;" width="126">number</td>
+	</tr>
+</table>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

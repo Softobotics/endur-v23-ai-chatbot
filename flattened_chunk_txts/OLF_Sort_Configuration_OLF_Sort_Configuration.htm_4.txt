@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Sort_Configuration.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Category | Lists the sorting keys of the table. The sorting keys are the data fields of the table. |
+| Priority | Input field to enter the sorting order. Assign “1” to the primary sorting key, “2” to the secondary sorting key, and so on. |
+| Sort Order | Displays the sorting order,  which is “Normal” for ascending. |.

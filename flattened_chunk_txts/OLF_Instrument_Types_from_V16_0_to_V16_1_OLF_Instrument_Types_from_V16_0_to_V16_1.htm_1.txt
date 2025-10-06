@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Instrument_Types_from_V16_0_to_V16_1.htm.
+ Section heading: New Instrument 
+ Types.
+ Text content: The following are the new instrument types 
+ in 16.1 :.
+ Table data: 
+| Toolset | Name | ID | Description | DTS |
+| --- | --- | --- | --- | --- |
+| Provisional | Order | 71000 | Order | 141806 |.

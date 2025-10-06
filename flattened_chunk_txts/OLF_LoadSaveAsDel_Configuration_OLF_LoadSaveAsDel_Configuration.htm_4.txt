@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Default | Sets the configuration as the default configuration. Put a checkmark to set it as the default configuration. This field displays only if setting a default configuration. |
+| File Name | Name of the configuration. |
+| Config Type | Indicates whether the configuration is private or public. |
+| Owner | User ID of person who last updated the configuration. |
+| Last Update | The date and time the configuration was last updated. |
+| afs_id | The unique ID number for the Application File System (AFS) record. |
+| Complete File Name | The AFS name for the saved configuration. This entry can also be viewed and/or deleted from theAFS Viewer. |
+| <configuration name> | Input field to enter the name of the configuration to be saved. If the name already exists, the system will warn and ask the user if the existing configuration will be overwritten. This field displays only if saving a configuration. |.

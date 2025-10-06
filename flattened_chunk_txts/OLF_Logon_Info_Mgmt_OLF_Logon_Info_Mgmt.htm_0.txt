@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Logon_Info_Mgmt.htm.
+ Section heading: Reference Documents.
+ Text content: The following reference document can be found in the CRM Web Portal. Installation_Administration_Guide.pdf   Accessing This Window/Screen To access this window: 1. Start OpenLink Central. 2. Select Launch Available Services from the menu. 3. In the search panel, enter the service name “Logon Info Management”. 4. Select the appropriate service from the Available Services panel and click “OK”. The following window displays:    The image below depicts the window after selecting the “Credentials” and “Environment” check boxes.    .
+ Image file: OLF_Logon_Info_Mgmt_files/image001.jpg
+ Image description: the screenshote dial in the software.
+ Image file: OLF_Logon_Info_Mgmt_files/image002.jpg
+ Image description: the screenshote file is displayed in the screen.

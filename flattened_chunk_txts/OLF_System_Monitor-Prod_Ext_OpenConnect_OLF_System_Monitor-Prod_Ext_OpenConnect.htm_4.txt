@@ -1,0 +1,17 @@
+This chunk is from the HTML file: OLF_System_Monitor-Prod_Ext_OpenConnect.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field Item | Description |
+| --- | --- |
+| Header Column (no title) | Shows the Service Groups and Runsite Names. |
+| Runsite | Runsite |
+| Fault Tolerant Group | Fault Tolerant Group |
+| Status | Status |
+| Request Count | Request Count |
+| Logging Request Count | Logging Request Count |
+| Process Id | Process Id |
+| Process Size(K) | Process Size(K) |
+| Queued Count | Queued Count |
+| Last Started | Last Started |
+| Job Started | Job Started |.

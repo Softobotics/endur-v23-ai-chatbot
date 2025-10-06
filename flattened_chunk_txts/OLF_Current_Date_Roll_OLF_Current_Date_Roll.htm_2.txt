@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_Current_Date_Roll.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_Current_Date_Roll_files/image003.jpg
+ Image description: a white square button with a black and white border.
+ Image file: OLF_Current_Date_Roll_files/image004.jpg
+ Image description: a white and black photo frame with the word ' b '.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Roll the Current Date to the date displayed in the Current Date field. |
+|  | Cancel any current changes and close theCurrent DateRoll window. |.

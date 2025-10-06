@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_Broadcast.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Print Screen | Prints the current window. |
+|  | Exit | Closes the current window. |
+| Misc | Clear Log | Removes the contents of the Message Log from the screen.   This does not purge data from the database.  The data is still there and will reappear the next time the user logs into the system. |
+|  | Configure Message Log | Displays theConfigure Viewwindow.  This allows the user to configure columns in theMessage Log. |
+|  | Refresh Channels | Updates the channels with recent changes made in the Admin Manager/Mail Administration module. |
+| Help | Help | Displays the system Help files. |.

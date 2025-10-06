@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_Config-Windows.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Search Column Name | Input field to enter the search keyword. |
+| Available |
+| Group | The group in which the column belongs. The group is system-assigned and is used to group columns (fields) that are mapped to the same table or group of tables.To sort and further filter the list, right click the column header to display theColumn Header Menu. |
+| Column | The name of the column. The list of available columns depend on the listbox that is being configured.To sort and further filter the list, right click the column header to display theColumn Header Menu. |
+| Selected |
+| Group | The name of the group in which the column belongs. |
+| Column | The name of the selected column. |
+| Column Title | The name of the selected column as it appears in the column heading. This field may be edited. |.

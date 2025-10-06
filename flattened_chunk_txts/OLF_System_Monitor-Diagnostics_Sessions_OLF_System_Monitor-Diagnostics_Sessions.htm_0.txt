@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Sessions.htm.
+ Section heading: Overview.
+ Text content: This tab shows details about sessions running on selected hosts. This window includes the functionality to terminate user sessions. This window consists of the Sessions panel which is used to select the host name to monitor. The details are displayed in the Sessions table.  The following Security Privileges are applicable to this window:   See System Monitor .
+ Table data: 
+| Privilege ID | Privilege | Functionality |
+| --- | --- | --- |
+| 29300 | Access Diagnostics Tab | Allows access to theDiagnosticsmonitor tabs. |
+| 29330 | Access Sessions Tab | Allows access to theSessionsdiagnostic tab. |
+| 29331 | Kill Selected Session | Allows access to the functionality to kill a session. |
+| 29306 | Kill Remote Processes | Allows access to the functionality to kill a remote process. |. 
+Links to other files: OLF_System_Monitor.htm.

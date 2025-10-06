@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Market_Data.htm.
+ Section heading: Overview.
+ Text content: The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager . This screen provides the ability to select and view market data by ticker. This window will only display market data when the Market Data Distribution (MDD) engine is configured and running. Access to this window is controlled by Security Privilege #29260, Access Market Data Tab..
+ 
+Links to other files: ../Services_Manager/Services_Manager.htm.

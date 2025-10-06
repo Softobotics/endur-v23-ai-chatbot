@@ -1,0 +1,25 @@
+This chunk is from the HTML file: OLF_Query_Manager_Query_Designer.htm.
+ Section heading: Available Fields.
+ Text content: New fields can be added to the design surface 
+	 by double clicking or dragging from the available field list. The 
+	 available field list can be sorted, filtered, or grouped ( Select 
+	 All Children right-click menu) to assist in quickly finding 
+	 fields.  Right-click on an available field to display the 
+	 following context menu. .
+ Image file: OLF_Query_Manager_Query_Designer_files/image032.jpg
+ Image description: the table dial in excel.
+ Table data: 
+| Field | Item |
+| --- | --- |
+| Expand Group | Shows all available fields listed under 
+			 the selected group. |
+| Collapse Group | Hides all available fields listed under 
+			 the selected group. |
+| Expand All | Shows all available fields listed under 
+			 all groups. |
+| Collapse All | Hides all available fields listed under 
+			 all groups. |
+| Select All Children | Selects all available fields listed 
+			 under the selected group. |
+| Unselect All Children | Unselects all available fields listed 
+			 under the selected group. |.

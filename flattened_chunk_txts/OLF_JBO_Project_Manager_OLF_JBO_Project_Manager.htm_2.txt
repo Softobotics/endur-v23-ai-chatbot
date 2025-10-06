@@ -1,0 +1,13 @@
+This chunk is from the HTML file: OLF_JBO_Project_Manager.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items:.
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | New Project | Create a new project. |
+|  | Save Project | Save current project. |
+|  | Delete Project | Delete selected project. |
+|  | Print | Prints the current screen. |
+|  | Exit | Closes theProject Managerwindow. |
+| Help | Help | Displays the system Help files. |
+|  | About Plugin Project Manager | Displays information about the panel, class, name, and description. |.

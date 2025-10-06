@@ -1,0 +1,3 @@
+This chunk is from the HTML file: OLF_Sort_Configuration.htm.
+ Section heading: Overview.
+ Text content: The Sort Configuration window allows users to specify how the items in a table will be sorted and listed. .

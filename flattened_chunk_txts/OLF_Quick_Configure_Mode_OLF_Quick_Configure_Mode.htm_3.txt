@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
+ Section heading: Grouping Panel.
+ Text content:  Located at the lower left hand side of the Quick Configure area, the Grouping panel displays the grouping fields of the blotter. The above figure groups the data by “Toolset” and then by “Int Pfolio.”  Drag the fields onto this panel that will serve as grouping criteria for the data. Data is grouped in the order it is listed on the Grouping panel. To change the grouping order, fields may be dragged and dropped to its new position.  .
+ Image file: OLF_Quick_Configure_Mode_files/image007.jpg
+ Image description: a computer screen with a keyboard and a keyboard.

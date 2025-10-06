@@ -1,0 +1,17 @@
+This chunk is from the HTML file: OLF_AVS_Add-In_Configuration.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Image file: OLF_AVS_Add-In_Configuration_files/image006.jpg
+ Image description: the text editor dial in the editor dial.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| System DLL Path | Path for system dlls. |
+| AB_AVS_ADDIN_PATH Value | Value for the specified variable. |
+| Message Line | Message result from using the Validate function. |
+| Username | User logged on the system. |
+| Table Fields |
+| DLL Path | Path of a named dll. |
+| DLL File Name | Dll file name. |
+| ADDIN Prototype File | Name of the ADDIN prototype file. |
+| DParser Types | A pick list of default parsers. |.

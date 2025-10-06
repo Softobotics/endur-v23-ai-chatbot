@@ -1,0 +1,7 @@
+This chunk is from the HTML file: OLF_Search_Window.htm.
+ Section heading: Function Keys.
+ Text content: This window utilizes the following function keys: .
+ Table data: 
+| Key | Description |
+| --- | --- |
+| F8 | Closes the window. |.

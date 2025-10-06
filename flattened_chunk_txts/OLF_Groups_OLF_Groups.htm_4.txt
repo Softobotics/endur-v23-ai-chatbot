@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Groups.htm.
+ Section heading: Field Items.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Group Name | Displays the name of the group selected in theSelect 
+		 Groupbutton. This is also a field  to input 
+		 the name of a new group or change the name of an existing group. |.

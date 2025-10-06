@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
+ Section heading: Overview.
+ Text content: The Quick Configure mode allows users to configure the blotter quickly. While in this mode, users can hide or display columns, change the order of columns, set up groups, tree views, filters, and pivots by simply dragging and dropping the fields.  In this mode, the space normally occupied by the blotter is now occupied by the Quick Configure panels and the blotter.  This feature is only available in V8.0r2 and up.  See also: Column Header Menu .
+ 
+Links to other files: OLF_Column_Header_Menu.htm.

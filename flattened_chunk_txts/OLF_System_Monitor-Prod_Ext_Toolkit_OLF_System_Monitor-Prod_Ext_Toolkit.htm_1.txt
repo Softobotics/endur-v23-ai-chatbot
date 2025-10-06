@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_System_Monitor-Prod_Ext_Toolkit.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: The following screen displays (for v8.0r1 and up):  The image below depicts the Product Extensions tab for v6.0.  Other Ways to Access This Window/Screen The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services . Select System Monitor from the list box..
+ Image file: OLF_System_Monitor-Prod_Ext_Toolkit_files/image001.jpg
+ Image description: a square with a blue border and a yellow border.
+ Image file: OLF_System_Monitor-Prod_Ext_Toolkit_files/image002.jpg
+ Image description: the screenshoter screen shot of the screen shot of the screen shot of the screen shot of the.
+ Image file: OLF_System_Monitor-Prod_Ext_Toolkit_files/image003.jpg
+ Image description: the software interface is displayed in the screen above the text field.

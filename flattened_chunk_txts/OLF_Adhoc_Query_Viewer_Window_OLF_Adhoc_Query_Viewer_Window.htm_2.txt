@@ -1,0 +1,81 @@
+This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items: .
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | New | Clears any query from the list box at 
+			 the bottom of the window and allows a new query to be entered. |
+|  | Save Configuration | Saves the current table configuration. |
+|  | Load Configuration | Loads the saved table configuration. |
+|  | Save AdHoc Query | Saves your SQL Query so that you can 
+			 retrieve and use it later. |
+|  | Save Public AdHoc Query | Saves an SQL Query so that you and others 
+			 can retrieve it and use it later. |
+|  | Load AdHoc Query | Loads an existing query.  A 
+			 pick list of existing queries displays. |
+|  | Delete AdHoc Query | Deletes the selected query from the 
+			 database. |
+|  | Print | Prints the current window. |
+|  | Copy Window | Displays a secondTable Viewerwindow with the same table contents. |
+|  | Export to Text File | Exports table contents to a file in 
+			 comma-separated format. |
+|  | Export to XML File | Exports table content to a file in XML 
+			 format. |
+|  | Import from XML File | Imports an XML file to a system table. |
+|  | Exit | Closes the window. |
+| Edit | Copy | Copies highlighted rows to the Window 
+			 clipboard.  The rows can then be pasted into another 
+			 Window application. |
+|  | Select All | This option allows you to select all 
+			 fields in this window. |
+|  | Max Rows | A pop-up window displays to allow the 
+			 definition of the maximum number of rows for this table.This 
+			 option was removed in V6.0 and up. |
+|  | Edit Table | Opens the displayed table for editing. |
+| Format | Toggle Formatting | This option changes the format in the 
+			 fields of the window.  You can either view the actual 
+			 data in the field, or switch to the alias that has been assigned 
+			 to that data value.For example,Law Typeuses the 
+			 aliasNew York State.  This may be assigned 
+			 to the number1, and the aliasNew Jersey Statemight be assigned to the number2.  If the 
+			 numerical value displays, the toggle option changes the data 
+			 to display using the aliases.  Selecting it again 
+			 will return the fields to displaying numbers.Toggles between whether the viewer applies 
+			 the formatting defined in configuration to format the data 
+			 in each column.  Equivalent to F4. |
+|  | Auto Size | Adjust the width of each column to fit 
+			 the data.  Equivalent to F2. |
+|  | Toggle Row Header | This turns the Row Header on and off.  This 
+			 is not currently functional. |
+|  | Default Formatting | Apply the system default formatting.  Equivalent 
+			 to F9. |
+| Configure | Configure | This option displays theConfigure 
+			 Viewwindow. |
+| Reporting | ScriptàRun Script | Runs a saved plug-in/script passing 
+			 the selected columns in table format to the selected plug-in/script.  The 
+			 table is passed as argt to the selected plug-in/script. |
+|  | ScriptàRun Task | Runs a saved task passing the selected 
+			 columns in table format to the selected plug-in/script.  The 
+			 table is passed as argt to the selected plug-in/script. |
+|  | CrystalàActive Data | A list of available Crystal Active Data 
+			 reports to be exported displays for selection. |
+|  | CrystalàExport to Xsd(Export to Ttx -V18 and below) | Export a file containing the format 
+			 of the table.  For the use of Crystal reports. |
+|  | Publish | Publishes the contents of the table 
+			 to a properly configured Excel Spreadsheet. |
+|  | Pivot 
+			 Table | Displays thePivot Table Setupwindow. |
+|  | MS Excel | Opens theExcel 
+			 Interfacewindow. This allows the user to export data 
+			 displayed in the viewer to a new, open, or existing Excel 
+			 workbook. |
+| View | All Rows | Displays all rows within the table. |
+|  | Sum Rows | Shows only the sum rows in the table. |
+|  | Data Rows | Displays only the data rows within the 
+			 table. |
+|  | Show Table Info | This option displays a pop-up window 
+			 with information on the fields of the table, including current 
+			 date and time, number of columns, and number of rows. |
+| Search | Find <F3> | Displays theSearchwindow. |
+| Help | Help | Displays information about this window. |.

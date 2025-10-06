@@ -1,0 +1,8 @@
+This chunk is from the HTML file: OLF_Query_Manager_Additional_Query_Criteria.htm.
+ Section heading: Overview.
+ Text content: The Additional Criteria field of the Query 
+	 Manager allows the user to enter additional structured query language 
+	 (SQL) commands to extend the query. An Additional Criteria field is provided for each page within the Query Manager . Any standard SQL expression supported by the underlying 
+	 database platform can be used. The system adds the additional SQL 
+	 at the end of the where clause. It goes directly to the database, 
+	 with no additional massaging from the system. .

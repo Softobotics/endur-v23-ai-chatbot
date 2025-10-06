@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_Instrument_Types_from_V17_0_to_V18_0.htm.
+ Section heading: New Instrument 
+ Types.
+ Text content: The following are the new instrument types 
+ in 16.1 :.
+ Table data: 
+| Toolset | Name | ID | Description | DTS |
+| --- | --- | --- | --- | --- |
+| Bond Future Variable Tick | BONDFUT-VT | 46003 | BONDFUT-VT |  |
+| Commodity Plant | COMM-PLANT | 48655 | COMM-PLANT |  |.

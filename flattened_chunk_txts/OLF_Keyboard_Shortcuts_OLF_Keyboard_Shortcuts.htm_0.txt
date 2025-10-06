@@ -1,0 +1,21 @@
+This chunk is from the HTML file: OLF_Keyboard_Shortcuts.htm.
+ Section heading: Overview.
+ Text content: The following keyboard shortcuts are available in the system:  From the Detailed Deal Input Screens F1 - Displays the symbolic dates on date fields   Other Function Keys Check with the appropriate blotter/module as to whether they can be configured and/or what they are.   In V8.0r1 and up only: There is a system wide configuration variable called AB_TEXT_EDIT_USE_SHORTCUT_KEYS. This flag allows for the configuration of the shortcut keys used in text editors in the system.  There are two possible configurations, one when this is set to TRUE and the other when this is set to FALSE.  FALSE uses hot keys that are consistent with Windows standards.  FALSE is the default value.  TRUE uses an alternate set of hot keys.  In V7.0, the system behaves as if this was set to TRUE.  This affects these windows: 1) AVS Script Editor 2) AVS Script Debugger 3) Adhoc Query 4) Grid Point Definition .
+ Table data: 
+| Shortcut | Link | Description |
+| --- | --- | --- |
+| CTRL-F1 | About Openlink System Window | Displays information about the current Session (Accessed from main window of each Manager and the Master Control Panel). |
+| CTRL-F3 | Olisten | This opens the Olisten module.This is only in 8.0 and up. |
+| CTRL-F4 | System Monitor | Activates System Monitor from main window of each manager and the master control panel. The "Script Engines" tab is disabled when this window is not run from Master.  A separate instance of this window can be run from each manager. |
+| CTRL-F5 | Broadcast Window | Allows users to send messages to all users online (accessed from main window of each Manager and the Master Control Panel). |
+| CTRL-F6 | Error Log & Console Viewer | Displays errors encountered by the System while running (accessed from the main window of each manager and the Master Control Panel). |
+| CTRL-F7 | Application File System (AFS) Viewer | Allows user to view certain files created and used within the System; allows the deletion of these files.  AFS files may include configuration files and backup files. (Accessed from main window of each Manager and the Master Control Panel) |
+| CTRL-F8 | Set Debug Level | Sets debug levels at low, med, high, or disabled.  (This toggle command may be accessed from main window of each Manager and the Master Control Panel.  However, it is only visible from the console. |
+| CTRL-F9 | AdHoc Query Viewer | Allows user to view any database table in the System.  (Accessed from main window of each Manager and the Master Control Panel) |
+| CTRL-F10 | Transaction Viewer Window | Displays the Transaction Viewer Window  (Accessible only from the main window of the Trading Manager) |
+| Master Control Panel Function | Closes “child” windows opened by Master Control Panel, e.g., Generic Table Viewer and AdHoc Query Viewer. (May be accessed only from the Master Control Panel) |
+| SHIFT-F8 | Memory Usage Monitor | Press once to activate this toggle command.   Then press again after a task has been run. (Accessed from main window of each Manager and Master Control Panel) |. Table data: 
+| Shortcut | Link | Description |
+| --- | --- | --- |
+| F1 | Toolsets | Displays the symbolic dates on date fields |. 
+Links to other files: OLF_AVS_Script_Editor.htm, OLF_Script_Debugger.htm, OLF_Adhoc_Query_Viewer_Window.htm, ../Market_Manager/MARKET_Grid_Point_Definition.htm.

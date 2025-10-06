@@ -1,0 +1,23 @@
+This chunk is from the HTML file: OLF_Static_Data_Template.htm.
+ Section heading: Menu Items.
+ Text content: This window contains the following menu items. Menu items may vary depending upon the functionality to which the static data applies..
+ Table data: 
+| Menu | Item | Description |
+| --- | --- | --- |
+| File | Save | Saves the data table. |
+|  | Reload | Loads the data from the last save action. Any unsaved changes made to the table data will be lost. |
+|  | Import CSV File | Not available.This option was removed in V8.0r2 and up. |
+|  | Import Data | Displays a file browser window that allows a user to locate and import static data table data files from locations outside of the application.This functionality is not supported in all Static Data tables.Available as of V9.0r1 and up. |
+|  | Export Data | Displays theCMM Exportwindow which allows a user to export selected static data table data to locations outside of the application.This functionality is not supported in all Static Data tables.Available as of V9.0r1 and up. |
+|  | Print Screen | Prints the current window. |
+|  | Save Window Location | Select this to save the location of the static data screen in the window. The next time the screen is launched, it will display in that saved location. |
+|  | Delete Saved Window Location | Removes the saved location so the static data screen will not display in the same location the next time it is launched. |
+|  | Exit | Closes the window. |
+| Edit | Add Row | Select this to enable a new entry row in the table for the addition of static data details. |
+|  | Delete Row | Select this to remove the highlighted static data row from the table. |
+|  | Copy Row | Not available.This option was removed in V8.0r2 and up. |
+|  | Copy | Copies the selected row to the Windows clipboard. |
+|  | Select All | Highlights all the rows in the table. |
+| Configure | Current Table | Opens theGrid Configurationwindow. This allows the user to customize how data is presented in the table.Alternatively, the user can configure the table by right-clicking any column header. This action displays theColumn Headermenu.In V8.0r2 and up, columns may be reordered by dragging and dropping the column header to its new location. |
+| Help | Help | Displays the system help files. |
+|  | About | Displays theAboutwindow which shows information about the OpenLink System. |.

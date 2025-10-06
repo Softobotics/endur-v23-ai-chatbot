@@ -1,0 +1,11 @@
+This chunk is from the HTML file: OLF_Table_Viewer.htm.
+ Section heading: Function Keys.
+ Text content: This window utilizes the following function keys: .
+ Table data: 
+| Key | Description |
+| --- | --- |
+| F2 | This has the same functionality asFormatàAuto-Size |
+| F3 | This has the same functionality asSearchàFind. |
+| F4 | This has the same functionality asFormatàToggle Formatting. |
+| F5 | This has the same functionality asFormatàToggle Row Header. |
+| F9 | This has the same functionality asFormatàDefault Formatting. |.

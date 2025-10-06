@@ -1,0 +1,10 @@
+This chunk is from the HTML file: OLF_Directory_Browser.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Table data: 
+| Button | Description |
+| --- | --- |
+| Configure | Opens theConfigure Viewwindow. This allows the user to change the configuration of the listing.Note:Another way to change the sorting or configuration of the table is to right-click any column heading to display theColumn Header Menu. |
+| Import Standard Packages | Opens a file browser allows the user to navigate to the location and file to import the standard packages. |
+| Select | Displays the details of the file loaded in the “Filename” field in the appropriate screen, e.g.Directory Window(for Crystal or OpenComponent, types),Script/Task Editor(for scripts/tasks),Table Viewer(for screen configurations) orQuery Manager(for queries). To load the file in the “Filename” field, highlight the file from theFile Listing/Contents of Directorytable.Note:Another way to load a file is to double-click the file in theFile Listing/Contents of Directorytable. |
+| Close | This has the same function asFileàExit. |.

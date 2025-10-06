@@ -1,0 +1,14 @@
+This chunk is from the HTML file: OLF_System_Monitor-System_Licensing.htm.
+ Section heading: General Data Panel.
+ Text content: This panel contains the following fields: .
+ Table data: 
+| Field Item | Description |
+| --- | --- |
+| General Data | The data fields shown contain general license key information.ValueDescriptionSite IDAn internally created number assigned to the license key.Database Table.Column: client_system_info.site_idSite LabelThe unique name assigned to the specific license key.Database Table.Column: client_system_info.site_labelSystem Expire DateThe termination date of the license key.Database Table.Column: client_system_info.expiration_date.System NameA numeric representation of the licensed application(s).Database Table.Column: client_system_info.system_nameUnlock CodePart of OpenLink’s proprietary licensing scheme. Additional information is unavailable. | Value | Description | Site ID | An internally created number assigned to the license key.Database Table.Column: client_system_info.site_id | Site Label | The unique name assigned to the specific license key.Database Table.Column: client_system_info.site_label | System Expire Date | The termination date of the license key.Database Table.Column: client_system_info.expiration_date. | System Name | A numeric representation of the licensed application(s).Database Table.Column: client_system_info.system_name | Unlock Code | Part of OpenLink’s proprietary licensing scheme. Additional information is unavailable. |
+| Value | Description |
+| Site ID | An internally created number assigned to the license key.Database Table.Column: client_system_info.site_id |
+| Site Label | The unique name assigned to the specific license key.Database Table.Column: client_system_info.site_label |
+| System Expire Date | The termination date of the license key.Database Table.Column: client_system_info.expiration_date. |
+| System Name | A numeric representation of the licensed application(s).Database Table.Column: client_system_info.system_name |
+| Unlock Code | Part of OpenLink’s proprietary licensing scheme. Additional information is unavailable. |
+| <Value> | This column contains the data values associated with each general data item. |.

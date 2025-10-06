@@ -1,0 +1,15 @@
+This chunk is from the HTML file: OLF_OpenLink_Configurations.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons:.
+ Image file: OLF_OpenLink_Configurations_files/image002.jpg
+ Image description: a computer screen with a clock and a clock face.
+ Image file: OLF_OpenLink_Configurations_files/image003.jpg
+ Image description: a computer screen with the word apply.
+ Image file: OLF_OpenLink_Configurations_files/image004.jpg
+ Image description: the word ' s logo on a white background.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Applies changes to theOpenLink Central Consoleand closes theOpenLink Central Configurationwindow. |
+|  | Applies changes to theOpenLink Central Consolewithout closing the configuration window. |
+|  | Cancels any configuration changes and closes the configuration window. |.

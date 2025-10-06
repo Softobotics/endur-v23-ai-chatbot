@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Deployment_Manager.htm.
+ Section heading: Accessing this Window.
+ Text content: Note: There are multiple ways to access this window; however, only one 
+ way is defined because some features can only be accessed via this procedure. 1. From OpenLink Central, right-click anywhere on the header and select 
+ Launch Available Services. The Launch Available Services window displays. 2. Type Deployment Manager in the Filter Service field, select Deployment 
+ Manager in the Available Services panel, and then click Launch. The following 
+ window displays:  .
+ Image file: OLF_Deployment_Manager_files/image001.jpg
+ Image description: the screen shot of the project manager.

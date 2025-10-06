@@ -1,0 +1,12 @@
+This chunk is from the HTML file: OLF_System_Monitor-Services_Connex_Grid_Mon.htm.
+ Section heading: Buttons.
+ Text content: This panel contains the following buttons:.
+ Image file: OLF_System_Monitor-Services_Connex_Grid_Mon_files/image006.jpg
+ Image description: a white paper with the word ' s ' ' on it.
+ Image file: OLF_System_Monitor-Services_Connex_Grid_Mon_files/image007.jpg
+ Image description: a white paper with the word roop on it.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Initiates the “Quality Assurance” function with a password entry interface. |
+|  | Clears the QA test panel. |.

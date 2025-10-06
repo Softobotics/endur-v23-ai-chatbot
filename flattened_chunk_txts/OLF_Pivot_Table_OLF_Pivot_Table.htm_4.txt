@@ -1,0 +1,30 @@
+This chunk is from the HTML file: OLF_Pivot_Table.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields:.
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Pivot Table | Displays the internal name of the data fields on which the pivot table will be based.Note:To select adjacent rows, click the first row to select then while holding the <Shift> key, click the last row to select. To select separate rows, click the rows to select while holding the <Ctrl> key. |
+| Column Type | Displays the corresponding data type of the field. |
+| Columns | Displays the fields selected to represent the columns of the pivot table. |
+| (Columns) Sum | Toggle to add columns. |
+| Rows | Displays the fields selected to represent the rows of the pivot table. |
+| (Rows) Sum | Toggle to add rows. |
+| Colors | The color of the summary row. |
+| Data | Displays the field selected to represent the data of the pivot table. |
+| Aggregate Func. | Aggregate FunctionValueDescriptionAverageAverageMonthly AverageMonthly averageQuarterly AverageQuarterly averageSumSum | Value | Description | Average | Average | Monthly Average | Monthly average | Quarterly Average | Quarterly average | Sum | Sum |
+| Value | Description |
+| Average | Average |
+| Monthly Average | Monthly average |
+| Quarterly Average | Quarterly average |
+| Sum | Sum |
+| Aggregate Col | Used to specify the date column for Average Monthly and Average Quarterly pivot aggregate functions.This is available in versions 7.0r4 and up. |
+| Total Type | The location of the “Total” column in the table.  Available choices are:ValueDescriptionLeftThe “Total” column will be displayed on the left side of the table.MiddleThe “Total” column will be displayed in alphabetical order among the other columns.NoneThe “Total” column will not be displayed.RightThe “Total” column will be displayed on the right side of the table. | Value | Description | Left | The “Total” column will be displayed on the left side of the table. | Middle | The “Total” column will be displayed in alphabetical order among the other columns. | None | The “Total” column will not be displayed. | Right | The “Total” column will be displayed on the right side of the table. |
+| Value | Description |
+| Left | The “Total” column will be displayed on the left side of the table. |
+| Middle | The “Total” column will be displayed in alphabetical order among the other columns. |
+| None | The “Total” column will not be displayed. |
+| Right | The “Total” column will be displayed on the right side of the table. |
+| Text | Enter the column title of the “Total” column. This field defaults to “Total.” |
+| <Blank Field 1> | Displays the user ID of the person logged on to the system. |
+| <Blank Field 2> | Displays the function that is being performed, i.e., Pivot Table Setup. |.

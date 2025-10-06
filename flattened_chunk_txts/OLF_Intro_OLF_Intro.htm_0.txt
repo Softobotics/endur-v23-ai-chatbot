@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Intro.htm.
+ Section heading: Navigating the System.
+ Text content: · Browser · Table Viewer · Configuring the Table Viewer · Query Manager.
+ 
+Links to other files: OLF_Browser.htm, OLF_Table_Viewer.htm, OLF_Configure_View.htm, OLF_Query_Manager.htm.

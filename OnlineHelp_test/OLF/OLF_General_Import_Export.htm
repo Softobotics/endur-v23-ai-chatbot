@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>General Import/Export</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Consolas;
+        panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Wingdings 3";
+        panose-1:5 4 1 2 1 8 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+h5 { mso-style-link:Heading 5 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:2.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps; }
+h6 { mso-style-link:Heading 6 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif"; }
+p.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoHeading7 { mso-style-link:Heading 7 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:12.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoHeading8 { mso-style-link:Heading 8 Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+page-break-after:avoid;
+font-size:20.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoHeading9 { mso-style-link:Heading 9 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:9.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex1 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:10.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:20.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex3 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:30.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex4 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:40.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex5 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:50.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex6 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:60.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:70.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:80.0pt;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoIndex9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.25in;
+text-indent:-10.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+li.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+div.MsoToc1 { margin-top:.25in;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:13.5pt;
+text-indent:-13.5pt;
+font-size:11.0pt;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+p.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc2 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:45.0pt;
+text-indent:-21.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc3 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-27.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc4 { margin-top:3.0pt;
+margin-right:24.0pt;
+margin-bottom:3.0pt;
+margin-left:1.5in;
+text-indent:-.5in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc5 { margin-top:3.0pt;
+margin-right:27.0pt;
+margin-bottom:3.0pt;
+margin-left:153.0pt;
+text-indent:-45.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc6 { margin-top:3.0pt;
+margin-right:22.5pt;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.75in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc7 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc8 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:84.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoToc9 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:96.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormalIndent { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFootnoteText { mso-style-link:Footnote Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoIndexHeading { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+li.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+div.MsoCaption { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+p.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoTof { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:22.0pt;
+text-indent:-22.0pt;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.MsoFootnoteReference { vertical-align:super; }
+p.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoList { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.25in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListBullet2 { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic;
+text-decoration:underline; }
+li.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic;
+text-decoration:underline; }
+div.MsoTitle { mso-style-link:Title Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic;
+text-decoration:underline; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoPlainText { mso-style-link:Plain Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Courier New; }
+li.MsoPlainText { mso-style-link:Plain Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Courier New; }
+div.MsoPlainText { mso-style-link:Plain Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:Courier New; }
+p.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoAcetate { mso-style-link:Balloon Text Char;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:8.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+p.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoListParagraph { margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.Heading5Char { mso-style-name:Heading 5 Char;
+mso-style-link:Heading 5;
+font-family:"Arial" ,"sans-serif";
+font-variant:small-caps;
+font-weight:bold; }
+span.Heading6Char { mso-style-name:Heading 6 Char;
+mso-style-link:Heading 6;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+span.Heading7Char { mso-style-name:Heading 7 Char;
+mso-style-link:Heading 7;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+span.Heading8Char { mso-style-name:Heading 8 Char;
+mso-style-link:Heading 8;
+font-family:"Arial" ,"sans-serif";
+text-transform:uppercase;
+font-weight:bold; }
+span.Heading9Char { mso-style-name:Heading 9 Char;
+mso-style-link:Heading 9;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold;
+font-style:italic; }
+span.FootnoteTextChar { mso-style-name:Footnote Text Char;
+mso-style-link:Footnote Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.TitleChar { mso-style-name:Title Char;
+mso-style-link:Title;
+font-family:"Cambria" ,"serif";
+color:#17365D;
+letter-spacing:.25pt; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Tahoma" ,"sans-serif";
+background:navy; }
+span.PlainTextChar { mso-style-name:Plain Text Char;
+mso-style-link:Plain Text;
+font-family:Consolas; }
+span.BalloonTextChar { mso-style-name:Balloon Text Char;
+mso-style-link:Balloon Text;
+font-family:"Tahoma" ,"sans-serif"; }
+p.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxspfirst { mso-style-name:msolistparagraphcxspfirst;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxspmiddle { mso-style-name:msolistparagraphcxspmiddle;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msolistparagraphcxsplast { mso-style-name:msolistparagraphcxsplast;
+margin-top:0in;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ReferenceLine { mso-style-name:Reference Line;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+li.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+div.Titlesheet { mso-style-name:Titlesheet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:14.0pt;
+font-family:"Arial" ,"sans-serif";
+font-weight:bold; }
+p.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Bullet { mso-style-name:Bullet;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Body { mso-style-name:Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.CellBold { mso-style-name:Cell Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.CellBody { mso-style-name:Cell Body;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyBulleted { mso-style-name:Body Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.BodyNumbered { mso-style-name:Body Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.TableHeader { mso-style-name:TableHeader;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+text-align:center;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.NormalBold { mso-style-name:NormalBold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListNumbered { mso-style-name:List Numbered;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulleted { mso-style-name:List Bulleted;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.5in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulletedLevel2 { mso-style-name:List Bulleted Level2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListNumbered2 { mso-style-name:List Numbered 2;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:.75in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.StyleListNumberedBold { mso-style-name:Style List Numbered + Bold;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.TableNumber { mso-style-name:Table Number;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.ListBulletedLevel3 { mso-style-name:List Bulleted Level3;
+margin-top:3.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:1.0in;
+text-indent:-.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nImport/ Export\nGeneral Import/Export");
+addAvenueInfo("System Use","OLF/OLF_Configure_View.htm","OLF/OLF_Object_Import_Export.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_General_Import_Export.htm\">Import/ Export<\/a> &gt; General Import/Export<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>General Import/Export</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The G<i>eneral Import/Export</i> window is used to import/export a variety of system data/definitions from/to .CSV or XML formats. This window is used for import/export in many areas of the system. Examples are listed below. This window allows the user to invoke general importing and exporting functions, as well as setting up the definition to be used. It may or may not contain different parameters that may be needed to correctly import/export data. While window titles may vary, the design and functionality are the same.</p>
+<p class="MsoNormal">This window is used to import/export the following:</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Historical Prices/Hourly Historical Prices</b> – Uses Index Name and Price Type as parameters</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Curve Adjustment</b> – Uses the Adjustment Definition Name as parameter</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Static Data</b> – The static data being imported/ exported is used as parameter</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Time Zones</b> – Uses TimeZone Label as parameter</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Products</b> – Uses Product Type and Name as parameters</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Bond Futures Conversion Factors</b> – Uses the Instrument Number as parameters</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Settlement Desktop Definition</b> – Refer to <a href="../Operations_Manager/OPS_Settlement_Desktop.htm"><i>Settlement Desktop</i></a> for the description of the parameters</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> <b>Market Volatility Definitions -</b> v10.0r2 and up.</p>
+<h2>See Also</h2>
+<p class="MsoNormal"><a href="../Operations_Manager/OPS_Standard_Import-Export.htm">Standard Import/Export</a></p>
+<h2>Reference Documents</h2>
+<p class="MsoNormal">The following reference documents can be found in the CRM Web Portal.</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Std_Imp_Exp_Quick_Start_Guide.pdf</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Importing_&amp;_Exporting_Prices.pdf</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Importing_Hourly_Historical_Prices.pdf</p>
+<h2>Accessing This Window/Screen</h2>
+<p class="MsoNormal">To access this window from a supported function, select <b>Import</b> or <b>Export</b> <b><span style='font-family:Wingdings'>&agrave;</span> Data</b> or<b>Definition.</b></p>
+<h2>Tabs</h2>
+<p class="MsoNormal">This window contains the following tabs:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<tr>
+<td width="193" valign="top" style='width:144.9pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Tab</p>
+</td>
+<td width="445" valign="top" style='width:333.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+<tr>
+<td width="193" valign="top" style='width:144.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><a href="#Gen">General Import/Export</a></p>
+</td>
+<td width="445" valign="top" style='width:333.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays by default when this window is accessed.</p>
+<p class="MsoNormal">Select the data, the format, the location of the data to import/export, and view the import/export file.</p>
+</td>
+</tr>
+<tr>
+<td width="193" valign="top" style='width:144.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><a href="#Def">Definition</a></p>
+</td>
+<td width="445" valign="top" style='width:333.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to:</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Select a new default definition</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Execute a definition that is not the default</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Edit an existing definition</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Create a new definition</p>
+</td>
+</tr>
+</table>
+<h2><a name="Gen" id="Gen"></a>General Import/Export Tab</h2>
+<p class="MsoNormal">The General Import/Export tab displays by default when this window is accessed. Select the data, the format, the location of the data to import/export and view the import/export file.</p>
+<p class="Picture"><img border="0" width="500" height="359" src="OLF_General_Import_Export_files/image001.jpg" alt="Description: image001" /></p>
+<h3>General Import/Export Tab Buttons</h3>
+<p class="MsoNormal">This window has the following buttons:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Button</p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="96" height="20" src="OLF_General_Import_Export_files/image002.jpg" alt="Description: image003.jpg" /></p>
+<p class="NormalBold"><img border="0" width="96" height="20" src="OLF_General_Import_Export_files/image003.jpg" alt="Description: image004.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Opens a window that lets you drill down to the elements that make up the import/export data.</p>
+</td>
+</tr>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="96" height="20" src="OLF_General_Import_Export_files/image004.jpg" alt="Description: image005.jpg" /></p>
+<p class="NormalBold"><img border="0" width="96" height="20" src="OLF_General_Import_Export_files/image005.jpg" alt="Description: image006.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Opens the import/export configuration file.</p>
+<p class="MsoNormal">This lets you view the file in its native format, such as Comma-Separated Values (CSV) or eXtensible Markup Language (XML), after import/export is invoked.</p>
+</td>
+</tr>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="54" height="20" src="OLF_General_Import_Export_files/image006.jpg" alt="Description: image007.jpg" /></p>
+<p class="NormalBold"><img border="0" width="54" height="20" src="OLF_General_Import_Export_files/image007.jpg" alt="Description: image008.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Imports and exports data from/to the source/target file.</p>
+</td>
+</tr>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="54" height="20" src="OLF_General_Import_Export_files/image008.jpg" alt="Description: image009.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Close the window.</p>
+</td>
+</tr>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="77" height="20" src="OLF_General_Import_Export_files/image009.jpg" alt="Description: image010.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Brings up a dialog box for choosing a file or folder.</p>
+</td>
+</tr>
+</table>
+<h3>General Import/Export Tab Fields</h3>
+<p class="MsoNormal">This <i>General Import/Export</i> tab of this window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Field</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Parameter</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Used to set the characteristics of the import/export.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Parameter Value</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Pick list value used to control scope of the import/export.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Format</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Used to set the input/output file format (.CSV, XML).</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Filename</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Specifies the path and name of the input/output file.</p>
+</td>
+</tr>
+</table>
+<h3>Importing Data</h3>
+<p class="ListNumbered">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> From the <b>General Import/Export</b> tab, select the format of the file to import on the “Format” field.</p>
+<p class="ListNumbered">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> To change the default location of the import file, enter the location of the file to import on the “Filename” field. To browse for the file, click the <b>Browse</b> button. A file browser displays allowing the user to select the location of the file to import.</p>
+<p class="ListNumbered">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> To view the file to import, click the <b>View Import File…</b> button. A spreadsheet/browser displays showing details of the import file.</p>
+<p class="ListNumbered">4.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Import</b> button to import data. If import is complete, the message “Import successfully completed.” displays.</p>
+<p class="ListNumbered">5.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>OK</b> button. The holiday schedule is added to the Holiday Schedules list.</p>
+<h3>Exporting Data</h3>
+<p class="ListNumbered">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> From the <b>General Import/Export</b> tab, select the values of the parameter/s that will be exported. For example, to export historical prices, select the index and the price type that will be exported.</p>
+<p class="ListNumbered">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the format of the file will be saved as in the “Format” field.</p>
+<p class="ListNumbered">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> To change the default location of the export file, enter the path and name of the file where data will be saved in the “Filename” field. To browse for the file, click the <b>Browse</b> button. A file browser displays allowing the user to select the location and name of the export file.</p>
+<p class="ListNumbered">4.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Export</b> button to export data. If export is complete, the message “Export successfully completed.” displays.</p>
+<p class="ListNumbered">5.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>OK</b> button.</p>
+<p class="ListNumbered">6.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> To view the file to export, click the <b>View Export File…</b> button.</p>
+<h2><a name="Def" id="Def"></a>Definitions Tab</h2>
+<p class="MsoNormal">Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to:</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Select a new default definition</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Execute a definition that is not the default</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Edit an existing definition</p>
+<p class="MsoListBullet2"><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Create a new definition</p>
+<p class="Picture"><img border="0" width="500" height="359" src="OLF_General_Import_Export_files/image010.jpg" alt="Description: image002" /></p>
+<h3>Definitions Tab Buttons</h3>
+<p class="MsoNormal">This window has the following buttons in addition to those defined for the <i>General Import/Export</i> tab:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="211" valign="top" style='width:2.2in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Button</p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="211" style='width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="120" height="20" src="OLF_General_Import_Export_files/image011.jpg" alt="Description: image011.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Click this button to save any changes made in the Default tab.</p>
+</td>
+</tr>
+<tr>
+<td width="211" style='width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="77" height="20" src="OLF_General_Import_Export_files/image012.jpg" alt="Description: image012.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Standard Import/Export</i> window to allow the user to edit the import/export file configuration.</p>
+<p class="MsoNormal">See <a href="../Operations_Manager/OPS_Standard_Import-Export.htm"><i>Standard Import/Export</i></a></p>
+</td>
+</tr>
+<tr>
+<td width="211" style='width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold"><img border="0" width="77" height="20" src="OLF_General_Import_Export_files/image013.jpg" alt="Description: image013.jpg" /></p>
+</td>
+<td width="427" valign="top" style='width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Displays the <i>Standard Import/Export</i> window to allow the user to create a new import/export file configuration.</p>
+<p class="MsoNormal">See <a href="../Operations_Manager/OPS_Standard_Import-Export.htm"><i>Standard Import/Export</i></a></p>
+</td>
+</tr>
+</table>
+<h3>General Import/Export Tab Fields</h3>
+<p class="MsoNormal">The <i>Definitions</i> tab of this window contains the following fields:</p>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="638" style='width:6.65in;border-collapse:collapse'>
+<thead>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Field</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+<p class="TableHeader">Description</p>
+</td>
+</tr>
+</thead>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Default</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Click to Check and indicate the selected definition should be used as the default.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Definition Id</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">A system-generated number to uniquely identify the definition.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Definition Name</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Name of the definition.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Format</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Format of the definition file.</p>
+</td>
+</tr>
+<tr>
+<td width="175" valign="top" style='width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+<p class="NormalBold">Filename</p>
+</td>
+<td width="463" valign="top" style='width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+<p class="MsoNormal">Filename of the definition file.</p>
+</td>
+</tr>
+</table>
+<h3>Selecting a Default Import/Export Definition</h3>
+<p class="ListNumbered">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Definitions</b> tab.</p>
+<p class="ListNumbered">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Put a check mark (by clicking) on the <b>Default</b> field of the definition that will be set as the default import/export definition.</p>
+<p class="ListNumbered">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Save Defaults</b> button to save modifications.</p>
+<h3>Running an Import/Export Definition (that is not the Default)</h3>
+<p class="ListNumbered">1.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Select the <b>Definitions</b> tab.</p>
+<p class="ListNumbered">2.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Highlight the row that will be executed.</p>
+<p class="ListNumbered">3.<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;</span> Click the <b>Import</b> or <b>Export</b> button to execute the definition.</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

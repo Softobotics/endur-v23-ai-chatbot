@@ -1,0 +1,23 @@
+This chunk is from the HTML file: OLF_Open_From_Directory_Browser.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Image file: OLF_Open_From_Directory_Browser_files/image003.jpg
+ Image description: the gameboy is a computer with a small screen.
+ Image file: OLF_Open_From_Directory_Browser_files/image004.jpg
+ Image description: a yellow and black square with a white background.
+ Image file: OLF_Open_From_Directory_Browser_files/image005.jpg
+ Image description: a white and black square with a green light.
+ Image file: OLF_Open_From_Directory_Browser_files/image006.jpg
+ Image description: a yellow and black square with a cross on it.
+ Image file: OLF_Open_From_Directory_Browser_files/image007.jpg
+ Image description: a blue house with a white roof.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | This has the same function asFileàPrint. |
+|  | This has the same function asFileàUp Directory. |
+|  | This has the same function asFileàNew Directory. |
+|  | Delete Directory. Deletes the selected directory. |
+|  | This has the same function asFileàHome Directory. |
+| Load | Displays the details of the file loaded in the “Filename” field in the appropriate screen, e.g.Directory Window(for Crystal or OpenComponent, types),Script/Task Editor(for scripts/tasks),Table Viewer(for screen configurations) orQuery Manager(for queries). To load the file in the “Filename” field, highlight the file from theContents of Directorytable.Note:Another way to load a file is to double-click the file in theContents of Directorytable. |
+| Cancel | Closes the window. |.

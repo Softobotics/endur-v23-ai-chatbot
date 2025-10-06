@@ -1,0 +1,48 @@
+This chunk is from the HTML file: OLF_System_Monitor.htm.
+ Section heading: Licensing.
+ Text content: .
+ Table data: 
+| System Monitor Tabs | Security Privilege ID |
+| --- | --- |
+| Script Engines | None |
+| Services | 29200 |
+| All Services | None |
+| Domain Grid Monitor | 29250 |
+| Running Services | None |
+| Monitor | 26110 (new in v8.0r1 and above) |
+| Connex Grid Monitor | 29255 (new in v8.0r1 and above) |
+| Running Services | None |
+| Monitor | 26000 |
+| Credit | 29210 |
+| Risk | 29220 |
+| RTPE | 29230 |
+| Op Services | 29240 |
+| Market Data | 29260 |
+| Deal Services Query | 29280 |
+| Diagnostics | 29300 |
+| Process Table | None |
+| Kill Selected Processes | 29305 (new in v8.0r1 and above) |
+| Oping | 29310 |
+| RV Listen | 29320 |
+| Listen to All | 29321 (removed in v8.0r1 and above) |
+| Sessions | 29330 |
+| Kill Selected Session | 29331 (new in v8.0r1 and above) |
+| Kill Remote Processes | 29306 (new in v8.0r1 and above) |
+| ANE Messages | 29270 |
+| My Services | None |
+| Product Tools | 29400 |
+| Enterprise Toolkit | 29410 |
+| System | None |
+| Info | None |
+| System Wide Configuration | None |
+| Licensing | None |
+| DLL Versions | None |
+| Cache Monitor | None |
+| Graphic Properties | None |
+| Internal System Data | None |
+| Database | 29600 |
+| Database Connections | None |
+| Database Administration | None |
+| Unique ID Administration | None |
+| Analyze Table Statistics | 29610 |
+| Update Table Statistics | 29620 (new in v8.0r1 and above) |.

@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Search_Window.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Search String | Enter the string to search in this field. |
+| <Criteria Listing> | Displays the list of search strings previously entered. To search for a previous search string, simply highlight the string in the list and click theSearchbutton. |
+| Column Title | Displays the columns in theTable Viewer. Highlight the column that will be included in the search. |.

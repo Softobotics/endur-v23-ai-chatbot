@@ -1,0 +1,24 @@
+This chunk is from the HTML file: OLF_APM_Market_Data_Incremental.html.
+ Section heading: Important Considerations.
+ Text content: An important consideration with enabling this feature 
+ is performance. There is no distinction of whether the deal is sensitive 
+ to a particular set of gridpoints on an index. As long as the deal is 
+ sensitive to the index, an incremental update will be triggered. This can result in a significant number of sudden 
+ updates, especially if a large number of deals are sensitive to the same 
+ index. It is recommended to test the feature on a small scale 
+ to determine the potential volume of incremental updates and scale up 
+ infrastructure to handle the estimated increase in system load. It is also recommended to select the portfolios that 
+ require near real time market data updates and segregate them into their 
+ own service. This will reduce the system load and not waste resources 
+ processing updates for portfolios that do not need to have updated pricing. If the service only requires periodic market data 
+ updates, the service itself can be configured to re-batch on a periodic 
+ basis e.g. every 15 minutes, every 30 minutes. If the service contains 
+ various indexes and most of which have not changed, then the number of 
+ incremental updates will be few. This feature will perform well and faster 
+ than re-batching the entire service. However, if the service contains 
+ many deals sensitive to the same indexes and where most of the deals will 
+ change, then the number of incremental updates will be many. In this case, 
+ the feature will perform slower than re-batching the entire service. The frequency of market data updates will also be 
+ a factor. If there is a market data feed which updates the prices frequently, 
+ it will generate a significant number of updates which can queue up on 
+ the clusters..

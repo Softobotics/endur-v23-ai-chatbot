@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_AVS_Add-In_Configuration.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: This window can be accessed via multiple paths in the system.  This procedure is just one example of how to access the Script Editor. The following window displays: .
+ Image file: OLF_AVS_Add-In_Configuration_files/image001.jpg
+ Image description: the screenshote software screenshote software screenshote software.

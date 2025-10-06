@@ -1,0 +1,15 @@
+This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_Listen.htm.
+ Section heading: Buttons.
+ Text content: This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons: .
+ Image file: OLF_System_Monitor-Diagnostics_Listen_files/image004.jpg
+ Image description: a white paper with the word job on it.
+ Image file: OLF_System_Monitor-Diagnostics_Listen_files/image005.jpg
+ Image description: the word inside of a white paper with a black and white stripe.
+ Image file: OLF_System_Monitor-Diagnostics_Listen_files/image006.jpg
+ Image description: a white paper with the word ' cbb ' written on it.
+ Table data: 
+| Button | Description |
+| --- | --- |
+|  | Select this button to display messages in the table based upon the selected “Scope” and “Subject(s)”. Messages will not be shown if the button is not selected. |
+|  | Cancels the request for system messages to be shown in the table. |
+|  | Removes all message data from the table. |.

@@ -1,0 +1,20 @@
+This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
+ Section heading: Overview.
+ Text content: The Ad Hoc Query Viewer, a utility window 
+	 for advanced technical users, allows system data or user data, stored 
+	 in database tables, to be viewed (read-only).  It also enables 
+	 users to view the structure of those tables, including its key fields 
+	 and indexes.  The following view options are flexible:  Notes: 1) Data elements that are stored in the BLOB format 
+	 (Binary Large Objects) cannot be viewed in this window.  In 
+	 addition, this view is used for information purposes only; the underlying 
+	 data cannot be modified. 2) Users are required to have security 
+	 privilege 4001 in order to access the Ad Hoc Query window. 3) This is for Oracle Users only: To get double 
+	 value results you have to introduce aliases for the resulting columns 
+	 within your sql queries. The alias has to start with "ohd_".   As 
+	 an example you should use the query "select sum(rate)  ohd_sum 
+	 from profile" instead of "select sum(rate) from profile" 
+	 to get the respective double result. 4) This window has a limit of 32,500 rows for 
+	 versions prior to v8.0r2. In versions v8.0r2 and greater, the limit 
+	 has been raised to 500,000 rows. .
+ 
+Links to other files: ../Admin_Manager/ADMIN_Security_Privileges.htm.

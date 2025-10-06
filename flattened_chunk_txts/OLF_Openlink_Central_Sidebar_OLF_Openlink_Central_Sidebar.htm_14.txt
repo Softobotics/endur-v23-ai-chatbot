@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
+ Section heading: OpenLink Central Sidebar – Drag/Dock/Drop.
+ Text content: The OpenLink Central Sidebar can be dragged and docked in another position in the desktop window or dropped elsewhere on a user’s monitor. 1. Use the mouse pointer to grab the sidebar and drag it.  2. Use the navigational arrows to dock the sidebar into another position within the desktop.  OR 3. Drop the Sidebar in a convenient location on the monitor. .
+ Image file: OLF_Openlink_Central_Sidebar_files/image028.jpg
+ Image description: the screenshoter screen shot of the screen shot.
+ Image file: OLF_Openlink_Central_Sidebar_files/image029.jpg
+ Image description: the screenshoter screen shot of the screen shot.
+ Image file: OLF_Openlink_Central_Sidebar_files/image030.jpg
+ Image description: the screens are shown in the screens section of the software.

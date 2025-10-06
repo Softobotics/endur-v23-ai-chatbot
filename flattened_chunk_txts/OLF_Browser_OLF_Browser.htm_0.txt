@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_Browser.htm.
+ Section heading: Overview.
+ Text content: The Browser is a system navigation interface used in the Trading, Market, Credit, Risk, and Accounting Managers to graphically depict items.  The Trading Manager browser shown below will be used as an example to describe components that are common to all browser windows.   .
+ Image file: OLF_Browser_files/image001.jpg
+ Image description: the software interface for the software interface.

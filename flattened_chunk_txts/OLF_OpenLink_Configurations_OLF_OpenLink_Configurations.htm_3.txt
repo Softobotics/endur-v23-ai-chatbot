@@ -1,0 +1,5 @@
+This chunk is from the HTML file: OLF_OpenLink_Configurations.htm.
+ Section heading: Accessing This Window/Screen.
+ Text content: To access this window: 1. Launch OpenLink Central if it is not already in use. 2. Select OpenLink Central à Edit Configuration from the menu icon or menu bar. The following window displays: .
+ Image file: OLF_OpenLink_Configurations_files/image001.jpg
+ Image description: the text editor dial in the text editor.

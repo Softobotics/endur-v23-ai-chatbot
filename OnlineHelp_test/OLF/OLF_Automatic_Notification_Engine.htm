@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 10" />
+<title>Automatic Notification Engine</title>
+
+<style type="text/css">
+<!--
+@font-face
+        {font-family:Wingdings;
+        panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+        {font-family:"Segoe UI";
+        panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+        {font-family:Verdana;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+        {font-family:Cambria;
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoNormal { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoNormal { margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h1 { mso-style-link:Heading 1 Char;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:16.0pt;
+font-family:"Verdana" ,"sans-serif";
+text-transform:uppercase; }
+h2 { mso-style-link:Heading 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:14.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h3 { mso-style-link:Heading 3 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+h4 { mso-style-link:Heading 4 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+page-break-after:avoid;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-style:italic; }
+p.MsoHeader { mso-style-link:Header Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoHeader { mso-style-link:Header Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoHeader { mso-style-link:Header Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoFooter { mso-style-link:Footer Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoFooter { mso-style-link:Footer Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoFooter { mso-style-link:Footer Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+li.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+div.MsoBodyText { mso-style-link:Body Text Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif";
+font-weight:bold; }
+p.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyTextIndent { mso-style-link:Body Text Indent Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:.5in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:1.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:1.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.MsoBodyTextIndent2 { mso-style-link:Body Text Indent 2 Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:1.25in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+a:link { color:blue;
+text-decoration:underline; }
+span.MsoHyperlink { color:blue;
+text-decoration:underline; }
+a:visited { color:purple;
+text-decoration:underline; }
+span.MsoHyperlinkFollowed { color:purple;
+text-decoration:underline; }
+p.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+li.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+div.MsoDocumentMap { mso-style-link:Document Map Char;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+background:navy;
+font-size:10.0pt;
+font-family:"Tahoma" ,"sans-serif"; }
+span.Heading1Char { mso-style-name:Heading 1 Char;
+mso-style-link:Heading 1;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading2Char { mso-style-name:Heading 2 Char;
+mso-style-link:Heading 2;
+font-family:"Cambria" ,"serif";
+color:#365F91; }
+span.Heading3Char { mso-style-name:Heading 3 Char;
+mso-style-link:Heading 3;
+font-family:"Cambria" ,"serif";
+color:#243F60; }
+span.Heading4Char { mso-style-name:Heading 4 Char;
+mso-style-link:Heading 4;
+font-family:"Cambria" ,"serif";
+color:#365F91;
+font-style:italic; }
+span.HeaderChar { mso-style-name:Header Char;
+mso-style-link:Header;
+font-family:"Verdana" ,"sans-serif"; }
+span.FooterChar { mso-style-name:Footer Char;
+mso-style-link:Footer;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextChar { mso-style-name:Body Text Char;
+mso-style-link:Body Text;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextIndentChar { mso-style-name:Body Text Indent Char;
+mso-style-link:Body Text Indent;
+font-family:"Verdana" ,"sans-serif"; }
+span.BodyTextIndent2Char { mso-style-name:Body Text Indent 2 Char;
+mso-style-link:Body Text Indent 2;
+font-family:"Verdana" ,"sans-serif"; }
+span.DocumentMapChar { mso-style-name:Document Map Char;
+mso-style-link:Document Map;
+font-family:"Segoe UI" ,"sans-serif"; }
+p.Picture { mso-style-name:Picture;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.Picture { mso-style-name:Picture;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.Picture { mso-style-name:Picture;
+margin-top:6.0pt;
+margin-right:0in;
+margin-bottom:6.0pt;
+margin-left:0in;
+font-size:11.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+p.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+li.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+div.msochpdefault { mso-style-name:msochpdefault;
+margin-right:0in;
+margin-left:0in;
+font-size:10.0pt;
+font-family:"Verdana" ,"sans-serif"; }
+@page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1 { page:WordSection1; }
+ol { margin-bottom:0in; }
+ul { margin-bottom:0in; }
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+
+</head>
+<body lang="EN-US" link="blue" vlink="purple" xml:lang="EN-US"><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Screen-Level Help Topics\nSystem Tools and Configurations\nAutomatic Notification Engine\nAutomatic Notification Engine");
+addAvenueInfo("System Use","OLF/OLF_ANE_Message_Types.htm","OLF/OLF_Column_Types.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\"> ");
+AddMasterBreadcrumbs("../OLF_UserGuide.htm", "font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right", "&gt;", "Home", "../index.html");
+document.write("<a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"../Screen-Level_Help_Topics.htm\">Screen-Level Help Topics<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_Intro.htm\">System Tools and Configurations<\/a> &gt; <a style=\"font-family: Calibri; font-size: 12pt; font-weight: 400;  font-style:normal; color: rgb(0, 0, 0); text-decoration:none; text-align: right\" href=\"OLF_ANE_Message_Types.htm\">Automatic Notification Engine<\/a> &gt; Automatic Notification Engine<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+onLoadHandler = function()
+{
+  if (window.setRelStartPage)
+	{
+	setTimeout("setRelStartPage('../OLF_UserGuide.htm');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+	}
+}
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+  autoSync(1);
+  sendSyncInfo();
+  sendAveInfoOut();
+}
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<div class="WordSection1">
+<h1>AUTOMATIC NOTIFICATION ENGINE (ANE)</h1>
+<h2>Overview</h2>
+<p class="MsoNormal">The <i>Automatic Notification Engine (ANE)</i> is a notification engine used by the System to broadcast data changes to the OLF system’s client applications.&#160; This is done so that all clients do not need to continuously “re-query” data from the database.&#160; This is reflected on the AVS side of the <i>Trading Manager Browser</i> screen and/or within the Active side of blotter listing screens.&#160;</p>
+<ul style='margin-top:0in' type="disc">
+<li class="MsoNormal">ANE reads in the modifications from the database (using the same API that the individual clients use at startup) and broadcasts the information to all currently connected clients.&#160; The system database is the only persistent data store, and therefore, it is accessed whenever a client first connects to the system.&#160;</li>
+<li class="MsoNormal">ANE is not used to store audit trail and/or reporting information.&#160; Therefore, this type of information cannot be requested from the System once it is removed from the user’s screen.&#160; ANE broadcasts ONLY information on status changes in real-time when they occur.</li>
+<li class="MsoNormal">ANE broadcasts information using the messaging bug, which uses an efficient protocol to “publish” information to clients on the network that have previously “subscribed” to the type of data modification.&#160; These ANE publication and subscription processes are managed internally by the System.&#160; There is no API available for these functions.</li>
+</ul>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>There are various <i>types</i> of data supported by ANE such as Transaction and Curves.&#160; Each type supported by ANE must have a unique identifier, such as “tran_num” or “index_id.”&#160; The ANE queue stores only the unique identifier along with the type identifier.&#160; No detailed information is stored within the ANE queue about the data that has been modified.&#160; Information about how the data changed, when it changed, or who changed it is accessible only by using the data source directly.&#160; (For example, the ab_tran table for transaction updates)</p>
+<p class="MsoNormal">Any API (used internally or exposed externally to AVS or Visual Basic) that modifies data supported by ANE will add an entry to the ANE queue upon successful completion of that modification.&#160; This entry contains the type of data and the unique identifier.&#160; This occurs whether or not ANE is actually running.&#160; For example, when a Transaction is inserted/modified an entry is put into the ANE queue by the same client application (Trading Manager) that initiated the update.</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>The ANE Engine continually polls this queue and broadcasts the type and unique_id of all changed data.&#160; It is deleted from the ANE queue once an item is broadcast.</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>&#160;</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>See <a href="OLF_ANE_Message_Types.htm">ANE Message Types</a></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'>&#160;</p>
+<h2>What the ANE Does for the User</h2>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>The ANE allows users to publish and subscribe to data dynamically without re-querying the database.&#160; Technically, the ANE updates are query based, referencing either a fixed query or an ad-hoc query.&#160; The query identifies and gathers parameters.&#160; Once initiated, the ANE engine searches the database for the deal parameters that are pertinent to the query selected and updates the display in the user’s browser.&#160; ANE updates include AVS browser workspace, trade blotters, and script engines.</p>
+<h3><span style='font-size:11.0pt'>&#160;</span></h3>
+<h2>Starting and Running the ANE from the Services Manager</h2>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>Once initiated, ANE begins to continuously search the database for all newly entered transactions.&#160; ANE then “broadcasts” these transactions to the entire network.&#160; Each individual user must initiate ANE on their workstation.&#160; Client ANE initiation is done either through the Trading Manger, the Services Manager, or by running an AVS script in the Trading Manager.&#160; Each user can then view the information that is broadcast by the ANE engine.&#160;</p>
+<p class="MsoNormal">To start ANE:</p>
+<p class="MsoNormal">Initialize ANE via the Services Manager.&#160; The user can do this by creating a job that calls a specific task to be run.&#160; This task must be a script that references a fixed query.&#160; An ad-hoc query cannot be run through ASM.&#160; Please reference the ASM documentation for more information on how to create jobs within ASM.</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'><span style='font-size:11.0pt'>&#160;</span></p>
+<h2>How ANE Updates the Active Window and the AVS Window</h2>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><b>Active Window</b> - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.&#160; In the active window, all positions on the blotter receive updates; therefore the transactions do not display as nodes in the Trading Manager browser window.</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'>&#160;</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><b>AVS Window</b> - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.&#160; In the AVS window, all positions on the blotter receive updates, and the transactions display as additional nodes in the Trading Manager browser.</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'>&#160;</p>
+<h2>How ANE Updates the Listing Part of the Trade Blotter</h2>
+<ol style='margin-top:0in' start="1" type="1">
+<li class="MsoNormal">If the listing blotter is set to receive updates, it will receive updates of trades based on the following conditions:</li>
+</ol>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Trades associated with portfolios for which the user is authorized.</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Are of “type trading” (no authorization records or master instruments)</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Any shared or perpetual trades that have a holding instrument configured on any of the input blotter pages.</p>
+<ol style='margin-top:0in' start="2" type="1">
+<li class="MsoNormal">If there is no listing query, all the trades specified above will be updated to the listing blotter.</li>
+<li class="MsoNormal">If a listing query exists, a very limited filtering of the trades is done so that some of the query conditions will filter out some ANE update trades from being added to the listing blotter.</li>
+</ol>
+<p class="MsoNormal">&#160;</p>
+<p class="MsoNormal">The following items describe how the ANE update functions:</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Single-page-only queries are supported.</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> A limited number of transaction table fields are matched.&#160; (See the list below for the fields that are used for filtering updates from a query.)</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Fields from tables other than transaction tables are not supported.&#160; For example, transaction info, provisional, etc.</p>
+<p class="MsoNormal" style='margin-left:1.25in;text-indent:-.25in'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt;font-family: "Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> When a trade in the listing panel is modified and no longer matches the original query, it will remain on the blotter until a manual update occurs.</p>
+<p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:0in; margin-left:1.25in;margin-bottom:.0001pt;text-indent:-.25in;text-autospace: none'><span style='font-family:Symbol'>·</span><span style='font-size:7.0pt; font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span> Matching criteria that are not supported are:</p>
+<p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:0in; margin-left:130.5pt;margin-bottom:.0001pt;text-indent:-.25in;text-autospace: none'>-<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;</span> Complex wildcard matching such as "*match*this"</p>
+<p class="MsoBodyTextIndent2" style='margin-left:130.5pt;text-indent:-.25in'>-<span style='font-size:7.0pt;font-family:"Times New Roman","serif"'>&#160;&#160;&#160;&#160;&#160;</span> Combo queries like "&gt;1+&lt;5" in a single column.&#160; (The workaround for this is to put "&gt;1" and "+&lt;5" into different columns.)</p>
+<p class="MsoBodyTextIndent2" style='margin-left:0in'>&#160;</p>
+<h2>Using ANE to Feed an External System or to Trigger External Events</h2>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>What if a non-system application wants to listen to these broadcasts?</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>Non-system applications cannot directly “listen” to system broadcasts for the following reasons:</p>
+<ul style='margin-top:0in' type="square">
+<li class="MsoNormal" style='margin-top:3.0pt;margin-bottom:3.0pt'>The broadcasts contain data that is not in a format which has a published API.&#160; It is done in OpenLink’s proprietary format for speed and efficiency.</li>
+<li class="MsoNormal" style='margin-top:3.0pt;margin-bottom:3.0pt'>The broadcasts are not persistent.&#160; In other words, if a client is not listening at the time of the broadcast, the client will never know about the broadcast.&#160; The system database is the only persistent data store.</li>
+</ul>
+<p class="MsoNormal">&#160;</p>
+<h2>Description of AVS Functions/Stored Procedures</h2>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'><b>Note:</b>&#160; These stored procedures may be called directly by outside applications.</p>
+<p class="MsoBodyText">int ANE_GetNextMessage(TABLE *table, int message_type) - calls the stored procedure “get_next_ane_log_msg”</p>
+<p class="MsoBodyTextIndent">This function retrieves the next “unprocessed” unique identifier for a given message_type.&#160; The table returned by this function would be empty if there were no entries in the log for this message_type.&#160; The table returned contains message_type, ane_log_id (internally generated by ANE), messsage_id (this is the unique_indentifier) and row_creation.&#160; (This is the time ANE broadcasts the data, not when the change occurred.)</p>
+<p class="MsoBodyText">int ANE_ProcessNextMessage(int message_type) - calls the stored procedure “process_ane_log_msg”</p>
+<p class="MsoBodyTextIndent">This function marks the next “unprocessed” message as “processed”.&#160; This is used a sort of&#160; “transaction control” on reading/processing ANE log entries.&#160; This function should be called only if ANE_GetNextMessage() retrieved data AND the data was successfully transferred to another table and/or external system.</p>
+<p class="MsoBodyText">pseudo-code example:</p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>table=TABLE_New();</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>retval = ANE_GetNextMessage(table, AU_TRANSACTION_INSERT);</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>if (retval != 1)</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in;text-indent:.5in'><span style='font-family:"Courier New"'>EXIT_Fail();</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>if (TABLE_GetNumRows(table)) /* If there is some data to process */</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>{</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in'><span style='font-family:"Courier New"'>tran_num = TABLE_GetIntN(table, “message_id”, 1);</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in'><span style='font-family:"Courier New"'>Retrieve some data from the database for tran_num</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in'><span style='font-family:"Courier New"'>Write the data to a file, send the data to another database, or write the data to a user_table</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in'><span style='font-family:"Courier New"'>if (the above process completed successfully)</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>{</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:1.0in'><span style='font-family:"Courier New"'>ANE_ProcessNextMessage INSERT);</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:.5in'><span style='font-family:"Courier New"'>}</span></p>
+<p class="MsoNormal" style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt; margin-left:0in'>&#160;</p>
+<p class="MsoBodyText">int ANE_PruneMessageQueue(int message_type) - calls the stored procedure “prune_ane_log_que”</p>
+<p class="MsoBodyTextIndent">Run this stored procedure periodically to “Prune” the log.&#160; ANE_ProcessNextMessage “marks” the message as “processed” but does not delete data from the log.&#160;</p>
+<p class="MsoBodyTextIndent2" style='margin-left:0in'>&#160;</p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,Application,Description0,Document_x0020_Type,Last_x0020_Modified0,SoftwareVersion_x0028_s_x0029_,SubCategories"><xml>
+<o:CustomDocumentProperties>
+<o:Document_x0020_Type msdt:dt="string">Online Help</o:Document_x0020_Type>
+<o:Description0 msdt:dt="string">This is an online help file from the Online Help User Guide.</o:Description0>
+<o:Application msdt:dt="string">;#Endur;#Findur;#</o:Application>
+<o:SoftwareVersion_x0028_s_x0029_ msdt:dt="string">;#Endur V15.x;#Endur V14.x;#Endur V12.x;#Endur V11.x;#Findur V15.x;#Findur V14.x;#Findur V12.x;#Findur V11.x;#</o:SoftwareVersion_x0028_s_x0029_>
+<o:Primary_x0020_Category msdt:dt="string">Online Help</o:Primary_x0020_Category>
+<o:Categories0 msdt:dt="string">;#Online Help;#</o:Categories0>
+<o:SubCategories msdt:dt="string">System Administration</o:SubCategories>
+<o:Last_x0020_Modified0 msdt:dt="string">2016-07-01T00:00:00Z</o:Last_x0020_Modified0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->

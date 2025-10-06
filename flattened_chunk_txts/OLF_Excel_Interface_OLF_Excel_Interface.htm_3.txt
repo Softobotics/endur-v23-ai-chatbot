@@ -1,0 +1,22 @@
+This chunk is from the HTML file: OLF_Excel_Interface.htm.
+ Section heading: Buttons.
+ Text content: This window contains the following buttons: .
+ Table data: 
+| Button | Description |
+| --- | --- |
+| Export to New Workbook | Exports 
+			 data to a new Excel workbook. |
+| Export to Open Workbook | Exports 
+			 data to the workbook and worksheet specified in the “Workbook” 
+			 and “Worksheet” fields, respectively.Note that export 
+			 behavior may vary for different versions of MS Excel. |
+| Export to Existing File | Exports 
+			 data to an existing Excel file. |
+| Browse | Opens 
+			 a file browser allowing the user to select the Excel file 
+			 to export data. This button displays only when the “Export 
+			 to Existing File” option is selected. |
+| OK | Exports 
+			 data to Excel and closes the window. |
+| Cancel | Closes 
+			 the window without exporting data. |.

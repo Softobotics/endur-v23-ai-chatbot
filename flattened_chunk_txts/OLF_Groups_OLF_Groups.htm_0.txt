@@ -1,0 +1,9 @@
+This chunk is from the HTML file: OLF_Groups.htm.
+ Section heading: Overview.
+ Text content: The Groups window allows the user to create new, rename, and 
+ delete existing groups in a window. This screen is used by the several 
+ functionalities in the system such as Portfolio Groups and Entity Groups.  See also: Portfolio 
+ Groups Entity 
+ Groups .
+ 
+Links to other files: ../Admin_Manager/ADMIN_Portfolio_Groups.htm, ../Reference_Manager/REFERENCE_Entity_Groups.htm.

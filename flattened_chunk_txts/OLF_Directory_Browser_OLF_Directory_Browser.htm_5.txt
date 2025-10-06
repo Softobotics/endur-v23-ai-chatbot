@@ -1,0 +1,17 @@
+This chunk is from the HTML file: OLF_Directory_Browser.htm.
+ Section heading: Fields.
+ Text content: This window contains the following fields: .
+ Table data: 
+| Field | Description |
+| --- | --- |
+| Filename | Displays the directory and name of the highlighted file in theFile Listing/Contents of Directorytable. |
+| File Type | Displays in theView by Directorytab if the window is accessed from OpenLink Central.This field filters the file to display in theContents of Directorytable, e.g., if “Script” is selected, only scripts will display in theContents of Directorytable for the selected directory. Available choices are:ValueDescriptionAllDisplays all files contained in the selected folderScriptDisplays only AVS script files contained in the selected folderTaskDisplays only task files contained in the selected folderQueryDisplays only query files contained in the selected folderScreen ConfigDisplays only screen configuration files contained in the selected folderDirectoryDisplays only sub-directories contained in the selected folderOpenComponentDisplays only OpenComponent files contained in the selected folderCrystalDisplays only Crystal Report templates contained in the selected folderNote:Scripts and tasks will only display in the browser if the user has “Read” access for them. | Value | Description | All | Displays all files contained in the selected folder | Script | Displays only AVS script files contained in the selected folder | Task | Displays only task files contained in the selected folder | Query | Displays only query files contained in the selected folder | Screen Config | Displays only screen configuration files contained in the selected folder | Directory | Displays only sub-directories contained in the selected folder | OpenComponent | Displays only OpenComponent files contained in the selected folder | Crystal | Displays only Crystal Report templates contained in the selected folder |
+| Value | Description |
+| All | Displays all files contained in the selected folder |
+| Script | Displays only AVS script files contained in the selected folder |
+| Task | Displays only task files contained in the selected folder |
+| Query | Displays only query files contained in the selected folder |
+| Screen Config | Displays only screen configuration files contained in the selected folder |
+| Directory | Displays only sub-directories contained in the selected folder |
+| OpenComponent | Displays only OpenComponent files contained in the selected folder |
+| Crystal | Displays only Crystal Report templates contained in the selected folder |.
