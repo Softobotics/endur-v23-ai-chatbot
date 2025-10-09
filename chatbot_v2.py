@@ -5,6 +5,8 @@ import os
 import re
 import requests
 import pickle
+import streamlit as st
+
 
 # Path to your .txt folder
 TXT_FOLDER = "flattened_chunk_txts"
@@ -90,6 +92,9 @@ def rebuild_index_with_content():
             })
             
             print(f"Processed: {filename}")
+            
+            if filename == 'OLF_STAT_Help_Viewer_OLF_STAT_Help_Viewer.htm_0.txt':
+                print(metadata)
 
     # Create FAISS index with all embeddings
     if all_embeddings:
@@ -133,7 +138,6 @@ def answer_question(query, model, index, metadata):
     
     # Retrieve top matching docs
     context_results = retrieve(query, model, index, metadata, k=3)
-    
     # Debug: Check what content we retrieved
     # print(f"\nDebug - Retrieved content preview:")
     for i, result in enumerate(context_results):
@@ -145,8 +149,13 @@ def answer_question(query, model, index, metadata):
     for i, item in enumerate(context_results):
         if item.get('content'):
             context_parts.append(f"--- Document {i+1} from {item['source']} ---")
+            context_parts.append(f"Source: {item['source']}")
+            context_parts.append(f"Filename: {item['filename']}")
+            context_parts.append(f"Images: {', '.join(item['images']) if item['images'] else 'No images'}")
+            context_parts.append("Content:")
             context_parts.append(item['content'])
             context_parts.append("")  # Empty line between documents
+
     
     if not context_parts:
         return "No relevant content found in the documents to answer this question."
@@ -155,17 +164,22 @@ def answer_question(query, model, index, metadata):
     
     prompt = f"""Based EXCLUSIVELY on the following documentation, answer the user's question. If the answer cannot be found in this documentation, say so.
 
+CRITICAL INSTRUCTIONS:
+1. Answer using ONLY the information from the documentation provided
+2. When mentioning any images, you MUST include the complete image file paths exactly as shown in the documentation
+3. Do not modify or shorten the image paths in any way
+
 Documentation:
 {context}
 
 Question: {query}
 
-Answer based only on the documentation above:\n\n\n\n"""
+Answer based only on the documentation above. Always include full image paths:\n\n\n\n"""
 
     payload = {
         "model": "deepseek-chat",
         "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 1000,
+        "max_tokens": 5000,
         "temperature": 0.1,
         "stream": False
     }
@@ -178,12 +192,8 @@ Answer based only on the documentation above:\n\n\n\n"""
     except requests.exceptions.RequestException as e:
         return f"Error: Failed to get response from API - {e}"
 
-
-
 index, metadata = build_or_load_index()
 
-import re
-import streamlit as st
 
 # Streamlit app
 st.title("Endur V23 Chatbot")
@@ -193,16 +203,27 @@ user_input = st.text_input("Ask a question:")
 if st.button("Submit") and user_input:
     with st.spinner("Thinking..."):
         answer = answer_question(user_input, model, index, metadata)
-    
+
+    try:
+        script_dir = os.getcwd()
+    except:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    onlinehelp_path = os.path.join(script_dir, "OnlineHelp_test\\OLF")
+
     # Find and display images
     image_pattern = r"([^\s]+?\.(?:jpg|jpeg|png|gif))"
     image_matches = re.findall(image_pattern, answer)
-    
+
+
     for img_path in image_matches:
-        clean_path = img_path.replace('`', '').strip()
-        full_path = f"C:/Users/tejas/OneDrive/Desktop/Code/softobotic/OnlineHelp_test/{clean_path}"
+        img_path = img_path.replace('`', '')
+        full_path = os.path.join(onlinehelp_path, img_path)
+        
+        # Normalize the path (handles any path inconsistencies)
+        full_path = os.path.normpath(full_path)
         st.image(full_path)
-    
+
     # Display text without image markers
     clean_text = re.sub(image_pattern, '', answer)
     st.write(clean_text)
