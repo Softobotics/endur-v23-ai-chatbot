@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Overview.
- Text content: The Directory Browser allows users and administrators to easily find and administer files in the OLF virtual file system. It displays a list of existing directories, scripts, tasks, stored queries, etc. The primary goal of this screen is to provide a single place to find, open to modify, and save a task, script, query, etc.  See: AVS Task Editor Query Manager  Other Directory Browser screens: Open Query From Directory Browser .
- 
-Links to other files: OLF_AVS_Task_Editor.htm, OLF_Query_Manager.htm, OLF_Open_From_Directory_Browser.htm.

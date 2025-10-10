@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Connex_Grid_Mon.htm.
- Section heading: Overview.
- Text content: The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager . The Connex Grid Monitor shows details of processes, functionality and information related to OpenLink’s Connex integration framework. It provides management facilities around Connex grid configuration and shows running integration gateways that may or may not take advantage of the underlying Connex grid. The monitor shows configured Connex engines (grid engines) and standard/custom gateways as well as provides management facilities on jobs, messaging, engines and exceptions. This tab is only available in V8.0r1 and up. Access to this window is controlled by Security Privilege #29255, Access Connex Grid Monitor Tab..
- 
-Links to other files: ../Services_Manager/Services_Manager.htm.

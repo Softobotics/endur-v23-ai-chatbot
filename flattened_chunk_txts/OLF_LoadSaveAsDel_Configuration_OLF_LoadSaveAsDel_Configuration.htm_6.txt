@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
- Section heading: Loading a Configuration.
- Text content: To load a configuration on screen, 1. From the Load window, highlight the configuration to be loaded. 2. Click the OK button. The configuration loads on screen. .

@@ -1,0 +1,54 @@
+# System Monitor - Services - Market Data
+
+## Overview
+
+The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager.
+
+This screen provides the ability to select and view market data by ticker. This window will only display market data when the Market Data Distribution (MDD) engine is configured and running.
+
+Access to this window is controlled by Security Privilege #29260, Access Market Data Tab.
+
+### See Also
+
+Market Data
+
+System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Services_Market_Data_files/image001.jpg)
+
+The following screen displays (data has been selected using the pick lists):
+
+![image004.jpg](OLF_System_Monitor-Services_Market_Data_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image005.jpg" border="0" height="19" src="OLF_System_Monitor-Services_Market_Data_files/image003.jpg" width="92"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Retrieves updated market data for the selected tickers and data fields.</p></td></tr></table>
+```
+
+### Fields
+
+This panel displays data fields selected via the “Fields” pick list.
+
+### Column Header Menu
+
+To modify the table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Services tab.
+Select the Market Data sub-tab.

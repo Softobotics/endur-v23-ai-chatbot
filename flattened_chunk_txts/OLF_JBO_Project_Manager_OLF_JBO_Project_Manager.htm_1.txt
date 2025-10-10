@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_JBO_Project_Manager.htm.
- Section heading: Accessing This Window/Screen.
- Text content: V8.2r1 and up: 1. Select the System Administration tab from Admin Manager. 2. Select the Plugin Editor icon. 3. Select Tools → Project Manager . The following window appears:  V8.0r1 to v81.r2: 1. From OpenLink Central, launch the JBO Bulk Import service. 2. Select File à New Project . The following window appears: .
- Image file: OLF_JBO_Project_Manager_files/image001.jpg
- Image description: the program dial in the program dial dial dial.
- Image file: OLF_JBO_Project_Manager_files/image002.jpg
- Image description: the project manager screen with the project manager dial.

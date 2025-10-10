@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Tabs.
- Text content: This window contains the following tabs: .
- Table data: 
-| Tab | Description |
-| --- | --- |
-| View by File | Lists all the files. |
-| View by Category | Lists only the files that belong to a specific category. |
-| View by Directory | Lists only the files contained in a particular directory. |.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Instrument_Types_from_V16_1_to_V17_0.htm.
- Section heading: Removed Instrument 
- Types.
- Text content: The following are the instrument types removed in 
- V17.0: None.

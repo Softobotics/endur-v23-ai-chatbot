@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
- Section heading: Setting Up AFE Desktop Services.
- Text content: Setting up AFE Desktop Services is a two step process:.

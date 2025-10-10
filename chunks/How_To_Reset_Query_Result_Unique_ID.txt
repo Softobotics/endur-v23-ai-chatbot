@@ -1,0 +1,23 @@
+# How To Reset Query Result Unique ID
+
+The following steps explain how to reset 
+ the Query Result Unique ID:
+
+How To Reset Query Result Unique ID
+
+From 
+ the Launch 
+ Available Services window, 
+ open the System 
+ Monitor window
+From 
+ System 
+ Monitor, 
+ select Database→Unique Id Administration
+
+On 
+ the Table 
+ Name column filter for 
+ the database table name for query_result. 
+Click on Change Current Id Number and enter a new value to reset the Unique 
+ ID.

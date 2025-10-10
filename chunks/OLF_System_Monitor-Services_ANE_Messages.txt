@@ -1,0 +1,58 @@
+# SYSTEM MONITOR – Diagnostics - ANE Messages
+
+## Overview
+
+This window shows Automatic Notification Engine (ANE) messages that are sent by the system to visibly update information in deals that are loaded in the browser and trading blotter.
+
+Note: An ANE must be running and the Subscribe button clicked to see messages.
+
+Access to this window is controlled by Security Privilege #29270, Access ANE Message Tab.
+
+See System Monitor
+
+See Automatic Notification Engine
+
+See ANE Message Types
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Services_ANE_Messages_files/image001.jpg)
+
+The following screen displays:
+
+![image004](OLF_System_Monitor-Services_ANE_Messages_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image006" border="0" height="21" src="OLF_System_Monitor-Services_ANE_Messages_files/image003.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Clears the table of ANE messages.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image007" border="0" height="21" src="OLF_System_Monitor-Services_ANE_Messages_files/image004.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Select this button to display messages in the table based upon the selected “ANE Msg Subject Type(s)”. Messages will not be shown if the button is not selected.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image008" border="0" height="21" src="OLF_System_Monitor-Services_ANE_Messages_files/image005.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Cancels the request for messages to be shown in the table.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Tab</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>ANE Msg Subject Types</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A pick list of ANE subjects. Selection of a topic(s) results in the related ANE messages showing in the message table. The field defaults to “All”.</p><p class="MsoNormal">See <a href="OLF_ANE_Message_Types.htm">ANE Message Types</a></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Auto - Scroll</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">Selecting this box causes the message screen to automatically scroll when new messages are displayed in the table. This field defaults to on (checked).</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Time Received</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="462"><p class="MsoNormal">The system date and time the selected message was generated.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Message Subject</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="462"><p class="MsoNormal">The topic generating the selected message.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Type</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="462"><p class="MsoNormal">The format of the selected message. The available types are table, string or integer.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Message Data</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="462"><p class="MsoNormal">The content of the message.</p><p class="MsoNormal">Note: If the “Type” is “Table”, double-clicking on the grid icon will display a detail table of the message data.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Diagnostics tab.
+Select the ANE Messages tab.

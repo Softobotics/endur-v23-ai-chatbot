@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
- Section heading: Setting a Default Configuration.
- Text content: To set a default configuration, 1. From the Set Default window, highlight the configuration to be set as the default configuration. 2. Click the OK button. The configuration loads on screen and set as the default configuration. .

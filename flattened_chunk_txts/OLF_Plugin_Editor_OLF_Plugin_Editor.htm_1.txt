@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Plugin_Editor.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window can be accessed via multiple paths in the system. Listed below are two options. From the Admin Manager: 1. From OpenLink Central start the Admin Manager. 2. Select the System Administration tab. 3. Select the Plugin Editor icon. or From the System Monitor: 1. From OpenLink Central start the System Monitor. 2. Select the Plugin Editor icon. The following screen displays: .
- Image file: OLF_Plugin_Editor_files/image001.jpg
- Image description: the logo for the new store.
- Image file: OLF_Plugin_Editor_files/image002.jpg
- Image description: a collection of logos and illustrations.
- Image file: OLF_Plugin_Editor_files/image003.jpg
- Image description: the sql sql application wizard.

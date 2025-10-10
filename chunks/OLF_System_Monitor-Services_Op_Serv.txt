@@ -1,0 +1,66 @@
+# System Monitor - Services – Op Services
+
+## Overview
+
+The System Monitor – Services tabs work with the Operations Manager – Operations Services module as many of the components viewed in this tab have been previously configured from there.
+
+This tab monitors user-defined processes (plug-ins/scripts) designed to run before a deal is processed (pre-processing) and/or after a deal is processed (post processing) by the system. This screen, consisting of the Operation Services Definitions panel, provides the ability to view definition statuses as well as bring them on and offline. The screen includes the functionality to filter the table to show only online definitions.
+
+Access to this window is controlled by Security Privilege #29240, Access Op Services Tab.
+
+### See Also
+
+Operation Services
+
+System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Services_Op_Serv_files/image001.jpg)
+
+The following screen displays:
+
+![image006.jpg](OLF_System_Monitor-Services_Op_Serv_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image004" border="0" height="17" src="OLF_System_Monitor-Services_Op_Serv_files/image003.jpg" width="80"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Saves changes to the definition’s online status.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image005" border="0" height="13" src="OLF_System_Monitor-Services_Op_Serv_files/image004.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Selecting this button halts the definition monitoring process.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image006" border="0" height="13" src="OLF_System_Monitor-Services_Op_Serv_files/image005.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Selecting this button re-starts monitoring the definition(s).</p></td></tr></table>
+```
+
+### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Show Online Definitions Only</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Selecting this box filters the Operation Services definitions in the table to show only those definitions that are online.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Online</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Selection of this checkbox, in conjunction with the <b>Save Changes</b> button, brings the indicated Operation Services definition online.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Seq Num</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The order in which the services will run. Number 1 runs first, then number 2, and so on. If more than one item has the same number, then they are run in random order but before others with a greater number. This is defined in the Operation Services definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Definition Name</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The user-assigned identifier of the selected Operation Services definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Service Type</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The service type of the selected operation service definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Defn Status</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the standing of the selected Operation Service definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Pre-Process Script</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the name of the script that will be run before the trade is processed.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Post-Process Script</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the name of the script that will be run after the trade is processed.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Post-TPM Workflow</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The name of the TPM Workflow that is triggered by the selected Operation Service definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Defn ID</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The unique, system-assigned identifier given to an Operation Services definition.</p></td></tr></table>
+```
+
+#### Right-Click Menu
+
+Right-clicking on any row within the table returns the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Item</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Start/Restart Monitoring</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Brings the selected definition online to be monitored.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Stop Monitoring</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Takes the selected definition offline and ceases to monitor it.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Services tab.
+Select the Op Services sub-tab.

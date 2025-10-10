@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_TSV_Peer_Groups.htm.
- Section heading: Setting up TSV Peer Groups.
- Text content: Note: Security privilege 22043 Save TSV Peer Group is required to set up new TSV Peer Groups. 1. In the Admin Manager select Static Data – TSV Peer Group :  2. The TSV Peer Group window will open:  3. Click Add Row and type in a new group name (e.g. TSV peer group F). 4. Click Save to save the changes..
- Image file: OLF_TSV_Peer_Groups_files/image001.jpg
- Image description: the screenshote dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial.
- Image file: OLF_TSV_Peer_Groups_files/image002.jpg
- Image description: the file format wizard.

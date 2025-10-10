@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Report_Viewer_Configuration.htm.
- Section heading: Report Packages.
- Text content: The AVS Report Configurations window enables the user to create Report Category groupings.  Existing, related reports can be grouped together and linked to these packages.  For example, all P&L reports for a particular portfolio can be grouped into one Report Package.  The Package created and saved in this window displays in the Report Package list field in the View Report window.  Selecting it displays a list of reports linked to the package. .

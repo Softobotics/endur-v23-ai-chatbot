@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Env_Var.htm.
- Section heading: Fields.
- Text content: This window contains the following fields: .
- Table data: 
-| Field Item | Description |
-| --- | --- |
-| <Variable> | The name of the Environment Variable.SeeEnvironment Variables.Database Table.Column: global_env.env_argNote: Only the Environment Variables in the System Wide Configuration (not the External ones) are stored in the global_env table. |
-| <Value> | The Value of the Environment Variable. If this is blank, the value is set to the system default.SeeSystem Wide Configuration |
-| <Description> | A description of the Environment Variable.SeeSystem Wide ConfigurationNote: This field only appears in versions 10.2.1 and up. |.

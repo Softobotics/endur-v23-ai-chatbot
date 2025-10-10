@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Column_Types.htm.
- Section heading: Menu Items.
- Text content: This window contains the same menu items as the Table Viewer window. .
- 
-Links to other files: OLF_Table_Viewer.htm.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Market_Data.htm.
- Section heading: See Also.
- Text content: Market Data System Monitor.
- 
-Links to other files: ../Admin_Manager/ADMIN_MDO_Setup.htm, OLF_System_Monitor.htm.

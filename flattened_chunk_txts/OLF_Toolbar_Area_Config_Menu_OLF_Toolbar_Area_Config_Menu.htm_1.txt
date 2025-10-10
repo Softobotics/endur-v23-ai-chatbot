@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Toolbar_Area_Config_Menu.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This menu can be accessed from various windows of the system that has a toolbar. To access the menu, right-click any area of the toolbar. For illustration purposes, the following is an example of how it is accessed from the Settlement Desktop: 1. Start the Operations Manager. 2. Click the Settlement Desktop icon. The Settlement Desktop window displays. 3. Right-click on any area of the toolbar. 4. The following menu displays:   .
- Image file: OLF_Toolbar_Area_Config_Menu_files/image001.jpg
- Image description: the menu menu in the menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu.

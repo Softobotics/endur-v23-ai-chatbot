@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Licensing.htm.
- Section heading: Features Panel.
- Text content: This panel contains the following fields: .
- Table data: 
-| Field Item | Description |
-| --- | --- |
-| Feature Name | The name of the functionality that may be accessed with the license. |
-| Feature Expiration Date | Represents the expiration date for the selected feature. This is the same date as the “System Expire date” field in theGeneral Datapanel. |.

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Task_Permissions.htm.
- Section heading: Assigning Access Rights for a Task to Security Groups.
- Text content: The owner of a task has the rights to assign the rights to access this task to one security group in the system.  For example, a task that is relevant to the job functions of back office personnel can be restricted to that group. Each time the Task is assigned to a group and saved, the previous definition is overwritten. Access rights can be assigned by performing the following steps: IMPORTANT :  If no group is assigned to a Task, it means that ALL users can run it..

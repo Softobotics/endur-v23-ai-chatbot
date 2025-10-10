@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Global_Variables.htm.
- Section heading: Buttons.
- Text content: This window contains the following buttons:.
- Image file: OLF_AVS_Global_Variables_files/image002.jpg
- Image description: a printer with a black ink.
- Table data: 
-| Button | Description |
-| --- | --- |
-|  | Prints the current window. |.

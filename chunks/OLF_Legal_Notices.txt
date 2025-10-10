@@ -1,0 +1,413 @@
+![image001](OLF_Legal_Notices_files/image001.jpg)
+
+1502 RXR Plaza
+
+15th Floor, West Tower
+
+Uniondale, NY  11556
+
+TEL: (516) 227-6600        FAX: (516) 227-1799
+
+WEBSITE: http://www.openlink.com
+
+Copyright © 2009, 2010, 2011, 2012, 2013 OpenLink Financial LLC All rights reserved.
+
+This material includes the confidential and/or proprietary information of OpenLink, is for the sole use of the intended recipient, and may be subject to the terms and conditions of a license agreement.  Without the express written consent of OpenLink and except as specifically authorized pursuant to a license agreement, no part of this material may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or facsimile, for any purpose other than for the recipient’s internal use.
+
+Trademarks
+
+OpenLink®, Endur® and Findur® are the registered trademarks, and ToolkitÔ, ConnexÔ,pMotionÔ, gMotionÔ, and cMotionÔare the trademarks, of OpenLink Financial LLC.  All other product and company names and marks contained in this material are the property of their respective owners and are mentioned for identification purposes only.  Other product names mentioned in this material may be the trademarks or registered trademarks of their respective companies and are hereby acknowledged as the property of their respective owners.
+
+Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc., in the U.S. and other countries.
+
+Disclaimer
+
+OpenLink does not warrant, guarantee, or make representations concerning the contents of this material. All information is provided "AS-IS," without express or implied warranties of any kind including, without limitation, the warranties of merchantability, fitness for a particular purpose, quality and title. OpenLink reserves the right to change the contents of this material and the features or functionalities of its products and services at any time without obligation to notify anyone of such changes.
+
+APACHE PORTABLE RUNTIME (APR) COPYRIGHT ACKNOWLEDGMENT
+
+Apache Portable Runtime (APR) opensource software is licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:  http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
+
+ZLIB. H COPYRIGHT ACKNOWLEDGMENT
+
+LAPACK (CLAPACK) COPYRIGHT ACKNOWLEDGMENT
+
+This material may be distributed only subject to the terms and conditions set forth in the Open Publication License, vX.Y or later (the latest version is presently available at http://www.opencontent.org/openpub/).
+
+JAVA 2 SDK and JAVA RUNTIME ENVIRONMENT (JRE) COPYRIGHT ACKNOWLEDGMENT
+
+Version 1.3.0
+
+This software and documentation is the confidential and proprietary information of Sun Microsystems, Inc. ("Confidential Information").
+
+You shall not disclose such Confidential Information and shall use it only in accordance with the terms of the license agreement you entered into with Sun.
+
+SUN MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. SUN SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+
+Developed by Sun Microsystems, Inc.
+
+901 San Antonio Rd., Palo Alto, CA 94303 USA
+
+Copyright (c) 1994-2000 Sun Microsystems, Inc.
+
+All rights reserved.
+
+SOBOL SEQUENCE GENERATOR
+
+-----------------------------------------------------------------------------
+
+Licence pertaining to sobol.cc and the accompanying sets of direction numbers
+
+-----------------------------------------------------------------------------
+
+Copyright (c) 2008, Frances Y. Kuo and Stephen Joe
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright
+
+notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+
+notice, this list of conditions and the following disclaimer in the
+
+documentation and/or other materials provided with the distribution.
+
+* Neither the names of the copyright holders nor the names of the
+
+University of New South Wales and the University of Waikato
+
+and its contributors may be used to endorse or promote products derived
+
+from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+You may obtain a copy of the License at: http://web.maths.unsw.edu.au/~fkuo/sobol/licence
+
+APACHE
+
+ANT
+
+JDK
+
+Apache Maven
+
+Axis2
+
+Axiom
+
+Jasypt
+
+SpringFramework
+
+time
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+GNU LESSER GENERAL PUBLIC LICENSE
+
+Version 3, 29 June 2007
+
+TWOFISH cipher
+
+JBoss jBPM 3.1.2
+
+jBPM
+
+JDIC
+
+Jregistreykey
+
+JXL
+
+OMNet
+
+PdfLib (DLL)
+
+Spin
+
+Swingworker
+
+Swingx
+
+SWT Calendar
+
+The GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed at http://www.gnu.org/licenses/lgpl.html
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License [and the GNU Lesser General Public License] along with this program.  If not, see http://www.gnu.org/licenses/
+
+The MIT License (MIT)
+
+DockPanel Suite
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+MICROSOFT LIMITED PUBLIC LICENSE
+
+Html Editor control (DLL)
+
+This license governs use of code marked as “sample” or “example” available on this web site without a license agreement, as provided under the section above titled “NOTICE SPECIFIC TO SOFTWARE AVAILABLE ON THIS WEB SITE.” If you use such code (the “software”), you accept this license. If you do not accept the license, do not use the software.
+
+1. Definitions
+
+The terms “reproduce,” “reproduction,” “derivative works,” and “distribution” have the same meaning here as under U.S. copyright law.
+
+A “contribution” is the original software, or any additions or changes to the software.
+
+A “contributor” is any person that distributes its contribution under this license.
+
+“Licensed patents” are a contributor’s patent claims that read directly on its contribution.
+
+2. Grant of Rights
+
+(A) Copyright Grant - Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+
+(B) Patent Grant - Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+3. Conditions and Limitations
+
+(A) No Trademark License- This license does not grant you rights to use any contributors’ name, logo, or trademarks.
+
+(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+
+(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+
+(E) The software is licensed “as-is.” You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+(F) Platform Limitation - The licenses granted in sections 2(A) and 2(B) extend only to the software or derivative works that you create that run on a Microsoft Windows operating system product.
+
+Skybound Software Free Binary License and Limited Warranty
+
+Skybound VisualStyles
+
+This is the agreement between you, the end user, and Skybound Software. By installing this software, you are agreeing to become bound by the terms of this agreement (the "License Agreement").
+
+If you do not agree to the terms of this agreement, do not use this software. Promptly remove it from your computer.
+
+1. Software License Grant
+
+Skybound Software, as Licensor, grants to you, the Licensee, a non-exclusive right to use this software program (hereinafter the "Software") under the following terms and conditions:
+
+A. Free License
+
+You are granted a non-exclusive, non-transferable, worldwide, royalty-free license to install and use the Software on any number of computers, and to redistribute the Software under the terms of Section 6.
+
+B. Source Code License
+
+You are granted the same rights as defined in Section A, in addition to the following: The source code used to create the Software from Skybound Software (Source Code) may be provided to you with the purchase of a Source Code License for the associated product. As used in this License Agreement, "You" shall also mean the individual using or installing the source code together with any individual or entities, including but not limited to your employer, on whose behalf you are acting in using or installing the source code. This Agreement is effective indefinitely and once completed, cannot be terminated. Skybound Software hereby grants you a non-exclusive, non-transferable, worldwide license during the term of this Agreement to use the Source Code for the associated product purchased. In the event the license agreement to the associated product is terminated for any reason; (1) Your rights to use the Source Code are revoked and (2) You shall destroy all copies of the Source Code including any Source Code used in your applications.
+
+2. Source Code Limitations
+
+You agree to the following limitations on usage of the Source Code:
+
+A. Confidentiality
+
+You shall protect and keep secure all source code provided with the Software. All Source Code provided with the Software that is used with an application that is distributed or accessible outside your organization (including use from the Internet) must be protected to the extent that it cannot be easily viewed, extracted or decompiled. .NET products must be completely obfuscated. Visual Basic 6 applications must be compiled using the "Native Code" option because Visual Basic that is compiled to "P-Code" can be easily decompiled.
+
+B. Derived Works
+
+You may not expose any API that allows access to the functions of the source code except as necessary for the use of your application.
+
+C. Noncompetition
+
+You may not resell, rent, lease or distribute the products created from the source code in any way that would compete with Skybound Software.
+
+D. Copyright Notices
+
+Skybound Software's copyright notices may not be removed from the source code.
+
+E. Usage of Manufacturer Name
+
+Any products developed using the Source Code may not be named Skybound or bear the name "Skybound" in the product or assembly name without the express written permission of Skybound Software.
+
+F. Acknowledgement
+
+The end-user documentation included with the redistribution, if any, must include the following acknowledgment: "This program includes software developed by Skybound Software (http://www.skybound.ca)." Alternately, this acknowledgment may appear in the software itself, if and wherever such third-party acknowledgments normally appear.
+
+3. Ownership of Software
+
+Skybound Software retains the copyright, title and ownership of the Software and the written materials regardless of the form or media in or on which the original and other copies may exist. All rights not specifically granted in this License Agreement, including Federal and International Copyrights, are reserved by Skybound Software and its suppliers.
+
+4. Transfers
+
+You may transfer the Software from one of your computers to another computer provided that the Software is transferred without modification. You may not transfer, assign, rent, lease, sell, or otherwise dispose of the software in exchange for consideration, or on a temporary basis.
+
+5. Term
+
+This License commences upon the installation of the software and is effective until the Software has been removed from each of your computers. This License terminates automatically without notice from Skybound Software if you fail to comply with any provision of this License. Upon termination you shall remove the Software from your computers. No additional amendment or modification may be made to this agreement except in writing signed by both the Licensee and Skybound Software.
+
+6. Redistribution
+
+Subject to the terms and conditions in this license agreement, you are granted a royalty-free license to redistribute the Software only in binary form as part of another application. Under no circumstances is the Source Code to be distributed in any form, with or without modifications.
+
+7. Software Updates
+
+Skybound Software may, in its sole discretion, provide updates to the Software and/or related information ("Updates") to you hereunder, in which case such Updates shall also be considered part of the Software and therefore governed by this License Agreement, unless other terms of use are provided by Skybound Software with the Updates.
+
+8. Software Upgrades
+
+If this copy of the Software is an upgrade from an earlier version of the Software, it is provided to you on a license exchange basis. You agree by your installation and use of such copy of the Software to voluntarily terminate your earlier License Agreement, to make this License Agreement effective.
+
+9. Limited Warranty and Disclaimer
+
+i. THIS SOFTWARE AND ACCOMPANYING DOCUMENTATION (INCLUDING INSTRUCTIONS FOR USE) ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, FURTHER, SKYBOUND SOFTWARE DOES NOT WARRANT, GUARANTEE, OR MAKE ANY REPRESENTATIONS REGARDING THE USE, OR THE RESULTS OF USE, OF THE SOFTWARE OR DOCUMENTATION IN TERMS OF CORRECTNESS, ACCURACY, RELIABILITY, CURRENTNESS, OR OTHERWISE. THE ENTIRE RISK AS TO THE RESULTS AND PERFORMANCE OF THE SOFTWARE IS ASSUMED BY YOU. IF THE SOFTWARE OR WRITTEN MATERIALS ARE DEFECTIVE, YOU, AND NOT SKYBOUND SOFTWARE OR ITS DEALERS, DISTRIBUTORS, AGENTS, OR EMPLOYEES, ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+ii. SKYBOUND SOFTWARE DISCLAIMS ALL OTHER WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE THAT IS MADE BY SKYBOUND SOFTWARE, ON THIS SKYBOUND SOFTWARE PRODUCT. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY SKYBOUND SOFTWARE, ITS DEALERS, DISTRIBUTORS, AGENTS OR EMPLOYEES SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE THE SCOPE OF THIS WARRANTY AND YOU MAY NOT RELY ON ANY SUCH INFORMATION OR ADVICE. YOU MAY HAVE OTHER RIGHTS WHICH VARY FROM PROVINCE TO PROVINCE.
+
+iii.NEITHER SKYBOUND SOFTWARE NOR ANYONE ELSE WHO HAS BEEN INVOLVED IN THE CREATION, PRODUCTION OR DELIVERY OF THIS PRODUCT SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, AND THE LIKE) ARISING OUT OF THE USE OR INABILITY TO USE SUCH PRODUCT EVEN IF SKYBOUND SOFTWARE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+iv. SHOULD ANY OTHER WARRANTIES BE FOUND TO EXIST, SUCH WARRANTIES SHALL BE LIMITED IN DURATION TO NINETY (90) DAYS FOLLOWING THE DATE OF DELIVERY TO YOU. IN NO EVENT WILL SKYBOUND SOFTWARE'S LIABILITY FOR ANY DAMAGES TO YOU OR ANY OTHER PERSON EXCEED THE AMOUNT PAID FOR THE LICENSE TO USE THE SOFTWARE.
+
+10. Indemnity
+
+You agree to indemnify, hold harmless and defend Skybound Software from and against any loss, damage, claims or lawsuits, including attorney's fees, which arise or result from the use or distribution of your application.
+
+11. Governing Law
+
+This License shall be governed and construed in accordance with the laws of the province of Ontario and shall benefit Skybound Software, its successors and assigns. If the Software was acquired outside Canada, local law may apply.
+
+12. Entire Agreement
+
+This agreement constitutes the entire agreement between the end user and Skybound Software.
+
+ECLIPSE PUBLIC LICENSE - V 1.0
+
+SWT
+
+Copyright 2010 Open Link Financial, Inc.
+
+THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+
+1. DEFINITIONS
+
+"Contribution" means:
+
+a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and
+
+b) in the case of each subsequent Contributor:
+
+i) changes to the Program, and
+
+ii) additions to the Program;
+
+where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution 'originates' from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor's behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.
+
+"Contributor" means any person or entity that distributes the Program.
+
+"Licensed Patents" mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.
+
+"Program" means the Contributions distributed in accordance with this Agreement.
+
+"Recipient" means anyone who receives the Program under this Agreement, including all Contributors.
+
+2. GRANT OF RIGHTS
+
+a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.
+
+b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.
+
+c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient's responsibility to acquire that license before distributing the Program.
+
+d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.
+
+3. REQUIREMENTS
+
+A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:
+
+a) it complies with the terms and conditions of this Agreement; and
+
+b) its license agreement:
+
+i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;
+
+ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;
+
+iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and
+
+iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.
+
+When the Program is made available in source code form:
+
+a) it must be made available under this Agreement; and
+
+b) a copy of this Agreement must be included with each copy of the Program.
+
+Contributors may not remove or alter any copyright notices contained within the Program.
+
+Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.
+
+4. COMMERCIAL DISTRIBUTION
+
+Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor ("Commercial Contributor") hereby agrees to defend and indemnify every other Contributor ("Indemnified Contributor") against any losses, damages and costs (collectively "Losses") arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.
+
+For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor's responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.
+
+5. NO WARRANTY
+
+EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement , including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations.
+
+6. DISCLAIMER OF LIABILITY
+
+EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. GENERAL
+
+If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+
+If Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed.
+
+All Recipient's rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient's rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient's obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive.
+
+Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. The Eclipse Foundation is the initial Agreement Steward. The Eclipse Foundation may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version. Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.
+
+This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+
+SPREAD COPYRIGHT ACKNOWLEDGMENT
+
+Copyright (c) 1993-2001 Spread Concepts LLC. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer and request.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer and request in the documentation and/or other materials provided with the distribution.
+
+For more information about Spread see http://www.spread.org
+
+zlib.h -- interface of the 'zlib' general purpose compression library version 1.2.3, July 18th, 2005
+
+Copyright (C) 1995-2005 Jean-loup Gailly and Mark Adler
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+
+Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+
+This notice may not be removed or altered from any source distribution.
+
+You may obtain a copy of the License at: http://www.zlib.net/zlib_license.html

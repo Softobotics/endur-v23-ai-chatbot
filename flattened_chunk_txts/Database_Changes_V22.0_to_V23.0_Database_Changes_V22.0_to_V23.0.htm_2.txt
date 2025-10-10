@@ -1,9 +1,0 @@
-This chunk is from the HTML file: Database_Changes_V22.0_to_V23.0.htm.
- Section heading: The following columns have been removed:.
- Text content: .
- Table data: 
-| Table Name | Column 
-		 Name |
-| --- | --- |
-| FX_TRAN_AUX_DATA | EXTENSION_ORIGINAL_DEAL |
-| FX_TRAN_AUX_DATA | EXTENSION_PARENT_DEAL |.

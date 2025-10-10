@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Logging_On_The_System.htm.
- Section heading: Changing the Password.
- Text content: To change the user password:.

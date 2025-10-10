@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_General_Import_Export.htm.
- Section heading: Definitions Tab.
- Text content: Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to: · Select a new default definition · Execute a definition that is not the default · Edit an existing definition · Create a new definition .
- Image file: OLF_General_Import_Export_files/image010.jpg
- Image description: the time - to - time dial dial.

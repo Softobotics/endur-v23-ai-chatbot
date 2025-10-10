@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Configure_View.htm.
- Section heading: Creating a New Configuration.
- Text content: To create a new table configuration, 1. Check the data fields to display. 5. Reorder the columns as desired. (See above procedures) 6. Define the sorting of data by assigning sequential numbers to the sorting keys. 7. Set how the data fields will be grouped and what data field will be summed for the grouping. 8. To change the font size and the row color of the table, define a new display setup (see above procedures) or right-click the field to select a display setup. 9. To add formula columns to the table, see above procedures. 10. Select File à Save to save the configuration. 11. To save the setting as a new configuration, select File à Save As . The Save As window displays. .
- 
-Links to other files: OLF_LoadSaveAsDel_Configuration.htm.

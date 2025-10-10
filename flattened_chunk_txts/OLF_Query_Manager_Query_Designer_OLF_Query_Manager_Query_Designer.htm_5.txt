@@ -1,6 +1,0 @@
-This chunk is from the HTML file: OLF_Query_Manager_Query_Designer.htm.
- Section heading: Grid Layout.
- Text content: The Grid Layout allows the user to place editors 
-	 and labels into a row/column configuration. To change the view, go to the Properties panel and select List in the View Type field. .
- Image file: OLF_Query_Manager_Query_Designer_files/image027.jpg
- Image description: the new version of the sql project manager.

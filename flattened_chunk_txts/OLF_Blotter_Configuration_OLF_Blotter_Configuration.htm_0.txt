@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Blotter_Configuration.htm.
- Section heading: Overview.
- Text content: The Blotter Configuration window allows users to specify the columns to display in a table or blotter. An example of this blotter is the Agreement/Provision Listing window. .

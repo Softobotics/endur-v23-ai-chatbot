@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
- Section heading: Displaying the Contents of Another Table Simultaneously With the 
-	 First.
- Text content: Note: If 
-	 you minimize the current Table View, the other(s) can be viewed.  You 
-	 can minimize all Table Views within the Ad Hoc Query window 
-	 and switch between them. .

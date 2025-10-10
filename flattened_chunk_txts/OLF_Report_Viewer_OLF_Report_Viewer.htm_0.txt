@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Report_Viewer.htm.
- Section heading: Overview.
- Text content: The Report Viewer allows users to view and print all reports that have been generated in the system.  Historical reports can also be viewed by changing the report date.  The system stores all reports to a specific file for a specific date. .

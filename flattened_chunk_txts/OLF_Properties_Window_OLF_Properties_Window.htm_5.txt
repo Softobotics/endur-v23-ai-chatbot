@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Properties_Window.htm.
- Section heading: Setting the Property of a File.
- Text content: Follow the steps below to set the property of a file: 1. Enter the name of the file in the “Name” field. 2. Select the location and define the privileges of the user, security group, or all users for the particular file. 3. Click the Save button to save settings. If the name of the file already exists, a message will display if the existing file will be overwritten. To save the file as another file, enter a different name for the file..

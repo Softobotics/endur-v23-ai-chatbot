@@ -1,0 +1,44 @@
+# SEARCH WINDOW
+
+## Overview
+
+The Search window allows users to specify which columns in the Table Viewer will be searched, the search key, and how search will be conducted.
+
+## Accessing This Window/Screen
+
+This window is accessed from the Table Viewer, which is used by several functionalities in the system. For illustration purposes, the following is an example of how it is accessed:
+
+1. Start the Trading Manager.
+1. Select Misc à Registered Pricing Models. The Registered Pricing Models window displays.
+1. Select Search à Find.
+1. The following window displays:
+![image002](OLF_Search_Window_files/image001.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="TableHeader">Button</p></td><td style="width:353.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="TableHeader">Description</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Forward</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Searches the table from top to bottom.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Reverse</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Reverses the direction of the search, e.g., from bottom (or from the last matching data) to the top.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Col</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Searches the table by column.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Row</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Searches the table by row.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Match Case</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Toggle to search the data with the specified capitalization. Put a checkmark to locate the data that also has the same capitalization. For example, if “Discount” is the search string and this button is checked, it will not find “discount” or “DISCOUNT.”</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Search</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Executes the search. Once a match is found, press this button again to go to the next match.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="TableHeader">Field</p></td><td style="width:353.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="TableHeader">Description</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Search String</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Enter the string to search in this field.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">&lt;Criteria Listing&gt;</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Displays the list of search strings previously entered. To search for a previous search string, simply highlight the string in the list and click the <b>Search</b> button.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Column Title</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Displays the columns in the <i>Table Viewer</i>. Highlight the column that will be included in the search.</p></td></tr></table>
+```
+
+### Function Keys
+
+This window utilizes the following function keys:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="TableHeader">Key</p></td><td style="width:353.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="TableHeader">Description</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">F8</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Closes the window.</p></td></tr></table>
+```
+

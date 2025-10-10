@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Service_Arguments.htm.
- Section heading: Fields.
- Text content: This window contains the following fields:.
- Table data: 
-| Field | Description |
-| --- | --- |
-| Name | Displays the name of the argument. |
-| Type | Displays the type of service argument. |
-| Value | The service or keyword that should be used to launch a service or a list of available services.In v9.1r2 and later, when a service requires arguments that have a set of known values, the user is presented with a pick list of valid items to select rather than having to manually type in values (as in the Static Data example shown in the images). |.

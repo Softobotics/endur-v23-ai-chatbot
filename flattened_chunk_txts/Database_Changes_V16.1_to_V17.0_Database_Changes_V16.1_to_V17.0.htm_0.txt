@@ -1,4 +1,0 @@
-This chunk is from the HTML file: Database_Changes_V16.1_to_V17.0.htm.
- Section heading: Overview.
- Text content: The data in the tables below include database changes ONLY from V16.1 
- (July 28, 2021) to V17.0  (July 19, 2021) ..

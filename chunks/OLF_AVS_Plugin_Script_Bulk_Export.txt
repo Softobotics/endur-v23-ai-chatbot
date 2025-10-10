@@ -1,0 +1,54 @@
+# Plugin/Script Bulk Export
+
+## Overview
+
+This window is used to export both plug-ins and scripts. Plug-ins are exported into folders that are named after the project to which they belong. Scripts are exported as .mls files. In either case an XML config file (.xml) is generated that is used for bulk import by another user or for re-importing on the machine of origin.
+
+Note: (for V10.0r2 and later): When importing or re-importing scripts (.mls files) that were created using Bulk Export, use only the generated package .xml file. This is because a bulk exported file name includes path information for exported scripts that is used by the .xml file during import. The single .mls files should not be selected for Bulk Import because the treatment of file names can result in erroneous file names and duplication.
+
+### See Also
+
+Script Editor
+
+Plugin Editor
+
+## Accessing This Window/Screen
+
+This window can be accessed via multiple paths in the system. Listed below are two options:
+
+1.    Select the System Administration tab from Admin Manager.
+
+2.    Select the Plugin Bulk Export icon.
+
+or
+
+1.    Open the Trading Manager.
+
+2.    Select Script à Script Editor. The Script Editor window displays.
+
+3.    Select File à Bulk Export.
+
+The following window displays:
+
+![image010.jpg](OLF_AVS_Plugin_Script_Bulk_Export_files/image001.jpg)
+
+### Menu Items
+
+This window contains no menu items.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:476.6pt;border-collapse:collapse" width="635"><thead><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal"><b><img alt="image011.jpg" border="0" height="20" src="OLF_AVS_Plugin_Script_Bulk_Export_files/image002.jpg" width="76"/></b></p></td><td style="width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p class="MsoNormal">Performs the export operation. A confirmation message will display when finished.</p></td></tr><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal"><b><img alt="image012.jpg" border="0" height="20" src="OLF_AVS_Plugin_Script_Bulk_Export_files/image003.jpg" width="76"/></b></p></td><td style="width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p class="MsoNormal">Close the window and return to the Plugin Editor or the Script Editor.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:387.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E0E0E0;padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal"><b>*Config File Name</b></p></td><td style="width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p class="MsoNormal">Name for the generated package .xml file. Default name is scripts_config_data.xml.</p></td></tr><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal"><b>*Export Path</b></p></td><td style="width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p class="MsoNormal">Destination path for the exported files.</p></td></tr><tr><td style="width:89.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal"><b>*Plugins</b></p></td><td style="width:387.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="516"><p class="MsoNormal">Pick list of Plugin/Script names in the OLF system.</p></td></tr></table>
+```
+

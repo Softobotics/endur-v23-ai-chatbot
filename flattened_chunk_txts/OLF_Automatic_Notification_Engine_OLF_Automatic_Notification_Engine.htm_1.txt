@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Automatic_Notification_Engine.htm.
- Section heading: What the ANE Does for the User.
- Text content: The ANE allows users to publish and subscribe to data dynamically without re-querying the database.  Technically, the ANE updates are query based, referencing either a fixed query or an ad-hoc query.  The query identifies and gathers parameters.  Once initiated, the ANE engine searches the database for the deal parameters that are pertinent to the query selected and updates the display in the user’s browser.  ANE updates include AVS browser workspace, trade blotters, and script engines..

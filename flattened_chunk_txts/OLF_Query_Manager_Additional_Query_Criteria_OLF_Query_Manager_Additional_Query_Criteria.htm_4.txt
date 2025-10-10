@@ -1,6 +1,0 @@
-This chunk is from the HTML file: OLF_Query_Manager_Additional_Query_Criteria.htm.
- Section heading: See Also.
- Text content: Query Manager Query 
-	 Manager Designer.
- 
-Links to other files: OLF_Query_Manager.htm, OLF_Query_Manager_Query_Designer.htm.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Intro.htm.
- Section heading: System Administration.
- Text content: · Environment Variables · Security Privileges 0 – 9999 · Security Privileges 10000 and Up.
- 
-Links to other files: OLF_Environment_Variables.htm, ../Admin_Manager/ADMIN_Security_Privileges.htm.

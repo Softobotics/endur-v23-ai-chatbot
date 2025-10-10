@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Instrument_Types_from_V19_0_to_V22_0.htm.
- Section heading: Overview.
- Text content: This lists the changes in instrument types from version 19.0 to version 22.0.

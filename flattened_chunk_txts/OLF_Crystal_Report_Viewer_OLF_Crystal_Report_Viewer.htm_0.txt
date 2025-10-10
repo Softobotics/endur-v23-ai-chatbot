@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Crystal_Report_Viewer.htm.
- Section heading: Overview.
- Text content: After a Crystal Report has been designed and executed, the results can be saved within the database.  This function allows the user to view previously saved Crystal Report results. Crystal Reports can be accessed from the Crystal Reports window and directly from the Trading Manager . See Crystal Reports .
- 
-Links to other files: OLF_Crystal_Reports_Master.htm.

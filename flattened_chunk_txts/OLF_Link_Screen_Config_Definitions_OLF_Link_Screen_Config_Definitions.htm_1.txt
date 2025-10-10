@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Link_Screen_Config_Definitions.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. Start OpenLink Central . 2. Select OpenLink Central à Edit Configuration Links from the menu. The following window displays: .
- Image file: OLF_Link_Screen_Config_Definitions_files/image001.jpg
- Image description: the screen shot of the sql sql sql sql sql sql sql sql sql sql sql sql sql sql sql.

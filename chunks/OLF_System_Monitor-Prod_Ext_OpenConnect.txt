@@ -1,0 +1,44 @@
+# System Monitor - Services - OpenConnect Monitor
+
+## Overview
+
+System Monitor - Services - OpenConnect Monitor
+
+This tab is only in V7.0r1.  Also, users may or may not see this depending on licensing.  In V8.0r1 and up, this information was moved to System Monitor à Services à Connex Grid Monitor.
+
+## Accessing This Window/Screen
+
+![image037](OLF_System_Monitor-Prod_Ext_OpenConnect_files/image001.jpg)
+
+![image004](OLF_System_Monitor-Prod_Ext_OpenConnect_files/image002.jpg)
+
+### Menu Items
+
+This window contains the menu items of the System Monitor.
+
+See System Monitor
+
+### Buttons
+
+This window contains the buttons of the System Monitor.
+
+See System Monitor
+
+In addition, it also contains these buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:315.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="420"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b>Sort By</b></p></td><td style="width:315.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="420"><p class="MsoNormal">Choices are Host Manager and Service Group</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:127.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="170"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:322.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="430"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal"><b>Header Column (no title)</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="430"><p class="MsoNormal">Shows the Service Groups and Runsite Names.</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Runsite</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Runsite</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Fault Tolerant Group</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Fault Tolerant Group</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Status</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Status</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Request Count</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Request Count</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Logging Request Count</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Logging Request Count</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Process Id</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Process Id</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Process Size(K)</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Process Size(K)</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Queued Count</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Queued Count</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Last Started</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Last Started</p></td></tr><tr><td style="width:127.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="170"><p class="MsoNormal"><b>Job Started</b></p></td><td style="width:322.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="bottom" width="430"><p class="MsoNormal">Job Started</p></td></tr></table>
+```
+
+From the Main Menu, click on the System Monitor icon .
+Select the Services tab.
+Select the OpenConnect Monitor tab.
+The following screen displays:

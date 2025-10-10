@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_APM_Market_Data_Incremental.html.
- Section heading: Overview.
- Text content: This functionality allows APM services to respond 
- to market data updates. Updates include changes due to market prices, 
- volatilities and correlations. It can be configured on an individual services 
- basis. The functionality will increase the load on the system so additional 
- hardware and grid engines is recommended depending on performance requirements. 
- This feature is available only in V18+..

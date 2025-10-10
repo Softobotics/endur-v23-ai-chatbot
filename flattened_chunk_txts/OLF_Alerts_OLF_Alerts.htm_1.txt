@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Alerts.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window:  .
- Image file: OLF_Alerts_files/image001.jpg
- Image description: a yellow triangle with the word ' s ' s ' in it.
- Image file: OLF_Alerts_files/image002.jpg
- Image description: the screenshote screen shot of the screen shot.

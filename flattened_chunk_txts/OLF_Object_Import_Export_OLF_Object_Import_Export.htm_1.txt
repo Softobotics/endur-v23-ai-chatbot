@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Object_Import_Export.htm.
- Section heading: Accessing This Window.
- Text content: This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Market Manager. 2. Select Price/Rate à Import . You may select one of three sub-options presented: Universal, Close, or Close with Config. 3. The following window displays: .
- Image file: OLF_Object_Import_Export_files/image001.jpg
- Image description: the screenshote screen with the text editor.

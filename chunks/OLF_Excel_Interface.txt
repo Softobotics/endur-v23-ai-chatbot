@@ -1,0 +1,46 @@
+# EXCEL INTERFACE
+
+## Overview
+
+The Excel Interface window allows users 
+	 to export data to a new, open, or existing Excel workbook or file.
+
+Note that if data to be exported is greater than 
+	 the Excel columns available, which is from column A to IV, the first 
+	 row of data will only be exported. For example, if data to be exported 
+	 is made up of 10 rows and the columns are more than what Excel can 
+	 accommodate, only the first row of data and the available column for 
+	 that data will be displayed.
+
+## Accessing This Window
+
+To access this window:
+
+1. Open 
+	 any configurable table in the system. For example, the AdHoc 
+	 Query Viewer.
+1. Select 
+	 Reporting à 
+	 MS Excel. The following window displays:
+![image001](OLF_Excel_Interface_files/image001.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table cellspacing="0px" class="OH_Table_1-Col-Bold" style="border-collapse: collapse;"><tr class="t1st"><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="TableHeader">Button</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="TableHeader">Description</p></td></tr><tr class="t2Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Export to New Workbook</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Exports data to a new Excel workbook.</p></td></tr><tr class="t1Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Export to Open Workbook</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Exports data to the workbook and worksheet specified in the “Workbook” and “Worksheet” fields, respectively.</p><p class="MsoNormal" style="font-weight: bold;">Note that export behavior may vary for different versions of MS Excel.</p></td></tr><tr class="t2Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Export to Existing File</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Exports data to an existing Excel file.</p></td></tr><tr class="t1Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Browse</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Opens a file browser allowing the user to select the Excel file to export data. This button displays only when the “Export to Existing File” option is selected.</p></td></tr><tr class="t2Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">OK</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Exports data to Excel and closes the window.</p></td></tr><tr class="t1Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Cancel</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Closes the window without exporting data.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table cellspacing="0px" class="OH_Table_1-Col-Bold" style="border-collapse: collapse;"><tr class="t1st"><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="TableHeader">Field</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="TableHeader">Description</p></td></tr><tr class="t2Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Workbook/File Name</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">The name of the Excel workbook/file data will be exported to. Displays only if exporting to an open workbook or existing file.</p></td></tr><tr class="t1Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Worksheet</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">The name of the worksheet data will be exported to.</p></td></tr><tr class="t2Row"><td class="t1st" style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt;" width="203"><p class="NormalBold">Range</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" width="435"><p class="MsoNormal">Input the cell number of the worksheet where the first column and first row of the data table will be exported. For example, if B1 is specified, the first column and first row of data will be exported to the second column (i.e., column B) and first row (i.e., row 1) of the Excel worksheet.</p></td></tr><tr class="t1Row"><td class="t1st" style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; " width="203"><p class="NormalBold">Export without Formatting</p></td><td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; " width="435"><p class="MsoNormal">Removes formatting when imported to Excel worksheet cell. For example, in cases where date/time is exported, this checkbox should not be checked off, otherwise the corresponding cell will display the date and time in the incorrect format.</p></td></tr></table>
+```
+

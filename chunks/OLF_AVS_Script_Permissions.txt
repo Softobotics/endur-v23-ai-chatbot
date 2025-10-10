@@ -1,0 +1,138 @@
+# Script Properties
+
+## Overview
+
+The scripting language can be used to create new scripts.  These new scripts are stored with those that come with the System.  A script is linked to a task. The task contains vital information about a script, such as, scheduling information. Each script has properties associated with it. The person who creates a script is the owner.
+
+The owner can associate Read, Write and Execute Properties to the script for himself, to a security group, and to the public.
+
+Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Script Properties.
+
+### See Also
+
+Task Editor
+
+## Accessing This Window/Screen
+
+This window can be accessed via the Operations Manager or the Trading Manager by following the steps below.
+
+#### From the Operations Manager:
+
+1.    Select the Services tab.
+
+2.    Select the Script icon. The Plugin window displays.
+
+3.    Select a task and select an edit option. The Script Editor window displays.
+
+4.    Select File àProperties.
+
+#### From the Trading Manager:
+
+1.    Select Script à Script Editor.  The Script Editor window displays.
+
+2.    Select File àOpen.  A pop up list of available scripts in the database displays. After selection, the Script Editor window displays.
+
+3.    Select File àProperties.
+
+The following window displays:
+
+![image015.jpg](OLF_AVS_Script_Permissions_files/image001.jpg)
+
+Note:  The settings in this window are the System-upgrade defaults for existing scripts. The Owner and Group information and Owner/Group/Public properties can be modified. In versions prior to v8.1r2, it is also important to note that only one security group can be assigned to each task (when one group is assigned the privilege, any previously assigned group will lose the privilege). In v8.1r2 and up, multiple selections of security groups for group permissions on scripts and queries is enabled.
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><h5>Button</h5></td><td style="width:380.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal"><img alt="image012.jpg" border="0" height="32" src="OLF_AVS_Script_Permissions_files/image002.jpg" width="112"/></p></td><td style="width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p class="MsoNormal">Saves the requested changes after a confirmation message displays. The <i>Script Editor</i> window displays.</p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal"><img alt="image013.jpg" border="0" height="32" src="OLF_AVS_Script_Permissions_files/image003.jpg" width="112"/></p></td><td style="width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p class="MsoNormal">Cancels any changes and closes this window.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><h5 style="punctuation-wrap:simple;text-autospace:none">Field</h5></td><td style="width:353.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p align="center" class="MsoNormal" style="text-align:center;punctuation-wrap: simple;text-autospace:none"><b>Description</b></p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><h6>Name</h6></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoHeader" style="punctuation-wrap:simple;text-autospace:none">This is a variable character field of up to 32 characters. It represents the name of the Script towards which privileges are being applied. If the Script is new and no name has been yet assigned, data can be entered. Otherwise, this is a read-only field. </p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory/Full Path</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">Together, these two fields indicate the path and directory in which the script is located. During a System upgrade, all of the existing tasks and scripts in the database are placed in the <b>/Script/Site</b> directory<b>. </b></p><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">New tasks are saved to the <b>/Script/Site</b> directory with your user ID as the owner. Left-click in the <b>Directory</b> field to change the directory of a new script. A pick list displays from which to chose a new directory.</p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Version</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">This indicates the number of the current version of the script permission. The version number increases each time permissions are changed and saved. A value of “0” indicates an unedited script in its original form.</p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Owner</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">This is a pick list field of available user IDs. The pick list is disabled if this is a new script. Otherwise, select a user as the owner. The user ID of the person who creates the script is initially indicated as the owner. Only someone with the associated properties, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p><ul style="margin-top:0in" type="square"><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory Node System SuperUser Group</b></li><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory System Script SuperUser Group</b></li></ul><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Note: </b> If the original owner of the script is changed, the original owner may lose access rights to the script if they are not part of the group to which the script is assigned.</p><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">For more information on superuser permissions and how they work, see <a href="OLF_Directory_Browser.htm">Directory Browser.</a></p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Security Group</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">This is a pick list field of Security Groups (Security Groups are set up in the Admin Manager). Choose the group whose members have rights to the selected script and its associated properties. A security group <b>Script DIRNODE Developers</b> was created and assigned as a default to each of the existing tasks after a database upgrade.</p><p class="MsoNormal"><b>Note:</b> The default name of this Security Group (<b>Script DIRNODE Developers</b>) can be changed in the Admin Manager. </p><p class="MsoNormal">The default group script assignments can be changed. <b><i></i></b>Only someone with the associated properties, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p><ul style="margin-top:0in" type="square"><li class="MsoNormal"><b>Directory Node System SuperUser Group</b></li><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory System Script SuperUser Group</b></li></ul></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Owner/Group/Public Properties</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">These are check box fields that can be toggled on and off. They grant read, write, and execute privileges to the owner of the script, the security group assigned, and to the general population of users.</p><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Note:</b> Execute Properties are checked by the script engine.</p></td></tr></table>
+```
+
+## Adding Properties for a New Script
+
+In adding properties for a new script, the Script Properties window defaults as follows:
+
+![image014.jpg](OLF_AVS_Script_Permissions_files/image004.jpg)
+
+Follow these steps to change the default:
+
+Note:  In editing properties for an existing script, you can change the Owner and reassign the Group if you have the proper security properties.  You can also change the Owner/Group/Public properties granted.
+
+## Assigning Access Rights for a Script to Security Groups
+
+The owner of a script has the rights to assign the rights to access this script to one security group in the system.  For example, a script that is relevant to the job functions of back office personnel can be restricted to that group. Each time the Script is assigned to a group and saved, the previous definition is overwritten.
+
+Access rights can be assigned by performing the following steps: From the Operations Manager:
+
+IMPORTANT:  In versions prior to V8.1r2, if no group is assigned to a Script, it means that ALL users can run it. In v8.1r2 and up, if a group is not assigned no one will have access to the script.
+
+## Having the Proper Rights to Assign Security Group Access
+
+The owner of the script has the right to assign access to a script to specific security groups.  However, the script’s owner must also have rights to those groups.
+
+For example, a script owner must have access to the Front Office group to give it rights to run a script.  Otherwise, the owner will not see name of the group in the pick list from which the group is selected.
+
+If the script owner has Administrator privileges and encounters this problem, it problem can be solved as follows:
+
+## Creating a New Script
+
+### Creating a New Directory (Optional)
+
+When a user saves a script, task, or query in the virtual file system, the “Save As” functionality allows the script to be saved to a directory other than those already defined.  This can be done by following steps outline for creating a new directory in the Directory Browser.
+
+### Saving a New Script
+
+The Save As Window displays:
+
+![image016.jpg](OLF_AVS_Script_Permissions_files/image005.jpg)
+
+![image017.jpg](OLF_AVS_Script_Permissions_files/image006.jpg)
+
+If the script is new and no name is assigned, information can be entered into the “Name” field.  The field represents the name of the Script towards which privileges are being assigned.
+Left-click the “Group” field to select a Security Group.  Those needing properties to the script, but are not in the assigned group, can be added later through the Reference Explorer Desktop (V10.0r2 and later) or the Reference Manager (V10.2.1 and earlier) via the Security Group Addition of Personnel Maintenance.
+New scripts are saved to the /Script/Site directory with the current user’s ID as the owner.  Users can change the default directory of a new script.  Left click on the Directory field (which is a pick list field) and select from an available directory.  The directories available depend upon the user's security privileges.
+Select the Owner/Group/Public properties that will be granted to the script's users by clicking on the checkbox fields.  They can be toggled on and off.
+Press the Save button.  New scripts are saved to the /Script/Site directory.  The current user’s ID is indicated as the owner. 
+
+Select the Services tab.
+Select the Script icon. The Plugin window displays.
+Select a task and select an edit option. The Script Editor window displays.
+Select File à Properties.
+The Script Properties window displays.
+Right-click on the “Groups” field.
+A pick list of all groups to which the user has access will display.
+Scroll down to the group to be selected.
+Click the Save button.
+The user will be prompted to confirm the changes before the System saves them.
+
+Navigate to Reference Explorer Personnel (V10.0r2 and later) or Reference Personnel Listing (V10.2.1 and earlier).
+Double click on your user name.
+The Personnel Editor window displays.
+Query for the Group’s owner.
+Click the Security Groups radio button.
+In the “Available Groups” field, select the security group to be added.
+Click on the group name and click the Add button.
+Select File à Save.
+Go back to the Main Menu and click the Refresh button.
+Close and re-enter the Script Editor.
+The added security group(s) should appear in the picklist from which they are selected.
+
+Return to the Task Editor or Script Editor where the script to be saved is being edited. Click File à Save As.
+
+Set the desired permissions for the new script to be saved.
+Right-click on the “Directory” field.
+The user will see that the new directory has been added to the choices in the pick list.
+
+Select the directory into which to save the script/task/query and click on the Save button.

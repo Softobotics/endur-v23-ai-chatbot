@@ -1,0 +1,37 @@
+# SORT CONFIGURATION
+
+## Overview
+
+The Sort Configuration window allows users to specify how the items in a table will be sorted and listed.
+
+## Accessing This Window/Screen
+
+To access this window:
+
+1. Start the Trading Manager.
+1. Open the Bond Transaction Screen.
+1. Select the Input option.
+1. Click the Sorting button.
+1. The following window displays:
+![image003](OLF_Sort_Configuration_files/image001.jpg)
+
+### Menu Items
+
+This window contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:89.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="TableHeader">Menu</p></td><td style="width:1.25in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="TableHeader">Item</p></td><td style="width:299.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="399"><p class="TableHeader">Description</p></td></tr><tr><td style="width:89.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="NormalBold">Save</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold"></p></td><td style="width:299.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="399"><p class="MsoNormal">Saves modifications the configuration.</p></td></tr><tr><td style="width:89.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="NormalBold">Clear</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold"></p></td><td style="width:299.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="399"><p class="MsoNormal">Clears the fields.</p></td></tr><tr><td style="width:89.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="NormalBold">Misc</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Print</p></td><td style="width:299.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="399"><p class="MsoNormal">Prints the current window.</p></td></tr><tr><td style="width:89.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="NormalBold">Help</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold"></p></td><td style="width:299.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="399"><p class="MsoNormal">Displays the system Help files.</p></td></tr></table>
+```
+
+### Buttons
+
+None.
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="TableHeader">Field</p></td><td style="width:353.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="TableHeader">Description</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Category</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Lists the sorting keys of the table. The sorting keys are the data fields of the table.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Priority</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Input field to enter the sorting order. Assign “1” to the primary sorting key, “2” to the secondary sorting key, and so on.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="NormalBold">Sort Order</p></td><td style="width:353.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">Displays the sorting order, which is “Normal” for ascending.</p></td></tr></table>
+```
+

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_About_Window.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. From most windows in the system, select Help à About . The following window displays: .
- Image file: OLF_About_Window_files/image001.jpg
- Image description: the openlinker wizard.

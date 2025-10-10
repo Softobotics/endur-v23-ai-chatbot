@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_General_Import_Export.htm.
- Section heading: Tabs.
- Text content: This window contains the following tabs:.
- Table data: 
-| Tab | Description |
-| --- | --- |
-| General Import/Export | Displays by default when this window is accessed.Select the data, the format, the location of the data to import/export, and view the import/export file. |
-| Definition | Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to:·Select a new default definition·Execute a definition that is not the default·Edit an existing definition·Create a new definition |.

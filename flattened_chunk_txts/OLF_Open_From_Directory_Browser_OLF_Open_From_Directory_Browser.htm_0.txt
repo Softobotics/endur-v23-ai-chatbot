@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Open_From_Directory_Browser.htm.
- Section heading: Overview.
- Text content: The Open File From Directory Browser window has the same functionality as the Directory Browser window—it allows users and administrators to find and maintain from a single screen the files in the OLF virtual file system. .
- 
-Links to other files: OLF_Directory_Browser.htm.

@@ -1,0 +1,54 @@
+# PROPERTIES WINDOW
+
+## Overview
+
+The Properties Window allows users to set and save the location and security privileges for a file such as a plug-in/script, task, screen configuration, query, etc.
+
+## Accessing This Window/Screen
+
+This window may be accessed from various parts of the system. For illustration purposes, the following steps are provided:
+
+1.    Start the Trading Desktop Explorer or Trading Manager.
+
+2.    Open any deal input window.
+
+3.    Click the Pricer icon.  The Pricer window of the instrument displays.
+
+4.    Click the Quick Simulation icon.  The Simulation Results viewer displays.
+
+5.    Click the Export to Script icon.
+
+The following window displays:
+
+![image004.jpg](OLF_Properties_Window_files/image004.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Button</p></td><td style="width:362.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="TableHeader">Description</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Read</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Toggle to allow the owner, security group, or all users to read the file. If checked, the owner, security group, or the public is given the access to read the file.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Write</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Toggle to allow the owner, security group, or all users to edit the file. If checked, the owner, security group, or the public is given the access to edit the file.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Execute</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Toggle to allow the owner, security group, or all users to execute or run the file. If checked, the owner, security group, or the public is given the access to run the file.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Save</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Saves the settings in the window.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Cancel</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Cancels any modifications to the settings and closes the window.</p></td></tr></table>
+```
+
+### Field Items
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Field</p></td><td style="width:362.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="TableHeader">Description</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Name</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Input the name of the file.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Version</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Displays the version number of the file. The version number is incremented to 1 whenever the file is modified and saved.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Directory</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">The folder the file will be saved or is located. Right-click the field to display a pick list of directories. Select the directory where the file will be saved.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Config Type</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">This field displays only when saving or modifying the properties of a Trader Desktop screen configuration. It displays the screen configuration type that is being saved or modified, e.g. Desktop Config, Multi Trade Panel Config, Toolbar Config, etc.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Full Path</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">Displays the location or full path of the file.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Owner</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">The user ID of the person authorized to read, write, or execute the file. Right-click the field to display a pick list of users. Select the user to give access rights.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Security Group</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">The security group authorized to read, write, or execute the file. Right-click the field to display a pick list of security groups. Select the security group to give access rights.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><b>Public Permissions</b></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal" style="margin-bottom:3.0pt">This represents the security settings for all users. Check the appropriate checkboxes to authorize the public to read, write, or execute the file.</p></td></tr></table>
+```
+
+## Setting the Property of a File
+
+Follow the steps below to set the property of a file:
+
+1.    Enter the name of the file in the “Name” field.
+
+2.    Select the location and define the privileges of the user, security group, or all users for the particular file.
+
+3.    Click the Save button to save settings. If the name of the file already exists, a message will display if the existing file will be overwritten. To save the file as another file, enter a different name for the file.
+

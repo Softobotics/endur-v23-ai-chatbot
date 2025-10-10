@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Configure_View.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window is accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Select View à Transaction Field Viewer . The Transaction Field Data window displays. 3. Select Configure à Configure . 4. The following window displays.   .
- Image file: OLF_Configure_View_files/image001.jpg
- Image description: the software screen shows the user ' s name and the number.

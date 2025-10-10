@@ -1,0 +1,117 @@
+# Important notices
+
+## Database Modifications Made Outside the Application
+
+If 
+	 clients modify data directly within the database or execute internal 
+	 OpenLink stored procedures within the database, OpenLink will be unable 
+	 to provide support, as we cannot ensure transactional integrity within 
+	 the database if there are changes made beyond control of our application.
+
+The 
+	 reasons for our concerns are primarily rooted in the following:
+
+a)    There are serious security and 
+	 audit trail problems with the practice of modifying data directly 
+	 within the database.
+
+b)    Managing database transactions 
+	 outside of our provided APIs can cause performance problems and/or 
+	 bottlenecks that are impossible for OpenLink to diagnose and provide 
+	 corrective updates. This practice can also lead to future data integrity 
+	 problems.
+
+Should 
+	 the client decide to modify the database directly:
+
+a)    They should notify OpenLink (i.e., 
+	 the Account Manager and Support) of any unsupported modifications
+
+b)    The Support Desk will require the 
+	 customer to reproduce issues in a database without any of those modifications 
+	 if OpenLink feels that the unsupported change may be related to a 
+	 reported issue
+
+c)    Any problems caused by the change 
+	 will be billable if OpenLink assists them.
+
+OpenLink 
+	 provides AVS and TK as APIs into the internal business logic/processing 
+	 within the system.  These APIs are tested and maintained 
+	 by OpenLink. The APIs are also designed to work across code versions.  If 
+	 the APIs do not provide the appropriate functionality, a request for 
+	 enhancement may be made to an Account Manager.
+
+The 
+	 AVS function DBMAINT() should not be used to insert/update/delete 
+	 any of the application tables (e.g. ab_tran). It also should not be 
+	 used to execute OpenLink stored procedures.
+
+## System Messages
+
+OpenLink 
+	 has developed its own messaging solution, although the Tibco solution 
+	 may still be supported.  The system uses this messaging 
+	 bus to send messages from session to session and even intra-session.  For 
+	 example, a user may use the Broadcast tool to send a broadcast.  That 
+	 broadcast is send via the system’s messaging solution. If a price 
+	 is changed in the Market Manager, that price change gets sent to the 
+	 Trading Manager via the system’s messaging solution.  The 
+	 format and contents of the messages that are sent are considered proprietary 
+	 to OpenLink.  Customers are not entitled to documentation 
+	 showing what the messages are or when they are sent.  Customers 
+	 should not try to capture or intercept these messages for any use, 
+	 without explicit OpenLink instructions to do so.  A tool 
+	 that can monitor these messages, for OpenLink debugging purposes can 
+	 be found in the System Monitor.
+
+See 
+	 System Monitor
+
+OpenLink 
+	 provides AVS and TK as APIs into the internal business logic/processing 
+	 within the system.  These APIs are tested and maintained 
+	 by OpenLink. The APIs are also designed to work across code versions.  If 
+	 the APIs do not provide the appropriate functionality, a request for 
+	 enhancement may be made to an Account Manager.
+
+## System Licensing
+
+Most 
+	 parts of the system are controlled by Licensing.   These 
+	 parts are not specifically listed in this User Guide.  If 
+	 you read about functionality, you may not be able to access it because 
+	 of licensing issues.   If this happens, you can contact 
+	 your Account Manager.
+
+In 
+	 other words, just because functionality is mentioned in the User Guide, 
+	 that does not mean a particular client is licensed to use it.
+
+## Backwards Compatibly / Beta Functionality / Research Functionality
+
+Some 
+	 items as described in this User Guide are included in the system for 
+	 backwards compatibility and should not be used by new clients.
+
+This 
+	 is a list of the items: Backwards 
+	 Compatibility
+
+While 
+	 we have tried to make this list complete, it may be incomplete due 
+	 to items we missed.  As we discover and missed items, they 
+	 will be added to this list.
+
+Some 
+	 items in the system are considered “Beta” Functionality.   Clients 
+	 are advised to allocate extra time for implementing these features 
+	 and should consult OpenLink before attempting to do so.  The 
+	 list of Beta functionality is maintained in a separate document, the 
+	 Known Defect Report.
+
+Some 
+	 items in the system are considered “Research” Functionality and should 
+	 not be used by any clients.  The list of Research functionality 
+	 is maintained in a separate document, the Known Defect Report.
+

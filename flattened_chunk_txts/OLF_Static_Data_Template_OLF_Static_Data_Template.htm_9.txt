@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Static_Data_Template.htm.
- Section heading: Deleting Data.
- Text content: To delete data: 1. Highlight the row(s) to be removed. To select all rows, select Edit à Select All from the menu. 2. Click the Delete button or Edit à Delete Row . 3. Click the Save button or select File à Save ..

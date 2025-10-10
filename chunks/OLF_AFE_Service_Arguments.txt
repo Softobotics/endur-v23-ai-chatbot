@@ -1,0 +1,85 @@
+# OpenLink Central Config Service Arguments
+
+## Overview
+
+The OpenLink Central Config: Service Arguments window is used to pass service arguments to OpenLink Services. Service Arguments facilitate the:
+
+·         Association of an OpenLink Central Service with a specific service definition using OpenLink Central Configurations (e.g., OpenLink Desktop with “My Desktop”)
+
+·         Configuration of an AFE (Adaptive Front End) Service for OpenLink Central as a process to open screens directly
+
+·         Employment of AFE (Adaptive Front-End) Desktop Services filtered pick lists for OpenLink Central buttons
+
+### See Also:
+
+OpenLink Central
+
+OpenLink Central Configuration
+
+AFE Services
+
+AFE Desktop Services
+
+### Reference Documents
+
+AFE Services Quick Start Guide
+
+AFE Desktop Service
+
+## Accessing This Window/Screen
+
+To access this window:
+
+1.    Launch OpenLink Central if it is not already in use.
+
+2.    Select OpenLink CentralàEdit Configuration from the menu icon or menu bar to launch the OpenLink Central Configuration window.
+
+3.    Select the Button Configuration Tab.
+
+4.    Select a service (NOTE: Not all services have arguments).
+
+5.    Use the “Service Selection” pick list in the Button Properties frame to select the type of string (screen_name, keywords, etc.).
+
+![](OLF_AFE_Service_Arguments_files/image001.jpg)
+
+6.    Click the Args button.
+
+1. The following window displays (in V8.1R1 and above):
+![](OLF_AFE_Service_Arguments_files/image002.jpg)
+
+(V8.0r2 and below)
+
+![Description: image005](OLF_AFE_Service_Arguments_files/image003.jpg)
+
+## Menu Items
+
+None
+
+## Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="TableHeader">Button</p></td><td style="width:329.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="TableHeader">Description</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="NormalBold"><img alt="" border="0" height="23" src="OLF_AFE_Service_Arguments_files/image004.jpg" width="75"/></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoFootnoteText">Saves the specified argument for use in executing or starting the service/module.</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="NormalBold"><img alt="" border="0" height="23" src="OLF_AFE_Service_Arguments_files/image005.jpg" width="75"/></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal">Cancels the argument selection and closes the window.</p></td></tr></table>
+```
+
+## Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="TableHeader">Field</p></td><td style="width:329.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="TableHeader">Description</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="MsoNormal"><b>Name</b></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal">Displays the name of the argument.</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="MsoNormal"><b>Type</b></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal">Displays the type of service argument.</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="MsoNormal"><b>Value</b></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal">The service or keyword that should be used to launch a service or a list of available services.</p><p class="MsoNormal">In v9.1r2 and later, when a service requires arguments that have a set of known values, the user is presented with a pick list of valid items to select rather than having to manually type in values (as in the Static Data example shown in the images).</p></td></tr></table>
+```
+
+## Adding an Argument to a Service
+
+To add an argument to a service:
+
+1.    Click the Args button in the OpenLink Central Configuration window.
+
+2.    Enter the argument value in the OpenLink Central Config: Service Arguments window and click OK.
+
+For example, if a “named” desktop is being added to the OpenLink Central Console, enter the name (String screen_name) of the desktop in this screen. A desktop saved as “Back Office”, is tagged as “Back Office” in this screen, to be launched when using the button.
+
+NOTE:   When services with a known set of values are selected, the “Value” field will present a pick list for easier argument selection.
+

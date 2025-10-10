@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window can be accessed via the Operations Manager or the Trading Manager by following the steps below. 1. Select the Services tab. 2. Select the Script icon. The Plugin window displays. 3. Select a task and select an edit option. The Script Editor window displays. 4. Select File à Properties . 1. Select Script à Script Editor .  The Script Editor window displays. 2. Select File à Open .  A pop up list of available scripts in the database displays. After selection, t he Script Editor window displays. 3. Select File à Properties . The following window displays:  Note: The settings in this window are the System-upgrade defaults for existing scripts. The Owner and Group information and Owner/Group/Public properties can be modified. In versions prior to v8.1r2, it is also important to note that only one security group can be assigned to each task (when one group is assigned the privilege, any previously assigned group will lose the privilege). In v8.1r2 and up, multiple selections of security groups for group permissions on scripts and queries is enabled..
- Image file: OLF_AVS_Script_Permissions_files/image001.jpg
- Image description: the settings dial in the settings dial dial dial dial dial dial dial dial dial dial dial dial dial dial.
- 
-Links to other files: ../Operations_Manager/OPS_AVS.htm, OLF_AVS_Script_Editor.htm, OLF_AVS_Script_Editor.htm.

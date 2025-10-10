@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Configure_View.htm.
- Section heading: Creating a New Display Setup.
- Text content: To create a new display setup, 1. Click the right-pointed arrow button located beside the “Display Setup” field. Additional fields display to define the font size and the color of gray scale and summation row. 2. Select the desired color for the rows and font size of the text. 3. Enter a name for the setup in the “Display Setup” field. 4. Select File à Display Setup à Save to save the display setup. 5. Select File à Save to save the display setup in the configuration. .

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Instrument_Types_from_V22_0_to_V23_0.htm.
- Section heading: Removed Instrument 
- Types.
- Text content: The following are the instrument types removed in 
- V23.0: None.

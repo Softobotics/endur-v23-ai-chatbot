@@ -1,0 +1,30 @@
+# System Monitor - System - Cache Monitor
+
+This window is for investigation and diagnostic use only.
+
+## Overview
+
+This window displays “in memory” cache data that is being used by the application to increase performance by decreasing the number of communications made to the database. The cache data monitored by this screen is from both local and remote database sessions. Cache size is dynamic and dependent upon the features being accessed and the session that is running.
+
+Cache data can be viewed by user session and module using the “Session” and “Module” pick lists. The Categories panel displays the cache data, sorted by category ID, and includes a variety of functions that can be applied to the data, including: mark data in the local session as invalid, mark data in all sessions on the database and server invalid, accept invalidations from external sessions, and invalidate selected category data for an external session. Once data has been designated invalid, the Refresh button reloads the cache data in the table, reflective of the changes made. The specific data within each category may be viewed by double-clicking the selected category row
+
+See System Refresh
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-System_Cache_files/image001.jpg)
+
+The following screen displays:
+
+![image002](OLF_System_Monitor-System_Cache_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the System tab.
+Select the Cache Monitor sub-tab.

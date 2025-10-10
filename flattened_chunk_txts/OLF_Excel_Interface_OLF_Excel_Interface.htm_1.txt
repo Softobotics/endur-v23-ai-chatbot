@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Excel_Interface.htm.
- Section heading: Accessing This Window.
- Text content: To access this window: 1. Open 
-	 any configurable table in the system. For example, the AdHoc 
-	 Query Viewer . 2. Select Reporting à MS Excel . The following window displays:  .
- Image file: OLF_Excel_Interface_files/image001.jpg
- Image description: the text editor dial in the text editor dial.
- 
-Links to other files: OLF_Adhoc_Query_Viewer_Window.htm.

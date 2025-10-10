@@ -1,0 +1,34 @@
+The Scenario Test Activity Impersonation 
+ User Info screen allows to store password for the users that can be 
+ impersonated. The passwords are not displayed as open text. While the 
+ password is typed in, only several characters are signaled. The passwords 
+ are stored in the database as encrypted strings. Provided “Test” button 
+ validates each user impersonation credentials in order to correct potential 
+ issues with execution of the actual test cases, which use impersonation 
+ that could be due to wrong password, security and personnel configuration.
+
+## Accessing this Window
+
+Note:   There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure.
+
+1.      From 
+ OpenLink Central, right-click anywhere on the header and select Launch 
+ Available Services. The Launch Available Services window displays.
+
+2.      Type 
+ Scenario 
+ Test Activity Impersonation User Info in the Filter 
+ Service field, highlight Scenario Test 
+ Activity Impersonation User Info in the Available Services 
+ panel, and then click Launch. 
+ The following window displays:
+
+![](OLF_STAT_Impersonation_User_Info_files/image01.jpg)
+
+```html
+<table cellspacing="0px" class="OH_Table_1-Col-Bold" width="66.667%"><col style="width: 50%;"/><col style="width: 50%;"/><tr class="t1st"><td><p class="TABLEHEADER"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #000000; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><font color="black" size="3" style="font-size:11.000000pt;">Column</font></span></p></td><td><p class="TABLEHEADER"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #000000; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><font color="black" size="3" style="font-size:11.000000pt;">Description</font></span></p></td></tr><tr class="t2Row"><td class="t1st"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #000000; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font color="black" size="3" style="font-size:11.000000pt;">User</font></span></td><td><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><font size="3" style="font-size:11pt;">The user that is enabled to impersonate other users.</font></span></td></tr><tr class="t1Row"><td class="t1st"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font size="3" style="font-size:11pt;">Password</font></span></td><td><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><font size="3" style="font-size:11pt;">Password</font></span></td></tr><tr class="t2Row"><td class="t1st"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font size="3" style="font-size:11pt;">Last Update</font></span></td><td><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font size="3" style="font-size:11pt;">The date/time this entry was last updated.</font></span></td></tr><tr class="t1Row"><td class="t1st"><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; color: #000000; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font color="black" size="3" style="font-size:11.000000pt;">Last Changed By</font></span></td><td><span style="font-size: 11.0pt; mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-fareast-theme-font: minor-fareast; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: HE;"><font size="3" style="font-size:11pt;">The user that last updated this entry.</font></span></td></tr></table>
+```
+
+Scenario Test Automation Tool - Impersonation User Info

@@ -1,0 +1,97 @@
+# APM Integration Utility
+
+NOTE:  This is a separately 
+ licensed feature. Please contact your account manager for additional information 
+ and reference documents.
+
+## Overview
+
+The APM Integration utility is facilitates the generation 
+ of SQL integration files required for integrating simulation results as 
+ APM packages. This tool targets Professional Services, Consultants, Internal 
+ OL Market teams, and developers.
+
+## Security Privileges
+
+The following security privileges are required 
+ in order to use this module.
+
+Go to the CRM Web Portal for additional information.
+
+```html
+<table cellspacing="0" class="TableGrid2" style="border: none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt; border-collapse: separate;"><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;"><td bgcolor="#D9D9D9" style="vertical-align: top; border: solid #000000 1.0pt; mso-border-alt: solid windowtext .5pt; mso-background-themecolor: background1; mso-background-themeshade: 217; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="113"><p class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Privilege ID</span></p></td><td bgcolor="#D9D9D9" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; mso-background-themecolor: background1; mso-background-themeshade: 217; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="247"><p class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Privilege</span></p></td><td bgcolor="#D9D9D9" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; mso-background-themecolor: background1; mso-background-themeshade: 217; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="263"><p class="TableHeader"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Description</span></p></td></tr><tr style="mso-yfti-irow: 1; mso-yfti-lastrow: yes;"><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="113"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">2002150</span></p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="247"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Launch Integration Utility</span></p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="263"><p class="MsoNormal" style="margin-bottom: 3.0pt;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Allows a user to access the APM Integration Utility Screen</span></p></td></tr></table>
+```
+
+## Environment Variables
+
+Not applicable
+
+## Miscellaneous Pre-Requisites
+
+-          User 
+ Defined Simulation Result (Must be functional)
+
+-          ID 
+ Ranges (Provided upon delivery of License)
+
+## Accessing this Window
+
+Note:   There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure.
+
+1.      From 
+ Openlink Central, right-click anywhere on the header and select Launch 
+ Available Services. The Launch Available Services window displays.
+
+2.      Type 
+ APM Integration Utility in 
+ the Filter Service field, 
+ highlight APM Integration Utility 
+ in the Available Services panel, and then click Launch. 
+ The following window displays:
+
+## APM Package Design
+
+APM can join various results together and enrich dimension 
+ data to supported calculated results. As a result, it is best practice 
+ to separate the dimension data from the measure data into separate simulation 
+ results so that the dimension data can be reused among all the other results 
+ with minimal processing time.
+
+#### Identify the desired data to display within APM
+
+Determine if the data is considered dimension or measure 
+ data:
+
+It is dimension data if 
+ it is an attribute or property of a deal or nom and does not require any 
+ calculation. If it can be queried via the database, it is dimension data. 
+ The data will have a data type of Integer or String. It will not have 
+ any Double data types. It generally completes quickly.
+
+Example of Dimension data: APM Deal Information / 
+ Deal Attributes:
+
+It is measure data if it 
+ requires a simulation to calculate the value. For example, delta, daily 
+ volumes. The data will have a data type of Double. It generally takes 
+ the longest amount of time to generate.
+
+Example of Measure data: APM Delta / Greeks – Delta
+
+After a simulation result is created and ready to 
+ be integrated into APM, the next step is to run the utility.
+
+The APM integration utility is a licensed feature 
+ and launching it requires a security privilege.
+
+## Related Documentation
+
+Not applicable
+
+## See Also
+
+Not applicable
+
+APM Integration Utility

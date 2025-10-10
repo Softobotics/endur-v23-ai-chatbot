@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Column_Types.htm.
- Section heading: Viewing Tables From The Column Types Window.
- Text content: The Column Types window allows users to view the actual tables whose names are displayed in each column by double clicking in the “grid” icon in the “Formats” column to the left of each row listing..

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Dir_Override_Attributes.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window can be accessed via the Script function in the Trading Manager or by following these steps: The following window displays: .
- Image file: OLF_AVS_Dir_Override_Attributes_files/image001.jpg
- Image description: the sql file.

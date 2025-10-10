@@ -1,0 +1,127 @@
+# General Import/Export
+
+## Overview
+
+The General Import/Export window is used to import/export a variety of system data/definitions from/to .CSV or XML formats. This window is used for import/export in many areas of the system. Examples are listed below. This window allows the user to invoke general importing and exporting functions, as well as setting up the definition to be used. It may or may not contain different parameters that may be needed to correctly import/export data. While window titles may vary, the design and functionality are the same.
+
+This window is used to import/export the following:
+
+·         Historical Prices/Hourly Historical Prices – Uses Index Name and Price Type as parameters
+
+·         Curve Adjustment – Uses the Adjustment Definition Name as parameter
+
+·         Static Data – The static data being imported/ exported is used as parameter
+
+·         Time Zones – Uses TimeZone Label as parameter
+
+·         Products – Uses Product Type and Name as parameters
+
+·         Bond Futures Conversion Factors – Uses the Instrument Number as parameters
+
+·         Settlement Desktop Definition – Refer to Settlement Desktop for the description of the parameters
+
+·         Market Volatility Definitions - v10.0r2 and up.
+
+## See Also
+
+Standard Import/Export
+
+## Reference Documents
+
+The following reference documents can be found in the CRM Web Portal.
+
+·         Std_Imp_Exp_Quick_Start_Guide.pdf
+
+·         Importing_&_Exporting_Prices.pdf
+
+·         Importing_Hourly_Historical_Prices.pdf
+
+## Accessing This Window/Screen
+
+To access this window from a supported function, select Import or Export à Data orDefinition.
+
+## Tabs
+
+This window contains the following tabs:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:144.9pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193"><p class="TableHeader">Tab</p></td><td style="width:333.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="445"><p class="TableHeader">Description</p></td></tr><tr><td style="width:144.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193"><p class="NormalBold"><a href="#Gen">General Import/Export</a></p></td><td style="width:333.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="445"><p class="MsoNormal">Displays by default when this window is accessed.</p><p class="MsoNormal">Select the data, the format, the location of the data to import/export, and view the import/export file.</p></td></tr><tr><td style="width:144.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="193"><p class="NormalBold"><a href="#Def">Definition</a></p></td><td style="width:333.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="445"><p class="MsoNormal">Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to:</p><p class="MsoListBullet2"><span style="font-family:Symbol">·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Select a new default definition</p><p class="MsoListBullet2"><span style="font-family:Symbol">·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Execute a definition that is not the default</p><p class="MsoListBullet2"><span style="font-family:Symbol">·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Edit an existing definition</p><p class="MsoListBullet2"><span style="font-family:Symbol">·</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Create a new definition</p></td></tr></table>
+```
+
+## General Import/Export Tab
+
+The General Import/Export tab displays by default when this window is accessed. Select the data, the format, the location of the data to import/export and view the import/export file.
+
+![Description: image001](OLF_General_Import_Export_files/image001.jpg)
+
+### General Import/Export Tab Buttons
+
+This window has the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:2.2in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="TableHeader">Button</p></td><td style="width:4.45in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="NormalBold"><img alt="Description: image003.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image002.jpg" width="96"/></p><p class="NormalBold"><img alt="Description: image004.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image003.jpg" width="96"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Opens a window that lets you drill down to the elements that make up the import/export data.</p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="NormalBold"><img alt="Description: image005.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image004.jpg" width="96"/></p><p class="NormalBold"><img alt="Description: image006.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image005.jpg" width="96"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Opens the import/export configuration file.</p><p class="MsoNormal">This lets you view the file in its native format, such as Comma-Separated Values (CSV) or eXtensible Markup Language (XML), after import/export is invoked.</p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="NormalBold"><img alt="Description: image007.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image006.jpg" width="54"/></p><p class="NormalBold"><img alt="Description: image008.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image007.jpg" width="54"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Imports and exports data from/to the source/target file.</p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="NormalBold"><img alt="Description: image009.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image008.jpg" width="54"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Close the window.</p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="NormalBold"><img alt="Description: image010.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image009.jpg" width="77"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Brings up a dialog box for choosing a file or folder.</p></td></tr></table>
+```
+
+### General Import/Export Tab Fields
+
+This General Import/Export tab of this window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="TableHeader">Field</p></td><td style="width:347.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Parameter</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Used to set the characteristics of the import/export.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Parameter Value</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Pick list value used to control scope of the import/export.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Format</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Used to set the input/output file format (.CSV, XML).</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Filename</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Specifies the path and name of the input/output file.</p></td></tr></table>
+```
+
+### Importing Data
+
+1. From the General Import/Export tab, select the format of the file to import on the “Format” field.
+1. To change the default location of the import file, enter the location of the file to import on the “Filename” field. To browse for the file, click the Browse button. A file browser displays allowing the user to select the location of the file to import.
+1. To view the file to import, click the View Import File… button. A spreadsheet/browser displays showing details of the import file.
+1. Click the Import button to import data. If import is complete, the message “Import successfully completed.” displays.
+1. Click the OK button. The holiday schedule is added to the Holiday Schedules list.
+### Exporting Data
+
+1. From the General Import/Export tab, select the values of the parameter/s that will be exported. For example, to export historical prices, select the index and the price type that will be exported.
+1. Select the format of the file will be saved as in the “Format” field.
+1. To change the default location of the export file, enter the path and name of the file where data will be saved in the “Filename” field. To browse for the file, click the Browse button. A file browser displays allowing the user to select the location and name of the export file.
+1. Click the Export button to export data. If export is complete, the message “Export successfully completed.” displays.
+1. Click the OK button.
+1. To view the file to export, click the View Export File… button.
+## Definitions Tab
+
+Create standard import/export definitions that can be reused to import/export data. It gives the user more control over data that will be transported. This tab allows the users to:
+
+·         Select a new default definition
+
+·         Execute a definition that is not the default
+
+·         Edit an existing definition
+
+·         Create a new definition
+
+![Description: image002](OLF_General_Import_Export_files/image010.jpg)
+
+### Definitions Tab Buttons
+
+This window has the following buttons in addition to those defined for the General Import/Export tab:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:2.2in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="211"><p class="TableHeader">Button</p></td><td style="width:4.45in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt" width="211"><p class="NormalBold"><img alt="Description: image011.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image011.jpg" width="120"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Click this button to save any changes made in the Default tab.</p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt" width="211"><p class="NormalBold"><img alt="Description: image012.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image012.jpg" width="77"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Displays the <i>Standard Import/Export</i> window to allow the user to edit the import/export file configuration.</p><p class="MsoNormal">See <a href="../Operations_Manager/OPS_Standard_Import-Export.htm"><i>Standard Import/Export</i></a></p></td></tr><tr><td style="width:2.2in;border:solid windowtext 1.0pt;border-top: none;padding:0in 5.4pt 0in 5.4pt" width="211"><p class="NormalBold"><img alt="Description: image013.jpg" border="0" height="20" src="OLF_General_Import_Export_files/image013.jpg" width="77"/></p></td><td style="width:4.45in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="427"><p class="MsoNormal">Displays the <i>Standard Import/Export</i> window to allow the user to create a new import/export file configuration.</p><p class="MsoNormal">See <a href="../Operations_Manager/OPS_Standard_Import-Export.htm"><i>Standard Import/Export</i></a></p></td></tr></table>
+```
+
+### General Import/Export Tab Fields
+
+The Definitions tab of this window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="TableHeader">Field</p></td><td style="width:347.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Default</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Click to Check and indicate the selected definition should be used as the default.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Definition Id</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">A system-generated number to uniquely identify the definition.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Definition Name</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Name of the definition.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Format</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Format of the definition file.</p></td></tr><tr><td style="width:131.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="175"><p class="NormalBold">Filename</p></td><td style="width:347.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="463"><p class="MsoNormal">Filename of the definition file.</p></td></tr></table>
+```
+
+### Selecting a Default Import/Export Definition
+
+1. Select the Definitions tab.
+1. Put a check mark (by clicking) on the Default field of the definition that will be set as the default import/export definition.
+1. Click the Save Defaults button to save modifications.
+### Running an Import/Export Definition (that is not the Default)
+
+1. Select the Definitions tab.
+1. Highlight the row that will be executed.
+1. Click the Import or Export button to execute the definition.

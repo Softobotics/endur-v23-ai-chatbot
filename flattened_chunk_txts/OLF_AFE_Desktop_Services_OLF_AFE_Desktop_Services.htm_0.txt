@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
- Section heading: Overview.
- Text content: AFE (Adaptive Front-End) Desktop Services enables the creation of OpenLink Central work environments that are relevant to users and their responsibilities employing filtered pick lists, based on keywords, to customize desktop access. AFE Desktop Services support is available in versions 80R2 and later. .
- Image file: OLF_AFE_Desktop_Services_files/image001.jpg
- Image description: the options dial in the outlook dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

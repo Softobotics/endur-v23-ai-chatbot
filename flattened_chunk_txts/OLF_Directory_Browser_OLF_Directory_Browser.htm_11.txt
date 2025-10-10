@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Restricted Directories.
- Text content: Certain directories in the OLF system are restricted. That is, even an Administrator does not have “write” access to the files in them.  These “restricted” directories are labeled “OLF_Customer” and “OLF_Standard.”  The “OLF_Customer” directory contains scripts/tasks created specifically for the customer for whom it is running.  The “OLF_Standard” directory contains system-standard files that should not be edited.  However, the Administrator will have permission to open the files from those directories, then edit and save them in a separate directory.  The default adds the word “copy” at the end of a file name. .

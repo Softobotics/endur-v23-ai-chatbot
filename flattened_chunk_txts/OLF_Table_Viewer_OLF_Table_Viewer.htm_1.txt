@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Table_Viewer.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window is utilized by various functionalities in the system. 
-	 For illustration purposes, the following is an example of how it can 
-	 be accessed: The following window displays:  .
- Image file: OLF_Table_Viewer_files/image005.jpg
- Image description: the settings dial in the windows explorer.

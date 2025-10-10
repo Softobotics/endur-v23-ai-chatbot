@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: See Also.
- Text content: Task Editor.
- 
-Links to other files: OLF_AVS_Task_Editor.htm.

@@ -1,0 +1,85 @@
+# Task Properties
+
+## Overview
+
+Each Task has permissions associated with it.  The person who creates a script is the owner.  The owner can associate Read, Write, and Execute Permissions to the script for himself, to a security group, and to the public.
+
+Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Task Properties.
+
+## Accessing This Window/Screen
+
+This window can be accessed by following the steps below.
+
+1.    Start the Trading Manager.
+
+2.    Select Script à Task Editor.  The Task Editor window displays.
+
+3.    Select File àOpen.  A pop up list of available tasks in the database displays.
+
+4.    Select File à Properties.
+
+The following window displays:
+
+![image010.jpg](OLF_AVS_Task_Permissions_files/image001.jpg)
+
+Note:  The settings in this window are the System-upgrade defaults for existing Tasks.  The Owner and Group information and Owner/Group/Public permissions can be modified. However, it is also important to note that only one security group can be assigned to each task (when one group is assigned the privilege, any previously assigned group will lose the privilege).
+
+### Menu Items
+
+This window does not have any menus.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><h5>Button</h5></td><td style="width:380.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal"><img alt="image011.jpg" border="0" height="32" src="OLF_AVS_Task_Permissions_files/image002.jpg" width="112"/></p></td><td style="width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p class="MsoNormal">Saves the requested changes after a confirmation message displays. The <i><a href="OLF_AVS_Task_Editor.htm">Task Editor</a></i> window displays.</p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal"><img alt="image012.jpg" border="0" height="32" src="OLF_AVS_Task_Permissions_files/image003.jpg" width="112"/></p></td><td style="width:380.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="507"><p class="MsoNormal">Cancels any changes and closes this window.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><h5 style="punctuation-wrap:simple;text-autospace:none">Field</h5></td><td style="width:353.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p align="center" class="MsoNormal" style="text-align:center;punctuation-wrap: simple;text-autospace:none"><b>Description</b></p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><h6>Name</h6></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">This is a variable character field of up to 32 characters. It represents the name of the Task to which privileges are being applied. If the Task is new and no name assigned yet, data can be entered. Otherwise, this is a read-only field. </p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory/Full Path</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">Together, these two fields indicate the path and directory in which the task is located. During a System upgrade, all of the existing tasks in the database are placed in the <b>/Task/Site</b> directory<b>. </b> New tasks are saved to the <b>/Task/Site</b> directory with your user ID as the owner. Left-click in the <b>Directory</b> field to change the directory of a new task. A pick list displays from which to chose a new directory.</p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Version</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">This indicates the number of the current version of the task permission. The version number is increased each time permission is changed and saved.</p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Owner</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">This is a pick list field of available user IDs. The pick list is disabled if this is a new task. Otherwise, select a user as the owner. The user ID of the person who creates the task is initially indicated as the owner. Only someone with the associated permissions, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p><ul style="margin-top:0in" type="square"><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory Node System SuperUser Group</b></li><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory System Task SuperUser Group</b></li></ul><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Note: </b> If the original owner of the task is changed, the original owner may lose access rights to the task if they are not part of the group to which the task is assigned.</p></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Security Group</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal">This is a pick list field of Security Groups (Security Groups are set up in the Admin Manager). Choose the group whose members have rights to the selected task and its associated permissions. A security group <b>Task DIRNODE Developers</b> was created and assigned as a default to each of the existing tasks after a database upgrade.</p><p class="MsoNormal"><b>Note:</b> The default name of this Security Group (<b>Task DIRNODE Developers</b>) can be changed in the Admin Manager. </p><p class="MsoNormal">The default group task assignments can be changed. <b><i></i></b>Only someone with the associated permissions, such as the Owner or someone (preferably the database administrator) with the security privilege of either:</p><ul style="margin-top:0in" type="square"><li class="MsoNormal"><b>Directory Node System SuperUser Group</b></li><li class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Directory System Task SuperUser Group</b></li></ul></td></tr><tr><td style="width:127.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="170"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Owner/Group/Public Permissions</b></p></td><td style="width:353.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="471"><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none">These are check box fields that can be toggled on and off. They grant read, write, and execute privileges to the owner of the task, the security group assigned, and to the general population of users.</p><p class="MsoNormal" style="punctuation-wrap:simple;text-autospace:none"><b>Note:</b> Execute Permissions are checked by the script engine.</p></td></tr></table>
+```
+
+## Assigning Access Rights for a Task to Security Groups
+
+The owner of a task has the rights to assign the rights to access this task to one security group in the system.  For example, a task that is relevant to the job functions of back office personnel can be restricted to that group. Each time the Task is assigned to a group and saved, the previous definition is overwritten.
+
+Access rights can be assigned by performing the following steps:
+
+IMPORTANT:  If no group is assigned to a Task, it means that ALL users can run it.
+
+## Having the Proper Rights to Assign Security Group Access
+
+The owner of the task has the right to assign access to a task to specific security groups.  However, the task’s owner must also have rights to those groups.
+
+For example, a task owner must have access to the Front Office group to give it rights to run a task.  Otherwise, the owner will not see name of the group in the pick list from which the group is selected.
+
+If the task owner has Administrator privileges and encounters this problem, it problem can be solved as follows:
+
+Open the AVS window.
+Select a task.
+Select Script à Task Editor. 
+The Task Editor window displays.
+Select File à Properties.
+The Task Properties window displays.
+Right-click on the “Groups” field.
+A pick list of all groups to which the user has access will display.
+Scroll down to the group to be selected.
+Click the Save button.
+The user will be prompted to confirm the changes before the System saves them.
+
+Navigate to Reference Explorer Personnel (V10.0r2 and later) or Reference Personnel Listing (V10.2.1 and earlier).
+Double click on your user name.
+The Personnel Editor window displays.
+Query for the Group’s owner
+Click the Security Groups radio button.
+In the “Available Groups” field, select the security group to be added.
+Click on the group name and click the Add button.
+Select File à Save.
+Go back to the Main Menu and click the Refresh button.
+Close and re-enter the Task Editor.
+The added security group(s) should appear in the picklist from which they are selected.

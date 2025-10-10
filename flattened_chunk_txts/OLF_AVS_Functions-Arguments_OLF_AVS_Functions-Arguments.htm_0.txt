@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Functions-Arguments.htm.
- Section heading: Overview.
- Text content: Shows the functions which may be used in Grid Point formulas. This does not show all of the functions in the system. Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Functions and Arguments..

@@ -1,0 +1,122 @@
+# tSV peer Groups
+
+## Introduction
+
+Currently, in the “Component Verification” module, authorized users are able to verify changes to static data/relationship objects.
+
+If the user has security privilege 24102 “Same User Verify”, that user can both amend an object and verify it, otherwise another individual must verify any amendments made by the first.
+
+The above is based on an individual user basis.  The TSV (Two Step Verification) Peer Group enhancement expands this concept to a group basis, enforcing verification of an object by users NOT in the same peer group as the person who amended the object.  Note that this will also allow users not in a peer group (but with privileges 24100 “View Component Verification” and 24101 “Verify Object”) to verify changes done by a user in a peer group.  A person can only belong in one peer group.
+
+## TSV Peer Groups
+
+Two Step Verification enables users to verify other users’ changes to data.  TSV Peer Groups enforce the verification of data changes by users not in the same peer group as the person who amended the data.
+
+## Setting up TSV Peer Groups
+
+Note: Security privilege 22043 Save TSV Peer Group is required to set up new TSV Peer Groups.
+
+1.    In the Admin Manager select Static Data – TSV Peer Group:
+
+![image012.jpg](OLF_TSV_Peer_Groups_files/image001.jpg)
+
+2.    The TSV Peer Group window will open:
+
+![image013.jpg](OLF_TSV_Peer_Groups_files/image002.jpg)
+
+3.    Click Add Row and type in a new group name (e.g. TSV peer group F).
+
+4.    Click Save to save the changes.
+
+## Enabling Two-Step Verification
+
+1.    Select the Admin Manager Compliance tab.
+
+2.    Click the Security Groups icon.  The following window displays:
+
+![image014.jpg](OLF_TSV_Peer_Groups_files/image003.jpg)
+
+3.    Select the following security privileges for the group that is to have TSV functionality enabled.  For that functionality to work, the System requires a security group to have the following privileges selected:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.3pt;border-collapse:collapse"><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p align="center" class="MsoNormal" style="text-align:center"><b>Security Privilege</b></p></td><td style="width:355.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p class="MsoNormal"><b>22038</b></p><p class="MsoNormal"><b>Save Two Step Verification</b></p></td><td style="width:355.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p class="MsoNormal">This security privilege is necessary for the user(s) who will access Static Data to choose the fields that require two-step verification.</p></td></tr><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p class="MsoNormal"><b>24100</b></p><p class="MsoNormal"><b>View Component Verification</b></p></td><td style="width:355.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p class="MsoHeading9" style="margin-left:0in"><span style="font-style:normal">Allows the user to view the component verification screen from Admin or Reference Manager (V10.2.1 and earlier). The user will view what fields were modified but cannot “verify” unless the user has the appropriate privilege listed below.</span></p></td></tr><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p class="MsoNormal"><b>24101</b></p><p class="MsoNormal"><b>Verify Object</b></p></td><td style="width:355.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p class="MsoNormal">Allows the user to verify the object that was modified, through the <i>Component Verification</i> window. </p><p class="MsoNormal"><b>Note:</b> The same person cannot modify and validate the same object unless given the privilege below.</p></td></tr><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p class="MsoNormal"><b>24102</b></p><p class="MsoNormal"><b>Same User Verification</b></p></td><td style="width:355.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p class="MsoNormal">Allows the same user to modify and verify the change.</p></td></tr><tr><td style="width:139.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="186"><p class="MsoNormal"><b>24103</b></p><p class="MsoNormal"><b>View Different Versions.</b></p></td><td style="width:355.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="474"><p class="MsoNormal">Allows the user to view objects that were modified as well as previous versions, through the <i>Component Verification</i> window and in the <i><a href="../Reference_Manager/ReferenceMgr.htm">Reference Manager</a></i> (V10.2.1 and earlier).</p></td></tr></table>
+```
+
+4.    Next, set up the Two Step Verification functionality.  In the Admin Manager click the General Administration tab.  Click the Static Data - Two Step Verification.  The following screen displays:
+
+![image015.jpg](OLF_TSV_Peer_Groups_files/image004.jpg)
+
+5.    Ensure Verification Enabled is set to Yes for all data types for which you wish to enforce verification (e.g. Party)  These objects will now have an audit trail of changes in the object_verification table.
+
+6.    Click Save to save the changes.
+
+7.    In Admin Manager, select the Compliance tab.
+
+8.    Click the Component Verification icon.
+
+9.    The following window displays:
+
+![image016.jpg](OLF_TSV_Peer_Groups_files/image005.jpg)
+
+10. Under the Configure/Configure tab the client can modify the order of the columns in the main window.  In the left column (Object Type Non-Verified #) on the left panel, there are 4 categories of verification (Reference, Static Data.  If an object has been modified, then a number will appear instead of 0 in the far right column.  The number will indicate the number of times the objects have been modified since verification was enabled for that item and how may items need to be validated.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:.25in;border-collapse:collapse"><tr><td style="width:156.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="209"><p align="center" class="MsoFooter" style="text-align:center"><b>Group</b></p></td><td style="width:319.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="426"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:156.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="209"><p class="MsoNormal"><b>Reference</b></p></td><td style="width:319.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="426"><p class="MsoNormal">The data in this group of objects are related to internal structure configured in the <i><a href="../Reference_Explorer/REFERENCE_EXPLORER_Desktop.htm">Reference Explorer Desktop</a></i> (V10.0r2 and later) or the <i><a href="../Reference_Manager/ReferenceMgr.htm">Reference Manager</a></i> (V10.2.1 and earlier). This includes changes made to counterparties, portfolios and users.</p></td></tr><tr><td style="width:156.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="209"><p class="MsoNormal"><b>Static Data</b></p></td><td style="width:319.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="426"><p class="MsoNormal">Static data changes needing validation will be shown in this group.</p></td></tr><tr><td style="width:156.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="209"><p class="MsoNormal"><b>Relationship</b></p></td><td style="width:319.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="426"><p class="MsoNormal">Data in this group are most often linkages or privileges that are added or changed in <i><a href="../Reference_Explorer/REFERENCE_EXPLORER_Desktop.htm">Reference Explorer Desktop</a></i> (V10.0r2 and later), the <i><a href="../Reference_Manager/ReferenceMgr.htm">Reference Manager</a></i> (V10.2.1 and earlier) or Admin Manger. Examples include granting of security privileges and user access to portfolios and accounts.</p></td></tr><tr><td style="width:156.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="209"><p class="MsoNormal"><b>Miscellaneous</b></p></td><td style="width:319.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="426"><p class="MsoNormal">This is a miscellaneous area that lists the data that needs to be validated.</p></td></tr></table>
+```
+
+## Assigning Personnel to TSV Peer Groups
+
+To assign personnel to a TSV Peer Group, perform the following steps:
+
+1.    Navigate to Reference Explorer Personnel (V10.0r2 and later) or Reference Personnel Listing (V10.2.1 and earlier).
+
+2.    Highlight the required row and click Edit.  The Personnel Editor window will open:
+
+![image017.jpg](OLF_TSV_Peer_Groups_files/image006.jpg)
+
+3.    Right-click in the “TSV Peer Group” field and select the required group from the pick list.
+
+4.    Select File à Save from the menu bar to save the changes.
+
+## Verifying Changes in the System
+
+When changes have been made (e.g. to business units in the Reference Explorer Desktop/Reference Manager), open the Component Verification window.
+
+1.    . From the Admin Manager, click on the Compliance tab and click the Component Verification icon.
+
+2.    From the Component Verification window, in the Object Type column on the left of the Component Verification window select the data to be reviewed (e.g., Reference à Party to view changes to business units).
+
+3.    On the right hand part of the screen locate the item that has been changed and highlight the row.
+
+4.    Click the Verify button.  Respond OK to the message “You will verify….with Version = x”.
+
+## Example of Security Enforcement in TSV Peer Group Verification
+
+1.    Select two users, User1 and User2
+
+2.    In the Reference Explorer Desktop or Reference Manager, assign User1 to TSV Peer Group A and User2 to TSV Peer Group B.
+
+3.    Save the changes.
+
+4.    Still in the Reference Explorer Desktop/Reference Manager, check which Security Group each is assigned to.
+
+5.    In the Admin Manager ensure that the Security Group(s) of User1 and User 2 have the following privileges:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:19.6pt;border-collapse:collapse"><tr><td style="width:66.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89"><p align="center" class="MsoNormal" style="text-align:center"><b><span lang="EN-GB" xml:lang="EN-GB">Number</span></b></p></td><td style="width:2.9in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="278"><p align="center" class="MsoNormal" style="text-align:center"><b><span lang="EN-GB" xml:lang="EN-GB">Security Privilege</span></b></p></td><td style="width:2.05in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="197"><p align="center" class="MsoNormal" style="text-align:center"><b><span lang="EN-GB" xml:lang="EN-GB">Status</span></b></p></td></tr><tr><td style="width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89"><p class="MsoNormal" style="text-align:justify"><b>24100</b></p></td><td style="width:2.9in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="278"><p class="MsoNormal">View Component Verification</p></td><td style="width:2.05in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="197"><p class="MsoNormal">Switched on</p></td></tr><tr><td style="width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89"><p class="MsoNormal"><b>24101</b></p></td><td style="width:2.9in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="278"><p class="MsoNormal">Verify Object</p></td><td style="width:2.05in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="197"><p class="MsoNormal">Switched on</p></td></tr><tr><td style="width:66.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="89"><p class="MsoNormal"><b>24102</b></p></td><td style="width:2.9in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="278"><p class="MsoNormal">Same User Verify</p></td><td style="width:2.05in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="197"><p class="MsoNormal">Switched off</p></td></tr></table>
+```
+
+6.    Log on as User1.
+
+7.    In the Reference Explorer Desktop/Reference Manager modify the address in a business unit and save the changes.
+
+8.    Open the Component Verification window.
+
+9.    In the Object Type column on the left select Reference à Party to view business units, legal entities and groups which have been changed.
+
+10.In the right hand part of the screen locate the business unit which has been changed and highlight the row.
+
+11.Click the Verify button.  An error message will appear.
+
+12.Now log on as User2 and repeat steps 5 – 9.  The verification will succeed.
+

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Pivot_Table.htm.
- Section heading: Creating a Pivot Table.
- Text content: To create a pivot table, a) Select from the “Pivot Table” listing the fields that will represent the column, row, and data of the pivot table. To select the field, highlight the field/s in the “Pivot Table” listing and click the appropriate “Add” button to move them to the Column, Row, and Data listing. b) Define additional settings for the pivot table, e.g., sum, colors, show summation, etc. c) Click the Pivot Table button. The pivot table displays..

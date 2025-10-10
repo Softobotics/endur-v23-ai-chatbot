@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_Logon_Info_Mgmt.htm.
- Section heading: Save Selected Logon Information To Panel.
- Text content: This panel is used to designate where the environment variables will be saved. This panel contains the following fields: .
- Table data: 
-| Field | Description |
-| --- | --- |
-| Registry | Select this check box to save the environment variables to the Windows Registry.Note:To use these saved values to start a new session, the database name, server name and user name must be set in a configuration file, runscript or command line to use the registry. |
-| Config File | Select this check box to save the environment variables to a configuration file. This selection should be chosen when using UNIX operating systems. |.

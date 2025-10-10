@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Logging_On_The_System.htm.
- Section heading: Logging On to the System.
- Text content: To log on to the system: 1. When the system is started, the Logon window displays. 2. Enter user name and password in the User Name and Password fields, respectively. 3. Click the OK button. The OpenLink Central Control Panel displays..

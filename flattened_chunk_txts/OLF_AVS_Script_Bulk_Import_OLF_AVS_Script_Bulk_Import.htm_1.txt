@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Bulk_Import.htm.
- Section heading: See Also.
- Text content: Script Editor Plugin Editor.
- 
-Links to other files: OLF_AVS_Script_Editor.htm, OLF_Plugin_Editor.htm.

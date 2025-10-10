@@ -1,0 +1,25 @@
+# Database Changes
+
+## Overview
+
+This page provides links to documents listing database changes (tables, 
+	 columns) between Openlink versions.
+
+Database Changes V22.0 
+	 to V23.0
+
+Database Changes V19.0 
+	 to V22.0
+
+Database Changes V18.0 
+	 to V19.0
+
+Database Changes V17.0 
+	 to V18.0
+
+Database Changes V16.1 
+	 to V17.0
+
+Database Changes V16.0 
+	 to V16.1
+

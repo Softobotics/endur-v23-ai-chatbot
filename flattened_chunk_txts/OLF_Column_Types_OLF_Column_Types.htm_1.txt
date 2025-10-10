@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Column_Types.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To display this window:   .
- Image file: OLF_Column_Types_files/image001.jpg
- Image description: the screens are selected in the text field.

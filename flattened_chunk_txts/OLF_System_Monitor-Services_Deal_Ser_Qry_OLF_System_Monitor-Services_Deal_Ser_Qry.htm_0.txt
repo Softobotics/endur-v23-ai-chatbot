@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Deal_Ser_Qry.htm.
- Section heading: Overview.
- Text content: The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager . This tab provides a query tool that can be utilized to view services by process and transaction number. Access to this window is controlled by Security Privilege #29280, Access Deal Services Query Tab..
- 
-Links to other files: ../Services_Manager/Services_Manager.htm.

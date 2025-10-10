@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Toolbar_Configuration.htm.
- Section heading: Saving the Toolbar Panel on the Tab or Page.
- Text content: To save changes on the toolbar panel or toolbar icons on the tab or page, save the actual tab or page configuration. Only user-defined tab or page configurations can be modified and saved..

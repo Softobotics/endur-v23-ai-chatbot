@@ -1,0 +1,56 @@
+# System Monitor - System - System Wide Configuration
+
+# Overview
+
+This screen shows information about the various system configurations. This screen allows for configuration by user or system. System configurations are set in the System Wide Configuration screen accessible from the Admin Manager.
+
+See Environment Variables
+
+See System Wide Configuration
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-System_Env_Var_files/image001.jpg)
+
+The following screen displays:
+
+![SysMonitor.jpg](OLF_System_Monitor-System_Env_Var_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. See System Monitor
+
+### Panels
+
+This window contains the following panels:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:152.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="203"><p align="center" class="MsoNormal" style="margin-top:0in;margin-right:0in; margin-bottom:6.0pt;margin-left:0in;text-align:center"><b>Panel</b></p></td><td style="width:326.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="435"><p align="center" class="MsoNormal" style="margin-top:0in;margin-right:0in; margin-bottom:6.0pt;margin-left:0in;text-align:center"><b>Description</b></p></td></tr><tr><td style="width:152.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="203"><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in"><b>External System Wide Configuration</b></p></td><td style="width:326.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="435"><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in">This is a set of variables, set in the run script, that are used prior to login, or, are not permitted to be set in the database (e.g. AB_OUTDIR).</p></td></tr><tr><td style="width:152.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="203"><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in"><b>System Wide Configuration</b></p></td><td style="width:326.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="435"><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in">This is the set of variables that can be set in the Admin Manager <b>System Wide Configuration</b> module.</p><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:6.0pt; margin-left:0in">See <a href="../Admin_Manager/ADMIN_Environment_Configuration.htm">System Wide Configuration</a></p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>&lt;Variable&gt;</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The name of the Environment Variable.</p><p class="MsoNormal">See <a href="OLF_Environment_Variables.htm">Environment Variables</a>.</p><p class="MsoNormal">Database Table.Column: global_env.env_arg</p><p class="MsoNormal">Note: Only the Environment Variables in the System Wide Configuration (not the External ones) are stored in the global_env table.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>&lt;Value&gt;</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The Value of the Environment Variable. If this is blank, the value is set to the system default.</p><p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_Environment_Configuration.htm">System Wide Configuration</a></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>&lt;Description&gt;</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A description of the Environment Variable.</p><p class="MsoNormal">See <a href="../Admin_Manager/ADMIN_Environment_Configuration.htm">System Wide Configuration</a></p><p class="MsoNormal">Note: This field only appears in versions 10.2.1 and up.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the System tab.
+Select the System Wide Configuration sub-tab.

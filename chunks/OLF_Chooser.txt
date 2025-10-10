@@ -1,0 +1,80 @@
+# CHOOSER DIALOG BOX
+
+## Overview
+
+The chooser dialog box is used throughout the system. It is used to select items from a list. It can contain many different types of data but is always used the same way.
+
+Regardless of the type of data used, the principle remains the same:
+
+## Accessing the Dialog Box
+
+The OLF Chooser window is accessed from many different locations in the system. For discussion purposes, here is an example of how it is accessed:
+
+The following screen displays:
+
+![image011](OLF_Chooser_files/image001.jpg)
+
+The following is another example of where it is accessed:
+
+![image012](OLF_Chooser_files/image002.jpg)
+
+### Menu Items
+
+This window contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:76.55pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="102"><p class="TableHeader">Menu</p></td><td style="width:93.75pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="TableHeader">Item</p></td><td style="width:270.45pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="361"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:76.55pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="102"><p class="MsoNormal"><b>File</b></p></td><td style="width:93.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal"><b>Print Screen</b></p></td><td style="width:270.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="361"><p class="MsoNormal">Sends a copy of the current window display to the default printer.</p></td></tr><tr><td style="width:76.55pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="102"><p class="MsoNormal" style="margin-bottom:3.0pt"><b></b></p></td><td style="width:93.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal"><b>Exit</b></p></td><td style="width:270.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="361"><p class="MsoNormal">Closes the window.</p><p class="MsoNormal">If the data has been modified, a confirmation window displays prompting to save the changes to the database, not save the changes and still closes the window, or cancel the Exit command and keep the window open.</p></td></tr><tr><td style="width:76.55pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="102"><p class="MsoNormal"><b>Search</b></p></td><td style="width:93.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal" style="margin-bottom:3.0pt"><b>Find &lt;F3&gt;</b></p></td><td style="width:270.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="361"><p class="MsoNormal">Displays the <i>Search</i> window in which to conduct a search.</p></td></tr><tr><td style="width:76.55pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="102"><p class="MsoNormal"><b>Help</b></p></td><td style="width:93.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal" style="margin-bottom:3.0pt"><b>Help</b></p></td><td style="width:270.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="361"><p class="MsoNormal">Displays the online help User Guide.</p></td></tr></table>
+```
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="TableHeader">Button</p></td><td style="width:308.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image005" height="28" src="OLF_Chooser_files/image003.jpg" width="82"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Selects all highlighted items (moves them to the right).</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image006" height="28" src="OLF_Chooser_files/image004.jpg" width="82"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Selects all items (moves them to the right).</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image007" height="28" src="OLF_Chooser_files/image005.jpg" width="82"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Deselects all highlighted items (moves them to the left).</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image008" height="28" src="OLF_Chooser_files/image006.jpg" width="82"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Deselects all items (moves them to the left).</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image009" height="28" src="OLF_Chooser_files/image007.jpg" width="99"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Closes the window and saves modifications.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b><img alt="image010" height="28" src="OLF_Chooser_files/image008.jpg" width="98"/></b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Closes the window without saving any modifications.</p></td></tr></table>
+```
+
+### Fields For The First Type of This Window
+
+The first type (first example) of this window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="TableHeader">Field</p></td><td style="width:308.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Selected _________ (in this example, “Selected Instruments”</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Displays a list of items that the user has selected to be used in system processing.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Available ________ (in this example, “Available Instruments.”)</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Displays a list of items that will not be included in the system processing but are available to be used, if the user chooses to add them.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Search</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Has the same function as <b>Find &lt;F3&gt;</b>.</p><p class="MsoNormal"><span style="color:red">Version 9.1R1 and above</span></p></td></tr></table>
+```
+
+### Fields For The Second Type Of This Window
+
+The second type (second example) of this window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="TableHeader">Field</p></td><td style="width:308.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Available</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Displays a list of items that are available.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Excluded</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Displays a list of items that are to be excluded.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Search</b></p></td><td style="width:308.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="411"><p class="MsoNormal">Has the same function as <b>Find &lt;F3&gt;</b>.</p><p class="MsoNormal"><span style="color:red">Version 9.1R1 and above</span></p></td></tr></table>
+```
+
+## Adding Items To The Right Side Column
+
+## Removing Items From The Right Side Column
+
+Alternately, you can double-click on any item to move it from one side to another.
+
+If an item is in the Selected column, it will be included in the system’s processing
+If an item is in the Available column, it will not be included in system processing but can be added
+
+Open Admin Manager.
+The General Administration tab displays.
+Click the Auto Document Release icon.
+
+Open Admin Manager.
+The General Administration tab displays.
+Click the Static Data icon.
+
+Select System Pick List and click the Edit button.
+Select Instruments and click the Edit button.
+The following screen displays:
+
+Select the items in the left side column to be added.
+Click the Add button, or click Add All to add all items in the left side column.
+Click OK.
+
+Select the items in the Right Side column to be removed.
+Click the Remove button, or click Remove All to remove all items in the Right Side column.
+Click OK.

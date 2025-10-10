@@ -1,0 +1,33 @@
+# Instrument Types from V16.1 to V17.0
+
+## Overview
+
+This lists the changes in instrument types from version 
+ 16.1 
+ to version 17.0
+
+## New Instrument 
+ Types
+
+The following are the new instrument types 
+ in 17.0:
+
+None
+
+## Changes in 
+ the Instrument Types
+
+The following are the changes to instrument types 
+ from 16.1 to 17.0:
+
+None
+
+## Removed Instrument 
+ Types
+
+The following are the instrument types removed in 
+ V17.0:
+
+None
+
+Instrument Types V16.1 to V17.0

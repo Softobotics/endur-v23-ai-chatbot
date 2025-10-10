@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Crystal_Report_Viewer.htm.
- Section heading: Accessing This Window/Screen.
- Text content:  Another way to access this window: .
- Image file: OLF_Crystal_Report_Viewer_files/image001.jpg
- Image description: a bottle of green liquid with a blue cap.
- Image file: OLF_Crystal_Report_Viewer_files/image002.jpg
- Image description: a blurry image of a building with a window.
- Image file: OLF_Crystal_Report_Viewer_files/image003.jpg
- Image description: the screens are selected in the text box.

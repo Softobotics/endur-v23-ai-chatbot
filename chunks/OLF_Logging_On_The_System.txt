@@ -1,0 +1,53 @@
+# LOGGING ON TO THE SYSTEM
+
+## Overview
+
+The Logon window is the screen that initially displays when the system is accessed. Users must enter their designated user name and password to gain access to the system. The Title Bar indicates which major release the system is running.
+
+![image001](OLF_Logging_On_The_System_files/image001.jpg)
+
+### Lower Panel
+
+This panel displays when the toggle  is clicked.
+
+![image003](OLF_Logging_On_The_System_files/image003.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:359.7pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>OK</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Continues the logon process</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Cancel</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Stops the logon process</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="" height="14" src="OLF_Logging_On_The_System_files/image002.jpg" width="18"/></b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Displays the lower panel of the <i>Logon</i> window</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="" height="15" src="OLF_Logging_On_The_System_files/image004.jpg" width="15"/></b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Hides the lower panel of the <i>Logon</i> window</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Standard Logon</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this option for standard logon (default)</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Change Password</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this option to change the password</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Logon Without Encryption</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this option to turn off encryption.</p><table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:65.9pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="88"><p class="TableHeader">Icon</p></td><td style="width:153.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="204"><p class="TableHeader">Description</p></td></tr><tr><td style="width:65.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="88"><p class="MsoNormal"><img alt="image006" height="38" src="OLF_Logging_On_The_System_files/image005.jpg" width="60"/></p></td><td style="width:153.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="204"><p class="MsoNormal">Encryption is turned off.</p></td></tr><tr><td style="width:65.9pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="88"><p class="MsoNormal"><b><img alt="image010" height="43" src="OLF_Logging_On_The_System_files/image006.jpg" width="60"/></b></p></td><td style="width:153.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="204"><p class="MsoNormal">Encryption is turned on.</p></td></tr></table></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:359.7pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Server</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Displays the name of the server being accessed. The user may edit this field to access another server.</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Database/ Schema</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Displays the name of the database being accessed. The user may edit this field to access other local or remote databases.</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Database Type</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Displays the type of database being accessed. The user may select another database type.</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>User Name</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Designated user name</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Password</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">User password</p></td></tr><tr><td style="width:107.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Save Logon Information</b></p></td><td style="width:359.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Check the check box to save logon information/settings.</p></td></tr></table>
+```
+
+## Logging On to the System
+
+To log on to the system:
+
+1.    When the system is started, the Logon window displays.
+
+2.    Enter user name and password in the User Name and Password fields, respectively.
+
+3.    Click the OK button. The OpenLink Central Control Panel displays.
+
+## Changing the Password
+
+To change the user password:
+
+Enter user name and password on the User Name and Password fields, respectively.
+Open the lower panel of the Logon window.
+Select the Change Password option.
+Click the OK button. A window displays prompting the user to input the old and new the passwords.
+Click the OK button to confirm change.

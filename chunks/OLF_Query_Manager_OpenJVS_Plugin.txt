@@ -1,0 +1,297 @@
+# Query Manager - OpenJVS Plugin
+
+## Overview
+
+This section discusses how the system allows an OpenJVS 
+ plugin to assist in the creation of a query.  The user has complete 
+ freedom to configure a query to their specifications, whatever it may 
+ be.  The user has a full selection of attributes by which to 
+ search in the Query Manager. The user also has the option of running 
+ an OpenJVS plugin with the query to help run more complex inquiries.
+
+See Query Manager
+
+## How It Works
+
+The Query Manager allows optional scripts to 
+ be called after the main queries are called. This allows the scripts to 
+ add to or delete from the set of deals that are listed in the query_result 
+ table that will be generated.  They also can perform any other 
+ functions a script of which is capable, such as making notifications to 
+ other parts of the system.  Furthermore, if a script runs a 
+ query that has associated scripts, these associated query scripts will 
+ be called and run.
+
+For each page on the query window, the regular query 
+ is executed as before.  Then, if a script is defined, that script 
+ is called, being passed to the unique query_id, page_num, and do_status 
+ tables from the Query engine.
+
+A unique script can be defined for each page on the 
+ query window.  If no query is defined, then the original behavior 
+ is of the script maintained.  As the query for each page is 
+ executed, the corresponding script is called immediately afterward. This 
+ is called before the system returns from the query engine.
+
+## Example
+
+For example, if the Query Manager is called 
+ from the Trading Manager main window, then the Trading Manager browser 
+ will show the effect of the script.  The scripts should usually 
+ return with an EXIT_Succeed.   EXIT_Fail will cause the 
+ query engine to not execute subsequent query pages, but pages already 
+ processed (including the page that the script is referenced from) will 
+ be saved in the query_result table.  A good use for this 
+ script is to pull in the hedge deals for each deal selected in the original 
+ query.
+
+A menu-driven text field has been added to the query 
+ window, to allow the user to select a script.  When the user 
+ saves the query, the selected scripts are stored as part of the query, 
+ allowing the same scripts to be loaded back in when the saved query is 
+ reloaded.
+
+It should be noted here that when a user runs a query 
+ with one or more associated scripts, the results are returned in a table 
+ called “argt.”
+
+The script passes the following significant columns 
+ in the argt table:
+
+```html
+<table cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;" width="638"><tr><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="96"><p class="TABLEHEADER">Column</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="76"><p class="TABLEHEADER">Type</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="467"><p class="TABLEHEADER">Description</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">"QueryId"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Unique query_id for the query_result created</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">"PageNum"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Query window page number currently being processed</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="96"><p class="MsoNormal">"DoStatus"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="76"><p class="MsoNormal">COL_INT</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="467"><p class="MsoNormal">Set to one of the following values:</p><table cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;"><tr><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="73"><p class="TABLEHEADER">Value</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="108"><p class="TABLEHEADER">Type</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="268"><p class="TABLEHEADER">Description</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="73"><p class="MsoNormal">0</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="108"><p class="MsoNormal">DO_CLEAN</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="268"><p class="MsoNormal">Select from scratch</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="73"><p class="MsoNormal">1</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="108"><p class="MsoNormal">DO_APPEND</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="268"><p class="MsoNormal">Add to existing query_result</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="73"><p class="MsoNormal">2</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="108"><p class="MsoNormal">DO_DELETE</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="268"><p class="MsoNormal">Remove from existing query_result</p></td></tr></table></td></tr></table>
+```
+
+Other columns are passed in argt, but not set are 
+ as above:
+
+```html
+<table cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;"><tr><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="TABLEHEADER">Column</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="TABLEHEADER">Type</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"Currency"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"Portfolio"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"SimRunId"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"SimDefId"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"RunType"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"ClientPid"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"QueryName"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_STRING</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"RefreshMktd",</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"UseClose"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"ClearCache"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"MarketData"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_TABLE</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"SimulationDef"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_TABLE</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"UseMarketPrices"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="155"><p class="MsoNormal">"AsmId"</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="168"><p class="MsoNormal">COL_INT</p></td></tr></table>
+```
+
+## Sample OpenJVS Plugin
+
+/*$Header: 
+  Exp $*/
+
+/*
+
+File Name:              STD_QueryScriptGetHedges.java
+
+Report Name:
+
+Script Tracking Number:
+
+OutPut File Name:       STD_QueryScriptGetHedges.log
+
+Revision History:
+
+Main Script:            This 
+ is a main script.
+
+Parameter Script:       None
+
+Display Script:         None
+
+Script category:      N/A
+
+Process Description:    This 
+ script will assist in the creation of a query.
+
+Process 
+ - do NOT run manually.
+
+Assumptions:            None
+
+Instructions:    1. Click the 
+ New Query icon or select FileàNew 
+ Query from the main menu.
+
+2. 
+ Select User Preferences -> Show Additional Criteria Panel. The Additional 
+ Criteria panel displays at the bottom of the window.
+
+3. 
+ Select a script in the Script field, and if there are none available, 
+ click the icon.
+
+Uses EOD Results?       No
+
+*/
+
+package standard.process;
+
+import com.olf.openjvs.*;
+
+import com.olf.openjvs.enums.*;
+
+import standard.include.JVS_INC_Standard;
+
+@ScriptAttributes(allowNativeExceptions=true)
+
+@PluginCategory(SCRIPT_CATEGORY_ENUM.SCRIPT_CAT_QUERY)
+
+@PluginType(SCRIPT_TYPE_ENUM.MAIN_SCRIPT)
+
+public class STD_QueryScriptGetHedges implements 
+ IScript {
+
+private JVS_INC_Standard mINCStandard;
+
+private String err_log_file;
+
+public STD_QueryScriptGetHedges(){
+
+mINCStandard = new JVS_INC_Standard();
+
+}
+
+public void execute(IContainerContext context) throws 
+ OException
+
+{
+
+String sFileNameError = "STD_QueryScriptGetHedges";
+
+err_log_file = Util.errorInitScriptErrorLog(sFileNameError);
+
+Table argt = context.getArgumentsTable();
+
+mINCStandard.Print(err_log_file, "START","Runing 
+ STD_QueryScriptGetHedges.java.");
+
+// get data from query code
+
+int query_id = argt.getInt("QueryId", 
+ 1);
+
+//int page_num = argt.getInt("PageNum", 
+ 1);
+
+//int do_status = argt.getInt("DoStatus", 
+ 1);
+
+// get query list from db
+
+Table tran_list = Table.tableNew();
+
+String sql = "Select query_result from query_result 
+ where unique_id = " + query_id;
+
+DBaseTable.execISql(tran_list, sql);
+
+tran_list.setColName(1, "tran_num");
+
+// Go through the list of deals in the original query_result 
+ list, and attempt to add associated hedge deals.
+
+Table hedge_tran_list = Table.tableNew();
+
+int num_rows = tran_list.getNumRows();
+
+if (num_rows < 2)
+
+{
+
+for (int i = 1; i <= 
+ num_rows; i++)
+
+{
+
+int tran_num = tran_list.getInt(1, 
+ i);
+
+sql = "Select hedge_deal_num 
+ from hedge_association where deal_tracking_num = " + tran_num;
+
+DBaseTable.execISql(hedge_tran_list, 
+ sql);
+
+int hedge_rows = hedge_tran_list.getNumRows();
+
+for (int j = 1; j <= hedge_rows; 
+ j++)
+
+{
+
+int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j);
+
+Query.insert (query_id, hedge_deal_num);
+
+}
+
+// The following scrap of 
+ code would call viewTable for all deals that have hedge deals assoc with 
+ them
+
+if (1 == 0)  //Dead code
+
+{
+
+if (hedge_tran_list.getNumRows() 
+ > 0)
+
+{
+
+hedge_tran_list.setColTitle( 
+ 1, Integer.toString(tran_num));
+
+hedge_tran_list.viewTable();
+
+}
+
+}
+
+// Clear table for either 
+ next deal, or after last deal
+
+hedge_tran_list.clearRows();;
+
+}
+
+}
+
+else
+
+{
+
+sql = "Select hedge_deal_num from hedge_association, 
+ query_result where query_result = deal_tracking_num  and unique_id 
+ = " + query_id;
+
+DBaseTable.execISql(hedge_tran_list, 
+ sql);
+
+int hedge_rows = hedge_tran_list.getNumRows();
+
+for (int j = 1; j <= hedge_rows; 
+ j++)
+
+{
+
+int hedge_deal_num = hedge_tran_list.getInt(1, 
+ j);
+
+Query.insert (query_id, hedge_deal_num);
+
+}
+
+}
+
+// Clear table
+
+hedge_tran_list.destroy();
+
+tran_list.destroy();
+
+mINCStandard.Print(err_log_file, "END","End 
+ of STD_QueryScriptGetHedges.java.");
+
+return;
+
+}
+
+}
+
+Query Manager OpenJVS Plugin

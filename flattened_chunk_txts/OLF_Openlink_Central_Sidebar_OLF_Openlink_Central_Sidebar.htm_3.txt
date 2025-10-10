@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
- Section heading: Accessing OpenLink Central Sidebar.
- Text content: By default, this feature is deselected when building a desktop. Desktops can be configured to automatically display the OpenLink Central Sidebar when the desktop is launched. In these cases, the Sidebar is accessed by launching a configured desktop as follows: 1. Using the Desktop icon from OpenLink Central Control Panel , select and open an existing desktop OR 2. Open a desktop from any service containing the Desktop menu (i.e., “Trading Explorer Desktop”) OR 3. Open a desktop using Launch Available Services . The selected desktop will display with the OpenLink Central Sidebar if the desktop was configured to display the Sidebar by default. If it does not display, select View à Show OpenLink Central Sidebar. The image below represents a desktop with Sidebar shown. .
- Image file: OLF_Openlink_Central_Sidebar_files/image001.jpg
- Image description: the screenshote screen with the options.
- 
-Links to other files: OLF_Openlink_Central.htm, OLF_OpenLink_Central_Launch_Available_Service.htm.

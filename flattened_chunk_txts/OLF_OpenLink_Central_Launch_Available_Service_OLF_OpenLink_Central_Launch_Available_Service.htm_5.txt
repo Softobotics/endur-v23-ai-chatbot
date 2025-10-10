@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_OpenLink_Central_Launch_Available_Service.htm.
- Section heading: Launching a Service.
- Text content: To launch a service: 1. Select a service group or groups in the Service Group Filter to filter the services shown in the Available Services listing. 2. Highlight the service in the Available Services listing. 3. Click the Launch button to start the service..

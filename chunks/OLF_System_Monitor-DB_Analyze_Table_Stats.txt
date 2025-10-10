@@ -1,0 +1,58 @@
+# System Monitor - database – analyze table statistics
+
+## Overview
+
+This window shows database object details and provides the ability to perform an update of database statistics.
+
+The following Security Privileges are applicable to this window:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:119.7pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege ID</b></p></td><td style="width:171.9pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="229"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege</b></p></td><td style="width:3.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="288"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Functionality</b></p></td></tr><tr><td style="width:119.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160"><p class="MsoNormal" style="margin-bottom:6.0pt">29600</p></td><td style="width:171.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="229"><p class="MsoNormal" style="margin-bottom:6.0pt">Access Database Tab</p></td><td style="width:3.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="288"><p class="MsoNormal" style="margin-bottom:6.0pt">Allows access to the <b>Database</b> tab and some associated sub-tabs.</p></td></tr><tr><td style="width:119.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160"><p class="MsoNormal" style="margin-bottom:6.0pt">29610</p></td><td style="width:171.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="229"><p class="MsoNormal" style="margin-bottom:6.0pt">Access Table Statistics Tab</p></td><td style="width:3.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="288"><p class="MsoNormal" style="margin-bottom:6.0pt">Allows access to this particular tab.</p></td></tr><tr><td style="width:119.7pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160"><p class="MsoNormal" style="margin-bottom:6.0pt">29260</p></td><td style="width:171.9pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="229"><p class="MsoNormal" style="margin-bottom:6.0pt">Update Table Statistics</p></td><td style="width:3.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="288"><p class="MsoNormal" style="margin-bottom:6.0pt">Allows access to the functionality to update table statistics.</p></td></tr></table>
+```
+
+This tab is available in v8.0r1 and up only.
+
+See System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-DB_Analyze_Table_Stats_files/image001.jpg)
+
+The following screen displays:
+
+![image002](OLF_System_Monitor-DB_Analyze_Table_Stats_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image003" border="0" height="16" src="OLF_System_Monitor-DB_Analyze_Table_Stats_files/image003.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Select a table and click this button to recalculate the table statistics shown in the data table.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image005" border="0" height="21" src="OLF_System_Monitor-DB_Analyze_Table_Stats_files/image004.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Reloads the system table data in the table.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Variable</b></p></td><td style="width:352.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="470"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Owner</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The name of the schema owner that owns the objects.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Object Name</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The name of the selected application table.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Last Analyzed</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The calendar date and time the selected table statistics were updated.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Tablespace Name</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The logical storage area of the table.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Rows</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The number of rows contained in the selected table.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Avg Row Length</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">The calculated average row length for the selected table.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Blocks</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">How many blocks the selected table occupies.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Cached</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">Indicates if the data in the selected table is loaded into server memory.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Logging</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">When set to “S”, the information written or removed from the table will be logged.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Monitoring</b></p></td><td style="width:352.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="470"><p class="MsoNormal">Indicates if the selected table is being monitored, meaning, all table changes are being noted.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink central, click the System Monitor icon 
+Select the Database tab.
+Select the Analyze Table Statistics sub-tab.

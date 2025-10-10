@@ -1,0 +1,47 @@
+# How to Create a New Query View
+
+The Query View Designer is used to create 
+	 custom Query Views within the Query Manager. Fields 
+	 can be added, removed, changed, and ordered in custom views.
+
+The user may create additional query views based 
+	 on their needs using the Query Designer. Custom query views are shown 
+	 at the top of the pick list in the Query View field, sorted alphabetically.
+
+1.      Click 
+	 the Query icon . 
+	 The Query window displays with a previously-saved query view.
+
+2.      From 
+	 the menu, select DesigneràShow 
+	 Designer Panel, if the panel is not yet displayed.
+
+3.      From 
+	 the menu, select DesigneràNew 
+	 Query View. The View Panel is emptied of data and fields.
+
+4.      In 
+	 the View Properties panel, select Grid Layout in the 
+	 View Type field. The View Properties panel changes.
+
+![](How_to_Create_a_New_Query_view_files/image006.jpg)
+
+5.      In 
+	 the View Properties panel, enter the data as displayed in the 
+	 screenshot above.
+
+6.      Go 
+	 to the Available Fields panel and click the  icon 
+	 next to the Transaction field.  This will allow you 
+	 to access the fields below. Drag and drop the fields below into the 
+	 View Panel.
+
+```html
+<table cellspacing="0" class="MsoNormalTable" style="margin-left: 45.9pt; border-collapse: collapse;"><tr><td style="vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="102"><p class="MsoNormal"><b>Ins Type</b></p><p class="MsoNormal"><b>Toolset</b></p><p class="MsoNormal"><b>Int Entity</b></p><p class="MsoNormal"><b>Int Pfolio</b></p></td><td style="vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="174"><p class="MsoNormal"><b>Tran Status</b></p><p class="MsoNormal"><b>Start Date</b></p><p class="MsoNormal"><b>Settle Date</b></p><p class="MsoNormal"><b>Maturity Date</b></p></td></tr></table>
+```
+
+![](How_to_Create_a_New_Query_view_files/image007.jpg)
+
+7.      Save 
+	 the Query view.
+

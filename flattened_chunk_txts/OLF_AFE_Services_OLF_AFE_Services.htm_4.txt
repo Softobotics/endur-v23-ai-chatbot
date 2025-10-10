@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Services.htm.
- Section heading: Configuring OpenLink Central.
- Text content: This section outlines the steps to customize OpenLink Central . These steps are necessary if the AFE Service is targeted to access to custom functionality. 1. Using the OpenLink Central Configuration window, create new tabs, if desired, to organize the services to be added. In this same window, use the Button Configuration tab to configure buttons for services.  2. Customize a service with the addition of arguments using the OpenLink Central Config Service Arguments window by selecting the Args button.  3. In version 10.0R2 and above, “Derived Services” can be created. The OpenLink Central Config: Add Service window may be accessed from the OpenLink Central Configuration window or from the right-click menu on a system manager button on the console (see OpenLink Central ). 4. Save the modified configuration (see OpenLink Central )..
- Image file: OLF_AFE_Services_files/image001.jpg
- Image description: the screens are selected in the text box.
- Image file: OLF_AFE_Services_files/image002.jpg
- Image description: the screens are selected in the text field.
- 
-Links to other files: OLF_OpenLink_Configurations.htm, OLF_AFE_Service_Arguments.htm, OLF_OpenLink_Configurations.htm, OLF_Openlink_Central.htm, OLF_Openlink_Central.htm.

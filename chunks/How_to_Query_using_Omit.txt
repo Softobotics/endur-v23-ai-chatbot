@@ -1,0 +1,36 @@
+# How To Query using Omit (“not” Conditional)
+
+In this example, create a query to search for 
+	 all toolsets except for Swap deals. By choosing Omit 
+	 in a pick list, your query returns all values from the default query, 
+	 while excluding what you select to not display after the query. For 
+	 example, omitting Swaps in the query would exclude Swaps from being 
+	 displayed after the query is run.
+
+To run a query:
+
+1.      Click 
+	 the New Query icon , or select 
+	 FileàNew Query 
+	 from the main menu.
+
+2.      Ensure 
+	 Transaction is displayed in the Query View field located 
+	 at the top right-hand side of the panel. This is because the selections 
+	 for this query are located in the Transaction table.
+
+![](How_to_Query_using_Omit_files/image004.jpg)
+
+3.      Right-click 
+	 in the Toolset field and right-click in the Selected Values 
+	 column to display the pick list. Select ComSwap, and then click the Omit 
+	 button. Notice the exclamation point (!) next to the toolset. 
+	 This indicates that the ComSwap toolset will not be pulled in to the 
+	 query.
+
+![](How_to_Query_using_Omit_files/image005.jpg)
+
+4.      Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display within the Trading Explorer Desktop.
+

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central.htm.
- Section heading: Environment Variable.
- Text content: The environment variable AB_SHUTDOWN_APP_FROM_MASTER_CENTRAL controls whether closing OpenLink Central closes the system or not. Setting the variable to False (the default value) causes the system to shut down when the last remaining application screen is closed. When this variable is set to True , closing OpenLink Central will shut down the system..

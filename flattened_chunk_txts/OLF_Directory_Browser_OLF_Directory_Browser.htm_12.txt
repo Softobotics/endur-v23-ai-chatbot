@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Editing Scripts/Tasks/Queries/etc. From the View by File Tab.
- Text content: To edit scripts, tasks, queries, etc. from the View by File tab, 1. To facilitate the search, sort the table by your search key. For example, if you are searching by name, sort the table by name. 2. To sort by the search key, double-click the column header of the search key, e.g., if searching by name, double-click the “Name” column header. 3. Double-click the row to edit. The applicable screen of the file displays. Note: Another way to open the file is to highlight the row and click the Select button. 4. Edit and save the file. .

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Report_Viewer.htm.
- Section heading: Other Ways to Access This Window/Screen.
- Text content: Option 1: From any Query window, select Misc à View Report . Option 2: From the Trading Manager, select View à Report Viewer . .

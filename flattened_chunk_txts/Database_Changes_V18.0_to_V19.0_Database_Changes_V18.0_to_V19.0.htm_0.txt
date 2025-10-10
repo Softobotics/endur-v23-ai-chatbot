@@ -1,4 +1,0 @@
-This chunk is from the HTML file: Database_Changes_V18.0_to_V19.0.htm.
- Section heading: Overview.
- Text content: The data in the tables below include database changes ONLY from V18.0 
- (July 6, 2022) to V19.0 (June 28, 2022) ..

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Static_Data_Template.htm.
- Section heading: Adding Data.
- Text content: To add data: 1. Click the Add Row button or Edit à Add Row to enable a new entry row in the table. 2. Enter data in the appropriate fields. 3. Repeat these steps to add more data. 4. Click the Save button or select File à Save . The system assigns a unique, system ID number to each new data row..

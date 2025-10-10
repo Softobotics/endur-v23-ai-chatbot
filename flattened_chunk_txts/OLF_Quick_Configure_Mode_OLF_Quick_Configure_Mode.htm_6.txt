@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
- Section heading: Red Arrow Pointer.
- Text content:  While a field is being dragged within or onto the blotter or the Grouping panel, a red arrow pointing to the spot where the field will be inserted displays. To insert a field between 2 specific fields, drop the field once the red arrow points in between those fields.  .
- Image file: OLF_Quick_Configure_Mode_files/image010.jpg
- Image description: a map with the location of the city of london.

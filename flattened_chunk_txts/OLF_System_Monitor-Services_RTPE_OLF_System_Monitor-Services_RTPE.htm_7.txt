@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_RTPE.htm.
- Section heading: Column Header Menu.
- Text content: To modify a table’s configuration, right-click any column header. The Column Header Menu displays. .
- 
-Links to other files: OLF_Column_Header_Menu.htm.

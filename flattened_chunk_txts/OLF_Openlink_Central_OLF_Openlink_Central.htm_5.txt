@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central.htm.
- Section heading: Accessing the Control Panel.
- Text content: Typically, this window is automatically launched with the initialization of the system. The system allows for the Control Panel to be closed while other services or managers are in use. To access this window after it has been closed but while the system is still in use: 1. Locate the Launch Available Services menu item or icon in a service or manager window. 2. Locate OpenLink Central in the list of services. 3. Launch the console. An image similar to the one below displays:  .
- Image file: OLF_Openlink_Central_files/image001.jpg
- Image description: a square with a blue circle on it.
- Image file: OLF_Openlink_Central_files/image002.jpg
- Image description: the screen of the computer.

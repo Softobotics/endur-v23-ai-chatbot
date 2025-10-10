@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Chooser.htm.
- Section heading: Overview.
- Text content: The chooser dialog box is used throughout the system. It is used to select items from a list. It can contain many different types of data but is always used the same way. Regardless of the type of data used, the principle remains the same:.

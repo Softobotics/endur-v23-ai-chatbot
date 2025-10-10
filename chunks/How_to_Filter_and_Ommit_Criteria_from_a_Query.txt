@@ -1,0 +1,38 @@
+# How To Filter and Omit Criteria from a 
+	 Query
+
+This example identifies how you would add additional 
+	 requirements to an existing query. The user may create additional 
+	 filters based on their needs. For example, you may want to filter 
+	 the types of instrument types that you want to bring into the query.
+
+In this example, several Instrument types will 
+	 be omitted from the query: IRS-Cancel and IRS–B-Cancel.
+
+1.      Click 
+	 the Query icon . 
+	 The Query window displays with a previously-saved query view.
+
+2.      Go 
+	 to the Current Query field and select the query that you want 
+	 to modify. For this example, “Swap Query” was selected.
+
+![](How_to_Filter_and_Ommit_Criteria_from_a_Query_files/image007.jpg)
+
+3.      Right 
+	 click in the Ins Type field.  A pick list appears. 
+	 Select IRS-Cancel and IRS–B-Cancel, and then click Omit.
+
+![](How_to_Filter_and_Ommit_Criteria_from_a_Query_files/image008.jpg)
+
+![](How_to_Filter_and_Ommit_Criteria_from_a_Query_files/image009.jpg)
+
+Note:   The exclamation 
+	 point indicates that IRS-Cancel and IRS–B-Cancel will 
+	 be excluded from the query.
+
+4.      Click 
+	 the Save Query icon , 
+	 or select File → Save Query from the main menu 
+	 to save the modifications.
+

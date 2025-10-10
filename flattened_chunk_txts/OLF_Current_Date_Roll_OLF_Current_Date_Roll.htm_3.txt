@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Current_Date_Roll.htm.
- Section heading: Fields.
- Text content: This window contains the following field: .
- Table data: 
-| Field | Description |
-| --- | --- |
-| Current Date | A popup used to select the desired Current Date. |.

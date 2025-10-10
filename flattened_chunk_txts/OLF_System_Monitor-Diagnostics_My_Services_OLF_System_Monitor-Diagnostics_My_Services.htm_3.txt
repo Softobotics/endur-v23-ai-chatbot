@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Diagnostics_My_Services.htm.
- Section heading: Buttons.
- Text content: This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons: .
- Image file: OLF_System_Monitor-Diagnostics_My_Services_files/image003.jpg
- Image description: a white and black striped tube.
- Table data: 
-| Button | Description |
-| --- | --- |
-|  | Reloads the service details table data. |.

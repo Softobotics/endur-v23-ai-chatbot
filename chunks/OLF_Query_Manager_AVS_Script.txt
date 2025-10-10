@@ -1,0 +1,128 @@
+# Query Manager - AVS SCRIPT
+
+## Overview
+
+This section discusses how the system allows an AVS script to assist in the creation of a query.  The user has complete freedom to configure a query to their specifications, whatever it may be.  The user has a full selection of attributes by which to search in the Query Manager. The user also has the option of running an AVS script with the query to help run more complex inquiries.
+
+See Query Manager
+
+## How It Works
+
+The Query Manager allows optional scripts to be called after the main queries are called. This allows the scripts to add to or delete from the set of deals that are listed in the query_result table that will be generated.  They also can perform any other functions a script of which is capable, such as making notifications to other parts of the system.  Furthermore, if a script runs a query that has associated scripts, these associated query scripts will be called and run.
+
+For each page on the query window, the regular query is executed as before.  Then, if a script is defined, that script is called, being passed to the unique query_id, page_num, and do_status tables from the Query engine.
+
+A unique script can be defined for each page on the query window.  If no query is defined, then the original behavior is of the script maintained.  As the query for each page is executed, the corresponding script is called immediately afterward. This is called before the system returns from the query engine.
+
+## Example
+
+For example, if the Query Manager is called from the Trading Manager main window, then the Trading Manager browser will show the effect of the script.  The scripts should usually return with an EXIT_Succeed.   EXIT_Fail will cause the query engine to not execute subsequent query pages, but pages already processed (including the page that the script is referenced from) will be saved in the query_result table.  A good use for this script is to pull in the hedge deals for each deal selected in the original query.
+
+A menu-driven text field has been added to the query window, to allow the user to select a script.  When the user saves the query, the selected scripts are stored as part of the query, allowing the same scripts to be loaded back in when the saved query is reloaded.
+
+It should be noted here that when a user runs a query with one or more associated scripts, the results are returned in a table called “argt.”
+
+The script passes the following significant columns in the argt table:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:71.65pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="96"><p class="TableHeader">Column</p></td><td style="width:56.7pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="76"><p class="TableHeader">Type</p></td><td style="width:350.45pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="TableHeader">Description</p></td></tr><tr><td style="width:71.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="96"><p class="MsoNormal">"QueryId"</p></td><td style="width:56.7pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="76"><p class="MsoNormal">COL_INT</p></td><td style="width:350.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="MsoNormal">Unique query_id for the query_result created</p></td></tr><tr><td style="width:71.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="96"><p class="MsoNormal">"PageNum"</p></td><td style="width:56.7pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="76"><p class="MsoNormal">COL_INT</p></td><td style="width:350.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="MsoNormal">Query window page number currently being processed</p></td></tr><tr><td style="width:71.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="96"><p class="MsoNormal">"DoStatus"</p></td><td style="width:56.7pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="76"><p class="MsoNormal">COL_INT</p></td><td style="width:350.45pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="MsoNormal">Set to one of the following values:</p><table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:54.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="73"><p class="TableHeader">Value</p></td><td style="width:81.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="108"><p class="TableHeader">Type</p></td><td style="width:201.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="268"><p class="TableHeader">Description</p></td></tr><tr><td style="width:54.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="73"><p class="MsoNormal">0</p></td><td style="width:81.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="108"><p class="MsoNormal">DO_CLEAN</p></td><td style="width:201.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="268"><p class="MsoNormal">Select from scratch</p></td></tr><tr><td style="width:54.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="73"><p class="MsoNormal">1</p></td><td style="width:81.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="108"><p class="MsoNormal">DO_APPEND</p></td><td style="width:201.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="268"><p class="MsoNormal">Add to existing query_result</p></td></tr><tr><td style="width:54.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="73"><p class="MsoNormal">2</p></td><td style="width:81.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="108"><p class="MsoNormal">DO_DELETE</p></td><td style="width:201.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="268"><p class="MsoNormal">Remove from existing query_result</p></td></tr></table></td></tr></table>
+```
+
+Other columns are passed in argt, but not set are as above:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Column</p></td><td style="width:1.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="TableHeader">Type</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"Currency"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"Portfolio"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"SimRunId"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"SimDefId"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"RunType"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"ClientPid"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"QueryName"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_STRING</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"RefreshMktd",</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"UseClose"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"ClearCache"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"MarketData"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_TABLE</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"SimulationDef"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_TABLE</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"UseMarketPrices"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal">"AsmId"</p></td><td style="width:1.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal">COL_INT</p></td></tr></table>
+```
+
+Sample AVS Script
+
+/*
+
+File Name:           QueryScriptGetHedgesTest.mls
+
+Script Type:         Process - do NOT run manually.
+
+Parameter Script:    None
+
+Display Script:      None
+
+This script will add additional deals (Hedges) whenever a query is executed that calls this script.
+
+*/
+
+{
+
+// get data from query code
+
+query_id = TABLE_GetIntN (argt, "QueryId", 1);
+
+page_num = TABLE_GetIntN (argt, "PageNum", 1);
+
+do_status = TABLE_GetIntN (argt, "DoStatus", 1);
+
+// get query list from db
+
+tran_list = TABLE_New();
+
+where = "unique_id = " + query_id;
+
+TABLE_LoadFromDbWithSQL (tran_list, "query_result", "query_result", where);
+
+TABLE_SetColName (tran_list, 1, "tran_num");
+
+// Show original query_result list
+
+// TABLE_ViewTable (tran_list);
+
+// Go through the list of deals in the original query_result list, and attempt to add associated hedge deals.
+
+for (i = 1; i <= TABLE_GetNumRows(tran_list); i++)
+
+{
+
+hedge_tran_list = TABLE_New();
+
+tran_num = TABLE_GetIntN(tran_list, "tran_num", i);
+
+where = "deal_tracking_num = " + tran_num;
+
+TABLE_LoadFromDbWithSQL (hedge_tran_list, "hedge_deal_num", "hedge_association", where);
+
+for (j = 1; j <= TABLE_GetNumRows(hedge_tran_list); j++)
+
+{
+
+hedge_deal_num = TABLE_GetIntN (hedge_tran_list, "hedge_deal_num", j);
+
+QUERY_Insert (query_id, hedge_deal_num);
+
+}
+
+// The following scrap of code will call TABLE_ViewTable for all deals that have hedge deals assoc with them
+
+if (1 == 0)
+
+{
+
+if (TABLE_GetNumRows(hedge_tran_list) > 0)
+
+{
+
+TABLE_SetColName (hedge_tran_list, 1, STR_IntToStr(tran_num));
+
+TABLE_ViewTable (hedge_tran_list);
+
+}
+
+}
+
+// Clear table for either next deal, or after last deal
+
+TABLE_Destroy(hedge_tran_list);
+
+}
+
+EXIT_Succeed();
+
+}
+

@@ -1,4 +1,0 @@
-This chunk is from the HTML file: OLF_APM_Market_Data_Incremental.html.
- Section heading: Miscellaneous Pre-Requisites.
- Text content: - APM 
- Service with “Enable Market Data Incremental Processing” specified.

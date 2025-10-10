@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Calendar.htm.
- Section heading: Overview.
- Text content: The Calendar allows you to view different system holiday schedules, date sequences, and roll conventions. The holiday schedules displayed in the calendar are the ones entered into Holiday Schedule window of the Administration Manager.  Users can select any date sequence, holiday schedule or roll convention stored in the System, which will display all their relevant dates on the calendar. This window also allows users to double click on a specific date and retrieve all details about that date that have been entered into the System. Note that a callback has been added to update the calendar if the current date is changed elsewhere in the application. Optionally, two environment variables can be set to display additional fields and information on the Calendar window. By default, the variables are set to False. When set to True, these variables enable the functionality described in the table below:.
- Table data: 
-| Environment Variable | Description |
-| --- | --- |
-| AB_CALENDAR_SHOW_DAYS_FROM_TODAY | Displays the financial business days and actual days between the selected date and the current date. |
-| AB_CALENDAR_SHOW_JULIAN_DATES | Enables the display and use of Julian dates, Date strings, and Jump to a specified date. |. 
-Links to other files: ../Admin_Manager/ADMIN_STATIC_Holiday_Schedules.htm.

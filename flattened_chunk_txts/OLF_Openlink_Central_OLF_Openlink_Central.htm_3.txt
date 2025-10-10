@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central.htm.
- Section heading: See Also:.
- Text content: AFE Services OpenLink Central Sidebar OpenLink Central Configuration Launch Available Services Link Screen Config Defs.
- 
-Links to other files: OLF_AFE_Services.htm, OLF_Openlink_Central_Sidebar.htm, OLF_OpenLink_Configurations.htm, OLF_OpenLink_Central_Launch_Available_Service.htm, OLF_Link_Screen_Config_Definitions.htm.

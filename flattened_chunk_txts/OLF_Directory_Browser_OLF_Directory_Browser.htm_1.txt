@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the OpenLink Central. 2. Click the Directory Manager icon . 3. The following window displays:   .
- Image file: OLF_Directory_Browser_files/image001.jpg
- Image description: the logo for the company.
- Image file: OLF_Directory_Browser_files/image002.jpg
- Image description: the screens are selected in the text field.

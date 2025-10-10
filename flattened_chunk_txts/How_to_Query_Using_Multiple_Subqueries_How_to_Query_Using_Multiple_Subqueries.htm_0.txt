@@ -1,8 +1,0 @@
-This chunk is from the HTML file: How_to_Query_Using_Multiple_Subqueries.htm.
- Section heading: Rename Sub-Query Tabs.
- Text content: 1. Right-click 
-	 on the tab, and then select Rename Sub-Query from the menu. 
-	 The following Input Window displays.   2. Enter 
-	 the new name for the tab, and then click the OK button. The Sub-Query tab name changes..
- Image file: How_to_Query_Using_Multiple_Subqueries_files/image004.jpg
- Image description: the screen with the text ' input window '.

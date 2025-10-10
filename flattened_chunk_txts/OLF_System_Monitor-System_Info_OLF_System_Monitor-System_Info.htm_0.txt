@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Info.htm.
- Section heading: Overview.
- Text content: This window shows system information identical to that in the About Window.  See About See System Monitor .
- 
-Links to other files: OLF_About_Window.htm, OLF_System_Monitor.htm.

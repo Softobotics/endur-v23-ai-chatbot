@@ -1,0 +1,70 @@
+# System Monitor - System - LICensing
+
+## Overview
+
+This tab contains licensing details for the specific license key. The data in this table may be utilized during the trouble-shooting process.
+
+This window consists of the General Data, Limits and Features panels. The General Data panel contains high-level license key data such as “Expiration Date” and “System Name”. The Limits panel shows the number of users with access to a particular license type. The Features  panel includes every license feature enabled within the selected license key.
+
+See System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-System_Licensing_files/image001.jpg)
+
+The following screen displays:
+
+![image003](OLF_System_Monitor-System_Licensing_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor.
+
+### General Data Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>General Data</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The data fields shown contain general license key information.</p><table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p align="center" class="MsoNormal" style="text-align:center"><b>Value</b></p></td><td style="width:171.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p class="MsoNormal">Site ID</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">An internally created number assigned to the license key.</p><p class="MsoNormal">Database Table.Column: client_system_info.site_id</p></td></tr><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p class="MsoNormal">Site Label</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">The unique name assigned to the specific license key.</p><p class="MsoNormal">Database Table.Column: client_system_info.site_label</p></td></tr><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p class="MsoNormal">System Expire Date</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">The termination date of the license key.</p><p class="MsoNormal">Database Table.Column: client_system_info.expiration_date.</p></td></tr><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p class="MsoNormal">System Name</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">A numeric representation of the licensed application(s).</p><p class="MsoNormal">Database Table.Column: client_system_info.system_name</p></td></tr><tr><td style="width:70.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="94"><p class="MsoNormal">Unlock Code</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">Part of OpenLink’s proprietary licensing scheme. Additional information is unavailable.</p></td></tr></table></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>&lt;Value&gt;</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">This column contains the data values associated with each general data item.</p></td></tr></table>
+```
+
+### Limits Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Limit Type</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">This field shows licensing constraint categories.</p><table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:96.85pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="129"><p align="center" class="MsoNormal" style="text-align:center"><b>Value</b></p></td><td style="width:171.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:96.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="129"><p class="MsoNormal">Concurrent</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">This license type allows simultaneous system usage.</p></td></tr><tr><td style="width:96.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="129"><p class="MsoNormal">Non-Concurrent</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">This license type allows single-user system access at one time.</p></td></tr><tr><td style="width:96.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="129"><p class="MsoNormal">Priority</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal">This license type allows this user to always log on, regardless of the number of concurrent users already logged on.</p></td></tr><tr><td style="width:96.85pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="129"><p class="MsoNormal">Internal</p></td><td style="width:171.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="228"><p class="MsoNormal"></p></td></tr></table></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>License Type</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">Indicates license entitlements permitted by the particular license key. The security privileges associated with each <a href="../Admin_Manager/ADMIN_Security_Object_Security_Licenses.htm">License Type</a> are <span style="color:black">listed within the Security Groups panel of the Admin Manager</span>.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>User Limit</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The maximum number of users allowed for the specific license type and limit type.</p></td></tr></table>
+```
+
+### Features Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Feature Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The name of the functionality that may be accessed with the license.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Feature Expiration Date</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">Represents the expiration date for the selected feature. This is the same date as the “System Expire date” field in the <b><i>General Data</i></b> panel.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the System tab.
+Select the Licensing sub-tab.

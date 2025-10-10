@@ -1,0 +1,82 @@
+# logon info management
+
+This window contains the user credentials and system external variables that were used to start the current session of the OpenLink application. This window is used to export these credentials or variables to a configuration file or Windows registry. The variables shown may come from a runscript, registry file, configuration (config.) file or command line; database variables set in the System Wide Configuration window are not included in this screen.
+
+Logon Info Management contains the Logon Information to Save and the Save Selected Logon Information To panels. The Logon Information to Save panel displays the user logon credentials and environment variables while the Save Selected Logon Information To designates if this data is saved to either a registry file, configuration file or both.
+
+See Environment Variables
+
+See Command Line Options
+
+See Launch Available Services
+
+## Reference Documents
+
+The following reference document can be found in the CRM Web Portal.
+
+Installation_Administration_Guide.pdf
+
+Accessing This Window/Screen
+
+To access this window:
+
+1.    Start OpenLink Central.
+
+2.    Select Launch Available Services from the menu.
+
+3.    In the search panel, enter the service name “Logon Info Management”.
+
+4.    Select the appropriate service from the Available Services panel and click “OK”.
+
+The following window displays:
+
+![image001](OLF_Logon_Info_Mgmt_files/image001.jpg)
+
+The image below depicts the window after selecting the “Credentials” and “Environment” check boxes.
+
+![image006](OLF_Logon_Info_Mgmt_files/image002.jpg)
+
+### Menu Items
+
+This window contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><thead><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p align="center" class="MsoNormal" style="text-align:center"><b>Menu</b></p></td><td style="width:67.8pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p align="center" class="MsoNormal" style="text-align:center"><b>Item</b></p></td><td style="width:4.5in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b>File</b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Print</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Prints the current screen.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Save</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Saves the screen selections, “Credentials” and/or “Environment” to the designated “Registry” or “Config File” designated in the <b><i>Save Selected Logon Information To</i></b>.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Exit</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Closes the window.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b>Tools</b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Clear Registry Credentials</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Removes the saved credentials (user name and password in encrypted form) from the Windows registry.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Clear Registry Environment</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Removes the saved environment variable names and values from the Windows registry.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="101"><p class="MsoNormal"><b>Help</b></p></td><td style="width:67.8pt;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="90"><p class="MsoNormal"><b>Help</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="432"><p class="MsoNormal">Displays the system help files.</p></td></tr></table>
+```
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:5.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="image009" border="0" height="29" src="OLF_Logon_Info_Mgmt_files/image003.jpg" width="29"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Has the same function as <b>File</b><b><span style="font-family:Wingdings">à</span>Print Screen.</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="image002" border="0" height="23" src="OLF_Logon_Info_Mgmt_files/image004.jpg" width="80"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Has the same function as <b>File</b><b><span style="font-family:Wingdings">à</span>Save.</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="image003" border="0" height="24" src="OLF_Logon_Info_Mgmt_files/image005.jpg" width="80"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Has the same function as <b>File</b><b><span style="font-family:Wingdings">à</span>Exit.</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="image005" border="0" height="17" src="OLF_Logon_Info_Mgmt_files/image006.jpg" width="35"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Launches a dialog box for choosing a file or folder.</p></td></tr></table>
+```
+
+### Select Logon Information To Save Panel
+
+This panel is used to specify the information to export.
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:5.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Credentials</b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this check box to export the user name and password of the logged in user. This information will be encrypted and the resulting string will be saved as the value for AB_LOGON_CREDENTIALS.</p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Environment</b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this check box to export the external environment variables currently set in the running session.</p><p class="MsoNormal">The variables are displayed in a table containing the variable name and the corresponding value.</p></td></tr></table>
+```
+
+#### Column Header Menu
+
+To modify the table configuration, right-click any column header. The Column Header Menu displays.
+
+### Save Selected Logon Information To Panel
+
+This panel is used to designate where the environment variables will be saved.
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:5.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Registry</b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this check box to save the environment variables to the Windows Registry.</p><p class="MsoNormal">Note:</p><p class="MsoNormal">To use these saved values to start a new session, the database name, server name and user name must be set in a configuration file, runscript or command line to use the registry.</p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="143"><p class="MsoNormal"><b>Config File</b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="480"><p class="MsoNormal">Select this check box to save the environment variables to a configuration file. This selection should be chosen when using UNIX operating systems.</p></td></tr></table>
+```
+

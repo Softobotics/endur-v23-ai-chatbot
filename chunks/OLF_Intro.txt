@@ -1,0 +1,62 @@
+# System Tools and Configurations Overview
+
+# Additional Documentation Links
+
+·         Logging on to the System
+
+·         Command Line Options
+
+·         Keyboard Shortcuts
+
+·         Configure View Window
+
+·         Query Manager
+
+·         Report Viewer
+
+·         Adhoc Query Viewer
+
+·         Config Windows
+
+·         Trading and Risk Management
+
+## Navigating the System
+
+·         Browser
+
+·         Table Viewer
+
+·         Configuring the Table Viewer
+
+·         Query Manager
+
+## System Conventions
+
+·         Date and Time Period Format Conventions
+
+·         Symbolic Dates
+
+·         Payment Date Offsets
+
+## System Administration
+
+·         Environment Variables
+
+·         Security Privileges 0 – 9999
+
+·         Security Privileges 10000 and Up
+
+## Plug-ins/Scripts
+
+·         Script Editor
+
+·         Script Permissions
+
+·         Task Editor
+
+·         Task Permissions
+
+·         Task Statuses
+
+·         Script Debugger
+

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Dir_Override_Attributes.htm.
- Section heading: Overview.
- Text content: Note: This page is for v90r1 and later. For v82r1 and earlier, see Directory Override Attributes. The Directory Override Attributes window enables users to override certain default access privileges with Standard and Customer-based scripts (which are collectively termed as “Restricted Scripts”). Note: Script in these directories CANNOT be modified. The Directory Override Attributes window specifically enables users to: Note: If the user has privileges to view a restricted script, it is recommended that the user display it in the Script Editor and then save it under another name in another directory. This ensures that the original script will not be overwritten.  Changes then can be made to the duplicate script..
- 
-Links to other files: OLF_Script_Debugger.htm.

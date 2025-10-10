@@ -1,0 +1,53 @@
+# How 
+	 To Create a Query Using the Multi-Value Editor
+
+The Query window allows the user to enter information 
+	 in some fields (without selecting from a pick list). For example, 
+	 a user may want to query for multiple specific deals, and therefore 
+	 would enter the deal specific numbers separated by commas (example: 
+	 the following deal numbers could be entered in the Deal Num 
+	 field and queried for - 32669, 32670, 32686).
+
+To Create a Query Using Multiple Values:
+
+1.      Click 
+	 the Query icon  
+	 from the menu. The Trades Query window opens.
+
+2.      Ensure 
+	 the Transaction table is displayed in the Query View 
+	 field located at the top right-hand side of the panel.
+
+3.      Click 
+	 the New Query icon, or select 
+	 FileàNew Query 
+	 from the main menu.
+
+4.      Go 
+	 to the Deal Num field and click the  icon 
+	 within the Selected Values column. The Input Window 
+	 displays.
+
+![](How_to_Query_Using_Multi_Value_Editor_files/image009.jpg)
+
+5.      Enter 
+	 “32669, 32670, 32686” in the Input Window.
+
+![](How_to_Query_Using_Multi_Value_Editor_files/image010.jpg)
+
+6.      Click 
+	 the OK button. The following displays in the Summary 
+	 panel.
+
+![](How_to_Query_Using_Multi_Value_Editor_files/image011.jpg)
+
+Note:   The quotation 
+	 marks keeps the query in a string. Without the quotation marks, it 
+	 becomes a list.
+
+![](How_to_Query_Using_Multi_Value_Editor_files/image012.jpg)
+
+7.      Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display.
+

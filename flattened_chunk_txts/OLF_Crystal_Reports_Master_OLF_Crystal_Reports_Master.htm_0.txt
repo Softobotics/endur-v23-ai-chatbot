@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Crystal_Reports_Master.htm.
- Section heading: Overview.
- Text content: The Crystal Reports Master window is a much more robust screen than the Crystal Reports Viewer , providing more details and in-depth information. After a Crystal Report has been designed and saved it can be executed from within the system via a Crystal Task.  A Crystal Task can be defined and executed once, or it can be saved to the system database making it available to other users.  Crystal Tasks are created, executed, and maintained through a Crystal Reports window.  The title bar of the window displays the module from which it was launched. A Crystal Task consists of a saved Crystal report (.rpt file), export options, Crystal Task properties, a plug-in/script (optional), and Crystal report properties.  When a Crystal Task is saved to the system database, the user names it and the system assigns a unique Crystal Task ID..
- 
-Links to other files: OLF_Crystal_Report_Viewer.htm.

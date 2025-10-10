@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Env_Var.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: The following screen displays:    Other Ways to Access This Window/Screen The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services . Select System Monitor from the list box. .
- Image file: OLF_System_Monitor-System_Env_Var_files/image001.jpg
- Image description: a square with a blue border and a yellow border.
- Image file: OLF_System_Monitor-System_Env_Var_files/image002.jpg
- Image description: the screenshoter screen shot of the screen shot of the screen shot of the screen shot of the.

@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_OpenLink_Configurations.htm.
- Section heading: Tabs.
- Text content: This window contains the following tabs:.
- Table data: 
-| Button | Description |
-| --- | --- |
-| Tab Configuration | Allows users to create, edit, and delete tabs from the OpenLink Central Console. |
-| Button Configuration | Allows users to add and delete services from any tab of the OpenLink Central Console. |
-| View Configuration | This tab is used to configure the appearance of theOpenLink Central Consolewhen it is accessed from anOpenLink Central Sidebar.Available in V12.1 and above. |.

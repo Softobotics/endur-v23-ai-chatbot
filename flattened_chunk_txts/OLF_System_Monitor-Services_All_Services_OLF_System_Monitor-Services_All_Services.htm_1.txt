@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_All_Services.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: The following screen displays: .
- Image file: OLF_System_Monitor-Services_All_Services_files/image001.jpg
- Image description: a square with a blue border and a yellow border.
- Image file: OLF_System_Monitor-Services_All_Services_files/image002.jpg
- Image description: the screenshote screen with the text field highlighted.

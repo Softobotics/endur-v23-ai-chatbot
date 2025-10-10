@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Calendar.htm.
- Section heading: Viewing Date Details on the Calendar.
- Text content: If you double-click on a particular day, you will see details about what holidays and date sequences are applicable for that date.  This is useful if there are too many to see on the main screen. .
- Image file: OLF_Calendar_files/image008.jpg
- Image description: the text dial in the text dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

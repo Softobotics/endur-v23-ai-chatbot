@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_About_Window.htm.
- Section heading: Other Ways to Access This Window/Screen.
- Text content: From some windows in the system, click the button..
- Image file: OLF_About_Window_files/image002.jpg
- Image description: a blue and white logo on a white background.

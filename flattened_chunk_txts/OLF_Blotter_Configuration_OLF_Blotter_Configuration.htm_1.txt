@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Blotter_Configuration.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window is accessed from various functionalities in the system. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Open the Swap deal input window. 3. Select View à Agreements . The Agreement/Provision Listing window. 4. Select Configure à Configure Listing . 5. The following window displays:   .
- Image file: OLF_Blotter_Configuration_files/image001.jpg
- Image description: the text editor dial in the text editor.

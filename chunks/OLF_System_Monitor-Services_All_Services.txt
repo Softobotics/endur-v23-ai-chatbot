@@ -1,0 +1,64 @@
+# System Monitor - Services - All Services
+
+## Overview
+
+The All Services tab provides an overview of all System services. This window provides a high-level overview of domain services, grid and Connex services and workflow management. This window intends to provide a quick status view of all configured system services.
+
+Access to this window is controlled by Security Privilege #29200, Access Services Tab.
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Services_All_Services_files/image001.jpg)
+
+The following screen displays:
+
+![image005.jpg](OLF_System_Monitor-Services_All_Services_files/image002.jpg)
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor with the following additions:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:128.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="171"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:350.6pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="467"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:128.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="171"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image006.jpg" border="0" height="20" src="OLF_System_Monitor-Services_All_Services_files/image003.jpg" width="150"/></b></p></td><td style="width:350.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="MsoNormal">Stops monitoring all definitions for services such as Credit, Risk and RTPE.</p></td></tr><tr><td style="width:128.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="171"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image007.jpg" border="0" height="20" src="OLF_System_Monitor-Services_All_Services_files/image004.jpg" width="150"/></b></p></td><td style="width:350.6pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="467"><p class="MsoNormal">Re-starts monitoring all definitions for services such as Credit, Risk and RTPE.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Status</b></p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Shows the status of the selected service/engine. Statuses are color–coded.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Server Node</b></p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The name of the server where the selected service/engine runs.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Location</b></p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The location of the server where the selected service/engine runs.</p></td></tr></table>
+```
+
+### Right-Click Menu - Service
+
+Right-clicking on a service returns the following menu items when applicable.
+
+Messages shown will differ depending on the service.  An example is the “Credit Engine” menu item “Restart Application Service ‘Credit Engine’”.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.1pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Tab</b></p></td><td style="width:344.7pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Start &lt;domain service&gt;</b></p></td><td style="width:344.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Starts the selected service.</p><p class="MsoNormal">This menu item only appears when the service is not running.</p></td></tr><tr><td style="width:134.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Restart &lt;domain service&gt;</b></p></td><td style="width:344.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Restarts the selected service.</p><p class="MsoNormal">This menu item only appears when the service is already running.</p></td></tr><tr><td style="width:134.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Stop &lt;domain service&gt;</b></p></td><td style="width:344.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Stops the selected service.</p><p class="MsoNormal">This menu item only appears when the service is already running.</p></td></tr><tr><td style="width:134.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Jump to &lt;service&gt; Panel</b></p></td><td style="width:344.7pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Jumps to the specific tab for the selected service.</p><p class="MsoNormal">This menu item will only be shown for engines in the Application Services folder.</p></td></tr></table>
+```
+
+### Right-Click Menu – Tree View
+
+Right-clicking on an item in the tree returns the following menu items.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Tab</b></p></td><td style="width:344.75pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p class="NormalBold">Collapse Group</p></td><td style="width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p class="MsoNormal">Hides the components (e.g., engines, methods, etc.) contained in the group from which the menu was accessed.</p></td></tr><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p class="NormalBold">Expand Group</p></td><td style="width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p class="MsoNormal">Displays the components (e.g., engines, methods, etc.) contained in the group from which the menu was accessed.</p></td></tr><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p class="NormalBold">Collapse All</p></td><td style="width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p class="MsoNormal">Hides all the components in all the groups.</p></td></tr><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p class="NormalBold">Expand All</p></td><td style="width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p class="MsoNormal">Displays all the components within all groups.</p></td></tr><tr style="height:22.0pt"><td style="width:134.05pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p class="NormalBold">Expand to Level &lt;number&gt;</p></td><td style="width:344.75pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p class="MsoNormal">Displays the components within all groups to the selected level of detail.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+The table configuration may be modified by right-clicking any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Services tab.
+Select the All Services sub-tab.

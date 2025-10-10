@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
- Section heading: Overview.
- Text content: This window is used throughout the system by functionalities that involve loading, saving, setting a default, or deletion of a configuration. The title or name of the window depends on its functionality, e.g., the window is titled “Save As” if saving a configuration, “Load” if loading a configuration, “Delete” if deleting a configuration, and “Set Default” if setting a default configuration. .

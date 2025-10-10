@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: Having the Proper Rights to Assign Security Group Access.
- Text content: The owner of the script has the right to assign access to a script to specific security groups.  However, the script’s owner must also have rights to those groups. For example, a script owner must have access to the Front Office group to give it rights to run a script.  Otherwise, the owner will not see name of the group in the pick list from which the group is selected. If the script owner has Administrator privileges and encounters this problem, it problem can be solved as follows:.

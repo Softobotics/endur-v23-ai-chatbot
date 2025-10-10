@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_CopyPaste.htm.
- Section heading: Pasting Data To Another Application.
- Text content: In this example, the user pastes data copied from the OLF system into an MS Excel spreadsheet.  However, this procedure will work for many Windows-based applications. .

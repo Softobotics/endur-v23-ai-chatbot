@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Editor.htm.
- Section heading: Overview.
- Text content: The Script Editor is used to edit and view scripts. Note: This page is for V9.0r1 and later. For v8.2r1 and earlier, see AVS Script Editor..

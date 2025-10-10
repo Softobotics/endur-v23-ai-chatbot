@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Domain_Grid_Mon.htm.
- Section heading: Overview.
- Text content: The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager . The Domain Services Monitor (formerly known as Domain Grid Monitor) shows details of processes, functionality and information related to OpenLink’s Services and Grid Functionality. It provides management facilities around domain grid configuration in addition to displaying running services that may or may not take advantage of the domain grid. This tab is only available in V8.0r1 and up. Access to this window is controlled by Security Privilege #29250, Access Domain Grid Monitor Tab..
- 
-Links to other files: ../Services_Manager/Services_Manager.htm.

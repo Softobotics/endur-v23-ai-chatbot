@@ -1,6 +1,0 @@
-This chunk is from the HTML file: OLF_System_Refresh.htm.
- Section heading: Overview.
- Text content: This document describes the ability of OpenLink Endur/Findur to 
-	 ensure that it uses the most current data.  This functionality 
-	 differs from version to version in terms of the features, the setup 
-	 requirements, and the underlying technology..

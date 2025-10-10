@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Licensing.htm.
- Section heading: Buttons.
- Text content: This window contains the same toolbar buttons as the System Monitor. .

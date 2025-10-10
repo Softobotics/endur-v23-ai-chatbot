@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
- Section heading: Saving a New Configuration.
- Text content: To save a new configuration, 1. From the Save As window, enter the name of the configuration in the text entry field located at the bottom of the screen. 2. Check or uncheck the Public checkbox to make the configuration public or private, respectively. 3. Click the OK button to save the configuration. The new configuration is added in the configuration listing. .

@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_OpenLink_Central_Launch_Available_Service.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. Start the OpenLink Central Console . 2. Select Launch Available Services from the menu. The following window displays in V10.1R1 and later:  V8.0r2 and earlier .
- Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image001.jpg
- Image description: the screenshote dial dial in the windows explorer.
- Image file: OLF_OpenLink_Central_Launch_Available_Service_files/image002.jpg
- Image description: the dial dial for the service dial dial.

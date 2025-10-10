@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: Saving a New Script.
- Text content: The Save As Window displays:  .
- Image file: OLF_AVS_Script_Permissions_files/image005.jpg
- Image description: the task window in the task window.
- Image file: OLF_AVS_Script_Permissions_files/image006.jpg
- Image description: the screen shows the screen with the text, ` ` ' and ` ` '.

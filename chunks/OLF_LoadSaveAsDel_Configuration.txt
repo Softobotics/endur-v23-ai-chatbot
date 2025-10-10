@@ -1,0 +1,62 @@
+# load/save as/SET DEFAULT/delete CONFIGURATION
+
+## Overview
+
+This window is used throughout the system by functionalities that involve loading, saving, setting a default, or deletion of a configuration. The title or name of the window depends on its functionality, e.g., the window is titled “Save As” if saving a configuration, “Load” if loading a configuration, “Delete” if deleting a configuration, and “Set Default” if setting a default configuration.
+
+## Accessing This Window/Screen
+
+This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed:
+
+1. Start the Trading Manager.
+1. Open any deal input window.
+1. Select Misc à Payment Formula. The Formula window displays.
+1. Select File à Save Template.
+1. The following window displays:
+![image002](OLF_LoadSaveAsDel_Configuration_files/image001.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="TableHeader">Button</p></td><td style="width:365.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="TableHeader">Description</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Public</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Toggle to save the configuration as public or private. Put a check mark to save it as a public configuration. A public configuration can be used by all users while a private configuration can only be used by the user who created it. This field displays only if saving a configuration.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">OK</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Click this button to perform any of the following:</p><p class="ListBulleted"><span style=" font-family:Wingdings;">§</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Save the new configuration</p><p class="ListBulleted"><span style=" font-family:Wingdings;">§</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Save changes in the configuration listing</p><p class="ListBulleted"><span style=" font-family:Wingdings;">§</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Load an existing configuration</p><p class="ListBulleted"><span style=" font-family:Wingdings;">§</span><span style='font-size:7.0pt;font-family:"Times New Roman","serif"'></span> Set a default configuration</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Cancel</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Closes the window without saving any changes or loading the configuration.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="TableHeader">Field</p></td><td style="width:365.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="TableHeader">Description</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Default</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Sets the configuration as the default configuration. Put a checkmark to set it as the default configuration. This field displays only if setting a default configuration.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">File Name</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Name of the configuration.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Config Type</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Indicates whether the configuration is private or public.</p><p class="MsoNormal"></p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Owner</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">User ID of person who last updated the configuration.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Last Update</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">The date and time the configuration was last updated.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">afs_id</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">The unique ID number for the Application File System (AFS) record.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Complete File Name</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">The AFS name for the saved configuration. This entry can also be viewed and/or deleted from the <i><a href="../Trading_Manager/TRADING_AFS_Viewer.htm">AFS Viewer</a></i>.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">&lt;configuration name&gt;</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Input field to enter the name of the configuration to be saved. If the name already exists, the system will warn and ask the user if the existing configuration will be overwritten. This field displays only if saving a configuration.</p></td></tr></table>
+```
+
+### Saving a New Configuration
+
+To save a new configuration,
+
+1. From the Save As window, enter the name of the configuration in the text entry field located at the bottom of the screen.
+1. Check or uncheck the Public checkbox to make the configuration public or private, respectively.
+1. Click the OK button to save the configuration. The new configuration is added in the configuration listing.
+### Loading a Configuration
+
+To load a configuration on screen,
+
+1. From the Load window, highlight the configuration to be loaded.
+1. Click the OK button. The configuration loads on screen.
+### Setting a Default Configuration
+
+To set a default configuration,
+
+1. From the Set Default window, highlight the configuration to be set as the default configuration.
+1. Click the OK button. The configuration loads on screen and set as the default configuration.
+### Deleting a Configuration
+
+To delete an existing configuration,
+
+1. From the Delete window, highlight the configuration to delete.
+1. Click the OK button. The configuration is deleted from the configuration listing.

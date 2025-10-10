@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Licensing.htm.
- Section heading: Overview.
- Text content: This tab contains licensing details for the specific license key. The data in this table may be utilized during the trouble-shooting process. This window consists of the General Data, Limits and Features panels. The General Data panel contains high-level license key data such as “Expiration Date” and “System Name”. The Limits panel shows the number of users with access to a particular license type. The Features panel includes every license feature enabled within the selected license key.  See System Monitor .
- 
-Links to other files: OLF_System_Monitor.htm.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
- Section heading: Using the OpenLink Central Sidebar.
- Text content: A Sidebar service can be launched by single-clicking the associated icon. All groups can be collapsed and expanded by clicking anywhere in the group header. In the example below, the “OpenLink” group is expanded while the “Favorites” and “Saved Desktops” groups are collapsed. .
- Image file: OLF_Openlink_Central_Sidebar_files/image005.jpg
- Image description: the open - source interface dial.

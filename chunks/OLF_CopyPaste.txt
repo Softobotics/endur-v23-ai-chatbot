@@ -1,0 +1,43 @@
+# copy/Paste data to other applications
+
+Note: This method will work ONLY when the user is running the OLF system in Windows NT.
+
+## Overview
+
+A very handy feature of the OLF system is the ability to copy data from its many configurable tables to the Windows NT clipboard.  From there, the data can be pasted into other applications.
+
+## Copying Data From Tables To The NT Clipboard
+
+Perform the following steps to copy data from the OLF System onto the Windows NT clipboard:
+
+1.    Open the table in the OLF system you wish to copy.
+
+2.    Select the row(s) of data you wish to copy/paste:
+
+a)    To copy all rows displayed,
+
+Select Edit à Select All.  All rows will now be highlighted in pink.
+
+Select Edit à Copy.
+
+b)  To copy selected row(s),
+
+Click on the desired row with the left-mouse button,
+
+Add subsequent rows by using Shift+left-mouse button.
+
+All selected rows will be highlighted in pink.
+
+Select Edit à Copy.
+
+3.    Your data is now stored on the Windows NT clipboard and can be pasted into MS Excel or any other application.
+
+## Pasting Data To Another Application
+
+In this example, the user pastes data copied from the OLF system into an MS Excel spreadsheet.  However, this procedure will work for many Windows-based applications.
+
+Copy data from the screen of the OLF System to the NT clipboard (See above).
+Open Excel and either create a new spreadsheet or open an existing one.
+In your Excel spreadsheet, click on the cell in which you wish to start pasting the data. 
+Select Edit à Paste.
+The data copied from the OLF system will populate the cells in Excel.

@@ -1,0 +1,67 @@
+# Single Icon Import
+
+This window allows user icons to be imported into the system one icon at a time. User icons imported into the system can be used by the Data Explorer.
+
+Note: For information on importing more than one user icon at a time, refer to Bulk Icon Import.
+
+Accessing This Window/Screen
+
+To access thiswindow:
+
+1.    Start OpenLink Central.
+
+2.    Select Launch Available Services from the menu.
+
+3.    In the Filter Service field, enter the service name “Single Icon Importer.”
+
+4.    Select the service from the Available Services panel and click Launch.
+
+The following window displays:
+
+![single.jpg](OLF_Single_Icon_Importer_files/image001.jpg)
+
+### Menu Items
+
+This window contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><thead><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p align="center" class="MsoNormal" style="text-align:center"><b>Menu</b></p></td><td style="width:80.55pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p align="center" class="MsoNormal" style="text-align:center"><b>Item</b></p></td><td style="width:4.5in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p class="MsoNormal"><b>File</b></p></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>Print</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal">Prints the content of the current window.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>Save Window Location</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal" style="line-height:115%">Saves the location and size of the window. The next time the window is accessed it will display as saved.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>Delete Saved Window Location</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal"><span class="hcp13"><span style='font-family:"Verdana","sans-serif"'>Deletes the</span></span><span class="hcp20"><span style='font-family:"Verdana","sans-serif"'>saved location/size of a saved window.</span></span></p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p class="MsoNormal"><b></b></p></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>Exit</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal"><span class="hcp13"><span style='font-family:"Verdana","sans-serif"'>Closes the window.</span></span></p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"><p class="MsoNormal"><b>Help</b></p></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>Help</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal">Displays the system help files.</p></td></tr><tr><td style="width:75.5pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="101"></td><td style="width:80.55pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="107"><p class="MsoNormal"><b>About</b></p></td><td style="width:4.5in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="432"><p class="MsoNormal">Opens the <a href="OLF_About_Window.htm">About</a> window, which displays information about the system.</p></td></tr></table>
+```
+
+#### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:5.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p class="MsoNormal"><b>Icon Name</b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p class="MsoNormal">Displays the name of the icon file to be imported. Used in conjunction with the <b>Browse</b> button.</p></td></tr></table>
+```
+
+### Preview Panel
+
+This panel displays the icon before it is imported in the system. The icon is shown in three sizes:
+
+·         Native Image Size: The actual size of the icon being imported
+
+·         Small: 16x16 pixels
+
+·         Large: 32x32 pixels
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:17.1pt;border-collapse:collapse"><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:5.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="browsebutton.jpg" border="0" height="26" src="OLF_Single_Icon_Importer_files/image002.jpg" width="77"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p class="MsoNormal">Opens a standard file selection window for choosing the icon file to be imported.</p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="importbutton.jpg" border="0" height="23" src="OLF_Single_Icon_Importer_files/image003.jpg" width="94"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p class="MsoNormal">Opens a Properties window in which the properties and permissions for the icon can be set. Clicking the Save button in this window imports the icon file into the system.</p></td></tr><tr><td style="width:107.3pt;border:solid windowtext 1.0pt; border-top:none;padding:5.75pt 0in 0in 5.75pt" valign="top" width="143"><p class="MsoNormal"><b><img alt="cancelbutton.jpg" border="0" height="22" src="OLF_Single_Icon_Importer_files/image004.jpg" width="93"/></b></p></td><td style="width:5.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:5.75pt 0in 0in 5.75pt" valign="top" width="480"><p class="MsoNormal">Closes the window.</p></td></tr></table>
+```
+
+Importing an Icon File
+
+To import a single user icon file:
+
+The name of the selected file appears in the Icon Name field. The icon also appears in the Preview panel.
+
+Click the Browse button and select the icon file to be imported.
+
+Click Import.
+In the Properties window, select the applicable properties for the icon file.
+Click Save.

@@ -1,0 +1,70 @@
+# System Monitor - Diagnostics - OPING
+
+## Overview
+
+This tab provides the ability to diagnose communications between modules/processes for the server/database logged into.
+
+This window consists of the Oping Filters panel and the Oping Data Table panel. The filters panel contains fields that can be utilized in filtering the results that are shown in the data table.
+
+The following Security Privileges are required to access this window:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:89.1pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege ID</b></p></td><td style="width:2.0in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="192"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege</b></p></td></tr><tr><td style="width:89.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal" style="margin-bottom:6.0pt">29300</p></td><td style="width:2.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="192"><p class="MsoNormal" style="margin-bottom:6.0pt">Access Diagnostics Tab</p></td></tr><tr><td style="width:89.1pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="119"><p class="MsoNormal" style="margin-bottom:6.0pt">29310</p></td><td style="width:2.0in;border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="192"><p class="MsoNormal" style="margin-bottom:6.0pt">Access Oping Tab</p></td></tr></table>
+```
+
+See System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Diagnostics_Oping_files/image001.jpg)
+
+The following screen displays:
+
+![image001](OLF_System_Monitor-Diagnostics_Oping_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image002" border="0" height="15" src="OLF_System_Monitor-Diagnostics_Oping_files/image003.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Sends a message to the other modules and returns acknowledgments.</p></td></tr></table>
+```
+
+### Oping Filters Panel
+
+#### Fields
+
+The fields in this panel serve as filters on the data that is shown in the Oping Data Table panel. Once data has been entered in these fields, click the Send Oping button to retrieve data to the data table. This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="462"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Host Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A free-text entry field for the name of a host machine.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>User Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A pick list of user names.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Module</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A pick list of system components.</p></td></tr></table>
+```
+
+### Oping Data Table Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Display Name</b></p></td><td style="width:346.5pt;border:solid windowtext 1.0pt; border-left:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The name of the process as seen by the end-user.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Process Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The internal system name of the process.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Openlink Process ID</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A unique ID for each master logged into the database.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Local PID</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A unique local machine Windows or Unix ID for the process.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Session ID</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">A unique ID representing the connection between the user machine and a module.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>User Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The name of the personnel accessing the selected module.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>O/S Login Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The login name of the operating system from which the process is running.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Host Name</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The name of the machine from which the process is running.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Engine Number</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The system assigned identification number of the selected engine.</p></td></tr><tr><td style="width:134.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal"><b>Daemon</b></p></td><td style="width:346.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="462"><p class="MsoNormal">The host and port of the external communication daemon used by the selected process.</p><p class="MsoNormal"><span style="color:red">This field is available in v8.1r1 and up.</span></p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OopenLink Central, click the System Monitor icon 
+Select the Diagnostics tab.
+Select the Oping sub-tab.

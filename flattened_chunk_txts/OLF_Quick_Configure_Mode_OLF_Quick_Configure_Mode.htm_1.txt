@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
- Section heading: Accessing This Window/Screen Mode.
- Text content: A table can be switched in this mode by right-clicking any column header of the table and selecting Configure à Quick Configure from the Column Header Menu . For illustration purposes, the following is an example of how is it accessed from the Transaction Listing window. 1. Open the Transaction Listing window. 2. Right-click any column header of the listing. The Column Header Menu displays. 3. Select Configure à Quick Configure . 4. The window switches into the following mode:   .
- Image file: OLF_Quick_Configure_Mode_files/image001.jpg
- Image description: the software for the software software software.
- 
-Links to other files: OLF_Column_Header_Menu.htm, ../Trading_Manager/TRADING_Transaction_Listing.htm, OLF_Column_Header_Menu.htm.

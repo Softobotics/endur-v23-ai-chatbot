@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Instrument_Types_from_V17_0_to_V18_0.htm.
- Section heading: Changes in 
- the Instrument Types.
- Text content: The following are the changes to instrument types 
- from 17.0 to 18.0: None.

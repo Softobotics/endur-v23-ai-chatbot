@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Configure_View.htm.
- Section heading: Changing the Order of the Columns.
- Text content: To reorder the columns, 1. Highlight the row to move by clicking the leftmost cell. 2. Press the down arrow key to move the row down the list or the up arrow key to move the row up the list.  In V8.0r2 and up, the user may sort the columns by simply dragging and dropping the column header of a field to its new location. When the column is being dragged to its new location, a red arrow pointing in between the columns where the column will be inserted is displayed.   In the figure shown above, the “Document Number” column is being dragged in between the “Tran #” and “Deal Tracking #” columns. The red up arrow indicates that when the mouse is released, “Document Number” column will be inserted in between these columns. .
- Image file: OLF_Configure_View_files/image005.jpg
- Image description: a screenshot of a spreadsheet with the excel excel.

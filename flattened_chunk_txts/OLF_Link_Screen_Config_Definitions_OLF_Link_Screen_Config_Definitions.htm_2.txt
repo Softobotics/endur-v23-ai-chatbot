@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Link_Screen_Config_Definitions.htm.
- Section heading: Other Ways to Access This Window.
- Text content: 1. Launch the Admin Manager . 2. From the General Administration tab, select the Link Screen Configuration Definitions icon ..
- Image file: OLF_Link_Screen_Config_Definitions_files/image002.jpg
- Image description: a yellow and black logo with the word link.

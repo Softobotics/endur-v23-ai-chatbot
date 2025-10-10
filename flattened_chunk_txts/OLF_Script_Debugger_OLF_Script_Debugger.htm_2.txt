@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Script_Debugger.htm.
- Section heading: Or.
- Text content: Note: Remember to remove #SDBG from the code when you have finished debugging.  .
- Image file: OLF_Script_Debugger_files/image001.jpg
- Image description: the screenshote program is displayed in the screen.

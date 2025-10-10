@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Service_Arguments.htm.
- Section heading: Adding an Argument to a Service.
- Text content: To add an argument to a service: 1. Click the Args button in the OpenLink Central Configuration window. 2. Enter the argument value in the OpenLink Central Config: Service Arguments window and click OK . For example, if a “named” desktop is being added to the OpenLink Central Console , enter the name (String screen_name) of the desktop in this screen. A desktop saved as “Back Office”, is tagged as “Back Office” in this screen, to be launched when using the button. NOTE: When services with a known set of values are selected, the “Value” field will present a pick list for easier argument selection..

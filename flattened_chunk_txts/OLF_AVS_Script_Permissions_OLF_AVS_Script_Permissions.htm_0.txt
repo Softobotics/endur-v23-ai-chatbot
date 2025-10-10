@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: Overview.
- Text content: The scripting language can be used to create new scripts.  These new scripts are stored with those that come with the System.  A script is linked to a task. The task contains vital information about a script, such as, scheduling information. Each script has properties associated with it. The person who creates a script is the owner. The owner can associate Read, Write and Execute Properties to the script for himself, to a security group, and to the public. Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Script Properties..

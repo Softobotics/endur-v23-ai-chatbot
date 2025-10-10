@@ -1,0 +1,40 @@
+# Script Global Variables
+
+## Overview
+
+Shows the Global Variables which may be used in Grid Point formulas.
+
+Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Global variables.
+
+## Accessing This Window/Screen
+
+To access this window:
+
+The following window displays:
+
+![image010.jpg](OLF_AVS_Global_Variables_files/image001.jpg)
+
+### Menu Items
+
+This window contains the same menu items as the Table Viewer.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:124.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="166"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:343.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="457"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr style="height:19.75pt"><td style="width:124.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="166"><p class="MsoNormal"><b><img alt="image004" border="0" height="36" src="OLF_AVS_Global_Variables_files/image002.jpg" width="34"/></b></p></td><td style="width:343.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;height:19.75pt" valign="top" width="457"><p class="MsoNormal">Prints the current window.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:4.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="456"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="MsoNormal"><b>Variable Type</b></p></td><td style="width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="456"><p class="MsoNormal">Indicates the type of variable displayed.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="MsoNormal"><b>Variable Name</b></p></td><td style="width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="456"><p class="MsoHeader">Displays the field in the data table that is displayed.</p></td></tr><tr><td style="width:125.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="167"><p class="MsoNormal"><b>Initial Value</b></p></td><td style="width:4.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="456"><p class="MsoNormal">Displays the default value.</p></td></tr></table>
+```
+
+Start the Market Manager.
+Right-click on one of the index nodes and scroll down to Definition.
+The Standard Official (or Custom) Index window appears.
+Select Help à Formula Global Variables.

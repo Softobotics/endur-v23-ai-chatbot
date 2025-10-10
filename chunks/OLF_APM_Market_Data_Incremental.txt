@@ -1,0 +1,138 @@
+# APM Market Data Incremental
+
+## Overview
+
+This functionality allows APM services to respond 
+ to market data updates. Updates include changes due to market prices, 
+ volatilities and correlations. It can be configured on an individual services 
+ basis. The functionality will increase the load on the system so additional 
+ hardware and grid engines is recommended depending on performance requirements. 
+ This feature is available only in V18+.
+
+## Security Privileges
+
+Not applicable
+
+## Environment Variables
+
+Not applicable
+
+## Miscellaneous Pre-Requisites
+
+-          APM 
+ Service with “Enable Market Data Incremental Processing” specified
+
+## Accessing this Window
+
+From 
+	 Services Manager, open 
+	 any APM deal based service (e.g., APMService).
+
+Open 
+	 the ApmService method 
+	 properties.
+
+Select the Incremental 
+	 tab.
+
+Select the type of Market Data the service 
+	 will respond with updates in the “Enable Market data Incremental Processing” 
+	 field.
+
+## Property 
+ Settings
+
+The Enable Market Data Incremental Processing property 
+ has four possible settings.
+
+1.      <Please Choose> - 
+ Default setting: This indicates that the service is not responding to 
+ any market data changes. Feature is Off.
+
+2.      Indexes – This indicates 
+ that the service is responding ONLY to Index changes. This includes any 
+ price updates or any time an index is saved.
+
+3.      Volatilities & Correlations 
+ – This indicates that the service is responding ONLY to Volatility & 
+ Correlation changes. This includes any input changes on the volatility/correlation 
+ or any time the volatility/correlation is saved.
+
+4.      Indexes & Volatilities & 
+ Correlations – This indicates that the service is responding to ALL 
+ market data changes. This includes any input saves. This can put a significant 
+ load on the system due to the number of potential updates.
+
+## Update Behavior
+
+A dependency map is generated of the deals and the 
+ market data that it is sensitive to. This includes any parent-child relationships 
+ of the indexes. Therefore, if a deal is sensitive to a child index and 
+ the parent index has changed, it will trigger an incremental update. The 
+ dependency map is updated each time a batch is run and each time an incremental 
+ is processed. The overhead of creating the dependency map is negligible 
+ even with large datasets.
+
+There are two new Operation Services Definitions created 
+ when any APM service has the property enabled.
+
+There is only one set of definitions. It is shared 
+ between all the services that have the property enabled. Only the deals 
+ that have their market data changed will be run through each service.
+
+The market data incremental updates will be lower 
+ priority than the typical deal updates. Deal incremental updates will 
+ continue to flow through at the highest priority. This is done to ensure 
+ that the typical operation is unaffected and as a result, there is negligible 
+ deal update performance impact.
+
+There may be certain cases where the deal update is 
+ grouped together into a block deal update with multiple market data updates. 
+ The block succeeds only when all the deals in the block have succeeded. 
+ This may introduce a small lag if the other deals in the block take longer 
+ to process.
+
+## Important Considerations
+
+An important consideration with enabling this feature 
+ is performance. There is no distinction of whether the deal is sensitive 
+ to a particular set of gridpoints on an index. As long as the deal is 
+ sensitive to the index, an incremental update will be triggered.
+
+This can result in a significant number of sudden 
+ updates, especially if a large number of deals are sensitive to the same 
+ index.
+
+It is recommended to test the feature on a small scale 
+ to determine the potential volume of incremental updates and scale up 
+ infrastructure to handle the estimated increase in system load.
+
+It is also recommended to select the portfolios that 
+ require near real time market data updates and segregate them into their 
+ own service. This will reduce the system load and not waste resources 
+ processing updates for portfolios that do not need to have updated pricing.
+
+If the service only requires periodic market data 
+ updates, the service itself can be configured to re-batch on a periodic 
+ basis e.g. every 15 minutes, every 30 minutes. If the service contains 
+ various indexes and most of which have not changed, then the number of 
+ incremental updates will be few. This feature will perform well and faster 
+ than re-batching the entire service. However, if the service contains 
+ many deals sensitive to the same indexes and where most of the deals will 
+ change, then the number of incremental updates will be many. In this case, 
+ the feature will perform slower than re-batching the entire service.
+
+The frequency of market data updates will also be 
+ a factor. If there is a market data feed which updates the prices frequently, 
+ it will generate a significant number of updates which can queue up on 
+ the clusters.
+
+## Related Documentation
+
+Not applicable
+
+## See Also
+
+Not applicable
+
+APM Market Data Incremental

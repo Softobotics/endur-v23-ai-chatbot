@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_Logon_Info_Mgmt.htm.
- Section heading: Select Logon Information To Save Panel.
- Text content: This panel is used to specify the information to export. This panel contains the following fields:  To modify the table configuration, right-click any column header. The Column Header Menu displays.  .
- Table data: 
-| Field | Description |
-| --- | --- |
-| Credentials | Select this check box to export the user name and password of the logged in user. This information will be encrypted and the resulting string will be saved as the value for AB_LOGON_CREDENTIALS. |
-| Environment | Select this check box to export the external environment variables currently set in the running session.The variables are displayed in a table containing the variable name and the corresponding value. |. 
-Links to other files: OLF_Column_Header_Menu.htm.

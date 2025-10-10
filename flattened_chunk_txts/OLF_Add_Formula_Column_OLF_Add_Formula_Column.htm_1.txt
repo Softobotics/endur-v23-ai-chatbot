@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Add_Formula_Column.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window is accessed from various functionalities of the system. For illustration purposes, the following are examples of how it is accessed: 1. Start an OpenLink Desktop. 2. Right-click a column header. 3. Select Configure à Formulas à Add Formula Column .  or,  1. Start the Trading Manager. 2. Select View à Transaction Field Viewer . The Transaction Field Data window displays. 3. Select Configure à Configure . The Configure View window displays. 4. Select Formulas à Add Formula Column .  The following window displays:   .
- Image file: OLF_Add_Formula_Column_files/image001.jpg
- Image description: the text editor dial in the text editor.

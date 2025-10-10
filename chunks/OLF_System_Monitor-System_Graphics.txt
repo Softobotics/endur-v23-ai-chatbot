@@ -1,0 +1,44 @@
+# System Monitor - System – graphics properties
+
+## Overview
+
+This window shows display variable details. While the data is read-only, the values shown can be configured using the following external environment variables:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:.75in;border-collapse:collapse"><tr><td style="width:192.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="257"><p class="MsoNormal"><b>Variable</b></p></td><td style="width:243.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="324"><p class="MsoNormal"><b>Description</b></p></td></tr><tr><td style="width:192.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="257"><p class="MsoNormal">AB_GRAPHICS_THEME</p></td><td style="width:243.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="324"><p class="MsoNormal">This variable determines the theme files to be used for default widget properties. These files determine most of the widget graphics properties that can be set. This variable is set in the runscript.</p></td></tr><tr><td style="width:192.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="257"><p class="MsoNormal">AB_GUI_PICKLIST_INDICATOR</p></td><td style="width:243.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="324"><p class="MsoNormal">This variable determines if menu fields and calendar pop ups will show with down arrows and calendar icons, respectively. This variable is set in the runscript.</p></td></tr><tr><td style="width:192.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="257"><p class="MsoNormal">AB_OLF_DEF_FONT</p></td><td style="width:243.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="324"><p class="MsoNormal">This variable determines the font to be used throughout the application. This variable is configured in the System Wide Configuration.</p></td></tr></table>
+```
+
+Contact the OpenLink Support Desk for instruction in changing these variable settings.
+
+See System Wide Configuration
+
+See System Monitor
+
+This tab is available in v8.0r1 and up only.
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-System_Graphics_files/image001.jpg)
+
+The following screen displays:
+
+![image002](OLF_System_Monitor-System_Graphics_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the System tab.
+Select the Graphics Properties sub-tab.

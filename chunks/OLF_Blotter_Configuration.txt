@@ -1,0 +1,37 @@
+# BLOTTER CONFIGURATION
+
+## Overview
+
+The Blotter Configuration window allows users to specify the columns to display in a table or blotter. An example of this blotter is the Agreement/Provision Listing window.
+
+## Accessing This Window/Screen
+
+This window is accessed from various functionalities in the system. For illustration purposes, the following is an example of how it is accessed:
+
+1. Start the Trading Manager.
+1. Open the Swap deal input window.
+1. Select View à Agreements. The Agreement/Provision Listing window.
+1. Select Configure à Configure Listing.
+1. The following window displays:
+![image002](OLF_Blotter_Configuration_files/image001.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Button</p></td><td style="width:362.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="TableHeader">Description</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="MsoNormal"><img alt="image003" height="50" src="OLF_Blotter_Configuration_files/image002.jpg" width="80"/></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Adds a highlighted item in the “Available” listing to the “Selected” listing. More than 1 item may be selected for transfer.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold"><span style="font-weight:normal"><img alt="image005" height="50" src="OLF_Blotter_Configuration_files/image003.jpg" width="80"/></span></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Removes a highlighted item from the “Selected” listing.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Use Defaults</p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Restores the default system configuration.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold"><img alt="image006" height="25" src="OLF_Blotter_Configuration_files/image004.jpg" width="80"/></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Moves the highlighted item in the “Selected” listing 1 row up the list per click of this button.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold"><img alt="image008" height="25" src="OLF_Blotter_Configuration_files/image005.jpg" width="80"/></p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Moves the highlighted item in the “Selected” listing 1 row down the list per click of this button.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Apply</p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Applies the new settings and closes the window. If this option is selected, the user does not need to close or reopen the configured window for the change to take effect.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Cancel</p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Ignores any changes and closes the window.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Field</p></td><td style="width:362.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="TableHeader">Description</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Available</p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Displays the available data fields in the blotter. The data fields that are listed depend on the blotter that is being configured.</p></td></tr><tr><td style="width:116.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Selected</p></td><td style="width:362.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Displays the data fields currently shown in the blotter. Data fields in this list may be added, removed, and re-ordered. The data fields appear in the blotter in the order they are sorted in this listing.</p></td></tr></table>
+```
+

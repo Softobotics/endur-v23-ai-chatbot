@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Permissions.htm.
- Section heading: Assigning Access Rights for a Script to Security Groups.
- Text content: The owner of a script has the rights to assign the rights to access this script to one security group in the system.  For example, a script that is relevant to the job functions of back office personnel can be restricted to that group. Each time the Script is assigned to a group and saved, the previous definition is overwritten. Access rights can be assigned by performing the following steps: From the Operations Manager: IMPORTANT :  In versions prior to V8.1r2, if no group is assigned to a Script, it means that ALL users can run it. In v8.1r2 and up, if a group is not assigned no one will have access to the script..

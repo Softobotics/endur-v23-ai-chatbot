@@ -1,0 +1,108 @@
+# How To Create a Query Using Multiple 
+	 sub-queries
+
+When a set of criteria become too complex or too 
+	 disjointed, multiple pages can be created. Each sub query can cause 
+	 additional results to be included (include) in the final result 
+	 set, or can cause results to be deleted (excluded) from the 
+	 final result set.
+
+Note:   Up to 
+	 a maximum of five sub-queries can be created.
+
+In this example, we will create a query with multiple 
+	 subqueries.
+
+·         For 
+	 the first sub-query, search for transactions from the Swap 
+	 toolset with a Tran Status of New.
+
+·         For 
+	 the second sub-query, search for transactions from the LoanDep 
+	 toolset with a Tran Status of Validated.
+
+The 
+	 purpose of this example query is for the user to view all New Swap 
+	 deals, and also add Validated LoanDep deals to the results.  By 
+	 making these selections using multiple sub-queries, the desired results 
+	 would be achieved.
+
+If 
+	 the user were to make these selections in a single sub-query, it would 
+	 return unwanted results in addition to the desired results. The results 
+	 would include:
+
+·         New 
+	 Swaps (desired)
+
+·         Validated 
+	 LoanDeps (desired)
+
+·         Validated 
+	 Swaps (not desired)
+
+·         New 
+	 LoanDeps for example (not desired)
+
+To create multiple subqueries within a Query Window:
+
+1.      Click 
+	 the Query icon  
+	 from the menu. The Trades Query window displays with a previously-saved 
+	 query view.
+
+2.      Ensure 
+	 the Transaction table is displayed in the Query View 
+	 field located at the top right-hand side of the panel.
+
+3.      Click 
+	 the New Query icon , 
+	 or select FileàNew 
+	 Query from the main menu.
+
+4.      Go 
+	 to the ToolSet field and right-click in the Selected Values 
+	 column to display the pick list. Select Swap and FX Option, 
+	 and then click the OK button.
+
+5.      Select 
+	 Sub-QueryàAdd 
+	 Sub-Query from the main menu. A second Sub-Query tab displays.
+
+6.      Go 
+	 to the Tran Status field and select Validated, and then 
+	 click the OK button.
+
+7.      Go 
+	 to the Ins Type field and select IRS–A and IRS–B, 
+	 and then click the OK button.
+
+8.      Select 
+	 Sub-QueryàAdd 
+	 Sub-Query from the main menu. A third Sub-Query tab displays.
+
+9.      Go 
+	 to the Int Pfolio field and select a portfolio; for 
+	 this example,Portfolio A, and then click the OK button.
+
+![](How_to_Query_Using_Multiple_Subqueries_files/image006.jpg)
+
+Note: Look at the 
+	 Summary panel to view the sub-queries.
+
+10.  Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display.
+
+## Rename Sub-Query Tabs
+
+1.      Right-click 
+	 on the tab, and then select Rename Sub-Query from the menu. 
+	 The following Input Window displays.
+
+![](How_to_Query_Using_Multiple_Subqueries_files/image004.jpg)
+
+2.      Enter 
+	 the new name for the tab, and then click the OK button. The 
+	 Sub-Query tab name changes.
+

@@ -1,0 +1,234 @@
+# OpenLink Central Sidebar Control
+
+## Overview
+
+OpenLink Central Sidebar is an optional desktop feature which displays services as icons, organized within groups. It provides easy access to the functionality in OpenLink Central Control Panel, accessible from within a desktop. Sidebar items are also available in desktops via the OpenLink Central menus.
+
+Changes made to either the Sidebar or OpenLink Central Control Panel (e.g., tabs, groups, services) are kept in sync with the other although changes are made in different ways in each feature.
+
+#### OpenLink Central Control Panel (Control Panel) and OpenLink Central Sidebar (Sidebar)
+
+·         Closing OpenLink Central Sidebar does not terminate the system session as the OpenLink Central Control Panel does
+
+·         The Control Panel displays services as icons, grouped on tabs, while the Sidebar displays services as icons organized in groups
+
+·         The Control Panel displays “Favorites” as a row of icons below the tabs while the Sidebar organizes “Favorites” in a group within the panel
+
+·         Sidebar can be dragged and docked in another position in the desktop or dropped elsewhere a user’s screen
+
+·         Sidebar can be configured to show or hide a “Saved Desktops” group
+
+·         Sidebar supports “inline” configuration editing, meaning; it can be configured and changed while in use, including:
+
+ü  Groups can be created, renamed, copied, moved, and deleted
+
+ü  Services within groups can be renamed, moved between groups and/or copied to other groups
+
+ü  Display settings can configured according to user preference
+
+The sidebar is available in versions 9.1r2 and above.
+
+### See Also
+
+OpenLink Central Control Panel
+
+OpenLink Central Configurations
+
+OpenLink Desktop
+
+OpenLink Desktop Builder
+
+OpenLink Desktop Navigator
+
+### Reference Documents
+
+OpenLink Desktop User Guide
+
+Openlink_Desktop_Builder_User_Guide
+
+OpenLink_Desktop_Component_Panel_Relationships_User_Guide
+
+OpenLink_Desktop_Runtime_Configuration_User_Guide
+
+OpenLink_Desktop_Tab_Layout_User_Guide
+
+## Accessing OpenLink Central Sidebar
+
+By default, this feature is deselected when building a desktop. Desktops can be configured to automatically display the OpenLink Central Sidebar when the desktop is launched. In these cases, the Sidebar is accessed by launching a configured desktop as follows:
+
+1.    Using the Desktop icon from OpenLink Central Control Panel, select and open an existing desktop
+
+OR
+
+2.    Open a desktop from any service containing the Desktop menu (i.e., “Trading Explorer Desktop”)
+
+OR
+
+3.    Open a desktop using Launch Available Services.
+
+The selected desktop will display with the OpenLink Central Sidebar if the desktop was configured to display the Sidebar by default. If it does not display, select ViewàShow OpenLink Central Sidebar.
+
+The image below represents a desktop with Sidebar shown.
+
+![](OLF_Openlink_Central_Sidebar_files/image001.jpg)
+
+### Other Ways to Access This Window
+
+1.    OpenLink Central Sidebar may be accessed outside of a desktop via Launch Available Services, OpenLink Central Sidebar.
+
+## Buttons
+
+This panel contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="TableHeader">Button</p></td><td style="width:329.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="TableHeader">Description</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="TableTextBold"><img alt="image076" border="0" height="22" src="OLF_Openlink_Central_Sidebar_files/image002.jpg" width="22"/><img alt="image077" border="0" height="23" src="OLF_Openlink_Central_Sidebar_files/image003.jpg" width="28"/></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%">Select this button to engage/disengage the <i>Auto Hide</i> functionality. The forward pointing pin indicates <i>Auto Hide</i> is <u>not</u> engaged. To activate <i>Auto Hide</i> functionality, click the pushpin icon; it will toggle to the side-facing image.</p><p class="MsoNormal"><i>Auto Hide</i> functionality hides the <i>Sidebar</i> and displays an <i>OpenLink Central</i> tab for access to the functionality. Passing the mouse over the tab will cause the panel to display. Moving the mouse away from the tab causes it to hide.</p><p class="MsoNormal">This functionality can also be accessed via a right-click on the <i>Sidebar</i> header (see <i>OpenLink Central Sidebar Right Click Menus</i>).</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Note:</b> These buttons are only available when the <i>Sidebar</i> is accessed from within a desktop.</p></td></tr><tr><td style="width:149.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="199"><p class="TableTextBold"><img alt="" border="0" height="15" src="OLF_Openlink_Central_Sidebar_files/image004.jpg" width="17"/></p></td><td style="width:329.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="439"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%">Select this button to close the <i>Sidebar</i> panel.</p></td></tr></table>
+```
+
+## Using the OpenLink Central Sidebar
+
+A Sidebar service can be launched by single-clicking the associated icon.
+
+All groups can be collapsed and expanded by clicking anywhere in the group header. In the example below, the “OpenLink” group is expanded while the “Favorites” and “Saved Desktops” groups are collapsed.
+
+![](OLF_Openlink_Central_Sidebar_files/image005.jpg)
+
+### OpenLink Central Sidebar Configuration
+
+A variety of configuration functions are available within the Sidebar, as detailed throughout this page. Additional configurations may be performed in the OpenLink Desktop Builder, and OpenLink Central Configurations windows.
+
+#### Desktop Builder
+
+When defining a desktop in the OpenLink Desktop Builder, selecting the “Show OpenLink Central Sidebar” field will set the Sidebar to display in that desktop each time it is launched.
+
+#### OpenLink Central Configuration
+
+The OpenLink Central Configuration window is used to create and manage tabs, services and views in the Sidebar and Console. This window can be accessed from the OpenLink Central Console as well as from desktops.
+
+1.    From the OpenLink Central Console, select the OpenLink CentralàEdit Configuration menu.
+
+2.    From a desktop, select the OpenLink CentralàConfigurationàEdit Configuration menu.
+
+### OpenLink Central Sidebar Right-Click Menus
+
+All functionality provided by OpenLink Central Sidebar can be accessed via right-click menus. Four menus are available, depending upon where the Sidebar is right-clicked.
+
+#### Title Bar Menu
+
+The Title Bar Menu is used to control the Sidebar “hide-and-float” functionality. The menu is accessed via a right-click on the OpenLink Central Sidebar Title Bar.
+
+![](OLF_Openlink_Central_Sidebar_files/image006.jpg)
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal" style="text-align:justify"><b>Menu Item</b></p></td><td style="width:549.0pt;border:solid windowtext 1.0pt; border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt" valign="top" width="732"><p class="MsoNormal" style="text-align:justify"><b>Description</b></p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal" style="text-align:justify"><b>Hide</b></p></td><td style="width:549.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="732"><p class="MsoNormal" style="text-align:justify">Removes the <i>Sidebar</i> from the window.</p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal" style="text-align:justify"><b>Floating</b></p></td><td style="width:549.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="732"><p class="MsoNormal" style="text-align:justify">Separates the <i>Sidebar</i> from the window of origin. Once separated, the panel may be moved around the needed.</p></td></tr><tr><td style="width:98.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="131"><p class="MsoNormal" style="text-align:justify"><b>Auto Hide</b></p></td><td style="width:549.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="732"><p class="MsoNormal">Hides the <i>Sidebar</i> and displays an <i>OpenLink Central</i> tab for access to the functionality. Passing the mouse over the tab will cause the panel to display. Moving the mouse away from the tab will cause it to hide.</p><p class="MsoNormal" style="text-align:justify"><img alt="" border="0" height="87" src="OLF_Openlink_Central_Sidebar_files/image007.jpg" width="260"/><img alt="" border="0" height="103" src="OLF_Openlink_Central_Sidebar_files/image008.jpg" width="281"/></p><p class="MsoNormal" style="text-align:justify"><b>Note:</b> This same functionality is accessed using the side-facing pushpin button.</p></td></tr></table>
+```
+
+#### Standard Menu
+
+The OpenLink Central Sidebar Standard Menu contains menu items applicable to managing & configuring the OpenLink Central Sidebar. The menu is accessed via a right-click on the OpenLink Central Sidebar in an area other than a group or a service.
+
+![](OLF_Openlink_Central_Sidebar_files/image009.jpg)
+
+These menu items are also accessed from the OpenLink CentralàConfiguration menu and the OpenLink Central Control Panel contains similar menu items.
+
+#### Group Configuration & Settings Menus
+
+By right-clicking on a group, the additional Group Configuration and Group Settings menus are accessed.
+
+·         Group Configuration is used to configure groups on the Sidebar and includes add, copy, remove and configure the Sidebar groups
+
+·         Group Settings - specify display options for the selected group
+
+![](OLF_Openlink_Central_Sidebar_files/image010.jpg)
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Menu Item</b></p></td><td style="width:5.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Description</b></p></td></tr></thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Configure Group</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="CellBody">Displays the <i><a href="OLF_OpenLink_Configurations.htm">OpenLink Central Configurations</a></i> window with the <b>Tab Configuration</b> tab selected. This tab allows users to create, edit, and delete tabs from the sidebar.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Note:</b> This option is not available for the <b>Favorites</b> and <b>Saved Desktops</b> group.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Rename Group</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="text-align:justify">Allows a group to be renamed directly within the <i>Sidebar</i> panel.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Note</b>: This option is not available for the <b>Favorites</b> and <b>Saved Desktops</b> groups.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Remove Group</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Removes the group from which the menu was accessed.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Note</b>: This option is not available for the <b>Favorites</b> and <b>Saved</b><b>Desktops</b> groups.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Add Group</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Adds a new, empty group to the <i>Sidebar</i>. The new group is placed beneath the group from which the menu was accessed. Upon selecting this menu item, the user will be prompted with the <i>Add New Group</i> dialog box.</p><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><img alt="image047" border="0" height="114" src="OLF_Openlink_Central_Sidebar_files/image011.jpg" width="388"/></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Copy Group</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Adds a copy of the group from which the menu was accessed under that group. Upon selecting this menu item, the user will be prompted with the <i>Add New Group</i> dialog box with default values supplied.</p><p class="MsoNormal" style="text-align:justify"><img alt="image048" border="0" height="114" src="OLF_Openlink_Central_Sidebar_files/image012.jpg" width="388"/></p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Note</b>: This option is not available for the <b>Saved Desktops</b> group.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Remove All Services</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%">Removes all services from the group from which the menu was accessed.</p></td></tr></table>
+```
+
+#### Group Settings Menu
+
+The Group Settings menu is used to specify display options for the selected group on the OpenLink Central Sidebar.
+
+![](OLF_Openlink_Central_Sidebar_files/image013.jpg)
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Menu Item</b></p></td><td style="width:5.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Description</b></p></td></tr></thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Small Images</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Displays services as small icon images.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><img alt="image070" border="0" height="69" src="OLF_Openlink_Central_Sidebar_files/image014.jpg" width="150"/></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Small Images With Text</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Displays services as small icon images followed by the service name.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><img alt="image071" border="0" height="81" src="OLF_Openlink_Central_Sidebar_files/image015.jpg" width="150"/></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Large Images</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Displays services as large icon images.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><img alt="image072" border="0" height="81" src="OLF_Openlink_Central_Sidebar_files/image016.jpg" width="150"/></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Large Images With Text</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Displays services as large icon images followed by the service name.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><img alt="image073" border="0" height="84" src="OLF_Openlink_Central_Sidebar_files/image017.jpg" width="150"/></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Large Images With Text Below</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal">Displays services as large icon images with the service name located beneath the image.</p><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><img alt="image074" border="0" height="108" src="OLF_Openlink_Central_Sidebar_files/image018.jpg" width="150"/></p></td></tr></table>
+```
+
+#### Service Configuration Menu
+
+Right-clicking on a service displays additional menu items. The Service Configuration menu displays options for configuring the selected group.
+
+![](OLF_Openlink_Central_Sidebar_files/image019.jpg)
+
+#### Service Configuration Menu
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Menu Item</b></p></td><td style="width:5.75in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Description</b></p></td></tr></thead><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Configure Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="CellBody">Displays the <i><a href="OLF_OpenLink_Configurations.htm">OpenLink Central Configurations</a></i> window with the <b>Button Configuration</b> tab selected.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Rename Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="text-align:justify">Allows the service to be renamed directly within the <i>Sidebar</i> panel.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Change Icon</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="text-align:justify">Opens the <i>Choose Icon</i> window which provides a pick list of available icons. Select an icon for the service and click <b>OK</b>.</p><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><span style="font-size:12.0pt;line-height:115%"><img alt="image057" border="0" height="109" src="OLF_Openlink_Central_Sidebar_files/image020.jpg" width="300"/></span></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Set As Default Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%">This menu item sets the AB_AFE_LAUNCH_SERVICE system wide configuration variable to the selected service. This service will then launch at startup.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Clear Default Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%">This menu item clears the service from the AB_AFE_LAUNCH_SERVICE system wide configuration variable.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify;line-height: 115%"><b>Create Derived Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify">Displays the <i><a href="OLF_OpenLink_Configurations.htm">OpenLink Central Config: Add Service</a></i> window. This window is used to add third party services to the system.</p><p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt"><img alt="Description: image044" border="0" height="196" src="OLF_Openlink_Central_Sidebar_files/image021.jpg" width="400"/></span></p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Remove Service</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%">Removes the selected service from the group.</p></td></tr><tr style="page-break-inside:avoid"><td style="width:192.2pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="256"><p class="MsoNormal" style="margin-bottom:3.0pt;line-height:115%"><b>Keep Item in Most Recently Used</b></p></td><td style="width:5.75in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="552"><p class="MsoNormal"><b>NOTE:</b> This menu item is only available when right-clicking on a service in the <b>Recently Used</b> group.</p><p class="MsoNormal">This group tracks the last 10 services that have been launched. If a service already appears in this group, it is moved to the top. If the group already contains 10 items and a previously un-launched service is run, the oldest item is removed from the list.</p><p class="MsoNormal">If this menu item is checked for an item in the <b>Recently Used</b> group, it will not be removed when other services are launched. Below is an example of this behavior.</p><p class="MsoNormal" style="margin-bottom:6.0pt;line-height:115%"><span style="color:red">This functionality has been removed in V12.1 and above.</span></p></td></tr></table>
+```
+
+## OpenLink Central Sidebar - Inline Configuration Editing
+
+The OpenLink Central Sidebar provides a user with the ability to modify the current configuration within the panel itself, without launching the Edit Configuration dialog. The following is a description of these editing features.
+
+### Reordering Groups
+
+Groups can be easily reordered using drag-and-drop functionality. Click on the header of a group to be moved and drag it to a new location. Note: The “Saved Desktops” group cannot be moved in this panel.
+
+In the example below the group “Group 3” will be moved in between “Group 1” and “Group 2”.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><tr><td style="width:154.2pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="206"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><span style="font-size:12.0pt;line-height:115%"><img alt="image011" border="0" height="74" src="OLF_Openlink_Central_Sidebar_files/image022.jpg" width="180"/></span></p></td><td style="width:154.2pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="206"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><span style="font-size:12.0pt;line-height:115%"><img alt="image013" border="0" height="75" src="OLF_Openlink_Central_Sidebar_files/image023.jpg" width="181"/></span></p></td></tr></table>
+```
+
+### Reordering Services
+
+Similar to reordering groups, the services within the groups can be reordered using drag-and-drop functionality. In the following example, the “Market Manager” service was moved between “OpenLink Desktop” and “Trading Explorer” services.
+
+Note: This does not apply to the “Saved Desktops” group.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><tr><td style="width:154.2pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="206"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><img alt="" border="0" height="106" src="OLF_Openlink_Central_Sidebar_files/image024.jpg" width="192"/></p></td><td style="width:154.2pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="206"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><img alt="" border="0" height="105" src="OLF_Openlink_Central_Sidebar_files/image025.jpg" width="192"/></p></td></tr></table>
+```
+
+### Moving Services Between Groups
+
+In addition to changing the order of services within a group, services can be dragged from one group and moved to another using drag-and-drop functionality. In the following example, the “OpenLink Desktop” service was moved from Group 1 to Group 2.
+
+Note: This does not apply to the “Saved Desktops” group.
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:5.4pt;border-collapse:collapse"><tr><td style="width:160.8pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="214"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><img alt="" border="0" height="106" src="OLF_Openlink_Central_Sidebar_files/image024.jpg" width="192"/></p></td><td style="width:154.2pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="206"><p align="center" class="MsoNormal" style="margin-bottom:3.0pt;text-align:center; line-height:115%"><img alt="" border="0" height="160" src="OLF_Openlink_Central_Sidebar_files/image026.jpg" width="192"/></p></td></tr></table>
+```
+
+### Copying Services Within and Between Groups
+
+Services can be copied between and within groups in a manner similar to drag-and-drop. In this case, a service is copied by holding down the CTRL keyboard key prior to dropping the service in the new location. When the CTRL key is pressed, the cursor will change to display a “+” symbol. When this symbol is present, the operation will be a copy operation. If the symbol is not present, the operation will be a move operation.
+
+Note: This does not apply to the “Saved Desktops” group.
+
+In the following example, the “OpenLink Desktop” service was copied from Group 2 to Group 1.
+
+![](OLF_Openlink_Central_Sidebar_files/image027.jpg)
+
+## OpenLink Central Sidebar – Drag/Dock/Drop
+
+The OpenLink Central Sidebar can be dragged and docked in another position in the desktop window or dropped elsewhere on a user’s monitor.
+
+1.    Use the mouse pointer to grab the sidebar and drag it.
+
+![](OLF_Openlink_Central_Sidebar_files/image028.jpg)
+
+2.    Use the navigational arrows to dock the sidebar into another position within the desktop.
+
+![](OLF_Openlink_Central_Sidebar_files/image029.jpg)
+
+OR
+
+3.    Drop the Sidebar in a convenient location on the monitor.
+
+![](OLF_Openlink_Central_Sidebar_files/image030.jpg)
+
+Title Bar Menu
+Standard Menu
+Group Configuration Menu
+Service Configuration Menu

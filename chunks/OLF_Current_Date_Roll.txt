@@ -1,0 +1,47 @@
+# Current Date Roll
+
+## Overview
+
+Current Date Roll is an AFE service that allows you to change the Current Date of the system. It is available from OpenLink Central. You may change the Current Date setting for your session by using the Current Date Roll or by making the change in the Market Manager. This feature requires that you have Security Privilege 100 'Change System Date Menu' enabled.
+
+The Current Date is initialized by the Business Date setting defined in the System Date Roll feature in the Operations Manager (if you do not have the Security Privilege 897 ‘Accept Trading Date Updates’ enabled).
+
+Your session's Current Date setting is displayed on many system windows and can be used to calculate initial default values for deal settlement date, trade date, start date, and maturity date. In some toolsets the Current Date is used to initialize a date field (e.g. Trade Date) but it can be changed.
+
+The OpenLink Configurations window allows users to add the Current Date Roll service to the configuration of OpenLink Central.
+
+See Also
+
+Market Manager
+
+System Date Roll
+
+OpenLink Configurations
+
+## Accessing This Window/Screen
+
+![image013](OLF_Current_Date_Roll_files/image001.jpg)
+
+![image010](OLF_Current_Date_Roll_files/image002.jpg)
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:156.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="208"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:311.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="415"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:156.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="208"><p class="MsoNormal"><b><img alt="image011" border="0" height="26" src="OLF_Current_Date_Roll_files/image003.jpg" width="77"/></b></p></td><td style="width:311.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="415"><p class="MsoNormal">Roll the Current Date to the date displayed in the Current Date field.</p></td></tr><tr><td style="width:156.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="208"><p class="MsoNormal"><b><img alt="image012" border="0" height="26" src="OLF_Current_Date_Roll_files/image004.jpg" width="77"/></b></p></td><td style="width:311.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="415"><p class="MsoNormal">Cancel any current changes and close the <i>Current Date</i> Roll window.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following field:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><thead><tr><td style="width:156.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="208"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:311.3pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="415"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr></thead><tr><td style="width:156.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="208"><p class="MsoNormal"><b>Current Date</b></p></td><td style="width:311.3pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="415"><p class="MsoNormal">A popup used to select the desired Current Date.</p></td></tr></table>
+```
+
+Start OpenLink Central.
+Select Available ServicesàLaunch Available Services and select Current Date Roll from the list of Available Services. You can add this service to OpenLink Central using the FileàEdit Configuration option from the OpenLink Central menu as described in OpenLink Configurations.
+
+From the OpenLink Central main menu, click the Current Date Roll icon.
+The default view of the Calendar window appears.

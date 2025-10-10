@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Configuration.htm.
- Section heading: Accessing the Configuration Window.
- Text content: This window may be accessed through multiple modules. For this example, the Market Manager is used. To access this window: 1. Launch the Market Manager. 2. Select Misc à Authorize Indexes , or Misc à Authorize Volatilities , or Misc à Correlations . The Two Step Validation window displays. 3. Click the View Differences button. The diff table window displays. 4. Select Configure à Configure from the main menu. The following window displays. .
- Image file: OLF_Configuration_files/image001.jpg
- Image description: the settings dial in the settings dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

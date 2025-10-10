@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. Start the OpenLink System. 2. From OpenLink Central , click the System Monitor icon . The following screen displays: .
- Image file: OLF_System_Monitor_files/image001.jpg
- Image description: a square with a blue border and a yellow border.
- Image file: OLF_System_Monitor_files/image002.jpg
- Image description: the screenshote screen shot of the screen shot.

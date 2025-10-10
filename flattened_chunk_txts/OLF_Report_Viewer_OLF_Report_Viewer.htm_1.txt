@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_Report_Viewer.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. Start the Operations Manager. 2. Select the Daily Operations tab. 3. Click the Report Viewer icon . 4. The following window displays:   .
- Image file: OLF_Report_Viewer_files/image001.jpg
- Image description: the logo for the project.
- Image file: OLF_Report_Viewer_files/image002.jpg
- Image description: the screenshote software software.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_General_Import_Export.htm.
- Section heading: General Import/Export Tab.
- Text content: The General Import/Export tab displays by default when this window is accessed. Select the data, the format, the location of the data to import/export and view the import/export file. .
- Image file: OLF_General_Import_Export_files/image001.jpg
- Image description: the screenshote importer dial.

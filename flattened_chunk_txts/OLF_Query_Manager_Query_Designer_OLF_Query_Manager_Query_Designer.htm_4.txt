@@ -1,6 +1,0 @@
-This chunk is from the HTML file: OLF_Query_Manager_Query_Designer.htm.
- Section heading: List Layout.
- Text content: The List layout is the default for all 
-	 new views and displays the configured fields as a vertical list. To change the view, Go to the Properties panel and select List in the View Type field.  .
- Image file: OLF_Query_Manager_Query_Designer_files/image025.jpg
- Image description: the query editor in the sql editor.

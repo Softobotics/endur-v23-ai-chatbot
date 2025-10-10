@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central.htm.
- Section heading: Overview.
- Text content: The OpenLink Central Control Panel serves as a primary access point to the system. The OpenLink Central Control Panel can be configured by the system administrator/user with the proper security privileges enabled. Configuration changes to the OpenLink Central Control Panel or the OpenLink Desktop - OpenLink Central Sidebar (for example, tabs, groups, and services) are kept in sync with each other. The sidebar is available in V91r2 and up. AFE Services (Adaptive Front End Services) facilitate configuration of OpenLink Central as a process to open screens and services directly without first opening the parent functions. This process can take arguments at startup and launch the requested AFE Services. Once the service is started, it can remain in the background listening for further requests..
- 
-Links to other files: OLF_Openlink_Central_Sidebar.htm, OLF_AFE_Services.htm.

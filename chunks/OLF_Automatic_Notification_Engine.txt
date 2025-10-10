@@ -1,0 +1,117 @@
+# AUTOMATIC NOTIFICATION ENGINE (ANE)
+
+## Overview
+
+The Automatic Notification Engine (ANE) is a notification engine used by the System to broadcast data changes to the OLF system’s client applications.  This is done so that all clients do not need to continuously “re-query” data from the database.  This is reflected on the AVS side of the Trading Manager Browser screen and/or within the Active side of blotter listing screens.
+
+There are various types of data supported by ANE such as Transaction and Curves.  Each type supported by ANE must have a unique identifier, such as “tran_num” or “index_id.”  The ANE queue stores only the unique identifier along with the type identifier.  No detailed information is stored within the ANE queue about the data that has been modified.  Information about how the data changed, when it changed, or who changed it is accessible only by using the data source directly.  (For example, the ab_tran table for transaction updates)
+
+Any API (used internally or exposed externally to AVS or Visual Basic) that modifies data supported by ANE will add an entry to the ANE queue upon successful completion of that modification.  This entry contains the type of data and the unique identifier.  This occurs whether or not ANE is actually running.  For example, when a Transaction is inserted/modified an entry is put into the ANE queue by the same client application (Trading Manager) that initiated the update.
+
+The ANE Engine continually polls this queue and broadcasts the type and unique_id of all changed data.  It is deleted from the ANE queue once an item is broadcast.
+
+See ANE Message Types
+
+## What the ANE Does for the User
+
+The ANE allows users to publish and subscribe to data dynamically without re-querying the database.  Technically, the ANE updates are query based, referencing either a fixed query or an ad-hoc query.  The query identifies and gathers parameters.  Once initiated, the ANE engine searches the database for the deal parameters that are pertinent to the query selected and updates the display in the user’s browser.  ANE updates include AVS browser workspace, trade blotters, and script engines.
+
+## Starting and Running the ANE from the Services Manager
+
+Once initiated, ANE begins to continuously search the database for all newly entered transactions.  ANE then “broadcasts” these transactions to the entire network.  Each individual user must initiate ANE on their workstation.  Client ANE initiation is done either through the Trading Manger, the Services Manager, or by running an AVS script in the Trading Manager.  Each user can then view the information that is broadcast by the ANE engine.
+
+To start ANE:
+
+Initialize ANE via the Services Manager.  The user can do this by creating a job that calls a specific task to be run.  This task must be a script that references a fixed query.  An ad-hoc query cannot be run through ASM.  Please reference the ASM documentation for more information on how to create jobs within ASM.
+
+## How ANE Updates the Active Window and the AVS Window
+
+Active Window - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.  In the active window, all positions on the blotter receive updates; therefore the transactions do not display as nodes in the Trading Manager browser window.
+
+AVS Window - The query designated in the blotter -- not the query designated to retrieve the blotter -- is used for ANE updates.  In the AVS window, all positions on the blotter receive updates, and the transactions display as additional nodes in the Trading Manager browser.
+
+## How ANE Updates the Listing Part of the Trade Blotter
+
+·         Trades associated with portfolios for which the user is authorized.
+
+·         Are of “type trading” (no authorization records or master instruments)
+
+·         Any shared or perpetual trades that have a holding instrument configured on any of the input blotter pages.
+
+The following items describe how the ANE update functions:
+
+·         Single-page-only queries are supported.
+
+·         A limited number of transaction table fields are matched.  (See the list below for the fields that are used for filtering updates from a query.)
+
+·         Fields from tables other than transaction tables are not supported.  For example, transaction info, provisional, etc.
+
+·         When a trade in the listing panel is modified and no longer matches the original query, it will remain on the blotter until a manual update occurs.
+
+·         Matching criteria that are not supported are:
+
+-      Complex wildcard matching such as "*match*this"
+
+-      Combo queries like ">1+<5" in a single column.  (The workaround for this is to put ">1" and "+<5" into different columns.)
+
+## Using ANE to Feed an External System or to Trigger External Events
+
+What if a non-system application wants to listen to these broadcasts?
+
+Non-system applications cannot directly “listen” to system broadcasts for the following reasons:
+
+## Description of AVS Functions/Stored Procedures
+
+Note:  These stored procedures may be called directly by outside applications.
+
+int ANE_GetNextMessage(TABLE *table, int message_type) - calls the stored procedure “get_next_ane_log_msg”
+
+This function retrieves the next “unprocessed” unique identifier for a given message_type.  The table returned by this function would be empty if there were no entries in the log for this message_type.  The table returned contains message_type, ane_log_id (internally generated by ANE), messsage_id (this is the unique_indentifier) and row_creation.  (This is the time ANE broadcasts the data, not when the change occurred.)
+
+int ANE_ProcessNextMessage(int message_type) - calls the stored procedure “process_ane_log_msg”
+
+This function marks the next “unprocessed” message as “processed”.  This is used a sort of  “transaction control” on reading/processing ANE log entries.  This function should be called only if ANE_GetNextMessage() retrieved data AND the data was successfully transferred to another table and/or external system.
+
+pseudo-code example:
+
+table=TABLE_New();
+
+retval = ANE_GetNextMessage(table, AU_TRANSACTION_INSERT);
+
+if (retval != 1)
+
+EXIT_Fail();
+
+if (TABLE_GetNumRows(table)) /* If there is some data to process */
+
+{
+
+tran_num = TABLE_GetIntN(table, “message_id”, 1);
+
+Retrieve some data from the database for tran_num
+
+Write the data to a file, send the data to another database, or write the data to a user_table
+
+if (the above process completed successfully)
+
+{
+
+ANE_ProcessNextMessage INSERT);
+
+}
+
+int ANE_PruneMessageQueue(int message_type) - calls the stored procedure “prune_ane_log_que”
+
+Run this stored procedure periodically to “Prune” the log.  ANE_ProcessNextMessage “marks” the message as “processed” but does not delete data from the log.
+
+ANE reads in the modifications from the database (using the same API that the individual clients use at startup) and broadcasts the information to all currently connected clients.  The system database is the only persistent data store, and therefore, it is accessed whenever a client first connects to the system. 
+ANE is not used to store audit trail and/or reporting information.  Therefore, this type of information cannot be requested from the System once it is removed from the user’s screen.  ANE broadcasts ONLY information on status changes in real-time when they occur.
+ANE broadcasts information using the messaging bug, which uses an efficient protocol to “publish” information to clients on the network that have previously “subscribed” to the type of data modification.  These ANE publication and subscription processes are managed internally by the System.  There is no API available for these functions.
+
+If the listing blotter is set to receive updates, it will receive updates of trades based on the following conditions:
+
+If there is no listing query, all the trades specified above will be updated to the listing blotter.
+If a listing query exists, a very limited filtering of the trades is done so that some of the query conditions will filter out some ANE update trades from being added to the listing blotter.
+
+The broadcasts contain data that is not in a format which has a published API.  It is done in OpenLink’s proprietary format for speed and efficiency.
+The broadcasts are not persistent.  In other words, if a client is not listening at the time of the broadcast, the client will never know about the broadcast.  The system database is the only persistent data store.

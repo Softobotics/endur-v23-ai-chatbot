@@ -1,0 +1,220 @@
+# OBJECT IMPORT/EXPORT
+
+## Overview
+
+The Object Import/Export window is used throughout the system. It enables the user to import data and definition files of your choice, view the progress during the import and record any errors that occur. You can configure the window, save the configuration and load it when needed. The window enables you to view the status of a file import and provides you with a listing of errors if the import fails. This window is used to import data such as:
+
+·         Index datasets
+
+·         Index definitions
+
+·         Volatility/Correlation datasets
+
+·         Volatility/Correlation definitions
+
+·         Time Series data configurations
+
+·         Time Series datasets
+
+·         Time Series analysis configurations
+
+·         Simulation definitions
+
+·         User-defined Instruments
+
+**For Index and Volatility/Correlation Definitions and Time Series Data/Analysis Configurations:**
+
+The definition must exist in the system prior to importing data. Definition imports require that “parent” definitions exist in the system. The list below describes the hierarchy of definitions before they can be imported into the system.
+
+1.    Index Definitions
+
+2.    Volatilities and Correlations
+
+ü  Standard Volatilities
+
+ü  Dependent Volatilities
+
+ü  Volatilities of Volatilities
+
+ü  Composite Volatilities
+
+ü  Correlations
+
+3.    VaR Definitions
+
+4.    Time Series Data Configurations (requires 1 & 2)
+
+5.    Time Series Analysis Configurations (requires only 1, 2, and 3)
+
+For example, when importing volatility definitions, the required parent indexes for these volatilities must already exist (either imported or set up manually) in the system.
+
+Exporting data provides a method for backing up data or using it in another application.
+
+Generally, files are exported/imported in comma-delimited format.  That is, fields are separated by a comma (','); strings containing commas are double-quoted; an empty field is generally recognized as a data error, but under some conditions is tolerated. This format matches the format used by Microsoft Excel. However, in certain circumstances, as in Germany, the character-delimiter can be a semicolon (';') to facilitate multi-national file import/export.
+
+## Accessing This Window
+
+This window may be accessed from various functionalities of the system. For illustration purposes, the following is an example of how it is accessed:
+
+1.    Start the Market Manager.
+
+2.    Select Price/Rate à Import. You may select one of three sub-options presented: Universal, Close, or Close with Config.
+
+3.    The following window displays:
+
+![Description: image001](OLF_Object_Import_Export_files/image001.jpg)
+
+### Menu Items
+
+This window contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="TableHeader">Menu</p></td><td style="width:1.25in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="TableHeader">Item</p></td><td style="width:297.0pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold">File</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Configure <span style="font-family:Wingdings">à</span> Load</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Loads a selected import/export file configuration.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Configure <span style="font-family:Wingdings">à</span> Save</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Saves modifications to the import/export file configuration currently loaded on screen.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Configure <span style="font-family:Wingdings">à</span> Save As</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Saves the import/export file configuration as a different file.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Print <span style="font-family:Wingdings">à</span> Window</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Prints the current window.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Print <span style="font-family:Wingdings">à</span> Messages</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Prints the content of the “Messages” listbox to a text file.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Exit</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Closes the window</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold">Execute</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold"></p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">If importing data, the files that are listed on the “Files” listbox are imported into the database. If exporting data, saves the selected objects on the “Objects” listbox to the file specified on the “Files” listbox.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold">Misc</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Import Only Valid Rows</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Disabled in this window.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold"></p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Validate Import File</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Disabled in this window.</p></td></tr><tr><td style="width:80.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="107"><p class="NormalBold">Help</p></td><td style="width:1.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120"><p class="NormalBold">Help</p></td><td style="width:297.0pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="396"><p class="MsoNormal" style="margin-bottom:3.0pt">Displays the system Help files.</p></td></tr></table>
+```
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><thead><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="TableHeader">Button</p></td><td style="width:337.95pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="TableHeader">Description</p></td></tr></thead><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold"><span style="font-weight:normal"><img alt="Description: printer icon" height="37" src="OLF_Object_Import_Export_files/image002.jpg" width="37"/></span></p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal" style="margin-bottom:3.0pt">Has the same function as <b>File</b><b><span style="font-family:Wingdings">à</span> Print</b><b><span style="font-family:Wingdings">à</span> Window</b>.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Abort Import/Export</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal">This button only displays while data is being imported/exported. Press the button to abort impor/export.</p><p class="MsoNormal" style="margin-bottom:3.0pt">Note: This button does not display in some functionalities.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Add</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoFootnoteText">Opens a file browser that allows the user to add a file to the “Files” listbox. If exporting data, only 1 file may be added to the listbox.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Remove</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal" style="margin-bottom:3.0pt">Allows the user to remove a selected file from the “Files” listbox.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Select All</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal" style="margin-bottom:3.0pt">Selects all the objects in the list window.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Unselect All</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal" style="margin-bottom:3.0pt">Unselects all the objects in the list window.</p></td></tr><tr><td style="width:129.35pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="172"><p class="NormalBold">Add Objects</p></td><td style="width:337.95pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="451"><p class="MsoNormal">Displays the Chooser Dialog Box. This window allows users to select the indexes, volatilities/correlations, time series data, etc. that will be displayed on the “Objects” listbox.</p><p class="MsoNormal">See <i><a href="OLF_Chooser.htm">Chooser Dialog Box</a></i>.</p><p class="MsoNormal">When importing/exporting volatilities/correlations, pressing this button will display a picklist that allows the user to choose between adding a “Correlation” or a “Volatility” object.</p><p class="MsoNormal" style="margin-bottom:3.0pt"><b>Note:</b> This button does not display in some functionalities.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="TableHeader">Field</p></td><td style="width:373.5pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="TableHeader">Description</p></td></tr><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="NormalBold">Current Config</p></td><td style="width:373.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="MsoNormal">This is a read-only field that contains the currently loaded configuration name. This name represents the configuration file that contains the files and objects to be loaded into the “Files” and “Objects” listboxes.</p><p class="MsoNormal" style="margin-bottom:3.0pt">To load other saved configurations, select <b>File</b><b><span style="font-family:Wingdings">à</span> Configure</b><b><span style="font-family:Wingdings">à</span> Load</b>.</p></td></tr><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="NormalBold">Files</p></td><td style="width:373.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="MsoNormal" style="margin-bottom:3.0pt">This listbox contains the file or files from which data will be imported/exported. If exporting data, the listbox can only contain 1 file, i.e., data are exported to a single file.</p></td></tr><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="NormalBold">Objects</p></td><td style="width:373.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="MsoNormal">This listbox contains the objects (e.g., indexes, volatilities/ correlations, time series data analysis configurations, etc.) to be imported. Highlight the object to import. Unselect objects that will not be imported. You can add and remove items from this listbox through the <b>Add Objects</b> button.</p><p class="MsoNormal" style="margin-bottom:3.0pt">Note: This field is disabled/empty in some functionalities.</p></td></tr><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="NormalBold">Status Bar (Above Messages)</p></td><td style="width:373.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="MsoNormal" style="margin-bottom:3.0pt">This read-only field displays the steps of processing after an import/export is generated, a process that is begun when the “Execute” option is selected off the menu bar. You should receive an “Import/Export Complete” message if the import is successfully completed.</p></td></tr><tr><td style="width:93.8pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="NormalBold">Messages</p></td><td style="width:373.5pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="498"><p class="MsoNormal" style="margin-bottom:3.0pt">This read-only listbox contains error messages that are generated when objects are imported/exported, a process that is begun when the “Execute” option is selected off the menu bar.</p></td></tr></table>
+```
+
+## Importing Objects
+
+To import objects,
+
+1.    Load an existing configuration by selecting File à Configure à Load, if desired.
+
+2.    Go to the “Files” listbox to add or remove the file from which the data will be imported. To add a file, press the Add button.  A Directory/File dialog box appears for you to select another file. To remove a file from the list, highlight the file and press the Remove button.
+
+3.    Go to the “Objects” listbox. Highlight the items to be imported. Only highlighted objects will be imported. To add or remove objects from the list, press the Add Objects button. The Chooser Dialog Box displays.
+
+4.    Note: In some cases, the “Objects” listbox and “Add Objects” button are disabled and not displayed when importing files.
+
+5.    After selecting the objects and files to import, go to the menu bar and select the “Execute” option. The import process is initiated. As each step in the process occur, the status displays on the Status Bar. Error messages encountered during the process, if any, display on the “Messages” listbox.
+
+## Exporting Objects
+
+To export objects,
+
+1.    Load an existing configuration by selecting File à Configure à Load, if desired.
+
+2.    From the “Files” listbox, add or remove the file from which data will be exported. To remove a file, highlight the file and press the Remove button.  The file is removed from the list. To add a file, press the Add button.  A Directory/File dialog box appears for you to select another file.
+
+3.    From the “Objects” listbox, highlight the items to be exported. Only highlighted objects will be exported. To add or remove items from the list, press the Add Objects button. The Chooser Dialog Box displays.
+
+4.    After selecting the objects and file to export, go to the menu bar and select the “Execute” option. The export process is initiated. As each step in the process occur, the status displays on the Status Bar. Error messages encountered during the process, if any, display on the “Messages” listbox.
+
+## Layout of Import/Export File
+
+The Import and Export functions can only import and export files that conform to the new (general) import/export format. The following information provides information on the file format.
+
+The source file defines objects that are to be imported and processed by the user program.  There can be multiple objects per file.  An object could be a Volatility (VOL), Correlation (COR), Deal, Profile, etc.
+
+Objects are represented in the import file by two types of records, header (HDR) records and data (REC) records.  All REC records must first be explicitly defined with a corresponding HDR record.
+
+·         Header records (HDR) are the object definition.  They describe the fields that make up a REC and describe the columns in the table that will be built.
+
+·         Data records (REC) contain the actual data and must match the preceding HDR definition for that object.
+
+The basic format of the file is as follows:
+
+HDR, OBJECT_TYPE, field_name1, field_name2, ...
+
+REC, OBJECT_TYPE, field_val1, field_val2, ...
+
+REC, OBJECT_TYPE, field_val1, field_val2, ...
+
+where,
+
+HDR - Header record tag.  Identifies that this is a header record and describes its corresponding data records for the object represented by OBJECT_TYPE.
+
+REC - Data record tag.  This is the actual data corresponding to the OBJECT_TYPE.
+
+OBJECT_TYPE - The type of object being imported, e.g.,
+
+IDX - indexes
+
+VOL - volatility
+
+COR - correlation
+
+DEAL - deal
+
+PROFILE - profile records
+
+SIMDEF – simulation definition
+
+SIMDEF_SCDEF – simulation scenario definition
+
+SIMDEF_SCRES – simulation results
+
+field_nameX - Identifies the column name for the data that follows.
+
+field_valX - The actual data
+
+Column 1 and column 2 are required fields.  All other columns are optional given that HDR records and REC records match for an OBJECT_TYPE. The HDR record applies for all the following REC records of the same OBJECT_TYPE until overridden by a new HDR record for the OBJECT_TYPE. If an OBJECT_TYPE is read from the file and the corresponding HDR record cannot be found for the OBJECT_TYPE, the record is discarded.
+
+If any HDR line is not in correct format, i.e. containing all the names exactly as shown (with the exception of "field_name" that is optional), the import/import will return immediately and report an error.
+
+There can be a mix of formats and objects as long as the preceding HDR records correctly describe the name and number of fields for the corresponding REC records for each OBJECT_TYPE.
+
+Multiple object types may be contained in the same file.  At any time in the file, the object type may switch.  The format of the data records must match the previously read HDR record for that OBJECT_TYPE.
+
+Note: Comments in the data file are preceded by the # character in the first position of a line. Blank spaces are significant.  They are not discarded. Blank lines are ignored.
+
+The following is some sample data files:
+
+#This is a comment.
+
+#define import format and data record
+
+HDR,IDX,index_name,gpt_name,bid,offer,bid_offer,field_name
+
+REC,IDX,LIBOR.USD,O/N,5.4,4.3,,input
+
+REC,IDX,LIBOR.USD,1imm,,,5.4,close
+
+#change the column definitions
+
+HDR,IDX,index_name,gpt_name,bid_offer,field_name
+
+REC,IDX,LIBOR.USD,O/N,5.4,spread
+
+#multiple data objects in the same file
+
+#define records for both vol and index import
+
+HDR,IDX, index_name,gpt_name, bid_offer, field_name
+
+HDR,VOL,vol_name,shadow_name,dim_id,label1,label3,value_type,val1,val2
+
+REC,IDX,LIBOR.USD,O/N,5.4,spread
+
+REC,IDX,CP.USD,S/N,4.3,input
+
+REC,VOL,VOL2005.LIBOR.USD,Official,2,2m,2.000,BO,14.0,15.0
+
+#column order does not matter
+
+HDR,IDX,index_name,gpt_name,bid_offer,field_name
+
+REC,IDX,LIBOR.USD,O/N,5.4,spread
+
+#change column order
+
+HDR,IDX,field_name,gpt_name,bid
+
+REC,IDX,input,CP.USD, S/N,4.3
+
+#The previous blank line will be ignored
+

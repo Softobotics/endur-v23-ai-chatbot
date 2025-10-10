@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
- Section heading: OpenLink Central Sidebar - Inline Configuration Editing.
- Text content: The OpenLink Central Sidebar provides a user with the ability to modify the current configuration within the panel itself, without launching the Edit Configuration dialog. The following is a description of these editing features..

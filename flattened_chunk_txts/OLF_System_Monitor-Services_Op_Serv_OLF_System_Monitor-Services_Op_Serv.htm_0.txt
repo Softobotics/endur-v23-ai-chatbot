@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Op_Serv.htm.
- Section heading: Overview.
- Text content: The System Monitor – Services tabs work with the Operations Manager – Operations Services module as many of the components viewed in this tab have been previously configured from there. This tab monitors user-defined processes (plug-ins/scripts) designed to run before a deal is processed (pre-processing) and/or after a deal is processed (post processing) by the system. This screen, consisting of the Operation Services Definitions panel, provides the ability to view definition statuses as well as bring them on and offline. The screen includes the functionality to filter the table to show only online definitions. Access to this window is controlled by Security Privilege #29240, Access Op Services Tab..
- 
-Links to other files: ../Operations_Manager/OPS_Operation_Services.htm.

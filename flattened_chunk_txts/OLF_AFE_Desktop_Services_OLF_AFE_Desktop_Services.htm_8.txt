@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
- Section heading: Create and Configure Button.
- Text content: Create and configure an Option Desktops button to accommodate the “Option” keyword based pick list. From the OpenLink Central Configuration window, Button Configuration tab,  The following pick list will display when selecting the Option Desktops button from the Custom Services tab. .
- Image file: OLF_AFE_Desktop_Services_files/image004.jpg
- Image description: the dial dial in the dial dial dial dial dial dial dial dial dial dial dial dial dial dial dial.
- Image file: OLF_AFE_Desktop_Services_files/image001.jpg
- Image description: the options dial in the outlook dial dial dial dial dial dial dial dial dial dial dial dial dial dial.

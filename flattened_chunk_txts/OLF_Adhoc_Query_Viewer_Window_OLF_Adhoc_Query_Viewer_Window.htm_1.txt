@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Adhoc_Query_Viewer_Window.htm.
- Section heading: Accessing This Window/Screen.
- Text content: There are two ways to access this window:  Or :  Either method displays the following window:  .
- Image file: OLF_Adhoc_Query_Viewer_Window_files/image001.jpg
- Image description: the screens are not available for the user to enter the text.

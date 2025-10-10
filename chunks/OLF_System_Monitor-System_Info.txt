@@ -1,0 +1,40 @@
+# System Monitor - System - INFo
+
+## Overview
+
+This window shows system information identical to that in the About Window.
+
+See About
+
+See System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-System_Info_files/image001.jpg)
+
+The following screen displays:
+
+![image001](OLF_System_Monitor-System_Info_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. See System Monitor
+
+### Fields
+
+This window contains the information as the “About” window. See About
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the System tab.
+Select the Info sub-tab.

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
- Section heading: Filter Panel.
- Text content:  Located at the upper right hand side of the Quick Configure area, the Filter panel displays the filter fields of the blotter. The figure above filters the data by “Status.” Click the filter field button and select from the pick list the filtering criteria. Only items that meet the selected criteria will display on the blotter. Drag the fields onto this panel that will serve as filter fields of the data.  .
- Image file: OLF_Quick_Configure_Mode_files/image008.jpg
- Image description: a computer screen with a line graph and a line graph.

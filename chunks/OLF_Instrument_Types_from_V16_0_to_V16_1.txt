@@ -1,0 +1,35 @@
+# Instrument Types from V16.0 to V16.1
+
+## Overview
+
+This lists the changes in instrument types from version 
+ 16.0 
+ to version 16.1
+
+## New Instrument 
+ Types
+
+The following are the new instrument types 
+ in 16.1:
+
+```html
+<table cellspacing="0" class="MsoNormalTable" style="mso-cellspacing: 0in; border: solid #000000 1.0pt; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 2.15pt 0in 2.15pt;" width="605"><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;"><td bgcolor="#E6E6E6" style="border: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="104"><p class="TableHeader">Toolset</p></td><td bgcolor="#E6E6E6" style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="120"><p class="TableHeader">Name</p></td><td bgcolor="#E6E6E6" style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="100"><p class="TableHeader">ID</p></td><td bgcolor="#E6E6E6" style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="200"><p class="TableHeader">Description</p></td><td bgcolor="#E6E6E6" style="border-top: solid 1pt #000000; border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="81"><p class="TableHeader">DTS</p></td></tr><tr style="mso-yfti-irow: 1;"><td style="border-left: solid 1pt #000000; border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="104"><a href="../Trading_Toolsets/TRADING_Toolset-PROVISIONAL.htm">Provisional</a></td><td style="border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="120">Order</td><td style="border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="100">71000</td><td style="border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="200">Order</td><td style="border-right: solid 1pt #000000; border-bottom: solid 1pt #000000; mso-border-alt: solid windowtext .5pt; padding: 0in 2.15pt 0in 2.15pt; border-image: none; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; vertical-align: Top;" width="81">141806</td></tr></table>
+```
+
+## Changes in 
+ the Instrument Types
+
+The following are the changes to instrument types 
+ from 16.0 to 16.1:
+
+None
+
+## Removed Instrument 
+ Types
+
+The following are the instrument types removed in 
+ V16.1:
+
+None
+
+Instrument Types V16.0 to V16.1

@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Prod_Ext_OpenConnect.htm.
- Section heading: Buttons.
- Text content: This window contains the buttons of the System Monitor. See System Monitor In addition, it also contains these buttons: .
- Table data: 
-| Button | Description |
-| --- | --- |
-| Sort By | Choices are Host Manager and Service Group |. 
-Links to other files: OLF_System_Monitor.htm.

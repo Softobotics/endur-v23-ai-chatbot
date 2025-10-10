@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Global_Variables.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: The following window displays: .
- Image file: OLF_AVS_Global_Variables_files/image001.jpg
- Image description: the screenshote screen shot of the screen shot.

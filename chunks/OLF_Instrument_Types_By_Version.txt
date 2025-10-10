@@ -1,0 +1,25 @@
+# Instrument Types By Version
+
+## Overview
+
+This page provides links to documents listing 
+	 Instrument Types changes.
+
+Instrument 
+	 Types from V22.0 to V23.0
+
+Instrument 
+	 Types from V19.0 to V22.0
+
+Instrument 
+	 Types from V18.0 to V19.0
+
+Instrument 
+	 Types from V17.0 to V18.0
+
+Instrument Types 
+	 from V16.1 to V17.0
+
+Instrument 
+	 Types from V16.0 to V16.1
+

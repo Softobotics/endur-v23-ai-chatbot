@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Directory_Browser.htm.
- Section heading: Other Ways to Access This Window/Screen.
- Text content: Option 1: 1. Start the Trading Manager. 2. Select File Query. The Trading Query window displays. 3. Click the Triangle button located at the bottom left corner of the screen. The lower panel of the window displays. 4. Right-click the “AVS Script” field. .

@@ -1,0 +1,20 @@
+# Frequently Asked Questions (FAQs)
+
+Getting Help
+
+1) What is the best way to get answers to questions about the system?
+
+The best place to start would be the Endur/Findur Online Help/User Guide. Use the Table of Contents/ Index and Search tool to find the documentation. The next source of information would be the CRM Web Portal, which contains the Online Help/User Guide and a multitude of procedural (step-by-step) documents. If you still don't find the pertinent information you can e-mail the OpenLink Product Support Desk at support@openlink.com. However, please be cognizant of the following points:
+
+A.    The Support Desk is primarily a place to report bugs as well as to make enhancement suggestions. However, as a courtesy, Support will respond to simple questions that are within its capabilities (both in time and knowledge). Questions that are not simple or exceed Support's capabilities will be forwarded to the client's Account Manager who can arrange for whatever consulting services may be appropriate.
+
+B.    Typical customers are required to submit the names of a certain number of Expert Users. Only these Expert Users are authorized to contact the OpenLink Product Support Desk. This is based on the "Expert User Model". However, OpenLink realizes that there may be certain times where non Expert Users may need to contact OpenLink Product Support and will accommodate as appropriate.
+
+2) How do I get to the Table of Contents/ Index and Search tool in the User Guide/Online Help?
+
+Launch the help from most screens by selecting the Help menu item. From the Online Help/User Guide, click the Show button in the upper left to see the search tools.
+
+3) When I enter data or make changes in Endur/Findur text entry fields like the Reference field in the Trade Input window, I lose the data, even after a deal is processed. Why does this happen?
+
+This behavior occurs in some Endur/Findur screens and fields. When you edit a text field like the Reference field in the Trade Input window, the application goes into an edit mode. After entering data or making changes, you must move the cursor to the next field by pressing either the Tab button or the Enter button. This sends an end_edit command and registers the value in that field.
+

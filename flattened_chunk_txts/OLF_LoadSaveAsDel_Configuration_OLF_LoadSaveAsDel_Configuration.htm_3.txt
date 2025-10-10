@@ -1,9 +1,0 @@
-This chunk is from the HTML file: OLF_LoadSaveAsDel_Configuration.htm.
- Section heading: Buttons.
- Text content: This window contains the following buttons: .
- Table data: 
-| Button | Description |
-| --- | --- |
-| Public | Toggle to save the configuration as public or private. Put a check mark to save it as a public configuration. A public configuration can be used by all users while a private configuration can only be used by the user who created it. This field displays only if saving a configuration. |
-| OK | Click this button to perform any of the following:§Save the new configuration§Save changes in the configuration listing§Load an existing configuration§Set a default configuration |
-| Cancel | Closes the window without saving any changes or loading the configuration. |.

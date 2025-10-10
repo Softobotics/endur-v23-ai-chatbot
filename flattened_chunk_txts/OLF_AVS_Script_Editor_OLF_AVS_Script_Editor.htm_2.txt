@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Script_Editor.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window can be accessed via multiple paths in the system. This procedure is just one example of how to access the Script Editor. 1. Open the Trading Manager. The Trading Manager browser window displays. 2. Select Script à Script Editor . The Script Editor window displays. 3. Select File à Open . A pop-up list of available scripts in the database displays. 4. Select a script from the pop-up list. The script displays in the Script Editor. .
- Image file: OLF_AVS_Script_Editor_files/image001.jpg
- Image description: the screenshote screen with the text editor.

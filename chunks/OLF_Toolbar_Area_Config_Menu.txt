@@ -1,0 +1,26 @@
+# TOOLBAR AREA CONFIGURATION MENU
+
+## Overview
+
+The Toolbar Area Configuration Menu allows the user to change the configuration of the toolbar, e.g., create, hide, or display toolbar panels; modify the configuration of toolbar icons; and add or remove icons from a toolbar panel.
+
+This functionality is available in V8.0r1 and up.
+
+## Accessing This Window/Screen
+
+This menu can be accessed from various windows of the system that has a toolbar. To access the menu, right-click any area of the toolbar. For illustration purposes, the following is an example of how it is accessed from the Settlement Desktop:
+
+1. Start the Operations Manager.
+1. Click the Settlement Desktop icon. The Settlement Desktop window displays.
+1. Right-click on any area of the toolbar.
+1. The following menu displays:
+![image002](OLF_Toolbar_Area_Config_Menu_files/image001.jpg)
+
+### Menu Items
+
+This menu contains the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:116.6pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="TableHeader">Item</p></td><td style="width:362.2pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="TableHeader">Description</p></td></tr><tr><td style="width:116.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">Configure</p></td><td style="width:362.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">Opens the <i><a href="OLF_Toolbar_Configuration.htm">Toolbar Configuration</a></i> window.</p><p class="MsoNormal">If the menu was accessed from an unoccupied area of the toolbar, the <i>Toolbar Configuration</i> window displays the <b>All Toolbars</b> tab by default. Thus, allowing the user to manage the toolbar.</p><p class="MsoNormal">If the menu was accessed from a toolbar panel, the <i>Toolbar Configuration</i> window displays the <b>Configure Toolbar</b> tab by default, allowing the user to manage the specific toolbar panel.</p></td></tr><tr><td style="width:116.6pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="155"><p class="NormalBold">&lt;Toolbar Panel Name&gt;</p></td><td style="width:362.2pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="483"><p class="MsoNormal">The toolbar panels that display depend on the page (or tab) from which the <b><i>Toolbar Area Configuration Menu</i></b> was accessed. All active user-defined (if any) and OLF-defined toolbar panels defined for the current active page or tab will be listed as options.</p><p class="MsoNormal"></p><p class="MsoNormal">For example, in V8.0r1 of the Settlement Desktop, if this menu was accessed from the <b>Create and Manage Documents</b> tab, the available toolbar panel options are “SD Toolbar” and “SD Create_Manage Toolbar.” If this menu was accessed from the <b>Output Management</b> tab, the available toolbar panel options are “SD Toolbar” and “SD Output Mgmt Toolbar.”</p><p class="MsoNormal"></p><p class="MsoNormal">This is a toggle to show or hide the toolbar panel. A check mark (<span style="font-family:Wingdings">ü</span>) indicates that the toolbar panel is displayed. To hide the toolbar panel, remove the check mark by clicking the toolbar panel option.</p></td></tr></table>
+```
+

@@ -1,0 +1,17 @@
+# How To Load and Execute a Saved Query
+
+1.      Click 
+	 the Query icon  from 
+	 the menu. The Query window displays with a previously-saved 
+	 query view.
+
+2.      Go 
+	 to the Current Query field and select the desired query from 
+	 the pick list. For this example, Swap Query was selected.
+
+![](How_to_Load_and_Execute_Saved_Query_files/image004.jpg)
+
+3.      Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display.
+

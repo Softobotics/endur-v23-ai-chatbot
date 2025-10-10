@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Add_Formula_Column.htm.
- Section heading: Overview.
- Text content: The Add Formula Column window allows users to create and maintain formula columns. This screen is included in most table viewer instances in the system, which can be standalone or embedded as a panel in a screen.  See: Table Viewer Configure View .
- 
-Links to other files: OLF_Table_Viewer.htm, OLF_Configure_View.htm.

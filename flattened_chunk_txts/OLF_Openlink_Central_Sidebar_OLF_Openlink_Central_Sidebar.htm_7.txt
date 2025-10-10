@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
- Section heading: OpenLink Central Sidebar Configuration.
- Text content: A variety of configuration functions are available within the Sidebar , as detailed throughout this page. Additional configurations may be performed in the OpenLink Desktop Builder , and OpenLink Central Configurations windows. When defining a desktop in the OpenLink Desktop Builder , selecting the “Show OpenLink Central Sidebar” field will set the Sidebar to display in that desktop each time it is launched. The OpenLink Central Configuration window is used to create and manage tabs, services and views in the Sidebar and Console . This window can be accessed from the OpenLink Central Console as well as from desktops. 1. From the OpenLink Central Console , select the OpenLink Central à Edit Configuration menu. 2. From a desktop, select the OpenLink Central à Configuration à Edit Configuration menu..
- 
-Links to other files: ../Openlink_Desktop/OPENLINK_DESKTOP_Builder.htm, OLF_OpenLink_Configurations.htm.

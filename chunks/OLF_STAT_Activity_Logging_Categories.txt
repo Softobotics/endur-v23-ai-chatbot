@@ -1,0 +1,31 @@
+Debugging activities should be done in 
+ conjunction with Openlink support when using this window.
+
+Activity logging can be enabled when attempting to troubleshoot activity 
+ failures. Errors produced by activities will always be logged. Other message 
+ types (Warning, Info, and Debug) can be enabled and disabled by the user. 
+ When logging is enabled all activity messages will be written to the system 
+ log file. They will also be written to a text file with a name matching 
+ the activity name in a folder defined by AB_SCENARIO_TEST_ACTIVITY_LOG_DIRECTORY.
+
+## Accessing this Window
+
+Note:   There are multiple 
+ ways to access this window; however, only one way is defined because some 
+ features can only be accessed via this procedure.
+
+1.      From 
+ OpenLink Central, right-click anywhere on the header and select Launch 
+ Available Services. The Launch Available Services window displays.
+
+2.      Type 
+ Scenario 
+ Test Activity Logging Categories in the Filter 
+ Service field, highlight Scenario Test 
+ Activity Logging Categories in the Available Services panel, 
+ and then click Launch. The 
+ following window displays:
+
+![](OLF_STAT_Activity_Logging_Categories_files/image01.jpg)
+
+Scenario Test Automation Tool - Activity Logging Categories

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_CopyPaste.htm.
- Section heading: Copying Data From Tables To The NT Clipboard.
- Text content: Perform the following steps to copy data from the OLF System onto the Windows NT clipboard:  1. Open the table in the OLF system you wish to copy. 2. Select the row(s) of data you wish to copy/paste: a) To copy all rows displayed, Select Edit à Select All. All rows will now be highlighted in pink. Select Edit à Copy. b) To copy selected row(s), Click on the desired row with the left-mouse button, Add subsequent rows by using Shift+left-mouse button. All selected rows will be highlighted in pink. Select Edit à Copy. 3. Your data is now stored on the Windows NT clipboard and can be pasted into MS Excel or any other application. .

@@ -1,0 +1,26 @@
+# System Wide 
+ Configuration Variables
+
+## Overview
+
+The System 
+ Wide Configuration module is used to designate System settings. 
+ These designations may serve as default settings for all users or as individual 
+ user settings. Formerly called Environment Variables, these settings are 
+ now referred to as Configuration Variables. The name change was made because 
+ these variables can be set in various ways, not just from the environment.
+
+A downloadable version of this document (System Wide Configuration Variables 
+ Spreadsheet in Microsoft Excel format), which can be filtered and sorted, 
+ is available by clicking here.
+
+### Additional 
+ References
+
+System 
+ Wide Configuration
+
+System Monitor – 
+ System Wide Configuration
+
+System Wide Configuration Variables

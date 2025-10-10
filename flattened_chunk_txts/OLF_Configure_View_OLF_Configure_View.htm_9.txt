@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Configure_View.htm.
- Section heading: Setting a Default Configuration.
- Text content: To set the default configuration for a table, 1. Select File à Set As Default . The Set Default window displays. 2. Put a checkmark to the configuration that will be set as the default configuration. 3. Click the OK button. The configuration is used automatically by the table the next time it is loaded on screen..
- 
-Links to other files: OLF_LoadSaveAsDel_Configuration.htm.

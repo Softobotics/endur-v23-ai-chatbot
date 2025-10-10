@@ -1,0 +1,94 @@
+# Groups
+
+## Overview
+
+The Groups window allows the user to create new, rename, and 
+ delete existing groups in a window. This screen is used by the several 
+ functionalities in the system such as Portfolio Groups and Entity Groups.
+
+See also:
+
+Portfolio 
+ Groups
+
+Entity 
+ Groups
+
+## Accessing This Window/Screen
+
+This window is accessed from several functionalities 
+ in the system. To illustrate how it is accessed:
+
+1. Start 
+ the Admin Central Sidebar.
+1. If not 
+ yet selected, click the General Administration tab.
+1. Click 
+ the Portfolio Groups icon .
+1. Select 
+ Groups à Setup 
+ Groups
+The following window displays:
+
+![](OLF_Groups_files/image001.jpg)
+
+### Menu Items
+
+None.
+
+### Buttons
+
+This window contains the following buttons:
+
+```html
+<table cellspacing="0px" class="OH_Table_1-Col-Bold" width="100%"><col style="width: 50%;"/><col style="width: 50%;"/><tr class="t1st"><td>Button</td><td>Description</td></tr><tr class="t2Row"><td class="t1st">&lt;Select Group&gt;</td><td>Displays a pick list of groups currently defined in the system. The name that appears on this button is the group currently selected on the pick list.</td></tr><tr class="t1Row"><td class="t1st"><img alt="" border="0" src="OLF_Groups_files/image003.jpg" style="border: none;"/></td><td>Displays the list of items defined for the group in the <span style="font-weight: bold;">Group Name</span><span> field, if any.</span></td></tr><tr class="t2Row"><td class="t1st"><img alt="" border="0" src="OLF_Groups_files/image004.jpg" style="border: none;"/></td><td>Deletes the group currently loaded in the <span style="font-weight: bold;">Group Name</span><span> field.</span></td></tr><tr class="t1Row"><td class="t1st"><img alt="" border="0" src="OLF_Groups_files/image005.jpg" style="border: none;"/></td><td>Saves the modifications and closes the window.</td></tr><tr class="t2Row"><td class="t1st"><img alt="" border="0" src="OLF_Groups_files/image006.jpg" style="border: none;"/></td><td>Closes the window without saving any changes.</td></tr></table>
+```
+
+### Field Items
+
+This window contains the following fields:
+
+```html
+<table cellspacing="0px" class="OH_Table_1-Col-Bold" width="100%"><col style="width: 50%;"/><col style="width: 50%;"/><tr class="t1st"><td>Field</td><td>Description</td></tr><tr class="t2Row"><td class="t1st">Group Name</td><td>Displays the name of the group selected in the <span style="font-weight: bold;">Select Group</span><span> button. This is also a field to input the name of a new group or change the name of an existing group.</span></td></tr></table>
+```
+
+## How To: Adding a New Group
+
+1. Click 
+ the Select Group button and select “ADD NEW GROUP” from the pick 
+ list. The “Group Name” field clears.
+1. Input 
+ the name of the new group in the Group 
+ Name field.
+1. Click 
+ the OK button to save the new group. The window closes and the 
+ new group column is added to the Portfolio/Entity Groups window.
+## How To: Deleting an Existing Group
+
+To delete an existing group:
+
+1. Click 
+ the Select Group button and select the group to delete from the 
+ picklist. The group’s name displays on the “Group Name” field.
+1. To 
+ check the items that belong to the group prior to deletion, click the 
+ List <Items> In Group button. The list displays all the items 
+ defined for the particular group.
+1. Click 
+ the Delete Group button to delete the group. Note that items are 
+ not deleted when groups are deleted.
+1. Click 
+ the OK button to save changes. The window closes and the column 
+ of the group is removed from the Portfolio/Entity Groups window.
+## How To: Renaming an Existing Group
+
+To rename an existing group:
+
+1. Click 
+ the Select Group button and select the group to rename from the 
+ pick list. The group’s name displays on the “Group Name” field.
+1. Edit 
+ the name of the group.
+1. Click 
+ the OK button to save the modification.
+Groups Window

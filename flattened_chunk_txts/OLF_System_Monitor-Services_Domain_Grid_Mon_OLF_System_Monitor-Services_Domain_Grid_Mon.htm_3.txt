@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Domain_Grid_Mon.htm.
- Section heading: Accessing This Window/Screen.
- Text content: To access this window: 1. Start the OpenLink System. 2. From OpenLink Central , click the System Monitor icon . 3. Select the Services tab. 4. Select the Domain Services Monitor ( Domain Grid Monitor in v80r2 and earlier) sub-tab. The Running Services View displays by default: .
- Image file: OLF_System_Monitor-Services_Domain_Grid_Mon_files/image001.jpg
- Image description: a square icon with a colorful background.
- Image file: OLF_System_Monitor-Services_Domain_Grid_Mon_files/image002.jpg
- Image description: the screenshote screen shows the screenshote screen showing the screenshote screen.

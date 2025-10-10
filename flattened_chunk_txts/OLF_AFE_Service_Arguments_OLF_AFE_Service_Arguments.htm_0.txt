@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Service_Arguments.htm.
- Section heading: Overview.
- Text content: The OpenLink Central Config: Service Arguments window is used to pass service arguments to OpenLink Services. Service Arguments facilitate the: · Association of an OpenLink Central Service with a specific service definition using OpenLink Central Configurations (e.g., OpenLink Desktop with “My Desktop”) · Configuration of an AFE (Adaptive Front End) Service for OpenLink Central as a process to open screens directly · Employment of AFE (Adaptive Front-End) Desktop Services filtered pick lists for OpenLink Central buttons.
- 
-Links to other files: OLF_OpenLink_Configurations.htm, OLF_AFE_Services.htm, OLF_AFE_Desktop_Services.htm.

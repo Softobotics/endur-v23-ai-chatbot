@@ -1,0 +1,40 @@
+# How To Query by Date Range
+
+In this example, 
+	 we will create a query in which the Trade Date is greater than one 
+	 date, but earlier than another.  In other words, we will 
+	 define a query which searches for deals within a date range.
+
+To define a date 
+	 range for this example, use the following information:
+
+Trade Date field: >1/1/14 to 
+	 signify any deals after January 1, 2014
+
+Trade Date field: <1/1/15 to 
+	 signify any deals prior to January 1, 2015
+
+Note:   You must insert 
+	 a plus sign (+) before the less-than sign (<) to 
+	 make this an “and” condition. The above query will search for 
+	 deals after January 1, 2014 AND prior to January 1, 2015.
+
+To set up a query with a date range:
+
+1.      From 
+	 the Query Window, ensure Transaction is displayed in 
+	 the Query View field located at the top right-hand side of 
+	 the panel. This is because the Trade Date selection for this 
+	 query is located in the Transaction table.
+
+![](How_to_Query_by_Date_Range_files/image003.jpg)
+
+2.      Click 
+	 in the Trade Date field and enter >1/1/14 + <1/1/15.
+
+![](How_to_Query_by_Date_Range_files/image004.jpg)
+
+3.      Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display.
+

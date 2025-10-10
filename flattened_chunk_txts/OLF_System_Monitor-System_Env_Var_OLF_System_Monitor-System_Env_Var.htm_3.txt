@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-System_Env_Var.htm.
- Section heading: Panels.
- Text content: This window contains the following panels:  .
- Table data: 
-| Panel | Description |
-| --- | --- |
-| External System Wide Configuration | This is a set of variables, set in the run script, that are used prior to login, or, are not permitted to be set in the database (e.g. AB_OUTDIR). |
-| System Wide Configuration | This is the set of variables that can be set in the Admin ManagerSystem Wide Configurationmodule.SeeSystem Wide Configuration |.

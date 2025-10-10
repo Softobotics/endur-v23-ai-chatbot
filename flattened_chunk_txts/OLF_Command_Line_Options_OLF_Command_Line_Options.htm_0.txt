@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Command_Line_Options.htm.
- Section heading: Example.
- Text content: master –u credit –p credit start master –u trader1 –p trader1   Example of Environment Variables / Command Line Options 1) Set DEBUG_TYPE_STATE="-*,+17"  2) -g3 -t "-*, +OPENLINK_CENTRAL" The -g3 is to set Debug to High and the -t options are to enable some of the Open Link Central Debug Messages.  3) master -afe "Trader Desktop, screen_name=my_screen"  The AFE id of "Trader Desktop"  is 300 so the command above can be rewritten  master -afe "300, screen_name=my_desktop" .

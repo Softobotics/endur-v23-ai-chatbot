@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Toolbar_Configuration.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window is accessed from the Toolbar Area Configuration Menu . For illustration purposes, the following is an example of how it is accessed from the Settlement Desktop: 1. Start the Operations Manager. 2. Click the Settlement Desktop icon. The Settlement Desktop window displays. 3. Right-click on any area of the toolbar. The Toolbar Area Configuration Menu displays. 4. Select Configure . 5. The following window displays:   .
- Image file: OLF_Toolbar_Configuration_files/image001.jpg
- Image description: the screens are selected in the text box.

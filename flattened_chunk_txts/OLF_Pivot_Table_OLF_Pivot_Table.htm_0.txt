@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Pivot_Table.htm.
- Section heading: Overview.
- Text content: The Pivot Table Setup window is used to create an interactive report that summarizes and analyzes data from existing tables. The pivot table is defined by the pivot columns, pivot rows, and pivot data attributes that are selected. Pivot rows are used for grouping (sorting) the data; the pivot columns are used to generate unique sets of pivot columns in the resulting pivot view; and the pivot data is the attribute used to aggregate data into the actual pivot view cells from the original table. This window is accessed from the RTPE (Real Time Position Engine) Page Configuration window and various functionalities that employ the Table Viewer . Warning: Users can only save pivot table configurations as part of the set up for RTPE (Real Time Position Engine). This menu item allows you to configure a pivot table for one time use only..
- 
-Links to other files: ../Trading_Manager/TRADING_Configure_Positions.htm, OLF_Table_Viewer.htm.

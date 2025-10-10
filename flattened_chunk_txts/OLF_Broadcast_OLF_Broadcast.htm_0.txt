@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Broadcast.htm.
- Section heading: Overview.
- Text content: The Broadcast window provides users the ability to broadcast messages to authorized users currently logged onto the system.  In addition, users may view messages sent specifically to them, or to any channel with which they are associated.  These messages are archived to the database. In addition, any message the user sends is also sent to him/her. .

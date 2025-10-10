@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Task_Editor.htm.
- Section heading: Overview.
- Text content: To run a plugin, a task must first be created.  The task schedules plugins to run at specific times or specific intervals.  Using the Components feature, specific plugins are assigned as components of a task.  This is the blueprint and tells the task what type and what plugin name to run.  Tasks can be defined within the Trading, Credit, or Risk Managers or through the Script button of the Operation Manager . Scripts can be imported (through Operations Manager à Script ) before assigning them to tasks. Note: This page is for v90r1 and later. For v82r1 and earlier, see AVS Task Editor. Note: Plugins were formerly known as Scripts and as AVS Scripts..
- 
-Links to other files: ../Operations_Manager/Operations_Manager.htm.

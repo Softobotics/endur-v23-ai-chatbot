@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
- Section heading: Create Desktops.
- Text content: Use the OpenLink Desktop Builder to configure the desktops required for the environment. The example in the illustration above shows three different desktops for the processing of Options – “ Options1, Options2 and Options3”. Note that the prefix, “Option”, for these related desktops must be the same to display in the selection list..
- 
-Links to other files: ../Openlink_Desktop/OPENLINK_DESKTOP_OpenLinkDesktop.htm.

@@ -1,0 +1,90 @@
+# System Monitor - Services – Credit
+
+## Overview
+
+The System Monitor – Services tabs work with the Services Manager module. Many of the components viewed in this tab have been previously configured in the Services Manager and the Credit Manager.
+
+Within this screen, Credit exposure definitions may be brought on and offline. Credit definitions and engine details, including status, may also be viewed in this screen.
+
+This screen consists of the Exposure Definition and Engine Status panels. The Exposure Definition panel contains summary credit definition data. This panel also includes the functionality to view the Credit Online Results window which includes the ability to view and edit the details of the selected exposure definition as well as view the credit facility details.
+
+The Engine Status panel provides information about the credit engine. This panel of data is view-only and cannot be altered from the System Monitor. Changes to engines are made in the Services Manager module.
+
+Access to this window is controlled by Security Privilege #29210, Access Credit Tab.
+
+### See Also
+
+Credit Manager
+
+System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Services_Credit_files/image001.jpg)
+
+The following screen displays:
+
+![image007.jpg](OLF_System_Monitor-Services_Credit_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image004" border="0" height="17" src="OLF_System_Monitor-Services_Credit_files/image003.jpg" width="80"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Selecting this button displays the <a href="../Credit_Risk_Manager/CreditRiskMgrs.htm"><i>Credit Online Results</i></a> window for the selected definition. This window contains the details of the selected credit exposure definition.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image005" border="0" height="17" src="OLF_System_Monitor-Services_Credit_files/image004.jpg" width="80"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Saves changes to the exposure definition’s online status.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image006" border="0" height="12" src="OLF_System_Monitor-Services_Credit_files/image005.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Selecting this button halts the exposure definition monitoring process.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image007" border="0" height="12" src="OLF_System_Monitor-Services_Credit_files/image006.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Selecting this button re-starts monitoring the exposure definition(s).</p></td></tr></table>
+```
+
+### Exposure Definition Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Show Online Definitions Only</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Selecting this box filters the credit exposure definitions shown in the table to show only those definitions that are online.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Online</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Selection of this checkbox, in conjunction with the <b>Save Changes</b> button, brings the indicated credit exposure definition online.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Definition Name</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The user-assigned identifier of the selected credit exposure definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Batch Status</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the standing of the task being used to process an exposure definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Engine</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The system running the selected credit exposure definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Defn Status</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the standing of the selected credit exposure definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Deal Script</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Displays the name of the plug-in/script associated with the exposure definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Batch Task</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The task needed for batch processing. This task calls the “Deal Script” in order to populate credit exposures when definitions are started.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Defn ID</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The unique, system-assigned identifier given to a credit exposure definition.</p></td></tr></table>
+```
+
+#### Right-Click Menu
+
+Right-clicking on any row within the table returns the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Item</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Start/Restart Monitoring</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Brings the selected credit exposure definition online to be monitored.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Stop Monitoring</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Takes the selected credit exposure definition offline and ceases to monitor it.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">View Online Results</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">This item has the same functionality as the <b>View Online Results</b> button.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">View Batch Execution Log</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Opens the <i>Batch Execution Log</i> window. This window contains details of the tasks and scripts that run as part of the Batch Task.</p></td></tr></table>
+```
+
+### Engine Status Panel
+
+#### Fields
+
+This panel contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Field</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Default</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">A check mark in this field indicates that the engine running the definition is the default engine. When the check mark indicator is absent, the definition is being run by an alternate engine.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Engine Name</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The name of the system running the credit definition.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Status</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The standing of the engine.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Location</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The name of the machine hosting the engine.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Engine ID</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The unique, system-designated engine identifier.</p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">Backup ID</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">The unique, system-designated identifier for the credit backup engine.</p></td></tr></table>
+```
+
+#### Right-Click Menu
+
+Right-clicking on an engine row within the table returns the following menu items:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.15pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Item</b></p></td><td style="width:344.65pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="460"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.15pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="NormalBold">View Raw Engine Data</p></td><td style="width:344.65pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="460"><p class="MsoNormal">Opens the <i>Raw Engine Data</i> window. This window provides access to the raw data within the engine. This data is generally used for debugging purposes.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Services tab.
+Select the Credit sub-tab.

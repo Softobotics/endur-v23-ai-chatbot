@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Quick_Configure_Mode.htm.
- Section heading: Adding Fields to a Panel or the Blotter.
- Text content: To add fields to the Grouping , Filter , or Pivot panel or the blotter, 1. Drag the field either from: (1) the Column Chooser window, (2) the column header of the blotter, or (3) any of the other panels (e.g., Grouping, Filter, or Pivot).  Note that dragging a field from the blotter or a panel removes that field from the source. 2. Drop the field onto the target panel/blotter. Before dropping the field, position the field to its new location. A red arrow points to the location where the new field will be inserted. .

@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_General_Import_Export.htm.
- Section heading: Running an Import/Export Definition (that is not the Default).
- Text content: 1. Select the Definitions tab. 2. Highlight the row that will be executed. 3. Click the Import or Export button to execute the definition..

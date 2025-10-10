@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_AFE_Desktop_Services.htm.
- Section heading: Configure OpenLink Central.
- Text content:  1. Create Desktops required for the User base using OpenLink Desktop Builder . 2. Create Tabs using the Openlink Configurations window if services should logically be segregated from the OpenLink main tab. 3. Create and Configure Button(s) using the Openlink Configurations window, using “OpenLink Desktop” as the Selected Service . Customize the “OpenLink Desktop” service by supplying Keyword Arguments via the Service Arguments window. 4. Save the OpenLink Central Configuration from OpenLink Central ..
- Image file: OLF_AFE_Desktop_Services_files/image002.jpg
- Image description: a diagram of the user ' s workflow.
- 
-Links to other files: ../Openlink_Desktop/OPENLINK_DESKTOP_Builder.htm, OLF_OpenLink_Configurations.htm, OLF_OpenLink_Configurations.htm, OLF_AFE_Service_Arguments.htm, OLF_Openlink_Central.htm.

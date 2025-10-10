@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Automatic_Notification_Engine.htm.
- Section heading: Using ANE to Feed an External System or to Trigger External Events.
- Text content: What if a non-system application wants to listen to these broadcasts? Non-system applications cannot directly “listen” to system broadcasts for the following reasons: .

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Openlink_Central_Sidebar.htm.
- Section heading: See Also.
- Text content: OpenLink Central Control Panel OpenLink Central Configurations OpenLink Desktop OpenLink Desktop Builder OpenLink Desktop Navigator.
- 
-Links to other files: OLF_Openlink_Central.htm, OLF_OpenLink_Configurations.htm, ../Openlink_Desktop/OPENLINK_DESKTOP_OpenLinkDesktop.htm, ../Openlink_Desktop/OPENLINK_DESKTOP_Builder.htm, ../Openlink_Desktop/OPENLINK_DESKTOP_Navigator.htm.

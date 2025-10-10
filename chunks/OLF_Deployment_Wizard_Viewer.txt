@@ -1,0 +1,44 @@
+# Deployment Wizard - Viewer
+
+The Deployment Wizard – Viewer panel allows you to load and review prior 
+ deployment audit logs associated with those deployments.
+
+All of the same information is available on the Viewer panel as per 
+ the Runner panel, which include logs, icons and color coded deployment 
+ and step statuses.
+
+## Accessing this Window
+
+Note: There are multiple ways to access this window; however, only one 
+ way is defined because some features can only be accessed via this procedure.
+
+1. From OpenLink Central, right-click anywhere on the header and select 
+ Launch Available Services. The Launch Available Services window displays.
+
+2. Type Deployment Wizard in the Filter Service field, select Deployment 
+ Wizard - Viewer in the Available Services panel, and then click Launch. 
+ The following window displays:
+
+![](OLF_Deployment_Wizard_Viewer_files/image01.jpg)
+
+![](OLF_Deployment_Wizard_Viewer_files/image02.jpg)
+
+This window contains the following menu items specific to the Deployment 
+ Wizard Viewer:
+
+```html
+<table cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;" width="638"><tr><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"><p class="TABLEHEADER">Menu</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="TABLEHEADER">Item</p></td><td bgcolor="#E6E6E6" style="vertical-align: top; border: solid #000000 1.0pt; border-left: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375"><p class="TABLEHEADER">Description</p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"><span style="font-weight: bold;">Deployment</span></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><span style="font-weight: bold;">Additional Information</span></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375">Provides additional information such as Client Site ID, Deployment Version, and Deployment Description</td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"><p class="NormalBold"></p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="NormalBold">Review Previous Deployment</p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375"><p class="MsoNormal">This menu item will invoke the Viewer to allow you to review the latest deployment performed on this system. </p></td></tr><tr><td style="vertical-align: top; border: solid #000000 1.0pt; border-top: none; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"><p class="NormalBold"></p></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><span style="font-weight: bold;">Review Any Deployment</span></td><td style="vertical-align: top; border-top: none; border-left: none; border-bottom: solid #000000 1.0pt; border-right: solid #000000 1.0pt; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375">This menu item will allow you to select any deployment performed on this system and invoke the Viewer to review. </td></tr><tr><td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"><span style="font-weight: bold;">Help</span></td><td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="NormalBold">Deployment Wizard - Playbook Viewer</p></td><td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375"><p>Launches this help file.</p></td></tr><tr><td style="border-left: solid 1.0pt #000000; border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="119"></td><td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="144"><p class="NormalBold"><span class="Bold">About</span></p></td><td style="border-right: solid 1.0pt #000000; border-bottom: solid 1.0pt #000000; vertical-align: top; padding: 0in 5.4pt 0in 5.4pt; padding-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;" width="375"><p class="MsoNormal">Opens the <i><a href="OLF_About_Window.htm">About</a></i> window.</p></td></tr></table>
+```
+
+### See Also
+
+Deployment Wizard - Viewer
+
+Enter a Deployment ID and click OK. The following window displays:
+
+Deployment Manager User Guide
+Deployment Wizard User Guide
+Deployment Wizard 
+ - Editor
+Deployment 
+ Wizard - Runner

@@ -1,0 +1,72 @@
+# QUICK CONFIGURE MODE
+
+## Overview
+
+The Quick Configure mode allows users to configure the blotter quickly. While in this mode, users can hide or display columns, change the order of columns, set up groups, tree views, filters, and pivots by simply dragging and dropping the fields.  In this mode, the space normally occupied by the blotter is now occupied by the Quick Configure panels and the blotter.
+
+This feature is only available in V8.0r2 and up.
+
+See also:
+
+Column Header Menu
+
+## Accessing This Window/Screen Mode
+
+A table can be switched in this mode by right-clicking any column header of the table and selecting Configure à Quick Configure from the Column Header Menu. For illustration purposes, the following is an example of how is it accessed from the Transaction Listing window.
+
+1. Open the Transaction Listing window.
+1. Right-click any column header of the listing. The Column Header Menu displays.
+1. Select Configure à Quick Configure.
+1. The window switches into the following mode:
+![image002](OLF_Quick_Configure_Mode_files/image001.jpg)
+
+### Buttons
+
+This mode displays the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="width:6.65in;border-collapse:collapse" width="638"><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="TableHeader"> Button</p></td><td style="width:365.4pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="TableHeader">Description</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold"><span style="font-weight:normal"><img alt="image006" border="0" height="27" src="OLF_Quick_Configure_Mode_files/image002.jpg" width="27"/></span><span style="font-weight:normal"></span>/ <img alt="image002" border="0" height="27" src="OLF_Quick_Configure_Mode_files/image003.jpg" width="27"/></p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Saves the blotter configuration. If no changes were made, this button will be disabled and will appear in gray.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold"><img alt="image005" border="0" height="24" src="OLF_Quick_Configure_Mode_files/image004.jpg" width="27"/></p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Toggle to open/hide the <i>Column Chooser</i>. The <i>Column Chooser</i> displays a list of all the fields (whether they are hidden or not) in the blotter. The user can drag any field from this window onto the blotter or any panel of the <b>Quick Configure</b> area to display it on the blotter/panel. For example, if the “CCY” column is not displayed on the blotter, the user can drag “CCY” from the <i>Column Chooser</i> and drop it between the columns it will be inserted.</p><p class="MsoNormal">If columns that are already displayed on the blotter are dragged from the chooser to the blotter, the column will simply be moved to the new position.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold"><img alt="image007" border="0" height="25" src="OLF_Quick_Configure_Mode_files/image005.jpg" width="25"/></p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Switches the window into <i>Normal</i> view.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold">Show Tree</p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Toggles the blotter between the listing format and tree view format. Data will be grouped according to the fields listed on the <b>Grouping</b> panel. Click the <b>Plus (+)</b> button to expand group or the <b>Minus (-)</b> button to collapse the tree view. Put a check mark to switch into tree view format. At least one column must be in the <b>Grouping</b> panel to enable this button.</p></td></tr><tr><td style="width:113.4pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="151"><p class="NormalBold"><span style="font-weight:normal"><img alt="image006" border="0" height="23" src="OLF_Quick_Configure_Mode_files/image006.jpg" width="23"/></span></p></td><td style="width:365.4pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="487"><p class="MsoNormal">Toggles the blotter between the regular blotter and the pivot table. This button is located at the upper right corner of the blotter.</p></td></tr></table>
+```
+
+### Grouping Panel
+
+![image009](OLF_Quick_Configure_Mode_files/image007.jpg)
+
+Located at the lower left hand side of the Quick Configure area, the Grouping panel displays the grouping fields of the blotter. The above figure groups the data by “Toolset” and then by “Int Pfolio.”  Drag the fields onto this panel that will serve as grouping criteria for the data. Data is grouped in the order it is listed on the Grouping panel. To change the grouping order, fields may be dragged and dropped to its new position.
+
+### Filter Panel
+
+![image002](OLF_Quick_Configure_Mode_files/image008.jpg)
+
+Located at the upper right hand side of the Quick Configure area, the Filter panel displays the filter fields of the blotter. The figure above filters the data by “Status.” Click the filter field button and select from the pick list the filtering criteria. Only items that meet the selected criteria will display on the blotter. Drag the fields onto this panel that will serve as filter fields of the data.
+
+### Pivot Panel
+
+![image007](OLF_Quick_Configure_Mode_files/image009.jpg)
+
+Located below the Filter panel, the Pivot panel displays the pivot data field and pivot columns. It consists of two sub-panels: The Pivot Data panel and the Pivot Columns panel. Drag the fields that will serve as pivot data and pivot columns of the pivot table onto these sub-panels.
+
+- §  Pivot Data panel - Holds the data column for the pivot table. Only one column can be set as a pivot data field. If a column is already set and a new column is dragged onto the panel, the new column will replace the old column.
+- §  Pivot Columns panel – Holds all the columns of the pivot table.
+The grouping fields in the Grouping panel serve as the pivot row of the pivot table. The above figure has “Position” as the data and “Ins. Type” and “Ext Bunit” as columns for the pivot table.
+
+### Red Arrow Pointer
+
+![image002](OLF_Quick_Configure_Mode_files/image010.jpg)
+
+While a field is being dragged within or onto the blotter or the Grouping panel, a red arrow pointing to the spot where the field will be inserted displays. To insert a field between 2 specific fields, drop the field once the red arrow points in between those fields.
+
+## Adding Fields to a Panel or the Blotter
+
+To add fields to the Grouping, Filter, or Pivot panel or the blotter,
+
+1. Drag the field either from: (1) the Column Chooser window, (2) the column header of the blotter, or (3) any of the other panels (e.g., Grouping, Filter, or Pivot).  Note that dragging a field from the blotter or a panel removes that field from the source.
+1. Drop the field onto the target panel/blotter. Before dropping the field, position the field to its new location. A red arrow points to the location where the new field will be inserted.
+## Removing Fields from a Panel or the Blotter
+
+To remove fields from the Grouping, Filter, or Pivot panel or the blotter, drag the field and drop it out of the panel/blotter or onto the Column Chooser.  To move it to another panel or to the blotter, drop it to the target panel or the blotter.
+
+## Changing the Order of Fields
+
+To change the order of the fields on the Grouping panel or the blotter, drag the field and drop it to its new position.
+

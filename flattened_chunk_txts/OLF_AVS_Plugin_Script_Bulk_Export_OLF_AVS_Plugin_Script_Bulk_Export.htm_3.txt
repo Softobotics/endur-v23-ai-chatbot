@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Plugin_Script_Bulk_Export.htm.
- Section heading: Menu Items.
- Text content: This window contains no menu items..

@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Connex_Grid_Mon.htm.
- Section heading: Views.
- Text content: There are two views available on this tab controlled by radio buttons. The Grid Monitor button provides the same view described in the Services Manager and additionally provides the QA Test Results panel, a simple application that tests the gateway cluster. The Running Services view and the QA Test Results panel of the Monitor view are detailed on this page..
- 
-Links to other files: ../Services_Manager/Services_Manager_Connex_Grid_Monitor.htm, #qa.

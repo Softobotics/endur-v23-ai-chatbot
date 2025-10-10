@@ -1,0 +1,56 @@
+# System Monitor - Diagnostics - Process Table
+
+## Overview
+
+This window displays details regarding system processes running on the local machine.
+
+The following Security Privileges are applicable to this window:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr><td style="width:1.3in;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege ID</b></p></td><td style="width:2.25in;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt" valign="top" width="216"><p class="MsoNormal" style="margin-bottom:6.0pt"><b>Privilege</b></p></td></tr><tr><td style="width:1.3in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal" style="margin-bottom:6.0pt">29300</p></td><td style="width:2.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="216"><p class="MsoNormal" style="margin-bottom:6.0pt">Access Diagnostics Tab</p></td></tr><tr><td style="width:1.3in;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="125"><p class="MsoNormal" style="margin-bottom:6.0pt">29305</p></td><td style="width:2.25in;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="216"><p class="MsoNormal" style="margin-bottom:6.0pt">Kill Selected Processes</p></td></tr></table>
+```
+
+See System Monitor
+
+## Accessing This Window/Screen
+
+To access this window:
+
+![image008](OLF_System_Monitor-Diagnostics_Process_files/image001.jpg)
+
+The following screen displays:
+
+![image004](OLF_System_Monitor-Diagnostics_Process_files/image002.jpg)
+
+Other Ways to Access This Window/Screen
+
+The module may also be launched as a service. From OpenLink Central, navigate the menu icon and select Launch Available Services. Select System Monitor from the list box.
+
+### Menu Items
+
+This window contains the same menu items as the System Monitor. Menu item availability depends upon the tab being accessed.
+
+### Buttons
+
+This window contains the same toolbar buttons as the System Monitor. This tab includes the following buttons:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:134.3pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="179"><p align="center" class="MsoNormal" style="text-align:center"><b>Button</b></p></td><td style="width:390.1pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="520"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image005" border="0" height="19" src="OLF_System_Monitor-Diagnostics_Process_files/image003.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">The frequency with which the table data is refreshed. Clicking the button returns a pick list of available frequencies, in seconds.</p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image006" border="0" height="17" src="OLF_System_Monitor-Diagnostics_Process_files/image004.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Stops the selected process from running.</p><p class="MsoNormal"><span style="color:red">This button is only in 8.0r1 and up.</span></p></td></tr><tr><td style="width:134.3pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="179"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><b><img alt="image007" border="0" height="17" src="OLF_System_Monitor-Diagnostics_Process_files/image005.jpg" width="100"/></b></p></td><td style="width:390.1pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="520"><p class="MsoNormal">Reloads the list of system processes running on the local machine.</p></td></tr></table>
+```
+
+### Fields
+
+This window contains the following fields:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse"><tr style="height:22.0pt"><td style="width:125.65pt;border:solid windowtext 1.0pt; background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="168"><p align="center" class="MsoNormal" style="text-align:center"><b>Field Item</b></p></td><td style="width:294.15pt;border:solid windowtext 1.0pt; border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:22.0pt" valign="top" width="392"><p align="center" class="MsoNormal" style="text-align:center"><b>Description</b></p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Display Name</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The name of the process as seen by the end-user.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Process Name</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The internal system name of the process.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Status</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The status of the selected process. This field typically shows “Running”.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Process ID</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The system-designated Process ID (PID).</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Process Size</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The process size, in kilobytes.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>VM Size</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The system virtual memory size for the process.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>ECOM Sessions</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">Shows the subscriptions for the messaging tools. The data in this column is of type ‘Table’. Data is accessed by double-clicking the ‘grid’ icon to open the data table.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>JVM Initialized</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">An indicator as to whether the process is enabled for Java scripting.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>JVM Debug Port</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">The port for which Java scripting debugging can be accessed.</p></td></tr><tr><td style="width:125.65pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.4pt 0in 5.4pt" valign="top" width="168"><p class="MsoNormal"><b>Internal Data</b></p></td><td style="width:294.15pt;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="392"><p class="MsoNormal">System data specific to the selected process. The data in this column is of the type ‘Table’. Data is accessed by double-clicking the ‘grid’ icon to open the <i>Internal System Data</i> table. Double-click an item within the table to launch a data table specific to the selected item.</p></td></tr></table>
+```
+
+### Column Header Menu
+
+To modify a table’s configuration, right-click any column header. The Column Header Menu displays.
+
+Start the OpenLink System.
+From OpenLink Central, click the System Monitor icon 
+Select the Diagnostics tab.
+Select the Process Table sub-tab.

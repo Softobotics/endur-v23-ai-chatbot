@@ -1,4 +1,0 @@
-This chunk is from the HTML file: OLF_STAT_Help_Viewer.htm.
- Section heading: Activity Description.
- Text content: A text description of the purpose of the Activity with general information 
- about what the Activity does..

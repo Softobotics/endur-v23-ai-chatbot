@@ -1,3 +1,0 @@
-This chunk is from the HTML file: OLF_Backwards_Compatibility.htm.
- Section heading: Overview.
- Text content: This is a list of items that are included in the system for backwards compatibility.   New clients should avoid using these features.   They are not supported for new clients (there is no testing/documentation).  Also included is a list of features in the system that were partly implemented in the system.  These should not be used by clients.  Depending on various factors, these items will either be fully implemented (in which case they may be used) or removed entirely from the system. .

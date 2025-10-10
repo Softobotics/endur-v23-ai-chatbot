@@ -1,7 +1,0 @@
-This chunk is from the HTML file: OLF_AVS_Task_Permissions.htm.
- Section heading: Accessing This Window/Screen.
- Text content: This window can be accessed by following the steps below. 1. Start the Trading Manager. 2. Select Script à Task Editor . The Task Editor window displays. 3. Select File à Open .  A pop up list of available tasks in the database displays. 4. Select File à Properties. The following window displays:  Note: The settings in this window are the System-upgrade defaults for existing Tasks.  The Owner and Group information and Owner/Group/Public permissions can be modified. However, it is also important to note that only one security group can be assigned to each task (when one group is assigned the privilege, any previously assigned group will lose the privilege)..
- Image file: OLF_AVS_Task_Permissions_files/image001.jpg
- Image description: the text editor dial in the windows.
- 
-Links to other files: OLF_AVS_Task_Editor.htm.

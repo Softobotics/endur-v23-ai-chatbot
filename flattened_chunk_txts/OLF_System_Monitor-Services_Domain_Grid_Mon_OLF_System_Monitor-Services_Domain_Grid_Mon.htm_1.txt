@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_System_Monitor-Services_Domain_Grid_Mon.htm.
- Section heading: Views.
- Text content: There are three views available on this tab controlled by radio buttons. The Grid Monitor and Request Monitor buttons provide the same view those described under the Services Manager. The Request Monitor is applicable to v91r2 and later. The Running Services view is detailed on this page..
- 
-Links to other files: ../Services_Manager/Services_Manager_Application_Services_Grid_Monitor.htm, ../Services_Manager/Services_Manager_Application_Services_Request_Monitor.htm, ../Services_Manager/Services_Manager_Application_Services_Request_Monitor.htm.

@@ -1,0 +1,39 @@
+# How To Query Using a Script
+
+Use the Additional Query Criteria panel 
+	 to perform queries using SQL. More advanced queries are entered in 
+	 this panel.
+
+Enter the following SQL ab_tran.toolset = 1 
+	 (this queries for Swap transactions) in the Additional Criteria 
+	 panel.
+
+1.      Click 
+	 the Query icon  
+	 from the menu. The Trading Query window displays with a previously-saved 
+	 query view.
+
+2.      Click 
+	 the New Query icon , or select 
+	 FileàNew Query 
+	 from the main menu.
+
+3.      Select 
+	 User PreferencesàShow 
+	 Additional Criteria Panel. The Additional Criteria panel 
+	 displays at the bottom of the window.
+
+4.      Enter 
+	 SQL in the SQL panel.  For this example enter “ab_tran.toolset=1” 
+	 in order to return all Swap transactions.
+
+Alternatively, 
+	 you can select a script in the Script field, and if there are 
+	 none available, click the  icon.
+
+![](How_to_Query_Using_a_Script_files/image006.jpg)
+
+5.      Execute 
+	 the query by clicking the Execute and Close button. The query 
+	 results display.
+

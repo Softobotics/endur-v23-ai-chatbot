@@ -1,5 +1,0 @@
-This chunk is from the HTML file: OLF_Column_Header_Menu.htm.
- Section heading: Accessing Menu Type 1.
- Text content: This menu is accessed from various system tables/blotters. For illustration purposes, the following is an example of how it is accessed: 1. Start the Trading Manager. 2. Select Misc à Registered Pricing Models. The Registered Pricing Models display. This window is an example of a Table Viewer. 3. Right-click on any column heading of the table. The following menu displays:  .
- Image file: OLF_Column_Header_Menu_files/image001.jpg
- Image description: the font and font selection in adobe.

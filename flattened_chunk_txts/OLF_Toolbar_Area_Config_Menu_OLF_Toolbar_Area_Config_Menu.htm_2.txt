@@ -1,8 +1,0 @@
-This chunk is from the HTML file: OLF_Toolbar_Area_Config_Menu.htm.
- Section heading: Menu Items.
- Text content: This menu contains the following menu items: .
- Table data: 
-| Item | Description |
-| --- | --- |
-| Configure | Opens theToolbar Configurationwindow.If the menu was accessed from an unoccupied area of the toolbar, theToolbar Configurationwindow displays theAll Toolbarstab by default. Thus, allowing the user to manage the toolbar.If the menu was accessed from a toolbar panel, theToolbar Configurationwindow displays theConfigure Toolbartab by default, allowing the user to manage the specific toolbar panel. |
-| <Toolbar Panel Name> | The toolbar panels that display depend on the page (or tab) from which theToolbar Area Configuration Menuwas accessed. All active user-defined (if any) and OLF-defined toolbar panels defined for the current active page or tab will be listed as options.For example, in V8.0r1 of the Settlement Desktop, if this menu was accessed from theCreate and Manage Documentstab, the available toolbar panel options are “SD Toolbar” and “SD Create_Manage Toolbar.” If this menu was accessed from theOutput Managementtab, the available toolbar panel options are “SD Toolbar” and “SD Output Mgmt Toolbar.”This is a toggle to show or hide the toolbar panel. A check mark (ü) indicates that the toolbar panel is displayed. To hide the toolbar panel, remove the check mark by clicking the toolbar panel option. |.
