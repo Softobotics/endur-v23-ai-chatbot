@@ -271,18 +271,23 @@ if st.button("Submit") and user_input:
             img_path = img_path.strip()
             clean_image_paths.append(img_path)
 
-    # Display images
-    for img_path in clean_image_paths:
-        full_path = os.path.join(onlinehelp_path, img_path)
-        full_path = os.path.normpath(full_path)
+    clean_text = re.sub(r'[a-zA-Z0-9_\-\\/]+\.(?:jpg|jpeg|png|gif|bmp)', 'KELLER999', answer)
+    text_parts = clean_text.split('KELLER999')
+    image_index = 0
+    for i, text_part in enumerate(text_parts):
+        # Display the text part
+        if text_part.strip():
+            st.write(text_part)
         
-        if os.path.exists(full_path):
-            st.image(full_path, caption=os.path.basename(img_path))
-        else:
-            st.warning(f"Image not found: {full_path}")
-
-    clean_text = re.sub(r'!\[.*?\]\([^)]+\)', '', answer)
-    clean_text = re.sub(r'[a-zA-Z0-9_\-\\/]+\.(?:jpg|jpeg|png|gif|bmp)', '', clean_text)
-    clean_text = re.sub(r'\s+', ' ', clean_text).strip() 
-    
-    st.write(clean_text)
+        # Display corresponding image after each text part (except the last one)
+        if i < len(text_parts) - 1 and image_index < len(clean_image_paths):
+            img_path = clean_image_paths[image_index]
+            full_path = os.path.join(onlinehelp_path, img_path)
+            full_path = os.path.normpath(full_path)
+            
+            if os.path.exists(full_path):
+                st.image(full_path, caption=os.path.basename(img_path))
+            else:
+                st.warning(f"Image not found: {full_path}")
+            
+            image_index += 1
