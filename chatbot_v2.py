@@ -191,7 +191,7 @@ CRITICAL INSTRUCTIONS:
 1. Be precise and factual - do not add information not present in the documentation
 2. When mentioning any images, you MUST include the complete image file paths exactly as shown in the documentation
 3. Try to include image file paths wherever possible so that user can understand better
-4. Try to answer in a detailed format as if the user is a beginner - you can use more words to describe contents
+4. If you encounter an HTML table code anywhere please convert to a visual table. 
 5. Answer using ONLY the information from the documentation provided
 
 Documentation:
